@@ -1,0 +1,15 @@
+schema: ai-system.subtext_ledger.v1
+updated: 2026-06-03
+entries:
+  - id: SUB-001
+    context: "User repeatedly requests advanced continuity, memory, and AI coordination systems."
+    inference: "The project should be treated as an evolving operating environment, not a one-off folder cleanup."
+    confidence: strong_inference
+    action_impact: "Build durable file structures, protocols, and tools."
+    needs_confirmation: false
+  - id: SUB-002
+    context: "User emphasizes screw-up reversal and causality."
+    inference: "Restore points and audit trails should be first-class, not optional documentation."
+    confidence: strong_inference
+    action_impact: "Add restore, audit, and rollback systems."
+    needs_confirmation: false

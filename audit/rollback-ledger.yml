@@ -1,0 +1,23 @@
+schema: ai-system.rollback_ledger.v1
+updated: 2026-06-03
+rollback_paths:
+  - id: RB-001
+    target: mega_ai_system_changes
+    method: git_revert
+    command_shape: "git revert <commit>"
+    caution: "Reverting AI system commits can remove generated continuity and audit data."
+  - id: RB-002
+    target: child_repo_pointer_update
+    method: checkout_previous_pointer_commit
+    command_shape: "git revert <mega-pointer-commit>"
+    caution: "Does not revert child repo contents, only the mega pointer."
+  - id: RB-003
+    target: server_live_state_restore
+    method: reimport_previous_sql_snapshot
+    command_shape: "Use restore playbook with selected SQL snapshot."
+    caution: "Database import overwrites runtime DB state."
+  - id: RB-004
+    target: client_config_change
+    method: revert_client_repo_commit_or_restore_files
+    command_shape: "git -C GameClient-ChromieCraft-3.3.5a revert <commit>"
+    caution: "Only applies to tracked client config files."

@@ -1,0 +1,181 @@
+schema: ai-system.model_archaeology.capability_matrix.v1
+updated: 2026-06-03
+capability_families:
+  repo_level_coding:
+    benchmark_signals:
+      - swe_bench
+      - terminal_bench
+      - nl2repo
+      - livecodebench
+    observed_patterns:
+      - tool_aware_chat_templates
+      - file_edit_tools
+      - terminal_execution
+      - iterative_test_fix_loops
+    target_ai_implication: Build repository graph memory, patch planning, test selection, and edit localization.
+  agentic_execution:
+    benchmark_signals:
+      - osworld
+      - mcp_atlas
+      - toolathlon
+      - browsecomp
+      - deepsearchqa
+    observed_patterns:
+      - explicit_tool_call_parsers
+      - context_management_after_tool_rounds
+      - long_horizon_goal_state
+      - parallel_agent_coordination
+    target_ai_implication: Add task state machines, resumable jobs, role routing, and tool-result compression.
+  multimodal_understanding:
+    benchmark_signals:
+      - mmmu
+      - image_text_to_text
+      - visual_agent_tasks
+      - video_input_when_supported
+    observed_patterns:
+      - unified_vision_language_training
+      - image_url_message_parts
+      - optional_text_only_deployment_to_save_memory
+    target_ai_implication: Use pluggable vision encoders and screenshot/document-image routing before UI or file edits.
+  long_context_and_memory:
+    benchmark_signals:
+      - 262k_context
+      - 1m_context
+      - longbench
+      - mrcr
+      - corpusqa
+    observed_patterns:
+      - sparse_or_compressed_attention
+      - context_pruning
+      - most_recent_tool_round_retention
+      - large_context_for_think_max_modes
+    target_ai_implication: Pair context windows with memory tiers, semantic compression, and retrieval rather than dumping everything.
+  research_and_search:
+    benchmark_signals:
+      - browsecomp
+      - deepsearchqa
+      - hle_with_tools
+    observed_patterns:
+      - search_tool_augmentation
+      - citation_and_source_tracking
+      - context_budget_limits_per_step
+    target_ai_implication: Build a truth pipeline that separates search, source extraction, synthesis, and contradiction checks.
+  enterprise_knowledge:
+    benchmark_signals:
+      - file_system_workspace_tasks
+      - large_document_analysis
+      - structured_output_reliability
+    observed_patterns:
+      - project_scoped_knowledge_bases
+      - retrieval_plus_long_context
+      - source_labeled_claims
+    target_ai_implication: Implement project brains, dynamic knowledge bases, claim maps, and audit ledgers.
+  local_computer_operation:
+    benchmark_signals:
+      - osworld
+      - terminal_bench
+      - windows_agent_tasks
+    observed_patterns:
+      - active app control
+      - shell and browser tools
+      - conservative mutation policy
+    target_ai_implication: Build a Windows agent platform with permission gates, screenshots, file diffs, and rollback hooks.
+  self_hosted_workspace:
+    benchmark_signals:
+      - install_smoke_tests
+      - provider_probe_tests
+      - memory_retrieval_quality
+      - deep_research_report_quality
+      - security_threat_model_coverage
+    observed_patterns:
+      - local_first_chat_workspace
+      - model_provider_settings
+      - hardware_fit_cookbook
+      - memory_search_services
+      - documents_email_calendar_notes_tasks_surfaces
+      - mobile_pwa_access
+      - admin_tool_security_gating
+    target_ai_implication: Build a private AI workspace around the model router so work happens across files, docs, tasks, memory, search, and local tools.
+model_extracts:
+  minimax-m3:
+    strong_signals:
+      - coding_agents
+      - multimodal
+      - 1m_context_platform
+      - private_deployment_announced
+    target_lessons:
+      - make coding and multimodal reasoning one shared workflow
+      - design for private cluster deployment and fine-tuning from the start
+    confidence: medium_until_weights_and_license_are_verified
+  kimi-k2-6:
+    strong_signals:
+      - agent_swarm
+      - coding_driven_design
+      - long_horizon_execution
+      - tool_augmented_research
+      - context_management_for_tool_rounds
+    target_lessons:
+      - add swarm-style role coordination
+      - build reusable skills and artifact production into task execution
+    confidence: high_for_public_model_card_claims_medium_for_unreproduced_benchmarks
+  glm-5-1:
+    strong_signals:
+      - 8_hour_autonomous_tasks
+      - experiment_analyze_optimize_loop
+      - agentic_engineering
+      - terminal_and_repo_generation
+    target_lessons:
+      - long-running task management must track goal, plan, experiment, result, and retry loops
+      - use progress checkpoints and drift checks every cycle
+    confidence: high_for_public_docs_medium_for_unreproduced_benchmarks
+  qwen3-6-27b:
+    strong_signals:
+      - dense_local_candidate
+      - multimodal_input
+      - qwen_code_terminal_agent
+      - tool_call_parser
+      - apache_2_0
+    target_lessons:
+      - keep a practical local model tier for coding and multimodal repo work
+      - use text-only mode when memory pressure matters
+    confidence: high_for_model_card_and_license
+  qwen3-5-397b-a17b:
+    strong_signals:
+      - large_moe_multimodal_architecture
+      - 17b_active_from_397b_total
+      - hybrid_gated_delta_attention_plus_moe
+      - native_262k_extensible_1m_context
+      - apache_2_0
+    target_lessons:
+      - route hard tasks to large MoE or remote tier while preserving local small-model autonomy
+      - study hybrid attention and MoE routing as future research, not immediate local build
+    confidence: high_for_model_card_and_license
+  deepseek-v4-flash:
+    strong_signals:
+      - 284b_total_13b_active_moe
+      - 1m_context
+      - efficient_attention
+      - fp4_fp8_mixed_precision
+      - reasoning_effort_modes
+      - mit_license
+    target_lessons:
+      - create fast and deep reasoning modes in the AI-OS
+      - prioritize context efficiency, not just context length
+    confidence: high_for_model_card_and_official_api_news
+system_extracts:
+  odysseus:
+    strong_signals:
+      - self_hosted_ai_workspace
+      - multi_provider_model_layer
+      - agent_tools_mcp_web_files_shell_skills_memory
+      - hardware_aware_model_cookbook
+      - deep_research_reports
+      - documents_email_calendar_notes_tasks
+      - local_memory_search_stack
+      - admin_console_security_posture
+    target_lessons:
+      - treat AI as a workspace plus runtime, not just a model
+      - make local model serving hardware-aware
+      - keep runtime user data gitignored and separate from code
+      - gate shell files email calendar and API tokens as high-risk tools
+    confidence: high_for_repo_readme_and_roadmap_claims

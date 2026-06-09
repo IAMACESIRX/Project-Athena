@@ -1,0 +1,51 @@
+schema: ai-system.policy_matrix.v1
+updated: 2026-06-03
+actions:
+  inspect_files:
+    default: allowed
+    confirmation_required: false
+  edit_ai_system_docs:
+    default: allowed
+    confirmation_required: false
+  commit_local:
+    default: allowed
+    confirmation_required: false
+  push_local_bare_remote:
+    default: allowed
+    confirmation_required: false
+  push_cloud_remote:
+    default: blocked
+    confirmation_required: true
+  read_live_server_logs:
+    default: allowed
+    confirmation_required: false
+  docker_compose_ps:
+    default: allowed
+    confirmation_required: false
+  docker_compose_up:
+    default: cautious
+    confirmation_required: true
+  docker_compose_down:
+    default: cautious
+    confirmation_required: true
+  database_import:
+    default: high_risk
+    confirmation_required: true
+  database_export:
+    default: cautious
+    confirmation_required: true
+  delete_docker_volume:
+    default: blocked
+    confirmation_required: true
+  edit_sql_dump:
+    default: high_risk
+    confirmation_required: true
+  full_game_client_commit:
+    default: blocked_until_storage_plan
+    confirmation_required: true
+  partial_client_config_commit:
+    default: allowed
+    confirmation_required: false
+  change_public_network_exposure:
+    default: blocked
+    confirmation_required: true

@@ -1,0 +1,30 @@
+schema: ai-system.file_ownership.v1
+updated: 2026-06-03
+ownership:
+  - path: ai-system
+    owner: ai_ops_layer
+    edit_policy: update_when_context_or_workflow_changes
+  - path: GameClient-ChromieCraft-3.3.5a/WTF
+    owner: game_client_state
+    edit_policy: commit_targeted_changes_when_tracking_client_state
+  - path: GameClient-ChromieCraft-3.3.5a/Interface
+    owner: game_client_addons
+    edit_policy: safe_to_track_separately_from_large_data
+  - path: GameClient-ChromieCraft-3.3.5a/Data
+    owner: game_client_binary_payload
+    edit_policy: avoid_full_git_commit_until_storage_strategy_is_chosen
+  - path: Server-Live-State/*.sql
+    owner: live_state_database_backups
+    edit_policy: do_not_edit_manually_unless_restoring_or_redacting
+  - path: WoW-Server-Project/backend
+    owner: assistant_backend
+    edit_policy: normal_code_review_and_tests
+  - path: WoW-Server-Project/scripts/wow
+    owner: wow_operations
+    edit_policy: test_paths_and_destructive_actions_before_use
+  - path: WoW-Server-Project/servers/wow/azerothcore-wotlk
+    owner: upstream_source
+    edit_policy: keep_clean_unless_explicitly_customizing
+  - path: WoW-Server-Project/servers/wow/azerothcore-wotlk-playerbots
+    owner: playerbot_server_source
+    edit_policy: preserve_branch_and_module_relationship

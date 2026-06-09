@@ -1,0 +1,11 @@
+schema: ai-system.plasticity_ledger.v1
+updated: 2026-06-03
+adaptations:
+  - id: PLAS-001
+    signal: "PowerShell blocked direct scripts."
+    adaptation: "Document ExecutionPolicy Bypass command form."
+    status: active
+  - id: PLAS-002
+    signal: "Live probe failed when Docker command was absent."
+    adaptation: "Probe now records docker unavailable instead of hard failing."
+    status: active

@@ -1,0 +1,15 @@
+schema: ai-system.revision_ledger.v1
+updated: 2026-06-03
+claims:
+  - id: NMR-001
+    claim: "Docker is unavailable."
+    class: provisional
+    evidence: "Current live probe cannot find docker command."
+    retraction_condition: "Docker CLI becomes available in probe."
+    current_status: active
+  - id: NMR-002
+    claim: "No GitHub server push is allowed."
+    class: stable
+    evidence: "Explicit user instruction and governance absolutes."
+    retraction_condition: "Human explicitly changes local-only policy."
+    current_status: active

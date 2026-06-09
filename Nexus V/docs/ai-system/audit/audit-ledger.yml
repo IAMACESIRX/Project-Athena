@@ -1,0 +1,27 @@
+schema: ai-system.audit_ledger.v1
+updated: 2026-06-03
+events:
+  - id: AUD-20260603-LOCAL-GIT-STACK
+    time: "2026-06-03"
+    actor: ai
+    event_type: system_setup
+    layer: mega
+    summary: "Created layered local Git stack and local bare remotes."
+    evidence:
+      - "Mega repo and three child repos have local origins."
+    expected_effect:
+      - "Local-only version management across layers."
+    rollback:
+      - "Remove local remotes or restore prior Git configs."
+  - id: AUD-20260603-AI-SYSTEM
+    time: "2026-06-03"
+    actor: ai
+    event_type: system_setup
+    layer: mega
+    summary: "Created AI system control substrate."
+    evidence:
+      - "ai-system folder committed to mega repo."
+    expected_effect:
+      - "Improved continuity, diagnostics, governance, and project navigation."
+    rollback:
+      - "Revert mega repo commits that introduced ai-system changes."

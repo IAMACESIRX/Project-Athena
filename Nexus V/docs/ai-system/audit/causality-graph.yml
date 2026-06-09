@@ -1,0 +1,28 @@
+schema: ai-system.causality_graph.v1
+updated: 2026-06-03
+nodes:
+  - id: USER-LOCAL-ONLY
+    type: user_direction
+    summary: "Use local-only hosting."
+  - id: LOCAL-BARE-REMOTES
+    type: system_state
+    summary: "Four local bare remotes exist."
+  - id: NO-CLOUD-PUSH-POLICY
+    type: governance
+    summary: "Cloud push blocked by default."
+  - id: CLIENT-LARGE-PAYLOAD
+    type: constraint
+    summary: "Game client payload is large."
+  - id: CLIENT-METADATA-ONLY
+    type: system_state
+    summary: "Game client repo has only lightweight commit."
+edges:
+  - from: USER-LOCAL-ONLY
+    to: LOCAL-BARE-REMOTES
+    relation: caused
+  - from: USER-LOCAL-ONLY
+    to: NO-CLOUD-PUSH-POLICY
+    relation: caused
+  - from: CLIENT-LARGE-PAYLOAD
+    to: CLIENT-METADATA-ONLY
+    relation: constrained

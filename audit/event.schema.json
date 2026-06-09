@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.audit-event.v1",
+  "type": "object",
+  "required": ["id", "time", "actor", "event_type", "layer", "summary"],
+  "properties": {
+    "id": { "type": "string" },
+    "time": { "type": "string" },
+    "actor": { "type": "string" },
+    "event_type": { "type": "string" },
+    "layer": { "type": "string" },
+    "summary": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "expected_effect": { "type": "array", "items": { "type": "string" } },
+    "actual_effect": { "type": "array", "items": { "type": "string" } },
+    "rollback": { "type": "array", "items": { "type": "string" } }
+  }
+}

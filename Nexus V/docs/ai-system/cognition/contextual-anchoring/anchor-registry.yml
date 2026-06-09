@@ -1,0 +1,23 @@
+schema: ai-system.anchor_registry.v1
+updated: 2026-06-03
+anchors:
+  - id: ANCHOR-LOCAL-ONLY
+    type: policy
+    statement: "No GitHub server push unless the human explicitly changes this."
+    source: "governance/absolutes.md"
+    refresh_condition: "Human changes hosting policy."
+  - id: ANCHOR-LAYERS
+    type: layer
+    statement: "Mega repo coordinates child repo pointers; child repos own payload/state/project changes."
+    source: "registries/layers.yml"
+    refresh_condition: "Layer topology changes."
+  - id: ANCHOR-CLIENT-PAYLOAD
+    type: restore
+    statement: "Untracked game client payload is not protected by Git restore points."
+    source: "restore/backup-policy.md"
+    refresh_condition: "Client tracking strategy changes."
+  - id: ANCHOR-EVIDENCE
+    type: truth
+    statement: "Cognition outputs are candidates until checked by the truth pipeline."
+    source: "truth/cross-check-pipeline.md"
+    refresh_condition: "Truth policy changes."

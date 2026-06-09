@@ -1,0 +1,109 @@
+schema: ai-system.model_registry.v1
+updated: 2026-06-03
+models:
+  - id: codex-local
+    class: coding_agent
+    provider: local_codex_surface
+    strengths:
+      - repository_editing
+      - tool_execution
+      - code_review
+    limits:
+      - depends_on_available_tools
+      - must_preserve_user_changes
+  - id: gpt-general
+    class: conversational_reasoner
+    provider: pluggable
+    strengths:
+      - planning
+      - synthesis
+      - explanation
+      - dialogue
+    limits:
+      - needs_grounding
+      - cannot_assume_current_state_without_evidence
+  - id: local-small-model
+    class: local_model
+    provider: future_local_runtime
+    strengths:
+      - low_cost
+      - private_batch_tasks
+    limits:
+      - capability_unknown_until_evaluated
+  - id: qwen3-6-27b
+    class: open_weight_multimodal_coding_model
+    provider: qwen
+    license_status: apache_2_0_on_model_card
+    research_record: ai-system/research/model-archaeology/source-ledger.yml#qwen3-6-27b
+    strengths:
+      - local_candidate_if_hardware_allows
+      - multimodal_input
+      - repo_and_terminal_agent_support
+      - tool_call_parser_support
+    limits:
+      - requires_local_benchmark_before_autonomy
+      - large_context_requires_substantial_vram
+  - id: qwen3-5-397b-a17b
+    class: open_weight_large_moe_multimodal_model
+    provider: qwen
+    license_status: apache_2_0_on_model_card
+    research_record: ai-system/research/model-archaeology/source-ledger.yml#qwen3-5-397b-a17b
+    strengths:
+      - large_moe_architecture
+      - multimodal
+      - long_context
+      - agentic_tool_support
+    limits:
+      - heavyweight_inference
+      - likely_requires_cluster_or_aggressive_quantization
+  - id: deepseek-v4-flash
+    class: open_weight_efficient_moe_reasoning_model
+    provider: deepseek
+    license_status: mit_on_model_card
+    research_record: ai-system/research/model-archaeology/source-ledger.yml#deepseek-v4-flash
+    strengths:
+      - efficient_active_parameters
+      - million_token_context
+      - reasoning_effort_modes
+      - fast_deep_routing_candidate
+    limits:
+      - text_first_model_card
+      - requires_local_or_api_benchmark_before_project_authority
+  - id: kimi-k2-6
+    class: open_source_agentic_multimodal_model
+    provider: moonshot_ai
+    license_status: verify_huggingface_license_before_weight_use
+    research_record: ai-system/research/model-archaeology/source-ledger.yml#kimi-k2-6
+    strengths:
+      - agent_swarm
+      - long_horizon_coding
+      - visual_agent_work
+      - artifact_generation
+    limits:
+      - benchmark_claims_must_be_reproduced
+      - deployment_scale_unknown_for_local_workstation
+  - id: glm-5-1
+    class: open_weight_long_horizon_engineering_model
+    provider: z_ai
+    license_status: verify_huggingface_license_before_weight_use
+    research_record: ai-system/research/model-archaeology/source-ledger.yml#glm-5-1
+    strengths:
+      - long_horizon_agentic_engineering
+      - experiment_analyze_optimize_loop
+      - terminal_and_repo_tasks
+    limits:
+      - long_running_autonomy_requires_external_checkpoints
+      - benchmark_claims_must_be_reproduced
+  - id: minimax-m3
+    class: announced_open_weight_coding_multimodal_model
+    provider: minimax
+    license_status: pending_full_hf_github_release_at_time_of_research
+    research_record: ai-system/research/model-archaeology/source-ledger.yml#minimax-m3
+    strengths:
+      - coding
+      - agentic_task_decomposition
+      - multimodality
+      - long_context_platform
+    limits:
+      - full_open_source_release_must_be_verified
+      - do_not_use_weights_until_license_is_confirmed

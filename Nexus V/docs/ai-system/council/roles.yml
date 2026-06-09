@@ -1,0 +1,27 @@
+schema: ai-system.council_roles.v1
+updated: 2026-06-03
+roles:
+  - id: systems_architect
+    focus: architecture, interfaces, scalability
+  - id: safety_reviewer
+    focus: privacy, destructive actions, rollback
+  - id: server_operator
+    focus: Docker, database, AzerothCore runtime
+  - id: game_client_steward
+    focus: client files, realmlist, addons, ReShade
+  - id: backend_engineer
+    focus: FastAPI, command hub, execution modules
+  - id: git_archivist
+    focus: layered repos, commits, restore points
+  - id: observability_engineer
+    focus: logs, probes, telemetry, diagnostics
+  - id: reverse_engineer
+    focus: unknown mechanics, dependency discovery
+  - id: research_lead
+    focus: options, experiments, prior art
+  - id: qa_tester
+    focus: verification, regression checks
+  - id: product_operator
+    focus: usability, workflow, priorities
+  - id: contrarian
+    focus: counterarguments, failure modes, black swans

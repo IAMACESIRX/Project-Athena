@@ -1,0 +1,23 @@
+schema: ai-system.failure_modes.v1
+updated: 2026-06-03
+failure_modes:
+  - id: context_loss
+    cause: important facts not recorded
+    detection: stale handoff or missing decision
+    mitigation: update memory and handoff
+  - id: git_pointer_drift
+    cause: child commit not reflected in parent
+    detection: mega repo status shows modified child pointer
+    mitigation: run Update-LayerPointers.ps1
+  - id: restore_mismatch
+    cause: docs and SQL dump disagree
+    detection: scan signal or restore drill
+    mitigation: update restore script and docs
+  - id: runtime_blindness
+    cause: no live server probe/report
+    detection: unknown container/log/database state
+    mitigation: run live server probe
+  - id: storage_pressure
+    cause: huge client payload and local Git object duplication
+    detection: low drive free space
+    mitigation: partial tracking or external mirror

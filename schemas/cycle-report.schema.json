@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.cycle_report.v1",
+  "type": "object",
+  "required": ["schema", "cycle_id", "started", "ended", "status", "steps"],
+  "properties": {
+    "schema": { "const": "ai-system.operation_cycle_report.v1" },
+    "cycle_id": { "type": "string" },
+    "started": { "type": "string" },
+    "ended": { "type": "string" },
+    "duration_sec": { "type": "number" },
+    "status": { "enum": ["PASS", "WARN", "FAIL"] },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "status", "seconds"],
+        "properties": {
+          "name": { "type": "string" },
+          "status": { "enum": ["PASS", "WARN", "FAIL", "SKIP"] },
+          "seconds": { "type": "number" },
+          "message": { "type": "string" }
+        }
+      }
+    }
+  }
+}
+

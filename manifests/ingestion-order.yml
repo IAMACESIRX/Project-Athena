@@ -1,0 +1,74 @@
+schema: ai-system.ingestion_order.v1
+updated: 2026-06-03
+purpose: "Defines the stable read order for AIs, humans, and programs."
+order:
+  - path: ai-system/AI-PORTAL.md
+    reason: universal entry point
+  - path: ai-system/manifests/system-manifest.json
+    reason: machine-readable system index
+  - path: ai-system/identity/README.md
+    reason: general AI-OS identity beyond any one project
+  - path: ai-system/identity/constitution.md
+    reason: non-negotiable principles
+  - path: ai-system/projects/project-registry.yml
+    reason: active managed project list
+  - path: ai-system/organization/hierarchy.yml
+    reason: authority and organization model
+  - path: ai-system/agents/agent-registry.yml
+    reason: pluggable human and AI agent registry
+  - path: ai-system/orchestration/model-router.yml
+    reason: multi-model routing contract
+  - path: ai-system/research/model-archaeology/source-ledger.yml
+    reason: verified open-model source ledger and license status
+  - path: ai-system/research/model-archaeology/deconstruction-protocol.md
+    reason: safe protocol for extracting lessons from open models
+  - path: ai-system/research/model-archaeology/open-model-capability-matrix.yml
+    reason: maps open-model traits to target AI capabilities
+  - path: ai-system/research/model-archaeology/odysseus-deconstruction.md
+    reason: self-hosted AI workspace architecture lessons
+  - path: ai-system/model-ops/target-ai/target-ai-architecture.md
+    reason: reconstructed target AI architecture
+  - path: ai-system/model-ops/target-ai/capability-roadmap.yml
+    reason: phased capability build plan
+  - path: ai-system/memory/context-iq/contextual-work-iq.md
+    reason: context and work intelligence memory contract
+  - path: ai-system/integration/ai-ingestion-guide.md
+    reason: adapter and agent onboarding
+  - path: ai-system/governance/absolutes.md
+    reason: non-negotiable constraints
+  - path: ai-system/handoff/CURRENT_STATE.md
+    reason: current continuity state
+  - path: ai-system/handoff/NEXT_ACTIONS.md
+    reason: queued work and priorities
+  - path: ai-system/registries/layers.yml
+    reason: repo and layer topology
+  - path: ai-system/registries/modules.yml
+    reason: functional module list
+  - path: ai-system/navigation/project-map.md
+    reason: navigable map
+  - path: ai-system/sensory/scans/latest-scan.json
+    reason: latest measured state
+  - path: ai-system/engine/README.md
+    reason: deterministic operating cycle
+  - path: ai-system/engine/order-of-operations.md
+    reason: full advanced thinking checklist
+  - path: ai-system/engine/routine-catalog.yml
+    reason: machine-readable routine order
+  - path: ai-system/forensics/evidence-register.csv
+    reason: stable evidence IDs and evidence paths
+  - path: ai-system/forensics/claim-catalog.csv
+    reason: claims separated from observations
+  - path: ai-system/forensics/evidence-claim-map.csv
+    reason: evidence-to-claim grounding
+  - path: ai-system/forensics/known-unknowns.csv
+    reason: uncertainty preserved explicitly
+  - path: ai-system/work/TODO.md
+    reason: active work queue
+  - path: ai-system/diagnostics/risk-register.md
+    reason: known risk state
+  - path: ai-system/cognition/README.md
+    reason: advanced cognition system index
+  - path: ai-system/cognition/anti-hallucination/anti-hallucination-protocol.md
+    reason: inference safety and evidence gates
+  - path: ai-system/cognition/cognition-workflow.md
+    reason: advanced reasoning workflow

@@ -1,0 +1,14 @@
+schema: ai-system.resource_budget.v1
+updated: 2026-06-03
+budgets:
+  - id: context
+    rule: Compress before handoff and preserve only high-value details in active memory.
+  - id: storage
+    rule: Do not commit huge payloads without an explicit storage strategy.
+  - id: compute
+    rule: Keep routine scans bounded and targeted.
+  - id: human_attention
+    rule: Surface only decisions, blockers, risks, and meaningful deltas.
+  - id: model_cost
+    rule: Route expensive models only when the task requires them and policy allows them.
+

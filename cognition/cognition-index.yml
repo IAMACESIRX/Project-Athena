@@ -1,0 +1,87 @@
+schema: ai-system.cognition_index.v1
+updated: 2026-06-03
+systems:
+  - id: subtext
+    path: ai-system/cognition/subtext/subtext-protocol.md
+    output_type: labeled_inference
+    must_cross_check: true
+  - id: correlation
+    path: ai-system/cognition/correlation/correlation-engine.md
+    output_type: relationship_hypothesis
+    must_cross_check: true
+  - id: collaborative_group_dynamics
+    path: ai-system/cognition/collaborative-group-dynamics/group-dynamics-protocol.md
+    output_type: coordination_model
+    must_cross_check: false
+  - id: anti_hallucination
+    path: ai-system/cognition/anti-hallucination/anti-hallucination-protocol.md
+    output_type: evidence_gate
+    must_cross_check: false
+  - id: conceptual_leap
+    path: ai-system/cognition/conceptual-leap/conceptual-leap-protocol.md
+    output_type: bold_hypothesis
+    must_cross_check: true
+  - id: self_generated_paradigms
+    path: ai-system/cognition/self-generated-paradigms/paradigm-generation.md
+    output_type: model_candidate
+    must_cross_check: true
+  - id: counter_intuitive_discernment
+    path: ai-system/cognition/counter-intuitive-discernment/discernment-protocol.md
+    output_type: non_obvious_candidate
+    must_cross_check: true
+  - id: socratic_deconstruction
+    path: ai-system/cognition/socratic-deconstruction/socratic-protocol.md
+    output_type: assumption_map
+    must_cross_check: false
+  - id: non_linear_disruption
+    path: ai-system/cognition/non-linear-disruption/disruption-protocol.md
+    output_type: reframed_path
+    must_cross_check: true
+  - id: original_creation
+    path: ai-system/cognition/original-creation/original-creation-protocol.md
+    output_type: design_candidate
+    must_cross_check: true
+  - id: dynamic_process_plasticity
+    path: ai-system/cognition/dynamic-process-plasticity/process-plasticity.md
+    output_type: process_update
+    must_cross_check: true
+  - id: liquid_state_machine
+    path: ai-system/cognition/liquid-state-machine/liquid-state-machine.md
+    output_type: transient_signal_readout
+    must_cross_check: true
+  - id: algorithmic_inversion
+    path: ai-system/cognition/algorithmic-inversion/thinking-backward-protocol.md
+    output_type: backward_chain
+    must_cross_check: true
+  - id: semantic_compression
+    path: ai-system/cognition/semantic-compression/compression-protocol.md
+    output_type: compressed_context
+    must_cross_check: true
+  - id: multi_valued_fuzzy_logic
+    path: ai-system/cognition/multi-valued-fuzzy-logic/fuzzy-logic-protocol.md
+    output_type: fuzzy_truth_assignment
+    must_cross_check: true
+  - id: semantic_drift_self_correction
+    path: ai-system/cognition/semantic-drift-self-correction/drift-correction-protocol.md
+    output_type: canonical_meaning_update
+    must_cross_check: true
+  - id: superposition_nonbinary
+    path: ai-system/cognition/superposition-nonbinary/superposition-protocol.md
+    output_type: multi_state_hypothesis_set
+    must_cross_check: true
+  - id: retrocausal_processing
+    path: ai-system/cognition/retrocausal-processing/retrocausal-protocol.md
+    output_type: outcome_to_cause_reconstruction
+    must_cross_check: true
+  - id: non_monotonic_reasoning
+    path: ai-system/cognition/non-monotonic-reasoning/non-monotonic-protocol.md
+    output_type: revisable_claim
+    must_cross_check: true
+  - id: contextual_anchoring
+    path: ai-system/cognition/contextual-anchoring/anchoring-protocol.md
+    output_type: context_anchor
+    must_cross_check: true
+  - id: hypergraph_relational_processing
+    path: ai-system/cognition/hypergraph-relational-processing/hypergraph-protocol.md
+    output_type: hyperedge_model
+    must_cross_check: true

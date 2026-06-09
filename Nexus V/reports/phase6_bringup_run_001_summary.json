@@ -1,0 +1,20 @@
+{
+  "phase": "Phase 6 bring-up run 001",
+  "status": "partial_pass",
+  "static_source_audit": "static_audit_passed_lint_not_executed",
+  "blocking_static_issues": 0,
+  "warnings": [
+    {
+      "severity": "warning",
+      "issue": "No SystemVerilog simulator/linter found in container; Verilator/Icarus/Questa/VCS/XSIM execution skipped."
+    }
+  ],
+  "toolchain_full_system_program": "pass",
+  "generated_artifacts": {
+    "06_full_system_ai_versioned_secure.nvir.json": 22612,
+    "06_full_system_ai_versioned_secure.nvobj": 2380,
+    "06_full_system_ai_versioned_secure.rtl_vectors.json": 11574
+  },
+  "sv_simulator_execution": "not_run_no_sv_simulator_available_in_container",
+  "next_required_action": "Run Verilator or another SystemVerilog simulator on filelist.f outside this container, then fix compile errors."
+}

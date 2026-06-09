@@ -1,0 +1,187 @@
+schema: ai-system.capability_matrix.v1
+updated: 2026-06-03
+legend:
+  implemented: usable now
+  scaffolded: structure exists but needs more implementation
+  specified: contract exists for future build
+  blocked: requires human decision or external setup
+capabilities:
+  - id: local_git_layering
+    status: implemented
+    description: Four local Git layers with local bare remotes.
+  - id: ai_project_scan
+    status: implemented
+    description: Reads git state, disk pressure, remotes, known venv issue, and realmlist signal.
+    tool: ai-system/tools/Invoke-AIProjectScan.ps1
+  - id: ai_manifest_export
+    status: scaffolded
+    description: Exports a machine-ingestable index of the AI system.
+    tool: ai-system/tools/Export-AISystemManifest.ps1
+  - id: handoff_generation
+    status: implemented
+    description: Generates dated session handoffs.
+    tool: ai-system/tools/New-HandoffSnapshot.ps1
+  - id: layer_pointer_update
+    status: implemented
+    description: Stages and optionally commits child repo pointer updates in the mega repo.
+    tool: ai-system/tools/Update-LayerPointers.ps1
+  - id: work_item_creation
+    status: scaffolded
+    description: Creates simple local work items for todo, bug, feature, and research queues.
+    tool: ai-system/tools/New-WorkItem.ps1
+  - id: live_server_probe
+    status: scaffolded
+    description: Non-destructive Docker/log/server inspection.
+    tool: ai-system/tools/Invoke-LiveServerProbe.ps1
+  - id: full_client_tracking
+    status: blocked
+    description: Full game client Git tracking is blocked by disk capacity strategy.
+  - id: backend_execution_modules
+    status: specified
+    description: Future command hub modules for controlled server and client operations.
+  - id: drift_detection
+    status: scaffolded
+    description: Detects mismatches between registries, scans, and working state.
+  - id: chat_handoff_logging
+    status: implemented
+    description: Creates chat logs and handoff packets for cross-agent continuity.
+    tool: ai-system/tools/New-ChatHandoff.ps1
+  - id: audit_event_logging
+    status: implemented
+    description: Creates individual audit events for causality and rollback tracking.
+    tool: ai-system/tools/New-AuditEvent.ps1
+  - id: restore_point_manifest
+    status: implemented
+    description: Creates restore point manifests and optional Git tags/bundles for committed repo state.
+    tool: ai-system/tools/New-RestorePoint.ps1
+  - id: council_reasoning
+    status: specified
+    description: Specialist council protocol for high-risk decisions and research.
+  - id: truth_pipeline
+    status: specified
+    description: Evidence classification and cross-checking pipeline.
+  - id: memory_pruning_and_strengthening
+    status: specified
+    description: Three-tier memory system with pruning and concept strengthening.
+  - id: subtext_inference
+    status: specified
+    description: Infers unstated intent and constraints while labeling confidence.
+  - id: correlation_engine
+    status: specified
+    description: Detects relationships between signals without confusing correlation for causation.
+  - id: anti_hallucination_gate
+    status: specified
+    description: Forces evidence labels before claims become actions or memory.
+  - id: conceptual_leap_engine
+    status: specified
+    description: Generates bold hypotheses with testing requirements.
+  - id: self_generated_paradigms
+    status: specified
+    description: Creates and evaluates new mental models.
+  - id: counter_intuitive_discernment
+    status: specified
+    description: Surfaces non-obvious interpretations and rare useful paths.
+  - id: socratic_deconstruction
+    status: specified
+    description: Deconstructs assumptions through structured questioning.
+  - id: non_linear_disruption
+    status: specified
+    description: Breaks stale solution paths and proposes reversible experiments.
+  - id: original_creation
+    status: specified
+    description: Designs new systems and features under governance.
+  - id: dynamic_process_plasticity
+    status: specified
+    description: Adapts project process based on evidence and outcomes.
+  - id: liquid_state_machine_dynamics
+    status: specified
+    description: Maintains transient signal reservoir and readout model for dynamic project state.
+  - id: algorithmic_inversion
+    status: specified
+    description: Thinks backward from desired outcomes or observed failures to required conditions and possible causes.
+  - id: semantic_compression
+    status: specified
+    description: Compresses large context while preserving decisions, evidence, causality, and rollback details.
+  - id: multi_valued_fuzzy_logic
+    status: specified
+    description: Supports partial, uncertain, stale, contradicted, and non-binary truth states.
+  - id: semantic_drift_self_correction
+    status: specified
+    description: Detects and corrects concept meaning drift across sessions and files.
+  - id: superposition_nonbinary_workaround
+    status: specified
+    description: Holds multiple possible interpretations or states until evidence collapses them.
+  - id: retrocausal_processing
+    status: specified
+    description: Reconstructs earlier causes from later observations without claiming physical retrocausality.
+  - id: non_monotonic_reasoning
+    status: specified
+    description: Allows provisional conclusions to be revised or retracted when new evidence appears.
+  - id: self_sustaining_contextual_anchoring
+    status: specified
+    description: Maintains stable context anchors to prevent cross-agent drift.
+  - id: hypergraph_relational_processing
+    status: specified
+    description: Models many-way relationships between files, actors, tools, decisions, modules, and outcomes.
+  - id: operation_cycle_engine
+    status: implemented
+    description: Runs the integrated observe, verify, map, diagnose, reason, audit, and learning cycle.
+    tool: ai-system/tools/Invoke-AIOperationCycle.ps1
+  - id: integrity_gate
+    status: implemented
+    description: Checks required AI-system files, manifest references, JSON validity, and local-only governance.
+    tool: ai-system/tools/Invoke-AIIntegrityCheck.ps1
+  - id: forensic_evidence_claim_layer
+    status: implemented
+    description: Maintains stable project evidence IDs, claim catalog, evidence-claim links, timeline, known unknowns, and verification reports.
+    tool: ai-system/tools/Invoke-AIForensicVerification.ps1
+  - id: log_intelligence
+    status: implemented
+    description: Scans local client/server logs against signature catalog and queues resolvable findings.
+    tool: ai-system/tools/Invoke-AILogIntelligence.ps1
+  - id: watched_state_baseline
+    status: implemented
+    description: Tracks hashes for selected AI, live-state, and server-project files to detect drift between cycles.
+    tool: ai-system/tools/Invoke-AIWatchedState.ps1
+  - id: general_ai_os_identity
+    status: implemented
+    description: Defines the system as a multi-purpose local AI operating system rather than only a WoW control plane.
+  - id: artificial_organization
+    status: implemented
+    description: Adds hierarchy, authority levels, consensus, executive operating model, and team formation.
+  - id: pluggable_agent_registry
+    status: implemented
+    description: Defines human, Codex-style, GPT-style, research, observer, and governance agents with authority and capabilities.
+  - id: multi_model_orchestration
+    status: specified
+    description: Defines provider-neutral routing for Codex-like local engineering, GPT-style reasoning, research, diagnostics, and governance review.
+  - id: project_brains
+    status: implemented
+    description: Registers multiple managed projects and makes WoW the first project brain under a general AI-OS.
+  - id: institutional_training
+    status: implemented
+    description: Defines curriculum, feedback loop, training data policy, and evaluation rubric for improving agent operation.
+  - id: reputation_and_trust
+    status: specified
+    description: Tracks general reputation and domain-specific trust for agents and model routing.
+  - id: runtime_api_contract
+    status: specified
+    description: Defines future API, service map, event bus, and state machine for executable AI-OS runtime.
+  - id: open_model_archaeology
+    status: implemented
+    description: Tracks primary-source evidence, license status, and extracted architecture/capability lessons from open model families.
+  - id: target_ai_architecture
+    status: implemented
+    description: Defines the reconstructed local AI-OS target across model routing, memory, tools, multimodal work, repository coding, research, and Windows agent operation.
+  - id: contextual_work_iq
+    status: specified
+    description: Defines how agents choose relevant memory, project context, risk level, tools, verification, and handoff content.
+  - id: windows_agent_platform
+    status: specified
+    description: Defines permissioned local computer operation, visual state reading, localized editing, checkpoints, and rollback policy for Windows.
+  - id: deep_research_engine
+    status: specified
+    description: Defines source search, reliability scoring, contradiction detection, citation-bound synthesis, and project memory updates.
+  - id: repository_scale_coding_agent
+    status: specified
+    description: Defines future repository graph, edit localization, test selection, patch generation, review, and rollback loops.

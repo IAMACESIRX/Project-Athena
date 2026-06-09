@@ -1,0 +1,13 @@
+﻿{
+    "schema":  "ai-system.live_probe.v1",
+    "generated_at":  "2026-06-03T15:33:03.5021955+10:00",
+    "project_root":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
+    "server_path":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035\\WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots",
+    "docker_available":  false,
+    "docker_version":  "docker command not found",
+    "compose_ps":  null,
+    "logs":  [
+
+             ],
+    "mutates_live_state":  false
+}

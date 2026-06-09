@@ -1,0 +1,57 @@
+schema: ai-system.agent_registry.v1
+updated: 2026-06-03
+agents:
+  - id: human-owner
+    type: human
+    role: final_authority
+    authority_level: L5
+    capabilities:
+      - direction
+      - approval
+      - risk_acceptance
+  - id: codex-local-engineer
+    type: coding_agent
+    role: local_filesystem_engineer
+    authority_level: L3
+    capabilities:
+      - code_editing
+      - repository_navigation
+      - local_tool_execution
+      - diagnostics
+      - documentation
+  - id: gpt-reasoner
+    type: conversational_reasoning_agent
+    role: broad_reasoning_and_planning
+    authority_level: L2
+    capabilities:
+      - strategy
+      - explanation
+      - ideation
+      - debate
+      - synthesis
+  - id: research-agent
+    type: specialist_agent
+    role: research_and_source_review
+    authority_level: L1
+    capabilities:
+      - source_triage
+      - evidence_summary
+      - unknown_tracking
+  - id: observer-agent
+    type: diagnostic_agent
+    role: scan_log_probe_and_report
+    authority_level: L1
+    capabilities:
+      - project_scan
+      - log_intelligence
+      - forensic_verification
+      - watched_state
+  - id: governance-agent
+    type: review_agent
+    role: policy_risk_and_audit_gate
+    authority_level: L2
+    capabilities:
+      - policy_check
+      - risk_classification
+      - audit_review
+

@@ -1,0 +1,111 @@
+schema: ai-system.target_ai.capability_roadmap.v1
+updated: 2026-06-03
+phases:
+  - id: phase-0-control-plane
+    name: Control Plane Foundation
+    status: active
+    outcomes:
+      - project_maps
+      - generated_ai_index
+      - operation_cycle
+      - handoff_and_audit_ledgers
+      - local_git_layers
+  - id: phase-1-model-archaeology
+    name: Open Model Deconstruction Lab
+    status: active
+    outcomes:
+      - source_ledger
+      - capability_matrix
+      - deconstruction_protocol
+      - target_architecture
+      - evaluation_benchmarks
+  - id: phase-2-router-and-memory
+    name: Router And Memory Substrate
+    status: planned
+    build_items:
+      - model_router_with_fast_deep_vision_code_research_modes
+      - hardware_aware_model_fit_and_serving_cookbook
+      - unified_context_iq_memory_index
+      - source_labeled_claim_store
+      - semantic_compression_queue
+      - retrieval_policy_by_task_type
+  - id: phase-3-repo_agent
+    name: Repository-Scale Coding Agent
+    status: planned
+    build_items:
+      - repository_graph_builder
+      - edit_localization_engine
+      - test_selection_engine
+      - patch_generation_protocol
+      - review_and_rollback_protocol
+  - id: phase-4-windows_agent_platform
+    name: Windows Agent Platform
+    status: planned
+    build_items:
+      - screenshot_and_visual_state_reader
+      - local_app_action_contract
+      - file_type_router
+      - localized_annotation_protocol
+      - active_operation_permission_gate
+  - id: phase-5-deep_research_engine
+    name: Deep Research Engine
+    status: planned
+    build_items:
+      - query_planner
+      - source_fetcher
+      - source_reliability_scorer
+      - contradiction_detector
+      - citation_bound_synthesis
+      - research_memory_pack
+  - id: phase-6-autonomous_background_work
+    name: Background Autonomous Work
+    status: planned
+    build_items:
+      - long_running_task_state_machine
+      - heartbeat_reports
+      - checkpoint_restore
+      - drift_detector
+      - human_escalation_policy
+  - id: phase-7-self_hosted_workspace
+    name: Self-Hosted AI Workspace
+    status: planned
+    build_items:
+      - local_provider_settings
+      - documents_email_calendar_notes_tasks_surfaces
+      - deep_research_reports
+      - blind_model_compare
+      - model_cookbook_download_and_serve_jobs
+      - admin_console_security_gates
+      - gitignored_runtime_data_store
+capability_targets:
+  coding:
+    target: repo_level_patch_planning_execution_and_review
+    inspired_by:
+      - qwen_code
+      - kimi_agentic_coding
+      - glm_agentic_engineering
+      - deepseek_agentic_coding
+  multimodal:
+    target: understand_and_edit_screenshots_documents_diagrams_images_and_ui_state
+    inspired_by:
+      - qwen_vision_language
+      - kimi_visual_agents
+      - minimax_native_multimodality
+  research:
+    target: deep_web_searching_with_citations_contradiction_checks_and_project_memory_updates
+    inspired_by:
+      - kimi_deepsearchqa_tooling
+      - glm_browsecomp
+      - deepseek_hle_with_tools
+  memory:
+    target: short_term_long_term_interchat_project_and_cold_storage_memory
+    inspired_by:
+      - long_context_context_management_patterns
+      - semantic_compression
+      - project_brains
+  local_operation:
+    target: windows_as_agent_platform_with_permissioned_actions_and_rollback
+    inspired_by:
+      - osworld_style_tasks
+      - terminal_bench
+      - codex_local_tooling

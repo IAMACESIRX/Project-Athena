@@ -1,0 +1,18 @@
+schema: ai-system.counterfactual_ledger.v1
+updated: 2026-06-03
+items:
+  - id: CF-001
+    scenario: "Full client payload is committed without enough disk space."
+    likely_effect: "Git object storage consumes remaining disk and future operations fail."
+    detection_signal: "Low disk space during or after commit."
+    mitigation: "Use targeted tracking or external storage plan."
+  - id: CF-002
+    scenario: "Restore imports SQL with localhost realm address for LAN clients."
+    likely_effect: "LAN clients cannot log in cleanly."
+    detection_signal: "Client can auth but cannot reach worldserver."
+    mitigation: "Set realm address after restore."
+  - id: CF-003
+    scenario: "AI cannot access prior chat context."
+    likely_effect: "Repeated discovery and possible rule violations."
+    detection_signal: "Agent asks already-solved questions or misses local-only policy."
+    mitigation: "Use AI-PORTAL and continuity handoff packets."

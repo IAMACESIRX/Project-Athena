@@ -1,0 +1,116 @@
+﻿{
+    "schema":  "ai-system.project_map.v1",
+    "generated_at":  "2026-06-03T20:50:36.3801211+10:00",
+    "project_root":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
+    "nodes":  [
+                  {
+                      "id":  "mega",
+                      "path":  ".",
+                      "type":  "orchestrator_repo",
+                      "exists":  true,
+                      "head":  "ad84c72",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "ai-system",
+                      "path":  "ai-system",
+                      "type":  "control_plane",
+                      "exists":  true,
+                      "head":  "ad84c72",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "game-client",
+                      "path":  "GameClient-ChromieCraft-3.3.5a",
+                      "type":  "client_repo",
+                      "exists":  true,
+                      "head":  "a2508eb",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "live-state",
+                      "path":  "Server-Live-State",
+                      "type":  "state_repo",
+                      "exists":  true,
+                      "head":  "6c66e8f",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "server-project",
+                      "path":  "WoW-Server-Project",
+                      "type":  "project_repo",
+                      "exists":  true,
+                      "head":  "833f12f",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "azerothcore-clean",
+                      "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk",
+                      "type":  "nested_source_repo",
+                      "exists":  true,
+                      "head":  "a73b1b2",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "azerothcore-playerbots",
+                      "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots",
+                      "type":  "nested_source_repo",
+                      "exists":  true,
+                      "head":  "e98e7a9",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "mod-playerbots",
+                      "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots\\modules\\mod-playerbots",
+                      "type":  "nested_module_repo",
+                      "exists":  true,
+                      "head":  "1041b0b",
+                      "file_count":  null,
+                      "size_mb":  null
+                  }
+              ],
+    "edges":  [
+                  {
+                      "from":  "mega",
+                      "to":  "ai-system",
+                      "relation":  "contains"
+                  },
+                  {
+                      "from":  "mega",
+                      "to":  "game-client",
+                      "relation":  "points_to"
+                  },
+                  {
+                      "from":  "mega",
+                      "to":  "live-state",
+                      "relation":  "points_to"
+                  },
+                  {
+                      "from":  "mega",
+                      "to":  "server-project",
+                      "relation":  "points_to"
+                  },
+                  {
+                      "from":  "server-project",
+                      "to":  "azerothcore-clean",
+                      "relation":  "points_to"
+                  },
+                  {
+                      "from":  "server-project",
+                      "to":  "azerothcore-playerbots",
+                      "relation":  "points_to"
+                  },
+                  {
+                      "from":  "azerothcore-playerbots",
+                      "to":  "mod-playerbots",
+                      "relation":  "contains_module"
+                  }
+              ]
+}

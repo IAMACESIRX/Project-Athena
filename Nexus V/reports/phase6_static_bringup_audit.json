@@ -1,0 +1,238 @@
+{
+  "root": "/mnt/data/nexus_v_canonical_repo_v0_1",
+  "file_count": 62,
+  "package_count": 8,
+  "module_count": 54,
+  "packages": {
+    "nvisc_pkg": [
+      "rtl/phase0/nvisc_pkg.sv"
+    ],
+    "nvisc_rsm_pkg": [
+      "rtl/rsm_rollback/nvisc_rsm_pkg.sv"
+    ],
+    "nvisc_aegis_pkg": [
+      "rtl/aegis_phase1/nvisc_aegis_pkg.sv"
+    ],
+    "nvisc_topology_pkg": [
+      "rtl/topology_phase3/nvisc_topology_pkg.sv"
+    ],
+    "nvisc_tensor_pkg": [
+      "rtl/tensor_phase4/nvisc_tensor_pkg.sv"
+    ],
+    "nvisc_quantum_pkg": [
+      "rtl/quantum_phase5/nvisc_quantum_pkg.sv"
+    ],
+    "nexus_v_soc_pkg": [
+      "rtl/integration/nexus_v_soc_pkg.sv"
+    ],
+    "nexus_v_soc_verification_pkg": [
+      "tb/nexus_v_soc_verification_pkg.sv"
+    ]
+  },
+  "modules": {
+    "nexus_v_phase0_core": [
+      "rtl/phase0/nexus_v_phase0_core.sv"
+    ],
+    "nvisc_alu_slice": [
+      "rtl/phase0/nvisc_alu_slice.sv"
+    ],
+    "nvisc_regfile": [
+      "rtl/phase0/nvisc_regfile.sv"
+    ],
+    "nvisc_rhombic_dodeca_router_v0": [
+      "rtl/phase0/nvisc_rhombic_dodeca_router_v0.sv"
+    ],
+    "nvisc_route_mux_node": [
+      "rtl/phase0/nvisc_route_mux_node.sv"
+    ],
+    "nvisc_route_req_arbiter": [
+      "rtl/phase0/nvisc_route_req_arbiter.sv"
+    ],
+    "nvisc_routing_unit": [
+      "rtl/phase0/nvisc_routing_unit.sv"
+    ],
+    "nvisc_state_token_if": [
+      "rtl/phase0/nvisc_state_token_if.sv"
+    ],
+    "nvisc_rsm_branch_meta_table": [
+      "rtl/rsm_phase1/nvisc_rsm_branch_meta_table.sv"
+    ],
+    "nvisc_rsm_controller_phase1": [
+      "rtl/rsm_phase1/nvisc_rsm_controller_phase1.sv"
+    ],
+    "nvisc_rsm_cow_map": [
+      "rtl/rsm_phase1/nvisc_rsm_cow_map.sv"
+    ],
+    "nvisc_rsm_phys_alloc": [
+      "rtl/rsm_phase1/nvisc_rsm_phys_alloc.sv"
+    ],
+    "nvisc_rsm_state_meta_table": [
+      "rtl/rsm_phase1/nvisc_rsm_state_meta_table.sv"
+    ],
+    "nvisc_rsm_controller_phase1_rollback": [
+      "rtl/rsm_rollback/nvisc_rsm_controller_phase1_rollback.sv"
+    ],
+    "nvisc_rsm_delta_log": [
+      "rtl/rsm_rollback/nvisc_rsm_delta_log.sv"
+    ],
+    "nvisc_rsm_rollback_fsm": [
+      "rtl/rsm_rollback/nvisc_rsm_rollback_fsm.sv"
+    ],
+    "nvisc_aegis_attest_token_unit": [
+      "rtl/aegis_phase1/nvisc_aegis_attest_token_unit.sv"
+    ],
+    "nvisc_aegis_commit_gate": [
+      "rtl/aegis_phase1/nvisc_aegis_commit_gate.sv"
+    ],
+    "nvisc_aegis_enclave": [
+      "rtl/aegis_phase1/nvisc_aegis_enclave.sv"
+    ],
+    "nvisc_aegis_minrep_generator": [
+      "rtl/aegis_phase1/nvisc_aegis_minrep_generator.sv"
+    ],
+    "nvisc_aegis_trust_telemetry_aggregator": [
+      "rtl/aegis_phase1/nvisc_aegis_trust_telemetry_aggregator.sv"
+    ],
+    "nvisc_poly_crossbar": [
+      "rtl/topology_phase3/nvisc_poly_crossbar.sv"
+    ],
+    "nvisc_rhombic_dodeca_fabric_v0": [
+      "rtl/topology_phase3/nvisc_rhombic_dodeca_fabric_v0.sv"
+    ],
+    "nvisc_route_compute_unit": [
+      "rtl/topology_phase3/nvisc_route_compute_unit.sv"
+    ],
+    "nvisc_router_node": [
+      "rtl/topology_phase3/nvisc_router_node.sv"
+    ],
+    "nvisc_topology_token_table": [
+      "rtl/topology_phase3/nvisc_topology_token_table.sv"
+    ],
+    "nvisc_tensor_compute_unit": [
+      "rtl/tensor_phase4/nvisc_tensor_compute_unit.sv"
+    ],
+    "nvisc_tensor_descriptor_table": [
+      "rtl/tensor_phase4/nvisc_tensor_descriptor_table.sv"
+    ],
+    "nvisc_tensor_dispatch_unit": [
+      "rtl/tensor_phase4/nvisc_tensor_dispatch_unit.sv"
+    ],
+    "nvisc_tensor_node_array_16": [
+      "rtl/tensor_phase4/nvisc_tensor_node_array_16.sv"
+    ],
+    "nvisc_tensor_npu_engine": [
+      "rtl/tensor_phase4/nvisc_tensor_npu_engine.sv"
+    ],
+    "nvisc_tensor_numeric_integrity_unit": [
+      "rtl/tensor_phase4/nvisc_tensor_numeric_integrity_unit.sv"
+    ],
+    "nvisc_tensor_reduce_fold_unit": [
+      "rtl/tensor_phase4/nvisc_tensor_reduce_fold_unit.sv"
+    ],
+    "nvisc_tensor_route_adapter": [
+      "rtl/tensor_phase4/nvisc_tensor_route_adapter.sv"
+    ],
+    "nvisc_tensor_scratchpad": [
+      "rtl/tensor_phase4/nvisc_tensor_scratchpad.sv"
+    ],
+    "nvisc_tensor_tile_scheduler": [
+      "rtl/tensor_phase4/nvisc_tensor_tile_scheduler.sv"
+    ],
+    "nvisc_qhw_bridge_stub": [
+      "rtl/quantum_phase5/nvisc_qhw_bridge_stub.sv"
+    ],
+    "nvisc_qreg_file": [
+      "rtl/quantum_phase5/nvisc_qreg_file.sv"
+    ],
+    "nvisc_qsim_state_bank": [
+      "rtl/quantum_phase5/nvisc_qsim_state_bank.sv"
+    ],
+    "nvisc_quantum_collapse_register": [
+      "rtl/quantum_phase5/nvisc_quantum_collapse_register.sv"
+    ],
+    "nvisc_quantum_control_fsm": [
+      "rtl/quantum_phase5/nvisc_quantum_control_fsm.sv"
+    ],
+    "nvisc_quantum_domain_engine": [
+      "rtl/quantum_phase5/nvisc_quantum_domain_engine.sv"
+    ],
+    "nvisc_quantum_gate_unit": [
+      "rtl/quantum_phase5/nvisc_quantum_gate_unit.sv"
+    ],
+    "nvisc_quantum_measure_unit": [
+      "rtl/quantum_phase5/nvisc_quantum_measure_unit.sv"
+    ],
+    "nvisc_quantum_token_table": [
+      "rtl/quantum_phase5/nvisc_quantum_token_table.sv"
+    ],
+    "is": [
+      "rtl/integration/nexus_v_soc.sv"
+    ],
+    "nexus_v_soc": [
+      "rtl/integration/nexus_v_soc.sv"
+    ],
+    "nvisc_assertions": [
+      "tb/nvisc_assertions.sv"
+    ],
+    "nvisc_fault_injector": [
+      "tb/nvisc_fault_injector.sv"
+    ],
+    "nvisc_soc_driver": [
+      "tb/nvisc_soc_driver.sv"
+    ],
+    "nvisc_soc_monitor": [
+      "tb/nvisc_soc_monitor.sv"
+    ],
+    "nvisc_soc_scoreboard": [
+      "tb/nvisc_soc_scoreboard.sv"
+    ],
+    "nvisc_trace_checker": [
+      "tb/nvisc_trace_checker.sv"
+    ],
+    "tb_nexus_v_soc": [
+      "tb/tb_nexus_v_soc.sv"
+    ]
+  },
+  "simulators_available": {
+    "verilator": false,
+    "iverilog": false,
+    "vcs": false,
+    "vsim": false,
+    "xsim": false
+  },
+  "verilator_result": null,
+  "capability_status": {
+    "phase0_core": true,
+    "rsm_controller": true,
+    "rsm_rollback": true,
+    "aegis_enclave": true,
+    "topology_fabric": true,
+    "tensor_npu": true,
+    "quantum_domain": true,
+    "soc_top": true,
+    "soc_tb": true,
+    "full_program": true
+  },
+  "required_term_coverage": {
+    "branch_id": 27,
+    "state_id": 27,
+    "commit_id": 14,
+    "topology_epoch": 14,
+    "thermal_epoch": 14,
+    "audit": 13,
+    "rollback": 20,
+    "route": 21,
+    "tensor": 15,
+    "quantum": 12,
+    "minrep": 5,
+    "attest": 5
+  },
+  "issues": [],
+  "warnings": [
+    {
+      "severity": "warning",
+      "issue": "No SystemVerilog simulator/linter found in container; Verilator/Icarus/Questa/VCS/XSIM execution skipped."
+    }
+  ],
+  "status": "static_audit_passed_lint_not_executed"
+}

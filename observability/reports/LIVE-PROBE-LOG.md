@@ -1,0 +1,2 @@
+﻿- 2026-06-03T15:31:52.2380250+10:00: docker_available=False; server_path=C:\Users\aesir\OneDrive\Desktop\WoW-Backups\2026-05-30_2035\WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots
+- 2026-06-03T15:33:03.5021955+10:00: docker_available=False; server_path=C:\Users\aesir\OneDrive\Desktop\WoW-Backups\2026-05-30_2035\WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots

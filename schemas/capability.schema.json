@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.capability.v1",
+  "type": "object",
+  "required": ["id", "status", "description"],
+  "properties": {
+    "id": { "type": "string" },
+    "status": { "enum": ["implemented", "scaffolded", "specified", "blocked"] },
+    "description": { "type": "string" },
+    "tool": { "type": "string" },
+    "inputs": { "type": "array", "items": { "type": "string" } },
+    "outputs": { "type": "array", "items": { "type": "string" } },
+    "requires_confirmation": { "type": "boolean" }
+  }
+}

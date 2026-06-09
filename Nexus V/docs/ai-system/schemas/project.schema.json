@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.project.v1",
+  "type": "object",
+  "required": ["id", "name", "status", "project_brain", "evidence_namespace"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "status": { "type": "string" },
+    "project_brain": { "type": "string" },
+    "evidence_namespace": { "type": "string" },
+    "local_only": { "type": "boolean" },
+    "root": { "type": "string" },
+    "managed_layers": { "type": "array", "items": { "type": "string" } }
+  }
+}
+

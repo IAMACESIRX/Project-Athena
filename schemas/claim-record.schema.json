@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.claim_record.v1",
+  "type": "object",
+  "required": ["claim_id", "summary", "status", "confidence"],
+  "properties": {
+    "claim_id": { "type": "string", "pattern": "^CLM-WOW-[A-Z0-9-]+$" },
+    "summary": { "type": "string" },
+    "status": { "enum": ["active", "retired", "contradicted", "provisional", "unknown"] },
+    "confidence": { "enum": ["high", "medium", "low", "unknown"] },
+    "owner": { "type": "string" },
+    "notes": { "type": "string" }
+  }
+}
+

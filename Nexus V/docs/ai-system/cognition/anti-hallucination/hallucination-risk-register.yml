@@ -1,0 +1,15 @@
+schema: ai-system.hallucination_risk_register.v1
+updated: 2026-06-03
+risks:
+  - id: HAL-001
+    risk: "Assuming Docker is installed or running."
+    mitigation: "Run live probe and label result as current-shell observation."
+  - id: HAL-002
+    risk: "Assuming game client payload is protected by Git."
+    mitigation: "Remember client payload is untracked unless tracking strategy changes."
+  - id: HAL-003
+    risk: "Treating subtext inference as explicit user instruction."
+    mitigation: "Label confidence and ask when action would be risky."
+  - id: HAL-004
+    risk: "Confusing correlation with causation."
+    mitigation: "Use causation boundary and truth pipeline."

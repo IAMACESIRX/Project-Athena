@@ -1,0 +1,13 @@
+schema: ai-system.compression_ledger.v1
+updated: 2026-06-03
+items:
+  - id: COMP-001
+    source: "Repeated user requests for AI continuity systems."
+    compressed_meaning: "Build local-first long-term project memory, audit, causality, restore, and multi-agent handoff infrastructure."
+    preserved:
+      - local-only
+      - every-change tracking
+      - reversibility
+      - chat handoff
+      - long-term memory
+    storage: "continuity/distilled-context/project-continuity.md"

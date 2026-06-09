@@ -1,0 +1,23 @@
+.module "bridge_demo"
+.version "0.1"
+.arch "NVISC-v0.1"
+.target "NVVM"
+.entry main
+
+.section .text
+main:
+    B.LOAD r1, [input]
+    S.SNAP s0
+    S.BRANCH @branch.a from s0
+    B.ADD r2, r1, 10
+    S.SCORE @branch.a, r2
+    G.ROUTE @node.0, @node.7, policy=ROUTE_FAST
+    T.TMATMUL t2, t0, t1
+    Q.QALLOC q0, qubits=1
+    Q.QPREP q0, |0>
+    Q.QGATE q0, H
+    Q.QMEASURE q0 -> r3
+    Q.QSYNC r3, %state.current
+    A.AUDIT %state.current, @policy.safe_commit -> p0
+    S.COMMIT %state.current
+    B.HALT

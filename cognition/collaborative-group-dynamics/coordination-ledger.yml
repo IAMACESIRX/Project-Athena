@@ -1,0 +1,13 @@
+schema: ai-system.coordination_ledger.v1
+updated: 2026-06-03
+coordination_patterns:
+  - id: CGD-001
+    pattern: "Human sets direction, AI builds system, audit records result."
+    applies_to:
+      - ai-system expansion
+      - local git stack
+  - id: CGD-002
+    pattern: "Specialist council advises; human remains project owner."
+    applies_to:
+      - high-risk runtime decisions
+      - architecture decisions

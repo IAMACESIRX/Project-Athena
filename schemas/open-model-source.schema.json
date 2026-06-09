@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.open-model-source.v1",
+  "title": "Open Model Source Record",
+  "type": "object",
+  "required": ["id", "family", "model", "status", "primary_sources", "license_status", "extracted_claims"],
+  "properties": {
+    "id": { "type": "string" },
+    "family": { "type": "string" },
+    "model": { "type": "string" },
+    "status": { "type": "string" },
+    "primary_sources": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "minItems": 1
+    },
+    "license_status": { "type": "string" },
+    "extracted_claims": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "caution": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

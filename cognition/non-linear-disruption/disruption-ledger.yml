@@ -1,0 +1,11 @@
+schema: ai-system.disruption_ledger.v1
+updated: 2026-06-03
+entries:
+  - id: NLD-001
+    stuck_pattern: "Repeated manual repo scans."
+    disruption: "Create an AI project scan tool and generated index."
+    result: "Implemented Invoke-AIProjectScan.ps1 and generated-ai-index.json."
+  - id: NLD-002
+    stuck_pattern: "Chat context disappears between agents."
+    disruption: "Create chat handoff and continuity packets."
+    result: "Implemented New-ChatHandoff.ps1 and continuity folders."

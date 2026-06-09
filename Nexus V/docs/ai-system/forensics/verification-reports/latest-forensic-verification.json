@@ -1,0 +1,15 @@
+﻿{
+    "schema":  "ai-system.forensic_verification.v1",
+    "generated_at":  "2026-06-03T20:49:05.6516722+10:00",
+    "project_root":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
+    "status":  "PASS",
+    "evidence_count":  17,
+    "claim_count":  13,
+    "evidence_claim_link_count":  16,
+    "timeline_event_count":  6,
+    "known_unknown_count":  4,
+    "issue_count":  0,
+    "issues":  [
+
+               ]
+}

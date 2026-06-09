@@ -1,0 +1,31 @@
+schema: ai-system.project_registry.v1
+updated: 2026-06-03
+projects:
+  - id: wow-backup-stack
+    name: WoW Backup Stack
+    status: active_primary
+    project_brain: ai-system/projects/wow-backup-stack/project-brain.md
+    evidence_namespace: EVD-WOW
+    local_only: true
+    root: C:/Users/aesir/OneDrive/Desktop/WoW-Backups/2026-05-30_2035
+    managed_layers:
+      - mega
+      - game-client
+      - live-state
+      - server-project
+      - nested-azerothcore
+  - id: general-ai-os
+    name: General AI-OS Control Plane
+    status: active_foundation
+    project_brain: ai-system/projects/general-ai-os/project-brain.md
+    evidence_namespace: EVD-AIOS
+    local_only: true
+    managed_layers:
+      - identity
+      - organization
+      - agents
+      - orchestration
+      - memory
+      - training
+      - runtime
+

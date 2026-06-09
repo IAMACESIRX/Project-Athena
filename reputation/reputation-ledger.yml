@@ -1,0 +1,14 @@
+schema: ai-system.reputation_ledger.v1
+updated: 2026-06-03
+agents:
+  - id: codex-local-engineer
+    accuracy: unknown
+    reliability: provisional
+    audit_compliance: provisional
+    notes: Baseline pending repeated evaluated cycles.
+  - id: gpt-reasoner
+    accuracy: unknown
+    reliability: provisional
+    audit_compliance: provisional
+    notes: Provider/model-specific scoring should be added when plugged in.
+

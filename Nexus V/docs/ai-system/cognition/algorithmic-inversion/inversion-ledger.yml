@@ -1,0 +1,19 @@
+schema: ai-system.inversion_ledger.v1
+updated: 2026-06-03
+items:
+  - id: INV-001
+    target: "LAN clients successfully connect after restore."
+    backward_chain:
+      - "Client reaches worldserver."
+      - "Auth database realmlist advertises reachable LAN address."
+      - "Restore flow sets realm address after importing acore_auth.sql."
+    verification: "Check acore_auth.realmlist after restore and compare client realmlist."
+    status: candidate
+  - id: INV-002
+    target: "AI can continue after context loss."
+    backward_chain:
+      - "AI reads AI-PORTAL."
+      - "AI reads latest scan and handoff packet."
+      - "Prior session created chat handoff and audit event."
+    verification: "Run New-ChatHandoff.ps1 and inspect generated packet."
+    status: implemented_pattern

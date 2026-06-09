@@ -1,0 +1,80 @@
+schema: ai-system.organization_hierarchy.v1
+updated: 2026-06-03
+layers:
+  - level: 0
+    id: human
+    role: final_authority
+    responsibilities:
+      - goals
+      - values
+      - acceptable_risk
+      - final_direction
+  - level: 1
+    id: board
+    role: strategic_oversight
+    responsibilities:
+      - mission_protection
+      - drift_detection
+      - major_review
+  - level: 2
+    id: executive
+    role: objective_and_priority_control
+    responsibilities:
+      - strategy
+      - resource_allocation
+      - priority_setting
+      - final_ai_recommendation
+  - level: 3
+    id: reasoning_council
+    role: structured_understanding
+    responsibilities:
+      - who_what_when_where_why_how
+      - counterfactuals
+      - debate
+      - evidence_review
+  - level: 4
+    id: governance
+    role: policy_and_safety
+    responsibilities:
+      - constitution_enforcement
+      - risk_gate
+      - audit_requirements
+  - level: 5
+    id: coordination
+    role: routing_and_scheduling
+    responsibilities:
+      - task_assignment
+      - agent_team_formation
+      - dependency_tracking
+  - level: 6
+    id: management
+    role: delivery_tracking
+    responsibilities:
+      - status
+      - blockers
+      - quality_gates
+  - level: 7
+    id: operative_agents
+    role: execution
+    responsibilities:
+      - coding
+      - research
+      - diagnostics
+      - documentation
+      - data_processing
+  - level: 8
+    id: observation
+    role: audit_and_sensing
+    responsibilities:
+      - scans
+      - logs
+      - verification
+      - anomaly_detection
+  - level: 9
+    id: adaptive_meta
+    role: learning_and_evolution
+    responsibilities:
+      - lessons
+      - process_improvement
+      - capability_roadmap
+

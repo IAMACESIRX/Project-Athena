@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.message.v1",
+  "type": "object",
+  "required": ["message_id", "timestamp", "sender", "recipient", "message_type", "payload"],
+  "properties": {
+    "message_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "sender": { "type": "string" },
+    "recipient": { "type": "string" },
+    "project_id": { "type": "string" },
+    "task_id": { "type": "string" },
+    "priority": { "enum": ["low", "normal", "high", "urgent"] },
+    "message_type": {
+      "enum": ["request", "response", "observation", "decision", "audit", "escalation", "alert", "knowledge_update", "handoff"]
+    },
+    "confidence": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "payload": { "type": "string" }
+  }
+}
+

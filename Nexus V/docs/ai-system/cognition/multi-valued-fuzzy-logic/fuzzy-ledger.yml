@@ -1,0 +1,15 @@
+schema: ai-system.fuzzy_ledger.v1
+updated: 2026-06-03
+claims:
+  - id: FUZZ-001
+    claim: "Docker is unavailable."
+    truth_value: partially_true
+    confidence: 0.75
+    evidence: "Current shell live probe says docker command not found."
+    caveat: "May be available in another shell or after Docker Desktop install."
+  - id: FUZZ-002
+    claim: "Game client is protected by Git."
+    truth_value: partially_true
+    confidence: 0.75
+    evidence: "Repo has management commit, but payload is untracked."
+    caveat: "Only tracked files are protected by Git."

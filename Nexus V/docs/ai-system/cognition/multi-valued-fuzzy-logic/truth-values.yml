@@ -1,0 +1,30 @@
+schema: ai-system.truth_values.v1
+updated: 2026-06-03
+truth_values:
+  true:
+    meaning: "Direct evidence supports the claim."
+    action_policy: "Safe if action is otherwise allowed."
+  false:
+    meaning: "Direct evidence rejects the claim."
+    action_policy: "Do not act as if true."
+  unknown:
+    meaning: "No sufficient evidence."
+    action_policy: "Inspect or ask before action."
+  partially_true:
+    meaning: "Some parts are true, others unknown or false."
+    action_policy: "Act only on verified parts."
+  likely_true:
+    meaning: "Evidence suggests true but not verified."
+    action_policy: "Use cautiously."
+  likely_false:
+    meaning: "Evidence suggests false but not verified."
+    action_policy: "Use cautiously."
+  contradicted:
+    meaning: "Sources disagree."
+    action_policy: "Run reconciliation protocol."
+  stale:
+    meaning: "Was true before but may have changed."
+    action_policy: "Recheck."
+  not_applicable:
+    meaning: "Claim does not apply to this layer/context."
+    action_policy: "Do not force it."

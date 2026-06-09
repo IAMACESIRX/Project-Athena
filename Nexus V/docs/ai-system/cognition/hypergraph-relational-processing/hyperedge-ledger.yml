@@ -1,0 +1,20 @@
+schema: ai-system.hyperedge_ledger.v1
+updated: 2026-06-03
+hyperedges:
+  - id: HYP-001
+    summary: "Local-only policy links user instruction, remote configuration, governance, and audit."
+    nodes:
+      - user instruction
+      - git remotes
+      - governance absolutes
+      - audit ledger
+    action: "Keep cloud push blocked unless policy changes."
+  - id: HYP-002
+    summary: "Client login depends on client realmlist, auth DB realmlist, authserver, and worldserver."
+    nodes:
+      - game client
+      - realmlist.wtf
+      - acore_auth.realmlist
+      - authserver
+      - worldserver
+    action: "Use interaction map and restore address checks."

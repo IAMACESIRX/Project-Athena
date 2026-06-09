@@ -1,0 +1,81 @@
+schema: ai-system.target_ai.evaluation_benchmarks.v1
+updated: 2026-06-03
+benchmark_policy:
+  public_vendor_scores_are_claims_until_reproduced: true
+  local_project_tasks_are_primary_signal: true
+  require_artifacts_for_pass: true
+tracks:
+  repo_coding:
+    external_signals:
+      - SWE-Bench Verified
+      - SWE-Bench Pro
+      - Terminal-Bench
+      - NL2Repo
+      - LiveCodeBench
+    local_tests:
+      - map_repository_and_identify_edit_points
+      - produce_patch_with_tests
+      - explain_diff_with_file_references
+      - recover_from_failed_test
+      - avoid_touching_unrelated_user_changes
+  agentic_development:
+    external_signals:
+      - OSWorld
+      - MCP-Atlas
+      - Toolathlon
+      - BrowseComp
+    local_tests:
+      - run_operation_cycle_and_interpret_warnings
+      - create_resumable_task_state
+      - update_audit_and_memory_ledgers
+      - use_tools_only_within_declared_authority
+  long_context_documents:
+    external_signals:
+      - LongBench
+      - MRCR
+      - CorpusQA
+    local_tests:
+      - summarize_large_project_file_set
+      - build_claim_evidence_map
+      - preserve_source_attribution
+      - compress_context_without_losing_constraints
+  multimodal:
+    external_signals:
+      - MMMU
+      - visual_agent_tasks
+      - image_text_to_text_evals
+    local_tests:
+      - inspect_screenshot
+      - identify_ui_state
+      - annotate_localized_edit_request
+      - parse_diagram_or_table_image
+  data_analysis:
+    external_signals:
+      - spreadsheet_and_sql_reasoning_tasks
+      - chart_understanding_tasks
+    local_tests:
+      - summarize_csv_or_json
+      - generate_data_quality_report
+      - make_chart_or_table_artifact
+      - explain_result_without_hidden_code_dependency
+  research:
+    external_signals:
+      - DeepSearchQA
+      - BrowseComp
+      - HLE_with_tools
+    local_tests:
+      - gather_primary_sources
+      - separate_verified_from_unverified_claims
+      - cite_sources
+      - update_source_ledger
+scoring:
+  scale: 0_to_5
+  pass_threshold_for_low_risk_autonomy: 4
+  pass_threshold_for_repo_mutation: 4.5
+  required_dimensions:
+    - correctness
+    - evidence_grounding
+    - tool_safety
+    - reversibility
+    - context_retention
+    - useful_handoff

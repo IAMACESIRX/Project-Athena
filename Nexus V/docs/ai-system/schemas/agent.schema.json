@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.agent.v1",
+  "type": "object",
+  "required": ["id", "type", "role", "authority_level", "capabilities"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "role": { "type": "string" },
+    "authority_level": { "type": "string" },
+    "capabilities": { "type": "array", "items": { "type": "string" } },
+    "tools_allowed": { "type": "array", "items": { "type": "string" } },
+    "memory_access": { "type": "string" },
+    "parent_supervisor": { "type": "string" },
+    "trust_domains": { "type": "array", "items": { "type": "string" } }
+  }
+}
+

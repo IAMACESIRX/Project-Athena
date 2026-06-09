@@ -1,0 +1,43 @@
+schema: ai-system.entity_model.v1
+updated: 2026-06-03
+entities:
+  - id: mega_repo
+    type: git_repo
+    layer: mega
+    state:
+      - commit
+      - child_pointers
+      - ai_system_files
+  - id: game_client
+    type: filesystem_payload
+    layer: game-client
+    state:
+      - realmlist
+      - account_wtf
+      - addons
+      - reshade
+      - binary_payload
+  - id: live_state
+    type: database_backup
+    layer: live-state
+    state:
+      - auth_dump
+      - characters_dump
+      - world_dump
+      - playerbots_dump
+  - id: playerbots_server
+    type: runtime_stack
+    layer: playerbots-stack
+    state:
+      - docker_containers
+      - database
+      - authserver
+      - worldserver
+      - logs
+  - id: command_hub
+    type: application
+    layer: command-hub
+    state:
+      - routes
+      - command_logs
+      - risk_status

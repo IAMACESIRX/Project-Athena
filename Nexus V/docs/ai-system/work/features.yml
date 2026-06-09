@@ -1,0 +1,27 @@
+schema: ai-system.features.v1
+updated: 2026-06-03
+features:
+  - id: FEAT-001
+    title: Live server probe
+    status: scaffolded
+    layer: playerbots-stack
+    value: "Let AI read runtime status and logs non-destructively."
+    next_action: "Run Invoke-LiveServerProbe.ps1 when Docker target is available."
+  - id: FEAT-002
+    title: SQL dump inventory
+    status: planned
+    layer: live-state
+    value: "Track table counts, dump age, and restore coverage."
+    next_action: "Build read-only SQL dump parser/inventory script."
+  - id: FEAT-003
+    title: Client config inventory
+    status: planned
+    layer: game-client
+    value: "Track addons, realmlist, WTF accounts, and visual mods without scanning MPQs."
+    next_action: "Build targeted client inventory tool."
+  - id: FEAT-004
+    title: Command hub execution modules
+    status: specified
+    layer: command-hub
+    value: "Allow controlled AI actions through logged, confirmed command paths."
+    next_action: "Define first read-only module."

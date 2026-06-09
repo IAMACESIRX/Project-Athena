@@ -1,0 +1,177 @@
+define:
+
+Nexus-V Core Completeness Specification v0.2 and complete "[ ] Instruction fetch unit
+[ ] Instruction decoder
+[ ] Program counter / branch unit
+[ ] Control/status registers
+[ ] LSU
+[ ] MMU / TLB
+[ ] L1 instruction cache
+[ ] L1 data cache
+[ ] L2 cache
+[ ] Memory controller / AXI-like bus
+[ ] Interrupt controller
+[ ] Timer
+[ ] PLL / reset / clock-domain controller
+[ ] Conventional vector register file
+[ ] Vector ALU / SIMD execution unit
+[ ] multiple Nexus-V core instances
+[ ] per-core program counters
+[ ] per-core register files
+[ ] per-core state tokens
+[ ] shared RSM coherence model
+[ ] inter-core interrupt/signaling system
+[ ] shared L2/cache fabric
+[ ] memory consistency model
+[ ] branch/state ownership rules between cores
+[ ] Aegis per-core attestation IDs
+[ ] NVRT hardware/software scheduler for threads
+Phase 7: Conventional CPU Core Completion
+[ ] instruction fetch unit
+[ ] decoder/control unit
+[ ] program counter
+[ ] branch unit
+[ ] LSU
+[ ] MMU/TLB
+[ ] L1 instruction cache
+[ ] L1 data cache
+[ ] optional L2 interface
+[ ] CSR/control registers
+[ ] interrupt/timer inputs
+[ ] scalar register file cleanup
+[ ] optional vector register file
+[ ] per-thread program counter
+[ ] per-thread architectural register rename/map state
+[ ] per-thread state token
+[ ] per-thread branch token
+[ ] per-thread exception/interrupt state
+[ ] shared execution units
+[ ] thread scheduler / issue selector
+[ ] thread fairness and priority policy
+[ ] per-thread commit/rollback rules
+[ ] instruction sequencing
+[ ] dependency tracking
+[ ] issue queues
+[ ] reorder buffer
+[ ] branch prediction
+[ ] speculative execution
+[ ] state-token dependency rules
+[ ] RSM-safe retirement
+[ ] Aegis-safe commit gating
+[ ] rollback recovery
+[ ] multiple execution lanes
+[ ] integer ALU cluster
+[ ] branch unit
+[ ] LSU
+[ ] vector/SIMD unit
+[ ] tensor dispatch path
+[ ] route dispatch path
+[ ] quantum dispatch path
+[ ] commit/audit path
+[ ] timer interrupt
+[ ] interrupt controller
+[ ] privilege levels
+[ ] context switch support
+[ ] per-thread CSR bank
+[ ] page-table/MMU support
+[ ] process address spaces
+[ ] Aegis process trust context
+[ ] RSM branch ownership model
+[ ] instruction fetch queue
+[ ] branch predictor
+[ ] instruction decoder
+[ ] micro-op cache or decoded instruction cache
+[ ] rename table
+[ ] physical register file
+[ ] reorder buffer
+[ ] reservation stations
+[ ] load/store queue
+[ ] memory disambiguation
+[ ] multi-port register file
+[ ] bypass/forwarding network
+[ ] retire/commit unit
+[ ] token scoreboard
+[ ] branch-state dependency predictor
+[ ] route-token dependency tracker
+[ ] tensor job completion predictor
+[ ] Aegis commit-latency hiding
+[ ] RSM rollback recovery path
+[ ] cache lines know branch/state ownership
+[ ] sealed state lines cannot be mutated
+[ ] rollback invalidates speculative cache lines
+[ ] commit can promote cache lines
+[ ] COW faults interact with cache tags
+[ ] Aegis can quarantine dirty/untrusted lines
+[ ] valid/ready handshake
+[ ] transaction ID
+[ ] core ID
+[ ] thread ID
+[ ] branch ID
+[ ] state ID
+[ ] privilege level
+[ ] read/write/atomic op
+[ ] burst length
+[ ] fault response
+[ ] Aegis policy tag
+[ ] SRAM/BRAM controller for FPGA prototype
+[ ] DDR controller interface
+[ ] RSM page memory controller
+[ ] tensor scratchpad memory controller
+[ ] cache refill/writeback controller
+[ ] DMA controller
+[ ] secure/Aegis memory region controller
+[ ] memory scrubber / ECC controller
+[ ] instruction fetch
+[ ] decode/control unit
+[ ] program counter
+[ ] branch unit
+[ ] scalar register file cleanup
+[ ] LSU
+[ ] MMU/TLB
+[ ] L1I cache
+[ ] L1D cache
+[ ] CSR file
+[ ] interrupt/timer basics
+[ ] fetch queue
+[ ] branch predictor
+[ ] rename/scoreboard
+[ ] issue queue
+[ ] reorder buffer
+[ ] reservation stations
+[ ] bypass network
+[ ] load/store queue
+[ ] retire/commit unit
+[ ] token dependency scoreboard
+[ ] thread context table
+[ ] per-thread PC
+[ ] per-thread architectural state
+[ ] thread scheduler
+[ ] SMT issue selection
+[ ] per-thread RSM state root
+[ ] per-thread Aegis context
+[ ] thread-aware commit/rollback
+[ ] L1I
+[ ] L1D
+[ ] L2
+[ ] shared L3
+[ ] cache coherence
+[ ] RSM-aware cache tags
+[ ] memory controller
+[ ] ECC/scrubber
+[ ] core bus
+[ ] memory bus
+[ ] Aegis bus
+[ ] tensor bus
+[ ] topology bus
+[ ] quantum bus
+[ ] debug/trace bus
+[ ] transaction routing
+[ ] QoS / priority
+[ ] 8 core instances
+[ ] shared L3
+[ ] shared RSM service
+[ ] shared Aegis root
+[ ] shared tensor/topology/quantum accelerators
+[ ] inter-core interrupts
+[ ] cache coherence
+[ ] multicore branch/state ownership rules" and add all of this to its own documentation

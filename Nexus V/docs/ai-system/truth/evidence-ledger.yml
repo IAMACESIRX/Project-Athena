@@ -1,0 +1,15 @@
+schema: ai-system.evidence_ledger.v1
+updated: 2026-06-03
+evidence:
+  - id: EVID-20260603-LOCAL-REMOTES
+    claim: "Management repos use local remotes."
+    confidence: verified
+    source: "git remote -v checks"
+  - id: EVID-20260603-DOCKER-NOT-FOUND
+    claim: "Docker command is unavailable in current shell."
+    confidence: verified
+    source: "latest-live-probe.json"
+  - id: EVID-20260603-REALM-LOCALHOST
+    claim: "Live-state auth dump appears to contain localhost realmlist."
+    confidence: verified
+    source: "latest-scan.json"

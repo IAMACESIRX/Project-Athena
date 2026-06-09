@@ -1,0 +1,36 @@
+schema: ai-system.state_vectors.v1
+updated: 2026-06-03
+vectors:
+  git_health:
+    dimensions:
+      - clean_worktree
+      - local_remote
+      - child_pointer_consistency
+      - pushed_to_local_origin
+  restore_health:
+    dimensions:
+      - sql_files_present
+      - docker_available
+      - database_importable
+      - realm_address_valid
+      - client_login_valid
+  runtime_health:
+    dimensions:
+      - docker_running
+      - database_container_healthy
+      - authserver_running
+      - worldserver_running
+      - logs_error_free
+  ai_context_health:
+    dimensions:
+      - handoff_current
+      - scan_current
+      - registries_current
+      - work_items_current
+      - decisions_recorded
+  storage_health:
+    dimensions:
+      - free_space
+      - client_payload_strategy
+      - local_host_size
+      - duplicate_payload_awareness

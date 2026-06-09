@@ -1,0 +1,145 @@
+schema: ai-system.model_archaeology.source_ledger.v1
+updated: 2026-06-03
+policy:
+  allowed:
+    - read_official_model_cards
+    - read_official_docs_and_blogs
+    - inspect_open_weight_configs_when_licenses_allow
+    - benchmark_locally_or_in_sandbox_when_resources_allow
+    - extract_architectural_patterns_and_operational_lessons
+  forbidden:
+    - copying_closed_weights
+    - bypassing_license_terms
+    - treating_marketing_claims_as_verified_results
+    - reproducing proprietary chain-of-thought or hidden system prompts
+    - using benchmark claims without source labels
+sources:
+  - id: minimax-m3
+    family: MiniMax
+    model: MiniMax M3
+    status: announced_open_weight_verify_before_local_use
+    primary_sources:
+      - https://www.minimax.io/models/text/m3
+      - https://www.minimax.io/blog/minimax-m3
+      - https://huggingface.co/MiniMaxAI
+    license_status: pending_full_hf_github_release_at_time_of_research
+    extracted_claims:
+      - coding_and_agentic_benchmarks
+      - autonomous_task_decomposition
+      - tool_invocation
+      - multi_step_reasoning
+      - multimodal_support
+      - up_to_1m_context_on_platform
+      - private_cluster_deployment_and_finetuning_announced
+    caution:
+      - official_page_says_full_open_source_on_huggingface_and_github_is_soon
+      - verify_model_card_license_before_any_weight_use
+  - id: kimi-k2-6
+    family: Kimi
+    model: Kimi K2.6
+    status: official_open_source_model_card_available
+    primary_sources:
+      - https://www.kimi.com/ai-models/kimi-k2-6
+      - https://huggingface.co/moonshotai/Kimi-K2.6
+    license_status: verify_huggingface_license_before_weight_use
+    extracted_claims:
+      - native_multimodal_agentic_model
+      - long_horizon_coding
+      - coding_driven_design
+      - proactive_autonomous_execution
+      - swarm_based_task_orchestration
+      - vllm_sglang_ktransformers_deployment
+      - context_management_for_tool_augmented_tasks
+  - id: glm-5-1
+    family: GLM
+    model: GLM-5.1
+    status: official_docs_and_huggingface_model_card_available
+    primary_sources:
+      - https://docs.z.ai/guides/llm/glm-5.1
+      - https://huggingface.co/zai-org/GLM-5.1
+    license_status: verify_huggingface_license_before_weight_use
+    extracted_claims:
+      - long_horizon_tasks_up_to_8_hours
+      - autonomous_plan_execute_optimize_loop
+      - agentic_engineering
+      - repository_generation
+      - terminal_task_strength
+      - local_deployment_with_sglang_vllm_xllm_transformers_ktransformers
+  - id: qwen3-6-27b
+    family: Qwen
+    model: Qwen3.6-27B
+    status: official_huggingface_model_card_available
+    primary_sources:
+      - https://huggingface.co/Qwen/Qwen3.6-27B
+    license_status: apache_2_0_on_huggingface_model_card
+    extracted_claims:
+      - 27b_dense_open_weight_variant
+      - vision_language_input
+      - coding_stability_and_real_world_utility
+      - 262144_token_deployment_examples
+      - tool_calling_with_qwen3_coder_parser
+      - qwen_agent_and_qwen_code_support
+      - vllm_sglang_transformers_docker_deployment
+  - id: qwen3-5-397b-a17b
+    family: Qwen
+    model: Qwen3.5-397B-A17B
+    status: official_huggingface_model_card_available
+    primary_sources:
+      - https://huggingface.co/Qwen/Qwen3.5-397B-A17B
+    license_status: apache_2_0_on_huggingface_model_card
+    extracted_claims:
+      - 397b_total_17b_active_moe
+      - image_text_to_text
+      - unified_vision_language_foundation
+      - gated_delta_networks_plus_sparse_moe
+      - native_262144_context_extensible_to_1010000
+      - qwen_agent_and_qwen_code_support
+      - vllm_sglang_ktransformers_transformers_deployment
+  - id: deepseek-v4-flash
+    family: DeepSeek
+    model: DeepSeek V4-Flash
+    status: official_api_news_and_huggingface_model_card_available
+    primary_sources:
+      - https://api-docs.deepseek.com/news/news260424
+      - https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
+    license_status: mit_on_huggingface_model_card
+    extracted_claims:
+      - 284b_total_13b_active_moe
+      - 1m_context
+      - hybrid_attention_for_long_context_efficiency
+      - fp4_fp8_mixed_precision
+      - non_think_think_think_max_modes
+      - openai_and_anthropic_compatible_api
+      - strong_agentic_coding_and_reasoning_efficiency
+open_questions:
+  - id: oq-minimax-m3-license
+    question: When MiniMax M3 weights/code land on Hugging Face/GitHub, what exact license and deployment requirements apply?
+  - id: oq-local-hardware
+    question: Which model sizes can this workstation run locally without blocking the full project workflow?
+  - id: oq-eval-harness
+    question: Which benchmark subset best predicts our real repo-level coding and Windows-agent tasks?
+systems:
+  - id: odysseus
+    family: self_hosted_ai_workspace
+    repo: pewdiepie-archdaemon/odysseus
+    status: public_mit_repository
+    primary_sources:
+      - https://github.com/pewdiepie-archdaemon/odysseus
+      - https://github.com/pewdiepie-archdaemon/odysseus/blob/main/ROADMAP.md
+    license_status: mit_repository_license_on_github
+    extracted_claims:
+      - self_hosted_chatgpt_claude_like_workspace
+      - local_model_and_api_provider_support
+      - agent_mode_with_tools_mcp_web_files_shell_skills_memory
+      - cookbook_hardware_scan_model_fit_download_and_serve
+      - deep_research_visual_reports
+      - blind_model_compare
+      - documents_editor_with_ai_edits_and_suggestions
+      - persistent_memory_and_skills_with_chromadb_fastembed_vector_keyword_retrieval
+      - email_triage_notes_tasks_calendar_and_mobile_pwa
+      - docker_native_windows_linux_macos_install_paths
+      - local_first_security_and_admin_gating
+    caution:
+      - treat_shell_file_email_calendar_and_api_tokens_as_admin_console_capabilities
+      - keep_raw_services_internal_only
+      - do_not_expose_without_auth_https_and_private_access_layer

@@ -1,0 +1,6 @@
+"unknown_id","summary","status","priority","evidence_needed","owner","notes"
+"UNK-WOW-001","Current live server runtime state may be stale between probes.","open","high","Fresh live probe and log intelligence","observability","Do not infer live health from old reports."
+"UNK-WOW-002","Game client payload tracking strategy is unresolved due disk capacity.","open","medium","Storage plan and selective tracking policy","game-client","Metadata-only tracking is current posture."
+"UNK-WOW-003","Old Python venv path may be broken and needs toolchain decision.","open","medium","Python environment repair or replacement decision","server-project","Tracked by scans when pyvenv.cfg points to missing executable."
+"UNK-WOW-004","Exact dependency impact between nested AzerothCore repos and mod-playerbots needs deeper graphing.","open","medium","Source analysis and hypergraph edges","reverse-engineering","Use hypergraph relational processing."
+

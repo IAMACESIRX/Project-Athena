@@ -1,0 +1,15 @@
+schema: ai-system.correlation_ledger.v1
+updated: 2026-06-03
+correlations:
+  - id: COR-001
+    signal_a: "PowerShell execution policy blocks direct scripts."
+    signal_b: "Tool docs now use ExecutionPolicy Bypass."
+    relationship: "Script invocation docs must be Windows-policy-aware."
+    confidence: verified
+    next_test: "Run future tools using documented command form."
+  - id: COR-002
+    signal_a: "Disk free space below 80 GB."
+    signal_b: "Game client payload remains untracked."
+    relationship: "Storage pressure constrains client Git strategy."
+    confidence: verified
+    next_test: "Decide partial tracking or external backup."

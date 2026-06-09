@@ -1,0 +1,32 @@
+schema: ai-system.reverse_engineering_targets.v1
+updated: 2026-06-03
+targets:
+  - id: playerbots_runtime
+    priority: high
+    layer: playerbots-stack
+    question: "How do bot config variables affect runtime behavior?"
+    outputs:
+      - module update
+      - config map
+      - safe tuning playbook
+  - id: restore_flow
+    priority: high
+    layer: live-state
+    question: "What exact state is restored by the SQL dumps and scripts?"
+    outputs:
+      - restore drill report
+      - restore risk fix
+  - id: client_login_path
+    priority: high
+    layer: game-client
+    question: "How do client realmlist and auth DB realm address interact?"
+    outputs:
+      - interaction map update
+      - address verification tool
+  - id: command_hub
+    priority: medium
+    layer: command-hub
+    question: "How should commands become safe executable modules?"
+    outputs:
+      - command execution contract
+      - tests

@@ -1,0 +1,43 @@
+﻿{
+    "schema":  "ai-system.restore_point.v1",
+    "id":  "RP-20260603-154912-committed-continuity-system",
+    "name":  "committed-continuity-system",
+    "created_at":  "2026-06-03T15:49:13.3706482+10:00",
+    "created_tags":  false,
+    "included_bundles":  false,
+    "repos":  [
+                  {
+                      "id":  "mega",
+                      "path":  ".",
+                      "head":  "de2b338",
+                      "tag":  null,
+                      "status":  "## main...origin/main\n ? GameClient-ChromieCraft-3.3.5a"
+                  },
+                  {
+                      "id":  "game-client",
+                      "path":  "GameClient-ChromieCraft-3.3.5a",
+                      "head":  "a2508eb",
+                      "tag":  null,
+                      "status":  "## main...origin/main\n?? Battle.net.dll\n?? Data/\n?? DivxDecoder.dll\n?? Interface/\n?? ReShade.ini\n?? ReShadePreset.codex-backup-20260602-173332.ini\n?? ReShadePreset.ini\n?? Repair.exe\n?? Scan.dll\n?? WTF/\n?? Wow.exe\n?? WowError.exe\n?? backups/\n?? d3d10core.dll\n?? d3d11.dll\n?? d3d8.dll\n?? d3d9.dll\n?? dbghelp.dll\n?? dxgi.dll\n?? dxvk.conf\n?? ijl15.dll\n?? msvcr80.dll\n?? reshade-shaders/\n?? unicows.dll\n?? \"wow reshade.txt\""
+                  },
+                  {
+                      "id":  "live-state",
+                      "path":  "Server-Live-State",
+                      "head":  "6c66e8f",
+                      "tag":  null,
+                      "status":  "## main...origin/main"
+                  },
+                  {
+                      "id":  "server-project",
+                      "path":  "WoW-Server-Project",
+                      "head":  "833f12f",
+                      "tag":  null,
+                      "status":  "## main...origin/main"
+                  }
+              ],
+    "limitations":  [
+                        "Untracked game client payload is not protected by Git restore point.",
+                        "Git bundles include committed history only.",
+                        "Full filesystem backup requires separate storage target."
+                    ]
+}

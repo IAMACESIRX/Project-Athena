@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.cognition-output.v1",
+  "type": "object",
+  "required": ["system", "time", "problem", "output", "confidence", "evidence_label"],
+  "properties": {
+    "system": { "type": "string" },
+    "time": { "type": "string" },
+    "actor": { "type": "string" },
+    "layer": { "type": "string" },
+    "problem": { "type": "string" },
+    "output": { "type": "string" },
+    "confidence": {
+      "enum": ["verified", "plausible", "speculative", "contradicted", "needs_test"]
+    },
+    "evidence_label": {
+      "enum": ["direct", "scan", "file", "human_instruction", "inference", "none"]
+    },
+    "cross_check_needed": { "type": "boolean" },
+    "suggested_action": { "type": "string" },
+    "storage_decision": {
+      "enum": ["discard", "work_item", "research_note", "audit_event", "memory_promotion"]
+    }
+  }
+}

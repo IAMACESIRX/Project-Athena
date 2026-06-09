@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.hyperedge.v1",
+  "type": "object",
+  "required": ["id", "relation", "nodes", "confidence"],
+  "properties": {
+    "id": { "type": "string" },
+    "relation": { "type": "string" },
+    "nodes": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+    "confidence": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "missing_nodes": { "type": "array", "items": { "type": "string" } },
+    "action": { "type": "string" }
+  }
+}

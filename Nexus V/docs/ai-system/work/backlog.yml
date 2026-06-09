@@ -1,0 +1,31 @@
+schema: ai-system.backlog.v1
+updated: 2026-06-03
+items:
+  - id: TODO-001
+    type: todo
+    title: Recreate Python virtual environment
+    status: open
+    layer: server-project
+    priority: high
+    next_action: "Create fresh venv and install backend/requirements.txt."
+  - id: TODO-002
+    type: todo
+    title: Choose game client tracking strategy
+    status: open
+    layer: game-client
+    priority: high
+    next_action: "Decide config-only, LFS, full binary, or external mirror strategy."
+  - id: TODO-003
+    type: todo
+    title: Add restore drill
+    status: open
+    layer: live-state
+    priority: medium
+    next_action: "Run restore against disposable target and record result."
+  - id: TODO-004
+    type: todo
+    title: Add live server probe
+    status: open
+    layer: playerbots-stack
+    priority: medium
+    next_action: "Run non-destructive Docker/log probe and inspect report."

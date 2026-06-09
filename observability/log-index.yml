@@ -1,0 +1,31 @@
+schema: ai-system.log_index.v1
+updated: 2026-06-03
+logs:
+  - id: reshade_log
+    layer: game-client
+    path: GameClient-ChromieCraft-3.3.5a/ReShade.log
+    type: client_visual_runtime
+    sensitivity: low_private
+  - id: wow_d3d9_log
+    layer: game-client
+    path: GameClient-ChromieCraft-3.3.5a/Wow_d3d9.log
+    type: client_graphics_runtime
+    sensitivity: low_private
+  - id: db_import_container
+    layer: playerbots-stack
+    container: ac-db-import
+    command: docker logs ac-db-import --tail 100
+    type: server_import_runtime
+    sensitivity: medium
+  - id: worldserver_container
+    layer: playerbots-stack
+    container: ac-worldserver
+    command: docker logs ac-worldserver --tail 100
+    type: world_runtime
+    sensitivity: medium
+  - id: authserver_container
+    layer: playerbots-stack
+    container: ac-authserver
+    command: docker logs ac-authserver --tail 100
+    type: auth_runtime
+    sensitivity: medium

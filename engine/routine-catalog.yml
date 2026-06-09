@@ -1,0 +1,92 @@
+schema: ai-system.routine_catalog.v1
+updated: 2026-06-03
+source_patterns:
+  redwire_diagnostics:
+    adapted_functions:
+      - numbered_routine_cycle
+      - cycle_report
+      - governance_health_check
+      - state_baseline_tracking
+      - log_intelligence
+      - correction_queues
+    note: Functional pattern adapted only; Minecraft-specific content is not imported.
+  xavier_forensic_case_system:
+    adapted_functions:
+      - stable_evidence_ids
+      - evidence_register
+      - claim_catalog
+      - evidence_claim_map
+      - timeline
+      - role_packet_ingestion
+      - verification_rescan
+    note: Functional pattern adapted only; medical content is not imported.
+  ai_os_plan_folder:
+    adapted_functions:
+      - constitution_and_identity
+      - artificial_organization_hierarchy
+      - agent_object_model
+      - message_and_task_protocols
+      - model_router
+      - project_brains
+      - reputation_and_trust
+      - institutional_training
+      - runtime_service_contracts
+    note: Functional pattern adapted into normal ai-system folders; the Plan packet is not copied as the canonical structure.
+routines:
+  - id: R01
+    name: Integrity Gate
+    tool: ai-system/tools/Invoke-AIIntegrityCheck.ps1
+    outputs:
+      - ai-system/diagnostics/reports/latest-integrity-report.json
+      - ai-system/diagnostics/reports/latest-integrity-report.md
+  - id: R02
+    name: Project Scan
+    tool: ai-system/tools/Invoke-AIProjectScan.ps1
+    outputs:
+      - ai-system/sensory/scans/latest-scan.json
+  - id: R03
+    name: Project Map Export
+    tool: ai-system/tools/Export-ProjectMap.ps1
+    outputs:
+      - ai-system/navigation/generated/project-map.json
+  - id: R04
+    name: AI Manifest Export
+    tool: ai-system/tools/Export-AISystemManifest.ps1
+    outputs:
+      - ai-system/manifests/generated-ai-index.json
+  - id: R05
+    name: Forensic Verification
+    tool: ai-system/tools/Invoke-AIForensicVerification.ps1
+    outputs:
+      - ai-system/forensics/verification-reports/latest-forensic-verification.json
+      - ai-system/forensics/verification-reports/latest-forensic-verification.md
+  - id: R06
+    name: Log Intelligence
+    tool: ai-system/tools/Invoke-AILogIntelligence.ps1
+    outputs:
+      - ai-system/observability/reports/latest-log-intelligence.json
+      - ai-system/observability/reports/latest-log-intelligence.md
+  - id: R07
+    name: Watched State Baseline
+    tool: ai-system/tools/Invoke-AIWatchedState.ps1
+    outputs:
+      - ai-system/sensory/scans/latest-watched-changes.json
+      - ai-system/sensory/scans/latest-watched-changes.md
+  - id: R08
+    name: Live Server Probe
+    tool: ai-system/tools/Invoke-LiveServerProbe.ps1
+    optional: true
+    outputs:
+      - ai-system/observability/reports/latest-live-probe.json
+  - id: R09
+    name: Cognition Checklist
+    file: ai-system/engine/checklists/full-reasoning-chain.md
+    outputs:
+      - reasoning notes, decision traces, audit events, or handoff updates
+  - id: R10
+    name: Operation Cycle Report
+    tool: ai-system/tools/Invoke-AIOperationCycle.ps1
+    outputs:
+      - ai-system/engine/cycle-reports/latest-cycle-report.json
+      - ai-system/engine/cycle-reports/latest-cycle-report.md
+      - ai-system/engine/cycle-history.csv

@@ -1,0 +1,25 @@
+schema: ai-system.paradigm_ledger.v1
+updated: 2026-06-03
+paradigms:
+  - id: PAR-001
+    name: "Project as organism"
+    useful_for:
+      - memory
+      - sensory scans
+      - governance immune system
+      - restore recovery
+    status: active
+  - id: PAR-002
+    name: "Project as black-box flight recorder"
+    useful_for:
+      - audit trail
+      - causality
+      - rollback
+    status: active
+  - id: PAR-003
+    name: "Project as laboratory"
+    useful_for:
+      - experiments
+      - counterfactuals
+      - research council
+    status: active

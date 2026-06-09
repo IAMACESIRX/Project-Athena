@@ -1,0 +1,24 @@
+schema: ai-system.reservoir_signals.v1
+updated: 2026-06-03
+signals:
+  - id: git_state
+    source: latest_scan
+    persistence: dynamic
+  - id: disk_pressure
+    source: latest_scan
+    persistence: dynamic
+  - id: client_untracked_payload
+    source: latest_scan
+    persistence: semi_stable
+  - id: broken_venv
+    source: latest_scan
+    persistence: dynamic_until_fixed
+  - id: user_local_only_policy
+    source: governance
+    persistence: stable
+  - id: chat_handoff
+    source: continuity
+    persistence: session_to_long_term
+  - id: audit_event
+    source: audit
+    persistence: stable

@@ -1,0 +1,27 @@
+schema: ai-system.bugs.v1
+updated: 2026-06-03
+bugs:
+  - id: BUG-001
+    title: Copied Python venv points to old machine path
+    status: open
+    severity: medium
+    layer: server-project
+    evidence:
+      - "pyvenv.cfg references C:\\Users\\jonat\\Miniconda3\\python.exe"
+    next_action: "Recreate venv locally."
+  - id: BUG-002
+    title: Live-state realmlist appears to restore localhost despite LAN-ready docs
+    status: open
+    severity: medium
+    layer: live-state
+    evidence:
+      - "acore_auth.sql contains realmlist INSERT with 127.0.0.1"
+    next_action: "Update restore flow to set intended realm address after import."
+  - id: BUG-003
+    title: Docker command unavailable to live server probe
+    status: open
+    severity: medium
+    layer: playerbots-stack
+    evidence:
+      - "Invoke-LiveServerProbe.ps1 reported docker command not found."
+    next_action: "Install Docker CLI, start Docker Desktop, or run probe from a shell where docker is available."

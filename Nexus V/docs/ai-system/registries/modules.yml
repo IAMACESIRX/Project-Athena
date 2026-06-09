@@ -1,0 +1,147 @@
+schema: ai-system.modules.v1
+updated: 2026-06-03
+modules:
+  - id: game-client
+    card: ../modules/game-client.md
+    layer: game-client
+    status: active_backup_untracked_payload
+    primary_functions:
+      - launchable_game_client
+      - account_local_state
+      - interface_addons
+      - visual_mods
+    risk_level: high_storage_and_private_state
+  - id: server-live-state
+    card: ../modules/server-live-state.md
+    layer: live-state
+    status: active_snapshot
+    primary_functions:
+      - database_restore
+      - server_identity_record
+      - docker_state_record
+    risk_level: high_sensitive_sql
+  - id: wow-server-project
+    card: ../modules/wow-server-project.md
+    layer: server-project
+    status: active_project
+    primary_functions:
+      - docs
+      - scripts
+      - assistant_backend
+      - nested_server_sources
+    risk_level: medium
+  - id: command-hub
+    card: ../modules/command-hub.md
+    layer: server-project
+    status: prototype
+    primary_functions:
+      - command_logging
+      - future_module_routing
+    risk_level: medium_until_execution_exists
+  - id: playerbots-stack
+    card: ../modules/playerbots-stack.md
+    layer: server-project
+    status: active_server_path
+    primary_functions:
+      - bot_enabled_server
+      - docker_compose_stack
+      - mod_playerbots_config
+    risk_level: high_runtime_state
+  - id: azerothcore-baseline
+    card: ../modules/azerothcore-baseline.md
+    layer: server-project
+    status: clean_rollback_source
+    primary_functions:
+      - clean_server_reference
+      - rollback_path
+    risk_level: medium
+  - id: local-git-host
+    card: ../modules/local-git-host.md
+    layer: mega
+    status: active_local_remote_host
+    primary_functions:
+      - local_bare_remotes
+      - no_cloud_push
+    risk_level: medium_if_deleted
+  - id: ai-operation-engine
+    card: ../engine/README.md
+    layer: ai-system
+    status: active_control_plane
+    primary_functions:
+      - routine_cycle
+      - integrity_gate
+      - generated_reports
+      - order_of_operations
+    risk_level: medium_process_authority
+  - id: project-forensics
+    card: ../forensics/README.md
+    layer: ai-system
+    status: active_evidence_layer
+    primary_functions:
+      - stable_evidence_ids
+      - claim_mapping
+      - timeline
+      - known_unknowns
+      - verification_reports
+    risk_level: medium_if_stale
+  - id: ai-os-identity
+    card: ../identity/README.md
+    layer: ai-system
+    status: active_foundation
+    primary_functions:
+      - constitution
+      - mission
+      - values
+      - human_authority
+    risk_level: high_if_changed_without_review
+  - id: ai-organization
+    card: ../organization/README.md
+    layer: ai-system
+    status: active_governance_structure
+    primary_functions:
+      - hierarchy
+      - authority_levels
+      - executive_operation
+      - consensus
+    risk_level: medium_process_authority
+  - id: agent-network
+    card: ../agents/README.md
+    layer: ai-system
+    status: active_registry
+    primary_functions:
+      - agent_profiles
+      - lifecycle
+      - team_formation
+      - authority_binding
+    risk_level: medium_if_misrouted
+  - id: orchestration-layer
+    card: ../orchestration/README.md
+    layer: ai-system
+    status: specified_runtime_contract
+    primary_functions:
+      - message_protocol
+      - task_routing
+      - model_router
+      - tool_layer
+      - event_bus
+    risk_level: medium_until_runtime_exists
+  - id: project-brains
+    card: ../projects/README.md
+    layer: ai-system
+    status: active_registry
+    primary_functions:
+      - project_registry
+      - managed_project_memory
+      - project_brain_templates
+    risk_level: medium_if_stale
+  - id: training-and-model-ops
+    card: ../training/README.md
+    layer: ai-system
+    status: active_specification
+    primary_functions:
+      - curriculum
+      - feedback_loop
+      - model_registry
+      - evaluation_rubric
+      - provider_policy
+    risk_level: medium_if_unevaluated

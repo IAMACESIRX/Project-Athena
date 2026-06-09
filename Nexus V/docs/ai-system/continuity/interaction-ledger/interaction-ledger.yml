@@ -1,0 +1,21 @@
+schema: ai-system.interaction_ledger.v1
+updated: 2026-06-03
+interactions:
+  - id: INT-20260603-LOCAL-GIT
+    time: "2026-06-03"
+    actor: user
+    type: direction
+    summary: "User required local-only hosted Git repositories and no GitHub server push."
+    durable_effect:
+      - local-only governance
+      - local bare remotes
+  - id: INT-20260603-AI-SYSTEM
+    time: "2026-06-03"
+    actor: user
+    type: direction
+    summary: "User requested an advanced AI operating system for project memory, diagnostics, R&D, and modular management."
+    durable_effect:
+      - ai-system control substrate
+      - manifests
+      - governance
+      - diagnostics

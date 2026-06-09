@@ -1,0 +1,12 @@
+schema: ai-system.retrocausal_ledger.v1
+updated: 2026-06-03
+items:
+  - id: RETRO-001
+    outcome: "Live probe reports Docker unavailable."
+    candidate_causes:
+      - "Docker CLI not installed."
+      - "Docker CLI not in PATH for current shell."
+      - "Docker Desktop not installed or not exposed to shell."
+    evidence: "latest-live-probe.json reported docker command not found."
+    confidence: "current-shell verified, machine-wide unresolved"
+    next_check: "Run Docker availability check from intended server operations shell."

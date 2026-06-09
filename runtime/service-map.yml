@@ -1,0 +1,28 @@
+schema: ai-system.runtime_service_map.v1
+updated: 2026-06-03
+services:
+  - id: identity-service
+    status: file_native_spec
+    source: ai-system/identity
+  - id: governance-service
+    status: file_native_spec
+    source: ai-system/governance
+  - id: agent-registry-service
+    status: file_native_spec
+    source: ai-system/agents/agent-registry.yml
+  - id: project-brain-service
+    status: file_native_spec
+    source: ai-system/projects/project-registry.yml
+  - id: memory-service
+    status: file_native_spec
+    source: ai-system/memory
+  - id: audit-service
+    status: file_native_spec
+    source: ai-system/audit
+  - id: operation-cycle-service
+    status: implemented_script
+    source: ai-system/tools/Invoke-AIOperationCycle.ps1
+  - id: model-router-service
+    status: specified
+    source: ai-system/orchestration/model-router.yml
+

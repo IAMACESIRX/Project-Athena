@@ -1,0 +1,19 @@
+schema: ai-system.trust_model.v1
+updated: 2026-06-03
+trust_domains:
+  - id: code
+    required_evidence: tests_or_static_review
+  - id: research
+    required_evidence: cited_sources
+  - id: local_filesystem
+    required_evidence: command_output_and_git_status
+  - id: governance
+    required_evidence: policy_reference
+  - id: live_runtime
+    required_evidence: fresh_probe_or_log
+rules:
+  - id: trust_is_contextual
+    description: An agent trusted for coding is not automatically trusted for legal, medical, finance, or live operations.
+  - id: trust_decays
+    description: Trust should weaken when evidence is stale or failures are unresolved.
+

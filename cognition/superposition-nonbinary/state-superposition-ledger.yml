@@ -1,0 +1,21 @@
+schema: ai-system.state_superposition_ledger.v1
+updated: 2026-06-03
+states:
+  - id: SUP-001
+    question: "Why is Docker unavailable?"
+    possible_states:
+      - "Docker not installed."
+      - "Docker installed but not in PATH."
+      - "Docker Desktop not running."
+      - "Shell environment cannot see Docker."
+    safe_common_action: "Record as current-shell unavailable and avoid runtime mutation."
+    collapse_condition: "Run Docker check in intended operations shell."
+  - id: SUP-002
+    question: "Best client backup strategy?"
+    possible_states:
+      - "Config-only Git tracking."
+      - "Git LFS for selected binaries."
+      - "Filesystem mirror to another drive."
+      - "Full Git snapshot after storage expansion."
+    safe_common_action: "Do not full-commit payload yet."
+    collapse_condition: "Human chooses storage strategy and target."

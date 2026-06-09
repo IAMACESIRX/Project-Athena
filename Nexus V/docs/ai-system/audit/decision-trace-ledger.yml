@@ -1,0 +1,37 @@
+schema: ai-system.decision_trace_ledger.v1
+updated: 2026-06-03
+decisions:
+  - id: DTRACE-20260603-LOCAL-ONLY
+    decision: "Use local-only bare remotes instead of GitHub server repos."
+    requested_by: user
+    reasoning_summary: "Project contains private SQL dumps, account state, IPs, paths, and large game client payload."
+    alternatives:
+      - cloud GitHub repos
+      - no remotes
+      - local bare remotes
+    chosen: local bare remotes
+    evidence:
+      - "User explicitly said hosted only locally and do not push to GitHub servers."
+    expected_benefits:
+      - private local hosting
+      - push/pull workflow
+      - no cloud exposure
+    risks:
+      - not an off-machine backup
+    review_trigger: "If the human requests cloud publishing or off-machine backup."
+  - id: DTRACE-20260603-METADATA-CLIENT
+    decision: "Do not commit full game client payload yet."
+    requested_by: ai
+    reasoning_summary: "Client payload is about 36 GB and local disk free space is constrained."
+    alternatives:
+      - full commit now
+      - metadata-only commit
+      - targeted config commit
+    chosen: metadata-only initial commit
+    evidence:
+      - "Disk free space scan below 80 GB."
+    expected_benefits:
+      - avoids immediate disk pressure
+    risks:
+      - full payload not protected by Git history yet
+    review_trigger: "When storage plan is chosen."

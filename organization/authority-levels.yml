@@ -1,0 +1,44 @@
+schema: ai-system.authority_levels.v1
+updated: 2026-06-03
+levels:
+  - id: L0
+    name: observe_only
+    allowed:
+      - read_files
+      - summarize
+      - identify_risks
+  - id: L1
+    name: low_risk_edit
+    allowed:
+      - edit_docs
+      - create_reports
+      - update_ledgers
+  - id: L2
+    name: scoped_code_change
+    allowed:
+      - edit_code
+      - run_tests
+      - create_local_commits
+  - id: L3
+    name: project_structure_change
+    allowed:
+      - add_modules
+      - change_workflows
+      - update_governance
+    requires:
+      - audit_event
+      - verification
+  - id: L4
+    name: runtime_or_live_state_change
+    requires:
+      - restore_path
+      - explicit_scope
+      - post_change_probe
+  - id: L5
+    name: human_only
+    examples:
+      - constitutional_change
+      - cloud_push_enablement
+      - destructive_restore
+      - credential_exposure_decision
+

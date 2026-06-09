@@ -1,0 +1,57 @@
+schema: ai-system.layers.v1
+updated: 2026-06-03
+hosting_policy: local_only
+layers:
+  - id: mega
+    name: Mega Backup Stack
+    path: .
+    git_role: orchestrator
+    remote: ../local-git-host/2026-05-30_2035/mega-backup-stack.git
+    tracks:
+      - GameClient-ChromieCraft-3.3.5a
+      - Server-Live-State
+      - WoW-Server-Project
+    sensitivity: private
+    commit_policy: commit_after_child_layer_commits
+  - id: game-client
+    name: ChromieCraft 3.3.5a Game Client
+    path: GameClient-ChromieCraft-3.3.5a
+    git_role: child_payload_layer
+    remote: ../local-git-host/2026-05-30_2035/gameclient-chromiecraft-3.3.5a.git
+    sensitivity: private_account_local_state
+    commit_policy: metadata_only_until_disk_capacity_is_resolved
+  - id: live-state
+    name: Server Live State
+    path: Server-Live-State
+    git_role: child_state_layer
+    remote: ../local-git-host/2026-05-30_2035/server-live-state.git
+    sensitivity: high_private_sql_dumps
+    commit_policy: snapshot_restore_state_after_export
+  - id: server-project
+    name: WoW Server Project
+    path: WoW-Server-Project
+    git_role: child_project_layer
+    remote: ../local-git-host/2026-05-30_2035/wow-server-project.git
+    sensitivity: private_project
+    commit_policy: normal_project_commits_plus_embedded_repo_pointers
+  - id: azerothcore-clean
+    name: AzerothCore Clean Baseline
+    path: WoW-Server-Project/servers/wow/azerothcore-wotlk
+    git_role: nested_source_repo
+    remote: https://github.com/azerothcore/azerothcore-wotlk.git
+    sensitivity: public_upstream_source
+    commit_policy: avoid_local_mutations_unless_explicit
+  - id: azerothcore-playerbots
+    name: AzerothCore Playerbots Fork
+    path: WoW-Server-Project/servers/wow/azerothcore-wotlk-playerbots
+    git_role: nested_source_repo
+    remote: https://github.com/mod-playerbots/azerothcore-wotlk.git
+    sensitivity: public_upstream_source_plus_local_config
+    commit_policy: preserve_playerbot_branch_state
+  - id: mod-playerbots
+    name: mod-playerbots
+    path: WoW-Server-Project/servers/wow/azerothcore-wotlk-playerbots/modules/mod-playerbots
+    git_role: nested_module_repo
+    remote: https://github.com/mod-playerbots/mod-playerbots.git
+    sensitivity: public_upstream_source
+    commit_policy: avoid_local_mutations_unless_explicit

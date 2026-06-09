@@ -1,0 +1,11 @@
+schema: ai-system.semantic_drift_ledger.v1
+updated: 2026-06-03
+items:
+  - id: SDRIFT-001
+    term: "backup"
+    risk: "Could mean Git commit, local bare remote, SQL dump, or full filesystem copy."
+    correction: "Use restore point, Git remote, live-state SQL, or full filesystem backup explicitly."
+  - id: SDRIFT-002
+    term: "memory"
+    risk: "Could mean chat history, handoff, core facts, or deep archive."
+    correction: "Use three-tier memory architecture."

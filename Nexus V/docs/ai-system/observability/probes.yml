@@ -1,0 +1,23 @@
+schema: ai-system.probes.v1
+updated: 2026-06-03
+probes:
+  - id: git_layer_scan
+    status: implemented
+    tool: ai-system/tools/Invoke-AIProjectScan.ps1
+    mutates: scan_artifacts_only
+  - id: live_server_probe
+    status: scaffolded
+    tool: ai-system/tools/Invoke-LiveServerProbe.ps1
+    mutates: observability_reports_only
+  - id: docker_compose_status
+    status: specified
+    command: docker compose ps
+    mutates: none
+  - id: realm_address_check
+    status: specified
+    command: docker exec ac-database mysql -uroot -p*** -e "SELECT id,name,address,port FROM acore_auth.realmlist;"
+    mutates: none
+  - id: client_realmlist_check
+    status: specified
+    path: GameClient-ChromieCraft-3.3.5a/Data/enUS/realmlist.wtf
+    mutates: none

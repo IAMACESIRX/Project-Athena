@@ -1,0 +1,41 @@
+schema: ai-system.hypergraph_model.v1
+updated: 2026-06-03
+nodes:
+  - id: USER-LOCAL-ONLY
+    type: user_direction
+  - id: GOVERNANCE-ABSOLUTES
+    type: policy_file
+  - id: LOCAL-BARE-REMOTES
+    type: git_hosting
+  - id: AI-PORTAL
+    type: entrypoint
+  - id: TRUTH-PIPELINE
+    type: evidence_system
+  - id: COGNITION-OUTPUTS
+    type: reasoning_candidates
+  - id: CLIENT-PAYLOAD
+    type: filesystem_payload
+  - id: RESTORE-POINTS
+    type: recovery_system
+hyperedges:
+  - id: HEDGE-001
+    relation: "local-only governance creates hosting constraints"
+    nodes:
+      - USER-LOCAL-ONLY
+      - GOVERNANCE-ABSOLUTES
+      - LOCAL-BARE-REMOTES
+    confidence: verified
+  - id: HEDGE-002
+    relation: "advanced cognition must pass evidence gate"
+    nodes:
+      - COGNITION-OUTPUTS
+      - TRUTH-PIPELINE
+      - AI-PORTAL
+    confidence: policy_defined
+  - id: HEDGE-003
+    relation: "restore points do not cover untracked client payload"
+    nodes:
+      - RESTORE-POINTS
+      - CLIENT-PAYLOAD
+      - GOVERNANCE-ABSOLUTES
+    confidence: verified

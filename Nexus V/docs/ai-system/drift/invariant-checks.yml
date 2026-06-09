@@ -1,0 +1,22 @@
+schema: ai-system.invariant_checks.v1
+updated: 2026-06-03
+invariants:
+  - id: no_cloud_management_remotes
+    description: Four management repos must not point at GitHub/HTTPS/SSH remotes.
+    status: active
+    check: "remote URLs do not match github.com|https://|git@"
+  - id: local_git_host_exists
+    description: Local bare host path exists.
+    status: active
+  - id: child_repos_exist
+    description: Game client, live-state, and server-project child repos exist.
+    status: active
+  - id: live_state_sql_exists
+    description: Required live-state SQL dumps exist.
+    status: active
+  - id: game_client_payload_visibility
+    description: Untracked client payload is visible and documented until storage plan changes.
+    status: active
+  - id: no_destructive_runtime_without_confirmation
+    description: Runtime destructive actions require explicit human confirmation.
+    status: policy

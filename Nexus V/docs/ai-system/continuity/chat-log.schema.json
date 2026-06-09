@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.chat-log.v1",
+  "type": "object",
+  "required": ["id", "time", "source", "actor", "summary"],
+  "properties": {
+    "id": { "type": "string" },
+    "time": { "type": "string" },
+    "source": { "type": "string" },
+    "actor": { "type": "string" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "decisions": { "type": "array", "items": { "type": "string" } },
+    "changes": { "type": "array", "items": { "type": "string" } },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "next_actions": { "type": "array", "items": { "type": "string" } }
+  }
+}

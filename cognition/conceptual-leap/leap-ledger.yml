@@ -1,0 +1,11 @@
+schema: ai-system.leap_ledger.v1
+updated: 2026-06-03
+leaps:
+  - id: LEAP-001
+    problem: "Project context loss across AI sessions."
+    leap: "Treat the repo as a nervous system with memory, handoff, audit, and sensory organs."
+    status: implemented_as_system_structure
+  - id: LEAP-002
+    problem: "Need to reason about many changing signals."
+    leap: "Use liquid-state-machine style transient signal reservoir plus readout files."
+    status: specified

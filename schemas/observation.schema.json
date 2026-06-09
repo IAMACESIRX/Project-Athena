@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.observation.v1",
+  "type": "object",
+  "required": ["id", "time", "source", "signal", "severity", "summary"],
+  "properties": {
+    "id": { "type": "string" },
+    "time": { "type": "string" },
+    "source": { "type": "string" },
+    "signal": { "type": "string" },
+    "severity": { "enum": ["green", "yellow", "red"] },
+    "summary": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "recommended_action": { "type": "string" }
+  }
+}

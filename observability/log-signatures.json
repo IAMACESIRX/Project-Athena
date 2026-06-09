@@ -1,0 +1,54 @@
+{
+  "schema": "ai-system.log_signatures.v1",
+  "updated": "2026-06-03",
+  "signatures": [
+    {
+      "id": "LOG-FATAL",
+      "severity": "red",
+      "regex": "(?i)\\b(fatal|crash|unhandled exception)\\b",
+      "category": "runtime",
+      "title": "Fatal runtime failure",
+      "suggested_action": "Inspect surrounding log context and create a bug or incident record."
+    },
+    {
+      "id": "LOG-SQL-ERROR",
+      "severity": "red",
+      "regex": "(?i)\\b(sql error|mysql error|database error|unknown column|duplicate entry|access denied for user|table .* doesn't exist)\\b",
+      "category": "database",
+      "title": "Database or SQL failure",
+      "suggested_action": "Cross-check live-state SQL dumps, schema version, and import logs."
+    },
+    {
+      "id": "LOG-AUTH-REALM",
+      "severity": "yellow",
+      "regex": "(?i)\\b(authserver|realmlist|realm|authentication failed|login failed)\\b",
+      "category": "auth",
+      "title": "Authentication or realm signal",
+      "suggested_action": "Verify authserver state, realmlist address, and account database state."
+    },
+    {
+      "id": "LOG-PATH-MISSING",
+      "severity": "yellow",
+      "regex": "(?i)\\b(file not found|cannot find|missing file|no such file|path does not exist)\\b",
+      "category": "filesystem",
+      "title": "Missing file or path",
+      "suggested_action": "Check path ownership, restore source, and expected module layout."
+    },
+    {
+      "id": "LOG-DOCKER",
+      "severity": "yellow",
+      "regex": "(?i)\\b(docker|container|compose|daemon)\\b",
+      "category": "runtime",
+      "title": "Docker or container signal",
+      "suggested_action": "Run the live server probe and verify container availability."
+    },
+    {
+      "id": "LOG-PLAYERBOT",
+      "severity": "yellow",
+      "regex": "(?i)\\b(playerbot|bot ai|random bot|ahbot)\\b",
+      "category": "playerbots",
+      "title": "Playerbots runtime signal",
+      "suggested_action": "Check mod-playerbots config, worldserver logs, and module revision."
+    }
+  ]
+}

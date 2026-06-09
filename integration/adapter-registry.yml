@@ -1,0 +1,57 @@
+schema: ai-system.adapter_registry.v1
+updated: 2026-06-03
+adapters:
+  - id: ai_project_scan
+    class: reader
+    tool: ai-system/tools/Invoke-AIProjectScan.ps1
+    writes:
+      - ai-system/sensory/scans/latest-scan.json
+      - ai-system/sensory/scans/SCAN-LOG.md
+    mutates_live_state: false
+  - id: ai_manifest_export
+    class: writer
+    tool: ai-system/tools/Export-AISystemManifest.ps1
+    writes:
+      - ai-system/manifests/generated-ai-index.json
+    mutates_live_state: false
+  - id: project_map_export
+    class: writer
+    tool: ai-system/tools/Export-ProjectMap.ps1
+    writes:
+      - ai-system/navigation/generated/project-map.json
+    mutates_live_state: false
+  - id: work_item_create
+    class: writer
+    tool: ai-system/tools/New-WorkItem.ps1
+    writes:
+      - ai-system/work/work-items/*.md
+    mutates_live_state: false
+  - id: live_server_probe
+    class: runtime_reader
+    tool: ai-system/tools/Invoke-LiveServerProbe.ps1
+    writes:
+      - ai-system/observability/reports/latest-live-probe.json
+      - ai-system/observability/reports/LIVE-PROBE-LOG.md
+    mutates_live_state: false
+    requires_confirmation: false
+  - id: chat_handoff
+    class: writer
+    tool: ai-system/tools/New-ChatHandoff.ps1
+    writes:
+      - ai-system/continuity/chat-logs/*.md
+      - ai-system/continuity/handoff-packets/*.md
+    mutates_live_state: false
+  - id: audit_event
+    class: writer
+    tool: ai-system/tools/New-AuditEvent.ps1
+    writes:
+      - ai-system/audit/events/*.md
+    mutates_live_state: false
+  - id: restore_point
+    class: writer
+    tool: ai-system/tools/New-RestorePoint.ps1
+    writes:
+      - ai-system/restore/restore-points/*.json
+      - ai-system/restore/bundles/*
+    mutates_live_state: false
+    requires_confirmation: false

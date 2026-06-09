@@ -1,0 +1,999 @@
+{
+  "nvir_version": "0.2",
+  "module": "full_system_ai_versioned_secure",
+  "arch": "NVISC-v0.1",
+  "representation": "VSSA",
+  "features": [],
+  "entry": "main",
+  "sections": {},
+  "symbols": [
+    {
+      "name": "main",
+      "section": ".text",
+      "index": 1
+    }
+  ],
+  "types": {},
+  "policies": [],
+  "topologies": [],
+  "state_graph": {
+    "branches": [
+      {
+        "branch_id": "@branch.main",
+        "parent_branch": null,
+        "head_state": "%state#0@main",
+        "status": "active"
+      }
+    ],
+    "commits": [],
+    "snapshots": [],
+    "rollback_points": []
+  },
+  "values": [],
+  "instructions": [
+    {
+      "id": 1,
+      "op": "B.INPUT",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#0@main",
+      "state_out": "%state#0@main",
+      "branch": "@branch.main",
+      "domain": "BIN",
+      "effects": [],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 27,
+        "raw": "input: .qword 12"
+      }
+    },
+    {
+      "id": 2,
+      "op": "S.SNAP",
+      "reads": [],
+      "writes": [
+        "s0"
+      ],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#0@main",
+      "state_out": "%state#1@main",
+      "branch": "@branch.main",
+      "domain": "BIN",
+      "effects": [
+        "creates_snapshot",
+        "writes_state_graph"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 31,
+        "raw": "    S.SNAP s0"
+      }
+    },
+    {
+      "id": 3,
+      "op": "S.COMMIT",
+      "reads": [
+        "s0"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#1@main",
+      "state_out": "%state#committed@main",
+      "branch": "@branch.main",
+      "domain": "BIN",
+      "effects": [
+        "commits_state",
+        "requires_audit"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 32,
+        "raw": "    S.COMMIT s0"
+      }
+    },
+    {
+      "id": 4,
+      "op": "S.BRANCH",
+      "reads": [],
+      "writes": [],
+      "creates": [
+        "@branch.ai_a from s0"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#committed@main",
+      "state_out": "%state#1@ai_a from s0",
+      "branch": "@branch.ai_a from s0",
+      "domain": "BIN",
+      "effects": [
+        "creates_branch",
+        "writes_state_graph"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 35,
+        "raw": "    S.BRANCH @branch.ai_a from s0"
+      }
+    },
+    {
+      "id": 5,
+      "op": "S.CHECKOUT",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#1@ai_a from s0",
+      "state_out": "%state#1@ai_a from s0",
+      "branch": "@branch.ai_a",
+      "domain": "BIN",
+      "effects": [
+        "checkout_branch_or_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 36,
+        "raw": "    S.CHECKOUT @branch.ai_a"
+      }
+    },
+    {
+      "id": 6,
+      "op": "G.GEO_PATH",
+      "reads": [
+        "source=@node.0",
+        "target=@node.15",
+        "policy=ROUTE_COOL"
+      ],
+      "writes": [],
+      "creates": [
+        "%topology.route#6"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#1@ai_a from s0",
+      "state_out": "%state#1@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "TOPOLOGY",
+      "effects": [
+        "uses_topology",
+        "creates_topology_token"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 37,
+        "raw": "    G.GEO_PATH source=@node.0, target=@node.15, policy=ROUTE_COOL"
+      }
+    },
+    {
+      "id": 7,
+      "op": "T.TLOAD",
+      "reads": [
+        "t0",
+        "[tensor.input]"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#1@ai_a",
+      "state_out": "%state#2@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 38,
+        "raw": "    T.TLOAD t0, [tensor.input]"
+      }
+    },
+    {
+      "id": 8,
+      "op": "T.TLOAD",
+      "reads": [
+        "t1",
+        "[tensor.weights]"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#2@ai_a",
+      "state_out": "%state#3@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 39,
+        "raw": "    T.TLOAD t1, [tensor.weights]"
+      }
+    },
+    {
+      "id": 9,
+      "op": "T.TMATMUL",
+      "reads": [
+        "t2",
+        "t0",
+        "t1"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#3@ai_a",
+      "state_out": "%state#4@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 40,
+        "raw": "    T.TMATMUL t2, t0, t1"
+      }
+    },
+    {
+      "id": 10,
+      "op": "FPERR.CHK",
+      "reads": [
+        "t2"
+      ],
+      "writes": [
+        "p0"
+      ],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#4@ai_a",
+      "state_out": "%state#4@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "FPERR",
+      "effects": [
+        "numeric_integrity_check"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 41,
+        "raw": "    FPERR.CHK t2 -> p0"
+      }
+    },
+    {
+      "id": 11,
+      "op": "FPERR.FIX",
+      "reads": [
+        "t2"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#4@ai_a",
+      "state_out": "%state#4@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "FPERR",
+      "effects": [
+        "numeric_integrity_check"
+      ],
+      "attrs": {
+        "notpred": "p0"
+      },
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 43,
+        "raw": "    FPERR.FIX t2"
+      }
+    },
+    {
+      "id": 12,
+      "op": "T.NPU_SYNC",
+      "reads": [
+        "t2",
+        "%state.current"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#4@ai_a",
+      "state_out": "%state#5@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 44,
+        "raw": "    T.NPU_SYNC t2, %state.current"
+      }
+    },
+    {
+      "id": 13,
+      "op": "T.NPU_AUDIT",
+      "reads": [
+        "t2",
+        "@policy.safe_commit"
+      ],
+      "writes": [
+        "p1"
+      ],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#5@ai_a",
+      "state_out": "%state#6@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 45,
+        "raw": "    T.NPU_AUDIT t2, @policy.safe_commit -> p1"
+      }
+    },
+    {
+      "id": 14,
+      "op": "S.SCORE",
+      "reads": [
+        "@branch.ai_a",
+        "t2"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#6@ai_a",
+      "state_out": "%state#6@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "BIN",
+      "effects": [
+        "scores_branch"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 46,
+        "raw": "    S.SCORE @branch.ai_a, t2"
+      }
+    },
+    {
+      "id": 15,
+      "op": "S.CHECKOUT",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#6@ai_a",
+      "state_out": "%state#6@ai_a",
+      "branch": "@branch.ai_a",
+      "domain": "BIN",
+      "effects": [
+        "checkout_branch_or_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 49,
+        "raw": "    S.CHECKOUT s0"
+      }
+    },
+    {
+      "id": 16,
+      "op": "S.BRANCH",
+      "reads": [],
+      "writes": [],
+      "creates": [
+        "@branch.ai_b from s0"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#6@ai_a",
+      "state_out": "%state#1@ai_b from s0",
+      "branch": "@branch.ai_b from s0",
+      "domain": "BIN",
+      "effects": [
+        "creates_branch",
+        "writes_state_graph"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 50,
+        "raw": "    S.BRANCH @branch.ai_b from s0"
+      }
+    },
+    {
+      "id": 17,
+      "op": "S.CHECKOUT",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#1@ai_b from s0",
+      "state_out": "%state#1@ai_b from s0",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [
+        "checkout_branch_or_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 51,
+        "raw": "    S.CHECKOUT @branch.ai_b"
+      }
+    },
+    {
+      "id": 18,
+      "op": "Q.QALLOC",
+      "reads": [
+        "q0",
+        "qubits=1"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#18"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#1@ai_b from s0",
+      "state_out": "%state#1@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "QSIM",
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ],
+      "attrs": {
+        "qmode": "QSIM"
+      },
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 53,
+        "raw": "    Q.QALLOC q0, qubits=1"
+      }
+    },
+    {
+      "id": 19,
+      "op": "Q.QPREP",
+      "reads": [
+        "q0",
+        "|0>"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#19"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#1@ai_b",
+      "state_out": "%state#2@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "QSIM",
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 54,
+        "raw": "    Q.QPREP q0, |0>"
+      }
+    },
+    {
+      "id": 20,
+      "op": "Q.QGATE",
+      "reads": [
+        "q0",
+        "H"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#20"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#2@ai_b",
+      "state_out": "%state#3@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "QSIM",
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 55,
+        "raw": "    Q.QGATE q0, H"
+      }
+    },
+    {
+      "id": 21,
+      "op": "Q.QMEASURE",
+      "reads": [
+        "q0"
+      ],
+      "writes": [
+        "r1"
+      ],
+      "creates": [
+        "%quantum_token#21"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#3@ai_b",
+      "state_out": "%state#4@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "QSIM",
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 56,
+        "raw": "    Q.QMEASURE q0 -> r1"
+      }
+    },
+    {
+      "id": 22,
+      "op": "Q.QSYNC",
+      "reads": [
+        "r1",
+        "%state.current"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#22"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#4@ai_b",
+      "state_out": "%state#5@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "QSIM",
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 57,
+        "raw": "    Q.QSYNC r1, %state.current"
+      }
+    },
+    {
+      "id": 23,
+      "op": "Q.QAUDIT",
+      "reads": [
+        "r1",
+        "@policy.quantum_safe"
+      ],
+      "writes": [
+        "p2"
+      ],
+      "creates": [
+        "%quantum_token#23"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#5@ai_b",
+      "state_out": "%state#6@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "QSIM",
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 58,
+        "raw": "    Q.QAUDIT r1, @policy.quantum_safe -> p2"
+      }
+    },
+    {
+      "id": 24,
+      "op": "Q.QCOMMIT",
+      "reads": [
+        "r1"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#24"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#6@ai_b",
+      "state_out": "%state#7@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "QSIM",
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ],
+      "attrs": {
+        "pred": "p2"
+      },
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 60,
+        "raw": "    Q.QCOMMIT r1"
+      }
+    },
+    {
+      "id": 25,
+      "op": "T.TLOAD",
+      "reads": [
+        "t3",
+        "[tensor.alt_input]"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#7@ai_b",
+      "state_out": "%state#8@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 61,
+        "raw": "    T.TLOAD t3, [tensor.alt_input]"
+      }
+    },
+    {
+      "id": 26,
+      "op": "T.TLOAD",
+      "reads": [
+        "t4",
+        "[tensor.alt_weights]"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#8@ai_b",
+      "state_out": "%state#9@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 62,
+        "raw": "    T.TLOAD t4, [tensor.alt_weights]"
+      }
+    },
+    {
+      "id": 27,
+      "op": "T.TMATMUL",
+      "reads": [
+        "t5",
+        "t3",
+        "t4"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#9@ai_b",
+      "state_out": "%state#10@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 63,
+        "raw": "    T.TMATMUL t5, t3, t4"
+      }
+    },
+    {
+      "id": 28,
+      "op": "T.NPU_SYNC",
+      "reads": [
+        "t5",
+        "%state.current"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#10@ai_b",
+      "state_out": "%state#11@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "TENSOR",
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 64,
+        "raw": "    T.NPU_SYNC t5, %state.current"
+      }
+    },
+    {
+      "id": 29,
+      "op": "S.SCORE",
+      "reads": [
+        "@branch.ai_b",
+        "t5"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#11@ai_b",
+      "state_out": "%state#11@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [
+        "scores_branch"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 65,
+        "raw": "    S.SCORE @branch.ai_b, t5"
+      }
+    },
+    {
+      "id": 30,
+      "op": "S.RANK",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#11@ai_b",
+      "state_out": "%state#11@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [
+        "merge_candidate_selection"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 68,
+        "raw": "    S.RANK @branch.ai_a, @branch.ai_b"
+      }
+    },
+    {
+      "id": 31,
+      "op": "S.SELECT",
+      "reads": [],
+      "writes": [
+        "s1"
+      ],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#11@ai_b",
+      "state_out": "%state#merged@main",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [
+        "merge_candidate_selection"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 69,
+        "raw": "    S.SELECT BEST -> s1"
+      }
+    },
+    {
+      "id": 32,
+      "op": "A.AUDIT",
+      "reads": [
+        "s1",
+        "@policy.safe_commit"
+      ],
+      "writes": [
+        "p3"
+      ],
+      "creates": [
+        "%audit_token#32"
+      ],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#merged@main",
+      "state_out": "%state#merged@main",
+      "branch": "@branch.ai_b",
+      "domain": "AEGIS",
+      "effects": [
+        "aegis_audit",
+        "creates_audit_token"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 70,
+        "raw": "    A.AUDIT s1, @policy.safe_commit -> p3"
+      }
+    },
+    {
+      "id": 33,
+      "op": "S.COMMIT",
+      "reads": [
+        "s1"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [
+        "%audit_token#32"
+      ],
+      "guard": null,
+      "state_in": "%state#merged@main",
+      "state_out": "%state#committed@main",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [
+        "commits_state",
+        "requires_audit"
+      ],
+      "attrs": {
+        "pred": "p3"
+      },
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 72,
+        "raw": "    S.COMMIT s1"
+      }
+    },
+    {
+      "id": 34,
+      "op": "S.ROLLBACK",
+      "reads": [
+        "s0"
+      ],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#committed@main",
+      "state_out": "%state#12@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [
+        "rollback_state",
+        "invalidates_descendants"
+      ],
+      "attrs": {
+        "notpred": "p3"
+      },
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 74,
+        "raw": "    S.ROLLBACK s0"
+      }
+    },
+    {
+      "id": 35,
+      "op": "A.ATTEST",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#12@ai_b",
+      "state_out": "%state#12@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 76,
+        "raw": "    A.ATTEST s1 -> c0"
+      }
+    },
+    {
+      "id": 36,
+      "op": "P.MINREP",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#12@ai_b",
+      "state_out": "%state#12@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 77,
+        "raw": "    P.MINREP %session.current -> c1"
+      }
+    },
+    {
+      "id": 37,
+      "op": "B.HALT",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "requires": [],
+      "guard": null,
+      "state_in": "%state#12@ai_b",
+      "state_out": "%state#12@ai_b",
+      "branch": "@branch.ai_b",
+      "domain": "BIN",
+      "effects": [
+        "control_flow"
+      ],
+      "attrs": {},
+      "source": {
+        "file": "programs/06_full_system_ai_versioned_secure.nvasm",
+        "line": 78,
+        "raw": "    B.HALT"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from_id": 32,
+      "to_id": 33,
+      "type": "audit_dependency",
+      "reason": "S.COMMIT requires previous A.AUDIT token"
+    }
+  ],
+  "diagnostics": [],
+  "debug": {
+    "source_model": "NVASM semantic mutation graph lowered to VSSA NVIR",
+    "toolchain": "nvisc-toolchain-bridge-v0.1"
+  }
+}

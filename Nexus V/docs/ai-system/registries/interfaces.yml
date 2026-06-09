@@ -1,0 +1,42 @@
+schema: ai-system.interfaces.v1
+updated: 2026-06-03
+interfaces:
+  git:
+    allowed:
+      - local_status
+      - local_commit
+      - local_push_to_bare_remotes
+      - local_clone_from_bare_remotes
+    blocked_by_default:
+      - push_to_github_servers
+      - public_remote_creation
+      - destructive_reset
+  filesystem:
+    allowed:
+      - inspect
+      - targeted_edit
+      - generate_handoff
+      - generate_scan_reports
+    caution:
+      - full_game_client_snapshot
+      - recursive_binary_scans
+      - sql_dump_rewrites
+  server_runtime:
+    allowed_with_human_confirmation:
+      - docker_compose_up
+      - docker_compose_down
+      - database_import
+      - realm_address_update
+    blocked_without_confirmation:
+      - deleting_volumes
+      - overwriting_live_sql_dumps
+      - changing_public_network_exposure
+  ai_backend:
+    current_capability:
+      - health_route
+      - command_log_create
+      - command_log_list
+    future_capability:
+      - module_execution
+      - confirmation_workflow
+      - audit_dashboard

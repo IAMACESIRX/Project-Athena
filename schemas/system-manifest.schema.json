@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.system-manifest.v1",
+  "type": "object",
+  "required": ["schema", "project", "entrypoints"],
+  "properties": {
+    "schema": { "type": "string" },
+    "project": {
+      "type": "object",
+      "required": ["name", "root", "hosting", "cloud_push_allowed"],
+      "properties": {
+        "name": { "type": "string" },
+        "root": { "type": "string" },
+        "created_for": { "type": "string" },
+        "hosting": { "type": "string" },
+        "cloud_push_allowed": { "type": "boolean" }
+      }
+    },
+    "entrypoints": { "type": "object" },
+    "registries": { "type": "object" },
+    "governance": { "type": "object" },
+    "work": { "type": "object" },
+    "observability": { "type": "object" },
+    "physics": { "type": "object" }
+  }
+}

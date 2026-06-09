@@ -1,0 +1,569 @@
+{
+  "format": "nexus-v-rtl-vectors-v0.1",
+  "module": "full_system_ai_versioned_secure",
+  "vectors": [
+    {
+      "id": 1,
+      "op": "B.INPUT",
+      "state_in": "%state#0@main",
+      "state_out": "%state#0@main",
+      "branch": "@branch.main",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "effects": []
+    },
+    {
+      "id": 2,
+      "op": "S.SNAP",
+      "state_in": "%state#0@main",
+      "state_out": "%state#1@main",
+      "branch": "@branch.main",
+      "reads": [],
+      "writes": [
+        "s0"
+      ],
+      "creates": [],
+      "effects": [
+        "creates_snapshot",
+        "writes_state_graph"
+      ]
+    },
+    {
+      "id": 3,
+      "op": "S.COMMIT",
+      "state_in": "%state#1@main",
+      "state_out": "%state#committed@main",
+      "branch": "@branch.main",
+      "reads": [
+        "s0"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "commits_state",
+        "requires_audit"
+      ]
+    },
+    {
+      "id": 4,
+      "op": "S.BRANCH",
+      "state_in": "%state#committed@main",
+      "state_out": "%state#1@ai_a from s0",
+      "branch": "@branch.ai_a from s0",
+      "reads": [],
+      "writes": [],
+      "creates": [
+        "@branch.ai_a from s0"
+      ],
+      "effects": [
+        "creates_branch",
+        "writes_state_graph"
+      ]
+    },
+    {
+      "id": 5,
+      "op": "S.CHECKOUT",
+      "state_in": "%state#1@ai_a from s0",
+      "state_out": "%state#1@ai_a from s0",
+      "branch": "@branch.ai_a",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "checkout_branch_or_state"
+      ]
+    },
+    {
+      "id": 6,
+      "op": "G.GEO_PATH",
+      "state_in": "%state#1@ai_a from s0",
+      "state_out": "%state#1@ai_a",
+      "branch": "@branch.ai_a",
+      "reads": [
+        "source=@node.0",
+        "target=@node.15",
+        "policy=ROUTE_COOL"
+      ],
+      "writes": [],
+      "creates": [
+        "%topology.route#6"
+      ],
+      "effects": [
+        "uses_topology",
+        "creates_topology_token"
+      ]
+    },
+    {
+      "id": 7,
+      "op": "T.TLOAD",
+      "state_in": "%state#1@ai_a",
+      "state_out": "%state#2@ai_a",
+      "branch": "@branch.ai_a",
+      "reads": [
+        "t0",
+        "[tensor.input]"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 8,
+      "op": "T.TLOAD",
+      "state_in": "%state#2@ai_a",
+      "state_out": "%state#3@ai_a",
+      "branch": "@branch.ai_a",
+      "reads": [
+        "t1",
+        "[tensor.weights]"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 9,
+      "op": "T.TMATMUL",
+      "state_in": "%state#3@ai_a",
+      "state_out": "%state#4@ai_a",
+      "branch": "@branch.ai_a",
+      "reads": [
+        "t2",
+        "t0",
+        "t1"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 12,
+      "op": "T.NPU_SYNC",
+      "state_in": "%state#4@ai_a",
+      "state_out": "%state#5@ai_a",
+      "branch": "@branch.ai_a",
+      "reads": [
+        "t2",
+        "%state.current"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 13,
+      "op": "T.NPU_AUDIT",
+      "state_in": "%state#5@ai_a",
+      "state_out": "%state#6@ai_a",
+      "branch": "@branch.ai_a",
+      "reads": [
+        "t2",
+        "@policy.safe_commit"
+      ],
+      "writes": [
+        "p1"
+      ],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 14,
+      "op": "S.SCORE",
+      "state_in": "%state#6@ai_a",
+      "state_out": "%state#6@ai_a",
+      "branch": "@branch.ai_a",
+      "reads": [
+        "@branch.ai_a",
+        "t2"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "scores_branch"
+      ]
+    },
+    {
+      "id": 15,
+      "op": "S.CHECKOUT",
+      "state_in": "%state#6@ai_a",
+      "state_out": "%state#6@ai_a",
+      "branch": "@branch.ai_a",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "checkout_branch_or_state"
+      ]
+    },
+    {
+      "id": 16,
+      "op": "S.BRANCH",
+      "state_in": "%state#6@ai_a",
+      "state_out": "%state#1@ai_b from s0",
+      "branch": "@branch.ai_b from s0",
+      "reads": [],
+      "writes": [],
+      "creates": [
+        "@branch.ai_b from s0"
+      ],
+      "effects": [
+        "creates_branch",
+        "writes_state_graph"
+      ]
+    },
+    {
+      "id": 17,
+      "op": "S.CHECKOUT",
+      "state_in": "%state#1@ai_b from s0",
+      "state_out": "%state#1@ai_b from s0",
+      "branch": "@branch.ai_b",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "checkout_branch_or_state"
+      ]
+    },
+    {
+      "id": 18,
+      "op": "Q.QALLOC",
+      "state_in": "%state#1@ai_b from s0",
+      "state_out": "%state#1@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "q0",
+        "qubits=1"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#18"
+      ],
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ]
+    },
+    {
+      "id": 19,
+      "op": "Q.QPREP",
+      "state_in": "%state#1@ai_b",
+      "state_out": "%state#2@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "q0",
+        "|0>"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#19"
+      ],
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ]
+    },
+    {
+      "id": 20,
+      "op": "Q.QGATE",
+      "state_in": "%state#2@ai_b",
+      "state_out": "%state#3@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "q0",
+        "H"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#20"
+      ],
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ]
+    },
+    {
+      "id": 21,
+      "op": "Q.QMEASURE",
+      "state_in": "%state#3@ai_b",
+      "state_out": "%state#4@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "q0"
+      ],
+      "writes": [
+        "r1"
+      ],
+      "creates": [
+        "%quantum_token#21"
+      ],
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ]
+    },
+    {
+      "id": 22,
+      "op": "Q.QSYNC",
+      "state_in": "%state#4@ai_b",
+      "state_out": "%state#5@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "r1",
+        "%state.current"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#22"
+      ],
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ]
+    },
+    {
+      "id": 23,
+      "op": "Q.QAUDIT",
+      "state_in": "%state#5@ai_b",
+      "state_out": "%state#6@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "r1",
+        "@policy.quantum_safe"
+      ],
+      "writes": [
+        "p2"
+      ],
+      "creates": [
+        "%quantum_token#23"
+      ],
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ]
+    },
+    {
+      "id": 24,
+      "op": "Q.QCOMMIT",
+      "state_in": "%state#6@ai_b",
+      "state_out": "%state#7@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "r1"
+      ],
+      "writes": [],
+      "creates": [
+        "%quantum_token#24"
+      ],
+      "effects": [
+        "quantum_step",
+        "creates_quantum_token"
+      ]
+    },
+    {
+      "id": 25,
+      "op": "T.TLOAD",
+      "state_in": "%state#7@ai_b",
+      "state_out": "%state#8@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "t3",
+        "[tensor.alt_input]"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 26,
+      "op": "T.TLOAD",
+      "state_in": "%state#8@ai_b",
+      "state_out": "%state#9@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "t4",
+        "[tensor.alt_weights]"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 27,
+      "op": "T.TMATMUL",
+      "state_in": "%state#9@ai_b",
+      "state_out": "%state#10@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "t5",
+        "t3",
+        "t4"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 28,
+      "op": "T.NPU_SYNC",
+      "state_in": "%state#10@ai_b",
+      "state_out": "%state#11@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "t5",
+        "%state.current"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "tensor_operation",
+        "writes_tensor_state"
+      ]
+    },
+    {
+      "id": 29,
+      "op": "S.SCORE",
+      "state_in": "%state#11@ai_b",
+      "state_out": "%state#11@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "@branch.ai_b",
+        "t5"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "scores_branch"
+      ]
+    },
+    {
+      "id": 30,
+      "op": "S.RANK",
+      "state_in": "%state#11@ai_b",
+      "state_out": "%state#11@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "merge_candidate_selection"
+      ]
+    },
+    {
+      "id": 31,
+      "op": "S.SELECT",
+      "state_in": "%state#11@ai_b",
+      "state_out": "%state#merged@main",
+      "branch": "@branch.ai_b",
+      "reads": [],
+      "writes": [
+        "s1"
+      ],
+      "creates": [],
+      "effects": [
+        "merge_candidate_selection"
+      ]
+    },
+    {
+      "id": 32,
+      "op": "A.AUDIT",
+      "state_in": "%state#merged@main",
+      "state_out": "%state#merged@main",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "s1",
+        "@policy.safe_commit"
+      ],
+      "writes": [
+        "p3"
+      ],
+      "creates": [
+        "%audit_token#32"
+      ],
+      "effects": [
+        "aegis_audit",
+        "creates_audit_token"
+      ]
+    },
+    {
+      "id": 33,
+      "op": "S.COMMIT",
+      "state_in": "%state#merged@main",
+      "state_out": "%state#committed@main",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "s1"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "commits_state",
+        "requires_audit"
+      ]
+    },
+    {
+      "id": 34,
+      "op": "S.ROLLBACK",
+      "state_in": "%state#committed@main",
+      "state_out": "%state#12@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [
+        "s0"
+      ],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "rollback_state",
+        "invalidates_descendants"
+      ]
+    },
+    {
+      "id": 35,
+      "op": "A.ATTEST",
+      "state_in": "%state#12@ai_b",
+      "state_out": "%state#12@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "effects": []
+    },
+    {
+      "id": 37,
+      "op": "B.HALT",
+      "state_in": "%state#12@ai_b",
+      "state_out": "%state#12@ai_b",
+      "branch": "@branch.ai_b",
+      "reads": [],
+      "writes": [],
+      "creates": [],
+      "effects": [
+        "control_flow"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.restore-point.v1",
+  "type": "object",
+  "required": ["schema", "name", "created_at", "repos"],
+  "properties": {
+    "schema": { "type": "string" },
+    "name": { "type": "string" },
+    "created_at": { "type": "string" },
+    "repos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "head"],
+        "properties": {
+          "id": { "type": "string" },
+          "path": { "type": "string" },
+          "head": { "type": "string" },
+          "tag": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "limitations": { "type": "array", "items": { "type": "string" } }
+  }
+}

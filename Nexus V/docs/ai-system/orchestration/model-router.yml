@@ -1,0 +1,52 @@
+schema: ai-system.model_router.v1
+updated: 2026-06-03
+router_policy:
+  default_mode: local_first
+  cloud_use: human_approved_only_when_project_policy_allows
+  preserve_context: true
+  require_evidence_for_claims: true
+routes:
+  - task_type: code_editing
+    preferred_agent: codex-local-engineer
+    model_class: coding_agent
+    reason: Requires filesystem and repository operation.
+  - task_type: broad_reasoning
+    preferred_agent: gpt-reasoner
+    model_class: advanced_reasoning
+    reason: Requires synthesis, planning, and explanation.
+  - task_type: research
+    preferred_agent: research-agent
+    model_class: research_or_web_enabled_when_allowed
+    reason: Requires source review and evidence triage.
+  - task_type: deep_research
+    preferred_agent: research-agent
+    model_class: deep_research_long_context_tool_agent
+    reason: Requires query planning, source retrieval, contradiction checks, citations, and report synthesis.
+  - task_type: multimodal_analysis
+    preferred_agent: observer-agent
+    model_class: vision_language_model_or_visual_tool_agent
+    reason: Requires screenshots, images, document images, UI state, diagrams, or visual search/editing.
+  - task_type: long_document_analysis
+    preferred_agent: gpt-reasoner
+    model_class: long_context_or_retrieval_augmented_reasoner
+    reason: Requires summarizing, extracting, translating, or analyzing massive documents without losing source anchors.
+  - task_type: data_analysis
+    preferred_agent: research-agent
+    model_class: data_analysis_agent
+    reason: Requires tables, CSV/JSON, spreadsheet logic, charts, and explanation without hidden assumptions.
+  - task_type: windows_agent_operation
+    preferred_agent: codex-local-engineer
+    model_class: local_computer_operation_agent
+    reason: Requires filesystem, shell, browser, app-state, permission gates, and rollback awareness.
+  - task_type: background_long_running_work
+    preferred_agent: observer-agent
+    model_class: checkpointed_agentic_executor
+    reason: Requires resumable state, heartbeat reports, drift checks, and human escalation.
+  - task_type: diagnostics
+    preferred_agent: observer-agent
+    model_class: local_tool_agent
+    reason: Requires scans, logs, probes, and verification.
+  - task_type: governance_review
+    preferred_agent: governance-agent
+    model_class: policy_review_agent
+    reason: Requires risk, policy, and audit framing.

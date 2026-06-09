@@ -1,0 +1,160 @@
+﻿{
+    "schema":  "ai-system.scan.v1",
+    "generated_at":  "2026-06-03T20:51:32.6163996+10:00",
+    "project_root":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
+    "disk":  {
+                 "drive":  "C",
+                 "free_gb":  0,
+                 "used_gb":  0
+             },
+    "layers":  [
+                   {
+                       "id":  "mega",
+                       "name":  "Mega Backup Stack",
+                       "role":  "orchestrator",
+                       "path":  ".",
+                       "full_path":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
+                       "exists":  true,
+                       "is_git":  true,
+                       "branch":  "main",
+                       "head":  "7c0a0f5",
+                       "origin":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\local-git-host\\2026-05-30_2035\\mega-backup-stack.git",
+                       "management_remote":  true,
+                       "tracked_dirty_count":  0,
+                       "untracked_count":  2,
+                       "file_count":  null,
+                       "size_mb":  null,
+                       "status":  "## main...origin/main [ahead 2]\n?? \"ai-system with plan.zip\"\n?? \"ai-system with plan/\""
+                   },
+                   {
+                       "id":  "game-client",
+                       "name":  "ChromieCraft Game Client",
+                       "role":  "child_payload_layer",
+                       "path":  "GameClient-ChromieCraft-3.3.5a",
+                       "full_path":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035\\GameClient-ChromieCraft-3.3.5a",
+                       "exists":  true,
+                       "is_git":  true,
+                       "branch":  "main",
+                       "head":  "a2508eb",
+                       "origin":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\local-git-host\\2026-05-30_2035\\gameclient-chromiecraft-3.3.5a.git",
+                       "management_remote":  true,
+                       "tracked_dirty_count":  0,
+                       "untracked_count":  25,
+                       "file_count":  null,
+                       "size_mb":  null,
+                       "status":  "## main...origin/main\n?? Battle.net.dll\n?? Data/\n?? DivxDecoder.dll\n?? Interface/\n?? ReShade.ini\n?? ReShadePreset.codex-backup-20260602-173332.ini\n?? ReShadePreset.ini\n?? Repair.exe\n?? Scan.dll\n?? WTF/\n?? Wow.exe\n?? WowError.exe\n?? backups/\n?? d3d10core.dll\n?? d3d11.dll\n?? d3d8.dll\n?? d3d9.dll\n?? dbghelp.dll\n?? dxgi.dll\n?? dxvk.conf\n?? ijl15.dll\n?? msvcr80.dll\n?? reshade-shaders/\n?? unicows.dll\n?? \"wow reshade.txt\""
+                   },
+                   {
+                       "id":  "live-state",
+                       "name":  "Server Live State",
+                       "role":  "child_state_layer",
+                       "path":  "Server-Live-State",
+                       "full_path":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035\\Server-Live-State",
+                       "exists":  true,
+                       "is_git":  true,
+                       "branch":  "main",
+                       "head":  "6c66e8f",
+                       "origin":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\local-git-host\\2026-05-30_2035\\server-live-state.git",
+                       "management_remote":  true,
+                       "tracked_dirty_count":  0,
+                       "untracked_count":  0,
+                       "file_count":  null,
+                       "size_mb":  null,
+                       "status":  "## main...origin/main"
+                   },
+                   {
+                       "id":  "server-project",
+                       "name":  "WoW Server Project",
+                       "role":  "child_project_layer",
+                       "path":  "WoW-Server-Project",
+                       "full_path":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035\\WoW-Server-Project",
+                       "exists":  true,
+                       "is_git":  true,
+                       "branch":  "main",
+                       "head":  "833f12f",
+                       "origin":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\local-git-host\\2026-05-30_2035\\wow-server-project.git",
+                       "management_remote":  true,
+                       "tracked_dirty_count":  0,
+                       "untracked_count":  0,
+                       "file_count":  null,
+                       "size_mb":  null,
+                       "status":  "## main...origin/main"
+                   },
+                   {
+                       "id":  "azerothcore-clean",
+                       "name":  "AzerothCore Clean Baseline",
+                       "role":  "nested_source_repo",
+                       "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk",
+                       "full_path":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035\\WoW-Server-Project\\servers\\wow\\azerothcore-wotlk",
+                       "exists":  true,
+                       "is_git":  true,
+                       "branch":  "master",
+                       "head":  "a73b1b2",
+                       "origin":  "https://github.com/azerothcore/azerothcore-wotlk.git",
+                       "management_remote":  false,
+                       "tracked_dirty_count":  0,
+                       "untracked_count":  0,
+                       "file_count":  null,
+                       "size_mb":  null,
+                       "status":  "## master...origin/master"
+                   },
+                   {
+                       "id":  "azerothcore-playerbots",
+                       "name":  "AzerothCore Playerbots Fork",
+                       "role":  "nested_source_repo",
+                       "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots",
+                       "full_path":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035\\WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots",
+                       "exists":  true,
+                       "is_git":  true,
+                       "branch":  "Playerbot",
+                       "head":  "e98e7a9",
+                       "origin":  "https://github.com/mod-playerbots/azerothcore-wotlk.git",
+                       "management_remote":  false,
+                       "tracked_dirty_count":  0,
+                       "untracked_count":  0,
+                       "file_count":  null,
+                       "size_mb":  null,
+                       "status":  "## Playerbot...origin/Playerbot"
+                   },
+                   {
+                       "id":  "mod-playerbots",
+                       "name":  "mod-playerbots",
+                       "role":  "nested_module_repo",
+                       "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots\\modules\\mod-playerbots",
+                       "full_path":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035\\WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots\\modules\\mod-playerbots",
+                       "exists":  true,
+                       "is_git":  true,
+                       "branch":  "master",
+                       "head":  "1041b0b",
+                       "origin":  "https://github.com/mod-playerbots/mod-playerbots.git",
+                       "management_remote":  false,
+                       "tracked_dirty_count":  0,
+                       "untracked_count":  0,
+                       "file_count":  null,
+                       "size_mb":  null,
+                       "status":  "## master...origin/master"
+                   }
+               ],
+    "signals":  [
+                    {
+                        "severity":  "yellow",
+                        "id":  "disk-low",
+                        "message":  "Drive free space is below 80 GB: 0 GB."
+                    },
+                    {
+                        "severity":  "yellow",
+                        "id":  "client-untracked-payload",
+                        "message":  "Game client has 25 untracked top-level entries. This is currently intentional."
+                    },
+                    {
+                        "severity":  "yellow",
+                        "id":  "broken-venv",
+                        "message":  "Python venv executable is missing: C:\\Users\\jonat\\Miniconda3\\python.exe."
+                    },
+                    {
+                        "severity":  "yellow",
+                        "id":  "realm-localhost",
+                        "message":  "Live-state auth dump realmlist appears to contain 127.0.0.1."
+                    }
+                ]
+}

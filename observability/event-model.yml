@@ -1,0 +1,21 @@
+schema: ai-system.event_model.v1
+updated: 2026-06-03
+events:
+  - type: scan_generated
+    producer: Invoke-AIProjectScan.ps1
+    output: ai-system/sensory/scans/latest-scan.json
+  - type: live_probe_generated
+    producer: Invoke-LiveServerProbe.ps1
+    output: ai-system/observability/reports/latest-live-probe.json
+  - type: handoff_generated
+    producer: New-HandoffSnapshot.ps1
+    output: ai-system/handoff/sessions/session-*.md
+  - type: work_item_created
+    producer: New-WorkItem.ps1
+    output: ai-system/work/work-items/*.md
+  - type: local_commit
+    producer: git
+    output: git history
+  - type: local_push
+    producer: git
+    output: local bare remote update

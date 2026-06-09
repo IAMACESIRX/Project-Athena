@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nexus-V Golden Trace v0.1",
+  "type": "object",
+  "required": [
+    "test_name",
+    "cycles",
+    "events"
+  ],
+  "properties": {
+    "test_name": {
+      "type": "string"
+    },
+    "cycles": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "cycle",
+          "type"
+        ],
+        "properties": {
+          "cycle": {
+            "type": "integer"
+          },
+          "type": {
+            "type": "string"
+          },
+          "branch_id": {
+            "type": "integer"
+          },
+          "state_id": {
+            "type": "integer"
+          },
+          "commit_id": {
+            "type": "integer"
+          },
+          "token_id": {
+            "type": "integer"
+          },
+          "fault_code": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

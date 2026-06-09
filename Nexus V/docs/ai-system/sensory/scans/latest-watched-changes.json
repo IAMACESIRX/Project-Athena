@@ -1,0 +1,263 @@
+﻿{
+    "schema":  "ai-system.watched_state_changes.v1",
+    "generated_at":  "2026-06-03T20:49:08.4028959+10:00",
+    "project_root":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
+    "bootstrap":  false,
+    "watched_count":  403,
+    "added_count":  11,
+    "modified_count":  30,
+    "removed_count":  0,
+    "added":  [
+                  {
+                      "path":  "ai-system/memory/context-iq/contextual-work-iq.md",
+                      "hash":  "F82EF75B32575265C1CB4BACC464BC14E25C796CC30B32186EDC70BE1432AE47",
+                      "last_write":  "2026-06-03T20:34:19.2965963+10:00",
+                      "bytes":  1564
+                  },
+                  {
+                      "path":  "ai-system/model-ops/target-ai/capability-roadmap.yml",
+                      "hash":  "738D5E35A2A7BCFBA0DEF97C6274DEB19E46D73FBD81981ABC7734774AB73331",
+                      "last_write":  "2026-06-03T20:43:46.3993404+10:00",
+                      "bytes":  3435
+                  },
+                  {
+                      "path":  "ai-system/model-ops/target-ai/evaluation-benchmarks.yml",
+                      "hash":  "09A183FD8031DAD2DBDF8B6CFF1ABE4DF1C02C444638DF4AC20F54B22C939BCB",
+                      "last_write":  "2026-06-03T20:34:19.2935496+10:00",
+                      "bytes":  2237
+                  },
+                  {
+                      "path":  "ai-system/model-ops/target-ai/target-ai-architecture.md",
+                      "hash":  "3B2ABEB87E76632667D48ABB11443D5ADAF5FD93353F3C0E03502D9BE86C6FAE",
+                      "last_write":  "2026-06-03T20:43:46.2409182+10:00",
+                      "bytes":  4292
+                  },
+                  {
+                      "path":  "ai-system/research/model-archaeology/deconstruction-protocol.md",
+                      "hash":  "A4ACFA2583D5E2038582CF51F3D9D449AEF70E6A8507593C6DD6484A409EB242",
+                      "last_write":  "2026-06-03T20:34:19.2852585+10:00",
+                      "bytes":  2129
+                  },
+                  {
+                      "path":  "ai-system/research/model-archaeology/odysseus-deconstruction.md",
+                      "hash":  "25FCBC38A3EEEF6C81F779AA54075921C71ADF69EEA2A1191B63337A7797BAD5",
+                      "last_write":  "2026-06-03T20:43:46.0817186+10:00",
+                      "bytes":  4007
+                  },
+                  {
+                      "path":  "ai-system/research/model-archaeology/open-model-capability-matrix.yml",
+                      "hash":  "8107BCD15B950E4F616D254D14D67A0D4BBDEBFCF815832B1F09159134A9A0AE",
+                      "last_write":  "2026-06-03T20:44:10.2801917+10:00",
+                      "bytes":  6664
+                  },
+                  {
+                      "path":  "ai-system/research/model-archaeology/README.md",
+                      "hash":  "F2D4460031756E9AC703E24C8590DE93E795BC22FB2348D0EAE396A3A2E2CE2F",
+                      "last_write":  "2026-06-03T20:43:45.7308350+10:00",
+                      "bytes":  2032
+                  },
+                  {
+                      "path":  "ai-system/research/model-archaeology/source-ledger.yml",
+                      "hash":  "504D7A366D0C7589A22F4A76D6A83BBEEE721451C42D36AE7CAE9A1B69F93FAC",
+                      "last_write":  "2026-06-03T20:43:45.9059266+10:00",
+                      "bytes":  5865
+                  },
+                  {
+                      "path":  "ai-system/runtime/agent-platform/windows-agent-platform.md",
+                      "hash":  "C9DE221BA5452F1042DF87A6451C45B978714502B0D4B29EE58EA56C0451A245",
+                      "last_write":  "2026-06-03T20:34:19.2945882+10:00",
+                      "bytes":  1768
+                  },
+                  {
+                      "path":  "ai-system/schemas/open-model-source.schema.json",
+                      "hash":  "0E62CE5C0B0DA819C075078EDBC0D6B5CB000B3B4F1EFD17D0EA2A6DC6198F38",
+                      "last_write":  "2026-06-03T20:34:19.2985422+10:00",
+                      "bytes":  791
+                  }
+              ],
+    "modified":  [
+                     {
+                         "path":  "ai-system/AI-PORTAL.md",
+                         "hash":  "644A5627A1A9C2CD1041814CD95B47A5F1466A46DD5C92EB189C70BE94E82B37",
+                         "last_write":  "2026-06-03T20:45:29.0440991+10:00",
+                         "bytes":  4150
+                     },
+                     {
+                         "path":  "ai-system/diagnostics/reports/latest-integrity-report.json",
+                         "hash":  "8CB942F33F001AFC146A60C173A173E683348764D05B778F0EAB40F194B39A09",
+                         "last_write":  "2026-06-03T20:48:58.6530474+10:00",
+                         "bytes":  294
+                     },
+                     {
+                         "path":  "ai-system/diagnostics/reports/latest-integrity-report.md",
+                         "hash":  "E4ED5D879C9D72F10046F41ACEBA329C7C4C0C6220D46E80A299813380AF049C",
+                         "last_write":  "2026-06-03T20:48:58.6687097+10:00",
+                         "bytes":  231
+                     },
+                     {
+                         "path":  "ai-system/forensics/claim-catalog.csv",
+                         "hash":  "4CE08CC95624813F5BC243050C5954D762B4D7324C0260814E13BB5A7CCD60EC",
+                         "last_write":  "2026-06-03T20:47:58.5303886+10:00",
+                         "bytes":  2882
+                     },
+                     {
+                         "path":  "ai-system/forensics/event-timeline.csv",
+                         "hash":  "DB63355842660DAF193F01D371A889A882CA762BFBE6AAD41F491A206F1E3B93",
+                         "last_write":  "2026-06-03T20:48:22.3554534+10:00",
+                         "bytes":  1288
+                     },
+                     {
+                         "path":  "ai-system/forensics/evidence-claim-map.csv",
+                         "hash":  "3B4003EAF536085C4F8B6DFE3001B41669BFD0CB963129D3AED266FCC32608B4",
+                         "last_write":  "2026-06-03T20:47:58.7307610+10:00",
+                         "bytes":  2799
+                     },
+                     {
+                         "path":  "ai-system/forensics/evidence-register.csv",
+                         "hash":  "F8FB9FB911E865787F735727DB7629F4CFBC030C2497091A3B4E6ED885BADB8C",
+                         "last_write":  "2026-06-03T20:47:58.3535913+10:00",
+                         "bytes":  3982
+                     },
+                     {
+                         "path":  "ai-system/forensics/verification-reports/latest-forensic-verification.json",
+                         "hash":  "F1819A951AE1EEDA0D4EDE8D6E7275EA0A82C0CA443B219BF60143CEA3634907",
+                         "last_write":  "2026-06-03T20:49:05.7151880+10:00",
+                         "bytes":  456
+                     },
+                     {
+                         "path":  "ai-system/forensics/verification-reports/latest-forensic-verification.md",
+                         "hash":  "25589A62B396263974123E4983E8A3729DB80A2E58CD4E5902839A341AB2FC36",
+                         "last_write":  "2026-06-03T20:49:05.7151880+10:00",
+                         "bytes":  343
+                     },
+                     {
+                         "path":  "ai-system/integration/ai-ingestion-guide.md",
+                         "hash":  "DDD6EAD39B58EFA53A49525F54E526A70FFC6FB9D4F582E4DDDD8F70C1246F4B",
+                         "last_write":  "2026-06-03T20:45:29.3271094+10:00",
+                         "bytes":  1918
+                     },
+                     {
+                         "path":  "ai-system/manifests/capability-matrix.yml",
+                         "hash":  "B0E658C6809E2AF906ADB6E210B1C8898237B291DCD7E5F9BDD514EF56A54D2A",
+                         "last_write":  "2026-06-03T20:37:03.8595153+10:00",
+                         "bytes":  9418
+                     },
+                     {
+                         "path":  "ai-system/manifests/generated-ai-index.json",
+                         "hash":  "37E328E2D58FD501444E75E132A11110E93E44CDCBECB9E5408DEDD592B3C2A4",
+                         "last_write":  "2026-06-03T20:49:05.1560920+10:00",
+                         "bytes":  31326
+                     },
+                     {
+                         "path":  "ai-system/manifests/ingestion-order.yml",
+                         "hash":  "73569F6060B135F753C21F5612ABB6A7EB3E8FC0565A2C676EBCC7D3E3DC0110",
+                         "last_write":  "2026-06-03T20:44:10.4111103+10:00",
+                         "bytes":  3476
+                     },
+                     {
+                         "path":  "ai-system/manifests/system-manifest.json",
+                         "hash":  "7D83E744CE7EE411FDC9295DA7C3154F0FBCAA1C9A8CC7E33974053987490091",
+                         "last_write":  "2026-06-03T20:44:10.1422197+10:00",
+                         "bytes":  9514
+                     },
+                     {
+                         "path":  "ai-system/model-ops/evaluation-rubric.yml",
+                         "hash":  "BEFAA1B342FC48A9218E331426F33A49C654E7E0F8DEB87F8E888A19DB221052",
+                         "last_write":  "2026-06-03T20:36:21.8774310+10:00",
+                         "bytes":  1942
+                     },
+                     {
+                         "path":  "ai-system/model-ops/model-registry.yml",
+                         "hash":  "6AC36C0B71783AA97D81E04D6B4B7849919CA78BC1DAD60CEFD1E7A25F92CADF",
+                         "last_write":  "2026-06-03T20:36:21.8774310+10:00",
+                         "bytes":  3629
+                     },
+                     {
+                         "path":  "ai-system/navigation/generated/project-map.json",
+                         "hash":  "3D3F17EDBADC408FCE59E2CE6EEC2873EE76D8251AF99005B0B61EFD0CC5AC06",
+                         "last_write":  "2026-06-03T20:49:04.4619922+10:00",
+                         "bytes":  4586
+                     },
+                     {
+                         "path":  "ai-system/observability/reports/latest-log-intelligence.json",
+                         "hash":  "C200AC009A5EB3111E328C61DE4C0FCAC49648A06BD608AAF30BAECAE02652F5",
+                         "last_write":  "2026-06-03T20:49:06.4463457+10:00",
+                         "bytes":  5682
+                     },
+                     {
+                         "path":  "ai-system/observability/reports/latest-log-intelligence.md",
+                         "hash":  "D2CA53E84A062C35FCA6F2BAB290A0ADD4D41ADDA6ED3620F50625CD546D33CF",
+                         "last_write":  "2026-06-03T20:49:06.4663448+10:00",
+                         "bytes":  1414
+                     },
+                     {
+                         "path":  "ai-system/orchestration/model-router.yml",
+                         "hash":  "5B2F2562811654DA6A60FBC18C41C15EB8F9AF7BCB294C078FF3964F0A94F1DC",
+                         "last_write":  "2026-06-03T20:45:58.6967398+10:00",
+                         "bytes":  2417
+                     },
+                     {
+                         "path":  "ai-system/research/experiments.md",
+                         "hash":  "DD1C4BD56D2839249B8574803E56D84DFB09480B0E95FD734CD8223843280065",
+                         "last_write":  "2026-06-03T20:44:41.6955832+10:00",
+                         "bytes":  1701
+                     },
+                     {
+                         "path":  "ai-system/research/rd-backlog.md",
+                         "hash":  "4BBF500C3DF3D8B44628B891136E8B58B017DF34F7DC4AE9A16C7708182DFCBC",
+                         "last_write":  "2026-06-03T20:44:41.5572153+10:00",
+                         "bytes":  2487
+                     },
+                     {
+                         "path":  "ai-system/sensory/baselines/watched-state-baseline.csv",
+                         "hash":  "B30A112DB6ECDE153488E032991CB0D33E2D5DF63D53D85E8A38E7C0BBC83BD9",
+                         "last_write":  "2026-06-03T20:11:49.1824446+10:00",
+                         "bytes":  61989
+                     },
+                     {
+                         "path":  "ai-system/sensory/scans/latest-scan.json",
+                         "hash":  "076EEB0D56D9C7DCD9291045C0B1271DD771DFE92D53C24D53B85ED4DDDD9EB0",
+                         "last_write":  "2026-06-03T20:49:03.3111023+10:00",
+                         "bytes":  10626
+                     },
+                     {
+                         "path":  "ai-system/sensory/scans/latest-watched-changes.json",
+                         "hash":  "B8FA90FC49ADD21151F0975B3B5B51E50D237B8770D16BF8C8453F435A10B622",
+                         "last_write":  "2026-06-03T20:11:49.1646527+10:00",
+                         "bytes":  2990
+                     },
+                     {
+                         "path":  "ai-system/sensory/scans/latest-watched-changes.md",
+                         "hash":  "B2C8CF1D459904535540E35B67281596E70BE40BA6439E86985C919D11CA035D",
+                         "last_write":  "2026-06-03T20:11:49.1744577+10:00",
+                         "bytes":  592
+                     },
+                     {
+                         "path":  "ai-system/sensory/scans/SCAN-LOG.md",
+                         "hash":  "C7760DC81AAA765CB811026AE7DDE4D75B56C90C8FDFDACA81F4EE7EA34BC7CA",
+                         "last_write":  "2026-06-03T20:49:03.3204008+10:00",
+                         "bytes":  1575
+                     },
+                     {
+                         "path":  "ai-system/START-HERE.md",
+                         "hash":  "0203E793C92FB32EEC51D4F74824FA14B2391A093715BC6CFF34F280CE030981",
+                         "last_write":  "2026-06-03T20:45:29.1827371+10:00",
+                         "bytes":  2859
+                     },
+                     {
+                         "path":  "ai-system/tools/Export-AISystemManifest.ps1",
+                         "hash":  "70A2B7156A3B5D0EFA5F3B829E7256150F8720C80D8F7433F61EC71508B250EE",
+                         "last_write":  "2026-06-03T20:35:36.8187877+10:00",
+                         "bytes":  3723
+                     },
+                     {
+                         "path":  "ai-system/tools/Invoke-AIIntegrityCheck.ps1",
+                         "hash":  "894C89DA1BEBB52F4F701FD26770EF6FD841A555867A907E5416E3663C5C3E43",
+                         "last_write":  "2026-06-03T20:44:19.9749240+10:00",
+                         "bytes":  8096
+                     }
+                 ],
+    "removed":  [
+
+                ]
+}

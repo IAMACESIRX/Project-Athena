@@ -1,0 +1,78 @@
+; 06_full_system_ai_versioned_secure.nvasm
+; Canonical Phase 6 integration bring-up program.
+; Exercises RSM, topology, tensor/NPU, quantum, Aegis, ATTEST, and MINREP.
+
+.module "full_system_ai_versioned_secure"
+.version "0.1"
+.arch "NVISC-v0.1"
+.target "NVVM+RTL"
+.entry main
+
+.section .policy
+.policy safe_commit {
+    require AEGIS_AUDIT
+    require VALID_PROVENANCE
+    require FPERR_OK
+    require ROLLBACK_AVAILABLE
+    on_fail DENY
+}
+
+.policy quantum_safe {
+    require QAUDIT
+    require QFID_MIN 0.90
+    on_fail ROLLBACK
+}
+
+.section .data
+input: .qword 12
+
+.section .text
+main:
+    S.SNAP s0
+    S.COMMIT s0
+
+    ; Branch A: tensor inference path.
+    S.BRANCH @branch.ai_a from s0
+    S.CHECKOUT @branch.ai_a
+    G.GEO_PATH source=@node.0, target=@node.15, policy=ROUTE_COOL
+    T.TLOAD t0, [tensor.input]
+    T.TLOAD t1, [tensor.weights]
+    T.TMATMUL t2, t0, t1
+    FPERR.CHK t2 -> p0
+    @notpred(p0)
+    FPERR.FIX t2
+    T.NPU_SYNC t2, %state.current
+    T.NPU_AUDIT t2, @policy.safe_commit -> p1
+    S.SCORE @branch.ai_a, t2
+
+    ; Branch B: quantum-assisted alternate path.
+    S.CHECKOUT s0
+    S.BRANCH @branch.ai_b from s0
+    S.CHECKOUT @branch.ai_b
+    @qmode(QSIM)
+    Q.QALLOC q0, qubits=1
+    Q.QPREP q0, |0>
+    Q.QGATE q0, H
+    Q.QMEASURE q0 -> r1
+    Q.QSYNC r1, %state.current
+    Q.QAUDIT r1, @policy.quantum_safe -> p2
+    @pred(p2)
+    Q.QCOMMIT r1
+    T.TLOAD t3, [tensor.alt_input]
+    T.TLOAD t4, [tensor.alt_weights]
+    T.TMATMUL t5, t3, t4
+    T.NPU_SYNC t5, %state.current
+    S.SCORE @branch.ai_b, t5
+
+    ; Select and commit best audited future.
+    S.RANK @branch.ai_a, @branch.ai_b
+    S.SELECT BEST -> s1
+    A.AUDIT s1, @policy.safe_commit -> p3
+    @pred(p3)
+    S.COMMIT s1
+    @notpred(p3)
+    S.ROLLBACK s0
+
+    A.ATTEST s1 -> c0
+    P.MINREP %session.current -> c1
+    B.HALT

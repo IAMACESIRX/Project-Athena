@@ -1,0 +1,63 @@
+schema: ai-system.tool_index.v1
+updated: 2026-06-03
+tools:
+  - id: project_scan
+    path: ai-system/tools/Invoke-AIProjectScan.ps1
+    mutates: scan_artifacts_only
+    purpose: Inspect layered repo health and known project risks.
+  - id: handoff_snapshot
+    path: ai-system/tools/New-HandoffSnapshot.ps1
+    mutates: handoff_session_file
+    purpose: Create continuity handoff for next session.
+  - id: layer_pointer_update
+    path: ai-system/tools/Update-LayerPointers.ps1
+    mutates: mega_repo_index_and_optional_commit
+    purpose: Stage/commit updated child repo pointers.
+  - id: manifest_export
+    path: ai-system/tools/Export-AISystemManifest.ps1
+    mutates: generated_manifest
+    purpose: Build machine-readable AI system index.
+  - id: project_map_export
+    path: ai-system/tools/Export-ProjectMap.ps1
+    mutates: generated_project_map
+    purpose: Build structured project map.
+  - id: work_item_create
+    path: ai-system/tools/New-WorkItem.ps1
+    mutates: work_items
+    purpose: Create project work records.
+  - id: live_server_probe
+    path: ai-system/tools/Invoke-LiveServerProbe.ps1
+    mutates: observability_reports_only
+    purpose: Non-destructive server status and log inspection.
+  - id: chat_handoff
+    path: ai-system/tools/New-ChatHandoff.ps1
+    mutates: continuity_logs
+    purpose: Create chat logs and handoff packets.
+  - id: audit_event
+    path: ai-system/tools/New-AuditEvent.ps1
+    mutates: audit_events
+    purpose: Create individual causality/audit records.
+  - id: restore_point
+    path: ai-system/tools/New-RestorePoint.ps1
+    mutates: restore_point_manifests_and_optional_git_tags
+    purpose: Create restore point manifests and optional committed-history backups.
+  - id: operation_cycle
+    path: ai-system/tools/Invoke-AIOperationCycle.ps1
+    mutates: generated_reports_scans_ledgers
+    purpose: Run the integrated AI operation cycle across scan, map, manifest, forensics, logs, watched state, and cognition checklist.
+  - id: integrity_check
+    path: ai-system/tools/Invoke-AIIntegrityCheck.ps1
+    mutates: diagnostics_reports_and_correction_queue
+    purpose: Verify required AI-system files, manifest references, JSON parsing, and local-only governance.
+  - id: forensic_verification
+    path: ai-system/tools/Invoke-AIForensicVerification.ps1
+    mutates: forensics_verification_reports
+    purpose: Validate evidence register, claims, evidence-claim links, timeline references, and known unknowns.
+  - id: log_intelligence
+    path: ai-system/tools/Invoke-AILogIntelligence.ps1
+    mutates: observability_reports_and_resolvable_issue_queue
+    purpose: Scan local logs against project signature catalog and queue resolvable findings.
+  - id: watched_state
+    path: ai-system/tools/Invoke-AIWatchedState.ps1
+    mutates: watched_state_baseline_and_change_reports
+    purpose: Compare selected project-control files against a rolling hash baseline.

@@ -1,0 +1,28 @@
+schema: ai-system.interaction_contracts.v1
+updated: 2026-06-03
+contracts:
+  - id: ai_to_filesystem
+    allowed: inspect_and_targeted_edit
+    must_record: significant_changes
+  - id: ai_to_git
+    allowed: local_commit_and_local_push
+    blocked: cloud_push
+  - id: ai_to_live_server
+    allowed: read_only_probe
+    confirmation_required:
+      - start_stop_services
+      - database_import
+      - database_export
+      - network_exposure_change
+  - id: client_to_server
+    depends_on:
+      - client_realmlist
+      - authserver_reachable
+      - auth_db_realmlist
+      - worldserver_reachable
+  - id: live_state_to_runtime
+    depends_on:
+      - docker_database
+      - required_sql_dumps
+      - import_order
+      - service_restart

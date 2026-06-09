@@ -1,0 +1,7 @@
+"event_id","time","event_type","summary","evidence_id","layer","notes"
+"EVT-WOW-001","2026-06-03","system_build","AI system control plane established and expanded.","EVD-WOW-MANIFEST-001","ai-system","Represents current generated AI system index."
+"EVT-WOW-002","2026-06-03","git_architecture","Mega and child local Git management model recorded.","EVD-WOW-SCAN-001","mega","Local-only management remotes are part of governance."
+"EVT-WOW-003","2026-06-03","cognition_expansion","Advanced cognition systems added to the AI system.","EVD-WOW-DECISION-001","ai-system","Cognition systems are used by engine checklist."
+"EVT-WOW-004","2026-06-03","engine_expansion","Operation engine and project forensics layer added.","EVD-WOW-FORENSIC-001","ai-system","This event anchors the Redwire/Xavier functional adaptation."
+"EVT-AIOS-001","2026-06-03","generalization","AI system generalized into a multi-purpose local AI-OS control plane.","EVD-AIOS-ID-001","ai-system","Plan folder features were adapted into normal AI-system folders."
+"EVT-AIOS-002","2026-06-03","model_archaeology","Open-model and self-hosted AI workspace deconstruction layer added.","EVD-AIOS-MODELARCH-001","ai-system","MiniMax, Kimi, GLM, Qwen, DeepSeek, and Odysseus are tracked as source-labeled reconstruction inputs."

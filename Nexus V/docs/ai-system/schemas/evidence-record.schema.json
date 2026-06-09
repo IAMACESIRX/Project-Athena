@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.evidence_record.v1",
+  "type": "object",
+  "required": ["evidence_id", "source_type", "canonical_name", "category", "evidence_strength"],
+  "properties": {
+    "evidence_id": { "type": "string", "pattern": "^EVD-[A-Z0-9]+-[A-Z]+-[0-9]{3,}$" },
+    "source_type": { "type": "string" },
+    "canonical_name": { "type": "string" },
+    "relative_path": { "type": "string" },
+    "category": { "type": "string" },
+    "evidence_role": { "type": "string" },
+    "evidence_strength": {
+      "enum": ["direct", "derived", "inferred", "reported", "provisional", "stale", "contradicted"]
+    },
+    "event_time": { "type": "string" },
+    "sha256": { "type": "string" },
+    "notes": { "type": "string" }
+  }
+}

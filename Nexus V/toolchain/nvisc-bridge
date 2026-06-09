@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from nvisc_toolchain.cli import main
+main()

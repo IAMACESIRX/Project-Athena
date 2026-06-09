@@ -1,0 +1,11 @@
+schema: ai-system.creation_ledger.v1
+updated: 2026-06-03
+creations:
+  - id: CRE-001
+    name: "AI project operating substrate"
+    need: "Persistent project memory and modular AI/human coordination."
+    status: implemented
+  - id: CRE-002
+    name: "Cognition subsystem"
+    need: "Advanced reasoning modes with auditability and anti-hallucination gates."
+    status: implemented

@@ -1,0 +1,15 @@
+schema: ai-system.semantic_canon.v1
+updated: 2026-06-03
+terms:
+  - term: "local-only"
+    canonical_meaning: "No GitHub/cloud server push for management repos unless explicitly changed by the human."
+  - term: "restore point"
+    canonical_meaning: "A recorded recoverability anchor, usually Git heads/tags plus manifest; not necessarily a full filesystem backup."
+  - term: "client payload"
+    canonical_meaning: "Large game client files, many currently untracked by Git."
+  - term: "handoff"
+    canonical_meaning: "Compressed continuity record for the next human or AI."
+  - term: "scan"
+    canonical_meaning: "Generated current-state report, not permanent truth."
+  - term: "cognition output"
+    canonical_meaning: "Reasoning candidate that must be evidence-labeled before action."

@@ -1,0 +1,13 @@
+schema: ai-system.discernment_ledger.v1
+updated: 2026-06-03
+items:
+  - id: CID-001
+    obvious_interpretation: "More features should come next."
+    counter_intuitive_interpretation: "Restore and observability should come before more runtime automation."
+    why_it_might_be_true: "Automation without observability can hide or amplify damage."
+    test: "Run restore drill and live probe before command execution modules."
+  - id: CID-002
+    obvious_interpretation: "Commit the full game client to protect it."
+    counter_intuitive_interpretation: "Do not commit full payload until storage plan exists."
+    why_it_might_be_true: "Git object storage could create disk pressure and reduce safety."
+    test: "Measure target storage and decide tracking strategy."
