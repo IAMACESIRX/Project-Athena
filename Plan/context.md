@@ -39,6 +39,7 @@ It contains:
 
 - AI-OS v1-v13 specifications.
 - Project Athena cognitive orchestrator specification.
+- OASIS/Athena local-agent adapter model.
 - Odysseus Nexus ontology unification blueprint.
 - Athena memory architecture Word spec.
 - Nexus-V CPU/SoC/hardware Word specs.
@@ -56,8 +57,8 @@ folder.
 
 Observed files:
 
-- 63 files total.
-- 24 Markdown files.
+- 64 files total.
+- 25 Markdown files.
 - 24 Word `.docx` specs.
 - 13 source `.zip` archives.
 - 2 raw `.txt` notes.
@@ -105,6 +106,9 @@ The folder describes this intended stack:
 
 ```text
 Human intent
+OASIS operating environment
+Central Athena external brain
+Local Athena adapters in Codex / Jarvis / GPT / future agents
 AI-OS constitution and identity
 Governance and authority
 Organization and agents

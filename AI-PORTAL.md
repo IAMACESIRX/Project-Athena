@@ -18,35 +18,36 @@ Legacy retained project: WoW Backup Stack.
 
 1. `context.md`
 2. `Plan/context.md`
-3. `context-file-index.md`
-4. `manifests/system-manifest.json`
-5. `manifests/ingestion-order.yml`
-6. `memory/athena-memory-map.md`
-7. `work/ATHENA-FIRST-STEPS.md`
-8. `identity/README.md`
-9. `identity/constitution.md`
-10. `projects/project-registry.yml`
-11. `organization/hierarchy.yml`
-12. `agents/agent-registry.yml`
-13. `orchestration/model-router.yml`
-14. `START-HERE.md`
-15. `governance/absolutes.md`
-16. `registries/layers.yml`
-17. `registries/modules.yml`
-18. `navigation/project-map.md`
-19. `sensory/health-model.md`
-20. `work/TODO.md`
-21. `engine/README.md`
-22. `engine/order-of-operations.md`
-23. `cognition/README.md`
-24. `cognition/anti-hallucination/anti-hallucination-protocol.md`
-25. `cognition/cognition-workflow.md`
-26. `council/roles.yml`
-27. `schemas/athena-task-intake.schema.json`
-28. `templates/athena-task-intake.md`
-29. `forensics/evidence-register.csv`
-30. `forensics/claim-catalog.csv`
-31. `forensics/evidence-claim-map.csv`
+3. `Plan/OASIS_ATHENA_AGENT_MODEL.md`
+4. `context-file-index.md`
+5. `manifests/system-manifest.json`
+6. `manifests/ingestion-order.yml`
+7. `memory/athena-memory-map.md`
+8. `work/ATHENA-FIRST-STEPS.md`
+9. `identity/README.md`
+10. `identity/constitution.md`
+11. `projects/project-registry.yml`
+12. `organization/hierarchy.yml`
+13. `agents/agent-registry.yml`
+14. `orchestration/model-router.yml`
+15. `START-HERE.md`
+16. `governance/absolutes.md`
+17. `registries/layers.yml`
+18. `registries/modules.yml`
+19. `navigation/project-map.md`
+20. `sensory/health-model.md`
+21. `work/TODO.md`
+22. `engine/README.md`
+23. `engine/order-of-operations.md`
+24. `cognition/README.md`
+25. `cognition/anti-hallucination/anti-hallucination-protocol.md`
+26. `cognition/cognition-workflow.md`
+27. `council/roles.yml`
+28. `schemas/athena-task-intake.schema.json`
+29. `templates/athena-task-intake.md`
+30. `forensics/evidence-register.csv`
+31. `forensics/claim-catalog.csv`
+32. `forensics/evidence-claim-map.csv`
 
 ## First Run
 
@@ -65,6 +66,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AthenaCycle.p
 ## How To Think About This System
 
 - The repository is the external-brain substrate.
+- OASIS is the larger operating environment around Athena.
+- Central Athena is the canonical memory, database, processor, router, and
+  evidence trail.
+- Codex, Jarvis, GPT, and future AI surfaces each operate through a local Athena
+  adapter rather than becoming separate project brains.
 - `Plan/` is the design authority.
 - `Nexus V/` is the semantic execution implementation branch.
 - Identity and constitution are the durable AI-OS core.

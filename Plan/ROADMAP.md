@@ -15,6 +15,7 @@ Status: active
 - First Athena test cycle and brainstorm cycle exist.
 - Athena has a task-intake schema/template, memory map, and cycle report
   template.
+- OASIS/Athena local-agent adapter model is captured as Plan intent.
 - Stale old-layout paths are being normalized.
 
 Exit criteria:
@@ -41,6 +42,8 @@ Exit criteria:
 
 Goal: convert architecture documents into implementation queues.
 
+- Convert the OASIS/Athena model into adapter contracts for Codex, Jarvis, GPT,
+  and future local agents.
 - Extract AI-OS v13 concepts into root architecture/work docs.
 - Extract Cognitive Orchestrator concepts into cognition/orchestration tasks.
 - Extract Athena memory architecture into memory contracts.
@@ -51,6 +54,8 @@ Exit criteria:
 
 - `Plan/IMPLEMENTATION_MATRIX.md` maps design intent to implementation state.
 - Work items exist for the highest-priority missing pieces.
+- Agent adapter contract work is represented in `agents/`, `orchestration/`,
+  and `work/`.
 
 ## Phase 3: Nexus-V Alignment
 

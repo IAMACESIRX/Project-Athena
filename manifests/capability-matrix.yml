@@ -15,6 +15,13 @@ capabilities:
       - context.md
       - AI-PORTAL.md
       - memory/athena-memory-map.md
+  - id: oasis_athena_agent_model
+    status: specified
+    description: Defines OASIS as the outer operating environment, central Athena as the canonical external brain, and Codex/Jarvis/GPT/future AI surfaces as local Athena adapters.
+    evidence:
+      - Plan/OASIS_ATHENA_AGENT_MODEL.md
+      - context.md
+      - AI-PORTAL.md
   - id: athena_task_intake
     status: active
     description: Converts human goals into structured task-intake packets with facts, assumptions, unknowns, risks, required output, verification, and writeback targets.

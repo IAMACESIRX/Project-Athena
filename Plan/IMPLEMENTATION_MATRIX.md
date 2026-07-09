@@ -15,6 +15,7 @@ This matrix connects Plan intent to current Project Athena implementation.
 | Plan Concept | Current Files | Status | Evidence | Next Step |
 |---|---|---|---|---|
 | AI prosthetic external brain | `context.md`, `AI-PORTAL.md`, `identity/README.md` | active | Definition written into root context and identity. | Keep first-read files aligned. |
+| OASIS/Athena local-agent model | `Plan/OASIS_ATHENA_AGENT_MODEL.md`, `context.md`, `AI-PORTAL.md` | planned | Human diagram converted into Plan-level model. | Build adapter contracts for Codex, Jarvis, GPT, and future local agents. |
 | Task intake | `schemas/athena-task-intake.schema.json`, `templates/athena-task-intake.md`, `work/intake/` | active | Schema, template, and sample intake exist. | Run a task to closure through intake. |
 | Memory architecture | `memory/athena-memory-map.md`, `memory/` | active | Memory map defines layers and writeback rules. | Extract details from Athena Memory Architecture docx. |
 | Decision processor loop | `engine/order-of-operations.md`, `templates/athena-cycle-report.md`, `tools/Invoke-AthenaCycle.ps1` | active | Cycle template and runner exist. | Validate runner output and closure workflow. |

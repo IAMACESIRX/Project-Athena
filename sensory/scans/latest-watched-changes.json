@@ -1,182 +1,230 @@
 ﻿{
     "schema":  "ai-system.watched_state_changes.v1",
-    "generated_at":  "2026-07-10T01:30:19.7911177+10:00",
+    "generated_at":  "2026-07-10T02:08:59.9459449+10:00",
     "project_root":  "D:\\Projects\\Project Athena",
     "bootstrap":  false,
-    "watched_count":  1227,
-    "added_count":  2,
-    "modified_count":  26,
+    "watched_count":  1230,
+    "added_count":  3,
+    "modified_count":  33,
     "removed_count":  0,
     "added":  [
                   {
-                      "path":  "Nexus V/docs/ai-system/ARCHIVE-NOTICE.md",
-                      "hash":  "49925712D55D73B61A0FC6BCD32B90D9F2F24E7318A4A314A4B74E557644A8D7",
-                      "last_write":  "2026-07-10T01:26:53.7732209+10:00",
-                      "bytes":  609
+                      "path":  "Nexus V/docs/Plan/OASIS_ATHENA_AGENT_MODEL.md",
+                      "hash":  "0DA19A838745A55A33C257A257767B8E6EDDE8624D0761524EE0F6D3E710B2D3",
+                      "last_write":  "2026-07-10T02:06:46.6951160+10:00",
+                      "bytes":  4626
                   },
                   {
-                      "path":  "tools/Update-ContextFileIndex.ps1",
-                      "hash":  "74C9899EFE9CD534E283A5D2CE0F0C7781D52709F53A1896EA23C88EFAB49D4F",
-                      "last_write":  "2026-07-10T01:29:14.9520939+10:00",
-                      "bytes":  9361
+                      "path":  "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+                      "hash":  "0DA19A838745A55A33C257A257767B8E6EDDE8624D0761524EE0F6D3E710B2D3",
+                      "last_write":  "2026-07-10T02:06:46.6951160+10:00",
+                      "bytes":  4626
+                  },
+                  {
+                      "path":  "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+                      "hash":  "0DA19A838745A55A33C257A257767B8E6EDDE8624D0761524EE0F6D3E710B2D3",
+                      "last_write":  "2026-07-10T02:06:46.6951160+10:00",
+                      "bytes":  4626
                   }
               ],
     "modified":  [
                      {
+                         "path":  "AI-PORTAL.md",
+                         "hash":  "5041BE5D07D5B7E6F45CD2AF7B14C302FE6F4E970F23639C28623BB941971915",
+                         "last_write":  "2026-07-10T02:07:43.3634086+10:00",
+                         "bytes":  4774
+                     },
+                     {
                          "path":  "context.md",
-                         "hash":  "C3CB5EFAF8BCC5869D516B6756519A0A7A6D08C99103FE213CA61E9489B9D972",
-                         "last_write":  "2026-07-10T01:28:00.7811722+10:00",
-                         "bytes":  52827
+                         "hash":  "7DDFDC690C83FB909C47B314A828D7A0ADF965DFF446C99452E839B9A507D49A",
+                         "last_write":  "2026-07-10T02:07:06.7022480+10:00",
+                         "bytes":  53681
                      },
                      {
                          "path":  "context-file-index.md",
-                         "hash":  "350B679A528B816024D4788BDBBF9C7F813019D332E1A989924C3FEA655215DE",
-                         "last_write":  "2026-07-10T01:30:08.9480860+10:00",
-                         "bytes":  181475
+                         "hash":  "2B08042CAEEC9C049D364DE19674A5E1AAE64F90C857889D4B9DE5B7FE5C13F8",
+                         "last_write":  "2026-07-10T01:30:28.8057056+10:00",
+                         "bytes":  181473
                      },
                      {
                          "path":  "diagnostics/reports/latest-integrity-report.json",
-                         "hash":  "857A7744A38598D0AA7A6ED208A6D056F9115568A877D05084D34CA9B2AFC12B",
-                         "last_write":  "2026-07-10T01:30:13.7736956+10:00",
+                         "hash":  "57246D78D00586DA4C2865341F397914F8A0A51F962F0E604EA0844CC51536E3",
+                         "last_write":  "2026-07-10T02:08:53.3690385+10:00",
                          "bytes":  257
                      },
                      {
                          "path":  "diagnostics/reports/latest-integrity-report.md",
-                         "hash":  "5D6305FD8F857FBE93729219C9481EC02ACE230DBEC326C8AA329B79036B54C9",
-                         "last_write":  "2026-07-10T01:30:13.7792269+10:00",
+                         "hash":  "4B49FC32618F5DD049B146FACB809C41C92C9A682C14B657F4189DFC5032F743",
+                         "last_write":  "2026-07-10T02:08:53.3750369+10:00",
                          "bytes":  231
                      },
                      {
                          "path":  "engine/cycle-history.csv",
-                         "hash":  "3A85BD1F123BD26E0B1D1D076D99D2F47E05933C28D93046C0A5CA597437E3F7",
-                         "last_write":  "2026-07-10T01:21:19.5357701+10:00",
-                         "bytes":  1087
-                     },
-                     {
-                         "path":  "engine/cycle-reports/ATHENA-DECISION-CYCLE-20260710-003.md",
-                         "hash":  "96BDE86F2606BCCC70BD98C8DA2994C2E35B8179A8BDA7E401236C60718FB6A7",
-                         "last_write":  "2026-07-10T01:28:10.5698827+10:00",
-                         "bytes":  3182
+                         "hash":  "0EA773CDD6627ECC5A071470325BE8E397BEDF5EE630B462EE8056D3C517728A",
+                         "last_write":  "2026-07-10T01:30:19.9362744+10:00",
+                         "bytes":  1231
                      },
                      {
                          "path":  "engine/cycle-reports/latest-cycle-report.json",
-                         "hash":  "79FB67489A9327E749D4553DEF0EAB13D0BC12E0A54BCBF703BC96AE7D6D99A5",
-                         "last_write":  "2026-07-10T01:21:19.5107776+10:00",
-                         "bytes":  3651
+                         "hash":  "A1589B7D184F4723C8B710E1B1F542A8722E99AC4B15C93E89BC4DDD03BCEDD3",
+                         "last_write":  "2026-07-10T01:30:19.9152618+10:00",
+                         "bytes":  3648
                      },
                      {
                          "path":  "engine/cycle-reports/latest-cycle-report.md",
-                         "hash":  "714CF12E5C9765061A73C9A9AFF1081EC0D576B418396CBC20445544120F8103",
-                         "last_write":  "2026-07-10T01:21:19.5307720+10:00",
-                         "bytes":  680
+                         "hash":  "65208640AA478021CC18CE8D256BC2BB6B376C58BF07AD3CD721CB9E6FB329D0",
+                         "last_write":  "2026-07-10T01:30:19.9302688+10:00",
+                         "bytes":  677
                      },
                      {
                          "path":  "forensics/verification-reports/latest-forensic-verification.json",
-                         "hash":  "94055563CD57C4748D7308A11A7DCF166E0EA9B5AEFA3FE4DD45E5489BD749CD",
-                         "last_write":  "2026-07-10T01:30:16.6473392+10:00",
+                         "hash":  "F429714F565E5B5727585C4F2835A7F5E1F0754AD26FC29E7037DD650B91F6D5",
+                         "last_write":  "2026-07-10T02:08:56.2721895+10:00",
                          "bytes":  419
                      },
                      {
                          "path":  "forensics/verification-reports/latest-forensic-verification.md",
-                         "hash":  "226BF5FDF9DD8A358AD0CD9045254AC139ACD62D677882DC159917073221DF8F",
-                         "last_write":  "2026-07-10T01:30:16.6541676+10:00",
+                         "hash":  "05F393F024E1910E89864D94D121678A160A805A579E4EB0BF74011487CC4E30",
+                         "last_write":  "2026-07-10T02:08:56.2791850+10:00",
                          "bytes":  343
                      },
                      {
                          "path":  "manifests/capability-matrix.yml",
-                         "hash":  "0A1EF9AB65F41162F4A981A0EB7BE188299072442757130B42276086ADC5523B",
-                         "last_write":  "2026-07-10T01:29:56.5872469+10:00",
-                         "bytes":  10674
+                         "hash":  "6096F72B28791E3FDF25BD6B6F47D69231033D9DA82382181BD2E5F3998EFE24",
+                         "last_write":  "2026-07-10T02:07:58.4987001+10:00",
+                         "bytes":  11005
                      },
                      {
                          "path":  "manifests/generated-ai-index.json",
-                         "hash":  "A08A9FAF11F67FEACAD094720300E1BFDF953350E1717318A18A5AB812A49E5E",
-                         "last_write":  "2026-07-10T01:30:16.2308594+10:00",
-                         "bytes":  82281
+                         "hash":  "D5A821AF60233995911DA20AD34244101A4756AD844EF1D4997E91C5AA06A4BE",
+                         "last_write":  "2026-07-10T02:08:55.8550240+10:00",
+                         "bytes":  82534
                      },
                      {
-                         "path":  "manifests/tool-index.yml",
-                         "hash":  "DB56A5015291043FA792684E499775E123A69BC5340E30A784507493E80F2ACA",
-                         "last_write":  "2026-07-10T01:29:41.6997309+10:00",
-                         "bytes":  3190
+                         "path":  "manifests/system-manifest.json",
+                         "hash":  "51424586D796AECBA3BF63455767AACA0F1B9875C7D52020E998C7B5465127FD",
+                         "last_write":  "2026-07-10T02:07:49.6851730+10:00",
+                         "bytes":  4410
+                     },
+                     {
+                         "path":  "memory/athena-memory-map.md",
+                         "hash":  "F8031261CB313BE5D0F93850D1CE546207D7EC3C14191A81DB1BF45022956961",
+                         "last_write":  "2026-07-10T02:07:25.4241596+10:00",
+                         "bytes":  3394
                      },
                      {
                          "path":  "navigation/generated/project-map.json",
-                         "hash":  "399B90E21DDC645D15288C41F21AA55D826C08F23AA8F04C4E1AB0CF0B12A3F2",
-                         "last_write":  "2026-07-10T01:30:15.6977622+10:00",
+                         "hash":  "D38C88BEE6180F16F68EBFAEC5706951D9E21C8F172733322A86C5F220297128",
+                         "last_write":  "2026-07-10T02:08:55.2928772+10:00",
                          "bytes":  5402
                      },
                      {
-                         "path":  "Nexus V/docs/ai-system/AI-PORTAL.md",
-                         "hash":  "0BCCE6854D108DD5F0B45A06629F8F57D89F31D08FBB11DD4CD20C419E8839B4",
-                         "last_write":  "2026-07-10T01:26:32.1092570+10:00",
-                         "bytes":  1008
+                         "path":  "Nexus V/docs/Plan/IMPLEMENTATION_MATRIX.md",
+                         "hash":  "CC83E048B51136A4CF1443E67F1D2A7D0E99883EF19D4D1425FBE6040E8500DC",
+                         "last_write":  "2026-07-10T02:08:31.4496239+10:00",
+                         "bytes":  3743
                      },
                      {
-                         "path":  "Nexus V/docs/ai-system/README.md",
-                         "hash":  "644EAAD003DDAB7097952D8C293ACCDD1866A060662DB734F1C476F8CF768690",
-                         "last_write":  "2026-07-10T01:26:18.1395877+10:00",
-                         "bytes":  998
+                         "path":  "Nexus V/docs/Plan/ROADMAP.md",
+                         "hash":  "3AEFEA0209A04C69687FEC0B27814B8E21461450BE9BB96F952E5F27FA0C7661",
+                         "last_write":  "2026-07-10T02:08:23.7140786+10:00",
+                         "bytes":  3195
                      },
                      {
-                         "path":  "Nexus V/docs/ai-system/START-HERE.md",
-                         "hash":  "1EA36B518260B96BB4CBE0CCF154F1D75C89B4A70C8B00345863166A82509AD8",
-                         "last_write":  "2026-07-10T01:26:46.6944318+10:00",
-                         "bytes":  813
+                         "path":  "Nexus V/docs/Plan/TODO.md",
+                         "hash":  "18876D99227B898790A6C0430E5D933E91423AB6E18114F0035E92B3ECC9DCE5",
+                         "last_write":  "2026-07-10T02:08:16.0136954+10:00",
+                         "bytes":  1608
                      },
                      {
                          "path":  "observability/reports/latest-log-intelligence.json",
-                         "hash":  "B5EC85F0B45B74DF0656D5B0E92A254B5C2F1F24C67707BD77723FDB7D852AC9",
-                         "last_write":  "2026-07-10T01:30:17.1085023+10:00",
+                         "hash":  "1C145E9EA7E5D57A90265D244B902A24F90085EEF241444096E781DB204439E1",
+                         "last_write":  "2026-07-10T02:08:56.7492022+10:00",
                          "bytes":  644
                      },
                      {
                          "path":  "observability/reports/latest-log-intelligence.md",
-                         "hash":  "056F2D1B7D4A3315FC0D9C7EA27A0236AD9D24792B9CFCDC33B2992EED4CA7C2",
-                         "last_write":  "2026-07-10T01:30:17.1185072+10:00",
+                         "hash":  "A5444DAD90781C32B0CBB053D1EC34393A58C84DE23AC32395AD20000620B97B",
+                         "last_write":  "2026-07-10T02:08:56.7602047+10:00",
                          "bytes":  283
                      },
                      {
+                         "path":  "Plan/context.md",
+                         "hash":  "3FDB159A4F0D9D4D6AA72A1B0DA276270753FF1FAC062355BF26F6A7A1692645",
+                         "last_write":  "2026-07-10T02:07:14.9578294+10:00",
+                         "bytes":  22239
+                     },
+                     {
+                         "path":  "Plan/IMPLEMENTATION_MATRIX.md",
+                         "hash":  "CC83E048B51136A4CF1443E67F1D2A7D0E99883EF19D4D1425FBE6040E8500DC",
+                         "last_write":  "2026-07-10T02:08:31.4496239+10:00",
+                         "bytes":  3743
+                     },
+                     {
+                         "path":  "Plan/ROADMAP.md",
+                         "hash":  "3AEFEA0209A04C69687FEC0B27814B8E21461450BE9BB96F952E5F27FA0C7661",
+                         "last_write":  "2026-07-10T02:08:23.7140786+10:00",
+                         "bytes":  3195
+                     },
+                     {
+                         "path":  "Plan/TODO.md",
+                         "hash":  "18876D99227B898790A6C0430E5D933E91423AB6E18114F0035E92B3ECC9DCE5",
+                         "last_write":  "2026-07-10T02:08:16.0136954+10:00",
+                         "bytes":  1608
+                     },
+                     {
                          "path":  "sensory/baselines/watched-state-baseline.csv",
-                         "hash":  "8D92A426967B3EF15BD820EF296CC85F6D5E36AF61F2AF6D469BABA789B491D2",
-                         "last_write":  "2026-07-10T01:21:19.4531475+10:00",
-                         "bytes":  196699
+                         "hash":  "DA8856C9D99CDF35B00BF6CEC714586A386FE0304A5C6F0BB22C4E35C6C5A633",
+                         "last_write":  "2026-07-10T01:30:19.8631042+10:00",
+                         "bytes":  196998
                      },
                      {
                          "path":  "sensory/scans/latest-scan.json",
-                         "hash":  "EB73C6AA954F45482C1F314B1027C737B7FDA983115CCF028F4049C434281269",
-                         "last_write":  "2026-07-10T01:30:14.8280488+10:00",
-                         "bytes":  9788
+                         "hash":  "2E20F54A6F58EB2DABFBCD0F2109292594DA0E11FB69BA545DC9EF0E9AE68001",
+                         "last_write":  "2026-07-10T02:08:54.3954327+10:00",
+                         "bytes":  7326
                      },
                      {
                          "path":  "sensory/scans/latest-watched-changes.json",
-                         "hash":  "832A4F4060809D52D528C40B41F1BFF5D5039C23FD370B745A677C094F5341A5",
-                         "last_write":  "2026-07-10T01:21:19.4291598+10:00",
-                         "bytes":  7768
+                         "hash":  "6CF112BDC3B29A8F965A5BCAAF68245F87A497BB5AA33508A6E5C6DCC12514F9",
+                         "last_write":  "2026-07-10T01:30:19.8421069+10:00",
+                         "bytes":  10133
                      },
                      {
                          "path":  "sensory/scans/latest-watched-changes.md",
-                         "hash":  "AAAC76F2EF37D256493BB3134590BE8663647B4166CE3C3A5372A87FC8B29092",
-                         "last_write":  "2026-07-10T01:21:19.4381581+10:00",
-                         "bytes":  1139
+                         "hash":  "88FDFE4875F27A07BF720F990149B26743BA3DF4B3D8108558A297AC73A78A2A",
+                         "last_write":  "2026-07-10T01:30:19.8511151+10:00",
+                         "bytes":  1381
                      },
                      {
                          "path":  "sensory/scans/SCAN-LOG.md",
-                         "hash":  "7FB407B4ED829B2FB33CFE8AC558482ADAE400D501D873F8F969466A1E741F20",
-                         "last_write":  "2026-07-10T01:30:14.8350632+10:00",
-                         "bytes":  2058
+                         "hash":  "E64823F7C7D8C67F061EBAD4E89CD31AA168045848C3C66F6BBF3C1FA9619A00",
+                         "last_write":  "2026-07-10T02:08:54.4024232+10:00",
+                         "bytes":  2127
                      },
                      {
-                         "path":  "tools/README.md",
-                         "hash":  "32D6D2FFD442CBCD8CA8B16961DBA621B191AC1F72DBE3CD046A4E8E533005F3",
-                         "last_write":  "2026-07-10T01:29:33.2649279+10:00",
-                         "bytes":  4121
+                         "path":  "Plan/context.md",
+                         "hash":  "3FDB159A4F0D9D4D6AA72A1B0DA276270753FF1FAC062355BF26F6A7A1692645",
+                         "last_write":  "2026-07-10T02:07:14.9578294+10:00",
+                         "bytes":  22239
                      },
                      {
-                         "path":  "work/intake/ATHENA-INTAKE-20260710-003-update-athena.md",
-                         "hash":  "AF3B5B7BD3E3B1C0AE682C7855CAB443ED02A18EC9AE56D667D2E3F92C33E232",
-                         "last_write":  "2026-07-10T01:28:05.4598960+10:00",
-                         "bytes":  4737
+                         "path":  "Plan/IMPLEMENTATION_MATRIX.md",
+                         "hash":  "CC83E048B51136A4CF1443E67F1D2A7D0E99883EF19D4D1425FBE6040E8500DC",
+                         "last_write":  "2026-07-10T02:08:31.4496239+10:00",
+                         "bytes":  3743
+                     },
+                     {
+                         "path":  "Plan/ROADMAP.md",
+                         "hash":  "3AEFEA0209A04C69687FEC0B27814B8E21461450BE9BB96F952E5F27FA0C7661",
+                         "last_write":  "2026-07-10T02:08:23.7140786+10:00",
+                         "bytes":  3195
+                     },
+                     {
+                         "path":  "Plan/TODO.md",
+                         "hash":  "18876D99227B898790A6C0430E5D933E91423AB6E18114F0035E92B3ECC9DCE5",
+                         "last_write":  "2026-07-10T02:08:16.0136954+10:00",
+                         "bytes":  1608
                      }
                  ],
     "removed":  [

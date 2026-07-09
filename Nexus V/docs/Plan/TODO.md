@@ -7,6 +7,8 @@
   sample intake packet.
 - Verify standalone path normalization for the PowerShell tools.
 - Validate `schemas/athena-task-intake.schema.json`.
+- Keep `Plan/OASIS_ATHENA_AGENT_MODEL.md` aligned with the human-provided
+  OASIS/Athena diagram.
 - Keep root Plan files mirrored into `Nexus V/docs/Plan` when they are intended
   to remain archive-equivalent.
 
@@ -20,6 +22,10 @@
 - Create work items for the highest-priority gaps from the implementation
   matrix.
 - Add expected traces for Nexus-V regression.
+- Create `agents/adapters/` contracts for Codex, Jarvis, GPT, and future local
+  model surfaces.
+- Define sync and conflict-resolution rules between local Athena adapters and
+  central Athena memory.
 - Decide whether local-only governance should remove, ignore, or explicitly
   allow the current GitHub remote.
 

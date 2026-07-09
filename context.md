@@ -40,6 +40,30 @@ architecture intent, ground claims in observed files, process the task through
 the order-of-operations loop, then write back context, evidence, reports, or
 work items when it learns something important.
 
+## OASIS And Local Athena Adapters
+
+The human-provided OASIS/Athena diagram is now captured as Plan intent in
+`Plan/OASIS_ATHENA_AGENT_MODEL.md`.
+
+Interpret it this way:
+
+- OASIS is the outer operating environment: the full ecosystem that can contain
+  Athena, tools, files, agents, project state, human direction, and future
+  runtime services.
+- Central Athena is the canonical external brain: memory, database, processor,
+  router, evidence trail, and current project truth.
+- Codex, Jarvis, GPT, and future AI surfaces each carry a local Athena adapter.
+  They are not separate brains; they are agent surfaces that load Athena
+  context, act through Athena rules, and write back to Athena memory.
+
+The operating invariant is:
+
+```text
+Many agents, one Athena memory.
+Many interfaces, one operating truth.
+Many task surfaces, one evidence trail.
+```
+
 ## Short Answer
 
 Project Athena is a local-first AI operating-system control plane plus a

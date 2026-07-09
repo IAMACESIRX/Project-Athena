@@ -9,7 +9,7 @@ the type of fact being preserved.
 | Layer | Purpose | Primary Paths | Write When |
 |---|---|---|---|
 | Identity memory | Durable definition of what Athena is. | `AI-PORTAL.md`, `identity/`, `context.md` | The system's purpose, boundaries, or operating identity changes. |
-| Architecture memory | Design intent and future direction. | `Plan/`, `Plan/context.md`, `Nexus V/docs/Plan/` | Plan concepts are interpreted, prioritized, or converted into build work. |
+| Architecture memory | Design intent and future direction. | `Plan/`, `Plan/context.md`, `Plan/OASIS_ATHENA_AGENT_MODEL.md`, `Nexus V/docs/Plan/` | Plan concepts are interpreted, prioritized, or converted into build work. |
 | Working memory | Current tasks, roadmaps, and decisions. | `work/`, `handoff/`, `continuity/` | A task is created, reprioritized, resumed, or handed off. |
 | Evidence memory | Claims, observations, audit events, and cycle reports. | `forensics/`, `audit/`, `engine/cycle-reports/` | A claim needs support, a decision needs traceability, or a cycle completes. |
 | Capability memory | What Athena can do and how tools are routed. | `manifests/`, `registries/`, `agents/`, `orchestration/` | A tool, agent, capability, route, or ownership rule changes. |
@@ -45,6 +45,12 @@ When a term changes meaning, update the local definition immediately. Current
 canonical meanings:
 
 - Athena: AI prosthetic external brain, database, and processor.
+- OASIS: outer operating environment that can contain Athena, agents, tools,
+  project state, and future runtime services.
+- Central Athena: canonical memory, database, processor, router, and evidence
+  trail.
+- Local Athena adapter: the Athena-facing layer inside an agent surface such as
+  Codex, Jarvis, GPT, or a future local model.
 - Plan: highest-priority architecture-intent vault.
 - Nexus V: hardware/toolchain implementation branch for semantic execution.
 - Cycle report: evidence memory for a non-trivial Athena run.

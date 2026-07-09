@@ -1,6 +1,6 @@
 ﻿{
     "schema":  "ai-system.generated_index.v1",
-    "generated_at":  "2026-07-10T01:30:16.0394925+10:00",
+    "generated_at":  "2026-07-10T02:08:55.6345258+10:00",
     "base_manifest":  "manifests/system-manifest.json",
     "project":  {
                     "name":  "Project Athena",
@@ -15,6 +15,7 @@
                         "ai":  "AI-PORTAL.md",
                         "context":  "context.md",
                         "plan_context":  "Plan/context.md",
+                        "oasis_athena_model":  "Plan/OASIS_ATHENA_AGENT_MODEL.md",
                         "file_index":  "context-file-index.md",
                         "memory_map":  "memory/athena-memory-map.md",
                         "programmatic_manifest":  "manifests/generated-ai-index.json",
@@ -87,6 +88,7 @@
                                      "Plan/NVISC_NVVM_Compiler_Bridge_Toolchain_v0_1.docx",
                                      "Plan/nvisc_toolchain_bridge_v0_1_sources.zip",
                                      "Plan/NVVM_Virtual_Machine_Architecture_and_3D_Routing_Specification_v0_1.docx",
+                                     "Plan/OASIS_ATHENA_AGENT_MODEL.md",
                                      "Plan/Odysseus-Nexus-Ontology-Extraction-and-Unification-Specification.md",
                                      "Plan/Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md",
                                      "Plan/QUALITY_PLAN.md",
@@ -515,6 +517,7 @@
                                              "Nexus V/docs/Plan/NVISC_NVVM_Compiler_Bridge_Toolchain_v0_1.docx",
                                              "Nexus V/docs/Plan/nvisc_toolchain_bridge_v0_1_sources.zip",
                                              "Nexus V/docs/Plan/NVVM_Virtual_Machine_Architecture_and_3D_Routing_Specification_v0_1.docx",
+                                             "Nexus V/docs/Plan/OASIS_ATHENA_AGENT_MODEL.md",
                                              "Nexus V/docs/Plan/QUALITY_PLAN.md",
                                              "Nexus V/docs/Plan/ROADMAP.md",
                                              "Nexus V/docs/Plan/system plan.md",

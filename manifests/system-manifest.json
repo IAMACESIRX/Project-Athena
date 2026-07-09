@@ -13,6 +13,7 @@
     "ai": "AI-PORTAL.md",
     "context": "context.md",
     "plan_context": "Plan/context.md",
+    "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
     "file_index": "context-file-index.md",
     "memory_map": "memory/athena-memory-map.md",
     "programmatic_manifest": "manifests/generated-ai-index.json",
@@ -47,6 +48,7 @@
   "architecture": {
     "plan_root": "Plan",
     "plan_context": "Plan/context.md",
+    "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
     "plan_roadmap": "Plan/ROADMAP.md",
     "plan_todo": "Plan/TODO.md",
     "plan_status": "Plan/TODO_STATUS.md",

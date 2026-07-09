@@ -1,6 +1,6 @@
 ﻿{
     "schema":  "ai-system.project_map.v1",
-    "generated_at":  "2026-07-10T01:30:15.6561893+10:00",
+    "generated_at":  "2026-07-10T02:08:55.2488766+10:00",
     "project_root":  "D:\\Projects\\Project Athena",
     "nodes":  [
                   {
@@ -8,7 +8,7 @@
                       "path":  ".",
                       "type":  "athena_workspace",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -17,7 +17,7 @@
                       "path":  "Plan",
                       "type":  "architecture_intent_vault",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -26,7 +26,7 @@
                       "path":  "Nexus V",
                       "type":  "hardware_toolchain_subsystem",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -35,7 +35,7 @@
                       "path":  "engine",
                       "type":  "processor_loop",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -44,7 +44,7 @@
                       "path":  "memory",
                       "type":  "memory_layer",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -53,7 +53,7 @@
                       "path":  "work",
                       "type":  "working_memory",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -62,7 +62,7 @@
                       "path":  "tools",
                       "type":  "tooling_layer",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -71,7 +71,7 @@
                       "path":  "cognition",
                       "type":  "reasoning_methods",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -80,7 +80,7 @@
                       "path":  "council",
                       "type":  "decision_roles",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   },
@@ -89,7 +89,7 @@
                       "path":  "schemas",
                       "type":  "machine_contracts",
                       "exists":  true,
-                      "head":  "a0d1d69",
+                      "head":  "3d744d3",
                       "file_count":  null,
                       "size_mb":  null
                   }

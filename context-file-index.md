@@ -6,8 +6,8 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 
 ## Coverage Summary
 
-- Files indexed: 1086
-- Total size: 8.496 MB
+- Files indexed: 1088
+- Total size: 8.509 MB
 
 ### By Extraction Kind
 
@@ -16,16 +16,16 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | binary/opaque | 167 |
 | docx/extracted | 47 |
 | image/metadata | 1 |
-| text/read | 845 |
+| text/read | 847 |
 | zip/opened | 26 |
 
 ### By Top-Level Folder
 
 | Top-Level | Count |
 |---|---:|
-| Nexus V | 639 |
+| Nexus V | 640 |
 | cognition | 81 |
-| Plan | 63 |
+| Plan | 64 |
 | tools | 18 |
 | forensics | 17 |
 | schemas | 16 |
@@ -83,7 +83,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | agents/lifecycle-state-machine.md | 0.4 | text/read | 25 | 1A2C8690D559 | Project file. | # Agent Lifecycle State Machine |
 | agents/README.md | 0.5 | text/read | 21 | 549566B38341 | Project file. | # Agents |
 | agents/team-formation-protocol.md | 0.7 | text/read | 25 | F8A13567EFD8 | Project file. | # Team Formation Protocol |
-| AI-PORTAL.md | 4.3 | text/read | 108 | 4801F61C818D | Project file. | # AI Portal |
+| AI-PORTAL.md | 4.7 | text/read | 114 | 5041BE5D07D5 | Project file. | # AI Portal |
 | audit/audit-ledger.yml | 0.9 | text/read | 28 | 2B22ECB03001 | Project file. | schema: ai-system.audit_ledger.v1 |
 | audit/black-swan-protocol.md | 0.9 | text/read | 41 | 22C0AA1AE7F6 | Project file. | # Black Swan Protocol |
 | audit/causality-graph.yml | 0.8 | text/read | 29 | 3D2F07AF0A7D | Project file. | schema: ai-system.causality_graph.v1 |
@@ -179,7 +179,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | cognition/templates/council-cognition-round.md | 0.3 | text/read | 28 | E695E3577ADC | Project file. | # Council Cognition Round |
 | cognition/templates/fuzzy-claim.md | 0.2 | text/read | 26 | D5E3C8EE6585 | Project file. | # Fuzzy Claim |
 | cognition/templates/hyperedge-record.md | 0.1 | text/read | 18 | 09EF5AEB1EE7 | Project file. | # Hyperedge Record |
-| context.md | 51.6 | text/read | 1365 | C3CB5EFAF8BC | Project file. | # Project Athena Context |
+| context.md | 52.4 | text/read | 1389 | 7DDFDC690C83 | Project file. | # Project Athena Context |
 | continuity/chat-log.schema.json | 0.7 | text/read | 19 | 1CAFA276A1CC | Project file. | { |
 | continuity/chat-logs/.gitkeep | 0 | binary/opaque | 0 | 01BA4719C80B | Project file. | opaque or toolchain binary artifact |
 | continuity/chat-logs/CHAT-20260603-154809-codex-continuity-causality-and-memory-expansion.md | 0.7 | text/read | 29 | 5F26A49A3E73 | Project file. | # CHAT-20260603-154809: Continuity causality and memory expansion |
@@ -207,8 +207,8 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | counterfactuals/README.md | 0.2 | text/read | 12 | C8531BBE03E8 | Project file. | # Counterfactual Thinking |
 | diagnostics/correction-queue.md | 1.1 | text/read | 10 | E65C44A3B98B | Diagnostic report or issue queue. | # Correction Queue |
 | diagnostics/issue-ledger.md | 0.7 | text/read | 32 | 0ADEE2FE4652 | Diagnostic report or issue queue. | # Issue Ledger |
-| diagnostics/reports/latest-integrity-report.json | 0.3 | text/read | 11 | 857A7744A385 | Diagnostic report or issue queue. | { |
-| diagnostics/reports/latest-integrity-report.md | 0.2 | text/read | 10 | 5D6305FD8F85 | Diagnostic report or issue queue. | # AI Integrity Report |
+| diagnostics/reports/latest-integrity-report.json | 0.3 | text/read | 11 | 57246D78D005 | Diagnostic report or issue queue. | { |
+| diagnostics/reports/latest-integrity-report.md | 0.2 | text/read | 10 | 4B49FC32618F | Diagnostic report or issue queue. | # AI Integrity Report |
 | diagnostics/reports/README.md | 0.1 | text/read | 5 | 1BA8C3E6A886 | Diagnostic report or issue queue. | # Diagnostics Reports |
 | diagnostics/resolvable-issues.md | 2.3 | text/read | 20 | FD3311E8E959 | Diagnostic report or issue queue. | # Resolvable Issues |
 | diagnostics/restore-readiness.md | 0.8 | text/read | 33 | 18511358F8AE | Diagnostic report or issue queue. | # Restore Readiness |
@@ -220,12 +220,12 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | engine/checklists/diagnostic-cycle.md | 0.7 | text/read | 37 | 7D5AB095753D | Athena operation-cycle report or engine history. | # Diagnostic Cycle Checklist |
 | engine/checklists/engineering-cycle.md | 0.7 | text/read | 27 | 02A4E6CE4A73 | Athena operation-cycle report or engine history. | # Engineering Cycle Checklist |
 | engine/checklists/full-reasoning-chain.md | 1.5 | text/read | 61 | 9449431FA737 | Athena operation-cycle report or engine history. | # Full Reasoning Chain Checklist |
-| engine/cycle-history.csv | 1.2 | text/read | 11 | 0EA773CDD662 | Athena operation-cycle report or engine history. | "cycle_id","started","ended","duration_sec","status","step_count","notes" |
+| engine/cycle-history.csv | 1.3 | text/read | 12 | A781862C76DF | Athena operation-cycle report or engine history. | "cycle_id","started","ended","duration_sec","status","step_count","notes" |
 | engine/cycle-reports/ATHENA-BRAINSTORM-CYCLE-20260710-002.md | 1.9 | text/read | 61 | 952FD0365D25 | Athena operation-cycle report or engine history. | # Athena Brainstorm Cycle 2026-07-10 002 |
 | engine/cycle-reports/ATHENA-DECISION-CYCLE-20260710-003.md | 3.1 | text/read | 85 | 96BDE86F2606 | Athena operation-cycle report or engine history. | # Athena Decision Cycle 2026-07-10 003 |
 | engine/cycle-reports/ATHENA-TEST-RUN-20260710-001.md | 3.9 | text/read | 97 | 4369883C2285 | Athena operation-cycle report or engine history. | # Athena Test Run 2026-07-10 001 |
-| engine/cycle-reports/latest-cycle-report.json | 3.6 | text/read | 84 | A1589B7D184F | Athena operation-cycle report or engine history. | { |
-| engine/cycle-reports/latest-cycle-report.md | 0.7 | text/read | 20 | 65208640AA47 | Athena operation-cycle report or engine history. | # AI Operation Cycle Report |
+| engine/cycle-reports/latest-cycle-report.json | 3.6 | text/read | 84 | 8CD9237C5667 | Athena operation-cycle report or engine history. | { |
+| engine/cycle-reports/latest-cycle-report.md | 0.7 | text/read | 20 | AB01A2A230C7 | Athena operation-cycle report or engine history. | # AI Operation Cycle Report |
 | engine/cycle-reports/README.md | 0.2 | text/read | 7 | 88D8C80AE5B6 | Athena operation-cycle report or engine history. | # Cycle Reports |
 | engine/operation-cycle.md | 1.7 | text/read | 45 | 9D2BF8B41A5A | Athena operation-cycle report or engine history. | # Operation Cycle |
 | engine/order-of-operations.md | 4.5 | text/read | 121 | 07FAED567A03 | Athena operation-cycle report or engine history. | # Order Of Operations |
@@ -245,8 +245,8 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | forensics/role-packets/operations-packet.md | 0.6 | text/read | 20 | BFC5805BD12F | Evidence register or verification output. | # Operations Packet |
 | forensics/role-packets/README.md | 0.4 | text/read | 10 | 6593947B3EBE | Evidence register or verification output. | # Role Packets |
 | forensics/verification-protocol.md | 0.9 | text/read | 30 | 8B5DFFE615ED | Evidence register or verification output. | # Forensic Verification Protocol |
-| forensics/verification-reports/latest-forensic-verification.json | 0.4 | text/read | 16 | 94055563CD57 | Evidence register or verification output. | { |
-| forensics/verification-reports/latest-forensic-verification.md | 0.3 | text/read | 15 | 226BF5FDF9DD | Evidence register or verification output. | # Forensic Verification Report |
+| forensics/verification-reports/latest-forensic-verification.json | 0.4 | text/read | 16 | F429714F565E | Evidence register or verification output. | { |
+| forensics/verification-reports/latest-forensic-verification.md | 0.3 | text/read | 15 | 05F393F024E1 | Evidence register or verification output. | # Forensic Verification Report |
 | forensics/verification-reports/README.md | 0.1 | text/read | 5 | D046277C560B | Evidence register or verification output. | # Verification Reports |
 | governance/absolutes.md | 1.3 | text/read | 36 | A74BDE82E62F | Project file. | # Absolutes |
 | governance/change-control.md | 0.7 | text/read | 34 | 38CDDFABF142 | Project file. | # Change Control |
@@ -275,12 +275,12 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | learning/meta-learning.md | 0.7 | text/read | 32 | D37B9492B158 | Project file. | # Meta-Learning |
 | learning/plasticity-policy.md | 0.6 | text/read | 24 | 621BACAF26A5 | Project file. | # Real-Time Local Learning And Plasticity |
 | learning/README.md | 0.5 | text/read | 19 | AA5088C54E30 | Project file. | # Learning System |
-| manifests/capability-matrix.yml | 10.4 | text/read | 218 | 0A1EF9AB65F4 | Machine-readable system manifest or registry export. | schema: ai-system.capability_matrix.v1 |
-| manifests/generated-ai-index.json | 80.4 | text/read | 906 | A08A9FAF11F6 | Machine-readable system manifest or registry export. | { |
+| manifests/capability-matrix.yml | 10.7 | text/read | 225 | 6096F72B2879 | Machine-readable system manifest or registry export. | schema: ai-system.capability_matrix.v1 |
+| manifests/generated-ai-index.json | 80.6 | text/read | 909 | D5A821AF6023 | Machine-readable system manifest or registry export. | { |
 | manifests/ingestion-order.yml | 3.1 | text/read | 76 | 6A6FD455A2AD | Machine-readable system manifest or registry export. | schema: ai-system.ingestion_order.v1 |
-| manifests/system-manifest.json | 4.2 | text/read | 109 | 1CCAE6CE1FD3 | Machine-readable system manifest or registry export. | { |
+| manifests/system-manifest.json | 4.3 | text/read | 111 | 51424586D796 | Machine-readable system manifest or registry export. | { |
 | manifests/tool-index.yml | 3.1 | text/read | 73 | DB56A5015291 | Machine-readable system manifest or registry export. | schema: ai-system.tool_index.v1 |
-| memory/athena-memory-map.md | 3 | text/read | 52 | C6A77C3870DF | Athena memory and recall guidance. | # Athena Memory Map |
+| memory/athena-memory-map.md | 3.3 | text/read | 58 | F8031261CB31 | Athena memory and recall guidance. | # Athena Memory Map |
 | memory/context-iq/contextual-work-iq.md | 1.5 | text/read | 57 | F82EF75B3257 | Athena memory and recall guidance. | # Contextual Work IQ |
 | memory/decision-ledger.md | 0.8 | text/read | 26 | 5BFA5722AC85 | Athena memory and recall guidance. | # Decision Ledger |
 | memory/facts.md | 0.9 | text/read | 28 | 927AFFB6350A | Athena memory and recall guidance. | # Facts |
@@ -305,7 +305,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | modules/wow-server-project.md | 1 | text/read | 42 | F317D119E38A | Project file. | # Module: WoW Server Project |
 | navigation/architecture-map.md | 1 | text/read | 42 | 61407C42B30B | Project map/navigation context. | # Architecture Map |
 | navigation/dependency-map.md | 0.9 | text/read | 26 | 24FBF9B54B0E | Project map/navigation context. | # Dependency Map |
-| navigation/generated/project-map.json | 5.3 | text/read | 145 | 399B90E21DDC | Project map/navigation context. | { |
+| navigation/generated/project-map.json | 5.3 | text/read | 145 | D38C88BEE618 | Project map/navigation context. | { |
 | navigation/generated/README.md | 0.1 | text/read | 8 | E3B7C4207B95 | Project map/navigation context. | # Generated Navigation Maps |
 | navigation/interaction-map.md | 0.6 | text/read | 36 | FAB97834FFD5 | Project map/navigation context. | # Interaction Map |
 | navigation/project-map.md | 2.2 | text/read | 48 | C475EE0FAA5C | Project map/navigation context. | # Project Map |
@@ -691,7 +691,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | Nexus V/docs/Plan/FEATURE_ROADMAP.md | 2.2 | text/read | 39 | 9431C97D2607 | Nexus V subsystem source, docs, or generated artifact. | # FEATURE ROADMAP |
 | Nexus V/docs/Plan/Hardware plan.md | 18.6 | text/read | 642 | 7FD6C9AAD674 | Nexus V subsystem source, docs, or generated artifact. | Im working in all of it, ive designed tenors cpus that are 3d and have github like states to reverse into, more that binary aswell, so its d |
 | Nexus V/docs/Plan/Hardware specifics.md | 1.7 | text/read | 1 | A0E7DE946EE3 | Nexus V subsystem source, docs, or generated artifact. | Instruction memory, data memory, execution memory, live/hot memory, live ram, execution ram, dram, system level cache, media engine, hardwar |
-| Nexus V/docs/Plan/IMPLEMENTATION_MATRIX.md | 3.4 | text/read | 52 | 52A71BE31D79 | Nexus V subsystem source, docs, or generated artifact. | # IMPLEMENTATION MATRIX |
+| Nexus V/docs/Plan/IMPLEMENTATION_MATRIX.md | 3.7 | text/read | 53 | CC83E048B511 | Nexus V subsystem source, docs, or generated artifact. | # IMPLEMENTATION MATRIX |
 | Nexus V/docs/Plan/Nexus_V_Adaptive_Physical_Execution_Fabric_v0_1.docx | 44.4 | docx/extracted | 18 | 8F4FD193CDDC | Nexus V subsystem source, docs, or generated artifact. | Nexus-V Adaptive Physical Execution Fabric v0.1 Physical execution-domain routing, adaptive path selection, and self-aud |
 | Nexus V/docs/Plan/Nexus_V_Advanced_Execution_Architecture_Addendum_v0_3.docx | 46.7 | docx/extracted | 17 | 0ACB9A4956E8 | Nexus V subsystem source, docs, or generated artifact. | Nexus-V Advanced Execution Architecture Addendum v0.3 Additive RISC-like, Pipeline, Micro-op, Superscalar, OoO, SMT, and |
 | Nexus V/docs/Plan/Nexus_V_Aegis_Phase1_Enclave_Commit_Gate_and_MINREP_v0_1.docx | 42.4 | docx/extracted | 17 | CA6A577ED905 | Nexus V subsystem source, docs, or generated artifact. | Nexus-V Aegis Phase 1 Enclave, Commit Gate, ATTEST, and MINREP Specification v0.1 - Secure commit authorization, session |
@@ -729,10 +729,11 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | Nexus V/docs/Plan/NVISC_NVVM_Compiler_Bridge_Toolchain_v0_1.docx | 40.4 | docx/extracted | 17 | 96C47865EA47 | Nexus V subsystem source, docs, or generated artifact. | NVISC / NVVM Compiler Bridge Toolchain Specification v0.1 NVASM -&gt; Semantic Mutation Graph -&gt; NVIR -&gt; NVOBJ -&g |
 | Nexus V/docs/Plan/nvisc_toolchain_bridge_v0_1_sources.zip | 8 | zip/opened | 14 | 943279A5D69B | Nexus V subsystem source, docs, or generated artifact. | nvisc_toolchain_bridge_v0_1/, nvisc_toolchain_bridge_v0_1/README.md, nvisc_toolchain_bridge_v0_1/examples/, nvisc_toolchain_bridge_v0_1/exam |
 | Nexus V/docs/Plan/NVVM_Virtual_Machine_Architecture_and_3D_Routing_Specification_v0_1.docx | 49.4 | docx/extracted | 18 | BB2514E693E7 | Nexus V subsystem source, docs, or generated artifact. | NVVM Virtual Machine Architecture and 3D Routing Specification v0.1 — For NVIR Execution, NVRT Scheduling, G.ROUTE Emula |
+| Nexus V/docs/Plan/OASIS_ATHENA_AGENT_MODEL.md | 4.5 | text/read | 122 | 0DA19A838745 | Nexus V subsystem source, docs, or generated artifact. | # OASIS Athena Agent Model |
 | Nexus V/docs/Plan/QUALITY_PLAN.md | 1.7 | text/read | 53 | 760493FE3000 | Nexus V subsystem source, docs, or generated artifact. | # QUALITY PLAN |
-| Nexus V/docs/Plan/ROADMAP.md | 2.9 | text/read | 95 | 903E7AFB23FC | Nexus V subsystem source, docs, or generated artifact. | # ROADMAP |
+| Nexus V/docs/Plan/ROADMAP.md | 3.1 | text/read | 100 | 3AEFEA0209A0 | Nexus V subsystem source, docs, or generated artifact. | # ROADMAP |
 | Nexus V/docs/Plan/system plan.md | 9 | text/read | 802 | 78E1FD57412E | Nexus V subsystem source, docs, or generated artifact. | # AI-OS v1.0 |
-| Nexus V/docs/Plan/TODO.md | 1.3 | text/read | 40 | A354696B37D8 | Nexus V subsystem source, docs, or generated artifact. | # TODO |
+| Nexus V/docs/Plan/TODO.md | 1.6 | text/read | 46 | 18876D99227B | Nexus V subsystem source, docs, or generated artifact. | # TODO |
 | Nexus V/docs/Plan/TODO_STATUS.md | 1.7 | text/read | 33 | 80A0E1E64278 | Nexus V subsystem source, docs, or generated artifact. | # TODO_STATUS |
 | Nexus V/docs/pre_audit_against_hardware_plan.md | 2.9 | text/read | 26 | 39A717536B19 | Nexus V subsystem source, docs, or generated artifact. | # Nexus-V SoC Pre-Audit Against Hardware Plan |
 | Nexus V/filelist.f | 2.7 | binary/opaque | 0 | 7BC66ADFCEE4 | Nexus V subsystem source, docs, or generated artifact. | opaque or toolchain binary artifact |
@@ -956,8 +957,8 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | observability/probes.yml | 0.7 | text/read | 24 | A876D6623C82 | Log intelligence or observability output. | schema: ai-system.probes.v1 |
 | observability/reports/.gitkeep | 0 | binary/opaque | 0 | 01BA4719C80B | Log intelligence or observability output. | opaque or toolchain binary artifact |
 | observability/reports/latest-live-probe.json | 0.5 | text/read | 14 | 26FFB1CB5C10 | Log intelligence or observability output. | { |
-| observability/reports/latest-log-intelligence.json | 0.6 | text/read | 21 | B5EC85F0B45B | Log intelligence or observability output. | { |
-| observability/reports/latest-log-intelligence.md | 0.3 | text/read | 12 | 056F2D1B7D4A | Log intelligence or observability output. | # Log Intelligence Report |
+| observability/reports/latest-log-intelligence.json | 0.6 | text/read | 21 | 1C145E9EA7E5 | Log intelligence or observability output. | { |
+| observability/reports/latest-log-intelligence.md | 0.3 | text/read | 12 | A5444DAD9078 | Log intelligence or observability output. | # Log Intelligence Report |
 | observability/reports/LIVE-PROBE-LOG.md | 0.4 | text/read | 3 | CEDCF8C89541 | Log intelligence or observability output. | - 2026-06-03T15:31:52.2380250+10:00: docker_available=False; server_path=C:\Users\aesir\OneDrive\Desktop\WoW-Backups\2026-05-30_2035\WoW-Ser |
 | observability/reports/README.md | 0.2 | text/read | 11 | B3A4D714C912 | Log intelligence or observability output. | # Observability Reports |
 | observability/telemetry-model.md | 0.6 | text/read | 39 | 3AE41694B64B | Log intelligence or observability output. | # Telemetry Model |
@@ -996,12 +997,12 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | Plan/AI-OS-v8.0-Constitution-and-Identity-Charter.md | 5.9 | text/read | 303 | 088F9CBCCC5E | Top-priority Athena planning source. | # AI-OS v8.0 |
 | Plan/AI-OS-v9.0-Governance-Manual-and-Operating-Procedures.md | 0.9 | text/read | 25 | 51431698C90E | Top-priority Athena planning source. | # AI-OS v9.0 |
 | Plan/Athena Memory Architecture v1.0.docx | 13.5 | docx/extracted | 16 | 9A9425FC855C | Top-priority Athena planning source. | Athena Memory Architecture v1.0 Institutional Memory, Workspace Memory, and Call Memory Purpose Athena is designed as a  |
-| Plan/context.md | 21.6 | text/read | 535 | 3D569B816205 | Top-priority Athena planning source. | # Plan Folder Context |
+| Plan/context.md | 21.7 | text/read | 539 | 3FDB159A4F0D | Top-priority Athena planning source. | # Plan Folder Context |
 | Plan/define.txt | 4.7 | text/read | 177 | 9CD99E3CD433 | Top-priority Athena planning source. | define: |
 | Plan/FEATURE_ROADMAP.md | 2.2 | text/read | 39 | 9431C97D2607 | Top-priority Athena planning source. | # FEATURE ROADMAP |
 | Plan/Hardware plan.md | 18.6 | text/read | 642 | 7FD6C9AAD674 | Top-priority Athena planning source. | Im working in all of it, ive designed tenors cpus that are 3d and have github like states to reverse into, more that binary aswell, so its d |
 | Plan/Hardware specifics.md | 1.7 | text/read | 1 | A0E7DE946EE3 | Top-priority Athena planning source. | Instruction memory, data memory, execution memory, live/hot memory, live ram, execution ram, dram, system level cache, media engine, hardwar |
-| Plan/IMPLEMENTATION_MATRIX.md | 3.4 | text/read | 52 | 52A71BE31D79 | Top-priority Athena planning source. | # IMPLEMENTATION MATRIX |
+| Plan/IMPLEMENTATION_MATRIX.md | 3.7 | text/read | 53 | CC83E048B511 | Top-priority Athena planning source. | # IMPLEMENTATION MATRIX |
 | Plan/Nexus_V_Adaptive_Physical_Execution_Fabric_v0_1.docx | 44.4 | docx/extracted | 18 | 8F4FD193CDDC | Top-priority Athena planning source. | Nexus-V Adaptive Physical Execution Fabric v0.1 Physical execution-domain routing, adaptive path selection, and self-aud |
 | Plan/Nexus_V_Advanced_Execution_Architecture_Addendum_v0_3.docx | 46.7 | docx/extracted | 17 | 0ACB9A4956E8 | Top-priority Athena planning source. | Nexus-V Advanced Execution Architecture Addendum v0.3 Additive RISC-like, Pipeline, Micro-op, Superscalar, OoO, SMT, and |
 | Plan/Nexus_V_Aegis_Phase1_Enclave_Commit_Gate_and_MINREP_v0_1.docx | 42.4 | docx/extracted | 17 | CA6A577ED905 | Top-priority Athena planning source. | Nexus-V Aegis Phase 1 Enclave, Commit Gate, ATTEST, and MINREP Specification v0.1 - Secure commit authorization, session |
@@ -1039,12 +1040,13 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | Plan/NVISC_NVVM_Compiler_Bridge_Toolchain_v0_1.docx | 40.4 | docx/extracted | 17 | 96C47865EA47 | Top-priority Athena planning source. | NVISC / NVVM Compiler Bridge Toolchain Specification v0.1 NVASM -&gt; Semantic Mutation Graph -&gt; NVIR -&gt; NVOBJ -&g |
 | Plan/nvisc_toolchain_bridge_v0_1_sources.zip | 8 | zip/opened | 14 | 943279A5D69B | Top-priority Athena planning source. | nvisc_toolchain_bridge_v0_1/, nvisc_toolchain_bridge_v0_1/README.md, nvisc_toolchain_bridge_v0_1/examples/, nvisc_toolchain_bridge_v0_1/exam |
 | Plan/NVVM_Virtual_Machine_Architecture_and_3D_Routing_Specification_v0_1.docx | 49.4 | docx/extracted | 18 | BB2514E693E7 | Top-priority Athena planning source. | NVVM Virtual Machine Architecture and 3D Routing Specification v0.1 — For NVIR Execution, NVRT Scheduling, G.ROUTE Emula |
+| Plan/OASIS_ATHENA_AGENT_MODEL.md | 4.5 | text/read | 122 | 0DA19A838745 | Top-priority Athena planning source. | # OASIS Athena Agent Model |
 | Plan/Odysseus-Nexus-Ontology-Extraction-and-Unification-Specification.md | 3.5 | text/read | 266 | 48D67375666B | Top-priority Athena planning source. | # ODYSSEUS NEXUS |
 | Plan/Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md | 4.1 | text/read | 380 | 71E459F5D496 | Top-priority Athena planning source. | # PROJECT ATHENA |
 | Plan/QUALITY_PLAN.md | 1.7 | text/read | 53 | 760493FE3000 | Top-priority Athena planning source. | # QUALITY PLAN |
-| Plan/ROADMAP.md | 2.9 | text/read | 95 | 903E7AFB23FC | Top-priority Athena planning source. | # ROADMAP |
+| Plan/ROADMAP.md | 3.1 | text/read | 100 | 3AEFEA0209A0 | Top-priority Athena planning source. | # ROADMAP |
 | Plan/system plan.md | 9 | text/read | 802 | 78E1FD57412E | Top-priority Athena planning source. | # AI-OS v1.0 |
-| Plan/TODO.md | 1.3 | text/read | 40 | A354696B37D8 | Top-priority Athena planning source. | # TODO |
+| Plan/TODO.md | 1.6 | text/read | 46 | 18876D99227B | Top-priority Athena planning source. | # TODO |
 | Plan/TODO_STATUS.md | 1.7 | text/read | 33 | 80A0E1E64278 | Top-priority Athena planning source. | # TODO_STATUS |
 | playbooks/add-feature.md | 0.6 | text/read | 22 | 8FFF7C151DCC | Project file. | # Playbook: Add Feature |
 | playbooks/diagnose-server.md | 0.6 | text/read | 27 | 46B2D75D971B | Project file. | # Playbook: Diagnose Server |
@@ -1109,13 +1111,13 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | schemas/task.schema.json | 0.8 | text/read | 21 | 413DE0E1F908 | Validation schema. | { |
 | schemas/work-item.schema.json | 0.7 | text/read | 19 | 6E6BC485F04E | Validation schema. | { |
 | sensory/baselines/README.md | 0.2 | text/read | 7 | D390F43110B7 | Scan, baseline, or watched-state output. | # Baselines |
-| sensory/baselines/watched-state-baseline.csv | 192.4 | text/read | 1229 | DA8856C9D99C | Scan, baseline, or watched-state output. | "path","hash","last_write","bytes" |
+| sensory/baselines/watched-state-baseline.csv | 192.8 | text/read | 1232 | 20B2228C60F6 | Scan, baseline, or watched-state output. | "path","hash","last_write","bytes" |
 | sensory/health-model.md | 0.7 | text/read | 25 | BB13D03ED190 | Scan, baseline, or watched-state output. | # Health Model |
-| sensory/scans/latest-scan.json | 9.6 | text/read | 156 | EB73C6AA954F | Scan, baseline, or watched-state output. | { |
-| sensory/scans/latest-watched-changes.json | 9.9 | text/read | 186 | 6CF112BDC3B2 | Scan, baseline, or watched-state output. | { |
-| sensory/scans/latest-watched-changes.md | 1.3 | text/read | 44 | 88FDFE4875F2 | Scan, baseline, or watched-state output. | # Watched State Changes |
+| sensory/scans/latest-scan.json | 7.2 | text/read | 156 | 2E20F54A6F58 | Scan, baseline, or watched-state output. | { |
+| sensory/scans/latest-watched-changes.json | 12.4 | text/read | 234 | 4C57926DE90B | Scan, baseline, or watched-state output. | { |
+| sensory/scans/latest-watched-changes.md | 1.5 | text/read | 52 | 97DB53430C4B | Scan, baseline, or watched-state output. | # Watched State Changes |
 | sensory/scans/README.md | 0.3 | text/read | 11 | 4140E7FC2409 | Scan, baseline, or watched-state output. | # Scan Outputs |
-| sensory/scans/SCAN-LOG.md | 2 | text/read | 30 | 7FB407B4ED82 | Scan, baseline, or watched-state output. | - 2026-06-03T15:16:00.4962690+10:00: layers=7; signals=5; free_gb=58.5 |
+| sensory/scans/SCAN-LOG.md | 2.1 | text/read | 31 | E64823F7C7D8 | Scan, baseline, or watched-state output. | - 2026-06-03T15:16:00.4962690+10:00: layers=7; signals=5; free_gb=58.5 |
 | sensory/signals.md | 0.8 | text/read | 31 | C48694B428CA | Scan, baseline, or watched-state output. | # Signals |
 | START-HERE.md | 2.6 | text/read | 80 | DE0214EC0074 | Project file. | # Start Here |
 | templates/athena-cycle-report.md | 0.8 | text/read | 65 | 5E09D2189102 | Reusable Athena workflow template. | # Athena Cycle Report: [Cycle ID] |

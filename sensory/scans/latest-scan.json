@@ -1,6 +1,6 @@
 ﻿{
     "schema":  "ai-system.scan.v1",
-    "generated_at":  "2026-07-10T01:30:14.7725202+10:00",
+    "generated_at":  "2026-07-10T02:08:54.3364297+10:00",
     "project_root":  "D:\\Projects\\Project Athena",
     "disk":  {
                  "drive":  "D",
@@ -17,14 +17,14 @@
                        "exists":  true,
                        "is_git":  true,
                        "branch":  "main",
-                       "head":  "a0d1d69",
+                       "head":  "3d744d3",
                        "origin":  "https://github.com/IAMACESIRX/Project-Athena.git",
                        "management_remote":  true,
-                       "tracked_dirty_count":  61,
-                       "untracked_count":  19,
+                       "tracked_dirty_count":  14,
+                       "untracked_count":  2,
                        "file_count":  null,
                        "size_mb":  null,
-                       "status":  "## main...origin/main\n M AI-PORTAL.md\n M \"Nexus V/docs/Plan/FEATURE_ROADMAP.md\"\n M \"Nexus V/docs/Plan/QUALITY_PLAN.md\"\n M \"Nexus V/docs/Plan/ROADMAP.md\"\n M \"Nexus V/docs/Plan/TODO.md\"\n M \"Nexus V/docs/Plan/TODO_STATUS.md\"\n M \"Nexus V/docs/ai-system/AI-PORTAL.md\"\n M \"Nexus V/docs/ai-system/README.md\"\n M \"Nexus V/docs/ai-system/START-HERE.md\"\n M Plan/FEATURE_ROADMAP.md\n M Plan/QUALITY_PLAN.md\n M Plan/ROADMAP.md\n M Plan/TODO.md\n M Plan/TODO_STATUS.md\n M README.md\n M START-HERE.md\n M diagnostics/reports/latest-integrity-report.json\n M diagnostics/reports/latest-integrity-report.md\n M diagnostics/resolvable-issues.md\n M engine/cycle-history.csv\n M engine/cycle-reports/latest-cycle-report.json\n M engine/cycle-reports/latest-cycle-report.md\n M forensics/evidence-register.csv\n M forensics/verification-reports/latest-forensic-verification.json\n M forensics/verification-reports/latest-forensic-verification.md\n M identity/README.md\n M identity/mission-and-scope.md\n M manifests/capability-matrix.yml\n M manifests/generated-ai-index.json\n M manifests/ingestion-order.yml\n M manifests/system-manifest.json\n M manifests/tool-index.yml\n M memory/project-memory.md\n M navigation/generated/project-map.json\n M navigation/project-map.md\n M observability/reports/latest-log-intelligence.json\n M observability/reports/latest-log-intelligence.md\n M projects/project-registry.yml\n M projects/wow-backup-stack/project-brain.md\n M registries/layers.yml\n M sensory/baselines/watched-state-baseline.csv\n M sensory/scans/SCAN-LOG.md\n M sensory/scans/latest-scan.json\n M sensory/scans/latest-watched-changes.json\n M sensory/scans/latest-watched-changes.md\n M tools/Export-AISystemManifest.ps1\n M tools/Export-ProjectMap.ps1\n M tools/Invoke-AIForensicVerification.ps1\n M tools/Invoke-AIIntegrityCheck.ps1\n M tools/Invoke-AILogIntelligence.ps1\n M tools/Invoke-AIOperationCycle.ps1\n M tools/Invoke-AIProjectScan.ps1\n M tools/Invoke-AIWatchedState.ps1\n M tools/Invoke-LiveServerProbe.ps1\n M tools/New-AuditEvent.ps1\n M tools/New-ChatHandoff.ps1\n M tools/New-HandoffSnapshot.ps1\n M tools/New-RestorePoint.ps1\n M tools/New-WorkItem.ps1\n M tools/README.md\n M tools/Update-LayerPointers.ps1\n?? \"Nexus V/docs/NEXUS-V-IMPLEMENTATION-MATRIX.md\"\n?? \"Nexus V/docs/Plan/IMPLEMENTATION_MATRIX.md\"\n?? \"Nexus V/docs/ai-system/ARCHIVE-NOTICE.md\"\n?? Plan/IMPLEMENTATION_MATRIX.md\n?? Plan/context.md\n?? context-file-index.md\n?? context.md\n?? council/reasoning-rounds/council-20260710-athena-improvement-brainstorm.md\n?? engine/cycle-reports/ATHENA-BRAINSTORM-CYCLE-20260710-002.md\n?? engine/cycle-reports/ATHENA-DECISION-CYCLE-20260710-003.md\n?? engine/cycle-reports/ATHENA-TEST-RUN-20260710-001.md\n?? memory/athena-memory-map.md\n?? schemas/athena-task-intake.schema.json\n?? templates/athena-cycle-report.md\n?? templates/athena-task-intake.md\n?? tools/Invoke-AthenaCycle.ps1\n?? tools/Update-ContextFileIndex.ps1\n?? work/ATHENA-FIRST-STEPS.md\n?? work/intake/"
+                       "status":  "## main...origin/main\n M AI-PORTAL.md\n M \"Nexus V/docs/Plan/IMPLEMENTATION_MATRIX.md\"\n M \"Nexus V/docs/Plan/ROADMAP.md\"\n M \"Nexus V/docs/Plan/TODO.md\"\n M Plan/IMPLEMENTATION_MATRIX.md\n M Plan/ROADMAP.md\n M Plan/TODO.md\n M Plan/context.md\n M context.md\n M diagnostics/reports/latest-integrity-report.json\n M diagnostics/reports/latest-integrity-report.md\n M manifests/capability-matrix.yml\n M manifests/system-manifest.json\n M memory/athena-memory-map.md\n?? \"Nexus V/docs/Plan/OASIS_ATHENA_AGENT_MODEL.md\"\n?? Plan/OASIS_ATHENA_AGENT_MODEL.md"
                    },
                    {
                        "id":  "plan",
