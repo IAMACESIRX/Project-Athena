@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.athena_task_intake.v1",
+  "title": "Athena Task Intake",
+  "type": "object",
+  "required": [
+    "schema",
+    "intake_id",
+    "created_at",
+    "human_goal",
+    "active_layer",
+    "priority_source",
+    "required_output",
+    "verification_method",
+    "memory_writeback_targets"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ai-system.athena_task_intake.v1"
+    },
+    "intake_id": {
+      "type": "string",
+      "description": "Stable task-intake identifier."
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO-8601 timestamp."
+    },
+    "human_goal": {
+      "type": "string"
+    },
+    "active_layer": {
+      "type": "string",
+      "description": "Repository or subsystem currently being acted on."
+    },
+    "priority_source": {
+      "type": "string",
+      "description": "Highest authority for the task, for example Plan, governance, human instruction, or code."
+    },
+    "files_to_read": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "files_read": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "known_facts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/labeled_statement" }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/labeled_statement" }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/labeled_statement" }
+    },
+    "risks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/labeled_statement" }
+    },
+    "required_output": {
+      "type": "string"
+    },
+    "verification_method": {
+      "type": "string"
+    },
+    "memory_writeback_targets": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "status": {
+      "enum": ["created", "anchored", "planned", "executing", "verified", "complete", "blocked"]
+    }
+  },
+  "$defs": {
+    "labeled_statement": {
+      "type": "object",
+      "required": ["statement", "truth_value", "confidence"],
+      "properties": {
+        "statement": { "type": "string" },
+        "truth_value": {
+          "enum": [
+            "observed",
+            "verified",
+            "inferred",
+            "assumed",
+            "unknown",
+            "stale",
+            "contradicted",
+            "speculative",
+            "not_applicable"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

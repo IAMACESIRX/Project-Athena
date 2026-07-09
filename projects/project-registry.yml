@@ -1,23 +1,36 @@
 schema: ai-system.project_registry.v1
-updated: 2026-06-03
+updated: 2026-07-10
 projects:
-  - id: wow-backup-stack
-    name: WoW Backup Stack
+  - id: project-athena
+    name: Project Athena
     status: active_primary
-    project_brain: ai-system/projects/wow-backup-stack/project-brain.md
-    evidence_namespace: EVD-WOW
+    project_brain: context.md
+    plan_brain: Plan/context.md
+    evidence_namespace: EVD-ATHENA
     local_only: true
-    root: C:/Users/aesir/OneDrive/Desktop/WoW-Backups/2026-05-30_2035
+    root: D:/Projects/Project Athena
     managed_layers:
-      - mega
-      - game-client
-      - live-state
-      - server-project
-      - nested-azerothcore
+      - project-athena
+      - plan
+      - nexus-v
+      - athena-engine
+      - athena-memory
+      - athena-work
+      - athena-tools
+  - id: nexus-v
+    name: Nexus V
+    status: active_subsystem
+    project_brain: Nexus V/docs/NEXUS-V-IMPLEMENTATION-MATRIX.md
+    evidence_namespace: EVD-NEXUSV
+    local_only: true
+    root: D:/Projects/Project Athena/Nexus V
+    managed_layers:
+      - nexus-v
+      - plan
   - id: general-ai-os
     name: General AI-OS Control Plane
     status: active_foundation
-    project_brain: ai-system/projects/general-ai-os/project-brain.md
+    project_brain: projects/general-ai-os/project-brain.md
     evidence_namespace: EVD-AIOS
     local_only: true
     managed_layers:
@@ -28,4 +41,13 @@ projects:
       - memory
       - training
       - runtime
-
+  - id: wow-backup-stack
+    name: WoW Backup Stack
+    status: legacy_retained
+    project_brain: projects/wow-backup-stack/project-brain.md
+    evidence_namespace: EVD-WOW
+    local_only: true
+    root: C:/Users/aesir/OneDrive/Desktop/WoW-Backups/2026-05-30_2035
+    managed_layers:
+      - legacy-wow
+    note: Retained from the original AI-OS control-plane history; not the current checkout root identity.

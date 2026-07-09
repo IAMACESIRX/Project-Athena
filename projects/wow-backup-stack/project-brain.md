@@ -4,7 +4,7 @@
 
 Project ID: `wow-backup-stack`
 
-Role: first managed project under the generalized AI-OS control plane.
+Role: retained legacy managed project under Project Athena.
 
 Local-only: yes.
 
@@ -25,6 +25,8 @@ Preserve, understand, diagnose, and safely evolve the local WoW server/client/li
 ## First Run
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\ai-system\tools\Invoke-AIOperationCycle.ps1 -SkipLiveProbe
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AIOperationCycle.ps1 -SkipLiveProbe
 ```
 
+Note: this project brain is retained history; Project Athena is now the active
+root identity.

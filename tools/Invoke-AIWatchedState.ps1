@@ -1,5 +1,5 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [int]$MaxFiles = 5000,
     [switch]$NoBaselineUpdate,
     [switch]$NoWrite
@@ -7,7 +7,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$aiRoot = Join-Path $ProjectRoot "ai-system"
+$aiRoot = $ProjectRoot
 $baselineDir = Join-Path $aiRoot "sensory\baselines"
 $baselinePath = Join-Path $baselineDir "watched-state-baseline.csv"
 $changeJson = Join-Path $aiRoot "sensory\scans\latest-watched-changes.json"
@@ -22,14 +22,14 @@ function Get-RelativePath {
 }
 
 $watchRoots = @(
-    (Join-Path $ProjectRoot "ai-system"),
-    (Join-Path $ProjectRoot "Server-Live-State"),
-    (Join-Path $ProjectRoot "WoW-Server-Project\scripts"),
-    (Join-Path $ProjectRoot "WoW-Server-Project\docs"),
-    (Join-Path $ProjectRoot "WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots\modules\mod-playerbots\conf")
+    ($ProjectRoot),
+    (Join-Path $ProjectRoot "Plan"),
+    (Join-Path $ProjectRoot "Nexus V\rtl"),
+    (Join-Path $ProjectRoot "Nexus V\toolchain"),
+    (Join-Path $ProjectRoot "Nexus V\scripts")
 )
 
-$exclude = "\\.git\\|\\.venv\\|\\node_modules\\|\\build\\|\\_deps\\|\\CMakeFiles\\|\\Data\\|\\Cache\\|\\WDB\\|\\Plan\\"
+$exclude = "\\.git\\|\\.venv\\|\\node_modules\\|\\build\\|\\_deps\\|\\CMakeFiles\\|\\Data\\|\\Cache\\|\\WDB\\|\\obj_dir\\|__pycache__"
 $current = New-Object 'System.Collections.Generic.List[object]'
 
 foreach ($root in $watchRoots) {
@@ -125,4 +125,5 @@ if (-not $NoWrite) {
 }
 
 $report
+
 

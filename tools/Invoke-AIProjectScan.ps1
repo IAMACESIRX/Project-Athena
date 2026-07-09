@@ -1,5 +1,5 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [switch]$IncludeFileCounts,
     [switch]$NoWrite
 )
@@ -64,7 +64,8 @@ function Get-RepoState {
     $sizeMB = $null
 
     if ($exists) {
-        $isGit = (Test-Path -LiteralPath (Join-Path $fullPath ".git")) -or ((Invoke-GitCommand -RepoPath $fullPath -Arguments @("rev-parse", "--is-inside-work-tree")).ExitCode -eq 0)
+        $inspectGit = ($Path -eq ".")
+        $isGit = $inspectGit -and ((Test-Path -LiteralPath (Join-Path $fullPath ".git")) -or ((Invoke-GitCommand -RepoPath $fullPath -Arguments @("rev-parse", "--is-inside-work-tree")).ExitCode -eq 0))
 
         if ($isGit) {
             $branch = Get-GitValue -RepoPath $fullPath -Arguments @("branch", "--show-current")
@@ -137,13 +138,13 @@ function Add-Signal {
 }
 
 $layers = @(
-    @{ Id = "mega"; Name = "Mega Backup Stack"; Path = "."; Role = "orchestrator"; ManagementRemote = $true },
-    @{ Id = "game-client"; Name = "ChromieCraft Game Client"; Path = "GameClient-ChromieCraft-3.3.5a"; Role = "child_payload_layer"; ManagementRemote = $true },
-    @{ Id = "live-state"; Name = "Server Live State"; Path = "Server-Live-State"; Role = "child_state_layer"; ManagementRemote = $true },
-    @{ Id = "server-project"; Name = "WoW Server Project"; Path = "WoW-Server-Project"; Role = "child_project_layer"; ManagementRemote = $true },
-    @{ Id = "azerothcore-clean"; Name = "AzerothCore Clean Baseline"; Path = "WoW-Server-Project\servers\wow\azerothcore-wotlk"; Role = "nested_source_repo"; ManagementRemote = $false },
-    @{ Id = "azerothcore-playerbots"; Name = "AzerothCore Playerbots Fork"; Path = "WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots"; Role = "nested_source_repo"; ManagementRemote = $false },
-    @{ Id = "mod-playerbots"; Name = "mod-playerbots"; Path = "WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots\modules\mod-playerbots"; Role = "nested_module_repo"; ManagementRemote = $false }
+    @{ Id = "project-athena"; Name = "Project Athena"; Path = "."; Role = "athena_workspace"; ManagementRemote = $true },
+    @{ Id = "plan"; Name = "Plan Architecture Vault"; Path = "Plan"; Role = "architecture_intent_vault"; ManagementRemote = $false },
+    @{ Id = "nexus-v"; Name = "Nexus V Hardware And Toolchain"; Path = "Nexus V"; Role = "implementation_subsystem"; ManagementRemote = $false },
+    @{ Id = "engine"; Name = "Athena Operation Engine"; Path = "engine"; Role = "processor_loop"; ManagementRemote = $false },
+    @{ Id = "memory"; Name = "Athena Memory"; Path = "memory"; Role = "memory_layer"; ManagementRemote = $false },
+    @{ Id = "work"; Name = "Athena Work System"; Path = "work"; Role = "working_memory"; ManagementRemote = $false },
+    @{ Id = "tools"; Name = "Athena Tools"; Path = "tools"; Role = "tooling_layer"; ManagementRemote = $false }
 )
 
 $repoStates = foreach ($layer in $layers) {
@@ -172,28 +173,12 @@ foreach ($repo in $repoStates) {
     }
 }
 
-$gameClient = $repoStates | Where-Object { $_.id -eq "game-client" } | Select-Object -First 1
-if ($gameClient.untracked_count -gt 0) {
-    Add-Signal -Signals $signals -Severity "yellow" -Id "client-untracked-payload" -Message "Game client has $($gameClient.untracked_count) untracked top-level entries. This is currently intentional."
+if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot "context.md"))) {
+    Add-Signal -Signals $signals -Severity "yellow" -Id "missing-context" -Message "Root context.md is missing."
 }
 
-$venvConfig = Join-Path $ProjectRoot "WoW-Server-Project\.venv\pyvenv.cfg"
-if (Test-Path -LiteralPath $venvConfig) {
-    $venvText = Get-Content -Raw -LiteralPath $venvConfig
-    if ($venvText -match "executable\s*=\s*(.+)") {
-        $venvExe = $Matches[1].Trim()
-        if (-not (Test-Path -LiteralPath $venvExe)) {
-            Add-Signal -Signals $signals -Severity "yellow" -Id "broken-venv" -Message "Python venv executable is missing: $venvExe."
-        }
-    }
-}
-
-$authDump = Join-Path $ProjectRoot "Server-Live-State\acore_auth.sql"
-if (Test-Path -LiteralPath $authDump) {
-    $realmLine = Select-String -LiteralPath $authDump -Pattern "INSERT INTO ``realmlist``" -SimpleMatch | Select-Object -First 1
-    if ($realmLine -and $realmLine.Line -match "127\.0\.0\.1") {
-        Add-Signal -Signals $signals -Severity "yellow" -Id "realm-localhost" -Message "Live-state auth dump realmlist appears to contain 127.0.0.1."
-    }
+if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot "Plan\context.md"))) {
+    Add-Signal -Signals $signals -Severity "yellow" -Id "missing-plan-context" -Message "Plan/context.md is missing."
 }
 
 $scan = [PSCustomObject]@{
@@ -210,7 +195,7 @@ $scan = [PSCustomObject]@{
 }
 
 if (-not $NoWrite) {
-    $scanDir = Join-Path $ProjectRoot "ai-system\sensory\scans"
+    $scanDir = Join-Path $ProjectRoot "sensory\scans"
     New-Item -ItemType Directory -Force -Path $scanDir | Out-Null
 
     $scanPath = Join-Path $scanDir "latest-scan.json"
@@ -222,3 +207,4 @@ if (-not $NoWrite) {
 }
 
 $scan
+

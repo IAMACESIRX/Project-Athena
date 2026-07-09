@@ -1,38 +1,67 @@
-schema: ai-system.capability_matrix.v1
+﻿schema: ai-system.capability_matrix.v1
 updated: 2026-06-03
 legend:
+  active: usable now and currently being expanded
   implemented: usable now
   scaffolded: structure exists but needs more implementation
   specified: contract exists for future build
   blocked: requires human decision or external setup
+  legacy_retained: retained for history or backward compatibility, not current primary path
 capabilities:
+  - id: athena_external_brain
+    status: active
+    description: Defines Athena as a file-native AI prosthetic external brain, database, and processor.
+    evidence:
+      - context.md
+      - AI-PORTAL.md
+      - memory/athena-memory-map.md
+  - id: athena_task_intake
+    status: active
+    description: Converts human goals into structured task-intake packets with facts, assumptions, unknowns, risks, required output, verification, and writeback targets.
+    tool: tools/Invoke-AthenaCycle.ps1
+    schema: schemas/athena-task-intake.schema.json
+    template: templates/athena-task-intake.md
+  - id: athena_memory_map
+    status: active
+    description: Defines Athena memory layers and writeback rules.
+    document: memory/athena-memory-map.md
+  - id: athena_cycle_reports
+    status: active
+    description: Records non-trivial Athena runs as auditable cycle reports.
+    template: templates/athena-cycle-report.md
+    output: engine/cycle-reports
+  - id: athena_complete_file_index
+    status: active
+    description: Regenerates the complete file-by-file project index used for repository context.
+    tool: tools/Update-ContextFileIndex.ps1
+    output: context-file-index.md
   - id: local_git_layering
-    status: implemented
-    description: Four local Git layers with local bare remotes.
+    status: legacy_retained
+    description: Original four-layer WoW Git stack model retained as history; current checkout is standalone Project Athena.
   - id: ai_project_scan
     status: implemented
-    description: Reads git state, disk pressure, remotes, known venv issue, and realmlist signal.
-    tool: ai-system/tools/Invoke-AIProjectScan.ps1
+    description: Reads Project Athena root, Plan, Nexus V, engine, memory, work, and tools state.
+    tool: tools/Invoke-AIProjectScan.ps1
   - id: ai_manifest_export
     status: scaffolded
     description: Exports a machine-ingestable index of the AI system.
-    tool: ai-system/tools/Export-AISystemManifest.ps1
+    tool: tools/Export-AISystemManifest.ps1
   - id: handoff_generation
     status: implemented
     description: Generates dated session handoffs.
-    tool: ai-system/tools/New-HandoffSnapshot.ps1
+    tool: tools/New-HandoffSnapshot.ps1
   - id: layer_pointer_update
     status: implemented
     description: Stages and optionally commits child repo pointer updates in the mega repo.
-    tool: ai-system/tools/Update-LayerPointers.ps1
+    tool: tools/Update-LayerPointers.ps1
   - id: work_item_creation
     status: scaffolded
     description: Creates simple local work items for todo, bug, feature, and research queues.
-    tool: ai-system/tools/New-WorkItem.ps1
+    tool: tools/New-WorkItem.ps1
   - id: live_server_probe
     status: scaffolded
     description: Non-destructive Docker/log/server inspection.
-    tool: ai-system/tools/Invoke-LiveServerProbe.ps1
+    tool: tools/Invoke-LiveServerProbe.ps1
   - id: full_client_tracking
     status: blocked
     description: Full game client Git tracking is blocked by disk capacity strategy.
@@ -45,15 +74,15 @@ capabilities:
   - id: chat_handoff_logging
     status: implemented
     description: Creates chat logs and handoff packets for cross-agent continuity.
-    tool: ai-system/tools/New-ChatHandoff.ps1
+    tool: tools/New-ChatHandoff.ps1
   - id: audit_event_logging
     status: implemented
     description: Creates individual audit events for causality and rollback tracking.
-    tool: ai-system/tools/New-AuditEvent.ps1
+    tool: tools/New-AuditEvent.ps1
   - id: restore_point_manifest
     status: implemented
     description: Creates restore point manifests and optional Git tags/bundles for committed repo state.
-    tool: ai-system/tools/New-RestorePoint.ps1
+    tool: tools/New-RestorePoint.ps1
   - id: council_reasoning
     status: specified
     description: Specialist council protocol for high-risk decisions and research.
@@ -126,23 +155,23 @@ capabilities:
   - id: operation_cycle_engine
     status: implemented
     description: Runs the integrated observe, verify, map, diagnose, reason, audit, and learning cycle.
-    tool: ai-system/tools/Invoke-AIOperationCycle.ps1
+    tool: tools/Invoke-AIOperationCycle.ps1
   - id: integrity_gate
     status: implemented
     description: Checks required AI-system files, manifest references, JSON validity, and local-only governance.
-    tool: ai-system/tools/Invoke-AIIntegrityCheck.ps1
+    tool: tools/Invoke-AIIntegrityCheck.ps1
   - id: forensic_evidence_claim_layer
     status: implemented
     description: Maintains stable project evidence IDs, claim catalog, evidence-claim links, timeline, known unknowns, and verification reports.
-    tool: ai-system/tools/Invoke-AIForensicVerification.ps1
+    tool: tools/Invoke-AIForensicVerification.ps1
   - id: log_intelligence
     status: implemented
     description: Scans local client/server logs against signature catalog and queues resolvable findings.
-    tool: ai-system/tools/Invoke-AILogIntelligence.ps1
+    tool: tools/Invoke-AILogIntelligence.ps1
   - id: watched_state_baseline
     status: implemented
     description: Tracks hashes for selected AI, live-state, and server-project files to detect drift between cycles.
-    tool: ai-system/tools/Invoke-AIWatchedState.ps1
+    tool: tools/Invoke-AIWatchedState.ps1
   - id: general_ai_os_identity
     status: implemented
     description: Defines the system as a multi-purpose local AI operating system rather than only a WoW control plane.
@@ -185,3 +214,4 @@ capabilities:
   - id: repository_scale_coding_agent
     status: specified
     description: Defines future repository graph, edit localization, test selection, patch generation, review, and rollback loops.
+

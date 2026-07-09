@@ -1,82 +1,82 @@
 ﻿{
     "schema":  "ai-system.operation_cycle_report.v1",
-    "cycle_id":  "CYCLE-20260603-204857",
-    "started":  "2026-06-03T20:48:57.7133095+10:00",
-    "ended":  "2026-06-03T20:49:08.5090511+10:00",
-    "duration_sec":  10.8,
-    "status":  "WARN",
-    "project_root":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
+    "cycle_id":  "CYCLE-20260710-013013",
+    "started":  "2026-07-10T01:30:13.2847256+10:00",
+    "ended":  "2026-07-10T01:30:19.8932620+10:00",
+    "duration_sec":  6.61,
+    "status":  "PASS",
+    "project_root":  "D:\\Projects\\Project Athena",
     "steps":  [
                   {
                       "name":  "R01 Integrity Gate",
                       "status":  "PASS",
-                      "started":  "2026-06-03T20:48:57.7642609+10:00",
-                      "ended":  "2026-06-03T20:48:58.7829096+10:00",
-                      "seconds":  1.02,
+                      "started":  "2026-07-10T01:30:13.2997235+10:00",
+                      "ended":  "2026-07-10T01:30:13.8572373+10:00",
+                      "seconds":  0.56,
                       "message":  ""
                   },
                   {
                       "name":  "R02 Project Scan",
                       "status":  "PASS",
-                      "started":  "2026-06-03T20:48:58.8053636+10:00",
-                      "ended":  "2026-06-03T20:49:03.3678108+10:00",
-                      "seconds":  4.56,
+                      "started":  "2026-07-10T01:30:13.8722623+10:00",
+                      "ended":  "2026-07-10T01:30:14.8680639+10:00",
+                      "seconds":  1,
                       "message":  ""
                   },
                   {
                       "name":  "R03 Project Map Export",
                       "status":  "PASS",
-                      "started":  "2026-06-03T20:49:03.3740875+10:00",
-                      "ended":  "2026-06-03T20:49:04.4889286+10:00",
-                      "seconds":  1.11,
+                      "started":  "2026-07-10T01:30:14.8710727+10:00",
+                      "ended":  "2026-07-10T01:30:15.7217567+10:00",
+                      "seconds":  0.85,
                       "message":  ""
                   },
                   {
                       "name":  "R04 AI Manifest Export",
                       "status":  "PASS",
-                      "started":  "2026-06-03T20:49:04.4899397+10:00",
-                      "ended":  "2026-06-03T20:49:05.1992456+10:00",
-                      "seconds":  0.71,
+                      "started":  "2026-07-10T01:30:15.7217567+10:00",
+                      "ended":  "2026-07-10T01:30:16.2623940+10:00",
+                      "seconds":  0.54,
                       "message":  ""
                   },
                   {
                       "name":  "R05 Forensic Verification",
                       "status":  "PASS",
-                      "started":  "2026-06-03T20:49:05.2018061+10:00",
-                      "ended":  "2026-06-03T20:49:05.7503402+10:00",
-                      "seconds":  0.55,
+                      "started":  "2026-07-10T01:30:16.2623940+10:00",
+                      "ended":  "2026-07-10T01:30:16.6795393+10:00",
+                      "seconds":  0.42,
                       "message":  ""
                   },
                   {
                       "name":  "R06 Log Intelligence",
-                      "status":  "WARN",
-                      "started":  "2026-06-03T20:49:05.7503402+10:00",
-                      "ended":  "2026-06-03T20:49:06.5282237+10:00",
-                      "seconds":  0.78,
-                      "message":  "Sub-report status: WARN"
+                      "status":  "PASS",
+                      "started":  "2026-07-10T01:30:16.6805417+10:00",
+                      "ended":  "2026-07-10T01:30:17.1464996+10:00",
+                      "seconds":  0.47,
+                      "message":  ""
                   },
                   {
                       "name":  "R07 Watched State Baseline",
                       "status":  "PASS",
-                      "started":  "2026-06-03T20:49:06.5282237+10:00",
-                      "ended":  "2026-06-03T20:49:08.4932513+10:00",
-                      "seconds":  1.97,
+                      "started":  "2026-07-10T01:30:17.1475073+10:00",
+                      "ended":  "2026-07-10T01:30:19.8872772+10:00",
+                      "seconds":  2.74,
                       "message":  ""
                   },
                   {
                       "name":  "R08 Live Server Probe",
                       "status":  "SKIP",
-                      "started":  "2026-06-03T20:49:08.4932513+10:00",
-                      "ended":  "2026-06-03T20:49:08.4932513+10:00",
+                      "started":  "2026-07-10T01:30:19.8892752+10:00",
+                      "ended":  "2026-07-10T01:30:19.8892752+10:00",
                       "seconds":  0,
                       "message":  "Skipped by operator flag."
                   },
                   {
                       "name":  "R09 Cognition Checklist Presence",
                       "status":  "PASS",
-                      "started":  "2026-06-03T20:49:08.4932513+10:00",
-                      "ended":  "2026-06-03T20:49:08.5090511+10:00",
-                      "seconds":  0.02,
+                      "started":  "2026-07-10T01:30:19.8892752+10:00",
+                      "ended":  "2026-07-10T01:30:19.8932620+10:00",
+                      "seconds":  0,
                       "message":  ""
                   }
               ]

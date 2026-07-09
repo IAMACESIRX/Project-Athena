@@ -1,11 +1,11 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [switch]$SkipLiveProbe
 )
 
 $ErrorActionPreference = "Stop"
 
-$aiRoot = Join-Path $ProjectRoot "ai-system"
+$aiRoot = $ProjectRoot
 $tools = Join-Path $aiRoot "tools"
 $reportDir = Join-Path $aiRoot "engine\cycle-reports"
 $historyPath = Join-Path $aiRoot "engine\cycle-history.csv"
@@ -174,3 +174,4 @@ if (-not (Test-Path -LiteralPath $historyPath)) {
 } | Export-Csv -LiteralPath $historyPath -NoTypeInformation -Append -Encoding UTF8
 
 $report
+

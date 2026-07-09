@@ -1,5 +1,5 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [string]$Title = "Session handoff",
     [switch]$IncludeScan
 )
@@ -30,7 +30,7 @@ $fence
 "@
 }
 
-$sessionDir = Join-Path $ProjectRoot "ai-system\handoff\sessions"
+$sessionDir = Join-Path $ProjectRoot "handoff\sessions"
 New-Item -ItemType Directory -Force -Path $sessionDir | Out-Null
 
 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
@@ -40,13 +40,12 @@ $now = (Get-Date).ToString("o")
 $scanNote = ""
 if ($IncludeScan) {
     $scanOutput = & (Join-Path $PSScriptRoot "Invoke-AIProjectScan.ps1") -ProjectRoot $ProjectRoot
-    $scanNote = "Scan generated at `ai-system/sensory/scans/latest-scan.json`."
+    $scanNote = "Scan generated at `sensory/scans/latest-scan.json`."
 }
 
-$megaStatus = Get-StatusBlock -Name "Mega repo" -Path $ProjectRoot -ExtraArgs @("--ignore-submodules=untracked")
-$clientStatus = Get-StatusBlock -Name "Game client" -Path (Join-Path $ProjectRoot "GameClient-ChromieCraft-3.3.5a")
-$liveStatus = Get-StatusBlock -Name "Server live state" -Path (Join-Path $ProjectRoot "Server-Live-State")
-$projectStatus = Get-StatusBlock -Name "WoW server project" -Path (Join-Path $ProjectRoot "WoW-Server-Project")
+$rootStatus = Get-StatusBlock -Name "Project Athena" -Path $ProjectRoot -ExtraArgs @("--ignore-submodules=untracked")
+$planStatus = Get-StatusBlock -Name "Plan architecture vault" -Path (Join-Path $ProjectRoot "Plan")
+$nexusStatus = Get-StatusBlock -Name "Nexus V subsystem" -Path (Join-Path $ProjectRoot "Nexus V")
 
 $content = @"
 # $Title
@@ -59,13 +58,11 @@ $scanNote
 
 ## Git Status
 
-$megaStatus
+$rootStatus
 
-$clientStatus
+$planStatus
 
-$liveStatus
-
-$projectStatus
+$nexusStatus
 
 ## What Changed
 
@@ -86,3 +83,4 @@ $projectStatus
 
 Set-Content -LiteralPath $filePath -Value $content -Encoding UTF8
 Write-Host $filePath
+

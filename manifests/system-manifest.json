@@ -1,190 +1,108 @@
 {
   "schema": "ai-system.manifest.v1",
   "project": {
-    "name": "Local AI-OS Control Plane",
-    "root": "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
-    "created_for": "multi-purpose local AI organization, project brains, and current WoW server/client/live-state management",
+    "name": "Project Athena",
+    "root": "D:\\Projects\\Project Athena",
+    "created_for": "local AI prosthetic external brain, durable memory, cognitive processor, Plan architecture authority, and Nexus-V execution research",
     "hosting": "local_only",
     "cloud_push_allowed": false,
-    "current_primary_project": "wow-backup-stack"
+    "current_primary_project": "project-athena"
   },
   "entrypoints": {
-    "human": "ai-system/START-HERE.md",
-    "ai": "ai-system/AI-PORTAL.md",
-    "programmatic_manifest": "ai-system/manifests/generated-ai-index.json",
-    "latest_scan": "ai-system/sensory/scans/latest-scan.json",
-    "operation_cycle": "ai-system/tools/Invoke-AIOperationCycle.ps1"
+    "human": "START-HERE.md",
+    "ai": "AI-PORTAL.md",
+    "context": "context.md",
+    "plan_context": "Plan/context.md",
+    "file_index": "context-file-index.md",
+    "memory_map": "memory/athena-memory-map.md",
+    "programmatic_manifest": "manifests/generated-ai-index.json",
+    "latest_scan": "sensory/scans/latest-scan.json",
+    "operation_cycle": "tools/Invoke-AIOperationCycle.ps1",
+    "athena_cycle": "tools/Invoke-AthenaCycle.ps1"
+  },
+  "priority_sources": {
+    "human_direction": "latest explicit human instruction",
+    "architecture_intent": "Plan/",
+    "current_context": "context.md",
+    "plan_context": "Plan/context.md",
+    "governance": "governance/absolutes.md",
+    "decision_process": "engine/order-of-operations.md"
+  },
+  "athena_core": {
+    "task_intake_schema": "schemas/athena-task-intake.schema.json",
+    "task_intake_template": "templates/athena-task-intake.md",
+    "cycle_report_template": "templates/athena-cycle-report.md",
+    "intake_folder": "work/intake",
+    "cycle_reports": "engine/cycle-reports",
+    "memory_map": "memory/athena-memory-map.md"
   },
   "registries": {
-    "layers": "ai-system/registries/layers.yml",
-    "modules": "ai-system/registries/modules.yml",
-    "interfaces": "ai-system/registries/interfaces.yml",
-    "file_ownership": "ai-system/registries/file-ownership.yml",
-    "capabilities": "ai-system/manifests/capability-matrix.yml"
+    "layers": "registries/layers.yml",
+    "modules": "registries/modules.yml",
+    "interfaces": "registries/interfaces.yml",
+    "file_ownership": "registries/file-ownership.yml",
+    "capabilities": "manifests/capability-matrix.yml",
+    "tools": "manifests/tool-index.yml"
   },
-  "integration": {
-    "guide": "ai-system/integration/ai-ingestion-guide.md",
-    "adapter_contract": "ai-system/integration/adapter-contract.md",
-    "adapter_registry": "ai-system/integration/adapter-registry.yml",
-    "programmatic_api": "ai-system/integration/programmatic-api.md"
+  "architecture": {
+    "plan_root": "Plan",
+    "plan_context": "Plan/context.md",
+    "plan_roadmap": "Plan/ROADMAP.md",
+    "plan_todo": "Plan/TODO.md",
+    "plan_status": "Plan/TODO_STATUS.md",
+    "plan_quality": "Plan/QUALITY_PLAN.md",
+    "feature_roadmap": "Plan/FEATURE_ROADMAP.md",
+    "implementation_matrix": "Plan/IMPLEMENTATION_MATRIX.md"
+  },
+  "implementation": {
+    "nexus_v_root": "Nexus V",
+    "nexus_v_docs": "Nexus V/docs",
+    "nexus_v_rtl": "Nexus V/rtl",
+    "nexus_v_toolchain": "Nexus V/toolchain",
+    "nexus_v_reports": "Nexus V/reports",
+    "nexus_v_matrix": "Nexus V/docs/NEXUS-V-IMPLEMENTATION-MATRIX.md"
   },
   "identity": {
-    "readme": "ai-system/identity/README.md",
-    "constitution": "ai-system/identity/constitution.md",
-    "mission_and_scope": "ai-system/identity/mission-and-scope.md"
-  },
-  "organization": {
-    "readme": "ai-system/organization/README.md",
-    "hierarchy": "ai-system/organization/hierarchy.yml",
-    "authority_levels": "ai-system/organization/authority-levels.yml",
-    "consensus": "ai-system/organization/consensus-protocol.md",
-    "executive_model": "ai-system/organization/executive-operating-model.md"
-  },
-  "agents": {
-    "readme": "ai-system/agents/README.md",
-    "registry": "ai-system/agents/agent-registry.yml",
-    "object_model": "ai-system/agents/agent-object-model.md",
-    "lifecycle": "ai-system/agents/lifecycle-state-machine.md",
-    "team_formation": "ai-system/agents/team-formation-protocol.md"
-  },
-  "orchestration": {
-    "readme": "ai-system/orchestration/README.md",
-    "message_protocol": "ai-system/orchestration/message-protocol.md",
-    "task_routing": "ai-system/orchestration/task-routing-pipeline.md",
-    "model_router": "ai-system/orchestration/model-router.yml",
-    "event_bus": "ai-system/orchestration/event-bus.md",
-    "mcp_tool_layer": "ai-system/orchestration/mcp-tool-layer.md"
-  },
-  "projects": {
-    "readme": "ai-system/projects/README.md",
-    "registry": "ai-system/projects/project-registry.yml",
-    "template": "ai-system/projects/project-brain-template.md",
-    "wow_backup_stack": "ai-system/projects/wow-backup-stack/project-brain.md",
-    "general_ai_os": "ai-system/projects/general-ai-os/project-brain.md"
+    "readme": "identity/README.md",
+    "constitution": "identity/constitution.md",
+    "mission_and_scope": "identity/mission-and-scope.md"
   },
   "governance": {
-    "absolutes": "ai-system/governance/absolutes.md",
-    "policy_matrix": "ai-system/governance/policy-matrix.yml",
-    "self_correction": "ai-system/governance/self-correction.md",
-    "error_correction": "ai-system/governance/error-correction.md"
-  },
-  "continuity": {
-    "protocol": "ai-system/continuity/continuity-protocol.md",
-    "chat_logs": "ai-system/continuity/chat-logs",
-    "handoff_packets": "ai-system/continuity/handoff-packets",
-    "interaction_ledger": "ai-system/continuity/interaction-ledger/interaction-ledger.yml"
-  },
-  "audit": {
-    "ledger": "ai-system/audit/audit-ledger.yml",
-    "decision_traces": "ai-system/audit/decision-trace-ledger.yml",
-    "causality_graph": "ai-system/audit/causality-graph.yml",
-    "rollback": "ai-system/audit/rollback-ledger.yml"
-  },
-  "restore": {
-    "policy": "ai-system/restore/backup-policy.md",
-    "restore_points": "ai-system/restore/restore-points",
-    "playbook": "ai-system/restore/restore-playbook.md"
-  },
-  "runtime": {
-    "readme": "ai-system/runtime/README.md",
-    "service_map": "ai-system/runtime/service-map.yml",
-    "api_contracts": "ai-system/runtime/api-contracts.md",
-    "state_machine": "ai-system/runtime/runtime-state-machine.md",
-    "windows_agent_platform": "ai-system/runtime/agent-platform/windows-agent-platform.md"
-  },
-  "work": {
-    "todo": "ai-system/work/TODO.md",
-    "backlog": "ai-system/work/backlog.yml",
-    "bugs": "ai-system/work/bugs.yml",
-    "features": "ai-system/work/features.yml"
-  },
-  "observability": {
-    "live_server": "ai-system/observability/live-server-observability.md",
-    "log_index": "ai-system/observability/log-index.yml",
-    "probes": "ai-system/observability/probes.yml",
-    "log_signatures": "ai-system/observability/log-signatures.json",
-    "log_intelligence": "ai-system/observability/reports/latest-log-intelligence.json"
-  },
-  "engine": {
-    "readme": "ai-system/engine/README.md",
-    "operation_cycle": "ai-system/engine/operation-cycle.md",
-    "routine_catalog": "ai-system/engine/routine-catalog.yml",
-    "order_of_operations": "ai-system/engine/order-of-operations.md",
-    "full_reasoning_chain": "ai-system/engine/checklists/full-reasoning-chain.md",
-    "latest_cycle_report": "ai-system/engine/cycle-reports/latest-cycle-report.json"
-  },
-  "forensics": {
-    "readme": "ai-system/forensics/README.md",
-    "labeling_guide": "ai-system/forensics/evidence-labeling-guide.md",
-    "evidence_register": "ai-system/forensics/evidence-register.csv",
-    "claim_catalog": "ai-system/forensics/claim-catalog.csv",
-    "evidence_claim_map": "ai-system/forensics/evidence-claim-map.csv",
-    "event_timeline": "ai-system/forensics/event-timeline.csv",
-    "known_unknowns": "ai-system/forensics/known-unknowns.csv",
-    "verification_report": "ai-system/forensics/verification-reports/latest-forensic-verification.json",
-    "ai_packet": "ai-system/forensics/role-packets/ai-ingestion-brief.md"
-  },
-  "physics": {
-    "model": "ai-system/physics/system-physics-model.md",
-    "entities": "ai-system/physics/entity-model.yml",
-    "state_vectors": "ai-system/physics/state-vectors.yml"
-  },
-  "reasoning": {
-    "council": "ai-system/council/README.md",
-    "truth_pipeline": "ai-system/truth/cross-check-pipeline.md",
-    "counterfactuals": "ai-system/counterfactuals/deep-counterfactual-protocol.md",
-    "learning": "ai-system/learning/meta-learning.md"
-  },
-  "model_ops": {
-    "readme": "ai-system/model-ops/README.md",
-    "model_registry": "ai-system/model-ops/model-registry.yml",
-    "evaluation_rubric": "ai-system/model-ops/evaluation-rubric.yml",
-    "provider_policy": "ai-system/model-ops/provider-policy.md",
-    "target_ai_architecture": "ai-system/model-ops/target-ai/target-ai-architecture.md",
-    "capability_roadmap": "ai-system/model-ops/target-ai/capability-roadmap.yml",
-    "evaluation_benchmarks": "ai-system/model-ops/target-ai/evaluation-benchmarks.yml"
-  },
-  "model_archaeology": {
-    "readme": "ai-system/research/model-archaeology/README.md",
-    "source_ledger": "ai-system/research/model-archaeology/source-ledger.yml",
-    "deconstruction_protocol": "ai-system/research/model-archaeology/deconstruction-protocol.md",
-    "open_model_capability_matrix": "ai-system/research/model-archaeology/open-model-capability-matrix.yml",
-    "odysseus_deconstruction": "ai-system/research/model-archaeology/odysseus-deconstruction.md"
-  },
-  "context_iq": {
-    "contextual_work_iq": "ai-system/memory/context-iq/contextual-work-iq.md"
-  },
-  "training": {
-    "readme": "ai-system/training/README.md",
-    "curriculum": "ai-system/training/curriculum.md",
-    "feedback_loop": "ai-system/training/feedback-loop.md",
-    "training_data_policy": "ai-system/training/training-data-policy.md"
-  },
-  "reputation": {
-    "readme": "ai-system/reputation/README.md",
-    "ledger": "ai-system/reputation/reputation-ledger.yml",
-    "trust_model": "ai-system/reputation/trust-model.yml"
-  },
-  "resources": {
-    "readme": "ai-system/resources/README.md",
-    "budget": "ai-system/resources/resource-budget.yml"
+    "absolutes": "governance/absolutes.md",
+    "policy_matrix": "governance/policy-matrix.yml",
+    "self_correction": "governance/self-correction.md",
+    "error_correction": "governance/error-correction.md"
   },
   "cognition": {
-    "index": "ai-system/cognition/cognition-index.yml",
-    "workflow": "ai-system/cognition/cognition-workflow.md",
-    "output_labels": "ai-system/cognition/output-labels.md",
-    "anti_hallucination": "ai-system/cognition/anti-hallucination/anti-hallucination-protocol.md",
-    "subtext": "ai-system/cognition/subtext/subtext-protocol.md",
-    "correlation": "ai-system/cognition/correlation/correlation-engine.md",
-    "liquid_state_machine": "ai-system/cognition/liquid-state-machine/liquid-state-machine.md",
-    "algorithmic_inversion": "ai-system/cognition/algorithmic-inversion/thinking-backward-protocol.md",
-    "semantic_compression": "ai-system/cognition/semantic-compression/compression-protocol.md",
-    "multi_valued_fuzzy_logic": "ai-system/cognition/multi-valued-fuzzy-logic/fuzzy-logic-protocol.md",
-    "semantic_drift_self_correction": "ai-system/cognition/semantic-drift-self-correction/drift-correction-protocol.md",
-    "superposition_nonbinary": "ai-system/cognition/superposition-nonbinary/superposition-protocol.md",
-    "retrocausal_processing": "ai-system/cognition/retrocausal-processing/retrocausal-protocol.md",
-    "non_monotonic_reasoning": "ai-system/cognition/non-monotonic-reasoning/non-monotonic-protocol.md",
-    "contextual_anchoring": "ai-system/cognition/contextual-anchoring/anchoring-protocol.md",
-    "hypergraph_relational_processing": "ai-system/cognition/hypergraph-relational-processing/hypergraph-protocol.md"
+    "index": "cognition/cognition-index.yml",
+    "workflow": "cognition/cognition-workflow.md",
+    "anti_hallucination": "cognition/anti-hallucination/anti-hallucination-protocol.md",
+    "socratic": "cognition/socratic-deconstruction/socratic-protocol.md",
+    "algorithmic_inversion": "cognition/algorithmic-inversion/thinking-backward-protocol.md",
+    "hypergraph": "cognition/hypergraph-relational-processing/hypergraph-protocol.md",
+    "semantic_compression": "cognition/semantic-compression/compression-protocol.md"
+  },
+  "council": {
+    "roles": "council/roles.yml",
+    "debate_protocol": "council/debate-protocol.md",
+    "reasoning_rounds": "council/reasoning-rounds"
+  },
+  "work": {
+    "athena_first_steps": "work/ATHENA-FIRST-STEPS.md",
+    "todo": "work/TODO.md",
+    "backlog": "work/backlog.yml",
+    "features": "work/features.yml",
+    "intake": "work/intake"
+  },
+  "observability": {
+    "health_model": "sensory/health-model.md",
+    "latest_scan": "sensory/scans/latest-scan.json",
+    "watched_state": "sensory/scans/latest-watched-changes.json",
+    "log_signatures": "observability/log-signatures.json",
+    "reports": "observability/reports"
+  },
+  "legacy": {
+    "wow_backup_stack_project_brain": "projects/wow-backup-stack/project-brain.md",
+    "note": "Older WoW backup-stack records are retained as project history and examples, not current checkout root identity."
   }
 }

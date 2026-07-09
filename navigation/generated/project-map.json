@@ -1,116 +1,144 @@
 ﻿{
     "schema":  "ai-system.project_map.v1",
-    "generated_at":  "2026-06-03T20:50:36.3801211+10:00",
-    "project_root":  "C:\\Users\\aesir\\OneDrive\\Desktop\\WoW-Backups\\2026-05-30_2035",
+    "generated_at":  "2026-07-10T01:30:15.6561893+10:00",
+    "project_root":  "D:\\Projects\\Project Athena",
     "nodes":  [
                   {
-                      "id":  "mega",
+                      "id":  "project-athena",
                       "path":  ".",
-                      "type":  "orchestrator_repo",
+                      "type":  "athena_workspace",
                       "exists":  true,
-                      "head":  "ad84c72",
+                      "head":  "a0d1d69",
                       "file_count":  null,
                       "size_mb":  null
                   },
                   {
-                      "id":  "ai-system",
-                      "path":  "ai-system",
-                      "type":  "control_plane",
+                      "id":  "plan",
+                      "path":  "Plan",
+                      "type":  "architecture_intent_vault",
                       "exists":  true,
-                      "head":  "ad84c72",
+                      "head":  "a0d1d69",
                       "file_count":  null,
                       "size_mb":  null
                   },
                   {
-                      "id":  "game-client",
-                      "path":  "GameClient-ChromieCraft-3.3.5a",
-                      "type":  "client_repo",
+                      "id":  "nexus-v",
+                      "path":  "Nexus V",
+                      "type":  "hardware_toolchain_subsystem",
                       "exists":  true,
-                      "head":  "a2508eb",
+                      "head":  "a0d1d69",
                       "file_count":  null,
                       "size_mb":  null
                   },
                   {
-                      "id":  "live-state",
-                      "path":  "Server-Live-State",
-                      "type":  "state_repo",
+                      "id":  "engine",
+                      "path":  "engine",
+                      "type":  "processor_loop",
                       "exists":  true,
-                      "head":  "6c66e8f",
+                      "head":  "a0d1d69",
                       "file_count":  null,
                       "size_mb":  null
                   },
                   {
-                      "id":  "server-project",
-                      "path":  "WoW-Server-Project",
-                      "type":  "project_repo",
+                      "id":  "memory",
+                      "path":  "memory",
+                      "type":  "memory_layer",
                       "exists":  true,
-                      "head":  "833f12f",
+                      "head":  "a0d1d69",
                       "file_count":  null,
                       "size_mb":  null
                   },
                   {
-                      "id":  "azerothcore-clean",
-                      "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk",
-                      "type":  "nested_source_repo",
+                      "id":  "work",
+                      "path":  "work",
+                      "type":  "working_memory",
                       "exists":  true,
-                      "head":  "a73b1b2",
+                      "head":  "a0d1d69",
                       "file_count":  null,
                       "size_mb":  null
                   },
                   {
-                      "id":  "azerothcore-playerbots",
-                      "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots",
-                      "type":  "nested_source_repo",
+                      "id":  "tools",
+                      "path":  "tools",
+                      "type":  "tooling_layer",
                       "exists":  true,
-                      "head":  "e98e7a9",
+                      "head":  "a0d1d69",
                       "file_count":  null,
                       "size_mb":  null
                   },
                   {
-                      "id":  "mod-playerbots",
-                      "path":  "WoW-Server-Project\\servers\\wow\\azerothcore-wotlk-playerbots\\modules\\mod-playerbots",
-                      "type":  "nested_module_repo",
+                      "id":  "cognition",
+                      "path":  "cognition",
+                      "type":  "reasoning_methods",
                       "exists":  true,
-                      "head":  "1041b0b",
+                      "head":  "a0d1d69",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "council",
+                      "path":  "council",
+                      "type":  "decision_roles",
+                      "exists":  true,
+                      "head":  "a0d1d69",
+                      "file_count":  null,
+                      "size_mb":  null
+                  },
+                  {
+                      "id":  "schemas",
+                      "path":  "schemas",
+                      "type":  "machine_contracts",
+                      "exists":  true,
+                      "head":  "a0d1d69",
                       "file_count":  null,
                       "size_mb":  null
                   }
               ],
     "edges":  [
                   {
-                      "from":  "mega",
-                      "to":  "ai-system",
-                      "relation":  "contains"
+                      "from":  "project-athena",
+                      "to":  "plan",
+                      "relation":  "uses_as_design_authority"
                   },
                   {
-                      "from":  "mega",
-                      "to":  "game-client",
-                      "relation":  "points_to"
+                      "from":  "project-athena",
+                      "to":  "nexus-v",
+                      "relation":  "contains_implementation_branch"
                   },
                   {
-                      "from":  "mega",
-                      "to":  "live-state",
-                      "relation":  "points_to"
+                      "from":  "project-athena",
+                      "to":  "engine",
+                      "relation":  "uses_as_processor_loop"
                   },
                   {
-                      "from":  "mega",
-                      "to":  "server-project",
-                      "relation":  "points_to"
+                      "from":  "project-athena",
+                      "to":  "memory",
+                      "relation":  "uses_as_memory_layer"
                   },
                   {
-                      "from":  "server-project",
-                      "to":  "azerothcore-clean",
-                      "relation":  "points_to"
+                      "from":  "project-athena",
+                      "to":  "work",
+                      "relation":  "uses_as_working_memory"
                   },
                   {
-                      "from":  "server-project",
-                      "to":  "azerothcore-playerbots",
-                      "relation":  "points_to"
+                      "from":  "engine",
+                      "to":  "tools",
+                      "relation":  "invokes"
                   },
                   {
-                      "from":  "azerothcore-playerbots",
-                      "to":  "mod-playerbots",
-                      "relation":  "contains_module"
+                      "from":  "engine",
+                      "to":  "cognition",
+                      "relation":  "uses_reasoning_methods"
+                  },
+                  {
+                      "from":  "council",
+                      "to":  "work",
+                      "relation":  "produces_decisions_and_tasks"
+                  },
+                  {
+                      "from":  "schemas",
+                      "to":  "tools",
+                      "relation":  "constrains_inputs_outputs"
                   }
               ]
 }

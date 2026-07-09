@@ -1,4 +1,4 @@
-param(
+﻿param(
     [Parameter(Mandatory = $true)]
     [string]$Summary,
 
@@ -14,12 +14,12 @@ param(
 $ErrorActionPreference = "Stop"
 
 if (-not $ProjectRoot) {
-    $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+    $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 }
 
 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
 $id = "AUD-$timestamp"
-$eventDir = Join-Path $ProjectRoot "ai-system\audit\events"
+$eventDir = Join-Path $ProjectRoot "audit\events"
 New-Item -ItemType Directory -Force -Path $eventDir | Out-Null
 
 $safeSummary = ($Summary.ToLowerInvariant() -replace "[^a-z0-9]+", "-").Trim("-")
@@ -56,3 +56,4 @@ $Rollback
 
 Set-Content -LiteralPath $eventPath -Value $content -Encoding UTF8
 Write-Host $eventPath
+

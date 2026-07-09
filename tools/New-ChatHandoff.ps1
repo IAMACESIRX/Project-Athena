@@ -1,4 +1,4 @@
-param(
+﻿param(
     [Parameter(Mandatory = $true)]
     [string]$Title,
 
@@ -18,7 +18,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 if (-not $ProjectRoot) {
-    $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+    $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 }
 
 $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
@@ -26,8 +26,8 @@ $safeTitle = ($Title.ToLowerInvariant() -replace "[^a-z0-9]+", "-").Trim("-")
 if (-not $safeTitle) { $safeTitle = "handoff" }
 
 $id = "CHAT-$timestamp"
-$chatDir = Join-Path $ProjectRoot "ai-system\continuity\chat-logs"
-$packetDir = Join-Path $ProjectRoot "ai-system\continuity\handoff-packets"
+$chatDir = Join-Path $ProjectRoot "continuity\chat-logs"
+$packetDir = Join-Path $ProjectRoot "continuity\handoff-packets"
 New-Item -ItemType Directory -Force -Path $chatDir, $packetDir | Out-Null
 
 $chatPath = Join-Path $chatDir "$id-$Source-$safeTitle.md"
@@ -70,3 +70,4 @@ Set-Content -LiteralPath $packetPath -Value $body -Encoding UTF8
 
 Write-Host $chatPath
 Write-Host $packetPath
+

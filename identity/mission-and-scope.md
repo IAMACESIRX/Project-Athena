@@ -2,34 +2,41 @@
 
 ## Mission
 
-Build a local-first, multi-purpose AI operating system that combines:
+Build Project Athena as a local-first AI prosthetic external brain that
+combines:
 
-- a Codex-style coding and filesystem agent,
-- a GPT-style conversational and reasoning interface,
-- multi-model routing,
-- project brains,
-- evidence-backed memory,
-- executive planning,
-- team-style agent coordination,
-- tool and MCP integration,
-- audit and recovery.
+- durable file-native memory,
+- structured database-like organization,
+- task intake and decision processing,
+- Codex-style coding and filesystem work,
+- GPT-style reasoning and conversation,
+- multi-agent and multi-model coordination,
+- Plan-driven architecture extraction,
+- evidence-backed audit and recovery,
+- Nexus-V hardware/toolchain research.
 
 ## Current Scope
 
-Implemented now:
+Implemented or actively being built:
 
-- File-based operating system for AI memory, governance, diagnostics, and handoff.
-- Local operation cycle with scan, map, forensics, log intelligence, and watched state.
+- File-based operating system for AI memory, governance, diagnostics, and
+  handoff.
+- Root `context.md`, Plan context, and complete file index.
+- Athena task-intake schema and template.
+- Athena memory map.
+- Operation cycle with scan, map, forensics, log intelligence, watched state,
+  and cycle reports.
 - Agentic organization and project-brain specifications.
 - Model-router and multi-AI coordination contracts.
+- Nexus-V RTL/toolchain research package.
 
 Future build targets:
 
-- Runtime API gateway.
+- Standalone Athena cycle runner maturity.
+- Plan extraction engine.
 - Persistent agent scheduler.
-- External model router.
-- Vector, graph, and relational memory stores.
+- Runtime API gateway.
+- Vector, graph, relational, and file memory adapters.
 - Event bus.
-- UI dashboard.
+- Operator console or dashboard.
 - Training and evaluation harness.
-

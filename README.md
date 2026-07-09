@@ -1,51 +1,61 @@
-# AI System Layer
+# Project Athena
 
-This folder is the coordination layer for humans, AI agents, tools, and programs working through a local AI-OS control plane.
+Project Athena is a local, file-native AI prosthetic external brain. It combines
+memory, database structure, cognitive methods, governance, tools, and Nexus-V
+hardware/execution research into one repository.
 
-Its job is to preserve context, reduce repeated discovery, expose risks early, coordinate multiple AIs, and give every future session a clear operating model for every managed project.
+Athena is not a conventional app with one server entry point. The repository is
+the operating substrate: files preserve memory, schemas define contracts, tools
+process state, cycle reports preserve evidence, and `Plan/` defines the highest
+priority architecture intent.
 
 ## Read Order
 
 1. `AI-PORTAL.md`
-2. `manifests/system-manifest.json`
-3. `identity/README.md`
-4. `identity/constitution.md`
-5. `projects/project-registry.yml`
-6. `organization/hierarchy.yml`
-7. `agents/agent-registry.yml`
-8. `START-HERE.md`
-9. `governance/absolutes.md`
-10. `handoff/CURRENT_STATE.md`
-11. `handoff/NEXT_ACTIONS.md`
-12. `registries/layers.yml`
-13. `registries/modules.yml`
-14. `navigation/project-map.md`
-15. `sensory/health-model.md`
-16. `engine/order-of-operations.md`
-17. `forensics/role-packets/ai-ingestion-brief.md`
+2. `context.md`
+3. `Plan/context.md`
+4. `context-file-index.md`
+5. `manifests/system-manifest.json`
+6. `manifests/ingestion-order.yml`
+7. `memory/athena-memory-map.md`
+8. `work/ATHENA-FIRST-STEPS.md`
+9. `engine/order-of-operations.md`
+10. `governance/absolutes.md`
+11. `cognition/cognition-workflow.md`
+12. `council/roles.yml`
+13. `schemas/athena-task-intake.schema.json`
+14. `templates/athena-task-intake.md`
 
-## What This Layer Does
+## What Athena Does
 
-- Tracks the project across the mega repo, child repos, and nested server repos.
-- Manages multiple project brains, with WoW as the first primary project.
-- Defines identity, constitution, organization hierarchy, agents, model routing, runtime contracts, and training loops.
-- Gives AI agents a shared memory and handoff protocol.
-- Defines module boundaries, ownership, risks, and edit contracts.
-- Provides local diagnostics scripts for git state, disk pressure, remotes, and restore readiness.
-- Keeps research, experiments, issues, and decisions in stable places.
-- Exposes machine-readable manifests and schemas for outside tools.
-- Defines governance, drift handling, reverse-engineering protocols, observability contracts, and a system physics model.
-- Adds cognition systems for advanced inference, creativity, collaboration, disruption, anti-hallucination, and liquid-state signal dynamics.
-- Runs a Redwire-inspired native operation engine for repeatable scan, map, verify, diagnose, reason, audit, and handoff cycles.
-- Runs a Xavier-inspired native forensics layer for evidence IDs, claim maps, timelines, known unknowns, and verification reports.
+- Preserves durable project context and human intent.
+- Organizes knowledge through folders, manifests, schemas, registries, and
+  indexes.
+- Processes tasks through intake, cognition, governance, execution,
+  verification, reports, and memory writeback.
+- Uses `Plan/` as the design authority for AI-OS, Athena, Nexus-V, NVISC,
+  NVASM, NVIR, NVVM, and future Lightcore work.
+- Uses `Nexus V/` as the source-heavy hardware/toolchain implementation branch.
+- Keeps evidence, assumptions, unknowns, and decisions separate.
+
+## Current Build Priority
+
+1. Keep the root context and Plan context current.
+2. Use Athena task-intake packets for non-trivial work.
+3. Maintain the Athena memory map.
+4. Make cycle reports for meaningful reasoning or implementation passes.
+5. Normalize stale old-layout references.
+6. Convert Plan intent into implementation matrices, work items, and tests.
 
 ## Prime Directive
 
-Preserve recoverability first. Improve automation second. Add features third.
+Preserve recoverability first. Improve memory and decision quality second. Add
+automation third.
 
 Every action should answer:
 
 - What layer am I touching?
-- What state do I need to preserve before changing it?
-- What will prove the change worked?
-- What should the next human or AI know?
+- What evidence supports the change?
+- What state needs to be preserved?
+- What proves the change worked?
+- Where should the result be written back?

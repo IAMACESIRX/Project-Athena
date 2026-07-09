@@ -1,5 +1,5 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [string]$ServerPath = "WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots",
     [int]$Tail = 80,
     [switch]$NoWrite
@@ -55,7 +55,7 @@ $probe = [PSCustomObject]@{
 }
 
 if (-not $NoWrite) {
-    $outDir = Join-Path $ProjectRoot "ai-system\observability\reports"
+    $outDir = Join-Path $ProjectRoot "observability\reports"
     New-Item -ItemType Directory -Force -Path $outDir | Out-Null
     $outPath = Join-Path $outDir "latest-live-probe.json"
     $probe | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $outPath -Encoding UTF8
@@ -65,3 +65,4 @@ if (-not $NoWrite) {
 }
 
 $probe
+

@@ -1,5 +1,5 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [switch]$NoWrite
 )
 
@@ -17,17 +17,27 @@ function Get-RelativeFileSet {
         Sort-Object
 }
 
-$aiRoot = Join-Path $ProjectRoot "ai-system"
+$aiRoot = $ProjectRoot
 $baseManifestPath = Join-Path $aiRoot "manifests\system-manifest.json"
 $baseManifest = Get-Content -Raw -LiteralPath $baseManifestPath | ConvertFrom-Json
 
 $index = [PSCustomObject]@{
     schema = "ai-system.generated_index.v1"
     generated_at = (Get-Date).ToString("o")
-    base_manifest = "ai-system/manifests/system-manifest.json"
+    base_manifest = "manifests/system-manifest.json"
     project = $baseManifest.project
     entrypoints = $baseManifest.entrypoints
         file_groups = [PSCustomObject]@{
+        root_context = @(
+            "AI-PORTAL.md",
+            "START-HERE.md",
+            "README.md",
+            "context.md",
+            "context-file-index.md"
+        )
+        plan = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "Plan"))
+        nexus_v_docs = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "Nexus V\docs"))
+        templates = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "templates"))
         identity = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "identity"))
         organization = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "organization"))
         agents = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "agents"))
@@ -68,3 +78,4 @@ if (-not $NoWrite) {
 }
 
 $index
+

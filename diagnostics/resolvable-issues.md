@@ -16,3 +16,4 @@ This queue stores one open row per distinct current signal. Repeated scanner run
 |---|---|---|
 | DEDUPE-20260603-001 | 2026-06-03T20:11:00+10:00 | Collapsed repeated LOG-AUTH-REALM and LOG-DOCKER rows produced by multiple scanner runs. |
 | FALSE-POSITIVE-20260603-001 | 2026-06-03T20:11:00+10:00 | Retired earlier LOG-SQL-ERROR rows caused by matching plain MySQL image/container names instead of actual database error text. |
+| FALSE-POSITIVE-20260710-001 | 2026-07-10T01:13:12+10:00 | Removed self-scan rows created when log intelligence scanned its own generated reports; the scanner now reads Nexus V report inputs only. |

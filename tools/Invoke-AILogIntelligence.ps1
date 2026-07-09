@@ -1,5 +1,5 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [int]$MaxFiles = 40,
     [int]$TailLines = 500,
     [switch]$NoWrite
@@ -7,7 +7,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$aiRoot = Join-Path $ProjectRoot "ai-system"
+$aiRoot = $ProjectRoot
 $catalogPath = Join-Path $aiRoot "observability\log-signatures.json"
 $reportDir = Join-Path $aiRoot "observability\reports"
 $queuePath = Join-Path $aiRoot "diagnostics\resolvable-issues.md"
@@ -65,16 +65,8 @@ $signatures = @($catalog.signatures)
 
 $files = New-Object 'System.Collections.Generic.List[object]'
 
-$gameClient = Join-Path $ProjectRoot "GameClient-ChromieCraft-3.3.5a"
-if (Test-Path -LiteralPath $gameClient) {
-    Get-ChildItem -LiteralPath $gameClient -File -ErrorAction SilentlyContinue |
-        Where-Object { $_.Extension.ToLowerInvariant() -in @(".log", ".txt") } |
-        ForEach-Object { $files.Add($_) | Out-Null }
-}
-
 $topLevelRoots = @(
-    (Join-Path $ProjectRoot "Server-Live-State"),
-    (Join-Path $ProjectRoot "WoW-Server-Project")
+    (Join-Path $ProjectRoot "Nexus V\reports")
 )
 
 foreach ($root in $topLevelRoots) {
@@ -85,12 +77,7 @@ foreach ($root in $topLevelRoots) {
 }
 
 $logRoots = @(
-    (Join-Path $ProjectRoot "Server-Live-State\logs"),
-    (Join-Path $ProjectRoot "WoW-Server-Project\logs"),
-    (Join-Path $ProjectRoot "WoW-Server-Project\servers\wow\azerothcore-wotlk\logs"),
-    (Join-Path $ProjectRoot "WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots\logs"),
-    (Join-Path $ProjectRoot "WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots\var\logs"),
-    (Join-Path $ProjectRoot "WoW-Server-Project\servers\wow\azerothcore-wotlk-playerbots\docker\logs")
+    (Join-Path $ProjectRoot "Nexus V\reports")
 )
 
 $exclude = "\\.git\\|\\.venv\\|\\node_modules\\|\\build\\|\\_deps\\|\\CMakeFiles\\|\\Data\\|\\Cache\\|\\WDB\\"
@@ -239,3 +226,4 @@ if (-not $NoWrite) {
 }
 
 $report
+

@@ -1,11 +1,11 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [switch]$NoWrite
 )
 
 $ErrorActionPreference = "Stop"
 
-$forensics = Join-Path $ProjectRoot "ai-system\forensics"
+$forensics = Join-Path $ProjectRoot "forensics"
 $reportDir = Join-Path $forensics "verification-reports"
 $issues = New-Object 'System.Collections.Generic.List[object]'
 
@@ -165,4 +165,5 @@ if (-not $NoWrite) {
 }
 
 $report
+
 

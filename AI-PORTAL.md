@@ -1,30 +1,34 @@
-# AI Portal
+﻿# AI Portal
 
 This is the universal entry point for any AI model, team member, program, script, or software agent that needs to understand or operate this project.
 
 ## Identity
 
-Project name: Local AI-OS Control Plane
+Project name: Project Athena
 
-Primary goal: create a local-first, multi-purpose AI operating system that can preserve context, coordinate Codex-like and GPT-like agents, manage multiple project brains, diagnose issues, track work, reverse engineer behavior, and safely expand capabilities over time.
+Primary goal: create a local-first AI prosthetic external brain that preserves
+context, organizes knowledge, routes instructions, processes goals, coordinates
+AI and human work, audits evidence, and safely expands capability over time.
 
-Current primary managed project: WoW Backup Stack.
+Current primary managed project: Project Athena.
+
+Legacy retained project: WoW Backup Stack.
 
 ## First Read
 
-1. `manifests/system-manifest.json`
-2. `manifests/ingestion-order.yml`
-3. `identity/README.md`
-4. `identity/constitution.md`
-5. `projects/project-registry.yml`
-6. `organization/hierarchy.yml`
-7. `agents/agent-registry.yml`
-8. `orchestration/model-router.yml`
-9. `research/model-archaeology/source-ledger.yml`
-10. `research/model-archaeology/deconstruction-protocol.md`
-11. `model-ops/target-ai/target-ai-architecture.md`
-12. `model-ops/target-ai/capability-roadmap.yml`
-13. `memory/context-iq/contextual-work-iq.md`
+1. `context.md`
+2. `Plan/context.md`
+3. `context-file-index.md`
+4. `manifests/system-manifest.json`
+5. `manifests/ingestion-order.yml`
+6. `memory/athena-memory-map.md`
+7. `work/ATHENA-FIRST-STEPS.md`
+8. `identity/README.md`
+9. `identity/constitution.md`
+10. `projects/project-registry.yml`
+11. `organization/hierarchy.yml`
+12. `agents/agent-registry.yml`
+13. `orchestration/model-router.yml`
 14. `START-HERE.md`
 15. `governance/absolutes.md`
 16. `registries/layers.yml`
@@ -34,29 +38,38 @@ Current primary managed project: WoW Backup Stack.
 20. `work/TODO.md`
 21. `engine/README.md`
 22. `engine/order-of-operations.md`
-23. `forensics/evidence-register.csv`
-24. `forensics/claim-catalog.csv`
-25. `forensics/evidence-claim-map.csv`
-26. `continuity/continuity-protocol.md`
-27. `audit/decision-framework.md`
-28. `truth/cross-check-pipeline.md`
-29. `cognition/README.md`
-30. `cognition/anti-hallucination/anti-hallucination-protocol.md`
-31. `cognition/cognition-workflow.md`
+23. `cognition/README.md`
+24. `cognition/anti-hallucination/anti-hallucination-protocol.md`
+25. `cognition/cognition-workflow.md`
+26. `council/roles.yml`
+27. `schemas/athena-task-intake.schema.json`
+28. `templates/athena-task-intake.md`
+29. `forensics/evidence-register.csv`
+30. `forensics/claim-catalog.csv`
+31. `forensics/evidence-claim-map.csv`
 
 ## First Run
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\ai-system\tools\Invoke-AIProjectScan.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\ai-system\tools\Export-AISystemManifest.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\ai-system\tools\Invoke-AIOperationCycle.ps1 -SkipLiveProbe
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AIProjectScan.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Export-AISystemManifest.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AIOperationCycle.ps1 -SkipLiveProbe
+```
+
+For a structured Athena task cycle:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AthenaCycle.ps1 -Goal "Describe the task here"
 ```
 
 ## How To Think About This System
 
-- The mega repo is the command deck.
+- The repository is the external-brain substrate.
+- `Plan/` is the design authority.
+- `Nexus V/` is the semantic execution implementation branch.
 - Identity and constitution are the durable AI-OS core.
-- Project brains are managed organs; WoW is the first active organ, not the whole body.
+- Project brains are managed organs; WoW is retained as legacy project history,
+  not the current root identity.
 - Organization, agents, and orchestration are the executive nervous system.
 - Child repos are major organs.
 - Registries are the skeleton.
@@ -85,6 +98,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\ai-system\tools\Invoke-AIO
 
 Some capabilities are implemented now. Some are specified as contracts for future build-out. A future AI or engineer should treat unimplemented capability specs as build targets, not as current promises.
 
+Current Athena foundations include task intake, memory map, cycle report
+templates, operation-cycle tooling, Plan roadmaps, and context indexes.
+
 ## Non-Negotiable
 
 No GitHub server push. This stack is local-only unless the human explicitly changes that rule.
+

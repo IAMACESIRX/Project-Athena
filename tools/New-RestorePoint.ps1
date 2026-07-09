@@ -1,4 +1,4 @@
-param(
+﻿param(
     [Parameter(Mandatory = $true)]
     [string]$Name,
 
@@ -10,7 +10,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 if (-not $ProjectRoot) {
-    $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+    $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 }
 
 function Get-RepoRecord {
@@ -51,10 +51,7 @@ $restoreId = "RP-$timestamp-$safeName"
 $tagPrefix = "restore/$timestamp-$safeName"
 
 $repos = @(
-    Get-RepoRecord -Id "mega" -Path "." -TagPrefix $tagPrefix
-    Get-RepoRecord -Id "game-client" -Path "GameClient-ChromieCraft-3.3.5a" -TagPrefix $tagPrefix
-    Get-RepoRecord -Id "live-state" -Path "Server-Live-State" -TagPrefix $tagPrefix
-    Get-RepoRecord -Id "server-project" -Path "WoW-Server-Project" -TagPrefix $tagPrefix
+    Get-RepoRecord -Id "project-athena" -Path "." -TagPrefix $tagPrefix
 )
 
 $manifest = [PSCustomObject]@{
@@ -66,19 +63,19 @@ $manifest = [PSCustomObject]@{
     included_bundles = [bool]$IncludeBundles
     repos = $repos
     limitations = @(
-        "Untracked game client payload is not protected by Git restore point.",
+        "Untracked files are not protected by Git restore point.",
         "Git bundles include committed history only.",
         "Full filesystem backup requires separate storage target."
     )
 }
 
-$outDir = Join-Path $ProjectRoot "ai-system\restore\restore-points"
+$outDir = Join-Path $ProjectRoot "restore\restore-points"
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 $manifestPath = Join-Path $outDir "$restoreId.json"
 $manifest | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $manifestPath -Encoding UTF8
 
 if ($IncludeBundles) {
-    $bundleDir = Join-Path $ProjectRoot "ai-system\restore\bundles\$restoreId"
+    $bundleDir = Join-Path $ProjectRoot "restore\bundles\$restoreId"
     New-Item -ItemType Directory -Force -Path $bundleDir | Out-Null
 
     foreach ($repo in $repos) {
@@ -91,3 +88,4 @@ if ($IncludeBundles) {
 }
 
 Write-Host $manifestPath
+

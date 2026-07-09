@@ -1,4 +1,4 @@
-param(
+﻿param(
     [Parameter(Mandatory = $true)]
     [ValidateSet("todo", "bug", "feature", "research", "decision", "risk")]
     [string]$Type,
@@ -17,7 +17,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 if (-not $ProjectRoot) {
-    $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+    $ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 }
 
 $prefix = switch ($Type) {
@@ -34,7 +34,7 @@ $id = "$prefix-$timestamp"
 $safeTitle = ($Title.ToLowerInvariant() -replace "[^a-z0-9]+", "-").Trim("-")
 if (-not $safeTitle) { $safeTitle = "item" }
 
-$outDir = Join-Path $ProjectRoot "ai-system\work\work-items"
+$outDir = Join-Path $ProjectRoot "work\work-items"
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 $outPath = Join-Path $outDir "$id-$safeTitle.md"
 $now = (Get-Date).ToString("o")
@@ -70,3 +70,4 @@ $Title
 
 Set-Content -LiteralPath $outPath -Value $content -Encoding UTF8
 Write-Host $outPath
+

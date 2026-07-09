@@ -1,5 +1,5 @@
 param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [switch]$Commit,
     [switch]$Push,
     [switch]$AllowDirtyChildren,
@@ -8,62 +8,27 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$children = @(
-    "GameClient-ChromieCraft-3.3.5a",
-    "Server-Live-State",
-    "WoW-Server-Project"
-)
-
-$dirtyChildren = @()
-
-foreach ($child in $children) {
-    $childPath = Join-Path $ProjectRoot $child
-    $trackedDirty = & git -C $childPath status --porcelain --untracked-files=no
-    if ($LASTEXITCODE -ne 0) {
-        throw "Could not inspect child repo: $child"
-    }
-
-    if ($trackedDirty) {
-        $dirtyChildren += $child
-    }
+$status = & git -C $ProjectRoot status --short --branch 2>&1
+if ($LASTEXITCODE -ne 0) {
+    throw "Could not inspect Project Athena root: $ProjectRoot"
 }
 
-if ($dirtyChildren.Count -gt 0 -and -not $AllowDirtyChildren) {
-    Write-Host "Tracked changes exist inside child repos. Commit them first or rerun with -AllowDirtyChildren."
-    $dirtyChildren | ForEach-Object { Write-Host " - $_" }
-    exit 1
+Write-Host "Project Athena is currently a standalone root checkout."
+Write-Host "No legacy child repo pointers are configured for this workspace."
+Write-Host ""
+Write-Host "Current root status:"
+$status | ForEach-Object { Write-Host $_ }
+
+if ($Commit -or $Push) {
+    throw "This compatibility shim does not commit or push. Stage and commit explicit files intentionally."
 }
 
-foreach ($child in $children) {
-    & git -C $ProjectRoot add $child
-    if ($LASTEXITCODE -ne 0) {
-        throw "Failed to stage child pointer: $child"
-    }
+if ($AllowDirtyChildren) {
+    Write-Host ""
+    Write-Host "-AllowDirtyChildren was ignored because there are no configured child pointer layers."
 }
 
-$staged = & git -C $ProjectRoot diff --cached --name-only
-
-if (-not $staged) {
-    Write-Host "No child repo pointer changes to commit."
-    exit 0
-}
-
-Write-Host "Staged child pointer changes:"
-$staged | ForEach-Object { Write-Host " - $_" }
-
-if ($Commit) {
-    & git -C $ProjectRoot commit -m $Message
-    if ($LASTEXITCODE -ne 0) {
-        throw "Failed to commit child pointer changes."
-    }
-
-    if ($Push) {
-        & git -C $ProjectRoot push
-        if ($LASTEXITCODE -ne 0) {
-            throw "Failed to push mega repo to local origin."
-        }
-    }
-}
-else {
-    Write-Host "Run again with -Commit to create the mega repo pointer commit."
+if ($Message -ne "Update child repo pointers") {
+    Write-Host ""
+    Write-Host "Message was ignored: $Message"
 }

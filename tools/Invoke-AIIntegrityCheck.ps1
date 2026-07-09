@@ -1,11 +1,11 @@
-param(
-    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path,
+﻿param(
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path,
     [switch]$NoWrite
 )
 
 $ErrorActionPreference = "Stop"
 
-$aiRoot = Join-Path $ProjectRoot "ai-system"
+$aiRoot = $ProjectRoot
 $reportDir = Join-Path $aiRoot "diagnostics\reports"
 $queuePath = Join-Path $aiRoot "diagnostics\correction-queue.md"
 $issues = New-Object 'System.Collections.Generic.List[object]'
@@ -55,8 +55,18 @@ function Visit-ManifestNode {
     if ($null -eq $Node) { return }
 
     if ($Node -is [string]) {
-        if ($Node -like "ai-system/*" -or $Node -like "ai-system\*") {
-            $full = Join-Path $ProjectRoot ($Node -replace "/", "\")
+        $looksLikePath = (
+            ($Node -match "[/\\]") -or
+            ($Node -match "\.(md|json|yml|yaml|csv|ps1|txt)$")
+        ) -and ($Node -notmatch "^(https?://|git@|schema:)")
+
+        if ($looksLikePath) {
+            $full = if ([System.IO.Path]::IsPathRooted($Node)) {
+                $Node
+            }
+            else {
+                Join-Path $ProjectRoot ($Node -replace "/", "\")
+            }
             if (-not (Test-Path -LiteralPath $full)) {
                 Add-Issue -Severity "yellow" -Source "manifest" -Summary "Manifest path does not resolve: $Node" -RecommendedAction "Create the file/folder or update system-manifest.json."
             }
@@ -77,50 +87,56 @@ function Visit-ManifestNode {
 }
 
 $required = @(
-    "ai-system/AI-PORTAL.md",
-    "ai-system/START-HERE.md",
-    "ai-system/manifests/system-manifest.json",
-    "ai-system/manifests/ingestion-order.yml",
-    "ai-system/manifests/capability-matrix.yml",
-    "ai-system/manifests/tool-index.yml",
-    "ai-system/identity/README.md",
-    "ai-system/identity/constitution.md",
-    "ai-system/identity/mission-and-scope.md",
-    "ai-system/projects/project-registry.yml",
-    "ai-system/organization/hierarchy.yml",
-    "ai-system/organization/authority-levels.yml",
-    "ai-system/organization/executive-operating-model.md",
-    "ai-system/agents/agent-registry.yml",
-    "ai-system/agents/agent-object-model.md",
-    "ai-system/orchestration/model-router.yml",
-    "ai-system/orchestration/task-routing-pipeline.md",
-    "ai-system/model-ops/model-registry.yml",
-    "ai-system/model-ops/evaluation-rubric.yml",
-    "ai-system/model-ops/target-ai/target-ai-architecture.md",
-    "ai-system/model-ops/target-ai/capability-roadmap.yml",
-    "ai-system/model-ops/target-ai/evaluation-benchmarks.yml",
-    "ai-system/research/model-archaeology/source-ledger.yml",
-    "ai-system/research/model-archaeology/deconstruction-protocol.md",
-    "ai-system/research/model-archaeology/open-model-capability-matrix.yml",
-    "ai-system/research/model-archaeology/odysseus-deconstruction.md",
-    "ai-system/runtime/agent-platform/windows-agent-platform.md",
-    "ai-system/memory/context-iq/contextual-work-iq.md",
-    "ai-system/training/curriculum.md",
-    "ai-system/runtime/service-map.yml",
-    "ai-system/reputation/trust-model.yml",
-    "ai-system/resources/resource-budget.yml",
-    "ai-system/governance/absolutes.md",
-    "ai-system/engine/README.md",
-    "ai-system/engine/order-of-operations.md",
-    "ai-system/engine/routine-catalog.yml",
-    "ai-system/forensics/evidence-register.csv",
-    "ai-system/forensics/claim-catalog.csv",
-    "ai-system/forensics/evidence-claim-map.csv",
-    "ai-system/cognition/cognition-workflow.md",
-    "ai-system/tools/Invoke-AIOperationCycle.ps1",
-    "ai-system/tools/Invoke-AIForensicVerification.ps1",
-    "ai-system/tools/Invoke-AILogIntelligence.ps1",
-    "ai-system/tools/Invoke-AIWatchedState.ps1"
+    "AI-PORTAL.md",
+    "START-HERE.md",
+    "manifests/system-manifest.json",
+    "manifests/ingestion-order.yml",
+    "manifests/capability-matrix.yml",
+    "manifests/tool-index.yml",
+    "context.md",
+    "context-file-index.md",
+    "Plan/context.md",
+    "memory/athena-memory-map.md",
+    "schemas/athena-task-intake.schema.json",
+    "templates/athena-task-intake.md",
+    "identity/README.md",
+    "identity/constitution.md",
+    "identity/mission-and-scope.md",
+    "projects/project-registry.yml",
+    "organization/hierarchy.yml",
+    "organization/authority-levels.yml",
+    "organization/executive-operating-model.md",
+    "agents/agent-registry.yml",
+    "agents/agent-object-model.md",
+    "orchestration/model-router.yml",
+    "orchestration/task-routing-pipeline.md",
+    "model-ops/model-registry.yml",
+    "model-ops/evaluation-rubric.yml",
+    "model-ops/target-ai/target-ai-architecture.md",
+    "model-ops/target-ai/capability-roadmap.yml",
+    "model-ops/target-ai/evaluation-benchmarks.yml",
+    "research/model-archaeology/source-ledger.yml",
+    "research/model-archaeology/deconstruction-protocol.md",
+    "research/model-archaeology/open-model-capability-matrix.yml",
+    "research/model-archaeology/odysseus-deconstruction.md",
+    "runtime/agent-platform/windows-agent-platform.md",
+    "memory/context-iq/contextual-work-iq.md",
+    "training/curriculum.md",
+    "runtime/service-map.yml",
+    "reputation/trust-model.yml",
+    "resources/resource-budget.yml",
+    "governance/absolutes.md",
+    "engine/README.md",
+    "engine/order-of-operations.md",
+    "engine/routine-catalog.yml",
+    "forensics/evidence-register.csv",
+    "forensics/claim-catalog.csv",
+    "forensics/evidence-claim-map.csv",
+    "cognition/cognition-workflow.md",
+    "tools/Invoke-AIOperationCycle.ps1",
+    "tools/Invoke-AIForensicVerification.ps1",
+    "tools/Invoke-AILogIntelligence.ps1",
+    "tools/Invoke-AIWatchedState.ps1"
 )
 
 foreach ($rel in $required) {
@@ -131,12 +147,13 @@ foreach ($rel in $required) {
 }
 
 $jsonFiles = @(
-    "ai-system/manifests/system-manifest.json",
-    "ai-system/manifests/generated-ai-index.json",
-    "ai-system/navigation/generated/project-map.json",
-    "ai-system/sensory/scans/latest-scan.json",
-    "ai-system/observability/log-signatures.json",
-    "ai-system/schemas/open-model-source.schema.json"
+    "manifests/system-manifest.json",
+    "manifests/generated-ai-index.json",
+    "navigation/generated/project-map.json",
+    "sensory/scans/latest-scan.json",
+    "observability/log-signatures.json",
+    "schemas/open-model-source.schema.json"
+    "schemas/athena-task-intake.schema.json"
 )
 
 foreach ($jsonPath in $jsonFiles) {
@@ -217,3 +234,4 @@ if (-not $NoWrite) {
 }
 
 $report
+
