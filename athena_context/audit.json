@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "ATHENA",
+    "id": "g-p-6a48bd55e974819190ded415352d0e62-athena"
+  },
+  "audited_at": "2026-08-01T03:31:21.017Z",
+  "scope": {
+    "project_ui_chat_count": 5,
+    "cached_chat_count": 5,
+    "uploaded_project_sources": 0,
+    "project_instructions_empty": true,
+    "project_memory": "Default",
+    "tool_outputs_requested": false,
+    "max_output_characters_per_item": 20000
+  },
+  "checks": {
+    "second_independent_retrieval_completed": true,
+    "all_retrievals_match_exactly": true,
+    "all_pagination_terminated": true,
+    "no_items_hit_reader_limit": true,
+    "no_possible_truncation_markers": true,
+    "no_duplicate_turn_ids": true,
+    "no_duplicate_item_ids": true,
+    "no_turn_errors": true,
+    "no_incomplete_turns": true
+  },
+  "totals": {
+    "chats": 5,
+    "pages": 28,
+    "turns": 249,
+    "items": 486,
+    "text_characters": 1188287
+  },
+  "chats": [
+    {
+      "title": "Red Phosphor Camera Setup",
+      "thread_id": "6a6d2cd2-73d8-83ec-970b-19a36df5af7f",
+      "retrievals_match_exactly": true,
+      "pages": 4,
+      "pagination_terminated": true,
+      "turn_count": 31,
+      "item_count": 62,
+      "item_types": {
+        "userMessage": 31,
+        "agentMessage": 31
+      },
+      "total_text_characters": 272404,
+      "max_item_text_characters": 16869,
+      "items_at_reader_limit": 0,
+      "empty_user_or_agent_messages": 0,
+      "turns_not_completed": 0,
+      "turns_with_error": 0,
+      "duplicate_turn_ids": [],
+      "duplicate_item_ids": [],
+      "first_started_at": 1785539972.353824,
+      "last_started_at": 1785548814.314626,
+      "possible_truncation_markers": 0
+    },
+    {
+      "title": "Geometric 3D Optoelectronic Architecture",
+      "thread_id": "6a488f2e-5a2c-83ec-a91a-1962e95d184f",
+      "retrievals_match_exactly": true,
+      "pages": 11,
+      "pagination_terminated": true,
+      "turn_count": 104,
+      "item_count": 201,
+      "item_types": {
+        "userMessage": 104,
+        "agentMessage": 97
+      },
+      "total_text_characters": 533756,
+      "max_item_text_characters": 13645,
+      "items_at_reader_limit": 0,
+      "empty_user_or_agent_messages": 0,
+      "turns_not_completed": 0,
+      "turns_with_error": 0,
+      "duplicate_turn_ids": [],
+      "duplicate_item_ids": [],
+      "first_started_at": 1783140147.74,
+      "last_started_at": 1785515883.49007,
+      "possible_truncation_markers": 0
+    },
+    {
+      "title": "Operative Duplex AI Concept",
+      "thread_id": "6a548f10-d0f0-83ec-af6d-5ae1e16e4d14",
+      "retrievals_match_exactly": true,
+      "pages": 1,
+      "pagination_terminated": true,
+      "turn_count": 3,
+      "item_count": 6,
+      "item_types": {
+        "userMessage": 3,
+        "agentMessage": 3
+      },
+      "total_text_characters": 34490,
+      "max_item_text_characters": 14956,
+      "items_at_reader_limit": 0,
+      "empty_user_or_agent_messages": 0,
+      "turns_not_completed": 0,
+      "turns_with_error": 0,
+      "duplicate_turn_ids": [],
+      "duplicate_item_ids": [],
+      "first_started_at": 1783926591.31,
+      "last_started_at": 1783927900.324,
+      "possible_truncation_markers": 0
+    },
+    {
+      "title": "AI Project Brain Overview",
+      "thread_id": "6a1fcf29-9df4-83ec-a72f-bc76ad9a0667",
+      "retrievals_match_exactly": true,
+      "pages": 11,
+      "pagination_terminated": true,
+      "turn_count": 110,
+      "item_count": 215,
+      "item_types": {
+        "userMessage": 110,
+        "agentMessage": 105
+      },
+      "total_text_characters": 336755,
+      "max_item_text_characters": 18254,
+      "items_at_reader_limit": 0,
+      "empty_user_or_agent_messages": 0,
+      "turns_not_completed": 0,
+      "turns_with_error": 0,
+      "duplicate_turn_ids": [],
+      "duplicate_item_ids": [],
+      "first_started_at": 1780469552.779,
+      "last_started_at": 1783911671.227195,
+      "possible_truncation_markers": 0
+    },
+    {
+      "title": "Athena Architecture Design",
+      "thread_id": "6a4fc956-ecd0-83ec-9c8b-9d2a243604a7",
+      "retrievals_match_exactly": true,
+      "pages": 1,
+      "pagination_terminated": true,
+      "turn_count": 1,
+      "item_count": 2,
+      "item_types": {
+        "userMessage": 1,
+        "agentMessage": 1
+      },
+      "total_text_characters": 10882,
+      "max_item_text_characters": 9856,
+      "items_at_reader_limit": 0,
+      "empty_user_or_agent_messages": 0,
+      "turns_not_completed": 0,
+      "turns_with_error": 0,
+      "duplicate_turn_ids": [],
+      "duplicate_item_ids": [],
+      "first_started_at": 1783613811.561,
+      "last_started_at": 1783613811.561,
+      "possible_truncation_markers": 0
+    }
+  ],
+  "files": [
+    {
+      "file": "ai_project_brain_overview.jsonl",
+      "bytes": 415796,
+      "sha256": "c470ab07e6e490d1c37214134aeb414fbd5843ea317b0e4b2707f7f4fed78db9"
+    },
+    {
+      "file": "athena_architecture_design.jsonl",
+      "bytes": 12793,
+      "sha256": "f97c37e293a86fd4a9c5c4630998fc54679d865a1f58d7e3586db56738d8383d"
+    },
+    {
+      "file": "geometric_3d_optoelectronic_architecture.jsonl",
+      "bytes": 615964,
+      "sha256": "560936c37159460af78a2f4aaa02bcfef43270bf6f6a31e123d59a6e53eda1d5"
+    },
+    {
+      "file": "operative_duplex_ai_concept.jsonl",
+      "bytes": 38063,
+      "sha256": "2b50903c9c381667e54dc5122fcf053e06fbd70abb8d051e66d289cd21ca7c84"
+    },
+    {
+      "file": "red_phosphor_camera_setup.jsonl",
+      "bytes": 302291,
+      "sha256": "b648b546451519682e6d301af4f091a89461e7efaa0811109ff0707531e9fe99"
+    }
+  ],
+  "limitations": [
+    "The native reader was called with includeOutputs=false, so internal tool or command outputs are not part of this cache.",
+    "Binary images, audio, and file payloads are not preserved as message text.",
+    "Deleted, unavailable, temporary, or otherwise non-enumerable chats cannot be proven absent by the project UI.",
+    "Content added after the audit timestamp requires a refresh.",
+    "An official account data export is the strongest independent source for a third-way reconciliation."
+  ],
+  "exceptions": {
+    "turns_without_agent_text": 12,
+    "turns_without_agent_text_details": [
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "2938097b-a223-4df7-bf9c-ca3a6ca6f7cf",
+        "started_at": 1783146396.119,
+        "user_text_characters": 16,
+        "user_preview": "give me diagrams",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "bbb216d8-36e2-4071-89bc-057a0d5c1542",
+        "started_at": 1783155981.56921,
+        "user_text_characters": 28,
+        "user_preview": "Generate me an image of this",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "bbb21ca1-69df-40a6-98b5-76808873dda3",
+        "started_at": 1783156569.704865,
+        "user_text_characters": 106,
+        "user_preview": "Make it photo realistic ciruits that look like a propper diagram and realistic materials and and structure",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "bbb21ee6-73dd-46ec-85b0-23dd31d33750",
+        "started_at": 1784698882.822776,
+        "user_text_characters": 81,
+        "user_preview": "Give me visuals on how it works and hie the configuration would work if projected",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "bbb216db-025f-4548-b3ae-cf2e38eac19f",
+        "started_at": 1784699314.421315,
+        "user_text_characters": 193,
+        "user_preview": "Each lazer is a rgb lazer that can output any colour or an array that combines multiple lazers like a cymk lazer mixed with an rgb lazer array then focused into one beam or a multi colour lazer",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "bbb21f77-6ade-43ce-939b-d7d993fec7ae",
+        "started_at": 1784699730.403927,
+        "user_text_characters": 66,
+        "user_preview": "Its a lens that csn change its rotation and its focal point aswell",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "bbb21d62-75bd-4686-9ce7-e12eb0b96e76",
+        "started_at": 1784700005.525115,
+        "user_text_characters": 209,
+        "user_preview": "Its a combined cymkwrgb lazer array not two different ones, the idea is it allows you to fine tune but each has 2 channeks so its +cymkwrgb qnd -cymkwrgb using wavelength  cancellation and combination concepts",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "bbb21a39-8a9e-4384-9b45-c8f572310385",
+        "started_at": 1783903909.04525,
+        "user_text_characters": 282,
+        "user_preview": "Give me a an over view of how athena works inner and outtee through a series of story boards, each delving into its own processes and how and why and what athena is.\n\n[User attached 3 files; file contents were not included]\n\n[User attached ",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "bbb21181-4f45-4937-b974-62872e2e6d07",
+        "started_at": 1783904868.275462,
+        "user_text_characters": 64,
+        "user_preview": "Givr me a full seried of story boards that explain the uncovered",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "bbb21220-21d0-4327-82cc-d3c7463fefd7",
+        "started_at": 1783905719.231973,
+        "user_text_characters": 53,
+        "user_preview": "Ok give me 10 more seperate it into individual images",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "bbb21102-fd5e-41ed-8cf3-0704cf332e3a",
+        "started_at": 1783907638.476414,
+        "user_text_characters": 5,
+        "user_preview": "Ok go",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "bbb213ef-36ad-4547-b191-3bdba169cac8",
+        "started_at": 1783911613.946047,
+        "user_text_characters": 7,
+        "user_preview": "10 more",
+        "interpretation": "No assistant text was returned even when re-fetched with includeOutputs=true; the prompt appears to request image or diagram generation."
+      }
+    ],
+    "attachment_marker_turns": 14,
+    "referenced_attachment_files": 16,
+    "attachment_details": [
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "e0e1bf69-fbc4-4a80-bc7f-1ddd80e70bf0",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "5751ad5e-5a64-4d1f-9ae7-b84d3cc1f532",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "d0f0b008-9e50-45ed-949a-d16be9498c55",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "Geometric 3D Optoelectronic Architecture",
+        "turn_id": "3b8faba0-40a7-4d11-97f1-de3ee52e94f5",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "6afb962a-a579-47fa-bc33-37fc8ed54c5f",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "d5aa9b7c-f7a9-48fe-85f2-a930d799f1c9",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "584c6f76-c519-4a33-b92d-227cf9c7499b",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "cd34f9da-c720-46f0-9acd-4d5327bf35b7",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "b9e6f6cd-674e-4c6b-bf8f-c7c141374b5a",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "467e972c-cd90-4689-8408-f0c8b865e63c",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "9bb48653-7fbc-44a9-907d-470a80a6dbf0",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "0f5d1f9e-8bee-4526-8515-6779c73adab7",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "3bf53c26-69f1-40ac-8495-7304b2450f64",
+        "markers": 1,
+        "referenced_files": 1,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      },
+      {
+        "chat": "AI Project Brain Overview",
+        "turn_id": "bbb21a39-8a9e-4384-9b45-c8f572310385",
+        "markers": 1,
+        "referenced_files": 3,
+        "note": "Attachment presence is recorded in text, but attachment payloads are not in the cache."
+      }
+    ]
+  },
+  "conclusion": {
+    "current_linear_text_history": "PASS: twice retrieved identically, fully paginated, and no text item reached the reader limit.",
+    "complete_account_fidelity": "NOT PROVEN: generated media, attachment payloads, alternate edited/regenerated branches, deleted/unavailable chats, and internal tool traces require other sources.",
+    "recommended_independent_check": "Reconcile this cache against an official ChatGPT account data export."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "project": {
+    "name": "ATHENA",
+    "id": "g-p-6a48bd55e974819190ded415352d0e62-athena",
+    "memory": "Default",
+    "instructions": "",
+    "source_count": 0
+  },
+  "retrieved_at": "2026-08-01T02:53:59.777Z",
+  "chats": [
+    {
+      "title": "Red Phosphor Camera Setup",
+      "thread_id": "6a6d2cd2-73d8-83ec-970b-19a36df5af7f",
+      "file": "red_phosphor_camera_setup.jsonl",
+      "turn_count": 31,
+      "created_at": 1785539972.720995,
+      "updated_at": 1785551805.037063
+    },
+    {
+      "title": "Geometric 3D Optoelectronic Architecture",
+      "thread_id": "6a488f2e-5a2c-83ec-a91a-1962e95d184f",
+      "file": "geometric_3d_optoelectronic_architecture.jsonl",
+      "turn_count": 104,
+      "created_at": 1783140148.307164,
+      "updated_at": 1785515903.824175
+    },
+    {
+      "title": "Operative Duplex AI Concept",
+      "thread_id": "6a548f10-d0f0-83ec-af6d-5ae1e16e4d14",
+      "file": "operative_duplex_ai_concept.jsonl",
+      "turn_count": 3,
+      "created_at": 1783926595.076959,
+      "updated_at": 1783927953.912477
+    },
+    {
+      "title": "AI Project Brain Overview",
+      "thread_id": "6a1fcf29-9df4-83ec-a72f-bc76ad9a0667",
+      "file": "ai_project_brain_overview.jsonl",
+      "turn_count": 110,
+      "created_at": 1780469553.169436,
+      "updated_at": 1783911954.229768
+    },
+    {
+      "title": "Athena Architecture Design",
+      "thread_id": "6a4fc956-ecd0-83ec-9c8b-9d2a243604a7",
+      "file": "athena_architecture_design.jsonl",
+      "turn_count": 1,
+      "created_at": 1783613813.422638,
+      "updated_at": 1783614024.949344
+    }
+  ]
+}
