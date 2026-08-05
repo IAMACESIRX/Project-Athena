@@ -2,14 +2,15 @@
 
 Generated: 2026-08-05
 
-This folder is a consolidated Project Athena expansion pack created from the current repository scan, the Plan-folder authority files, prior Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense project-chat concepts, and an external research sanity check.
+This folder is a consolidated Project Athena expansion pack created from the current repository scan, the Plan-folder authority files, prior Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense project concepts, and external research sanity checks.
 
 ## Scope
 
 This pack updates Project Athena as a system-of-systems:
 
+- **A.E.S.I.R.**: Adaptive Evolutionary System for Intelligent Research; the canonical unified Polymath Discovery Engine.
 - **Athena / AI-OS**: institutional cognition, governance, evidence, memory, orchestration, continuity, and project-brain control plane.
-- **Nexus-V**: semantic execution and versioned-state compute layer using commit, branch, fork, merge, rollback, RSM, Aegis, NVASM, NVIR, NVOBJ, NVVM, RTL, and hardware/toolchain research.
+- **Nexus-V**: semantic execution and versioned-state compute using commit, branch, fork, merge, rollback, RSM, Aegis, NVASM, NVIR, NVOBJ, NVVM, RTL, and verification research.
 - **Lightcore**: future physical execution profile for Nexus-V/Athena using XYZ CNT-silicon-photonic compute, dual-purpose electro-photonic CNT cells, silicon/silicon-nitride photonics, multidimensional optical/PAM signalling, and optical/crystal/CNT memory concepts.
 - **L.O.D.E TV**: Lightcore Optical Display Endpoint; a photonic-native display/interaction endpoint, not a normal HDMI/DP panel in the final architecture.
 - **RoomSense / BodyRig**: local-first room-scale spatial sensing, markerless full-body VR/XR tracking, relational tracking, human-state reconstruction, security, and interaction fabric.
@@ -30,8 +31,17 @@ This pack updates Project Athena as a system-of-systems:
 | `AESIR_FULL_PROJECT_ACTION_REVIEW_2026-08-05.md` | Full 0–20 A.E.S.I.R. project-action review translating the canonical method into next project actions. |
 | `ATHENA_MASTER_ONTOLOGY.yml` | Machine-readable ontology for Athena, Nexus-V, Lightcore, L.O.D.E, RoomSense, OASIS, Operative Duplex AI, and plugin surfaces. |
 | `CAPABILITY_STATE_MATRIX.md` | Truth-status matrix separating implemented, scaffolded, specified, conceptual, speculative, and blocked capabilities. |
-| `PLUGIN_ACTION_REGISTER.md` | Plugin/tool responsibility map and run queue for GitHub, Asana, Notion, Gamma, Consensus, SciSpace, and local Athena tools. |
-| `GOVERNANCE_CLOUD_PUSH_EXCEPTION_2026-08-05.md` | Narrow governance exception recording that this was a user-authorized documentation push, not blanket permission to upload private/local state. |
+| `PLUGIN_ACTION_REGISTER.md` | Plugin/tool responsibility map and run queue for GitHub, Asana, Notion, Gamma, Consensus, SciSpace, Google Drive, and local Athena tools. |
+| `GOVERNANCE_CLOUD_PUSH_EXCEPTION_2026-08-05.md` | Narrow governance exception recording that this was a user-authorized documentation push, not blanket permission to upload local/private state. |
+| `CYCLE_REPORT_2026-08-05_MASTER_EXPANSION.md` | Cycle report for the full source-of-truth and plugin synchronization pass. |
+| `OASIS_ARCHITECTURE_SPEC.md` | Formal OASIS environment/runtime/interface specification. |
+| `OPERATIVE_DUPLEX_AI_SPEC.md` | Formal action-layer and local PC-control architecture boundary. |
+| `NEXUSV_ATHENA_BRIDGE_SPEC.md` | Bridge between Athena tasks/evidence/memory and Nexus-V branchable state primitives. |
+| `LODE_ROOMSENSE_BODYRIG_INTERFACE_SPEC.md` | Interface map for L.O.D.E TV, RoomSense, BodyRig, XR outputs, and local privacy modes. |
+| `LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md` | Physical execution profile keeping Lightcore tied to Nexus-V without claiming implemented hardware. |
+| `ADAPTER_SDK_CONTRACT.md` | Standard adapter contract for plugins, local tools, OASIS, and future Operative Duplex integration. |
+| `EVIDENCE_PROVENANCE_SCHEMA_ALIGNMENT.md` | Unified claim/evidence/execution provenance schema alignment. |
+| `PLUGIN_MIRROR_INDEX.md` | Index of plugin artifacts and their canonicality status. |
 
 ## One-line system thesis
 
@@ -39,25 +49,16 @@ Project Athena is a local-first institutional intelligence stack where files pre
 
 ## Governance note
 
-The repository governance says local-only by default and no cloud push unless the human explicitly changes that rule. This documentation pack was committed to the GitHub repository because the human explicitly requested that all findings be pushed to the repo. The pack does not include raw private chats, secrets, local runtime dumps, credentials, SQL dumps, account files, or private sensor data.
+The repository is local-first by default. This documentation pack exists in GitHub because the human explicitly requested a documentation synchronization push. Plugin mirrors are secondary surfaces. GitHub remains the source of truth.
 
 ## Current control-layer recommendation
 
-The next implementation emphasis is not more broad concept prose. The next emphasis is control infrastructure:
+The next implementation emphasis is:
 
 ```text
-ontology + capability matrix + plugin action register + governance exception + cycle report
+control docs → bridge specs → adapter SDK → evidence/provenance schema → local verification → sanitized verification outputs
 ```
-
-This turns the project into a machine-readable, truth-labelled, plugin-routable, verification-gated system.
 
 ## Status
 
-This pack is a design-authority consolidation and R&D roadmap. It is not a claim that every concept is already implemented. It separates:
-
-- observed repository state,
-- Plan-folder architecture intent,
-- user-specified project concepts,
-- external research anchors,
-- engineering hypotheses,
-- and unresolved validation work.
+This pack is a design-authority consolidation and R&D roadmap. It is not a claim that every concept is already implemented. It separates observed repository state, Plan-folder architecture intent, user-specified project concepts, external research anchors, engineering hypotheses, and unresolved validation work.
