@@ -1,316 +1,177 @@
 # ChatGPT Project Athena Concept Sync — 2026-08-05
 
-## Purpose
+Updated: independent JANUS/OASIS correction pass
 
-This document consolidates Project Athena concepts developed across the Project Athena GPT chats and maps them back into the repository architecture. It separates:
+## Purpose and evidence classes
 
-- **Observed repository state** — material directly present in Project Athena.
-- **Plan-folder authority** — architecture intent from `Plan/`.
-- **Project-chat concept state** — concepts developed with the user across Project Athena conversations.
-- **Research-supported anchors** — external research that supports feasibility of selected architectural primitives.
-- **Speculative R&D state** — concepts that remain engineering hypotheses or future physical substrate work.
+This dossier consolidates Project Athena concepts developed across project chats and maps them to repository authority. Every item is classified as one of:
 
-The result is intended to make Athena, Nexus-V, Lightcore, L.O.D.E TV, RoomSense, BodyRig, OASIS, and Operative Duplex AI accessible in one canonical location.
+- **repository-observed** — directly present in files/code;
+- **Plan authority** — design intent from root `Plan/`;
+- **project-chat concept** — user-defined architecture captured from conversations;
+- **research-supported primitive** — literature supports a component or pattern, not the full integrated system;
+- **speculative R&D** — future physical or systems hypothesis requiring simulation/prototype evidence;
+- **blocked/unresolved** — requires unavailable tooling, decisions, measurements or local execution.
 
-## Canonical identity and method layer
+## Canonical identity and method
 
-| Layer | Canonical term | Notes |
+| Layer | Term | Role |
 |---|---|---|
-| Public identity | ACES | Preserve exact capitalization. |
-| Underground cybersecurity / hacktivist identity | ABSENT | Preserve exact capitalization. |
-| ACES username | IAMACESIRX | Public-facing project layer. |
-| ABSENT username | WEAREABSENT | Separate identity layer. |
-| Research method | A.E.S.I.R. | Adaptive Evolutionary System for Intelligent Research. |
+| Public project identity | ACES / IAMACESIRX | public-facing identity and repository namespace |
+| Underground security identity | ABSENT / WEAREABSENT | distinct cybersecurity/hacktivist identity layer |
+| Research method | A.E.S.I.R. | Adaptive Evolutionary System for Intelligent Research; integrated polymath discovery process |
 
-A.E.S.I.R. is the preferred unified polymath discovery engine. Older labels such as discovery engine, polymath framework, research engine, or council method should be treated as subroutines under A.E.S.I.R., not competing systems.
+A.E.S.I.R. is a method, not an AI or ownership layer.
 
-## System-of-systems stack
+## Correct ecosystem
 
 ```text
-Human intent / ACES
-↓
-A.E.S.I.R. research and discovery method
-↓
-Athena / AI-OS institutional cognition, memory, governance, evidence, orchestration
-↓
-Nexus-V semantic execution and versioned-state compute
-↓
-Aegis commit / attestation / trust gate
-↓
-Lightcore physical execution profile
-↓
-L.O.D.E TV display/sensor endpoint + RoomSense spatial fabric
-↓
-OASIS simulation / engineering / digital-world environment
-↓
-Operative Duplex AI action layer for local PC/program control
-↓
-Telemetry, evidence, lessons, and state return to Athena memory
+                         HUMAN AUTHORITY
+                               │
+          ┌────────────────────┼────────────────────┐
+          │                    │                    │
+       ATHENA               JARVIS                JANUS
+institutional intelligence  personal/executive AI  operative metacognitive AI
+          │                    │                    │
+          └──────── explicit governed contracts ──┘
+                               │
+                             OASIS
+      non-AI persistent digital reality, simulation and creation substrate
 ```
 
-## Athena / AI-OS canonical role
+This supersedes the earlier linear stack that placed Operative Duplex AI beneath ATHENA or treated OASIS as a container around ATHENA.
 
-Athena is the institutional intelligence layer. It is not a chatbot, not one assistant, and not only a project folder. It functions as:
+## ATHENA
 
-- memory substrate,
-- evidence router,
-- governance layer,
-- project-brain system,
-- cognitive orchestrator,
-- tool and plugin coordinator,
-- continuity layer across models/sessions/platforms,
-- and eventual control plane for Nexus-V, Lightcore, OASIS, and Operative Duplex actions.
+ATHENA is the independent institutional intelligence and external cognitive infrastructure:
 
-AI-OS is the artificial-organization layer: agent, multi-agent system, artificial organization, persistent institution, federation, and future artificial civilization.
+- durable institutional/workspace/call memory;
+- evidence, claim and provenance management;
+- governance, constitution and authority rules;
+- project brains and ontology;
+- cognitive orchestration, councils and agent/model routing;
+- continuity, audit, disaster recovery and anti-hallucination discipline;
+- fact/assumption/hypothesis/unknown separation;
+- long-horizon coordination and institutional learning.
 
-## Nexus-V canonical role
+ATHENA collaborates with JANUS and JARVIS; it is not their owner or internal brain.
 
-Nexus-V is the semantic execution architecture. Its primitives are:
+## JARVIS
+
+JARVIS is the independent personal/executive intelligence:
+
+- immediate human dialogue and intent interpretation;
+- personal context, preferences, scheduling and devices;
+- executive orchestration and status communication;
+- translation of informal requests into scoped objectives.
+
+## JANUS
+
+**J.A.N.U.S. — Joint Adaptive Neurocognitive Operative System** is the independent operative metacognitive AI.
+
+Its internal duplex is:
+
+- **Interior Face:** metacognition, goal/assumption/confidence state, error detection, permissions, predicted transitions and commit/rollback/escalation decisions.
+- **Exterior Face:** semantic and visual application perception, program cartography, direct software/OASIS control, action execution and observed-state verification.
+
+JANUS is intended to act as a governed digital body across applications and OASIS. It can prefer native semantic UI control and adapters, fall back to visual-semantic perception and virtual input, and use shell/API paths only where authorized and appropriate.
+
+The **Application Cartographer** observes unfamiliar programs, performs isolated one-action experiments, records state transitions and compiles validated workflows into versioned **Skill Capsules**.
+
+Universal undocumented-program competence is a research target, not a current capability claim.
+
+## OASIS
+
+OASIS is not an AI. It is a persistent programmable digital-reality and simulation substrate for:
+
+- engineering and digital twins;
+- scientific and multiphysics simulation;
+- games and fictional worlds;
+- virtual homes, cities, offices, universities, laboratories and factories;
+- R&D think tanks, evidence rooms and collaborative workspaces;
+- CAD/schematic/production workshops and manufacturing handoff;
+- human and AI embodiment.
+
+Every important OASIS object/result carries a reality class: fictional, conceptual, approximate, simulated, evidence-correlated, validated or production-qualified.
+
+## Nexus-V and Aegis
+
+Nexus-V is the semantic/versioned execution architecture, not an AI identity. Core primitives remain:
 
 ```text
-commit, branch, fork, merge, diff, rebase, checkout, rollback, snap, restore, score, rank, select
+commit · branch · fork · merge · diff · rebase · checkout
+rollback · snap/restore · score/rank/select
 ```
 
-Its toolchain direction remains:
+The toolchain direction remains NVASM → ASTs → state mutation graph → semantic lowering → NVIR/VSSA → NVOBJ → VM/vector/RTL stages.
 
-```text
-NVASM
-→ lexer / parser / AST
-→ macro AST
-→ typed AST
-→ abstract state mutation graph
-→ semantic lowering
-→ NVIR VSSA JSON
-→ NVOBJ container
-→ NVVM / NVRT / RTL-vector stages
-→ RTL / regression / hardware-facing outputs
-```
+Aegis provides trust telemetry, policy, attestation and commit/rollback gates. It does not own the independent intelligences.
 
-Its bus model remains:
+## Lightcore
 
-```text
-NexusIBus = instruction lane
-NexusDBus = data lane
-NexusXBus = execution lane
-NexusHBus = live / hot lane
-```
+Lightcore remains a future physical execution profile beneath stable Nexus-V/Aegis contracts, not a replacement for semantic execution or authoritative state.
 
-Aegis is the protected trust/commit layer that authorizes final state transition, attestation, quarantine, and minimal-report outputs.
+Project-chat concepts include:
 
-## Lightcore canonical role
+- XYZ volumetric CNT–silicon–photonic heterogeneous compute;
+- local CPU/control logic within specialised GPU/NPU/DPU/VPU/LPU/PPU regions;
+- silicon/silicon-nitride photonics and WDM/PAM/phase/polarisation/OAM/spatial signalling research;
+- dual electrical/photonic CNT devices and experimental optical/CNT/crystal working-state memory;
+- optical board, package, display and communication fabrics.
 
-Lightcore is the future physical execution profile for Athena/Nexus-V. It is not a replacement for Nexus-V. It is the physical substrate beneath the Nexus-V semantic contract.
+The physical execution profile remains staged: conventional electronic emulation and heterogeneous packages first, selected photonic links next, experimental material-state tiles later, full XYZ Lightcore only after prerequisite breakthroughs.
 
-Canonical definition:
+## L.O.D.E TV
 
-> Lightcore is an XYZ volumetric CNT–silicon–photonic compute architecture using 3D die integration, dual-purpose CNT electro-photonic cells, silicon/silicon-nitride photonics, multidimensional optical/PAM signalling, optical read/write memory, material sensor/conversion layers, and Nexus-V-style versioned state execution.
+L.O.D.E means **Lightcore Optical Display Endpoint**. It is a display, telemetry and sensing endpoint rather than the full RoomSense or OASIS system.
 
-### Correct CNT interpretation
+Canonical project concepts include:
 
-```text
-CNT cell =
-  electrical transistor / state element
-+ photonic interaction element
-+ optical/electrical converter
-+ sensor
-+ modulator
-+ local logic
-+ read/write controller
-```
+- direct Lightcore-native optical scene/render input rather than final HDMI/DisplayPort conversion;
+- optical receiver/demux/timing lock;
+- independent Smart TV UI light engine and T/X-prism compositor;
+- adaptive K-filter/lens/focal stack;
+- folded UST or direct optical surface;
+- continuous phosphor/direct-light surface concepts;
+- reverse frame proof, calibration and interaction telemetry;
+- screen/edge sensing and RoomSense front anchor.
 
-CNTs are not framed as only electrical switches or only optical parts. In this project they are dual-purpose electro-photonic cells.
+The measured 100-inch package is a preliminary concept baseline, not a certified manufacturing release.
 
-### Lightcore memory hierarchy
+## RoomSense, Sentinel and BodyRig
 
-```text
-L0 — active light state / live CNT-photonic state
-L1 — hot CNT Photovoltaic RAM
-L2 — 3D CNT Crystal RAM
-L3 — CNT Photovoltaic VolumeRAM / main memory
-L4 — Persistent Crystal RAM / storage-like memory
-```
+RoomSense combines L.O.D.E surface/edge sensing, outside-in TV/tower LiDAR/camera/RF, inside-out headset cameras/depth/LiDAR/IMU, controllers and RF/mmWave/UWB occlusion support.
 
-### Lightcore optical signalling correction
+BodyRig reconstructs relational full-body state across room, player, headset, controller, limb, sensor and avatar coordinate frames. It targets markerless OpenXR/SteamVR/OSC/VRChat body output and embodied motion continuity rather than isolated tracker dots.
 
-Lightcore communication is not simple binary laser pulsing. It uses a multidimensional optical state vector:
+Sentinel is the optional local-first safety/security layer. Non-video RF/LiDAR/depth/motion fields are pseudonymous by default; familiarity and identity are separate consent-based modes.
 
-```text
-wavelength / colour / frequency
-intensity / PAM
-phase
-polarisation
-spatial mode / shape
-OAM / twist
-beam angle
-focal depth
-lens rotation
-attenuation
-coherence
-timing
-route / source
-redundancy role
-parity role
-semantic metadata
-Nexus-V branch / Aegis commit state
-```
+## Reality-to-Simulation and Known Behavioral Map
 
-Active colour emitters:
+The Reality-to-Simulation platform fuses calibrated geometry, spectral, thermal, environmental and RF/material observations into evidence-bearing scene and material candidates.
 
-```text
-C, Y, M, W, R, G, B
-```
+Outputs distinguish measured, derived, inferred, hypothesized and unknown state. The Known Behavioral Map/Material Atlas proposal builds multidomain behavior surfaces from structural, chemical, thermal, electrical/RF, optical and ageing campaigns. `10,000 conditions × 10 repeats` is a proposed campaign scale, not completed evidence.
 
-K is not a laser and not black light. K is the programmable attenuation / filter / null-mask / wavelength-blocking layer in the lens/filter stack. W is white.
+These models feed ATHENA evidence, JANUS operable application/OASIS objects and OASIS simulations/digital twins.
 
-Positive/negative channels such as `+C/-C` are phase, cancellation, and combination channels, not negative wavelengths.
-
-## L.O.D.E TV canonical role
-
-L.O.D.E TV means **Lightcore Optical Display Endpoint**.
-
-It is a display-side part of the computer, not a passive monitor.
-
-Correct final form:
-
-```text
-Lightcore GPU renders optical scene state
-→ Lightcore memory keeps frame/scene data photonic-native
-→ no HDMI / no DisplayPort in final architecture
-→ photonic interconnect to L.O.D.E
-→ optical receiver / demux / timing lock
-→ optical T-junction / X-prism compositor
-→ adaptive K-filter / lens / focal stack
-→ folded UST or direct optical display surface
-→ reverse telemetry and sensor return
-```
-
-Core correction:
-
-> Lightcore does not convert normal GPU output into fibre. The GPU, memory, motherboard fabric, and output path are already CNT/fibre-optic, laser-driven, photovoltaic-to-photonic and photonic-native.
-
-L.O.D.E changes the graphics pipeline from:
-
-```text
-GPU renders pixels → electrical display signal → fixed pixel panel
-```
-
-to:
-
-```text
-Lightcore renders optical scene-state object → display endpoint physically resolves it into light
-```
-
-## RoomSense / Sentinel / BodyRig canonical role
-
-RoomSense is the spatial sensing and fusion layer built around L.O.D.E and the room.
-
-```text
-L.O.D.E TV edge sensors
-+ screen-as-sensor feedback
-+ two or more 360-degree LiDAR / camera / RF towers
-+ headset inside-out cameras / LiDAR / depth / IMU
-+ controller IMUs / optical packets
-+ RF / mmWave / UWB occlusion support
-+ Lightcore fusion
-= room-scale spatial-computing fabric
-```
-
-### Sentinel
-
-RoomSense Sentinel is the local-first security layer. It fuses LiDAR, RF/mmWave/UWB, screen sensors, auxiliary cameras, Lightcore fusion, and Nexus-V/Aegis event logs. Its purpose is presence, motion, anomaly, tamper, safety, and context detection.
-
-Non-video scans such as RF, LiDAR, depth, motion fields, and abstract sensor maps are treated as pseudonymous spatial-sensing data by default. Identity is a separate opt-in layer.
-
-### BodyRig
-
-RoomSense BodyRig is markerless full-body tracking without worn body trackers or suits.
-
-```text
-inside-out headset tracking
-+ outside-in room tracking
-+ relational skeleton constraints
-+ RF / LiDAR / camera agreement
-+ previous-frame motion priors
-+ body-proportion calibration
-= markerless full-body VR/XR tracking
-```
-
-Output targets:
-
-- virtual hip tracker,
-- chest tracker,
-- foot trackers,
-- knee / elbow estimates,
-- full skeleton stream,
-- OpenXR body tracking,
-- SteamVR tracker emulation,
-- VRChat / OSC-compatible pose stream.
-
-Key principle:
-
-> Not tracking dots. Reconstructing the human.
-
-## OASIS canonical role
-
-OASIS is the outer digital-world and simulation environment. It is broader than games. It includes:
-
-- engineering simulation,
-- science simulation,
-- virtual living / workspaces,
-- R&D think tanks,
-- production and schematic workshops,
-- game worlds,
-- training spaces,
-- digital twins,
-- and material / environment reconstruction from sensor scans.
-
-OASIS receives models, simulations, bodies, materials, spatial maps, and test outputs from Athena, Nexus-V, Lightcore, L.O.D.E, RoomSense, and Operative Duplex AI.
-
-## Operative Duplex AI canonical role
-
-Operative Duplex AI is the future action/metacognitive layer. It is not Athena and not OASIS. It uses Athena, Jarvis-like local context, and OASIS, then acts as the “arms and legs” for AI on a PC.
-
-Boundary:
-
-```text
-Athena = memory / governance / cognition / evidence
-OASIS = simulation and digital environment
-Operative Duplex = action execution and local program-control layer
-```
-
-It should return action traces, interface observations, risk state, and completion evidence back to Athena/Aegis.
-
-## Research-supported anchors
-
-The following external research supports selected primitives while not proving the full speculative architecture:
-
-| Area | Supported primitive | Anchor |
-|---|---|---|
-| Agentic AI governance | Attribution, shared accountability, robust governance, transparent accountability | Hughes et al., 2025, *AI Agents and Agentic Systems: A Multi-Expert Analysis* |
-| Auditable multi-agent systems | Auditability axioms: integrity, coverage, temporal coherence, verifiability, accessibility, privacy compatibility, governance alignment | Phiri, 2025, *Creating Characteristically Auditable Agentic AI Systems* |
-| Silicon nitride photonics | SiN as low-loss photonic platform for communications, sensing, imaging, computation, quantum applications | Xiang, Jin, Bowers, 2022, *Silicon nitride passive and active photonic integrated circuits* |
-| CNT photonics | CNT photodetectors integrated with silicon waveguides; high-bandwidth optical interconnect potential | Zhao et al., 2023, *Silicon Waveguide-Integrated Carbon Nanotube Photodetector* |
-| CNT optoelectronic integration | CNT/silicon-waveguide integration and CNT logic gate interaction | Ma et al., 2020, *Silicon-Waveguide-Integrated Carbon Nanotube Optoelectronic System on a Single Chip* |
-| RoomSense / BodyRig | Multi-sensor LiDAR/camera/IMU fusion improves SLAM robustness | Fan et al., 2025, *LiDAR, IMU, and camera fusion for SLAM* |
-| Markerless pose | LiDAR-based scene-level human pose and shape estimation without wearable devices | Ren et al., 2024, *LiveHPS* |
-
-## Truth-state classification
+## Current truth-state table
 
 | Claim class | Examples | Status |
 |---|---|---|
-| Repository-observed | Athena file-native external brain, Plan as design authority, Nexus-V Plan inventory | Observed in repo. |
-| Plan-authority | AI-OS, Cognitive Orchestrator, Nexus-V/NVISC/NVASM/NVIR/NVVM | Architecture intent. |
-| Project-chat concept | L.O.D.E, RoomSense, BodyRig, Sentinel, Lightcore signal grammar, Operative Duplex | User-specified design concept. |
-| Research-supported primitive | SiN photonics, CNT photodetectors, multi-sensor SLAM, LiDAR pose estimation, auditable agents | Supported as separate components. |
-| Speculative integration | Full Lightcore computer, photonic-native L.O.D.E endpoint, CNT photovoltaic memory hierarchy, optical state-symbol throughput estimates | R&D hypothesis; needs simulation and prototypes. |
-| Blocked / unresolved | Certified manufacturing, eye safety, EMC, thermal validation, real local runtime, real hardware implementation | Needs engineering validation. |
+| Repository-observed | file-native ATHENA, root Plan authority, Nexus-V source/toolchain structure, expansion docs and schemas | observed |
+| Plan authority | AI-OS, Cognitive Orchestrator, memory architecture, Nexus-V/NVISC/NVASM/NVIR/NVVM/Aegis | architecture intent |
+| Project-chat concept | JANUS, broad OASIS, L.O.D.E, RoomSense/BodyRig, Lightcore signalling/material concepts, R2S/Behavior Map | user-specified design concept |
+| Research-supported primitive | multimodal GUI control, hierarchical planning, independent GUI verification, SiN/CNT photonics, multisensor SLAM, LiDAR pose | supported as separate patterns/components |
+| Speculative integration | complete JANUS autonomy, full OASIS universe, full Lightcore computer, production-ready L.O.D.E, universal material inference | R&D hypothesis |
+| Blocked/unresolved | local ATHENA tool run, RTL lint/simulation, full binary Plan extraction, certified safety/manufacturing and real performance | requires local or physical validation |
 
-## Immediate repository implications
+## Canonical repository implications
 
-1. Keep `Plan/` as architecture authority.
-2. Keep `docs/athena-master-expansion/` as the consolidated public documentation surface.
-3. Convert L.O.D.E into engineering sheets, telemetry schemas, validation plans, and prototype roadmaps.
-4. Keep Lightcore tied to Nexus-V as a physical execution profile, not an isolated hardware fantasy.
-5. Keep RoomSense local-first with clear privacy modes.
-6. Keep Operative Duplex AI as action layer, not Athena replacement.
-7. Add plugin workspace mirrors as secondary surfaces; GitHub remains canonical.
+1. Keep `Plan/` as design authority and mark `Nexus V/docs/Plan/` as a mirror unless reconciled.
+2. Use the JANUS master spec and schemas for all new operative-AI work.
+3. Treat `Operative Duplex AI` only as a legacy alias/internal architecture description.
+4. Keep OASIS explicitly non-AI and broad enough for engineering, science, living/work, R&D and production.
+5. Keep Nexus-V semantics independent from Lightcore physical implementation.
+6. Advance L.O.D.E, RoomSense/BodyRig and R2S through conventional prototypes and measured validation.
+7. Preserve local-first privacy and human authority.
+8. Keep GitHub/local repository canonical; connected plugin workspaces remain labelled mirrors or execution surfaces.
