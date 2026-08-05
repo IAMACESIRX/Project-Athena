@@ -50,5 +50,12 @@ Nexus V/generated/local/
 *.wlf
 
 # Local reports and scratch artifacts that are not evidence records
-artifacts/local/
+artifacts/
 reports/local/
+
+# Athena local-only source imports and generated context capsules
+continuity/transcript-inbox/imports/
+continuity/chat-repository-sync/generated/
+continuity/chat-repository-sync/cache/
+continuity/chat-repository-sync/exports/
+continuity/chat-repository-sync/source-bundles/

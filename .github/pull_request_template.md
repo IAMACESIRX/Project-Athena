@@ -42,6 +42,13 @@ verification.
 - [ ] Private/local-only state — must not be published
 - [ ] Contains third-party material requiring licence review
 
+## Publication review
+
+- [ ] `governance/publication-gate.yml` applies to this PR.
+- [ ] Repository integrity credential-pattern scan passed.
+- [ ] Local-only import/export paths are excluded or ignored.
+- [ ] Any publication authorization, skipped validation, or licence uncertainty is recorded above.
+
 ## Merge dependencies
 
 List prerequisite PRs, superseded branches, expected conflicts, and the intended

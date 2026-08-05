@@ -7,6 +7,7 @@
     "hosting": "local_first_with_explicit_publication",
     "cloud_push_allowed": false,
     "cloud_publication_policy": "governance/cloud-publication-policy.md",
+    "publication_gate": "governance/publication-gate.yml",
     "publication_default": "deny",
     "publication_requires_explicit_human_authorization": true,
     "current_primary_project": "project-athena"

@@ -1,0 +1,51 @@
+schema: project-athena.publication-gate.v1
+canonical_policy: governance/cloud-publication-policy.md
+default: deny
+publication_requires_human_authorization: true
+public_mirror:
+  repository: IAMACESIRX/Project-Athena
+  protected_surfaces:
+    - branches
+    - pull_requests
+    - issues
+    - discussions
+    - wiki
+    - releases
+local_only_paths:
+  - path: artifacts/
+    reason: Generated validator output and local scratch reports are not durable evidence records by default.
+  - path: continuity/transcript-inbox/imports/
+    reason: Raw or normalized ChatGPT source bundles can contain private account export material.
+  - path: continuity/chat-repository-sync/generated/
+    reason: Generated context capsules may contain selected private context and must be reviewed before publication.
+  - path: continuity/chat-repository-sync/cache/
+    reason: Local sync caches are implementation state, not public repository source.
+  - path: continuity/chat-repository-sync/exports/
+    reason: Export bundles require explicit publication review.
+  - path: continuity/chat-repository-sync/source-bundles/
+    reason: Source bundles can contain raw private conversation or account material.
+required_review:
+  checklist_file: .github/pull_request_template.md
+  checklist_heading: Publication review
+secret_patterns:
+  - id: openai_api_key
+    severity: error
+    regex: 'sk-(?:proj-)?[A-Za-z0-9_-]{20,}'
+  - id: github_token
+    severity: error
+    regex: 'gh[pousr]_[A-Za-z0-9_]{36,}'
+  - id: aws_access_key_id
+    severity: error
+    regex: 'AKIA[0-9A-Z]{16}'
+  - id: google_api_key
+    severity: error
+    regex: 'AIza[0-9A-Za-z_-]{35}'
+  - id: slack_token
+    severity: error
+    regex: 'xox[abprs]-[A-Za-z0-9-]{20,}'
+  - id: private_key_block
+    severity: error
+    regex: '-----BEGIN (?:RSA |DSA |EC |OPENSSH |PGP )?PRIVATE KEY-----'
+  - id: generic_secret_assignment
+    severity: error
+    regex: '(?i)\b(?:api[_-]?key|access[_-]?token|secret|password)\b\s*[:=]\s*["''][A-Za-z0-9_./+=-]{20,}["'']'
