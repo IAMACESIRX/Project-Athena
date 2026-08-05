@@ -9,6 +9,12 @@ This directory is the canonical index for prototype and visualization artifacts 
 - Controlled vector SVG system diagrams.
 - Rev-B BOM, module register and 1:1 front-plate DXF are staged for source-level publication.
 
+## Canva visualization sources
+
+- [`canva/red-phosphor-camera-report/`](canva/red-phosphor-camera-report/) — 14-page Project Athena red-phosphor multisensor camera engineering report, including the editable/view-only Canva source links, machine-readable metadata, portable viewer and controlled content snapshot.
+
+The live Canva design is the authoritative visual source. GitHub remains authoritative for engineering definitions, schemas, requirements, validation status and release lineage.
+
 ## Binary artifact mirror
 
 The full Rev-B package contains:
