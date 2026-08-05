@@ -55,6 +55,8 @@ research-validated-primitives
 repo-canonical
 plugin-mirror
 controlled-vector-graphics
+canva-visual-report
+generated-candidate
 ```
 
 `operative-duplex` is now a legacy alias only. The canonical system identity is JANUS; duplex describes JANUS's Interior and Exterior faces.
@@ -79,13 +81,19 @@ controlled-vector-graphics
 | Consensus | Checked professional GUI grounding and confused-deputy safety research. | Completed |
 | SciSpace | Cross-checked hierarchical planning, recovery and professional-software limitations. | Completed |
 | Figma | Prepared editable system architecture diagram and submitted it to the FigJam generator. | Blocked pending the user's team/organization selection in the displayed widget |
-| Canva | No write performed. Existing controlled SVG/Mermaid sources remain the preferred production inputs. | Deferred |
+| Canva | Generated four editable multi-page JANUS visual-report candidates under job `b3b767f2-3b98-4c90-84b7-b123cd26c753`. | Completed as candidate generation; permanent design selection and page-level validation pending |
+| GitHub | Added Canva candidate register and machine-readable visual candidate manifest. | Completed |
 | Gamma | No new deck generated. | Deferred; prior credit limitation recorded |
 | Local ATHENA / RTL tools | Not executable through the remote GitHub connector. | Blocked until run on the user's machine |
 
 ## Current workspace URLs
 
 - GitHub correction branch: https://github.com/IAMACESIRX/Project-Athena/tree/agent/janus-independent-operative-ai-correction
+- GitHub Canva candidate register: https://github.com/IAMACESIRX/Project-Athena/blob/agent/janus-independent-operative-ai-correction/docs/athena-master-expansion/CANVA_JANUS_VISUAL_REPORT_CANDIDATES_2026-08-05.md
+- Canva candidate 1: https://www.canva.com/d/kK4jdWf2wWi6L20
+- Canva candidate 2: https://www.canva.com/d/I5YNNbl9b0LJnh0
+- Canva candidate 3: https://www.canva.com/d/MJN8oXzpa_TrB7U
+- Canva candidate 4: https://www.canva.com/d/6YfKm1sPIAhdukg
 - Notion Source-of-Truth Map: https://app.notion.com/p/31c525fc9ab44e3b9cd3286656e7b6d7
 - Notion JANUS mirror: https://app.notion.com/p/3b33388fe88681a08e6fff10ce096876
 - Notion OASIS mirror: https://app.notion.com/p/3b33388fe88681cb8180e365ec31d14d
@@ -110,6 +118,7 @@ Every mirror should show:
 
 - Production-facing diagrams use editable/vector text: SVG, Mermaid, FigJam/Figma, controlled PDF or CAD drawing sources.
 - Generated raster imagery may be used only as reference or concept art unless redrawn and checked.
+- Canva generation candidates are editable design proposals, not controlled visual releases until selected and reconciled against repository terminology.
 - Every diagram must show directionality, authority, validation state and canonical source.
 - Any earlier graphic showing JANUS as an ATHENA limb or OASIS as an ATHENA container is legacy and must be regenerated.
 
@@ -118,4 +127,5 @@ Every mirror should show:
 - The root `Plan/` corpus and `Nexus V/docs/Plan/` mirror include numerous DOCX and ZIP artifacts. Textual authority files and selected engineering packages were reviewed, but the remote connector could not re-extract and content-hash every binary artifact.
 - Local PowerShell scans, project-map generation, manifests, RTL lint, simulator runs and private runtime inspection remain unexecuted in this remote pass.
 - Research validates individual GUI-agent primitives and exposes serious professional-software limitations; it does not prove complete JANUS capability.
+- The Canva candidates require page-by-page review for generated text accuracy, terminology, legibility and state labels before promotion.
 - Lightcore, L.O.D.E hardware, RoomSense/BodyRig, Reality-to-Simulation and Known Behavioral Map performance claims remain R&D until measured.
