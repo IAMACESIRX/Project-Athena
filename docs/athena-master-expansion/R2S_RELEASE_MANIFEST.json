@@ -1,7 +1,8 @@
 {
   "release": "ATHENA-R2S-2026-08-05",
-  "branch": "agent/reality-to-simulation-material-intelligence",
-  "status": "specified/prototype-baseline",
+  "branch": "agent/r2s-material-intelligence-release",
+  "pull_request": "https://github.com/IAMACESIRX/Project-Athena/pull/4",
+  "status": "specified/prototype-baseline/open-review",
   "canonical_repository": "IAMACESIRX/Project-Athena",
   "documents": [
     "REALITY_TO_SIMULATION_MULTISENSOR_ARCHITECTURE.md",
@@ -11,8 +12,35 @@
     "LITHOGRAPHY_SENSOR_PROCESS_CONTROL_INTEGRATION.md",
     "LODE_R2S_SPATIAL_INTERFACE_MAP.md",
     "ATHENA_R2S_INTEGRATION_RELEASE_2026-08-05.md",
-    "PLUGIN_WORKSPACE_R2S_SYNC_2026-08-05.md"
+    "PLUGIN_WORKSPACE_R2S_SYNC_2026-08-05.md",
+    "R2S_TOOLCHAIN_SANITY_CHECK_2026-08-05.md"
   ],
-  "schemas": ["sensor-observation.schema.json", "known-behavioral-map.schema.json", "oasis-physical-twin.schema.json"],
-  "diagrams": ["athena-r2s-full-stack.svg", "material-behavioral-atlas.svg", "lode-r2s-feedback-loop.svg"]
+  "schemas": [
+    "sensor-observation.schema.json",
+    "known-behavioral-map.schema.json",
+    "oasis-physical-twin.schema.json"
+  ],
+  "diagrams": [
+    "athena-r2s-full-stack.svg",
+    "material-behavioral-atlas.svg",
+    "lode-r2s-feedback-loop.svg"
+  ],
+  "workspace_mirrors": {
+    "google_drive_folder": "https://drive.google.com/drive/folders/1We7t9QQO-ZvGSPXDEorKIJKZGyANYy5r",
+    "google_doc": "https://docs.google.com/document/d/1CGsW9LC6hcNdwu8frNZkXn2BnTx_MMe7CfSNSecRFT0/edit",
+    "notion": "https://app.notion.com/p/3b33388fe886815585abc133ffeb4bce",
+    "asana_project_gid": "1217175568404072",
+    "asana_status_gid": "1217176076155453",
+    "canva_design_id": "DAHRZENbsIw",
+    "canva_edit_url": "https://www.canva.com/d/M3sZITJzHQCPiZU",
+    "canva_view_url": "https://www.canva.com/d/rVoHCSMVZZgWakF"
+  },
+  "binary_artifacts": {
+    "master_bundle": "https://drive.google.com/file/d/1Zk4iriQ2Y6EMuzRq-fG2yizuQ_3C2b1K/view",
+    "fabrication_pdf": "https://drive.google.com/file/d/1BX5RIC01J_IDLt7pUD3eodibVkb2q9c-/view",
+    "scaled_glb": "https://drive.google.com/file/d/1AqgmWxMJbpssWnUh_tKjVGc_6jwbsz_Q/view",
+    "front_plate_dxf": "https://drive.google.com/file/d/1MyqTU6pcTJXfQHom_ut0U1bG3rbGspn2/view",
+    "infographic_png": "https://drive.google.com/file/d/1g9o-wD4MEJl_wvI41MxhGUxxiX4KUfzR/view",
+    "bom_csv": "https://drive.google.com/file/d/1rOVl-52KlGyIJdieem9-2PCRMsmV1Lyd/view"
+  }
 }
