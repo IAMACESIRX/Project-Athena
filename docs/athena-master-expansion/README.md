@@ -26,6 +26,7 @@ This pack updates Project Athena as a system-of-systems:
 | `PLAN_FOLDER_SANITY_CHECK.md` | Plan-folder authority check, inventory interpretation, gaps, and conversion priorities. |
 | `TOOLCHAIN_SANITY_CHECK.md` | Sanity-check log from repository scan, Plan inspection, research plugins, and governance review. |
 | `RESEARCH_ANCHORS.md` | External research anchors for agent provenance, AI governance, photonic/CNT compute, and markerless XR body tracking. |
+| `AESIR_PUSH_AND_PLUGIN_NEXT_ACTIONS.md` | A.E.S.I.R. pass defining what should be pushed next, plugin/tool responsibilities, P0/P1/P2 queues, and local verification gates. |
 
 ## One-line system thesis
 
