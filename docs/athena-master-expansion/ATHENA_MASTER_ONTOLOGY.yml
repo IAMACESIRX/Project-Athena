@@ -1,0 +1,259 @@
+metadata:
+  title: Athena Master Ontology
+  generated: 2026-08-05
+  source_pack: docs/athena-master-expansion
+  method: A.E.S.I.R. Polymath Discovery Engine
+  governance: repo_canonical_plugins_mirror_or_execute
+
+status_labels:
+  implemented: "Exists as working repo code/tool/script or verified artifact."
+  scaffolded: "Repo structure or placeholder exists, but implementation is incomplete."
+  specified: "Documented with enough detail to guide implementation."
+  conceptual: "Defined conceptually but not yet a formal implementation spec."
+  speculative: "Future R&D or hardware/science concept; do not claim implementation."
+  blocked: "Requires missing local verification, tools, data, component choice, or user approval."
+
+nodes:
+  A_E_S_I_R:
+    name: "A.E.S.I.R. Polymath Discovery Engine"
+    type: reasoning_framework
+    status: specified
+    definition: "Adaptive Evolutionary System for Intelligent Research; single canonical deep-reasoning mode for complex investigation."
+    feeds:
+      - Athena_AI_OS
+      - Research_Council
+      - Evidence_Discipline
+      - Concept_Graph
+
+  Athena_AI_OS:
+    name: "Athena / AI-OS"
+    type: institutional_intelligence_control_plane
+    status: specified
+    definition: "Local-first institutional cognition, governance, evidence, memory, orchestration, continuity, and project-brain control plane."
+    receives:
+      - A_E_S_I_R
+      - OASIS
+      - Plugin_Outputs
+      - Local_Verification
+    feeds:
+      - Cognitive_Orchestrator
+      - Nexus_V
+      - Evidence_Provenance
+      - Agent_Routing
+      - Project_Memory
+
+  Cognitive_Orchestrator:
+    name: "Project Athena Cognitive Orchestrator"
+    type: reasoning_and_routing_layer
+    status: specified
+    definition: "Classifies tasks, routes agents/councils, manages disagreement, confidence, evidence, and memory writeback."
+    receives:
+      - Athena_AI_OS
+    feeds:
+      - Agent_Council
+      - Plugin_Action_Register
+      - Cycle_Reports
+
+  Agent_Council:
+    name: "Cognitive Senate / Research Council"
+    type: multi_agent_reasoning_layer
+    status: specified
+    receives:
+      - Cognitive_Orchestrator
+      - A_E_S_I_R
+    feeds:
+      - Evidence_Provenance
+      - Project_Decisions
+
+  Evidence_Provenance:
+    name: "Evidence / Claim / Provenance Layer"
+    type: trust_and_audit_layer
+    status: scaffolded
+    receives:
+      - Athena_AI_OS
+      - Agent_Council
+      - Plugin_Outputs
+      - Local_Verification
+    feeds:
+      - Nexus_V
+      - Aegis
+      - Cycle_Reports
+      - Memory_Writeback
+
+  Nexus_V:
+    name: "Nexus-V"
+    type: semantic_versioned_execution_layer
+    status: specified
+    definition: "Versioned state compute using commit, branch, fork, merge, diff, rebase, checkout, rollback, snap/restore, score/rank/select, Aegis, NVASM, NVIR, NVOBJ, NVVM, RTL/toolchain work."
+    receives:
+      - Athena_AI_OS
+      - Evidence_Provenance
+    feeds:
+      - Aegis
+      - Lightcore
+      - Versioned_State_Objects
+
+  Aegis:
+    name: "Aegis"
+    type: commit_gate_attestation_layer
+    status: specified
+    receives:
+      - Nexus_V
+      - Evidence_Provenance
+    feeds:
+      - Commit_Records
+      - Trust_Telemetry
+      - Rollback_Control
+      - LODE_TV
+      - RoomSense
+
+  Lightcore:
+    name: "Lightcore"
+    type: future_physical_execution_profile
+    status: speculative
+    definition: "XYZ CNT-silicon-photonic compute architecture with dual-purpose electro-photonic CNT cells, silicon/silicon-nitride photonics, multidimensional optical/PAM signalling, and optical/crystal/CNT memory."
+    receives:
+      - Nexus_V
+      - Aegis
+    feeds:
+      - LODE_TV
+      - RoomSense
+      - Photonic_Compute_R_and_D
+
+  LODE_TV:
+    name: "L.O.D.E TV"
+    expansion: "Lightcore Optical Display Endpoint"
+    type: photonic_display_sensor_endpoint
+    status: specified
+    definition: "Photonic-native display/interaction endpoint; final architecture avoids HDMI/DP conventional framebuffer pipeline."
+    receives:
+      - Lightcore
+      - Aegis
+      - OASIS
+    feeds:
+      - RoomSense
+      - Display_Telemetry
+      - XR_Interaction
+      - Optical_UI
+
+  RoomSense:
+    name: "RoomSense"
+    type: local_spatial_sensing_fabric
+    status: conceptual
+    definition: "Local-first room-scale spatial sensing with LiDAR/camera/RF/screen/headset/controller fusion."
+    receives:
+      - LODE_TV
+      - Lightcore
+      - Headset_Sensors
+      - Room_Towers
+    feeds:
+      - BodyRig
+      - Sentinel_Security
+      - OASIS
+      - Athena_AI_OS
+
+  BodyRig:
+    name: "RoomSense BodyRig"
+    type: markerless_full_body_tracking_layer
+    status: conceptual
+    definition: "Markerless full-body VR/XR tracking using inside-out/outside-in fusion, relational tracking, human-state reconstruction, and virtual tracker output."
+    receives:
+      - RoomSense
+    feeds:
+      - VRChat_Integration
+      - OpenXR_Integration
+      - SteamVR_OSC_Integration
+      - Motion_Capture
+      - Embodied_Motion_Fidelity
+
+  OASIS:
+    name: "OASIS"
+    type: digital_world_simulation_environment
+    status: conceptual
+    definition: "Outer digital operating environment for engineering, simulation, games, virtual workspaces, R&D, production, schematic workshops, and immersive worlds."
+    receives:
+      - Athena_AI_OS
+      - LODE_TV
+      - RoomSense
+      - Operative_Duplex_AI
+    feeds:
+      - Simulation_State
+      - Spatial_Workflows
+      - User_Interfaces
+
+  Operative_Duplex_AI:
+    name: "Operative Duplex AI"
+    type: local_action_metacognitive_control_layer
+    status: conceptual
+    definition: "AI arms-and-legs layer for local PC/software control using Athena/Jarvis/OASIS context; not a replacement for Athena."
+    receives:
+      - Athena_AI_OS
+      - OASIS
+      - Local_Program_State
+    feeds:
+      - Local_Automation
+      - Codex_Workflows
+      - UI_Control
+      - Action_Reports
+
+plugin_surfaces:
+  GitHub:
+    role: canonical_repository_commit_issue_and_trace_surface
+    allowed_for:
+      - sanitized_documentation
+      - issues
+      - pull_requests
+      - public_architecture_specs
+      - code_after_review
+    not_allowed_for:
+      - raw_private_chats
+      - credentials
+      - local_runtime_dumps
+      - private_sensor_data
+      - SQL_dumps
+
+  Asana:
+    role: execution_queue_task_management
+    source_of_truth: false
+
+  Notion:
+    role: planning_dashboard_and_mirror
+    source_of_truth: false
+
+  Gamma:
+    role: presentation_and_communication_artifacts
+    source_of_truth: false
+
+  Consensus:
+    role: peer_reviewed_research_anchor_search
+    source_of_truth: false
+
+  SciSpace:
+    role: independent_academic_cross_check
+    source_of_truth: false
+
+  Local_Athena_Tools:
+    role: verification_integrity_manifest_project_map_forensics_cycle_reports
+    source_of_truth: local_first
+    push_gate: sanitize_before_cloud
+
+immediate_next_artifacts:
+  p0:
+    - CAPABILITY_STATE_MATRIX.md
+    - PLUGIN_ACTION_REGISTER.md
+    - GOVERNANCE_CLOUD_PUSH_EXCEPTION_2026-08-05.md
+    - CYCLE_REPORT_2026-08-05_MASTER_EXPANSION.md
+  p1:
+    - OASIS_ARCHITECTURE_SPEC.md
+    - OPERATIVE_DUPLEX_AI_SPEC.md
+    - NEXUSV_ATHENA_BRIDGE_SPEC.md
+    - LODE_ROOMSENSE_BODYRIG_INTERFACE_SPEC.md
+    - LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md
+    - ADAPTER_SDK_CONTRACT.md
+    - EVIDENCE_PROVENANCE_SCHEMA_ALIGNMENT.md
+  p2_blocked_until_local_verification:
+    - updated_project_scan
+    - updated_ai_system_manifest
+    - updated_project_map
+    - integrity_forensic_reports
+    - nexus_v_build_test_status
