@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/IAMACESIRX/Project-Athena/schemas/janus-operation.schema.json",
+  "title": "JANUS Operation",
+  "description": "Governed proposed and observed state transition executed by the independent JANUS operative metacognitive AI.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "operation_id",
+    "requester",
+    "objective",
+    "target_environment",
+    "risk_class",
+    "preconditions",
+    "proposed_action",
+    "expected_diff",
+    "authority",
+    "status"
+  ],
+  "properties": {
+    "operation_id": {"type": "string", "minLength": 1},
+    "requester": {"type": "string", "enum": ["human", "athena", "jarvis", "janus", "oasis_runtime", "other"]},
+    "requester_ref": {"type": ["string", "null"]},
+    "objective": {"type": "string", "minLength": 1},
+    "target_environment": {"type": "string", "minLength": 1},
+    "target_application": {"type": ["string", "null"]},
+    "target_application_version": {"type": ["string", "null"]},
+    "current_state_ref": {"type": ["string", "null"]},
+    "preconditions": {"type": "array", "items": {"type": "string"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}, "default": []},
+    "unknowns": {"type": "array", "items": {"type": "string"}, "default": []},
+    "proposed_action": {"type": "object", "additionalProperties": true},
+    "expected_diff": {"type": "object", "additionalProperties": true},
+    "risk_class": {"type": "string", "enum": ["O0_observe", "O1_prepare", "O2_reversible", "O3_consequential", "O4_privileged"]},
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "scope"],
+      "properties": {
+        "decision": {"type": "string", "enum": ["not_required", "pending", "authorized", "denied", "expired"]},
+        "scope": {"type": "string"},
+        "token_ref": {"type": ["string", "null"]},
+        "human_confirmation_ref": {"type": ["string", "null"]},
+        "expires_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    },
+    "fresh_state_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "captured_at": {"type": "string", "format": "date-time"},
+        "window_identity_verified": {"type": "boolean"},
+        "process_identity_verified": {"type": "boolean"},
+        "focus_verified": {"type": "boolean"},
+        "target_control_verified": {"type": "boolean"},
+        "visual_semantic_agreement": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "stale_or_changed": {"type": "boolean"}
+      }
+    },
+    "executed_actions": {"type": "array", "items": {"type": "object", "additionalProperties": true}, "default": []},
+    "observed_diff": {"type": ["object", "null"], "additionalProperties": true},
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "result": {"type": "string", "enum": ["not_run", "pass", "fail", "partial", "unknown"]},
+        "probes": {"type": "array", "items": {"type": "object", "additionalProperties": true}},
+        "independent_verifier_ref": {"type": ["string", "null"]},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+      }
+    },
+    "rollback": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "availability": {"type": "string", "enum": ["not_applicable", "available", "unavailable", "unknown"]},
+        "plan_ref": {"type": ["string", "null"]},
+        "attempted": {"type": "boolean"},
+        "completed": {"type": "boolean"}
+      }
+    },
+    "evidence_refs": {"type": "array", "items": {"type": "string"}, "default": []},
+    "privacy_class": {"type": "string", "enum": ["public", "internal", "private", "sensitive_local", "restricted"]},
+    "status": {"type": "string", "enum": ["proposed", "awaiting_authority", "authorized", "executing", "verifying", "committed", "rejected", "rolled_back", "escalated", "blocked", "failed"]},
+    "created_at": {"type": ["string", "null"], "format": "date-time"},
+    "updated_at": {"type": ["string", "null"], "format": "date-time"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"risk_class": {"enum": ["O3_consequential", "O4_privileged"]}}},
+      "then": {"properties": {"authority": {"properties": {"decision": {"enum": ["pending", "authorized", "denied", "expired"]}}}}}
+    }
+  ]
+}
