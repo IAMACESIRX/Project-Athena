@@ -4,7 +4,8 @@ Generated: 2026-08-05
 Updated: 2026-08-05 plugin/GPT concept synchronization pass  
 Updated: 2026-08-05 Athena docking-fabric / hot-swap architecture addendum pass  
 Updated: 2026-08-05 controlled release fix, Plan audit, and graphics pass  
-Updated: 2026-08-05 full chat, plugin, visual, distributed-compute, and engineering synchronization pass
+Updated: 2026-08-05 full chat, plugin, visual, distributed-compute, and engineering synchronization pass  
+Updated: 2026-08-05 Reality-to-Simulation and Material Intelligence integration pass
 
 This folder is a consolidated Project Athena expansion pack created from the current repository scan, the Plan-folder authority files, prior Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense project concepts, current GPT project-chat concepts, and external research sanity checks.
 
@@ -21,7 +22,9 @@ This pack updates Project Athena as a system-of-systems:
 - **RoomSense / BodyRig**: local-first room-scale spatial sensing, markerless full-body VR/XR tracking, relational tracking, human-state reconstruction, security, and interaction fabric.
 - **OASIS**: outer digital operating environment for engineering, simulation, games, virtual workspaces, R&D, and schematic workshops.
 - **Operative Duplex AI**: future action/metacognitive PC-control layer that uses Athena/Jarvis/OASIS context but does not replace Athena.
-- **Known Behavioral Map / multisensor material mapping**: reality-to-simulation material-property inference track that needs formal schema, validation datasets, and OASIS import contracts.
+- **Reality-to-Simulation Multisensor Platform**: simultaneous calibrated RGB, UV, full-spectrum, NIR/SWIR/MWIR/LWIR, spectroscopy, night vision, depth, polarisation, RF, mmWave, sub-THz/THz, acoustic, and environmental acquisition with independent specialists and a confidence-aware fusion AI.
+- **Known Behavioral Maps / Material Behavioral Atlas**: validated multidomain response surfaces for material identity, condition, exact-object behaviour, composites, interfaces, and simulation.
+- **Reality-to-OASIS Compiler**: conversion of real geometry, materials, positions, conditions, relationships, physics, and provenance into executable physical twins.
 - **Evolutionary Ecosystem Construction**: governed co-evolution of AI, future GI, Athena, tools, training, models, institutions, and hardware through versioned proposal, testing, review, merge, deployment, observation, and inherited improvement.
 - **Adaptive Compute Mesh**: local-first cumulative compute, hardware profiling, process segmentation, ranked fallback execution, optional rented burst compute, result reconstruction, and learning-aware resource routing.
 
@@ -60,6 +63,19 @@ This pack updates Project Athena as a system-of-systems:
 | `ADAPTER_SDK_CONTRACT.md` | Standard adapter contract for plugins, local tools, OASIS, and future Operative Duplex integration. |
 | `EVIDENCE_PROVENANCE_SCHEMA_ALIGNMENT.md` | Unified claim/evidence/execution provenance schema alignment. |
 | `PLUGIN_MIRROR_INDEX.md` | Index of plugin artifacts and their canonicality status. |
+| `REALITY_TO_SIMULATION_MULTISENSOR_ARCHITECTURE.md` | Canonical pan-spectral/RF/THz sensor fabric, specialist-AI, fusion, confidence, evidence, and safety architecture. |
+| `MATERIAL_BEHAVIORAL_ATLAS_SPEC.md` | Known Behavioral Map campaign model and governed material identity/condition database. |
+| `REALITY_TO_OASIS_COMPILER_SPEC.md` | Scan-to-executable-physical-twin compiler specification. |
+| `ENGINEERING_INVERSE_DESIGN_COMPOSITE_SIMULATION_SPEC.md` | Requirements-to-material/geometry/process design, composites, interfaces, and graded-material simulation. |
+| `LITHOGRAPHY_SENSOR_PROCESS_CONTROL_INTEGRATION.md` | Lithography metrology, process maps, defect attribution, closed-loop control, and sensor-chip inverse design. |
+| `LODE_R2S_SPATIAL_INTERFACE_MAP.md` | L.O.D.E/RoomSense/R2S/OASIS feedback loop and subsystem benefit map. |
+| `R2S_TOOLCHAIN_SANITY_CHECK_2026-08-05.md` | Repository, Plan, plugin, research, hardware, and feasibility sanity findings for the R2S track. |
+| `ATHENA_R2S_INTEGRATION_RELEASE_2026-08-05.md` | Release status, canonical decisions, maturity boundaries, and next gates. |
+| `PLUGIN_WORKSPACE_R2S_SYNC_2026-08-05.md` | R2S-specific plugin labels, mirror roles, and synchronization state. |
+| `R2S_RELEASE_MANIFEST.json` | Machine-readable R2S release index. |
+| `schemas/` | Sensor-observation, Known Behavioral Map, and OASIS physical-twin schemas. |
+| `../../Plan/R2S_IMPLEMENTATION_CROSSWALK.md` | Plan-to-implementation mapping, MVP sequence, and blockers. |
+| `../../assets/reality-to-simulation/README.md` | Prototype engineering-asset index and binary-mirror boundary. |
 
 ## Controlled graphics
 
@@ -68,10 +84,13 @@ This pack updates Project Athena as a system-of-systems:
 | `graphics/ATHENA_SYSTEM_OF_SYSTEMS_MAP.svg` | System-of-systems map from human intent through Athena, Nexus-V, Aegis, Lightcore, L.O.D.E, RoomSense, OASIS, Operative Duplex, and telemetry writeback. |
 | `graphics/LODE_LIGHTCORE_PIPELINE.svg` | Lightcore-native render-state path through photonic GPU, fibre link, L.O.D.E receiver, optical compositor, K-filter, UST optics, surface, and reverse telemetry. |
 | `graphics/ROOMSENSE_BODYRIG_SENTINEL_LOOP.svg` | RoomSense/BodyRig/Sentinel loop showing L.O.D.E sensors, towers, headset sensors, RF/mmWave/UWB, body tracking, privacy mode, and Athena/Aegis audit. |
+| `diagrams/athena-r2s-full-stack.svg` | R2S sensors→specialists→fusion→material/OASIS/engineering output map. |
+| `diagrams/material-behavioral-atlas.svg` | 10,000 configurations × 10 repeats→Known Behavioral Map→Athena/OASIS use. |
+| `diagrams/lode-r2s-feedback-loop.svg` | Closed-loop scientific sensing, OASIS, L.O.D.E, RoomSense, and Athena/Nexus-V feedback. |
 
 ## One-line system thesis
 
-Project Athena is a local-first institutional intelligence stack where files preserve memory and evidence, Athena routes cognition and governance, the Athena docking fabric makes models and highways hot-swappable, Nexus-V turns reasoning/work into versioned state execution, Lightcore becomes the future physical substrate, L.O.D.E/RoomSense become the spatial display/sensing interface, OASIS/Operative Duplex AI become the action/simulation environment, and adaptive local/rented compute becomes a governed execution body around it.
+Project Athena is a local-first institutional intelligence stack where files preserve memory and evidence, Athena routes cognition and governance, the Athena docking fabric makes models and highways hot-swappable, Nexus-V turns reasoning/work into versioned state execution, Lightcore becomes the future physical substrate, L.O.D.E/RoomSense become the spatial display/sensing interface, R2S and the Material Behavioral Atlas become the physical-perception and empirical-physics layer, OASIS/Operative Duplex AI become the action/simulation environment, and adaptive local/rented compute becomes a governed execution body around it.
 
 ## Governance note
 
@@ -82,7 +101,7 @@ The repository is local-first by default. This documentation pack exists in GitH
 The next implementation emphasis is:
 
 ```text
-control docs → docking/highway specs → bridge specs → adapter SDK → evidence/provenance schema → distributed-task/fallback contracts → local verification → sanitized verification outputs
+control docs → docking/highway specs → bridge specs → adapter SDK → evidence/provenance schema → R2S observation and physical-twin schemas → distributed-task/fallback contracts → local verification → sanitized verification outputs
 ```
 
 ## Current engineering-documentation emphasis
@@ -91,14 +110,17 @@ control docs → docking/highway specs → bridge specs → adapter SDK → evid
 L.O.D.E measured sheets
 → Lightcore physical profile sanity checks
 → RoomSense/BodyRig interface tests
+→ synchronized R2S MVP and calibration
+→ Known Behavioral Map reference-material campaign
+→ Reality-to-OASIS compiler prototype
+→ composite/interface and lithography research tracks
 → OASIS simulation contracts
 → Operative Duplex action contract
-→ Known Behavioral Map + multisensor material mapping schema
 → adaptive compute mesh and burst-compute descriptors
 → plugin mirror labels and workspace docs
-→ controlled Mermaid/SVG/PDF infographic assets
+→ controlled Mermaid/SVG/PDF/GLB infographic and engineering assets
 ```
 
 ## Status
 
-This pack is a design-authority consolidation and R&D roadmap. It is not a claim that every concept is already implemented. It separates observed repository state, Plan-folder architecture intent, user-specified project concepts, external research anchors, engineering hypotheses, and unresolved validation work.
+This pack is a design-authority consolidation and R&D roadmap. It is not a claim that every concept is already implemented. It separates observed repository state, Plan-folder architecture intent, user-specified project concepts, external research anchors, engineering hypotheses, prototype integration baselines, and unresolved validation work.
