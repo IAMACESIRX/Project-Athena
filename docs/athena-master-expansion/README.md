@@ -1,6 +1,7 @@
 # Athena Master Expansion Index
 
-Generated: 2026-08-05
+Generated: 2026-08-05  
+Updated: 2026-08-05 plugin/GPT concept synchronization pass
 
 This folder is a consolidated Project Athena expansion pack created from the current repository scan, the Plan-folder authority files, prior Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense project concepts, and external research sanity checks.
 
@@ -21,9 +22,12 @@ This pack updates Project Athena as a system-of-systems:
 
 | File | Purpose |
 |---|---|
+| `CHATGPT_PROJECT_SYNC_2026-08-05.md` | Consolidates Project Athena concepts from GPT project chats and classifies them as repo-observed, Plan-authority, project-chat concept, research-supported primitive, or speculative R&D. |
 | `ATHENA_FULL_SYSTEM_MAP.md` | Canonical feed map for Athena, AI-OS, Nexus-V, Lightcore, L.O.D.E, RoomSense, OASIS, and Operative Duplex AI. |
+| `ATHENA_SYSTEM_FEED_BENEFIT_MATRIX.md` | Explicit source→target feed matrix showing how each subsystem benefits the others and what validates each handoff. |
 | `LODE_TV_COMPLETION_SPEC.md` | Completed L.O.D.E TV architecture: graphics pipeline, optical path, sensing stack, RoomSense/BodyRig integration, and validation roadmap. |
-| `CONCEPT_FEED_BENEFIT_MAP.md` | How each subsystem feeds the others and what each part contributes. |
+| `LODE_TV_ENGINEERING_COMPLETION_MAP.md` | Engineering completion map for L.O.D.E TV: measured reference layout, subassemblies, drawing-sheet register, telemetry schema, assembly sequence, graphics package, and EVT/DVT/PVT plan. |
+| `CONCEPT_FEED_BENEFIT_MAP.md` | Earlier feed/benefit map describing how each subsystem contributes to the whole. |
 | `PLAN_FOLDER_SANITY_CHECK.md` | Plan-folder authority check, inventory interpretation, gaps, and conversion priorities. |
 | `TOOLCHAIN_SANITY_CHECK.md` | Sanity-check log from repository scan, Plan inspection, research plugins, and governance review. |
 | `RESEARCH_ANCHORS.md` | External research anchors for agent provenance, AI governance, photonic/CNT compute, and markerless XR body tracking. |
@@ -32,6 +36,7 @@ This pack updates Project Athena as a system-of-systems:
 | `ATHENA_MASTER_ONTOLOGY.yml` | Machine-readable ontology for Athena, Nexus-V, Lightcore, L.O.D.E, RoomSense, OASIS, Operative Duplex AI, and plugin surfaces. |
 | `CAPABILITY_STATE_MATRIX.md` | Truth-status matrix separating implemented, scaffolded, specified, conceptual, speculative, and blocked capabilities. |
 | `PLUGIN_ACTION_REGISTER.md` | Plugin/tool responsibility map and run queue for GitHub, Asana, Notion, Gamma, Consensus, SciSpace, Google Drive, and local Athena tools. |
+| `PLUGIN_WORKSPACE_SYNC_LOG_2026-08-05.md` | Workspace label taxonomy, plugin mirror policy, completed sync actions, and outstanding workspace update plan. |
 | `GOVERNANCE_CLOUD_PUSH_EXCEPTION_2026-08-05.md` | Narrow governance exception recording that this was a user-authorized documentation push, not blanket permission to upload local/private state. |
 | `CYCLE_REPORT_2026-08-05_MASTER_EXPANSION.md` | Cycle report for the full source-of-truth and plugin synchronization pass. |
 | `OASIS_ARCHITECTURE_SPEC.md` | Formal OASIS environment/runtime/interface specification. |
@@ -57,6 +62,17 @@ The next implementation emphasis is:
 
 ```text
 control docs → bridge specs → adapter SDK → evidence/provenance schema → local verification → sanitized verification outputs
+```
+
+## Current engineering-documentation emphasis
+
+```text
+L.O.D.E measured sheets
+→ Lightcore physical profile sanity checks
+→ RoomSense/BodyRig interface tests
+→ OASIS simulation contracts
+→ Operative Duplex action contract
+→ plugin mirror labels and workspace docs
 ```
 
 ## Status
