@@ -41,6 +41,8 @@ bodyrig
 sentinel
 oasis
 operative-duplex
+known-behavioral-map
+multisensor-material-mapping
 engineering-concept
 speculative-hardware
 research-anchor
@@ -50,13 +52,14 @@ needs-validation
 prototype-roadmap
 repo-canonical
 plugin-mirror
+controlled-vector-graphics
 ```
 
 ## Plugin roles
 
 | Plugin / workspace | Role | Canonicality | Required labels |
 |---|---|---|---|
-| GitHub | Source of truth for docs, specs, feed maps, research anchors, issue tracking | Canonical | `repo-canonical`, subsystem labels |
+| GitHub | Source of truth for docs, specs, feed maps, research anchors, issue tracking, controlled SVG/Mermaid source | Canonical | `repo-canonical`, subsystem labels |
 | Notion | Navigable knowledge dossier and workspace-readable project map | Mirror | `plugin-mirror`, `project-athena`, subsystem labels |
 | Asana | Task execution, roadmap sections, sprint/work breakdown | Mirror | `prototype-roadmap`, subsystem labels |
 | Gamma | Polished architecture deck/dossier presentation | Mirror | `project-athena`, subsystem labels |
@@ -113,6 +116,28 @@ plugin-mirror
 | Canva/Figma | No direct design file edited in this pass; Mermaid source now exists as the canonical controlled graphic input. | Deferred |
 | Local Athena tools | Not run from this chat surface because they require the user's machine. | Blocked until local execution |
 
+## Actions completed in the controlled release fix pass
+
+| Surface | Action | Status |
+|---|---|---|
+| GitHub | Added `CONTROLLED_RELEASE_FIX_2026-08-05.md` to correct the stalled Thinking-state release pass. | Completed |
+| GitHub | Added `PLAN_FOLDER_COMPLETE_AUDIT_2026-08-05.md` with content-read vs inventory-only boundaries. | Completed |
+| GitHub | Added `ENGINEERING_GRAPHICS_MANIFEST_2026-08-05.md`. | Completed |
+| GitHub | Added controlled SVG graphic `graphics/ATHENA_SYSTEM_OF_SYSTEMS_MAP.svg`. | Completed |
+| GitHub | Added controlled SVG graphic `graphics/LODE_LIGHTCORE_PIPELINE.svg`. | Completed |
+| GitHub | Added controlled SVG graphic `graphics/ROOMSENSE_BODYRIG_SENTINEL_LOOP.svg`. | Completed |
+| GitHub | Updated `README.md` with fix files, graphics, Known Behavioral Map / multisensor material mapping scope, and current engineering-documentation emphasis. | Completed |
+| GitHub | Fetched `Plan/AI-OS-v7.0-Master-Specification.md`, `AI-OS-v13.0-Unified-Encyclopedia.md`, `AI-OS-v10.0-Knowledge-and-Memory-Constitution.md`, `AI-OS-v11.0-Agent-Species-Catalog.md`, `AI-OS-v12.0-Federation-and-Civilization-Framework.md`, `FEATURE_ROADMAP.md`, and `IMPLEMENTATION_MATRIX.md` for direct content sanity. | Completed |
+| GitHub | Queried the recursive repository tree and root `Plan/` contents to verify accessible Plan inventory. | Completed |
+| Wolfram | Recomputed 100-inch 16:9 active-area dimensions: 2213.801864 mm × 1245.263549 mm. | Completed |
+| Consensus | Ran updated agentic governance/auditability search. | Completed |
+| SciSpace | Ran component-primitives search for integrated photonics, CNT/optoelectronic computing, LiDAR, and sensor/spatial-computing anchors. | Completed |
+| Notion | Mirror page should be updated with this fix summary. | Pending / next mirror step |
+| Google Drive | Mirror document should be updated with this fix summary and graphic links. | Pending / next mirror step |
+| Asana | Roadmap should receive a status update referencing this fix pass. | Pending / next mirror step |
+| Gamma | Still blocked unless credits become available. | Blocked |
+| Canva/Figma | Controlled source graphics now exist; design-surface production remains deferred until target/template exists. | Deferred |
+
 ## Created mirror URLs
 
 | Workspace | Artifact | URL |
@@ -127,10 +152,12 @@ plugin-mirror
 
 | Surface | Required update | Notes |
 |---|---|---|
+| Notion | Add/refresh controlled release fix page or append latest fix summary to master mirror. | Use the new GitHub docs as canonical source. |
+| Google Drive | Add latest fix summary and links to new controlled SVG files. | Current Drive mirror is a folder plus text dossier. |
+| Asana | Post status update or create follow-up tasks for docx extraction, Known Behavioral Map spec, sensor/material mapping spec, and controlled blueprint generation. | Existing roadmap is the execution mirror. |
 | Gamma | Create/update polished Project Athena / L.O.D.E / Lightcore / Athena Docking Fabric dossier. | Blocked by insufficient Gamma credits in the original run; retry only when credits are available. |
-| Canva | Create controlled infographic boards after template/design selection. | Use `ATHENA_DOCKING_FABRIC_INFOGRAPHIC.mmd` as the source diagram and avoid generated-image text. |
+| Canva | Create controlled infographic boards after template/design selection. | Use SVG/Mermaid sources from GitHub; avoid generated-image text. |
 | Figma | Create/edit UI or system-design file when a Figma target file exists. | Useful for Athena dashboard, L.O.D.E UX, docking highway diagrams, and adapter maps. |
-| Google Drive | Add exported PDF/SVG/blueprint packs once generated. | Current Drive mirror is a folder plus text dossier. |
 | Supabase/Vercel/Lovable/Replit | Defer unless building runtime or prototype app. | Not required for documentation sync. |
 
 ## Workspace update standard
@@ -145,6 +172,7 @@ Each plugin mirror should contain:
 6. Last sync date.
 7. Outstanding validation list.
 8. Docking-fabric/hot-swap note: AI-local Athena nodes, external Athena core, Athena highway, project capsules, and OASIS runtime interface are separate layers.
+9. Controlled graphics note: engineering-facing graphics must be SVG/Mermaid/PDF/vector text, not generated-image text.
 
 ## Engineering graphics policy
 
@@ -163,7 +191,9 @@ Required graphic classes:
 - Sentinel privacy/security mode diagram,
 - Nexus-V/Aegis commit path,
 - OASIS environment loop,
-- Operative Duplex action loop.
+- Operative Duplex action loop,
+- Known Behavioral Map material-property pipeline,
+- multisensor material/reality-to-simulation map.
 
 ## Sync risk notes
 
