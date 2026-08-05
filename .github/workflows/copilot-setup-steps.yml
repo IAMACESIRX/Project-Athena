@@ -50,4 +50,9 @@ jobs:
 
       - name: Run Athena repository checks
         shell: pwsh
-        run: .\tools\Test-AthenaRepository.ps1 -NoWrite
+        run: |
+          if (Test-Path -LiteralPath "./tools/Test-AthenaRepository.ps1") {
+            ./tools/Test-AthenaRepository.ps1 -NoWrite
+          } else {
+            Write-Host "tools/Test-AthenaRepository.ps1 is not present on this branch; skipping Athena-specific PowerShell check."
+          }
