@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="900" viewBox="0 0 1700 900">
+  <defs>
+    <style>
+      .bg{fill:#051522}.grid{stroke:#0e3550;stroke-width:1;opacity:.6}.box{fill:#09253a;stroke:#63e6ff;stroke-width:2;rx:14}.opt{fill:#10213a;stroke:#ff66cc;stroke-width:2;rx:14}.warn{fill:#261e34;stroke:#ffd166;stroke-width:2;stroke-dasharray:8 6;rx:14}.t{font-family:Arial,Helvetica,sans-serif;fill:#eefaff;font-size:30px;font-weight:700}.m{font-family:Arial,Helvetica,sans-serif;fill:#fff;font-size:22px;font-weight:700}.s{font-family:Arial,Helvetica,sans-serif;fill:#bfefff;font-size:17px}.n{font-family:Arial,Helvetica,sans-serif;fill:#9fd3e8;font-size:14px}.k{font-family:Arial,Helvetica,sans-serif;fill:#ffd166;font-size:17px;font-weight:700}.line{stroke:#63e6ff;stroke-width:4;fill:none;marker-end:url(#arrow)}.pink{stroke:#ff66cc}.gold{stroke:#ffd166}.return{stroke:#a78bfa;stroke-width:4;fill:none;marker-end:url(#arrow2)}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#63e6ff"/></marker>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#a78bfa"/></marker>
+  </defs>
+  <rect class="bg" width="1700" height="900"/>
+  <g><path class="grid" d="M0 100H1700M0 200H1700M0 300H1700M0 400H1700M0 500H1700M0 600H1700M0 700H1700M0 800H1700"/><path class="grid" d="M100 0V900M200 0V900M300 0V900M400 0V900M500 0V900M600 0V900M700 0V900M800 0V900M900 0V900M1000 0V900M1100 0V900M1200 0V900M1300 0V900M1400 0V900M1500 0V900M1600 0V900"/></g>
+  <text x="55" y="60" class="t">L.O.D.E TV + LIGHTCORE PIPELINE</text>
+  <text x="55" y="90" class="n">Controlled vector diagram. Final target is photonic-native; DD-LPD v1 may use conventional bridge components.</text>
+
+  <rect x="70" y="170" width="245" height="110" class="box"/><text x="95" y="215" class="m">OASIS / GAME</text><text x="95" y="248" class="s">scene, physics, material light</text>
+  <rect x="385" y="170" width="260" height="110" class="box"/><text x="410" y="215" class="m">LIGHTCORE PLANNER</text><text x="410" y="248" class="s">render-state decision layer</text>
+  <rect x="715" y="160" width="285" height="130" class="opt"/><text x="740" y="207" class="m">PHOTONIC GPU</text><text x="740" y="240" class="s">CNT / Si / SiN fabric</text><text x="740" y="268" class="k">R&amp;D primitive</text>
+  <rect x="1070" y="170" width="280" height="110" class="opt"/><text x="1095" y="215" class="m">OPTICAL SCENE STATE</text><text x="1095" y="248" class="s">wavelength, PAM, phase, focal</text>
+  <rect x="1420" y="170" width="230" height="110" class="box"/><text x="1445" y="215" class="m">FIBRE LINK</text><text x="1445" y="248" class="s">no HDMI/DP final path</text>
+
+  <rect x="110" y="430" width="270" height="120" class="opt"/><text x="135" y="475" class="m">PHOTONIC RECEIVER</text><text x="135" y="508" class="s">demux, timing lock, recovery</text>
+  <rect x="470" y="430" width="270" height="120" class="opt"/><text x="495" y="475" class="m">T-JUNCTION / X-PRISM</text><text x="495" y="508" class="s">game + UI + overlay mix</text>
+  <rect x="830" y="430" width="270" height="120" class="warn"/><text x="855" y="475" class="m">K-FILTER STACK</text><text x="855" y="508" class="s">attenuation / null mask</text><text x="855" y="536" class="k">K is not a laser</text>
+  <rect x="1190" y="430" width="270" height="120" class="opt"/><text x="1215" y="475" class="m">FOLDED UST OPTICS</text><text x="1215" y="508" class="s">adaptive lens / mirror path</text>
+  <rect x="520" y="665" width="330" height="120" class="box"/><text x="545" y="710" class="m">CONTINUOUS SURFACE</text><text x="545" y="743" class="s">phosphor/direct-light emission</text>
+  <rect x="1030" y="665" width="350" height="120" class="box"/><text x="1055" y="710" class="m">REVERSE TELEMETRY</text><text x="1055" y="743" class="s">frame hash, drift, weak zones</text>
+
+  <path class="line" d="M315 225H385"/><path class="line" d="M645 225H715"/><path class="line pink" d="M1000 225H1070"/><path class="line" d="M1350 225H1420"/>
+  <path class="line" d="M1535 280C1510 360 330 350 245 430"/>
+  <path class="line pink" d="M380 490H470"/><path class="line pink" d="M740 490H830"/><path class="line pink" d="M1100 490H1190"/>
+  <path class="line" d="M1325 550C1240 640 850 625 710 665"/>
+  <path class="return" d="M1030 725H850"/><path class="return" d="M1205 665C1240 595 1300 560 1460 550"/>
+  <path class="return" d="M1380 725C1520 650 1570 445 1515 280"/>
+
+  <rect x="65" y="810" width="1560" height="55" class="warn"/>
+  <text x="90" y="844" class="s">Truth boundary: component fields have research support, but the full Lightcore-native L.O.D.E system is a speculative integration track requiring optical, thermal, electrical, safety, and manufacturability validation.</text>
+</svg>
