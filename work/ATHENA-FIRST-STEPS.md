@@ -57,6 +57,8 @@ Recommended layers:
 
 - Core identity memory: `identity/`, `AI-PORTAL.md`, `context.md`.
 - Architecture memory: `Plan/`, `Plan/context.md`, `Nexus V/docs/Plan/`.
+- Source conversation memory: `athena_context/`, including audits,
+  reconciliation, verified storyboards, and remaining attachment gaps.
 - Working memory: `work/`, `handoff/`, `continuity/`.
 - Evidence memory: `forensics/`, `audit/`, `engine/cycle-reports/`.
 - Capability memory: `manifests/`, `registries/`, `agents/`,
@@ -117,6 +119,11 @@ Priority order:
 4. Keep root-relative path normalization verified as tools evolve.
 5. Mine `Plan/` into implementation matrices and work items.
 6. Keep Nexus V connected to Plan through an implementation-status matrix.
+7. Convert the Athena Highway, project capsules, and model adapters into
+   machine-readable contracts.
+8. Keep the Operative Duplex, OASIS Reality Compiler, and Lightcore explicitly
+   staged from intent through evidence rather than treating them as present
+   runtime capabilities.
 
 Guiding decision:
 : Build intake and memory contracts before automation-heavy work. Automation is

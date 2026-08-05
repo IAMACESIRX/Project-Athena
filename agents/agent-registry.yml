@@ -1,5 +1,5 @@
 schema: ai-system.agent_registry.v1
-updated: 2026-06-03
+updated: 2026-08-01
 agents:
   - id: human-owner
     type: human
@@ -13,6 +13,7 @@ agents:
     type: coding_agent
     role: local_filesystem_engineer
     authority_level: L3
+    athena_adapter: agents/adapters/codex-local.adapter.json
     capabilities:
       - code_editing
       - repository_navigation
@@ -54,4 +55,3 @@ agents:
       - policy_check
       - risk_classification
       - audit_review
-

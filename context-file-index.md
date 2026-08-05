@@ -1,22 +1,22 @@
 ﻿# Project Athena Complete File Index
 
-Generated: 2026-07-10
+Generated: 2026-08-02
 
 This generated index accounts for every file under `D:\Projects\Project Athena` that existed at scan time, except `.git` internals and this generated index file itself. Text-like files were opened directly, Word documents were opened as OOXML and text-indexed, zip archives were opened and entry-indexed, images/binaries were metadata-indexed, and each file received a role hint.
 
 ## Coverage Summary
 
-- Files indexed: 1088
-- Total size: 8.509 MB
+- Files indexed: 1199
+- Total size: 87.944 MB
 
 ### By Extraction Kind
 
 | Kind | Count |
 |---|---:|
-| binary/opaque | 167 |
+| binary/opaque | 174 |
 | docx/extracted | 47 |
-| image/metadata | 1 |
-| text/read | 847 |
+| image/metadata | 59 |
+| text/read | 893 |
 | zip/opened | 26 |
 
 ### By Top-Level Folder
@@ -25,37 +25,39 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 |---|---:|
 | Nexus V | 640 |
 | cognition | 81 |
-| Plan | 64 |
-| tools | 18 |
+| athena_context | 73 |
+| Plan | 71 |
+| tools | 23 |
+| schemas | 22 |
+| continuity | 20 |
 | forensics | 17 |
-| schemas | 16 |
-| continuity | 15 |
-| engine | 14 |
+| engine | 16 |
+| work | 16 |
 | audit | 13 |
-| work | 13 |
 | observability | 12 |
 | restore | 10 |
 | memory | 9 |
 | sensory | 9 |
 | diagnostics | 8 |
+| .github | 7 |
 | council | 7 |
 | model-ops | 7 |
 | modules | 7 |
 | navigation | 7 |
 | research | 7 |
+| agents | 6 |
 | governance | 6 |
 | handoff | 6 |
 | integration | 6 |
 | learning | 6 |
 | operating-model | 6 |
 | orchestration | 6 |
+| projects | 6 |
 | templates | 6 |
-| agents | 5 |
 | manifests | 5 |
 | organization | 5 |
 | physics | 5 |
 | playbooks | 5 |
-| projects | 5 |
 | runtime | 5 |
 | drift | 4 |
 | registries | 4 |
@@ -67,6 +69,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | reputation | 3 |
 | resources | 2 |
 | .gitattributes | 1 |
+| .gitignore | 1 |
 | AI-PORTAL.md | 1 |
 | Circuit design | 1 |
 | context.md | 1 |
@@ -77,13 +80,95 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 
 | Path | KB | Kind | Lines/Entries | SHA12 | Role | Detail |
 |---|---:|---|---:|---|---|---|
-| .gitattributes | 0.1 | text/read | 3 | 1A1DBE176BC2 | Project file. | # Auto detect text files and perform LF normalization |
-| agents/agent-object-model.md | 0.4 | text/read | 22 | 40F80FFA00FC | Project file. | # Agent Object Model |
-| agents/agent-registry.yml | 1.3 | text/read | 58 | FC2B713085D5 | Project file. | schema: ai-system.agent_registry.v1 |
-| agents/lifecycle-state-machine.md | 0.4 | text/read | 25 | 1A2C8690D559 | Project file. | # Agent Lifecycle State Machine |
-| agents/README.md | 0.5 | text/read | 21 | 549566B38341 | Project file. | # Agents |
-| agents/team-formation-protocol.md | 0.7 | text/read | 25 | F8A13567EFD8 | Project file. | # Team Formation Protocol |
-| AI-PORTAL.md | 4.7 | text/read | 114 | 5041BE5D07D5 | Project file. | # AI Portal |
+| .gitattributes | 0.2 | text/read | 12 | 113E4CE61DCA | Project file. | # Auto detect text files and perform LF normalization |
+| .github/CODEOWNERS | 0.1 | text/read | 5 | FF01D082DA46 | GitHub workflow, template, or repository configuration. | # Project Athena currently has one human owner. Expand by subsystem as the |
+| .github/ISSUE_TEMPLATE/architecture.yml | 1.5 | text/read | 51 | A3ABDA56C263 | GitHub workflow, template, or repository configuration. | name: Architecture proposal |
+| .github/ISSUE_TEMPLATE/config.yml | 0.3 | text/read | 7 | CAADB4E10C3C | GitHub workflow, template, or repository configuration. | blank_issues_enabled: false |
+| .github/ISSUE_TEMPLATE/implementation.yml | 1.2 | text/read | 43 | E13C2F3E088C | GitHub workflow, template, or repository configuration. | name: Implementation task |
+| .github/ISSUE_TEMPLATE/research.yml | 1.3 | text/read | 44 | 134859BE7D6D | GitHub workflow, template, or repository configuration. | name: Research or experiment |
+| .github/pull_request_template.md | 0.8 | text/read | 33 | 289F06079CCE | GitHub workflow, template, or repository configuration. | ## Outcome |
+| .github/workflows/athena-integrity.yml | 0.7 | text/read | 33 | F518A78D200C | GitHub workflow, template, or repository configuration. | name: Athena Integrity |
+| .gitignore | 0.1 | text/read | 9 | 03656609298F | Project file. | continuity/transcript-inbox/imports/ |
+| agents/adapters/codex-local.adapter.json | 3.2 | text/read | 114 | 5BC95E846341 | Agent registry, lifecycle, team, or Athena adapter contract. | { |
+| agents/agent-object-model.md | 0.4 | text/read | 22 | 40F80FFA00FC | Agent registry, lifecycle, team, or Athena adapter contract. | # Agent Object Model |
+| agents/agent-registry.yml | 1.4 | text/read | 58 | EDA6895F1010 | Agent registry, lifecycle, team, or Athena adapter contract. | schema: ai-system.agent_registry.v1 |
+| agents/lifecycle-state-machine.md | 0.4 | text/read | 25 | 1A2C8690D559 | Agent registry, lifecycle, team, or Athena adapter contract. | # Agent Lifecycle State Machine |
+| agents/README.md | 0.5 | text/read | 21 | 549566B38341 | Agent registry, lifecycle, team, or Athena adapter contract. | # Agents |
+| agents/team-formation-protocol.md | 0.7 | text/read | 25 | F8A13567EFD8 | Agent registry, lifecycle, team, or Athena adapter contract. | # Team Formation Protocol |
+| AI-PORTAL.md | 5.7 | text/read | 131 | 9522B16CD80F | Project file. | # AI Portal |
+| athena_context/ai_project_brain_overview.jsonl | 406.1 | binary/opaque | 0 | C470AB07E6E4 | Audited source conversation, reconciliation, or recovered asset. | opaque or toolchain binary artifact |
+| athena_context/ASSET_INVENTORY.md | 10 | text/read | 176 | 7A56C9F2CD55 | Audited source conversation, reconciliation, or recovered asset. | # ATHENA Chat Asset Inventory |
+| athena_context/assets/generated-storyboards-2026-08-01/00_MANIFEST/images_manifest.csv | 14.6 | text/read | 60 | 8D49DF3951B4 | Audited source conversation, reconciliation, or recovered asset. | archive_path,source_path,category,width_px,height_px,mode,size_bytes,sha256 |
+| athena_context/assets/generated-storyboards-2026-08-01/00_MANIFEST/README.md | 1.1 | text/read | 32 | 36A5BD3B6481 | Audited source conversation, reconciliation, or recovered asset. | # Project Athena â€” Generated Image Package |
+| athena_context/assets/generated-storyboards-2026-08-01/00_MANIFEST/SHA256SUMS.txt | 8.2 | text/read | 59 | D3B31DF11781 | Audited source conversation, reconciliation, or recovered asset. | dbdb1bbc5833fc6c733b7be2534470bf9a6ae322cff7ca2c723e9a8bd0744bbf  05_Composite_Sheets_Alternates_and_Contact_Sheets/Athena-Storyboards-31-to |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_cognitive_architecture_diagram.png | 1759.6 | image/metadata | 0 | 0E9C6F3FA0F4 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_distributed_compute_system_infographic.png | 1940 | image/metadata | 0 | 7DD73B7872F7 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_institutional_training_framework.png | 1951.5 | image/metadata | 0 | 7E64772109D2 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_memory_architecture_and_design.png | 1866.4 | image/metadata | 0 | 2C225A2D9052 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_model_registry_and_routing_flow.png | 2044.6 | image/metadata | 0 | 43A2F955A39F | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_operational_heartbeat_diagram.png | 1948.6 | image/metadata | 0 | 4B8FC7C2A2F8 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_sensory_system_overview.png | 1797.5 | image/metadata | 0 | 5A4E8E3A56B9 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_task_flow_infographic.png | 1771 | image/metadata | 0 | 8FA01C6B0F1F | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_the_cognitive_prosthetic_system.png | 1689.4 | image/metadata | 0 | 7B754D3DFA83 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/athena_truth_pipeline_and_evidence_graph.png | 2043.5 | image/metadata | 0 | 06DEBA7E28D1 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/contextual_work_iq_athena_s_cognitive_framework.png | 2021.8 | image/metadata | 0 | B0679A910031 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/continuity_system_athena_s_cognitive_reincarnatio.png | 2035.8 | image/metadata | 0 | 7F4F92CD4943 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/ecosystem_co_evolution_infographic_design.png | 1806.2 | image/metadata | 0 | 49631D2AF4A5 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/infographic_of_athena_s_decision_process.png | 2062.2 | image/metadata | 0 | 669B4F93E086 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/lightcore_nexus_v_and_athena_substrate_design.png | 1902.4 | image/metadata | 0 | 3AFEDF8C8DC6 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/mcai_a_roadmap_to_cognition_management.png | 1833.6 | image/metadata | 0 | F056D788BDDD | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/mcai_managing_cognition_in_a_neon_world.png | 1661.5 | image/metadata | 0 | CC4AB1D5F699 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/nexus_v_state_machine_and_architecture.png | 1999.7 | image/metadata | 0 | C58A6EDC5743 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/system_physics_and_causal_prediction_diagram.png | 1993.6 | image/metadata | 0 | E0CEE0D82508 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/01_Core_Storyboards_and_Infographics/why_athena_matters_a_futuristic_ecosystem.png | 1867.9 | image/metadata | 0 | 9B378CD9B822 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/11-athena-decision-and-reasoning-engine.png | 1205.6 | image/metadata | 0 | E09A9A32ECB3 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/12-athena-tool-and-ability-ecosystem.png | 1006.7 | image/metadata | 0 | 7C04E83000C7 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/13-athena-evidence-and-truth-system.png | 1042.6 | image/metadata | 0 | A7AF24BADB53 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/14-athena-workspaces-and-project-brains.png | 945.6 | image/metadata | 0 | 4055503A69CA | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/15-athena-communication-and-collaboration.png | 927.4 | image/metadata | 0 | 860DF73E775B | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/16-athena-security-permissions-and-safety.png | 1154.4 | image/metadata | 0 | 677681BA3F8D | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/17-athena-learning-and-evolution-system.png | 1040.9 | image/metadata | 0 | 2D0B7A69E82D | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/18-athena-recovery-and-resilience.png | 985.4 | image/metadata | 0 | B29461BCE65C | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/19-athena-governance-and-constitution.png | 1131.4 | image/metadata | 0 | 86378CE48741 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/02_Storyboards_11_to_20/20-athena-future-vision-and-roadmap.png | 1055.9 | image/metadata | 0 | 1A0458F5C786 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/21-oasis-and-local-athena-adapters.png | 1229.4 | image/metadata | 0 | F06C90400D85 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/22-athena-integration-contract.png | 1217.1 | image/metadata | 0 | C8C864A313B1 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/23-repository-as-athena-database.png | 1196 | image/metadata | 0 | 9EAB3E63E8EB | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/24-athena-navigation-and-situational-map.png | 1161.8 | image/metadata | 0 | F95744AA7D0E | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/25-agent-object-model-and-lifecycle.png | 972.4 | image/metadata | 0 | 44BDC1145A0B | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/26-athena-deterministic-operation-engine.png | 998.8 | image/metadata | 0 | 32C16E3C34BD | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/27-audit-flight-recorder-and-causality-ledger.png | 833.4 | image/metadata | 0 | 91606C6CBA37 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/28-observability-diagnostics-and-drift-repair.png | 867.9 | image/metadata | 0 | 4097BE2B6C26 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/29-work-change-control-and-resource-stewardship.png | 854.8 | image/metadata | 0 | DA39BF96A279 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/03_Storyboards_21_to_30/30-model-archaeology-and-reverse-engineering-lab.png | 916.5 | image/metadata | 0 | BCA6763F9F68 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/31-athena-cognitive-workflow-and-epistemic-output-labels.png | 199 | image/metadata | 0 | 8A6EA4ACB2CA | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/32-subtext-detection-and-contextual-anchoring.png | 186.9 | image/metadata | 0 | 179D4BC7A73F | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/33-correlation-and-hypergraph-relational-processing.png | 186.6 | image/metadata | 0 | E7D5C13627B3 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/34-algorithmic-inversion-and-retrocausal-reconstruction.png | 189.2 | image/metadata | 0 | 236656414149 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/35-conceptual-leaps-and-counter-intuitive-discernment.png | 189.4 | image/metadata | 0 | 0B08FD18AD2A | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/36-socratic-deconstruction-and-non-linear-disruption.png | 190 | image/metadata | 0 | F6ED0E5AAD9F | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/37-multi-valued-fuzzy-logic-and-superposition-reasoning.png | 195.2 | image/metadata | 0 | 6ADC6D649832 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/38-non-monotonic-reasoning-and-semantic-drift-self-correction.png | 199.7 | image/metadata | 0 | FB715891C7C4 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/39-semantic-compression-and-liquid-state-context.png | 197.2 | image/metadata | 0 | 262E028FA88F | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/04_Storyboards_31_to_40/40-original-creation-self-generated-paradigms-and-process-plasticity.png | 203.1 | image/metadata | 0 | 1D0143200EC1 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/05_Composite_Sheets_Alternates_and_Contact_Sheets/a_high_detail_infographic_poster_cheat_sheet_sty.png | 2080.9 | image/metadata | 0 | 3F32163EA701 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/05_Composite_Sheets_Alternates_and_Contact_Sheets/a_highly_detailed_infographic_storyboard_poster.png | 2262.5 | image/metadata | 0 | B625B342D2BD | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/05_Composite_Sheets_Alternates_and_Contact_Sheets/a_large_composite_infographic_grid_image_like_a_s.png | 2241.4 | image/metadata | 0 | 75AFD7A16FBD | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/05_Composite_Sheets_Alternates_and_Contact_Sheets/a_large_composite_infographic_poster_image_with_te.png | 2004.3 | image/metadata | 0 | BD37D2BD0CC7 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/05_Composite_Sheets_Alternates_and_Contact_Sheets/a_top_down_description_a_single_image_collage_i.png | 2260.7 | image/metadata | 0 | 7AF5BB1964F3 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/05_Composite_Sheets_Alternates_and_Contact_Sheets/a_wide_image_collage_infographic_sheet_with_10_h.png | 2207.7 | image/metadata | 0 | 9ABD7D6BBC4F | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/05_Composite_Sheets_Alternates_and_Contact_Sheets/Athena-Storyboards-31-to-40-Contact-Sheet.png | 1955 | image/metadata | 0 | DBDB1BBC5833 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/assets/generated-storyboards-2026-08-01/05_Composite_Sheets_Alternates_and_Contact_Sheets/imagegen.png | 1948.6 | image/metadata | 0 | 4B8FC7C2A2F8 | Audited source conversation, reconciliation, or recovered asset. | PNG image asset |
+| athena_context/athena_architecture_design.jsonl | 12.5 | binary/opaque | 0 | F97C37E293A8 | Audited source conversation, reconciliation, or recovered asset. | opaque or toolchain binary artifact |
+| athena_context/audit.json | 16.2 | text/read | 400 | 8CA53DD4C10B | Audited source conversation, reconciliation, or recovered asset. | { |
+| athena_context/AUDIT.md | 5.7 | text/read | 80 | 2961CEA78462 | Audited source conversation, reconciliation, or recovered asset. | # Athena Retrieval Audit |
+| athena_context/geometric_3d_optoelectronic_architecture.jsonl | 601.5 | binary/opaque | 0 | 560936C37159 | Audited source conversation, reconciliation, or recovered asset. | opaque or toolchain binary artifact |
+| athena_context/manifest.json | 1.6 | text/read | 54 | BF121F3D35CC | Audited source conversation, reconciliation, or recovered asset. | { |
+| athena_context/operative_duplex_ai_concept.jsonl | 37.2 | binary/opaque | 0 | 2B50903C9C38 | Audited source conversation, reconciliation, or recovered asset. | opaque or toolchain binary artifact |
+| athena_context/README.md | 1.3 | text/read | 32 | 806EC823F1BE | Audited source conversation, reconciliation, or recovered asset. | # Athena Context Cache |
+| athena_context/reconciliation.json | 1.8 | text/read | 67 | D2CD0F168032 | Audited source conversation, reconciliation, or recovered asset. | { |
+| athena_context/RECONCILIATION.md | 6.8 | text/read | 119 | F0BCFA1AFDD3 | Audited source conversation, reconciliation, or recovered asset. | # Athena Chat and Repository Reconciliation |
+| athena_context/red_phosphor_camera_setup.jsonl | 295.2 | binary/opaque | 0 | B648B5464515 | Audited source conversation, reconciliation, or recovered asset. | opaque or toolchain binary artifact |
 | audit/audit-ledger.yml | 0.9 | text/read | 28 | 2B22ECB03001 | Project file. | schema: ai-system.audit_ledger.v1 |
 | audit/black-swan-protocol.md | 0.9 | text/read | 41 | 22C0AA1AE7F6 | Project file. | # Black Swan Protocol |
 | audit/causality-graph.yml | 0.8 | text/read | 29 | 3D2F07AF0A7D | Project file. | schema: ai-system.causality_graph.v1 |
@@ -115,7 +200,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | cognition/conceptual-leap/README.md | 0.2 | text/read | 8 | 3A07FDE86347 | Project file. | # Conceptual Leap System |
 | cognition/contextual-anchoring/anchoring-protocol.md | 0.4 | text/read | 31 | 20AABA4FC355 | Project file. | # Contextual Anchoring Protocol |
 | cognition/contextual-anchoring/anchor-refresh-protocol.md | 0.4 | text/read | 19 | AEB1D77A1B19 | Project file. | # Anchor Refresh Protocol |
-| cognition/contextual-anchoring/anchor-registry.yml | 0.9 | text/read | 24 | E944F0650C59 | Project file. | schema: ai-system.anchor_registry.v1 |
+| cognition/contextual-anchoring/anchor-registry.yml | 1.3 | text/read | 29 | F1E00EBB6419 | Project file. | schema: ai-system.anchor_registry.v1 |
 | cognition/contextual-anchoring/README.md | 0.2 | text/read | 6 | E855CB245F95 | Project file. | # Self-Sustaining Contextual Anchoring |
 | cognition/correlation/causation-boundary.md | 0.5 | text/read | 26 | 084A714082D0 | Project file. | # Causation Boundary |
 | cognition/correlation/correlation-engine.md | 0.6 | text/read | 36 | DD5B1182E341 | Project file. | # Correlation Engine |
@@ -144,7 +229,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | cognition/non-linear-disruption/README.md | 0.2 | text/read | 6 | 6879B7C438EB | Project file. | # Non-Linear Problem Disruption |
 | cognition/non-monotonic-reasoning/non-monotonic-protocol.md | 0.6 | text/read | 30 | 9117A20BF2DA | Project file. | # Non-Monotonic Reasoning Protocol |
 | cognition/non-monotonic-reasoning/README.md | 0.3 | text/read | 6 | 409673A2D92D | Project file. | # Non-Monotonic Reasoning |
-| cognition/non-monotonic-reasoning/revision-ledger.yml | 0.5 | text/read | 16 | E7353F66E7D7 | Project file. | schema: ai-system.revision_ledger.v1 |
+| cognition/non-monotonic-reasoning/revision-ledger.yml | 0.9 | text/read | 22 | B8C4A6F87747 | Project file. | schema: ai-system.revision_ledger.v1 |
 | cognition/original-creation/creation-ledger.yml | 0.4 | text/read | 12 | 14FB54A86AB6 | Project file. | schema: ai-system.creation_ledger.v1 |
 | cognition/original-creation/original-creation-protocol.md | 0.5 | text/read | 33 | 340ED6C46C1F | Project file. | # Original Creation Protocol |
 | cognition/original-creation/README.md | 0.2 | text/read | 6 | 09FE3EE19291 | Project file. | # True Dynamic Original Creation |
@@ -179,11 +264,16 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | cognition/templates/council-cognition-round.md | 0.3 | text/read | 28 | E695E3577ADC | Project file. | # Council Cognition Round |
 | cognition/templates/fuzzy-claim.md | 0.2 | text/read | 26 | D5E3C8EE6585 | Project file. | # Fuzzy Claim |
 | cognition/templates/hyperedge-record.md | 0.1 | text/read | 18 | 09EF5AEB1EE7 | Project file. | # Hyperedge Record |
-| context.md | 52.4 | text/read | 1389 | 7DDFDC690C83 | Project file. | # Project Athena Context |
+| context.md | 54.7 | text/read | 1436 | 9F6A36A1443A | Project file. | # Project Athena Context |
 | continuity/chat-log.schema.json | 0.7 | text/read | 19 | 1CAFA276A1CC | Project file. | { |
 | continuity/chat-logs/.gitkeep | 0 | binary/opaque | 0 | 01BA4719C80B | Project file. | opaque or toolchain binary artifact |
 | continuity/chat-logs/CHAT-20260603-154809-codex-continuity-causality-and-memory-expansion.md | 0.7 | text/read | 29 | 5F26A49A3E73 | Project file. | # CHAT-20260603-154809: Continuity causality and memory expansion |
 | continuity/chat-logs/README.md | 0.4 | text/read | 19 | 0CB2EE54D4F7 | Project file. | # Chat Logs |
+| continuity/chat-repository-sync/latest-context-capsule.json | 14.8 | text/read | 277 | A66E0972A44A | Project file. | { |
+| continuity/chat-repository-sync/latest-context-capsule.md | 163.2 | text/read | 3750 | C54F8BA3D4B9 | Project file. | # Project Athena Repository Context Capsule |
+| continuity/chat-repository-sync/promotion-ledger.jsonl | 2 | binary/opaque | 0 | F442BC3E3B77 | Project file. | opaque or toolchain binary artifact |
+| continuity/chat-repository-sync/README.md | 1.2 | text/read | 31 | AFE29B10C767 | Project file. | # Chat Repository Sync |
+| continuity/chat-repository-sync/sync-policy.json | 2.2 | text/read | 71 | 96C51812FA1E | Project file. | { |
 | continuity/continuity-protocol.md | 0.8 | text/read | 49 | 7DDE8753C871 | Project file. | # Continuity Protocol |
 | continuity/distilled-context/project-continuity.md | 0.7 | text/read | 22 | 2AC1C71074F1 | Project file. | # Project Continuity |
 | continuity/distilled-context/README.md | 0.3 | text/read | 12 | 552BE1F16063 | Project file. | # Distilled Context |
@@ -205,10 +295,10 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | counterfactuals/counterfactual-ledger.yml | 0.9 | text/read | 19 | C8647A68AB3B | Project file. | schema: ai-system.counterfactual_ledger.v1 |
 | counterfactuals/deep-counterfactual-protocol.md | 0.4 | text/read | 22 | FD4BE66B9888 | Project file. | # Deep Counterfactual Protocol |
 | counterfactuals/README.md | 0.2 | text/read | 12 | C8531BBE03E8 | Project file. | # Counterfactual Thinking |
-| diagnostics/correction-queue.md | 1.1 | text/read | 10 | E65C44A3B98B | Diagnostic report or issue queue. | # Correction Queue |
+| diagnostics/correction-queue.md | 1.3 | text/read | 11 | 8F26AF3E06DF | Diagnostic report or issue queue. | # Correction Queue |
 | diagnostics/issue-ledger.md | 0.7 | text/read | 32 | 0ADEE2FE4652 | Diagnostic report or issue queue. | # Issue Ledger |
-| diagnostics/reports/latest-integrity-report.json | 0.3 | text/read | 11 | 57246D78D005 | Diagnostic report or issue queue. | { |
-| diagnostics/reports/latest-integrity-report.md | 0.2 | text/read | 10 | 4B49FC32618F | Diagnostic report or issue queue. | # AI Integrity Report |
+| diagnostics/reports/latest-integrity-report.json | 0.3 | text/read | 11 | 1A9EDD2FA575 | Diagnostic report or issue queue. | { |
+| diagnostics/reports/latest-integrity-report.md | 0.2 | text/read | 10 | EB6F297FD986 | Diagnostic report or issue queue. | # AI Integrity Report |
 | diagnostics/reports/README.md | 0.1 | text/read | 5 | 1BA8C3E6A886 | Diagnostic report or issue queue. | # Diagnostics Reports |
 | diagnostics/resolvable-issues.md | 2.3 | text/read | 20 | FD3311E8E959 | Diagnostic report or issue queue. | # Resolvable Issues |
 | diagnostics/restore-readiness.md | 0.8 | text/read | 33 | 18511358F8AE | Diagnostic report or issue queue. | # Restore Readiness |
@@ -220,15 +310,17 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | engine/checklists/diagnostic-cycle.md | 0.7 | text/read | 37 | 7D5AB095753D | Athena operation-cycle report or engine history. | # Diagnostic Cycle Checklist |
 | engine/checklists/engineering-cycle.md | 0.7 | text/read | 27 | 02A4E6CE4A73 | Athena operation-cycle report or engine history. | # Engineering Cycle Checklist |
 | engine/checklists/full-reasoning-chain.md | 1.5 | text/read | 61 | 9449431FA737 | Athena operation-cycle report or engine history. | # Full Reasoning Chain Checklist |
-| engine/cycle-history.csv | 1.3 | text/read | 12 | A781862C76DF | Athena operation-cycle report or engine history. | "cycle_id","started","ended","duration_sec","status","step_count","notes" |
+| engine/cycle-history.csv | 1.6 | text/read | 14 | 92E2FF494867 | Athena operation-cycle report or engine history. | "cycle_id","started","ended","duration_sec","status","step_count","notes" |
 | engine/cycle-reports/ATHENA-BRAINSTORM-CYCLE-20260710-002.md | 1.9 | text/read | 61 | 952FD0365D25 | Athena operation-cycle report or engine history. | # Athena Brainstorm Cycle 2026-07-10 002 |
+| engine/cycle-reports/ATHENA-CHAT-RECONCILIATION-CYCLE-20260801-004.md | 5.3 | text/read | 131 | A63DB2F35CD2 | Athena operation-cycle report or engine history. | # Athena Cycle Report: ATHENA-CHAT-RECONCILIATION-CYCLE-20260801-004 |
+| engine/cycle-reports/ATHENA-CHAT-REPOSITORY-SYNC-CYCLE-20260801-005.md | 4.9 | text/read | 150 | 2CFFDEE1BB62 | Athena operation-cycle report or engine history. | # Athena Cycle Report: Chat Repository And GitHub Reconciliation |
 | engine/cycle-reports/ATHENA-DECISION-CYCLE-20260710-003.md | 3.1 | text/read | 85 | 96BDE86F2606 | Athena operation-cycle report or engine history. | # Athena Decision Cycle 2026-07-10 003 |
 | engine/cycle-reports/ATHENA-TEST-RUN-20260710-001.md | 3.9 | text/read | 97 | 4369883C2285 | Athena operation-cycle report or engine history. | # Athena Test Run 2026-07-10 001 |
-| engine/cycle-reports/latest-cycle-report.json | 3.6 | text/read | 84 | 8CD9237C5667 | Athena operation-cycle report or engine history. | { |
-| engine/cycle-reports/latest-cycle-report.md | 0.7 | text/read | 20 | AB01A2A230C7 | Athena operation-cycle report or engine history. | # AI Operation Cycle Report |
+| engine/cycle-reports/latest-cycle-report.json | 3.6 | text/read | 84 | 88E7A3401914 | Athena operation-cycle report or engine history. | { |
+| engine/cycle-reports/latest-cycle-report.md | 0.7 | text/read | 20 | BDF023308453 | Athena operation-cycle report or engine history. | # AI Operation Cycle Report |
 | engine/cycle-reports/README.md | 0.2 | text/read | 7 | 88D8C80AE5B6 | Athena operation-cycle report or engine history. | # Cycle Reports |
-| engine/operation-cycle.md | 1.7 | text/read | 45 | 9D2BF8B41A5A | Athena operation-cycle report or engine history. | # Operation Cycle |
-| engine/order-of-operations.md | 4.5 | text/read | 121 | 07FAED567A03 | Athena operation-cycle report or engine history. | # Order Of Operations |
+| engine/operation-cycle.md | 1.7 | text/read | 46 | FA33203BD28E | Athena operation-cycle report or engine history. | # Operation Cycle |
+| engine/order-of-operations.md | 4.6 | text/read | 121 | A14C983959B2 | Athena operation-cycle report or engine history. | # Order Of Operations |
 | engine/README.md | 1.5 | text/read | 37 | 34D206CED738 | Athena operation-cycle report or engine history. | # AI Operation Engine |
 | engine/routine-catalog.yml | 3.2 | text/read | 93 | 0176E577B841 | Athena operation-cycle report or engine history. | schema: ai-system.routine_catalog.v1 |
 | forensics/claim-catalog.csv | 2.8 | text/read | 15 | 4CE08CC95624 | Evidence register or verification output. | "claim_id","summary","status","confidence","owner","notes" |
@@ -245,17 +337,17 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | forensics/role-packets/operations-packet.md | 0.6 | text/read | 20 | BFC5805BD12F | Evidence register or verification output. | # Operations Packet |
 | forensics/role-packets/README.md | 0.4 | text/read | 10 | 6593947B3EBE | Evidence register or verification output. | # Role Packets |
 | forensics/verification-protocol.md | 0.9 | text/read | 30 | 8B5DFFE615ED | Evidence register or verification output. | # Forensic Verification Protocol |
-| forensics/verification-reports/latest-forensic-verification.json | 0.4 | text/read | 16 | F429714F565E | Evidence register or verification output. | { |
-| forensics/verification-reports/latest-forensic-verification.md | 0.3 | text/read | 15 | 05F393F024E1 | Evidence register or verification output. | # Forensic Verification Report |
+| forensics/verification-reports/latest-forensic-verification.json | 0.4 | text/read | 16 | CA0E4D613B12 | Evidence register or verification output. | { |
+| forensics/verification-reports/latest-forensic-verification.md | 0.3 | text/read | 15 | 4177FA71CE1A | Evidence register or verification output. | # Forensic Verification Report |
 | forensics/verification-reports/README.md | 0.1 | text/read | 5 | D046277C560B | Evidence register or verification output. | # Verification Reports |
-| governance/absolutes.md | 1.3 | text/read | 36 | A74BDE82E62F | Project file. | # Absolutes |
+| governance/absolutes.md | 1.9 | text/read | 48 | 57C84621E6FE | Project file. | # Absolutes |
 | governance/change-control.md | 0.7 | text/read | 34 | 38CDDFABF142 | Project file. | # Change Control |
 | governance/error-correction.md | 0.9 | text/read | 40 | 05A75C718126 | Project file. | # Error Correction |
 | governance/policy-matrix.yml | 1.3 | text/read | 52 | 61C9ECFC93C5 | Project file. | schema: ai-system.policy_matrix.v1 |
 | governance/review-gates.md | 0.7 | text/read | 31 | 0E9E313A8C1F | Project file. | # Review Gates |
 | governance/self-correction.md | 1 | text/read | 33 | 659E777BC0B8 | Project file. | # Self Correction |
 | handoff/CHANGELOG.md | 1.7 | text/read | 14 | DC5A090B92DE | Project file. | # AI System Changelog |
-| handoff/CURRENT_STATE.md | 1.3 | text/read | 38 | 90C3B8FDBF43 | Project file. | # Current State |
+| handoff/CURRENT_STATE.md | 2.1 | text/read | 56 | 612AF95B1196 | Project file. | # Current State |
 | handoff/NEXT_ACTIONS.md | 1 | text/read | 23 | 85C879E00BF5 | Project file. | # Next Actions |
 | handoff/SESSION_TEMPLATE.md | 0.2 | text/read | 31 | 81C78AF1657B | Project file. | # Session Handoff Template |
 | handoff/sessions/README.md | 0.2 | text/read | 8 | 8BF6562548CA | Project file. | # Session Handoffs |
@@ -263,7 +355,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | identity/constitution.md | 1 | text/read | 24 | B44AD8CD270E | Project identity and mission context. | # Constitution |
 | identity/mission-and-scope.md | 1.2 | text/read | 43 | 5DEC8F3AFD73 | Project identity and mission context. | # Mission And Scope |
 | identity/README.md | 1.1 | text/read | 39 | D6A0D8261D77 | Project identity and mission context. | # Identity Layer |
-| integration/adapter-contract.md | 0.8 | text/read | 51 | 49288272BEAB | Project file. | # Adapter Contract |
+| integration/adapter-contract.md | 2.1 | text/read | 81 | 4E0961B1ED47 | Project file. | # Adapter Contract |
 | integration/adapter-registry.yml | 1.7 | text/read | 58 | 9EBBFF142D0D | Project file. | schema: ai-system.adapter_registry.v1 |
 | integration/ai-ingestion-guide.md | 1.9 | text/read | 65 | DDD6EAD39B58 | Project file. | # AI Ingestion Guide |
 | integration/external-tool-checklist.md | 0.5 | text/read | 23 | 29FC709570D4 | Project file. | # External Tool Checklist |
@@ -275,18 +367,18 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | learning/meta-learning.md | 0.7 | text/read | 32 | D37B9492B158 | Project file. | # Meta-Learning |
 | learning/plasticity-policy.md | 0.6 | text/read | 24 | 621BACAF26A5 | Project file. | # Real-Time Local Learning And Plasticity |
 | learning/README.md | 0.5 | text/read | 19 | AA5088C54E30 | Project file. | # Learning System |
-| manifests/capability-matrix.yml | 10.7 | text/read | 225 | 6096F72B2879 | Machine-readable system manifest or registry export. | schema: ai-system.capability_matrix.v1 |
-| manifests/generated-ai-index.json | 80.6 | text/read | 909 | D5A821AF6023 | Machine-readable system manifest or registry export. | { |
-| manifests/ingestion-order.yml | 3.1 | text/read | 76 | 6A6FD455A2AD | Machine-readable system manifest or registry export. | schema: ai-system.ingestion_order.v1 |
-| manifests/system-manifest.json | 4.3 | text/read | 111 | 51424586D796 | Machine-readable system manifest or registry export. | { |
+| manifests/capability-matrix.yml | 12.8 | text/read | 264 | 1548A3DAD0DD | Machine-readable system manifest or registry export. | schema: ai-system.capability_matrix.v1 |
+| manifests/generated-ai-index.json | 96.1 | text/read | 1026 | 87F4085675A1 | Machine-readable system manifest or registry export. | { |
+| manifests/ingestion-order.yml | 4.1 | text/read | 94 | 7FB6F47E05B6 | Machine-readable system manifest or registry export. | schema: ai-system.ingestion_order.v1 |
+| manifests/system-manifest.json | 6.5 | text/read | 149 | 99EE02F15376 | Machine-readable system manifest or registry export. | { |
 | manifests/tool-index.yml | 3.1 | text/read | 73 | DB56A5015291 | Machine-readable system manifest or registry export. | schema: ai-system.tool_index.v1 |
-| memory/athena-memory-map.md | 3.3 | text/read | 58 | F8031261CB31 | Athena memory and recall guidance. | # Athena Memory Map |
+| memory/athena-memory-map.md | 5.4 | text/read | 87 | 3E350B0C993A | Athena memory and recall guidance. | # Athena Memory Map |
 | memory/context-iq/contextual-work-iq.md | 1.5 | text/read | 57 | F82EF75B3257 | Athena memory and recall guidance. | # Contextual Work IQ |
 | memory/decision-ledger.md | 0.8 | text/read | 26 | 5BFA5722AC85 | Athena memory and recall guidance. | # Decision Ledger |
 | memory/facts.md | 0.9 | text/read | 28 | 927AFFB6350A | Athena memory and recall guidance. | # Facts |
 | memory/memory-architecture.md | 1.1 | text/read | 59 | CD2F2FDFF32D | Athena memory and recall guidance. | # Memory Architecture |
 | memory/open-questions.md | 0.8 | text/read | 20 | D35B7F41A7CC | Athena memory and recall guidance. | # Open Questions |
-| memory/project-memory.md | 1.7 | text/read | 41 | 97712342FB95 | Athena memory and recall guidance. | # Project Memory |
+| memory/project-memory.md | 2.6 | text/read | 54 | 267B18C86EC0 | Athena memory and recall guidance. | # Project Memory |
 | memory/pruning-policy.md | 0.7 | text/read | 36 | E0A1307AD238 | Athena memory and recall guidance. | # Pruning Policy |
 | memory/user-and-team-context.md | 0.7 | text/read | 25 | 1367A9F4DC5B | Athena memory and recall guidance. | # User And Team Context |
 | model-ops/evaluation-rubric.yml | 1.9 | text/read | 36 | BEFAA1B342FC | Project file. | schema: ai-system.model_evaluation_rubric.v1 |
@@ -305,7 +397,7 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | modules/wow-server-project.md | 1 | text/read | 42 | F317D119E38A | Project file. | # Module: WoW Server Project |
 | navigation/architecture-map.md | 1 | text/read | 42 | 61407C42B30B | Project map/navigation context. | # Architecture Map |
 | navigation/dependency-map.md | 0.9 | text/read | 26 | 24FBF9B54B0E | Project map/navigation context. | # Dependency Map |
-| navigation/generated/project-map.json | 5.3 | text/read | 145 | D38C88BEE618 | Project map/navigation context. | { |
+| navigation/generated/project-map.json | 5.3 | text/read | 145 | 48A026724298 | Project map/navigation context. | { |
 | navigation/generated/README.md | 0.1 | text/read | 8 | E3B7C4207B95 | Project map/navigation context. | # Generated Navigation Maps |
 | navigation/interaction-map.md | 0.6 | text/read | 36 | FAB97834FFD5 | Project map/navigation context. | # Interaction Map |
 | navigation/project-map.md | 2.2 | text/read | 48 | C475EE0FAA5C | Project map/navigation context. | # Project Map |
@@ -957,8 +1049,8 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | observability/probes.yml | 0.7 | text/read | 24 | A876D6623C82 | Log intelligence or observability output. | schema: ai-system.probes.v1 |
 | observability/reports/.gitkeep | 0 | binary/opaque | 0 | 01BA4719C80B | Log intelligence or observability output. | opaque or toolchain binary artifact |
 | observability/reports/latest-live-probe.json | 0.5 | text/read | 14 | 26FFB1CB5C10 | Log intelligence or observability output. | { |
-| observability/reports/latest-log-intelligence.json | 0.6 | text/read | 21 | 1C145E9EA7E5 | Log intelligence or observability output. | { |
-| observability/reports/latest-log-intelligence.md | 0.3 | text/read | 12 | A5444DAD9078 | Log intelligence or observability output. | # Log Intelligence Report |
+| observability/reports/latest-log-intelligence.json | 0.6 | text/read | 21 | E13C44785130 | Log intelligence or observability output. | { |
+| observability/reports/latest-log-intelligence.md | 0.3 | text/read | 12 | A4C5647833E8 | Log intelligence or observability output. | # Log Intelligence Report |
 | observability/reports/LIVE-PROBE-LOG.md | 0.4 | text/read | 3 | CEDCF8C89541 | Log intelligence or observability output. | - 2026-06-03T15:31:52.2380250+10:00: docker_available=False; server_path=C:\Users\aesir\OneDrive\Desktop\WoW-Backups\2026-05-30_2035\WoW-Ser |
 | observability/reports/README.md | 0.2 | text/read | 11 | B3A4D714C912 | Log intelligence or observability output. | # Observability Reports |
 | observability/telemetry-model.md | 0.6 | text/read | 39 | 3AE41694B64B | Log intelligence or observability output. | # Telemetry Model |
@@ -997,12 +1089,17 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | Plan/AI-OS-v8.0-Constitution-and-Identity-Charter.md | 5.9 | text/read | 303 | 088F9CBCCC5E | Top-priority Athena planning source. | # AI-OS v8.0 |
 | Plan/AI-OS-v9.0-Governance-Manual-and-Operating-Procedures.md | 0.9 | text/read | 25 | 51431698C90E | Top-priority Athena planning source. | # AI-OS v9.0 |
 | Plan/Athena Memory Architecture v1.0.docx | 13.5 | docx/extracted | 16 | 9A9425FC855C | Top-priority Athena planning source. | Athena Memory Architecture v1.0 Institutional Memory, Workspace Memory, and Call Memory Purpose Athena is designed as a  |
-| Plan/context.md | 21.7 | text/read | 539 | 3FDB159A4F0D | Top-priority Athena planning source. | # Plan Folder Context |
+| Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md | 9.5 | text/read | 251 | 5596461DFBFE | Top-priority Athena planning source. | # Athena Distributed Cognitive Fabric |
+| Plan/CHAT_DERIVED_CONCEPT_REGISTER.md | 14 | text/read | 408 | 22E049CBFDE4 | Top-priority Athena planning source. | # Chat-Derived Concept Register |
+| Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md | 5.3 | text/read | 138 | 258271B26836 | Top-priority Athena planning source. | # Chat And Repository Continuity Pipeline |
+| Plan/context.md | 26.2 | text/read | 635 | 06B7990D8128 | Top-priority Athena planning source. | # Plan Folder Context |
 | Plan/define.txt | 4.7 | text/read | 177 | 9CD99E3CD433 | Top-priority Athena planning source. | define: |
-| Plan/FEATURE_ROADMAP.md | 2.2 | text/read | 39 | 9431C97D2607 | Top-priority Athena planning source. | # FEATURE ROADMAP |
+| Plan/FEATURE_ROADMAP.md | 3.3 | text/read | 46 | D3F5485E2F80 | Top-priority Athena planning source. | # FEATURE ROADMAP |
 | Plan/Hardware plan.md | 18.6 | text/read | 642 | 7FD6C9AAD674 | Top-priority Athena planning source. | Im working in all of it, ive designed tenors cpus that are 3d and have github like states to reverse into, more that binary aswell, so its d |
 | Plan/Hardware specifics.md | 1.7 | text/read | 1 | A0E7DE946EE3 | Top-priority Athena planning source. | Instruction memory, data memory, execution memory, live/hot memory, live ram, execution ram, dram, system level cache, media engine, hardwar |
-| Plan/IMPLEMENTATION_MATRIX.md | 3.7 | text/read | 53 | CC83E048B511 | Top-priority Athena planning source. | # IMPLEMENTATION MATRIX |
+| Plan/IMPLEMENTATION_MATRIX.md | 7.2 | text/read | 69 | B27BD2587E80 | Top-priority Athena planning source. | # IMPLEMENTATION MATRIX |
+| Plan/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md | 11 | text/read | 296 | C28F5189750A | Top-priority Athena planning source. | # Lightcore Physical Execution Profile |
+| Plan/MCAI_ A roadmap to cognition management | 1833.6 | binary/opaque | 0 | F056D788BDDD | Top-priority Athena planning source. | opaque or toolchain binary artifact |
 | Plan/Nexus_V_Adaptive_Physical_Execution_Fabric_v0_1.docx | 44.4 | docx/extracted | 18 | 8F4FD193CDDC | Top-priority Athena planning source. | Nexus-V Adaptive Physical Execution Fabric v0.1 Physical execution-domain routing, adaptive path selection, and self-aud |
 | Plan/Nexus_V_Advanced_Execution_Architecture_Addendum_v0_3.docx | 46.7 | docx/extracted | 17 | 0ACB9A4956E8 | Top-priority Athena planning source. | Nexus-V Advanced Execution Architecture Addendum v0.3 Additive RISC-like, Pipeline, Micro-op, Superscalar, OoO, SMT, and |
 | Plan/Nexus_V_Aegis_Phase1_Enclave_Commit_Gate_and_MINREP_v0_1.docx | 42.4 | docx/extracted | 17 | CA6A577ED905 | Top-priority Athena planning source. | Nexus-V Aegis Phase 1 Enclave, Commit Gate, ATTEST, and MINREP Specification v0.1 - Secure commit authorization, session |
@@ -1040,25 +1137,28 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | Plan/NVISC_NVVM_Compiler_Bridge_Toolchain_v0_1.docx | 40.4 | docx/extracted | 17 | 96C47865EA47 | Top-priority Athena planning source. | NVISC / NVVM Compiler Bridge Toolchain Specification v0.1 NVASM -&gt; Semantic Mutation Graph -&gt; NVIR -&gt; NVOBJ -&g |
 | Plan/nvisc_toolchain_bridge_v0_1_sources.zip | 8 | zip/opened | 14 | 943279A5D69B | Top-priority Athena planning source. | nvisc_toolchain_bridge_v0_1/, nvisc_toolchain_bridge_v0_1/README.md, nvisc_toolchain_bridge_v0_1/examples/, nvisc_toolchain_bridge_v0_1/exam |
 | Plan/NVVM_Virtual_Machine_Architecture_and_3D_Routing_Specification_v0_1.docx | 49.4 | docx/extracted | 18 | BB2514E693E7 | Top-priority Athena planning source. | NVVM Virtual Machine Architecture and 3D Routing Specification v0.1 — For NVIR Execution, NVRT Scheduling, G.ROUTE Emula |
-| Plan/OASIS_ATHENA_AGENT_MODEL.md | 4.5 | text/read | 122 | 0DA19A838745 | Top-priority Athena planning source. | # OASIS Athena Agent Model |
+| Plan/OASIS_ATHENA_AGENT_MODEL.md | 6.9 | text/read | 160 | D24FE045993E | Top-priority Athena planning source. | # OASIS Athena Agent Model |
+| Plan/OASIS_REALITY_COMPILER.md | 11.1 | text/read | 332 | CF52F1FCF2CA | Top-priority Athena planning source. | # OASIS Reality Compiler |
 | Plan/Odysseus-Nexus-Ontology-Extraction-and-Unification-Specification.md | 3.5 | text/read | 266 | 48D67375666B | Top-priority Athena planning source. | # ODYSSEUS NEXUS |
+| Plan/OPERATIVE_DUPLEX_AI_MODEL.md | 9.8 | text/read | 291 | E1AE1FD5109E | Top-priority Athena planning source. | # Operative Duplex AI Model |
 | Plan/Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md | 4.1 | text/read | 380 | 71E459F5D496 | Top-priority Athena planning source. | # PROJECT ATHENA |
 | Plan/QUALITY_PLAN.md | 1.7 | text/read | 53 | 760493FE3000 | Top-priority Athena planning source. | # QUALITY PLAN |
-| Plan/ROADMAP.md | 3.1 | text/read | 100 | 3AEFEA0209A0 | Top-priority Athena planning source. | # ROADMAP |
+| Plan/ROADMAP.md | 5.2 | text/read | 144 | 3F02739C3E0D | Top-priority Athena planning source. | # ROADMAP |
 | Plan/system plan.md | 9 | text/read | 802 | 78E1FD57412E | Top-priority Athena planning source. | # AI-OS v1.0 |
-| Plan/TODO.md | 1.6 | text/read | 46 | 18876D99227B | Top-priority Athena planning source. | # TODO |
-| Plan/TODO_STATUS.md | 1.7 | text/read | 33 | 80A0E1E64278 | Top-priority Athena planning source. | # TODO_STATUS |
+| Plan/TODO.md | 2.6 | text/read | 64 | 5AAFA8A1BE75 | Top-priority Athena planning source. | # TODO |
+| Plan/TODO_STATUS.md | 2.3 | text/read | 36 | 85A7F92FCA86 | Top-priority Athena planning source. | # TODO_STATUS |
 | playbooks/add-feature.md | 0.6 | text/read | 22 | 8FFF7C151DCC | Project file. | # Playbook: Add Feature |
 | playbooks/diagnose-server.md | 0.6 | text/read | 27 | 46B2D75D971B | Project file. | # Playbook: Diagnose Server |
 | playbooks/first-contact.md | 0.4 | text/read | 24 | 03C55DED8FCF | Project file. | # Playbook: First Contact |
 | playbooks/snapshot-live-state.md | 0.7 | text/read | 33 | 9F33339FD600 | Project file. | # Playbook: Snapshot Live State |
 | playbooks/update-game-client.md | 0.7 | text/read | 29 | 18D556127D62 | Project file. | # Playbook: Update Game Client |
 | projects/general-ai-os/project-brain.md | 0.5 | text/read | 26 | 703963F9C9F6 | Project registry or legacy project brain. | # Project Brain: General AI-OS |
+| projects/project-athena/capsule.json | 3.3 | text/read | 132 | 51E8C1FAD4D1 | Project registry or legacy project brain. | { |
 | projects/project-brain-template.md | 0.4 | text/read | 38 | A2723FB89F6B | Project registry or legacy project brain. | # Project Brain Template |
-| projects/project-registry.yml | 1.5 | text/read | 54 | 8B9FA75A62DF | Project registry or legacy project brain. | schema: ai-system.project_registry.v1 |
+| projects/project-registry.yml | 1.5 | text/read | 55 | B81F0AA9BB25 | Project registry or legacy project brain. | schema: ai-system.project_registry.v1 |
 | projects/README.md | 0.2 | text/read | 17 | 5EA48F016A26 | Project registry or legacy project brain. | # Projects |
 | projects/wow-backup-stack/project-brain.md | 0.7 | text/read | 33 | A15D0BAEF518 | Project registry or legacy project brain. | # Project Brain: WoW Backup Stack |
-| README.md | 2.1 | text/read | 62 | B38387E90A53 | Project file. | # Project Athena |
+| README.md | 2.7 | text/read | 72 | CD11135CB220 | Project file. | # Project Athena |
 | registries/file-ownership.yml | 1.3 | text/read | 31 | 19E0AEA8B57D | Project file. | schema: ai-system.file_ownership.v1 |
 | registries/interfaces.yml | 1 | text/read | 43 | 5036E8A707E7 | Project file. | schema: ai-system.interfaces.v1 |
 | registries/layers.yml | 2.2 | text/read | 73 | 109AB871A7E2 | Project file. | schema: ai-system.layers.v1 |
@@ -1095,8 +1195,11 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | runtime/runtime-state-machine.md | 0.3 | text/read | 20 | 17D00F2D4592 | Project file. | # Runtime State Machine |
 | runtime/service-map.yml | 0.8 | text/read | 29 | 90624985762E | Project file. | schema: ai-system.runtime_service_map.v1 |
 | schemas/agent.schema.json | 0.7 | text/read | 19 | 883712ED1BBE | Validation schema. | { |
+| schemas/athena-adapter.schema.json | 4.4 | text/read | 147 | 28A01C9B7832 | Validation schema. | { |
 | schemas/athena-task-intake.schema.json | 2.6 | text/read | 110 | 74EA389D0ED2 | Validation schema. | { |
 | schemas/capability.schema.json | 0.6 | text/read | 16 | 7A0CE00000EF | Validation schema. | { |
+| schemas/chat-promotion.schema.json | 1.8 | text/read | 42 | 2F496BCF3C23 | Validation schema. | { |
+| schemas/chat-source-bundle.schema.json | 2 | text/read | 58 | 8FB82DA58439 | Validation schema. | { |
 | schemas/claim-record.schema.json | 0.5 | text/read | 16 | E1A08FC93C47 | Validation schema. | { |
 | schemas/cognition-output.schema.json | 0.9 | text/read | 26 | EEDC42164F58 | Validation schema. | { |
 | schemas/cycle-report.schema.json | 0.9 | text/read | 29 | C61618CD2B74 | Validation schema. | { |
@@ -1106,30 +1209,35 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | schemas/message.schema.json | 0.8 | text/read | 23 | 5F8590D89713 | Validation schema. | { |
 | schemas/observation.schema.json | 0.6 | text/read | 17 | 0F79AA423070 | Validation schema. | { |
 | schemas/open-model-source.schema.json | 0.8 | text/read | 28 | 0E62CE5C0B0D | Validation schema. | { |
+| schemas/operative-action.schema.json | 2.7 | text/read | 82 | 79D272DCD9F8 | Validation schema. | { |
 | schemas/project.schema.json | 0.6 | text/read | 18 | 63C531F1E0C1 | Validation schema. | { |
+| schemas/project-capsule.schema.json | 3.6 | text/read | 110 | 2062A1CBDE60 | Validation schema. | { |
+| schemas/repository-context-capsule.schema.json | 2.2 | text/read | 59 | 2E64B2EB502B | Validation schema. | { |
 | schemas/system-manifest.schema.json | 0.8 | text/read | 27 | 634B3E139EA7 | Validation schema. | { |
 | schemas/task.schema.json | 0.8 | text/read | 21 | 413DE0E1F908 | Validation schema. | { |
 | schemas/work-item.schema.json | 0.7 | text/read | 19 | 6E6BC485F04E | Validation schema. | { |
 | sensory/baselines/README.md | 0.2 | text/read | 7 | D390F43110B7 | Scan, baseline, or watched-state output. | # Baselines |
-| sensory/baselines/watched-state-baseline.csv | 192.8 | text/read | 1232 | 20B2228C60F6 | Scan, baseline, or watched-state output. | "path","hash","last_write","bytes" |
+| sensory/baselines/watched-state-baseline.csv | 224.4 | text/read | 1393 | 51D077F9C712 | Scan, baseline, or watched-state output. | "path","hash","last_write","bytes" |
 | sensory/health-model.md | 0.7 | text/read | 25 | BB13D03ED190 | Scan, baseline, or watched-state output. | # Health Model |
-| sensory/scans/latest-scan.json | 7.2 | text/read | 156 | 2E20F54A6F58 | Scan, baseline, or watched-state output. | { |
-| sensory/scans/latest-watched-changes.json | 12.4 | text/read | 234 | 4C57926DE90B | Scan, baseline, or watched-state output. | { |
-| sensory/scans/latest-watched-changes.md | 1.5 | text/read | 52 | 97DB53430C4B | Scan, baseline, or watched-state output. | # Watched State Changes |
+| sensory/scans/latest-scan.json | 9.5 | text/read | 151 | 95A8E324CA63 | Scan, baseline, or watched-state output. | { |
+| sensory/scans/latest-watched-changes.json | 15 | text/read | 264 | 1D92A561AA75 | Scan, baseline, or watched-state output. | { |
+| sensory/scans/latest-watched-changes.md | 2.9 | text/read | 57 | C0227C0C6C70 | Scan, baseline, or watched-state output. | # Watched State Changes |
 | sensory/scans/README.md | 0.3 | text/read | 11 | 4140E7FC2409 | Scan, baseline, or watched-state output. | # Scan Outputs |
-| sensory/scans/SCAN-LOG.md | 2.1 | text/read | 31 | E64823F7C7D8 | Scan, baseline, or watched-state output. | - 2026-06-03T15:16:00.4962690+10:00: layers=7; signals=5; free_gb=58.5 |
+| sensory/scans/SCAN-LOG.md | 2.2 | text/read | 33 | 98F7253E9A6F | Scan, baseline, or watched-state output. | - 2026-06-03T15:16:00.4962690+10:00: layers=7; signals=5; free_gb=58.5 |
 | sensory/signals.md | 0.8 | text/read | 31 | C48694B428CA | Scan, baseline, or watched-state output. | # Signals |
-| START-HERE.md | 2.6 | text/read | 80 | DE0214EC0074 | Project file. | # Start Here |
+| START-HERE.md | 3 | text/read | 87 | ED92BA8A8D0A | Project file. | # Start Here |
 | templates/athena-cycle-report.md | 0.8 | text/read | 65 | 5E09D2189102 | Reusable Athena workflow template. | # Athena Cycle Report: [Cycle ID] |
 | templates/athena-task-intake.md | 1.6 | text/read | 80 | 25736B0898A2 | Reusable Athena workflow template. | # Athena Task Intake: [Title] |
 | templates/experiment-card.md | 0.1 | text/read | 18 | 3470CC28100F | Reusable Athena workflow template. | # Experiment: [Title] |
 | templates/handoff.md | 0.1 | text/read | 14 | 5C47FC7628B8 | Reusable Athena workflow template. | # Handoff |
 | templates/issue-card.md | 0.1 | text/read | 20 | 77C39D7483E8 | Reusable Athena workflow template. | # Issue: [Title] |
 | templates/module-card.md | 0.2 | text/read | 22 | 8419EEFE4C72 | Reusable Athena workflow template. | # Module: [Name] |
-| tools/Export-AISystemManifest.ps1 | 4 | text/read | 82 | D14971CC4BD2 | Automation/tooling script or tool documentation. | param( |
+| tools/Export-AISystemManifest.ps1 | 4.4 | text/read | 89 | 7828B341E934 | Automation/tooling script or tool documentation. | param( |
+| tools/Export-AthenaChatContext.ps1 | 7.9 | text/read | 197 | FF0469F0DD8F | Automation/tooling script or tool documentation. | param( |
 | tools/Export-ProjectMap.ps1 | 3.1 | text/read | 92 | 5774274C72B0 | Automation/tooling script or tool documentation. | param( |
+| tools/Import-AthenaChatExport.ps1 | 12.9 | text/read | 353 | 86E7A1350B1E | Automation/tooling script or tool documentation. | param( |
 | tools/Invoke-AIForensicVerification.ps1 | 6.2 | text/read | 170 | 0A1A1A00A8F6 | Automation/tooling script or tool documentation. | param( |
-| tools/Invoke-AIIntegrityCheck.ps1 | 7.9 | text/read | 238 | C84953F4C35A | Automation/tooling script or tool documentation. | param( |
+| tools/Invoke-AIIntegrityCheck.ps1 | 8.4 | text/read | 248 | 45924D8A905C | Automation/tooling script or tool documentation. | param( |
 | tools/Invoke-AILogIntelligence.ps1 | 7.7 | text/read | 230 | C917DE3B306A | Automation/tooling script or tool documentation. | param( |
 | tools/Invoke-AIOperationCycle.ps1 | 6.2 | text/read | 178 | 46F0F9C78CEA | Automation/tooling script or tool documentation. | param( |
 | tools/Invoke-AIProjectScan.ps1 | 7.3 | text/read | 211 | 639E398A91CE | Automation/tooling script or tool documentation. | param( |
@@ -1141,8 +1249,11 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | tools/New-HandoffSnapshot.ps1 | 1.7 | text/read | 87 | 26A609E46EF1 | Automation/tooling script or tool documentation. | param( |
 | tools/New-RestorePoint.ps1 | 2.7 | text/read | 92 | BB3B2A7F4179 | Automation/tooling script or tool documentation. | param( |
 | tools/New-WorkItem.ps1 | 1.3 | text/read | 74 | 10A9859EE906 | Automation/tooling script or tool documentation. | param( |
-| tools/README.md | 4 | text/read | 139 | 32D6D2FFD442 | Automation/tooling script or tool documentation. | # Tools |
-| tools/Update-ContextFileIndex.ps1 | 9.1 | text/read | 242 | 74C9899EFE9C | Automation/tooling script or tool documentation. | param( |
+| tools/README.md | 5.4 | text/read | 177 | F69FA9C5FF7C | Automation/tooling script or tool documentation. | # Tools |
+| tools/Sync-AthenaGitHub.ps1 | 7 | text/read | 169 | 12707D51A2AA | Automation/tooling script or tool documentation. | param( |
+| tools/Test-AthenaAssetManifest.ps1 | 2.3 | text/read | 63 | FD2F60E81870 | Automation/tooling script or tool documentation. | param( |
+| tools/Test-AthenaRepository.ps1 | 5 | text/read | 133 | 1237E717C32F | Automation/tooling script or tool documentation. | param( |
+| tools/Update-ContextFileIndex.ps1 | 9.7 | text/read | 252 | 36988865F2E2 | Automation/tooling script or tool documentation. | param( |
 | tools/Update-LayerPointers.ps1 | 1 | text/read | 35 | D700F08CCCCE | Automation/tooling script or tool documentation. | param( |
 | training/curriculum.md | 0.9 | text/read | 47 | 587A3DA23BC6 | Project file. | # AI-OS Curriculum |
 | training/feedback-loop.md | 0.5 | text/read | 23 | 9B0D9092A8D2 | Project file. | # Feedback Loop |
@@ -1152,16 +1263,19 @@ This generated index accounts for every file under `D:\Projects\Project Athena` 
 | truth/evidence-ledger.yml | 0.5 | text/read | 16 | 87A02CEA95E2 | Project file. | schema: ai-system.evidence_ledger.v1 |
 | truth/README.md | 0.3 | text/read | 18 | EE2E1E468EBE | Project file. | # Truth Pipeline |
 | truth/source-priority.md | 0.3 | text/read | 15 | FA1613BDEF51 | Project file. | # Source Priority |
-| work/ATHENA-FIRST-STEPS.md | 4.8 | text/read | 152 | FA76CF422C20 | Working packet, intake, or execution note. | # Athena First Steps |
-| work/backlog.yml | 0.9 | text/read | 32 | 461114B3F1BF | Working packet, intake, or execution note. | schema: ai-system.backlog.v1 |
-| work/bugs.yml | 1 | text/read | 28 | C6F251D421B0 | Working packet, intake, or execution note. | schema: ai-system.bugs.v1 |
-| work/decisions-needed.md | 0.5 | text/read | 25 | B8EC6F859A93 | Working packet, intake, or execution note. | # Decisions Needed |
-| work/features.yml | 1 | text/read | 28 | 8EBBB26462DB | Working packet, intake, or execution note. | schema: ai-system.features.v1 |
+| work/ATHENA-FIRST-STEPS.md | 5.2 | text/read | 159 | 8E5FE9742133 | Working packet, intake, or execution note. | # Athena First Steps |
+| work/backlog.yml | 3.1 | text/read | 98 | B8026A2CD1F2 | Working packet, intake, or execution note. | schema: ai-system.backlog.v1 |
+| work/bugs.yml | 1.4 | text/read | 42 | 5F4C1195F7BB | Working packet, intake, or execution note. | schema: ai-system.bugs.v1 |
+| work/decisions-needed.md | 1.3 | text/read | 43 | 4ADF032632A8 | Working packet, intake, or execution note. | # Decisions Needed |
+| work/features.yml | 2.3 | text/read | 58 | BD7CECC83F79 | Working packet, intake, or execution note. | schema: ai-system.features.v1 |
+| work/github-plan.json | 23.4 | text/read | 253 | 0BB0E789FF3E | Working packet, intake, or execution note. | { |
 | work/intake/ATHENA-INTAKE-20260710-003-update-athena.md | 4.6 | text/read | 131 | AF3B5B7BD3E3 | Working packet, intake, or execution note. | # Athena Task Intake: Update Athena Foundations |
+| work/intake/ATHENA-INTAKE-20260801-004-chat-reconciliation.md | 5.7 | text/read | 139 | B16E14185726 | Working packet, intake, or execution note. | # Athena Task Intake: Reconcile ATHENA Chats Into Repository |
+| work/intake/ATHENA-INTAKE-20260801-005-two-way-chat-repository-and-github.md | 3.4 | text/read | 86 | 2D5A77BC96F2 | Working packet, intake, or execution note. | # Athena Task Intake: Two-Way Chat, Repository, And GitHub Reconciliation |
 | work/intake/README.md | 0.5 | text/read | 15 | A0B1E02AD57A | Working packet, intake, or execution note. | # Athena Intake Packets |
-| work/milestones.md | 0.7 | text/read | 49 | 59E0D306FAC1 | Working packet, intake, or execution note. | # Milestones |
-| work/README.md | 0.6 | text/read | 29 | DCB48AB86671 | Working packet, intake, or execution note. | # Work System |
-| work/TODO.md | 0.5 | text/read | 23 | 6BB7C7243245 | Working packet, intake, or execution note. | # TODO |
+| work/milestones.md | 4.3 | text/read | 135 | 686809B1395B | Working packet, intake, or execution note. | # Project Athena Milestones |
+| work/README.md | 1.1 | text/read | 45 | C4BC01975DAE | Working packet, intake, or execution note. | # Work System |
+| work/TODO.md | 1.4 | text/read | 37 | 788A66B16B5E | Working packet, intake, or execution note. | # Project Athena TODO |
 | work/work-items/.gitkeep | 0 | binary/opaque | 0 | 01BA4719C80B | Working packet, intake, or execution note. | opaque or toolchain binary artifact |
 | work/work-items/BUG-20260603-153233-docker-command-unavailable-to-live-server-probe.md | 0.4 | text/read | 27 | 12203248D0DD | Working packet, intake, or execution note. | # BUG-20260603-153233: Docker command unavailable to live server probe |
 | work/work-items/README.md | 0.2 | text/read | 6 | ECC48D572400 | Working packet, intake, or execution note. | # Work Items |

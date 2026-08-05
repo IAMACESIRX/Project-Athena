@@ -1,9 +1,19 @@
 ﻿schema: ai-system.ingestion_order.v1
-updated: 2026-06-03
+updated: 2026-08-01
 purpose: "Defines the stable read order for AIs, humans, and programs."
 order:
   - path: AI-PORTAL.md
     reason: universal entry point
+  - path: context.md
+    reason: current observed repository context and architecture reconciliation
+  - path: Plan/context.md
+    reason: highest-priority Plan inventory and interpretation
+  - path: Plan/CHAT_DERIVED_CONCEPT_REGISTER.md
+    reason: source-linked recovered conversation intent and epistemic boundaries
+  - path: Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md
+    reason: canonical model docking, highway, project capsule, and hot-swap intent
+  - path: Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md
+    reason: bidirectional chat source promotion, context export, privacy, and GitHub planning boundaries
   - path: manifests/system-manifest.json
     reason: machine-readable system index
   - path: identity/README.md
@@ -34,6 +44,12 @@ order:
     reason: context and work intelligence memory contract
   - path: integration/ai-ingestion-guide.md
     reason: adapter and agent onboarding
+  - path: Plan/OPERATIVE_DUPLEX_AI_MODEL.md
+    reason: independent operative metacognitive AI and verified action intent
+  - path: Plan/OASIS_REALITY_COMPILER.md
+    reason: evidence-carrying physical environment and inverse-design pipeline
+  - path: Plan/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md
+    reason: experimental Nexus-V physical execution profile and validation gates
   - path: governance/absolutes.md
     reason: non-negotiable constraints
   - path: handoff/CURRENT_STATE.md
@@ -64,6 +80,8 @@ order:
     reason: uncertainty preserved explicitly
   - path: work/TODO.md
     reason: active work queue
+  - path: work/github-plan.json
+    reason: desired GitHub labels, milestones, issues, project fields, and views
   - path: diagnostics/risk-register.md
     reason: known risk state
   - path: cognition/README.md

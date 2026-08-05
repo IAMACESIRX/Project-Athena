@@ -17,6 +17,9 @@
     "context": "context.md",
     "plan_context": "Plan/context.md",
     "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+    "chat_concept_register": "Plan/CHAT_DERIVED_CONCEPT_REGISTER.md",
+    "distributed_fabric": "Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md",
+    "chat_repository_pipeline": "Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md",
     "file_index": "context-file-index.md",
     "memory_map": "memory/athena-memory-map.md",
     "programmatic_manifest": "manifests/generated-ai-index.json",
@@ -39,7 +42,14 @@
     "cycle_report_template": "templates/athena-cycle-report.md",
     "intake_folder": "work/intake",
     "cycle_reports": "engine/cycle-reports",
-    "memory_map": "memory/athena-memory-map.md"
+    "memory_map": "memory/athena-memory-map.md",
+    "project_capsule": "projects/project-athena/capsule.json",
+    "adapter_schema": "schemas/athena-adapter.schema.json",
+    "project_capsule_schema": "schemas/project-capsule.schema.json",
+    "operative_action_schema": "schemas/operative-action.schema.json",
+    "chat_source_bundle_schema": "schemas/chat-source-bundle.schema.json",
+    "chat_promotion_schema": "schemas/chat-promotion.schema.json",
+    "repository_context_capsule_schema": "schemas/repository-context-capsule.schema.json"
   },
   "registries": {
     "layers": "registries/layers.yml",
@@ -53,12 +63,28 @@
     "plan_root": "Plan",
     "plan_context": "Plan/context.md",
     "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+    "chat_concept_register": "Plan/CHAT_DERIVED_CONCEPT_REGISTER.md",
+    "distributed_cognitive_fabric": "Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md",
+    "operative_duplex": "Plan/OPERATIVE_DUPLEX_AI_MODEL.md",
+    "oasis_reality_compiler": "Plan/OASIS_REALITY_COMPILER.md",
+    "lightcore_profile": "Plan/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md",
+    "chat_repository_pipeline": "Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md",
     "plan_roadmap": "Plan/ROADMAP.md",
     "plan_todo": "Plan/TODO.md",
     "plan_status": "Plan/TODO_STATUS.md",
     "plan_quality": "Plan/QUALITY_PLAN.md",
     "feature_roadmap": "Plan/FEATURE_ROADMAP.md",
     "implementation_matrix": "Plan/IMPLEMENTATION_MATRIX.md"
+  },
+  "source_memory": {
+    "athena_chat_cache": "athena_context",
+    "retrieval_audit": "athena_context/AUDIT.md",
+    "repository_reconciliation": "athena_context/RECONCILIATION.md",
+    "asset_inventory": "athena_context/ASSET_INVENTORY.md",
+    "generated_storyboards": "athena_context/assets/generated-storyboards-2026-08-01",
+    "chat_sync_policy": "continuity/chat-repository-sync/sync-policy.json",
+    "promotion_ledger": "continuity/chat-repository-sync/promotion-ledger.jsonl",
+    "latest_context_capsule": "continuity/chat-repository-sync/latest-context-capsule.json"
   },
   "implementation": {
     "nexus_v_root": "Nexus V",
@@ -102,7 +128,17 @@
     "backlog": "work/backlog.yml",
     "features": "work/features.yml",
     "intake": "work/intake",
-    "branch_reconciliation": "docs/REPOSITORY_BASELINE_2026-08-05.md"
+    "branch_reconciliation": "docs/REPOSITORY_BASELINE_2026-08-05.md",
+    "milestones": "work/milestones.md",
+    "github_plan": "work/github-plan.json"
+  },
+  "github": {
+    "repository": "https://github.com/IAMACESIRX/Project-Athena",
+    "visibility": "public",
+    "default_cloud_push_allowed": false,
+    "bounded_exception": "2026-08-01 workflow files and planning metadata reconciliation after preview",
+    "integrity_workflow": ".github/workflows/athena-integrity.yml",
+    "sync_tool": "tools/Sync-AthenaGitHub.ps1"
   },
   "observability": {
     "health_model": "sensory/health-model.md",

@@ -1,11 +1,11 @@
 ﻿{
     "schema":  "ai-system.scan.v1",
-    "generated_at":  "2026-07-10T02:08:54.3364297+10:00",
+    "generated_at":  "2026-08-02T00:03:50.3250221+10:00",
     "project_root":  "D:\\Projects\\Project Athena",
     "disk":  {
                  "drive":  "D",
-                 "free_gb":  0,
-                 "used_gb":  0
+                 "free_gb":  216.62,
+                 "used_gb":  260.2
              },
     "layers":  [
                    {
@@ -17,14 +17,14 @@
                        "exists":  true,
                        "is_git":  true,
                        "branch":  "main",
-                       "head":  "3d744d3",
+                       "head":  "9713c74",
                        "origin":  "https://github.com/IAMACESIRX/Project-Athena.git",
                        "management_remote":  true,
-                       "tracked_dirty_count":  14,
-                       "untracked_count":  2,
+                       "tracked_dirty_count":  57,
+                       "untracked_count":  31,
                        "file_count":  null,
                        "size_mb":  null,
-                       "status":  "## main...origin/main\n M AI-PORTAL.md\n M \"Nexus V/docs/Plan/IMPLEMENTATION_MATRIX.md\"\n M \"Nexus V/docs/Plan/ROADMAP.md\"\n M \"Nexus V/docs/Plan/TODO.md\"\n M Plan/IMPLEMENTATION_MATRIX.md\n M Plan/ROADMAP.md\n M Plan/TODO.md\n M Plan/context.md\n M context.md\n M diagnostics/reports/latest-integrity-report.json\n M diagnostics/reports/latest-integrity-report.md\n M manifests/capability-matrix.yml\n M manifests/system-manifest.json\n M memory/athena-memory-map.md\n?? \"Nexus V/docs/Plan/OASIS_ATHENA_AGENT_MODEL.md\"\n?? Plan/OASIS_ATHENA_AGENT_MODEL.md"
+                       "status":  "## main...origin/main\n M .gitattributes\n M AI-PORTAL.md\n M Plan/FEATURE_ROADMAP.md\n M Plan/IMPLEMENTATION_MATRIX.md\n M Plan/OASIS_ATHENA_AGENT_MODEL.md\n M Plan/ROADMAP.md\n M Plan/TODO.md\n M Plan/TODO_STATUS.md\n M Plan/context.md\n M README.md\n M START-HERE.md\n M agents/agent-registry.yml\n M athena_context/README.md\n M cognition/contextual-anchoring/anchor-registry.yml\n M cognition/non-monotonic-reasoning/revision-ledger.yml\n M context-file-index.md\n M context.md\n M diagnostics/correction-queue.md\n M diagnostics/reports/latest-integrity-report.json\n M diagnostics/reports/latest-integrity-report.md\n M engine/cycle-history.csv\n M engine/cycle-reports/latest-cycle-report.json\n M engine/cycle-reports/latest-cycle-report.md\n M engine/operation-cycle.md\n M engine/order-of-operations.md\n M forensics/verification-reports/latest-forensic-verification.json\n M forensics/verification-reports/latest-forensic-verification.md\n M governance/absolutes.md\n M handoff/CURRENT_STATE.md\n M integration/adapter-contract.md\n M manifests/capability-matrix.yml\n M manifests/generated-ai-index.json\n M manifests/ingestion-order.yml\n M manifests/system-manifest.json\n M memory/athena-memory-map.md\n M memory/project-memory.md\n M navigation/generated/project-map.json\n M observability/reports/latest-log-intelligence.json\n M observability/reports/latest-log-intelligence.md\n M projects/project-registry.yml\n M sensory/baselines/watched-state-baseline.csv\n M sensory/scans/SCAN-LOG.md\n M sensory/scans/latest-scan.json\n M sensory/scans/latest-watched-changes.json\n M sensory/scans/latest-watched-changes.md\n M tools/Export-AISystemManifest.ps1\n M tools/Invoke-AIIntegrityCheck.ps1\n M tools/README.md\n M tools/Update-ContextFileIndex.ps1\n M work/ATHENA-FIRST-STEPS.md\n M work/README.md\n M work/TODO.md\n M work/backlog.yml\n M work/bugs.yml\n M work/decisions-needed.md\n M work/features.yml\n M work/milestones.md\n?? .github/\n?? .gitignore\n?? Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md\n?? Plan/CHAT_DERIVED_CONCEPT_REGISTER.md\n?? Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md\n?? Plan/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md\n?? Plan/OASIS_REALITY_COMPILER.md\n?? Plan/OPERATIVE_DUPLEX_AI_MODEL.md\n?? agents/adapters/\n?? athena_context/ASSET_INVENTORY.md\n?? athena_context/RECONCILIATION.md\n?? athena_context/assets/\n?? athena_context/reconciliation.json\n?? continuity/chat-repository-sync/\n?? engine/cycle-reports/ATHENA-CHAT-RECONCILIATION-CYCLE-20260801-004.md\n?? engine/cycle-reports/ATHENA-CHAT-REPOSITORY-SYNC-CYCLE-20260801-005.md\n?? projects/project-athena/\n?? schemas/athena-adapter.schema.json\n?? schemas/chat-promotion.schema.json\n?? schemas/chat-source-bundle.schema.json\n?? schemas/operative-action.schema.json\n?? schemas/project-capsule.schema.json\n?? schemas/repository-context-capsule.schema.json\n?? tools/Export-AthenaChatContext.ps1\n?? tools/Import-AthenaChatExport.ps1\n?? tools/Sync-AthenaGitHub.ps1\n?? tools/Test-AthenaAssetManifest.ps1\n?? tools/Test-AthenaRepository.ps1\n?? work/github-plan.json\n?? work/intake/ATHENA-INTAKE-20260801-004-chat-reconciliation.md\n?? work/intake/ATHENA-INTAKE-20260801-005-two-way-chat-repository-and-github.md"
                    },
                    {
                        "id":  "plan",
@@ -136,11 +136,6 @@
                    }
                ],
     "signals":  [
-                    {
-                        "severity":  "yellow",
-                        "id":  "disk-low",
-                        "message":  "Drive free space is below 80 GB: 0 GB."
-                    },
                     {
                         "severity":  "red",
                         "id":  "cloud-remote",

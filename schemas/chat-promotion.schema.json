@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://project-athena.local/schemas/chat-promotion.schema.json",
+  "title": "Athena Chat Promotion Record",
+  "type": "object",
+  "required": ["schema", "id", "created_at", "source", "classification", "summary", "target_layer", "target_files", "state", "review", "evidence", "contradictions", "result"],
+  "properties": {
+    "schema": { "const": "athena.chat_promotion.v1" },
+    "id": { "type": "string", "pattern": "^PROMO-[0-9]{8}-[0-9]{3,}$" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "required": ["kind", "conversation", "message_id", "artifact"],
+      "properties": {
+        "kind": { "type": "string" },
+        "conversation": { "type": "string" },
+        "message_id": { "type": "string" },
+        "artifact": { "type": "string" },
+        "sha256": { "type": ["string", "null"], "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "classification": { "enum": ["observed", "human-intent", "assistant-proposal", "inferred", "research-hypothesis", "unknown"] },
+    "summary": { "type": "string", "minLength": 1 },
+    "target_layer": { "type": "string", "minLength": 1 },
+    "target_files": { "type": "array", "items": { "type": "string" } },
+    "state": { "enum": ["source-only", "proposed", "accepted", "implemented", "rejected", "superseded"] },
+    "review": {
+      "type": "object",
+      "required": ["reviewer", "basis"],
+      "properties": {
+        "reviewer": { "type": ["string", "null"] },
+        "basis": { "type": ["string", "null"] }
+      }
+    },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "contradictions": { "type": "array", "items": { "type": "string" } },
+    "result": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}

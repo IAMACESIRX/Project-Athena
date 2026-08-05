@@ -55,3 +55,13 @@ adapters:
       - ai-system/restore/bundles/*
     mutates_live_state: false
     requires_confirmation: false
+  - id: aesir_geopolitical_council_import
+    class: writer
+    adapter: agents/adapters/aesir-geopolitical-council-import.adapter.json
+    tool: tools/Import-AthenaChatExport.ps1
+    config: continuity/chat-repository-sync/aesir-war-systems-council.ingest.json
+    writes:
+      - continuity/transcript-inbox/imports/*
+      - continuity/chat-repository-sync/promotion-ledger.jsonl
+    mutates_live_state: false
+    requires_confirmation: true

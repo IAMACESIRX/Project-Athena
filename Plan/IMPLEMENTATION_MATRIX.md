@@ -28,6 +28,17 @@ This matrix connects Plan intent to current Project Athena implementation and di
 | Aegis | trust/attestation/commit-gate architecture | policy enforcement, trust telemetry, commit/rollback authority | partial / specified | `Nexus V/`, Aegis Plan specs |
 | Lightcore | future physical execution profile | optoelectronic/CNT/photonic compute and transport | specified / speculative | `docs/athena-master-expansion/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md` |
 
+## Repository implementation areas
+
+| Area | Current files | Status | Evidence | Next step |
+|---|---|---|---|---|
+| AI prosthetic external brain | `context.md`, `AI-PORTAL.md`, `identity/README.md` | active | Definition written into root context and identity. | Keep first-read files aligned. |
+| Distributed docking and hot-swap fabric | `Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md`, `integration/`, `orchestration/` | planned | Model-local node, highway, external core, project capsule and skill ownership contracts are captured. | Define adapter, capsule and skill-package schemas; test read-only docking. |
+| Metacognitive orchestration | `Plan/Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md`, `cognition/`, `orchestration/model-router.yml` | partial | Cognitive selection, senate, confidence and workflow specifications exist. | Add machine-readable cognition profiles and activation evidence. |
+| Chat knowledge reconciliation | `athena_context/`, `Plan/CHAT_DERIVED_CONCEPT_REGISTER.md` | active | Five-chat linear text archive passed repeat retrieval; gaps are labelled. | Reconcile recovered images and missing generated documents. |
+| Two-way chat/repository continuity | `Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md`, `continuity/chat-repository-sync/`, `tools/Import-AthenaChatExport.ps1`, `tools/Export-AthenaChatContext.ps1` | active | Source, promotion, bounded export, privacy and completeness contracts are implemented. | Add fixtures and complete official export reconciliation. |
+| GitHub planning and integrity | `.github/`, `work/github-plan.json`, `tools/Sync-AthenaGitHub.ps1` | active | Read-only CI plus preview-first desired state for 25 labels, 9 milestones and 27 issues. | Apply the bounded remote reconciliation and configure Project fields/views. |
+
 ## Core ATHENA
 
 | Plan concept | Current files | Status | Evidence | Next step |
@@ -52,7 +63,7 @@ This matrix connects Plan intent to current Project Athena implementation and di
 | Application Cartographer | JANUS master spec | specified / planned | controlled discovery protocol defined | sandbox explorer and state-transition recorder |
 | Skill Capsules | JANUS master spec | specified / planned | schema and validation lifecycle defined | implement registry, versioning and replay |
 | Independent pre-action verifier | JANUS master spec, research validation notes | specified / required | GUI confused-deputy research supports external verification | implement target/focus/fresh-state gate |
-| Permission/commit model | JANUS master spec | specified | O0–O4 authority classes defined | formal policy schema and human approval UI |
+| Permission/commit model | JANUS master spec | specified | O0-O4 authority classes defined | formal policy schema and human approval UI |
 | OASIS embodiment | JANUS/OASIS specs | conceptual / planned | interface described | conventional engine avatar/tool runtime |
 | Nexus-V/Aegis native integration | JANUS/Nexus specs | future | no end-to-end implementation | defer until conventional JANUS runtime passes tests |
 | Universal undocumented-program competence | JANUS spec | research target | not established by current evidence | staged professional-software benchmark programme |
@@ -63,12 +74,12 @@ This matrix connects Plan intent to current Project Athena implementation and di
 |---|---|---|---|---|
 | Correct non-AI identity and broad scope | `OASIS_ARCHITECTURE_SPEC.md` | specified | engineering/science/game/living/work/R&D/production scope formalized | propagate to ontology and diagrams |
 | Universal object model | OASIS spec | specified | schema defined | JSON Schema and example objects |
-| Reality/validation classes | OASIS spec | specified | fictional→production-qualified classes defined | enforce in import/export tools |
+| Reality/validation classes | OASIS spec | specified | fictional to production-qualified classes defined | enforce in import/export tools |
 | Scene graph and persistent world state | OASIS spec | planned | data contracts drafted | conventional runtime prototype |
 | Modular simulation fidelity | OASIS spec | conceptual / specified | solver/profile boundary defined | select initial physics/simulation engines |
 | Engineering export/import | OASIS spec | planned | export package schema defined | CAD/mesh/code adapter prototype |
 | R&D think-tank environments | OASIS spec | conceptual | spatial project model described | build one Project Athena demonstrator space |
-| JANUS integration | OASIS/JANUS specs | planned | operation/export contracts described | simulate→external-tool comparison test |
+| JANUS integration | OASIS/JANUS specs | planned | operation/export contracts described | simulation-to-external-tool comparison test |
 
 ## Plan sources
 
@@ -81,6 +92,11 @@ This matrix connects Plan intent to current Project Athena implementation and di
 | `NVISC.txt` | ISA taxonomy | planned | map instructions to toolchain and RTL state |
 | `define.txt` | Nexus-V completeness notes | planned | convert to checklist |
 | Plan DOCX corpus | detailed Nexus-V/Aegis/SoC/RTL specifications | inventoried / partially summarized | OOXML and archive structure previously validated; current GitHub connector cannot semantically re-extract every binary | local extraction and content-hash review |
+| `CHAT_DERIVED_CONCEPT_REGISTER.md` | evidence-bounded register for recovered ATHENA conversation intent | active | keep source pointers, status and artifact gaps current |
+| `ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md` | model docking, highway, capsules, skill ownership and hot swapping | planned | convert contracts into schemas and fixtures |
+| `OPERATIVE_DUPLEX_AI_MODEL.md` | independent operative metacognitive AI and computer/world embodiment | planned | confirm naming and build a read-only Cartographer slice |
+| `OASIS_REALITY_COMPILER.md` | multidomain sensing, Material Behavioral Atlas, environment compilation and inverse design | planned | define schemas and a bounded capture experiment |
+| `LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md` | experimental physical execution profile beneath Nexus-V | planned | build evidence ledger, emulator profile and one link experiment |
 
 ## Nexus-V bridge
 
@@ -93,6 +109,7 @@ This matrix connects Plan intent to current Project Athena implementation and di
 | ATHENA/Nexus-V bridge | `NEXUSV_ATHENA_BRIDGE_SPEC.md` | specified | bridge contract exists | connect intake/evidence to branch/commit records |
 | JANUS/Nexus-V bridge | JANUS master spec | specified / future | operation state maps to branch/diff/commit semantics | define conventional reference adapter first |
 | OASIS versioned state | OASIS spec | specified / future | world-state contract exists | implement engine-neutral snapshots before hardware path |
+| Lightcore physical execution profile | `Plan/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md` | planned | architecture and validation gates are captured with explicit research boundaries | preserve Nexus-V invariants in a software profile before hardware claims |
 
 ## Applied spatial and physical concepts
 
@@ -104,7 +121,7 @@ This matrix connects Plan intent to current Project Athena implementation and di
 | RoomSense / BodyRig | interface spec and L.O.D.E package | specified / conceptual | coordinate-frame and sensor-fusion intent documented | schemas, confidence metrics and local testbed |
 | Reality-to-Simulation multisensor | File Library engineering package | conceptual engineering baseline | modular sensor design, calibration/evidence policy and outputs documented | create canonical repo spec and choose first deployment use case |
 | Known Behavioral Map | File Library package | conceptual campaign design | multidomain repeated-test matrix documented | statistical design, material schema, cost/throughput and pilot campaign |
-| ATHENA feed/benefit map | system matrices and diagrams | active | source→target benefits documented | update for independent JANUS/JARVIS/OASIS identities |
+| ATHENA feed/benefit map | system matrices and diagrams | active | source-to-target benefits documented | update for independent JANUS/JARVIS/OASIS identities |
 | Plugin workspace sync | sync logs and connected workspaces | active | GitHub/Notion/Drive/Asana mirrors exist | correct stale Operative Duplex and OASIS pages |
 
 ## Research and sanity anchors
@@ -117,7 +134,7 @@ This matrix connects Plan intent to current Project Athena implementation and di
 | Silicon nitride photonics | existing research anchors | research-supported primitive | valid platform candidate; not proof of full Lightcore |
 | CNT/silicon-waveguide devices | existing research anchors | research-supported primitive | detector/optoelectronic pieces plausible; compute/memory claims remain speculative |
 | Multisensor SLAM/human pose | existing research anchors | research-supported primitive | constrain RoomSense/BodyRig tests and confidence handling |
-| 100-inch 16:9 geometry | calculated 2213.7 × 1245.3 mm | checked reference | use rounded 2214 × 1245 mm active area |
+| 100-inch 16:9 geometry | calculated 2213.7 x 1245.3 mm | checked reference | use rounded 2214 x 1245 mm active area |
 
 ## Immediate work items
 
@@ -133,3 +150,9 @@ This matrix connects Plan intent to current Project Athena implementation and di
 10. Create Lightcore signal schema and physical execution risk register.
 11. Keep speculative hardware, performance and material claims labelled as R&D until simulation and bench evidence exist.
 12. Maintain GitHub as canonical; Notion/Drive/Asana/Figma/Canva remain labelled mirrors or execution surfaces.
+13. Validate `schemas/athena-task-intake.schema.json`.
+14. Run one task through intake, decision, implementation, verification and memory writeback.
+15. Define adapter, project-capsule and skill-package schemas.
+16. Confirm or replace the provisional Operative Duplex/JANUS naming where older material still conflicts.
+17. Finish semantic review of the verified 58-image package through `athena_context/ASSET_INVENTORY.md`.
+18. Complete the bounded GitHub planning reconciliation without broadening the local-only default.

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.project-capsule.v1",
+  "title": "Athena Project Capsule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "id",
+    "name",
+    "version",
+    "status",
+    "lineage",
+    "authority",
+    "memory",
+    "skills",
+    "artifacts",
+    "evidence",
+    "unknowns",
+    "validation"
+  ],
+  "properties": {
+    "schema": { "const": "ai-system.project_capsule.v1" },
+    "id": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "minLength": 1 },
+    "status": {
+      "enum": ["draft", "active", "paused", "archived", "superseded"]
+    },
+    "root": { "type": "string" },
+    "mission": { "type": "string" },
+    "success_conditions": { "$ref": "#/$defs/stringArray" },
+    "non_goals": { "$ref": "#/$defs/stringArray" },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capsule_id", "revision"],
+      "properties": {
+        "capsule_id": { "type": "string", "minLength": 1 },
+        "revision": { "type": "string", "minLength": 1 },
+        "parent": { "type": ["string", "null"] },
+        "forked_from": { "type": ["string", "null"] },
+        "snapshot": { "type": ["string", "null"] }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["human_owner", "local_only", "read_scope", "write_scope"],
+      "properties": {
+        "human_owner": { "type": "string", "minLength": 1 },
+        "local_only": { "type": "boolean" },
+        "read_scope": { "$ref": "#/$defs/stringArray" },
+        "write_scope": { "$ref": "#/$defs/stringArray" },
+        "confirmation_required": { "$ref": "#/$defs/stringArray" }
+      }
+    },
+    "memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identity", "architecture", "working", "implementation"],
+      "properties": {
+        "identity": { "$ref": "#/$defs/stringArray" },
+        "architecture": { "$ref": "#/$defs/stringArray" },
+        "working": { "$ref": "#/$defs/stringArray" },
+        "evidence": { "$ref": "#/$defs/stringArray" },
+        "implementation": { "$ref": "#/$defs/stringArray" }
+      }
+    },
+    "terminology": { "$ref": "#/$defs/stringArray" },
+    "ontology": { "$ref": "#/$defs/stringArray" },
+    "skills": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["project_specific", "group_dependencies", "model_dependencies", "backend_dependencies"],
+      "properties": {
+        "project_specific": { "$ref": "#/$defs/stringArray" },
+        "group_dependencies": { "$ref": "#/$defs/stringArray" },
+        "model_dependencies": { "$ref": "#/$defs/stringArray" },
+        "backend_dependencies": { "$ref": "#/$defs/stringArray" }
+      }
+    },
+    "artifacts": { "$ref": "#/$defs/stringArray" },
+    "experiments": { "$ref": "#/$defs/stringArray" },
+    "decisions": { "$ref": "#/$defs/stringArray" },
+    "evidence": { "$ref": "#/$defs/stringArray" },
+    "unknowns": { "$ref": "#/$defs/stringArray" },
+    "adapters": { "$ref": "#/$defs/stringArray" },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["checks", "last_result"],
+      "properties": {
+        "checks": { "$ref": "#/$defs/stringArray" },
+        "last_result": {
+          "enum": ["not_run", "pass", "partial", "warn", "fail"]
+        },
+        "last_run": { "type": ["string", "null"], "format": "date-time" }
+      }
+    }
+  },
+  "$defs": {
+    "stringArray": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    }
+  }
+}

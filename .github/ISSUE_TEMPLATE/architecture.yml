@@ -1,0 +1,49 @@
+name: Architecture proposal
+description: Propose a bounded Athena architecture or contract change.
+title: "[Architecture] "
+labels:
+  - type:architecture
+  - status:needs-review
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended outcome
+      description: State the capability or decision this architecture must enable.
+    validations:
+      required: true
+  - type: textarea
+    id: authority
+    attributes:
+      label: Authority and source
+      description: Link human direction, Plan text, chat promotion record, or decision that authorizes this proposal.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Boundaries and non-goals
+      description: Identify what remains out of scope and which maturity claims are not being made.
+    validations:
+      required: true
+  - type: textarea
+    id: contracts
+    attributes:
+      label: Contracts and affected layers
+      description: Name schemas, adapters, memory layers, interfaces, authority levels, and files that would change.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and uncertainty
+      description: Separate observed facts, human intent, proposals, hypotheses, contradictions, and unknowns.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation and recovery
+      description: Define tests, failure criteria, rollback, and the evidence required before acceptance.
+    validations:
+      required: true

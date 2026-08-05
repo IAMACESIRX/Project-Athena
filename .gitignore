@@ -52,3 +52,12 @@ Nexus V/generated/local/
 # Local reports and scratch artifacts that are not evidence records
 artifacts/local/
 reports/local/
+
+# Local Athena imports, generated context, and export bundles
+continuity/transcript-inbox/imports/
+continuity/chat-repository-sync/generated/
+.athena-capsule/
+*.source-export.zip
+*.account-export.zip
+*.token
+*.key

@@ -1,0 +1,131 @@
+{
+  "schema": "ai-system.project_capsule.v1",
+  "id": "project-athena-capsule",
+  "name": "Project Athena",
+  "version": "0.1.0",
+  "status": "active",
+  "root": "D:/Projects/Project Athena",
+  "mission": "Build a local-first AI prosthetic external brain that preserves context, governs evidence, routes cognition and tools, and converts architecture intent into verified work.",
+  "success_conditions": [
+    "Canonical project state survives model and session replacement",
+    "Claims, assumptions, unknowns, decisions, and evidence remain distinguishable",
+    "Non-trivial work leaves verification and memory writeback",
+    "Plan intent maps to implementation state without overstating maturity"
+  ],
+  "non_goals": [
+    "Treating one model session as canonical memory",
+    "Claiming speculative hardware or runtime capabilities as implemented",
+    "Autonomous consequential action without explicit authority"
+  ],
+  "lineage": {
+    "capsule_id": "project-athena-capsule",
+    "revision": "0.1.0",
+    "parent": null,
+    "forked_from": null,
+    "snapshot": null
+  },
+  "authority": {
+    "human_owner": "human-owner",
+    "local_only": true,
+    "read_scope": [
+      "D:/Projects/Project Athena"
+    ],
+    "write_scope": [
+      "D:/Projects/Project Athena"
+    ],
+    "confirmation_required": [
+      "remote push",
+      "GitHub mutation outside the 2026-08-01 bounded planning exception",
+      "runtime mutation",
+      "credential use",
+      "destructive operation"
+    ]
+  },
+  "memory": {
+    "identity": [
+      "AI-PORTAL.md",
+      "context.md",
+      "identity/"
+    ],
+    "architecture": [
+      "Plan/context.md",
+      "Plan/CHAT_DERIVED_CONCEPT_REGISTER.md",
+      "Plan/OASIS_ATHENA_AGENT_MODEL.md"
+    ],
+    "working": [
+      "work/",
+      "handoff/",
+      "continuity/"
+    ],
+    "evidence": [
+      "truth/",
+      "forensics/",
+      "audit/",
+      "engine/cycle-reports/",
+      "athena_context/"
+    ],
+    "implementation": [
+      "tools/",
+      "schemas/",
+      "runtime/",
+      "Nexus V/"
+    ]
+  },
+  "terminology": [
+    "memory/athena-memory-map.md"
+  ],
+  "ontology": [
+    "Plan/Odysseus-Nexus-Ontology-Extraction-and-Unification-Specification.md"
+  ],
+  "skills": {
+    "project_specific": [
+      "Athena intake and cycle discipline",
+      "Plan-to-implementation traceability"
+    ],
+    "group_dependencies": [
+      "cognition/",
+      "truth/",
+      "governance/"
+    ],
+    "model_dependencies": [
+      "agents/adapters/codex-local.adapter.json"
+    ],
+    "backend_dependencies": [
+      "integration/adapter-registry.yml"
+    ]
+  },
+  "artifacts": [
+    "context-file-index.md",
+    "manifests/system-manifest.json",
+      "athena_context/ASSET_INVENTORY.md"
+    ,
+    "continuity/chat-repository-sync/latest-context-capsule.json",
+    "work/github-plan.json"
+  ],
+  "experiments": [
+    "research/experiments.md"
+  ],
+  "decisions": [
+    "memory/decision-ledger.md"
+  ],
+  "evidence": [
+    "forensics/evidence-register.csv",
+    "truth/evidence-ledger.yml"
+  ],
+  "unknowns": [
+    "memory/open-questions.md",
+    "forensics/known-unknowns.csv"
+  ],
+  "adapters": [
+    "agents/adapters/codex-local.adapter.json"
+  ],
+  "validation": {
+    "checks": [
+      "JSON schema validation",
+      "repository integrity check",
+      "Git diff review"
+    ],
+    "last_result": "partial",
+    "last_run": "2026-08-01T16:20:37+10:00"
+  }
+}

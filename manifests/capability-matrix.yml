@@ -1,5 +1,5 @@
 ﻿schema: ai-system.capability_matrix.v1
-updated: 2026-06-03
+updated: 2026-08-01
 legend:
   active: usable now and currently being expanded
   implemented: usable now
@@ -17,11 +17,50 @@ capabilities:
       - memory/athena-memory-map.md
   - id: oasis_athena_agent_model
     status: specified
-    description: Defines OASIS as the outer operating environment, central Athena as the canonical external brain, and Codex/Jarvis/GPT/future AI surfaces as local Athena adapters.
+    description: Defines OASIS as the future execution habitat, central Athena as the canonical external brain, and Codex/Jarvis/GPT/future AI surfaces as local Athena nodes.
     evidence:
       - Plan/OASIS_ATHENA_AGENT_MODEL.md
       - context.md
       - AI-PORTAL.md
+  - id: athena_distributed_cognitive_fabric
+    status: specified
+    description: Separates external Athena, AI-local nodes, the Athena Highway, project capsules, and four skill ownership classes so models and backends can be replaced without losing project continuity.
+    evidence:
+      - Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md
+      - Plan/OASIS_ATHENA_AGENT_MODEL.md
+      - Plan/CHAT_DERIVED_CONCEPT_REGISTER.md
+  - id: athena_chat_reconciliation
+    status: active
+    description: Preserves audited ATHENA project chat text, source-linked concept promotion, and explicit binary and attachment gaps.
+    evidence:
+      - athena_context/AUDIT.md
+      - athena_context/ASSET_INVENTORY.md
+      - Plan/CHAT_DERIVED_CONCEPT_REGISTER.md
+  - id: metacognitive_orchestration
+    status: specified
+    description: Selects and monitors cognition, context, memory, models, tools, verification, learning, and writeback without claiming implemented general intelligence.
+    evidence:
+      - Plan/Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md
+      - cognition/cognition-workflow.md
+      - Plan/CHAT_DERIVED_CONCEPT_REGISTER.md
+  - id: operative_duplex_ai
+    status: specified
+    description: Defines an independent operative metacognitive AI with Pilot and Witness loops, application discovery, explicit authority, and independently verified state transitions.
+    evidence:
+      - Plan/OPERATIVE_DUPLEX_AI_MODEL.md
+      - runtime/agent-platform/windows-agent-platform.md
+  - id: oasis_reality_compiler
+    status: specified
+    description: Defines a provenance-carrying pipeline from registered sensor evidence through behavioral maps to validated OASIS environment packages and inverse-design candidates.
+    evidence:
+      - Plan/OASIS_REALITY_COMPILER.md
+      - Plan/CHAT_DERIVED_CONCEPT_REGISTER.md
+  - id: lightcore_execution_profile
+    status: specified
+    description: Defines Lightcore as an experimental physical execution profile that must preserve Nexus-V, RSM, Aegis, trace, and fallback invariants.
+    evidence:
+      - Plan/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md
+      - Plan/CHAT_DERIVED_CONCEPT_REGISTER.md
   - id: athena_task_intake
     status: active
     description: Converts human goals into structured task-intake packets with facts, assumptions, unknowns, risks, required output, verification, and writeback targets.

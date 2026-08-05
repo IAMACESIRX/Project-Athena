@@ -1,11 +1,16 @@
 schema: ai-system.anchor_registry.v1
-updated: 2026-06-03
+updated: 2026-08-01
 anchors:
   - id: ANCHOR-LOCAL-ONLY
     type: policy
     statement: "No GitHub server push unless the human explicitly changes this."
     source: "governance/absolutes.md"
     refresh_condition: "Human changes hosting policy."
+  - id: ANCHOR-GITHUB-PLANNING-EXCEPTION
+    type: policy
+    statement: "The 2026-08-01 task may reconcile Project Athena workflow files and GitHub planning metadata after preview; raw exports, private chats, credentials, and blanket future pushes remain forbidden."
+    source: "continuity/chat-repository-sync/sync-policy.json"
+    refresh_condition: "The bounded task completes or the human changes its scope."
   - id: ANCHOR-LAYERS
     type: layer
     statement: "Mega repo coordinates child repo pointers; child repos own payload/state/project changes."

@@ -24,22 +24,29 @@ records, but it is no longer the root identity of this checkout.
 
 No GitHub server push is allowed unless the human explicitly reverses that rule.
 
+Current bounded exception: the 2026-08-01 GitHub reconciliation task may update
+Project Athena workflow files and planning metadata after preview. The general
+local-only rule and private-data boundary remain active.
+
 ## First Actions For An AI Session
 
 1. Read `AI-PORTAL.md`.
 2. Read `context.md`.
 3. Read `Plan/context.md`.
-4. Read `memory/athena-memory-map.md`.
-5. Read `work/ATHENA-FIRST-STEPS.md`.
-6. Read `manifests/system-manifest.json`.
-7. Read `manifests/ingestion-order.yml`.
-8. Read `governance/absolutes.md`.
-9. Read `engine/order-of-operations.md`.
-10. Read `cognition/cognition-workflow.md`.
-11. If the task is non-trivial, create or update an intake packet in
+4. Read `Plan/CHAT_DERIVED_CONCEPT_REGISTER.md`.
+5. Read `Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md`.
+6. Read `Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md`.
+7. Read `memory/athena-memory-map.md`.
+8. Read `work/ATHENA-FIRST-STEPS.md`.
+9. Read `manifests/system-manifest.json`.
+10. Read `manifests/ingestion-order.yml`.
+11. Read `governance/absolutes.md`.
+12. Read `engine/order-of-operations.md`.
+13. Read `cognition/cognition-workflow.md`.
+14. If the task is non-trivial, create or update an intake packet in
     `work/intake/`.
-12. Identify the active layer before editing.
-13. Verify results and write back memory before ending the session.
+15. Identify the active layer before editing.
+16. Verify results and write back memory before ending the session.
 
 ## Windows Script Commands
 

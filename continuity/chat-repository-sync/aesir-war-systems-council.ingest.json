@@ -1,0 +1,84 @@
+{
+  "schema": "athena.aesir_council_ingest.v1",
+  "updated_at": "2026-08-02T13:40:00+10:00",
+  "dataset": {
+    "name": "A.E.S.I.R. War-Systems Council geopolitical forecast dataset",
+    "source_thread_id": "6a6e9ce8-5e70-83ec-b483-89393c0f296a",
+    "source_thread_title": "War and Future Predictions",
+    "source_surface": "ChatGPT referenced conversation",
+    "requested_source_path": "/mnt/data/Project Athena.zip",
+    "resolved_repository_root": "D:/Projects/Project Athena",
+    "evidence_cutoff": "2026-08-02",
+    "current_retrieval_limit": "The Codex read_thread preview exposed bounded and partly truncated message text. Full-fidelity ingestion requires an official ChatGPT export JSON/ZIP or an Athena audited JSONL source file."
+  },
+  "athena_paths": {
+    "source_zone": "continuity/transcript-inbox/imports/",
+    "promotion_ledger": "continuity/chat-repository-sync/promotion-ledger.jsonl",
+    "adapter": "agents/adapters/aesir-geopolitical-council-import.adapter.json",
+    "source_bundle_schema": "schemas/chat-source-bundle.schema.json",
+    "promotion_schema": "schemas/chat-promotion.schema.json",
+    "cycle_reports": "engine/cycle-reports/",
+    "work_intake": "work/intake/"
+  },
+  "classification_policy": {
+    "source_turns": "reported",
+    "human_instruction": "human-intent",
+    "assistant_analysis": "assistant-proposal",
+    "cited factual claims": "reported until independently verified against cited primary or reliable sources",
+    "model weights and sector weights": "inferred",
+    "causal models": "inferred",
+    "forecast probabilities": "research-hypothesis",
+    "scenario branches": "research-hypothesis",
+    "unsupported or truncated claims": "unknown"
+  },
+  "evidence_boundaries": {
+    "fact": "Only promote as fact after a direct source, file hash, command output, or separately verified citation supports it.",
+    "inference": "Promote as inference when it follows from recorded evidence but is not directly observed.",
+    "hypothesis": "Store scenario logic and causal possibilities as research hypotheses, not memory facts.",
+    "forecast": "Store probabilities and timelines as dated forecasts with evidence cutoff and review date."
+  },
+  "recommended_commands": {
+    "official_export_zip": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\tools\\Import-AthenaChatExport.ps1 -SourcePath <path-to-chatgpt-export.zip> -ConversationId 6a6e9ce8-5e70-83ec-b483-89393c0f296a",
+    "official_conversations_json": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\tools\\Import-AthenaChatExport.ps1 -SourcePath <path-to-conversations.json> -ConversationId 6a6e9ce8-5e70-83ec-b483-89393c0f296a",
+    "audited_jsonl_cache": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\tools\\Import-AthenaChatExport.ps1 -SourcePath <path-to-audited-jsonl-or-folder>",
+    "dry_run": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\tools\\Import-AthenaChatExport.ps1 -SourcePath <path-to-source> -ConversationId 6a6e9ce8-5e70-83ec-b483-89393c0f296a -NoWrite",
+    "repository_test": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\tools\\Test-AthenaRepository.ps1 -NoWrite",
+    "operation_cycle": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\tools\\Invoke-AIOperationCycle.ps1 -SkipLiveProbe"
+  },
+  "promotion_targets": [
+    {
+      "target_layer": "truth",
+      "target_file": "truth/evidence-ledger.yml",
+      "promotion_rule": "Only source-backed factual claims."
+    },
+    {
+      "target_layer": "forensics",
+      "target_file": "forensics/claim-catalog.csv",
+      "promotion_rule": "Dated claims, uncertainty, contradictions, and evidence links."
+    },
+    {
+      "target_layer": "cognition",
+      "target_file": "cognition/templates/cognition-output.md",
+      "promotion_rule": "Processed outputs using verified, plausible, speculative, contradicted, or needs-test labels."
+    },
+    {
+      "target_layer": "research",
+      "target_file": "research/experiments.md",
+      "promotion_rule": "Scenario hypotheses and forecast review tasks."
+    },
+    {
+      "target_layer": "memory",
+      "target_file": "memory/project-memory.md",
+      "promotion_rule": "Only durable process lessons, not raw geopolitical assertions."
+    }
+  ],
+  "run_sequence": [
+    "Confirm source scope is this single conversation id.",
+    "Run a dry import and verify coverage is one conversation with nonzero messages.",
+    "Run the write import to create an ignored local source bundle.",
+    "Review normalized messages and mark incomplete or truncated source gaps.",
+    "Create proposed promotion records for facts, inferences, hypotheses, and forecasts.",
+    "Verify claims before any canonical fact writeback.",
+    "Run repository validation and, for broader changes, the operation cycle."
+  ]
+}

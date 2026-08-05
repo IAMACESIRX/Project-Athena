@@ -1,10 +1,11 @@
 schema: ai-system.project_registry.v1
-updated: 2026-07-10
+updated: 2026-08-01
 projects:
   - id: project-athena
     name: Project Athena
     status: active_primary
     project_brain: context.md
+    capsule: projects/project-athena/capsule.json
     plan_brain: Plan/context.md
     evidence_namespace: EVD-ATHENA
     local_only: true

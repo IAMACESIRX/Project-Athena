@@ -1,0 +1,31 @@
+name: Athena Integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: athena-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  repository-integrity:
+    name: Repository integrity
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run Athena repository checks
+        shell: pwsh
+        run: .\tools\Test-AthenaRepository.ps1 -NoWrite
+
+      - name: Preview bounded context coverage
+        shell: pwsh
+        run: .\tools\Export-AthenaChatContext.ps1 -NoWrite | ConvertTo-Json -Depth 8

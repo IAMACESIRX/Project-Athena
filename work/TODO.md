@@ -15,7 +15,7 @@ under its project brain, not in this root queue.
 - Superseded PRs #4 and #5 were closed with provenance links to their clean
   replacements; their source branches remain temporarily available.
 
-## Now — Refresh measured state
+## Now - Refresh measured state
 
 - Run the complete local Athena operation cycle against
   `main@cc8da6b42cb871afad121ab5bf104428137615ea` or its latest descendant.
@@ -29,7 +29,7 @@ under its project brain, not in this root queue.
 - Confirm superseded branches contain no unique required work, then archive or
   delete them through GitHub branch management.
 
-## Next — Build one executable Athena slice
+## Next - Build one executable Athena slice
 
 - Run one real task from structured intake through context resolution, policy
   gate, model/tool routing, execution, independent verification, evidence IDs,
@@ -41,6 +41,23 @@ under its project brain, not in this root queue.
 - Convert architecture claims into testable requirements and implementation
   issues instead of adding untracked specification layers.
 - Generate a current capability matrix from source, tests and reports.
+
+## Preserved Local Backlog
+
+- Validate the imported 58-image storyboard package and finish semantic review.
+- Exercise the audited JSONL import path and generate the first context capsule.
+- Reconcile the bounded labels, milestones, issues, and GitHub Project plan.
+- Reconcile an official ChatGPT account export against the five-chat cache.
+- Add import fixtures for branches, duplicates, malformed messages, attachments
+  and media-only turns.
+- Implement promotion-ledger review and missing-implementation reporting.
+- Build adapter and project-capsule conformance fixtures.
+- Run one full Athena task through verified memory writeback.
+- Complete Nexus-V Plan-to-implementation traceability.
+- Prove read-only model docking and JANUS/Operative Duplex Cartographer slices.
+- Build the OASIS calibrated tabletop environment proof.
+- Implement the Lightcore software execution profile before physical claims.
+- Add operator health, evidence posture, release and recovery reporting.
 
 ## Nexus-V verification
 
@@ -70,7 +87,7 @@ under its project brain, not in this root queue.
 - Define Codex, JARVIS, GPT/local-model, research, governance and JANUS adapter
   contracts.
 - Add a local operations dashboard driven by generated evidence and reports.
-- Implement the Athena ↔ Nexus-V evidence/state bridge.
+- Implement the Athena to Nexus-V evidence/state bridge.
 - Implement bounded R2S proof-of-concept stages on conventional hardware before
   any Lightcore acceleration assumptions.
 - Advance L.O.D.E, RoomSense, BodyRig, OASIS and material intelligence through
@@ -82,3 +99,9 @@ under its project brain, not in this root queue.
 WoW Backup Stack tasks are retained at:
 
 `projects/wow-backup-stack/TODO.md`
+
+If the legacy stack is reactivated:
+
+- Recreate the old server-project virtual environment.
+- Resolve the legacy realmlist and Docker probe gaps.
+- Decide game-client payload tracking and backup strategy.

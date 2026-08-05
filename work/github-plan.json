@@ -1,0 +1,251 @@
+{
+  "schema": "athena.github_plan.v1",
+  "updated": "2026-08-01",
+  "repository": "IAMACESIRX/Project-Athena",
+  "project": {
+    "title": "Project Athena Roadmap",
+    "description": "Execution roadmap for Athena continuity, cognition, adapters, Operative Duplex, Nexus-V, OASIS, Lightcore, and operator experience.",
+    "fields": [
+      { "name": "Status", "type": "single_select", "options": ["Backlog", "Ready", "In progress", "Blocked", "Review", "Done"] },
+      { "name": "Priority", "type": "single_select", "options": ["P0", "P1", "P2", "P3"] },
+      { "name": "Area", "type": "single_select", "options": ["Continuity", "Governance", "Adapters", "Cognition", "Memory", "Operative Duplex", "Nexus-V", "OASIS", "Lightcore", "Operator Experience"] },
+      { "name": "Evidence posture", "type": "single_select", "options": ["Observed", "Specified", "Hypothesis", "Needs verification"] }
+    ],
+    "views": [
+      { "name": "Current", "layout": "board", "group_by": "Status", "filter": "is:open" },
+      { "name": "Roadmap", "layout": "roadmap", "group_by": "Milestone", "filter": "is:open" },
+      { "name": "Blocked", "layout": "table", "filter": "is:open label:status:blocked" },
+      { "name": "Research", "layout": "table", "filter": "is:open label:type:research" },
+      { "name": "Completed", "layout": "table", "filter": "is:closed" }
+    ]
+  },
+  "labels": [
+    { "name": "priority:p0", "color": "b60205", "description": "Critical path or governance blocker" },
+    { "name": "priority:p1", "color": "d93f0b", "description": "High-priority milestone work" },
+    { "name": "priority:p2", "color": "fbca04", "description": "Important follow-on work" },
+    { "name": "priority:p3", "color": "c5def5", "description": "Useful but not on the current critical path" },
+    { "name": "status:ready", "color": "0e8a16", "description": "Defined and ready to execute" },
+    { "name": "status:blocked", "color": "b60205", "description": "Cannot proceed until the named blocker is resolved" },
+    { "name": "status:needs-review", "color": "5319e7", "description": "Requires architecture, evidence, or human review" },
+    { "name": "type:architecture", "color": "1d76db", "description": "Architecture or contract design" },
+    { "name": "type:implementation", "color": "0052cc", "description": "Code, tooling, or workflow implementation" },
+    { "name": "type:research", "color": "6f42c1", "description": "Evidence-gated research or experiment" },
+    { "name": "type:governance", "color": "8b0000", "description": "Authority, privacy, policy, or publication control" },
+    { "name": "type:documentation", "color": "0075ca", "description": "Canonical documentation or context work" },
+    { "name": "area:continuity", "color": "00a6a6", "description": "Chat, handoff, import, export, or restore continuity" },
+    { "name": "area:governance", "color": "8b0000", "description": "Constitution, permissions, safety, or publication" },
+    { "name": "area:adapters", "color": "0366d6", "description": "Athena adapters, highway, project capsules, or routing" },
+    { "name": "area:cognition", "color": "9c27b0", "description": "Reasoning, truth, evidence, or epistemic labels" },
+    { "name": "area:memory", "color": "5c6bc0", "description": "Memory layers, writeback, continuity, or drift" },
+    { "name": "area:operative-duplex", "color": "e99695", "description": "Independent operative AI architecture" },
+    { "name": "area:nexus-v", "color": "2f4f4f", "description": "Nexus-V RTL, ISA, toolchain, or semantic execution" },
+    { "name": "area:oasis", "color": "228b22", "description": "OASIS sensing, environment compilation, or inverse design" },
+    { "name": "area:lightcore", "color": "f9d0c4", "description": "Lightcore physical execution research" },
+    { "name": "area:github", "color": "24292e", "description": "GitHub workflows, issues, projects, or releases" },
+    { "name": "area:operator-experience", "color": "bfdadc", "description": "Human-facing operation, observability, or recovery" },
+    { "name": "chat-derived", "color": "d4c5f9", "description": "Originated in a recovered Athena chat" },
+    { "name": "evidence-required", "color": "ff7f50", "description": "Cannot be accepted without named evidence" }
+  ],
+  "milestones": [
+    { "title": "M0 - Source Reconciliation and Governance", "state": "open", "description": "Audit and reconcile Athena chats, media, decisions, scope, and public-mirror governance." },
+    { "title": "M1 - Brain Stem and Continuity", "state": "open", "description": "Implement the governed two-way chat/repository loop, context capsules, schemas, and CI." },
+    { "title": "M2 - Distributed Cognitive Fabric", "state": "open", "description": "Build model adapters, Athena Highway contracts, project capsules, routing, and conformance tests." },
+    { "title": "M3 - Evidence, Cognition, and Memory", "state": "open", "description": "Connect claims, evidence labels, cognitive outputs, semantic revision, and memory writeback." },
+    { "title": "M4 - Operative Duplex", "state": "open", "description": "Specify and prove a bounded independent operative AI with Pilot/Witness and Cartographer slices." },
+    { "title": "M5 - Nexus-V Semantic Execution", "state": "open", "description": "Trace Plan intent to Nexus-V implementation and establish reproducible semantic execution regressions." },
+    { "title": "M6 - OASIS Reality Compiler", "state": "open", "description": "Build a calibrated sensing, material behavior, environment compilation, and inverse-design proof path." },
+    { "title": "M7 - Lightcore Research", "state": "open", "description": "Develop an evidence-gated physical execution profile and bounded optical experiments." },
+    { "title": "M8 - Operator Experience and Release", "state": "open", "description": "Provide GitHub planning, operator observability, contribution, release, handoff, and recovery workflows." }
+  ],
+  "issues": [
+    {
+      "id": "ATHENA-GH-001",
+      "title": "Complete official ChatGPT export reconciliation for Project Athena",
+      "milestone": "M0 - Source Reconciliation and Governance",
+      "labels": ["priority:p0", "type:governance", "area:continuity", "chat-derived", "evidence-required"],
+      "body": "## Outcome\nReconcile the current five-chat audited cache against an official account export without publishing unrelated account data.\n\n## Scope\n- Filter to the Project Athena conversations.\n- Preserve alternate branches exposed by the export.\n- Compare conversation IDs, messages, media references, attachments, and timestamps.\n- Record deleted or unavailable material as unproven.\n\n## Done when\n- A source-bundle manifest and comparison report exist.\n- Every mismatch has a disposition.\n- Complete account fidelity is either supported or remains explicitly not proven."
+    },
+    {
+      "id": "ATHENA-GH-002",
+      "title": "Enforce the public-mirror publication and privacy gate",
+      "milestone": "M0 - Source Reconciliation and Governance",
+      "labels": ["priority:p0", "type:governance", "area:governance", "area:github", "status:ready"],
+      "body": "## Outcome\nMake reviewed Athena material publishable while preventing credentials, account-wide exports, private conversations, and unreviewed personal data from entering the public repository.\n\n## Done when\n- Policy is canonical and machine-readable.\n- CI scans for common credential patterns.\n- Local-only import paths are ignored.\n- A release or push checklist names the publication review."
+    },
+    {
+      "id": "ATHENA-GH-003",
+      "title": "Finish storyboard semantic review and contradiction register",
+      "milestone": "M0 - Source Reconciliation and Governance",
+      "labels": ["priority:p1", "type:documentation", "area:continuity", "chat-derived", "evidence-required"],
+      "body": "## Outcome\nReview all 58 recovered images for architecture claims, generation defects, duplicates, obsolete labels, and contradictions with current Plan text.\n\n## Done when\n- Every asset has a semantic disposition.\n- Composite crops and text defects are labeled.\n- Useful concepts are linked to canonical text rather than promoted by image alone."
+    },
+    {
+      "id": "ATHENA-GH-004",
+      "title": "Harden chat export import, normalization, and deduplication",
+      "milestone": "M1 - Brain Stem and Continuity",
+      "labels": ["priority:p0", "type:implementation", "area:continuity", "status:ready"],
+      "body": "## Outcome\nProvide a repeatable local importer for the audited JSONL cache and official ChatGPT exports.\n\n## Done when\n- Source scope and SHA-256 are recorded.\n- Current and alternate branch messages are distinguishable.\n- Duplicate IDs are handled deterministically.\n- Unreviewed output remains outside Git.\n- Fixtures cover malformed, duplicate, branched, and media-only turns."
+    },
+    {
+      "id": "ATHENA-GH-005",
+      "title": "Generate bounded and full repository-to-chat context capsules",
+      "milestone": "M1 - Brain Stem and Continuity",
+      "labels": ["priority:p0", "type:implementation", "area:continuity", "area:memory", "status:ready"],
+      "body": "## Outcome\nExport current repository authority, work, decisions, evidence posture, and hashes for future chat sessions.\n\n## Done when\n- Bounded output records every truncation.\n- Full selected-text output is chunked and untruncated.\n- Git state and source hashes are included.\n- Raw transcripts and binaries are excluded by policy.\n- A round-trip test shows the next session can identify current work and gaps."
+    },
+    {
+      "id": "ATHENA-GH-006",
+      "title": "Add repository integrity and context CI",
+      "milestone": "M1 - Brain Stem and Continuity",
+      "labels": ["priority:p0", "type:implementation", "area:github", "area:continuity", "status:ready"],
+      "body": "## Outcome\nRun JSON, JSONL, PowerShell, manifest-path, asset-hash, publication-safety, and whitespace checks on pull requests and pushes.\n\n## Done when\n- CI fails on a deliberately broken fixture.\n- Storyboard checksums are verified.\n- Reports identify the failing file and check.\n- The workflow needs no persistent external service credentials."
+    },
+    {
+      "id": "ATHENA-GH-007",
+      "title": "Implement promotion-ledger review and writeback tooling",
+      "milestone": "M1 - Brain Stem and Continuity",
+      "labels": ["priority:p1", "type:implementation", "area:continuity", "area:governance"],
+      "body": "## Outcome\nTurn source-only chat messages into reviewable proposals and accepted writebacks without automatic canonical mutation.\n\n## Done when\n- Promotion records validate against schema.\n- Accepted records name reviewer, evidence, target files, and result.\n- Rejected and superseded states remain queryable.\n- A report finds accepted records without implementation evidence."
+    },
+    {
+      "id": "ATHENA-GH-008",
+      "title": "Build adapter and project-capsule conformance fixtures",
+      "milestone": "M2 - Distributed Cognitive Fabric",
+      "labels": ["priority:p0", "type:implementation", "area:adapters", "evidence-required"],
+      "body": "## Outcome\nProve adapter and project-capsule contracts with valid and invalid fixtures.\n\n## Done when\n- Identity, authority, read/write scope, lineage, evidence, and validation fields are exercised.\n- Invalid authority escalation fails.\n- Capsule revision and fork behavior is deterministic.\n- Results are part of repository CI."
+    },
+    {
+      "id": "ATHENA-GH-009",
+      "title": "Run a read-only Codex adapter docking proof",
+      "milestone": "M2 - Distributed Cognitive Fabric",
+      "labels": ["priority:p0", "type:implementation", "area:adapters", "status:needs-review"],
+      "body": "## Outcome\nDemonstrate a model-local adapter loading a scoped Athena capsule, reading approved files, producing evidence, and writing only to an allowed work area.\n\n## Done when\n- Handshake and capability negotiation are logged.\n- Unauthorized paths are rejected.\n- Result and evidence return to central Athena.\n- Model-local state is not treated as canonical."
+    },
+    {
+      "id": "ATHENA-GH-010",
+      "title": "Specify Athena Highway message, error, and recovery semantics",
+      "milestone": "M2 - Distributed Cognitive Fabric",
+      "labels": ["priority:p1", "type:architecture", "area:adapters", "chat-derived"],
+      "body": "## Outcome\nDefine versioned transport-neutral envelopes for identity, context, authority, capability, evidence, result, error, cancellation, and recovery.\n\n## Done when\n- Schemas and sequence examples exist.\n- Replay and idempotency rules are explicit.\n- Partial failure and stale-context behavior are testable.\n- No protocol assumes a specific model vendor."
+    },
+    {
+      "id": "ATHENA-GH-011",
+      "title": "Bind claims and cognition outputs to evidence and epistemic labels",
+      "milestone": "M3 - Evidence, Cognition, and Memory",
+      "labels": ["priority:p0", "type:implementation", "area:cognition", "evidence-required"],
+      "body": "## Outcome\nCarry verified, plausible, speculative, contradicted, and needs-test labels with claims through reasoning and writeback.\n\n## Done when\n- Claim records reference evidence IDs.\n- Unsupported speculation cannot update core memory as fact.\n- Contradictions survive handoff.\n- One failing-build example is replayed end to end."
+    },
+    {
+      "id": "ATHENA-GH-012",
+      "title": "Implement semantic drift and non-monotonic revision records",
+      "milestone": "M3 - Evidence, Cognition, and Memory",
+      "labels": ["priority:p1", "type:implementation", "area:cognition", "area:memory", "chat-derived"],
+      "body": "## Outcome\nDetect changed definitions or evidence and revise conclusions without erasing why the earlier conclusion existed.\n\n## Done when\n- Definition versions and dependent claims are linked.\n- Retractions and supersessions preserve provenance.\n- Drift checks produce actionable review items.\n- Core identity and constitutional terms require elevated review."
+    },
+    {
+      "id": "ATHENA-GH-013",
+      "title": "Close one full Athena task with verified memory writeback",
+      "milestone": "M3 - Evidence, Cognition, and Memory",
+      "labels": ["priority:p0", "type:implementation", "area:memory", "area:cognition", "status:ready"],
+      "body": "## Outcome\nRun a real task through intake, authority, evidence, cognition, execution, verification, audit, and memory writeback.\n\n## Done when\n- Every stage has a durable artifact.\n- Facts, assumptions, and unknowns remain separate.\n- The next context capsule reflects the completed result.\n- A second agent can reconstruct the decision from repository evidence."
+    },
+    {
+      "id": "ATHENA-GH-014",
+      "title": "Decide the Operative Duplex system name and identity boundary",
+      "milestone": "M4 - Operative Duplex",
+      "labels": ["priority:p0", "type:governance", "area:operative-duplex", "status:needs-review", "chat-derived"],
+      "body": "## Outcome\nConfirm or replace the provisional Operative Duplex name and define the independent system's mission, owner, memory, authority, and relationship to Athena.\n\n## Done when\n- A human decision is recorded.\n- Identity and non-goals are canonical.\n- Shared versus independent memory is explicit.\n- No implementation file uses an unresolved identity assumption."
+    },
+    {
+      "id": "ATHENA-GH-015",
+      "title": "Implement a read-only Operative Duplex Cartographer slice",
+      "milestone": "M4 - Operative Duplex",
+      "labels": ["priority:p0", "type:implementation", "area:operative-duplex", "evidence-required"],
+      "body": "## Outcome\nObserve and model a bounded desktop or application surface without performing mutation.\n\n## Done when\n- Observation schema records source, time, confidence, and uncertainty.\n- The application model is versioned.\n- No action path is enabled.\n- Replay demonstrates what was seen and what remained unknown."
+    },
+    {
+      "id": "ATHENA-GH-016",
+      "title": "Prove Pilot and Witness separation for operative actions",
+      "milestone": "M4 - Operative Duplex",
+      "labels": ["priority:p1", "type:implementation", "area:operative-duplex", "area:governance"],
+      "body": "## Outcome\nSeparate action proposal/execution from independent observation, policy checking, and verification.\n\n## Done when\n- The Witness can veto or require confirmation.\n- Action records contain authority, expected effect, rollback, and proof.\n- Failure and partial completion are represented.\n- Audit evidence cannot be rewritten by the Pilot."
+    },
+    {
+      "id": "ATHENA-GH-017",
+      "title": "Complete Nexus-V Plan-to-implementation traceability",
+      "milestone": "M5 - Nexus-V Semantic Execution",
+      "labels": ["priority:p0", "type:documentation", "area:nexus-v", "evidence-required"],
+      "body": "## Outcome\nMap every active Nexus-V Plan requirement to RTL, toolchain code, generated evidence, test status, or an explicit gap.\n\n## Done when\n- The implementation matrix names requirement IDs and file evidence.\n- Generated artifacts are not treated as source authority.\n- Unsupported completeness claims are removed.\n- Missing tests become bounded issues."
+    },
+    {
+      "id": "ATHENA-GH-018",
+      "title": "Establish reproducible NVASM, NVIR, and NVOBJ regressions",
+      "milestone": "M5 - Nexus-V Semantic Execution",
+      "labels": ["priority:p0", "type:implementation", "area:nexus-v"],
+      "body": "## Outcome\nMake the semantic toolchain bridge reproducible with versioned inputs and expected outputs.\n\n## Done when\n- Fixture programs cover parse, lower, encode, and failure paths.\n- Output hashes or semantic assertions are checked.\n- CI prerequisites are documented.\n- Regression failures identify the stage and input."
+    },
+    {
+      "id": "ATHENA-GH-019",
+      "title": "Provision and document the Nexus-V simulator and lint toolchain",
+      "milestone": "M5 - Nexus-V Semantic Execution",
+      "labels": ["priority:p1", "type:implementation", "area:nexus-v", "status:blocked"],
+      "body": "## Blocker\nA supported local simulator/linter path has not been selected and proven.\n\n## Outcome\nProvide a reproducible installation and invocation path for lint and regression.\n\n## Done when\n- Tool versions and licenses are recorded.\n- A clean environment can run lint and one simulation.\n- Failure logs are retained.\n- The unblock decision is reflected in project context."
+    },
+    {
+      "id": "ATHENA-GH-020",
+      "title": "Define OASIS observation, calibration, material, and environment schemas",
+      "milestone": "M6 - OASIS Reality Compiler",
+      "labels": ["priority:p0", "type:architecture", "area:oasis", "type:research", "evidence-required"],
+      "body": "## Outcome\nCreate versioned contracts for sensor observations, calibration, Material Behavioral Atlas records, environment packages, uncertainty, and provenance.\n\n## Done when\n- Schemas include units, coordinate frames, timestamps, calibration lineage, confidence, and missing-data behavior.\n- Invalid fixtures fail.\n- The contracts do not claim unsupported sensing fidelity."
+    },
+    {
+      "id": "ATHENA-GH-021",
+      "title": "Run a calibrated RGB-depth tabletop environment proof",
+      "milestone": "M6 - OASIS Reality Compiler",
+      "labels": ["priority:p0", "type:research", "area:oasis", "evidence-required"],
+      "body": "## Outcome\nCapture a bounded tabletop scene and compile it into a versioned environment package with measurable uncertainty.\n\n## Done when\n- Calibration and capture procedure are reproducible.\n- Source observations remain linked.\n- Geometry and material assertions have confidence labels.\n- A held-out measurement checks reconstruction error."
+    },
+    {
+      "id": "ATHENA-GH-022",
+      "title": "Validate one constrained OASIS inverse-design candidate",
+      "milestone": "M6 - OASIS Reality Compiler",
+      "labels": ["priority:p2", "type:research", "area:oasis", "evidence-required"],
+      "body": "## Outcome\nGenerate one candidate design from explicit target behavior and constraints, then validate it independently.\n\n## Done when\n- Objective, constraints, search space, and uncertainty are recorded.\n- Candidate generation is separate from validation.\n- Failure criteria are declared before testing.\n- Result is labeled measured, inferred, or rejected."
+    },
+    {
+      "id": "ATHENA-GH-023",
+      "title": "Implement a Nexus-V-compatible Lightcore software profile",
+      "milestone": "M7 - Lightcore Research",
+      "labels": ["priority:p1", "type:implementation", "type:research", "area:lightcore", "area:nexus-v"],
+      "body": "## Outcome\nModel Lightcore as an experimental execution profile that preserves Nexus-V state, audit, rollback, authority, and routing invariants before physical implementation claims.\n\n## Done when\n- Profile capabilities and limits are explicit.\n- Reference software passes the same semantic fixtures.\n- Unsupported physical behavior remains hypothetical.\n- Divergence from the digital baseline is measurable."
+    },
+    {
+      "id": "ATHENA-GH-024",
+      "title": "Run one bounded Lightcore optical-link experiment",
+      "milestone": "M7 - Lightcore Research",
+      "labels": ["priority:p2", "type:research", "area:lightcore", "evidence-required"],
+      "body": "## Outcome\nMeasure one narrowly defined optical or photonic interconnect behavior with calibration, controls, and failure criteria.\n\n## Done when\n- Apparatus, wavelength, power, geometry, sensors, and calibration are recorded.\n- Safety constraints are reviewed.\n- Raw measurements and analysis are preserved.\n- The result does not generalize beyond the tested configuration."
+    },
+    {
+      "id": "ATHENA-GH-025",
+      "title": "Build Athena operator health and evidence posture reporting",
+      "milestone": "M8 - Operator Experience and Release",
+      "labels": ["priority:p1", "type:implementation", "area:operator-experience", "area:github"],
+      "body": "## Outcome\nGive the operator a concise view of repository integrity, current milestone, blocked work, stale context, evidence gaps, and latest successful cycle.\n\n## Done when\n- Report is generated from repository state.\n- Red, amber, and green conditions have explicit definitions.\n- Links point to source evidence and work items.\n- The report works locally and as a GitHub artifact."
+    },
+    {
+      "id": "ATHENA-GH-026",
+      "title": "Run repository restore, handoff, and continuity drills",
+      "milestone": "M8 - Operator Experience and Release",
+      "labels": ["priority:p1", "type:governance", "area:operator-experience", "area:continuity", "evidence-required"],
+      "body": "## Outcome\nProve that Athena can recover repository state, restore working context, and hand off to a fresh agent without relying on hidden session memory.\n\n## Done when\n- Restore runs against a disposable target.\n- A fresh agent uses only repository context and the capsule.\n- Time, gaps, and failures are recorded.\n- Lessons update playbooks and milestone state."
+    },
+    {
+      "id": "ATHENA-GH-027",
+      "title": "Create release, contribution, and GitHub Project operating rules",
+      "milestone": "M8 - Operator Experience and Release",
+      "labels": ["priority:p1", "type:documentation", "area:github", "area:governance"],
+      "body": "## Outcome\nMake public collaboration predictable through issue forms, pull-request checks, CODEOWNERS, project views, release criteria, and evidence expectations.\n\n## Done when\n- Templates route architecture, implementation, and research work.\n- Project fields and views match the desired-state blueprint.\n- Release notes distinguish implemented, specified, and experimental work.\n- Publication and provenance checks are required."
+    }
+  ]
+}

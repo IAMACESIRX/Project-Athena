@@ -1,0 +1,70 @@
+{
+  "schema": "athena.chat_repository_sync_policy.v1",
+  "updated": "2026-08-01",
+  "repository": "IAMACESIRX/Project-Athena",
+  "authority_order": [
+    "latest_explicit_human_instruction",
+    "constitution_governance_and_human_decisions",
+    "accepted_plan_intent",
+    "verified_implementation_evidence",
+    "current_repository_state",
+    "human_chat_statements",
+    "assistant_chat_proposals",
+    "generated_media_and_research_hypotheses"
+  ],
+  "source_zones": {
+    "audited_project_cache": "athena_context",
+    "unreviewed_imports": "continuity/transcript-inbox/imports",
+    "promotion_ledger": "continuity/chat-repository-sync/promotion-ledger.jsonl",
+    "canonical_architecture": "Plan",
+    "durable_memory": "memory",
+    "work_state": "work"
+  },
+  "publication": {
+    "github_repository_exists": true,
+    "repository_visibility": "public",
+    "default_cloud_push_allowed": false,
+    "bounded_exception": "The 2026-08-01 instruction authorizes Project Athena GitHub workflow files and planning metadata (labels, milestones, issues, and Project configuration) for this reconciliation task after preview.",
+    "requires_review": true,
+    "allowed": [
+      "explicitly_approved_workflow_files",
+      "labels_milestones_issues_and_project_metadata",
+      "commits_explicitly_approved_for_this_task"
+    ],
+    "forbidden": [
+      "credentials_or_authentication_material",
+      "account_wide_chat_exports",
+      "non_athena_private_conversations",
+      "unreviewed_personal_data",
+      "uncleared_third_party_material",
+      "blanket_future_cloud_pushes_without_new_authority"
+    ]
+  },
+  "promotion": {
+    "automatic_canonical_writeback": false,
+    "required_states": [
+      "source-only",
+      "proposed",
+      "accepted",
+      "implemented",
+      "rejected",
+      "superseded"
+    ],
+    "required_evidence_labels": [
+      "observed",
+      "human-intent",
+      "assistant-proposal",
+      "inferred",
+      "research-hypothesis",
+      "unknown"
+    ]
+  },
+  "context_export": {
+    "bounded_file_character_limit": 24000,
+    "full_export_chunk_character_limit": 120000,
+    "record_truncation": true,
+    "include_git_state": true,
+    "exclude_source_transcripts": true,
+    "exclude_binary_assets": true
+  }
+}

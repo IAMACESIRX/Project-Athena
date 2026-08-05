@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://project-athena.local/schemas/repository-context-capsule.schema.json",
+  "title": "Athena Repository Context Capsule",
+  "type": "object",
+  "required": ["schema", "generated_at", "project", "profile", "git", "files", "coverage"],
+  "properties": {
+    "schema": { "const": "athena.repository_context_capsule.v1" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "project": {
+      "type": "object",
+      "required": ["name", "root", "repository"],
+      "properties": {
+        "name": { "const": "Project Athena" },
+        "root": { "type": "string" },
+        "repository": { "type": "string" }
+      }
+    },
+    "profile": { "enum": ["bounded", "full"] },
+    "git": {
+      "type": "object",
+      "required": ["commit", "branch", "dirty", "status"],
+      "properties": {
+        "commit": { "type": ["string", "null"] },
+        "branch": { "type": ["string", "null"] },
+        "dirty": { "type": "boolean" },
+        "status": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sha256", "bytes", "characters", "included_characters", "truncated"],
+        "properties": {
+          "path": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "bytes": { "type": "integer", "minimum": 0 },
+          "characters": { "type": "integer", "minimum": 0 },
+          "included_characters": { "type": "integer", "minimum": 0 },
+          "truncated": { "type": "boolean" }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["selected_files", "included_characters", "omitted_characters", "source_transcripts_excluded", "binary_assets_excluded"],
+      "properties": {
+        "selected_files": { "type": "integer", "minimum": 0 },
+        "included_characters": { "type": "integer", "minimum": 0 },
+        "omitted_characters": { "type": "integer", "minimum": 0 },
+        "source_transcripts_excluded": { "const": true },
+        "binary_assets_excluded": { "const": true }
+      }
+    }
+  },
+  "additionalProperties": true
+}

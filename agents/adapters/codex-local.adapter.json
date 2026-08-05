@@ -1,0 +1,113 @@
+{
+  "schema": "ai-system.athena_adapter.v1",
+  "id": "codex-local-athena-adapter",
+  "version": "0.1.0",
+  "class": "model",
+  "owner_layer": "agents",
+  "surface": {
+    "kind": "coding_agent",
+    "identity": "codex-local-engineer",
+    "provider": "OpenAI",
+    "supported_versions": [
+      "Codex Desktop"
+    ],
+    "modalities": [
+      "text",
+      "code",
+      "filesystem",
+      "terminal",
+      "browser",
+      "image"
+    ]
+  },
+  "capabilities": {
+    "declared": [
+      "repository_navigation",
+      "code_editing",
+      "documentation",
+      "local_tool_execution",
+      "diagnostics",
+      "browser_assisted_inspection"
+    ],
+    "unsupported": [
+      "unapproved consequential action",
+      "guaranteed persistent model-local memory",
+      "automatic promotion of model output to fact"
+    ],
+    "probe": "Read AI-PORTAL.md, resolve capsule paths, report authority and working-tree state without mutation"
+  },
+  "contracts": {
+    "inputs": [
+      "human goal",
+      "project capsule",
+      "repository state",
+      "authority boundary"
+    ],
+    "outputs": [
+      "patch",
+      "verification result",
+      "cycle report",
+      "handoff"
+    ],
+    "project_capsule_schema": "schemas/project-capsule.schema.json",
+    "message_schema": "schemas/message.schema.json"
+  },
+  "scopes": {
+    "read": [
+      "project capsule declared read scope"
+    ],
+    "write": [
+      "project capsule declared write scope when authorized"
+    ],
+    "network": [
+      "explicitly connected services and approved browsing"
+    ],
+    "credentials": [
+      "connector-managed or user-approved handles only"
+    ],
+    "runtime": [
+      "read-only by default",
+      "mutation only on explicit task authority"
+    ]
+  },
+  "authority": {
+    "ceiling": 2,
+    "confirmation_required": [
+      "remote push",
+      "publish or send",
+      "purchase",
+      "account or security change",
+      "credential exposure",
+      "destructive or privileged operation"
+    ],
+    "human_presence_required": false
+  },
+  "state_transfer": {
+    "dock": "Load first-read documents, capsule state, current Git state, task intake, and relevant evidence",
+    "undock": "Close pending writes, verify changes, update memory, and produce a handoff when work remains",
+    "handoff": "Record goal, decisions, changed files, verification, unknowns, risks, and next action",
+    "pending_write_policy": "human_decision",
+    "local_cache_is_authority": false
+  },
+  "operation": {
+    "idempotent": false,
+    "timeout_seconds": 1800,
+    "max_retries": 1,
+    "rate_limit": "Respect tool and service limits"
+  },
+  "failure": {
+    "detect": "Command, validation, policy, or state mismatch",
+    "contain": "Stop dependent mutations and preserve current diff and evidence",
+    "rollback": "Use file-local reversal or a named restore method only with explicit authority",
+    "emergency_stop": "Stop running sessions and report the unresolved state to the human"
+  },
+  "provenance": {
+    "source": [
+      "AI-PORTAL.md",
+      "START-HERE.md",
+      "Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md"
+    ],
+    "audit_target": "engine/cycle-reports/",
+    "secret_policy": "Do not copy secrets into prompts, capsule files, logs, or generated artifacts"
+  }
+}

@@ -96,7 +96,12 @@ $required = @(
     "context.md",
     "context-file-index.md",
     "Plan/context.md",
+    "Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md",
     "memory/athena-memory-map.md",
+    "continuity/chat-repository-sync/sync-policy.json",
+    "continuity/chat-repository-sync/promotion-ledger.jsonl",
+    "work/github-plan.json",
+    ".github/workflows/athena-integrity.yml",
     "schemas/athena-task-intake.schema.json",
     "templates/athena-task-intake.md",
     "identity/README.md",
@@ -152,8 +157,13 @@ $jsonFiles = @(
     "navigation/generated/project-map.json",
     "sensory/scans/latest-scan.json",
     "observability/log-signatures.json",
-    "schemas/open-model-source.schema.json"
-    "schemas/athena-task-intake.schema.json"
+    "schemas/open-model-source.schema.json",
+    "schemas/athena-task-intake.schema.json",
+    "schemas/chat-source-bundle.schema.json",
+    "schemas/chat-promotion.schema.json",
+    "schemas/repository-context-capsule.schema.json",
+    "continuity/chat-repository-sync/sync-policy.json",
+    "work/github-plan.json"
 )
 
 foreach ($jsonPath in $jsonFiles) {

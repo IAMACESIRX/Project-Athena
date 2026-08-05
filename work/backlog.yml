@@ -1,31 +1,97 @@
 schema: ai-system.backlog.v1
-updated: 2026-06-03
+updated: 2026-08-01
+authority: work/github-plan.json
 items:
-  - id: TODO-001
-    type: todo
-    title: Recreate Python virtual environment
+  - id: ATHENA-TODO-001
+    type: governance
+    title: Complete official ChatGPT export reconciliation
     status: open
-    layer: server-project
+    layer: continuity
+    priority: critical
+    milestone: M0
+    next_action: "Obtain the official export and import only the five Project Athena conversations."
+  - id: ATHENA-TODO-002
+    type: feature
+    title: Harden chat import fixtures
+    status: open
+    layer: continuity
     priority: high
-    next_action: "Create fresh venv and install backend/requirements.txt."
-  - id: TODO-002
-    type: todo
-    title: Choose game client tracking strategy
+    milestone: M1
+    next_action: "Add branched, duplicate, malformed, attachment, and media-only fixtures."
+  - id: ATHENA-TODO-003
+    type: feature
+    title: Verify repository context capsule round trip
+    status: active
+    layer: continuity
+    priority: critical
+    milestone: M1
+    next_action: "Generate the bounded capsule and prove a fresh session can identify current work and gaps."
+  - id: ATHENA-TODO-004
+    type: feature
+    title: Add adapter and capsule conformance tests
     status: open
-    layer: game-client
+    layer: integration
+    priority: critical
+    milestone: M2
+    next_action: "Create valid and invalid fixtures for authority, scope, lineage, evidence, and writeback."
+  - id: ATHENA-TODO-005
+    type: feature
+    title: Bind cognition outputs to evidence labels
+    status: open
+    layer: cognition
+    priority: critical
+    milestone: M3
+    next_action: "Connect claim records and cognition outputs to evidence IDs and epistemic states."
+  - id: ATHENA-TODO-006
+    type: decision
+    title: Confirm the Operative Duplex system identity
+    status: blocked
+    layer: operative-duplex
+    priority: critical
+    milestone: M4
+    next_action: "Human chooses the durable system name and identity boundary."
+  - id: ATHENA-TODO-007
+    type: implementation
+    title: Complete Nexus-V requirement traceability
+    status: open
+    layer: nexus-v
+    priority: critical
+    milestone: M5
+    next_action: "Map Plan requirement IDs to RTL, toolchain, tests, evidence, or explicit gaps."
+  - id: ATHENA-TODO-008
+    type: research
+    title: Define OASIS evidence schemas
+    status: open
+    layer: oasis
     priority: high
-    next_action: "Decide config-only, LFS, full binary, or external mirror strategy."
-  - id: TODO-003
-    type: todo
-    title: Add restore drill
+    milestone: M6
+    next_action: "Specify observation, calibration, material, relationship, uncertainty, and environment records."
+  - id: ATHENA-TODO-009
+    type: research
+    title: Implement the Lightcore software profile
     status: open
-    layer: live-state
-    priority: medium
-    next_action: "Run restore against disposable target and record result."
-  - id: TODO-004
-    type: todo
-    title: Add live server probe
+    layer: lightcore
+    priority: high
+    milestone: M7
+    next_action: "Preserve Nexus-V semantic invariants in software before optical hardware claims."
+  - id: ATHENA-TODO-010
+    type: feature
+    title: Build operator health and evidence reporting
     status: open
-    layer: playerbots-stack
-    priority: medium
-    next_action: "Run non-destructive Docker/log probe and inspect report."
+    layer: operator-experience
+    priority: high
+    milestone: M8
+    next_action: "Generate a concise repository health, blocked work, stale context, and evidence-gap report."
+legacy_items:
+  - id: TODO-LEGACY-001
+    title: Recreate old server-project Python environment
+    status: dormant
+    layer: legacy-wow
+  - id: TODO-LEGACY-002
+    title: Choose old game-client tracking strategy
+    status: dormant
+    layer: legacy-wow
+  - id: TODO-LEGACY-003
+    title: Run old stack restore drill
+    status: dormant
+    layer: legacy-wow
