@@ -3,7 +3,8 @@
 Generated: 2026-08-05  
 Updated: 2026-08-05 plugin/GPT concept synchronization pass  
 Updated: 2026-08-05 Athena docking-fabric / hot-swap architecture addendum pass  
-Updated: 2026-08-05 controlled release fix, Plan audit, and graphics pass
+Updated: 2026-08-05 controlled release fix, Plan audit, and graphics pass  
+Updated: 2026-08-05 full chat, plugin, visual, distributed-compute, and engineering synchronization pass
 
 This folder is a consolidated Project Athena expansion pack created from the current repository scan, the Plan-folder authority files, prior Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense project concepts, current GPT project-chat concepts, and external research sanity checks.
 
@@ -21,11 +22,14 @@ This pack updates Project Athena as a system-of-systems:
 - **OASIS**: outer digital operating environment for engineering, simulation, games, virtual workspaces, R&D, and schematic workshops.
 - **Operative Duplex AI**: future action/metacognitive PC-control layer that uses Athena/Jarvis/OASIS context but does not replace Athena.
 - **Known Behavioral Map / multisensor material mapping**: reality-to-simulation material-property inference track that needs formal schema, validation datasets, and OASIS import contracts.
+- **Evolutionary Ecosystem Construction**: governed co-evolution of AI, future GI, Athena, tools, training, models, institutions, and hardware through versioned proposal, testing, review, merge, deployment, observation, and inherited improvement.
+- **Adaptive Compute Mesh**: local-first cumulative compute, hardware profiling, process segmentation, ranked fallback execution, optional rented burst compute, result reconstruction, and learning-aware resource routing.
 
 ## Files in this pack
 
 | File | Purpose |
 |---|---|
+| `ATHENA_FULL_CHAT_PLUGIN_VISUAL_SYNC_2026-08-05.md` | Current cross-chat and cross-plugin synchronization report covering Athena/MCAI, distributed compute, Evolutionary Ecosystem Construction, the completed L.O.D.E feed map, generated visual assets, plugin scan results, Plan audit boundaries, and implementation order. |
 | `CONTROLLED_RELEASE_FIX_2026-08-05.md` | Corrects the interrupted/stalled pass and records the fixed release objective, verified state, and boundaries. |
 | `PLAN_FOLDER_COMPLETE_AUDIT_2026-08-05.md` | Full accessible-audit pass for the root `Plan/` folder and adjacent Nexus-V Plan mirror, including content-read vs inventory-only boundaries. |
 | `ENGINEERING_GRAPHICS_MANIFEST_2026-08-05.md` | Controlled graphics production register for engineering concepts, infographics, vector diagrams, and future blueprint/PDF work. |
@@ -67,7 +71,7 @@ This pack updates Project Athena as a system-of-systems:
 
 ## One-line system thesis
 
-Project Athena is a local-first institutional intelligence stack where files preserve memory and evidence, Athena routes cognition and governance, the Athena docking fabric makes models and highways hot-swappable, Nexus-V turns reasoning/work into versioned state execution, Lightcore becomes the future physical substrate, L.O.D.E/RoomSense become the spatial display/sensing interface, and OASIS/Operative Duplex AI become the action/simulation environment around it.
+Project Athena is a local-first institutional intelligence stack where files preserve memory and evidence, Athena routes cognition and governance, the Athena docking fabric makes models and highways hot-swappable, Nexus-V turns reasoning/work into versioned state execution, Lightcore becomes the future physical substrate, L.O.D.E/RoomSense become the spatial display/sensing interface, OASIS/Operative Duplex AI become the action/simulation environment, and adaptive local/rented compute becomes a governed execution body around it.
 
 ## Governance note
 
@@ -78,7 +82,7 @@ The repository is local-first by default. This documentation pack exists in GitH
 The next implementation emphasis is:
 
 ```text
-control docs → docking/highway specs → bridge specs → adapter SDK → evidence/provenance schema → local verification → sanitized verification outputs
+control docs → docking/highway specs → bridge specs → adapter SDK → evidence/provenance schema → distributed-task/fallback contracts → local verification → sanitized verification outputs
 ```
 
 ## Current engineering-documentation emphasis
@@ -90,6 +94,7 @@ L.O.D.E measured sheets
 → OASIS simulation contracts
 → Operative Duplex action contract
 → Known Behavioral Map + multisensor material mapping schema
+→ adaptive compute mesh and burst-compute descriptors
 → plugin mirror labels and workspace docs
 → controlled Mermaid/SVG/PDF infographic assets
 ```
