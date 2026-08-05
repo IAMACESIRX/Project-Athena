@@ -32,6 +32,13 @@ runtime and not permission to upload the complete local Athena memory.
 7. Never interpret permission to publish one task as standing permission for
    future unrelated material.
 
+## Machine-readable gate
+
+`governance/publication-gate.yml` is the canonical machine-readable
+publication gate. Repository integrity validation uses it to enforce local-only
+path ignores, required publication review checklist text, and common credential
+pattern scanning.
+
 ## Compatibility rule
 
 `project.cloud_push_allowed` remains `false` in the machine-readable manifest to
