@@ -5,7 +5,8 @@ Updated: 2026-08-05 plugin/GPT concept synchronization pass
 Updated: 2026-08-05 Athena docking-fabric / hot-swap architecture addendum pass  
 Updated: 2026-08-05 controlled release fix, Plan audit, and graphics pass  
 Updated: 2026-08-05 full chat, plugin, visual, distributed-compute, and engineering synchronization pass  
-Updated: 2026-08-05 Canva docking-fabric infographic register pass
+Updated: 2026-08-05 Canva docking-fabric infographic register pass  
+Updated: 2026-08-05 full-system 65-page Canva visual-atlas register pass
 
 This folder is a consolidated Project Athena expansion pack created from the current repository scan, the Plan-folder authority files, prior Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense project concepts, current GPT project-chat concepts, external research sanity checks, controlled diagram sources, and plugin visual mirrors.
 
@@ -34,7 +35,9 @@ This pack updates Project Athena as a system-of-systems:
 | `CONTROLLED_RELEASE_FIX_2026-08-05.md` | Corrects the interrupted/stalled pass and records the fixed release objective, verified state, and boundaries. |
 | `PLAN_FOLDER_COMPLETE_AUDIT_2026-08-05.md` | Full accessible-audit pass for the root `Plan/` folder and adjacent Nexus-V Plan mirror, including content-read vs inventory-only boundaries. |
 | `ENGINEERING_GRAPHICS_MANIFEST_2026-08-05.md` | Controlled graphics production register for engineering concepts, infographics, vector diagrams, and future blueprint/PDF work. |
-| `CANVA_DESIGN_REGISTER_2026-08-05.md` | Canva visual-mirror register for the editable Project Athena docking-fabric infographic design, including design ID, edit/view URLs, status, and production-review requirements. |
+| `CANVA_DESIGN_REGISTER_2026-08-05.md` | Canva visual-mirror register for editable Project Athena infographic and full-atlas designs, including IDs, edit/view URLs, status, and production-review requirements. |
+| `CANVA_FULL_SYSTEM_ATLAS_2026-08-05.md` | Dedicated register for the 65-page full-system atlas, source-package hashes, coverage, canonicality rules, and export requirements. |
+| `visual-atlas/README.md` | Navigation index for the full Athena visual library and the editable Canva atlas. |
 | `CHATGPT_PROJECT_SYNC_2026-08-05.md` | Consolidates Project Athena concepts from GPT project chats and classifies them as repo-observed, Plan-authority, project-chat concept, research-supported primitive, or speculative R&D. |
 | `ATHENA_FULL_SYSTEM_MAP.md` | Canonical feed map for Athena, AI-OS, Nexus-V, Lightcore, L.O.D.E, RoomSense, OASIS, and Operative Duplex AI. |
 | `ATHENA_SYSTEM_FEED_BENEFIT_MATRIX.md` | Explicit source→target feed matrix showing how each subsystem benefits the others and what validates each handoff. |
@@ -75,7 +78,8 @@ This pack updates Project Athena as a system-of-systems:
 
 | Workspace | Artifact | Status |
 |---|---|---|
-| Canva | `Infographic - PROJECT ATHENA` / design ID `DAHRZEt127U` | Editable visual mirror created; requires text reconciliation and export before production use. |
+| Canva | `Infographic - PROJECT ATHENA` / design ID `DAHRZEt127U` | Editable docking-fabric visual mirror; requires text reconciliation and controlled export. |
+| Canva | `Project Athena — Full System Atlas` / design ID `DAHRZXB4TNw` / 65 pages | Editable full-system atlas available; indexed in `visual-atlas/README.md`; requires per-page reconciliation before production use. |
 
 ## One-line system thesis
 
@@ -106,6 +110,7 @@ L.O.D.E measured sheets
 → plugin mirror labels and workspace docs
 → controlled Mermaid/SVG/PDF infographic assets
 → Canva/Figma visual mirrors after text reconciliation
+→ controlled atlas page exports with source commit, reviewer, and checksum metadata
 ```
 
 ## Status
