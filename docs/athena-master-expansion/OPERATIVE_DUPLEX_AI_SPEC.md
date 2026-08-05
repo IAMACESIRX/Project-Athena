@@ -1,88 +1,101 @@
-# Operative Duplex AI Specification
+# Operative Duplex AI Specification — JANUS Compatibility Entry
 
 Generated: 2026-08-05
+Updated: 2026-08-05 identity correction
+Status: superseded compatibility document
 
-## Definition
+## Canonical designation
 
-Operative Duplex AI is the future local action and metacognitive PC-control layer for Project Athena. It is the system's arms-and-legs layer. It is not Athena, not OASIS, and not Nexus-V. It operates under Athena governance and uses OASIS/Jarvis/local-program context where available.
+The independent operative metacognitive AI is now designated **JANUS**:
 
-## Boundary
+> **J.A.N.U.S. — Joint Adaptive Neurocognitive Operative System**
 
-```text
-Athena = decides, governs, remembers, audits.
-OASIS = simulated/world workspace.
-Nexus-V = versioned state representation.
-Operative Duplex AI = executes approved local software actions.
-```
+The authoritative specification is:
 
-## Core responsibilities
+`docs/athena-master-expansion/JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md`
 
-- Convert approved tasks into local action plans.
-- Interact with programs through adapters, UI observation, or documented APIs.
-- Produce replayable action traces.
-- Ask Athena for governance decisions before high-impact actions.
-- Return outcomes, errors, screenshots/state descriptions, and evidence references.
+## Correct boundary
 
-## Non-goals
+JANUS is its own conjoined artificial intelligence. It is not:
 
-- It does not replace Athena's memory or governance.
-- It does not bypass user authority.
-- It does not claim unrestricted control.
-- It does not perform hidden cloud execution.
+- an ATHENA subsystem;
+- an action layer controlled by ATHENA;
+- a component inside ATHENA's brain;
+- OASIS;
+- JARVIS;
+- Nexus-V or Aegis;
+- a shell wrapper or macro recorder.
 
-## Permission model
-
-```yaml
-PermissionClass:
-  observe_only: can inspect state but cannot modify
-  draft_only: can prepare but not submit
-  reversible_action: can act if rollback exists
-  irreversible_action: requires explicit human approval
-  external_action: requires explicit human approval and audit
-```
-
-## Action lifecycle
+JANUS uses explicit collaboration interfaces with ATHENA, JARVIS and OASIS.
 
 ```text
-user goal
-→ Athena task classification
-→ evidence/context lookup
-→ Operative action proposal
-→ governance gate
-→ execution trace
-→ result capture
-→ Athena memory/evidence writeback
+ATHENA = independent institutional intelligence
+JARVIS = independent personal/executive intelligence
+JANUS  = independent operative metacognitive intelligence
+OASIS  = persistent digital reality, creation and simulation substrate
 ```
 
-## Adapter classes
+## Meaning of duplex
 
-| Adapter | Purpose |
-|---|---|
-| API adapter | uses documented application APIs. |
-| UI adapter | uses controlled visual/UI interaction where APIs are absent. |
-| File adapter | edits local project files under allowed roots. |
-| Repo adapter | prepares Git changes or issue updates under user authorization. |
-| OASIS adapter | manipulates simulated objects/world state. |
+The duplex is internal to JANUS:
 
-## Required audit object
+### Interior Face
+
+- metacognition;
+- intent and goal-state tracking;
+- confidence and uncertainty;
+- assumption/error detection;
+- permission and policy checking;
+- expected-state modelling;
+- commit, retry, rollback or escalation decisions.
+
+### Exterior Face
+
+- computer/application perception;
+- semantic and visual UI understanding;
+- direct program control;
+- OASIS embodiment;
+- application cartography;
+- action execution;
+- observed state diff and output validation.
+
+These are two inseparable perspectives of one AI, not a planner owned by ATHENA and not two independent agents.
+
+## Core capabilities
+
+JANUS is intended to:
+
+- interact with programs through native semantic controls, adapters, visual-semantic perception and virtual input;
+- use shell/API paths only when authorized and appropriate, not as the mandatory foundation;
+- inspect unfamiliar applications and build state-transition maps;
+- conduct reversible experiments inside isolated projects or sandboxes;
+- infer undocumented controls from evidence;
+- compile validated workflows into reusable Skill Capsules;
+- simulate workflows and designs in OASIS;
+- transfer validated OASIS outputs into external CAD, simulation, code, production and documentation tools;
+- return replayable evidence and verified outcomes to the human, ATHENA and JARVIS.
+
+## Authority model
 
 ```yaml
-OperativeTrace:
-  trace_id: string
-  human_request: string
-  athena_task_id: string
-  target_application: string
-  permission_class: string
-  planned_actions: list[string]
-  executed_actions: list[string]
-  result_summary: string
-  evidence_refs: list[string]
-  rollback_available: boolean
-  final_state: success | partial | blocked | failed
+JanusAuthority:
+  O0_observe: inspect and map only
+  O1_prepare: draft and stage without final submission
+  O2_reversible: act where rollback is proven
+  O3_consequential: explicit policy or human approval required
+  O4_privileged: strong authorization, isolation and independent verification required
 ```
 
-## Capability state
+## Cross-system relationship
 
-Current state: `Specified / Conceptual`.
+ATHENA can provide research, evidence, governance and institutional context.
 
-The role boundary is now formalized. Implementation requires adapter SDK, permission gates, local runtime, and trace logging.
+JARVIS can provide human intent, personal context and executive orchestration.
+
+OASIS can provide persistent worlds, simulations, digital twins, workshops and embodiment.
+
+JANUS remains responsible for its own operative reasoning, action state, program model, execution trace and verification.
+
+## Migration rule
+
+References to `Operative Duplex AI` may remain as historical terminology or as a description of JANUS's internal duplex architecture. New architecture documents should use `JANUS` as the system identity and cite the master specification.

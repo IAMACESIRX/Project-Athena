@@ -1,248 +1,286 @@
-# Athena Full System Map
+# Project Athena Ecosystem — Full System-of-Systems Map
 
 Generated: 2026-08-05
+Updated: 2026-08-05 independent-AI identity correction
 
-## 1. Canonical stack
+## 1. Human authority and reasoning method
 
 ```text
-Human / ACES intent
-        ↓
+Human / ACES authority
+        ↕
 A.E.S.I.R. Polymath Discovery Engine
-        ↓
-OASIS outer operating environment
-        ↓
-Central Athena / AI-OS institutional intelligence
-        ↓
-Project brains + task graph + cognitive orchestrator
-        ↓
-Cognitive senate + agent teams + governance gates
-        ↓
-Nexus-V semantic execution / versioned state compute
-        ↓
-Lightcore physical execution substrate
-        ↓
-L.O.D.E TV + RoomSense + BodyRig spatial interface
-        ↓
-Games, engineering simulation, VR/XR, security, creative tools, operative PC action
 ```
 
-## 2. Layer definitions
+A.E.S.I.R. is the integrated research/discovery process used across the ecosystem. It is not an AI entity or ownership layer.
 
-### Human / ACES authority
+## 2. Independent intelligence constellation
 
-The human operator is the highest authority. Athena exists as an external-brain and institutional-intelligence system, not as an autonomous replacement for the human.
+```text
+                         HUMAN AUTHORITY
+                               │
+          ┌────────────────────┼────────────────────┐
+          │                    │                    │
+       ATHENA               JARVIS                JANUS
+institutional intelligence  personal/executive AI  operative metacognitive AI
+          │                    │                    │
+          └──────── explicit governed contracts ──┘
+                               │
+                             OASIS
+          persistent digital reality / simulation / creation substrate
+```
 
-### A.E.S.I.R. Polymath Discovery Engine
+ATHENA, JARVIS and JANUS are independent intelligences. OASIS is a non-AI environment/runtime. Arrows represent information, simulation and action contracts, not hierarchy or ownership.
 
-A.E.S.I.R. is the user-facing research method: first-principles, mechanism-level, cross-domain, hypothesis-aware, evidence-separated, and roadmap-driven. It should operate as one integrated process, not separate disconnected modes.
+## 3. Independent entity definitions
 
-Required reasoning states:
+### ATHENA
 
-- problem,
-- objectives,
-- known facts,
-- assumptions,
-- hypotheses,
-- constraints,
-- unknowns,
-- candidate architectures,
-- validation paths,
-- and next reversible actions.
+ATHENA is the persistent institutional intelligence and external cognitive infrastructure:
+
+- durable institutional, workspace and call memory;
+- evidence, claim and provenance management;
+- governance, constitution and authority rules;
+- project brains and ontology;
+- cognitive orchestrator and councils/senates;
+- model, agent and tool routing;
+- continuity, audit and disaster recovery;
+- fact/assumption/hypothesis/unknown separation;
+- long-horizon coordination and institutional learning.
+
+ATHENA does not become JANUS's brain or JARVIS's owner. It supplies governed institutional knowledge and coordination services.
+
+### JARVIS
+
+JARVIS is the personal/executive intelligence:
+
+- conversational interface;
+- personal context and preference handling;
+- scheduling and device orchestration;
+- immediate executive assistance;
+- translation of informal human intent into structured objectives;
+- status communication and human-facing control.
+
+JARVIS may use ATHENA, JANUS and OASIS through adapters, but is not defined merely as an ATHENA adapter.
+
+### JANUS
+
+JANUS — **Joint Adaptive Neurocognitive Operative System** — is the independent operative metacognitive intelligence.
+
+It combines:
+
+- an Interior Face for metacognition, confidence, error detection, permission checking and predicted state transitions;
+- an Exterior Face for application perception, program cartography, software/OASIS embodiment, action and verification.
+
+JANUS is the digital-body intelligence: it can understand and operate programs without depending primarily on shell access, learn undocumented applications through controlled reversible experiments, compile Skill Capsules and verify real state changes.
+
+Canonical spec:
+
+`JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md`
 
 ### OASIS
 
-OASIS is the outer digital world/operating environment: engineering, science simulation, games, virtual living/workspaces, R&D think tanks, production/schematic workshops, virtual tooling, and future immersive environments.
+OASIS is the persistent programmable digital reality substrate for:
 
-OASIS is not Athena. It is the broader environment Athena can operate inside.
+- engineering and digital twins;
+- scientific and multiphysics simulation;
+- games and fictional worlds;
+- virtual living/social spaces;
+- offices, laboratories, universities and collaborative workspaces;
+- R&D think tanks and evidence rooms;
+- production, CAD, schematic and digital manufacturing workshops;
+- human and AI embodiment.
 
-### Athena / AI-OS
+OASIS is not an AI and does not contain or own ATHENA, JARVIS or JANUS.
 
-Athena is the institutional cognition/control plane:
+## 4. Semantic, trust and physical execution stack
 
-- durable memory,
-- project brains,
-- task intake,
-- cognitive routing,
-- evidence management,
-- forensics,
-- governance,
-- continuity,
-- anti-hallucination,
-- orchestration,
-- agent coordination,
-- and memory writeback.
-
-AI-OS is the artificial organization/institution model around Athena: identity, constitution, governance, agents, reputation, memory, knowledge, resources, runtime, federation, and civilization expansion.
-
-### Cognitive Orchestrator
-
-The Cognitive Orchestrator decides:
-
-- what cognition is needed,
-- which cognitive frameworks activate,
-- in what order they execute,
-- how disagreements are resolved,
-- how confidence is calculated,
-- and how results become institutional knowledge.
-
-Primary senates:
-
-- Analytical Senate,
-- Creative Senate,
-- Verification Senate,
-- Context Senate,
-- Temporal Senate,
-- Adaptive Senate,
-- Uncertainty Senate.
+```text
+objectives / operations / simulation jobs
+                  ↓
+Nexus-V semantic and versioned-state execution
+                  ↓
+Aegis policy, attestation and commit gates
+                  ↓
+conventional heterogeneous hardware first
+                  ↓
+Lightcore future physical execution profile
+```
 
 ### Nexus-V
 
-Nexus-V is semantic execution and versioned-state compute. It treats computation as branchable, reversible, auditable state history.
+Nexus-V treats computation and world/application state as branchable, reversible, auditable history.
 
 Core primitives:
 
 ```text
-commit
-branch
-fork
-merge
-diff
-rebase
-checkout
-rollback
-snap / restore
-score / rank / select
+commit · branch · fork · merge · diff · rebase · checkout
+rollback · snap/restore · score/rank/select
 ```
 
-Core implementation path:
+Toolchain:
 
 ```text
 NVASM
-→ lexer / parser / AST
+→ lexer/parser/AST
 → macro AST
 → typed AST
 → abstract state mutation graph
 → semantic lowering
-→ NVIR / VSSA JSON
-→ NVOBJ container
-→ RTL / vector / hardware stages
+→ NVIR/VSSA JSON
+→ NVOBJ
+→ VM/vector/RTL/hardware stages
 ```
 
-Core trust path:
+Nexus-V can serve ATHENA, JARVIS, JANUS or OASIS, but does not define their identities.
 
-```text
-RSM state management
-→ Aegis enclave / commit gate
-→ attestation token
-→ MINREP / proof report
-→ rollback or commit
-```
+### Aegis
+
+Aegis provides:
+
+- trust and telemetry aggregation;
+- commit authorization;
+- attestation tokens;
+- minimal reports/MINREP;
+- policy enforcement;
+- rollback or quarantine triggers.
+
+It is an independent safety/trust architecture, not an owner of the AIs.
 
 ### Lightcore
 
-Lightcore is the future physical execution substrate:
+Lightcore is a proposed physical execution profile beneath stable Nexus-V/Aegis contracts:
 
-- XYZ volumetric CNT-silicon-photonic compute,
-- 3D die / 3D Tetris placement,
-- CNT electro-photonic cells,
-- silicon/silicon-nitride photonics,
-- WDM/PAM/phase/polarization/OAM/spatial-mode signalling,
-- optical/crystal/CNT memory,
-- heterogeneous CPU/GPU/NPU/DPU/VPU/LPU/PPU fabric,
-- and Nexus-V/Aegis execution profile support.
+- XYZ volumetric CNT–silicon–photonic compute;
+- heterogeneous CPU/GPU/NPU/DPU/VPU/LPU/PPU regions with local control logic;
+- silicon/silicon-nitride photonics;
+- WDM/PAM/phase/polarization/OAM/spatial signalling research;
+- optical/CNT/crystal working-state and memory research;
+- board, package, display and communication optical fabrics.
 
-Canonical boundary:
+Near-term work must use conventional binary/electronic reference implementations. Exotic material and multi-valued physical claims remain staged R&D.
+
+## 5. Display and spatial interface stack
 
 ```text
-ATHENA = cognition / governance / memory / orchestration
-NEXUS-V = semantic execution / versioned state / Aegis audit
-LIGHTCORE = physical execution substrate
+Lightcore or conventional render/compute source
+                    ↓
+L.O.D.E TV optical display and telemetry endpoint
+                    ↕
+RoomSense room-centred sensor fusion
+                    ↕
+BodyRig user-centred relational pose reconstruction
+                    ↕
+OASIS / XR / games / accessibility / security / JANUS embodiment
 ```
 
 ### L.O.D.E TV
 
-L.O.D.E = Lightcore Optical Display Endpoint.
+L.O.D.E means **Lightcore Optical Display Endpoint**.
 
-L.O.D.E is a display, sensor, optical endpoint, interaction surface, and room anchor. In the final architecture it is not fed by HDMI/DP; it receives photonic-native Lightcore output.
+It is:
+
+- direct optical display endpoint;
+- continuous phosphor/direct-light surface concept;
+- UI and scene optical mixer;
+- adaptive lens/K-filter/fold-optics assembly;
+- bidirectional frame and calibration telemetry plane;
+- screen/edge interaction and sensing node;
+- front anchor for RoomSense.
+
+The measured 100-inch concept pack is an internally consistent preliminary layout, not a certified manufacturing release.
 
 ### RoomSense
 
-RoomSense is the local-first spatial sensing layer:
+RoomSense combines:
 
-- L.O.D.E TV edge sensors,
-- screen-as-sensor feedback,
-- fibre/LiDAR room mapping,
-- 360-degree LiDAR/camera/RF towers,
-- headset inside-out cameras/LiDAR,
-- RF/mmWave/UWB occlusion support,
-- optical controller packets,
-- privacy-aware local data handling,
-- and AI sensor fusion.
+- L.O.D.E surface and edge sensors;
+- outside-in TV/tower LiDAR, camera and RF sensing;
+- inside-out headset cameras and LiDAR/depth sensing;
+- controller IMU/optical packets;
+- RF/mmWave/UWB occlusion support;
+- local-first sensor fusion and confidence maps.
 
 ### BodyRig
 
-RoomSense BodyRig is markerless full-body tracking for VR/XR and VRChat-like avatars. It reconstructs the human body through inside-out + outside-in + relational tracking rather than body-worn pucks, suits, or marker balls.
-
-Key tracking concept:
+BodyRig performs relational full-body reconstruction rather than independent point tracking:
 
 ```text
-not just position tracking
-→ relational skeleton graph
-→ human-state reconstruction
-→ embodied motion fidelity
+hand ↔ wrist ↔ forearm ↔ elbow ↔ upper arm ↔ shoulder
+shoulder ↔ torso ↔ hips ↔ knees ↔ feet
+whole body ↔ headset ↔ controllers ↔ room ↔ avatar
 ```
 
-### Operative Duplex AI
+It maintains room, player, headset, controller, limb, sensor and avatar coordinate frames and outputs confidence/occlusion state.
 
-Operative Duplex AI is a future action/metacognitive layer that can control local PC programs through direct interface understanding. It uses Athena, Jarvis, and OASIS but is not Athena and is not OASIS. It acts as an AI arms-and-legs layer for real software operation.
-
-## 3. Data/control feed map
+## 6. Reality-to-Simulation and material intelligence
 
 ```text
-Human goal
-→ Athena intake packet
-→ governance boundary check
-→ context + memory retrieval
-→ cognitive orchestrator
-→ council/cognitive senate pass
-→ evidence classification
-→ task graph
-→ agent/tool routing
-→ execution through local adapters
-→ Nexus-V style state model
-→ evidence/provenance output
-→ memory writeback
-→ audit/handoff/update
+multisensor raw channels
+→ synchronized calibrated registration
+→ specialist spectral/thermal/depth/RF/material models
+→ confidence-aware fusion
+→ geometry + material + condition model
+→ Known Behavioral Map / Material Atlas
+→ OASIS digital twin and simulation package
+→ JANUS-assisted engineering-tool export
+→ physical prototype/testing
+→ evidence returned to ATHENA and OASIS
 ```
 
-For physical/spatial tracks:
+The Known Behavioral Map proposal uses controlled structural, chemical, thermal, electrical/RF, optical and ageing campaigns with repeated measurements. Proposed campaign scale is design intent, not completed experimental evidence.
+
+## 7. Cross-system feed and benefit map
+
+| Source | Feeds | Primary benefit |
+|---|---|---|
+| Human / A.E.S.I.R. | ATHENA, JARVIS, JANUS | intent, objectives, constraints and research discipline |
+| ATHENA | JARVIS, JANUS, OASIS projects, Nexus-V | institutional context, evidence, governance, ontology and long-term coordination |
+| JARVIS | Human, ATHENA, JANUS, OASIS | immediate intent interpretation, personal context and executive orchestration |
+| JANUS | external programs, OASIS, ATHENA, JARVIS | verified action, application discovery, skill compilation and operational evidence |
+| OASIS | all connected intelligences and users | persistent worlds, simulations, digital twins, spatial collaboration and production workspace |
+| Nexus-V | AI and OASIS runtimes | branchable/reversible state, provenance and deterministic state transitions |
+| Aegis | commits across runtimes | authorization, attestation, trust telemetry and rollback gates |
+| Lightcore | compute/render/transport endpoints | future high-density optoelectronic execution and communication |
+| L.O.D.E | OASIS, RoomSense, users | display, interaction, optical telemetry and room anchor |
+| RoomSense | BodyRig, OASIS, JANUS, safety systems | room geometry, motion, interaction and occlusion-aware state |
+| BodyRig | XR/OASIS/games/JANUS | markerless embodied pose and human-motion continuity |
+| R2S / Material Atlas | OASIS, ATHENA, JANUS | evidence-linked real-world geometry, material/condition and simulation inputs |
+
+## 8. Example closed-loop operation
 
 ```text
-Lightcore render/state output
-→ L.O.D.E optical display endpoint
-→ screen/edge/tower/headset sensor return
-→ RoomSense fusion
-→ BodyRig / interaction / security inference
-→ Athena context + Nexus-V audit
-→ game / VR / OASIS / operative action response
+Human asks JARVIS for an engineering workspace
+→ JARVIS structures immediate intent
+→ ATHENA supplies evidence, constraints and project history
+→ JANUS inspects required external programs and available skills
+→ OASIS creates a branchable workshop and digital twin
+→ simulation and council review compare candidate designs
+→ Nexus-V/Aegis style state and release gates preserve provenance
+→ JANUS exports and operates CAD/simulation/production software
+→ real output is measured and compared with OASIS predictions
+→ ATHENA records evidence and lessons; JARVIS reports status to the human
 ```
 
-## 4. System principle
+## 9. Privacy and authority
 
-The system is not a chatbot. The system is an institutional intelligence with replaceable models and agents, but durable identity, governance, memory, evidence, ontology, and continuity.
+- Human authority is ultimate.
+- Each AI retains its own identity and scoped memory.
+- Cross-system requests carry requester, objective, authority scope, privacy class, expected diff and validation requirements.
+- RoomSense non-video RF/LiDAR/depth/motion fields are treated as pseudonymous sensing data by default; familiarity and identity remain separate consent-based modes.
+- Experimental hardware and inferred material states remain labelled with confidence and validation state.
+- Cloud/plugin mirrors never become canonical over the GitHub/local repository without an explicit governance change.
 
-## 5. Completion target
+## 10. Canonical completion target
 
-A complete Athena stack should have:
+The ecosystem requires:
 
-1. one canonical ontology,
-2. one active project-brain map,
-3. one capability matrix,
-4. one evidence/provenance schema,
-5. one task intake path,
-6. one local adapter SDK,
-7. one runtime/API skeleton,
-8. one Nexus-V semantic execution bridge,
-9. one Lightcore physical execution profile,
-10. one L.O.D.E/RoomSense spatial interface track,
-11. and one governance rule explaining when cloud artifacts are allowed.
+1. canonical independent-entity contracts for ATHENA, JARVIS and JANUS;
+2. OASIS object, world-state, simulation and export schemas;
+3. ATHENA evidence/memory/governance services;
+4. JANUS application cartography, Skill Capsules and independent verifier;
+5. adapter and authority-token protocols;
+6. Nexus-V/Aegis software-reference integration;
+7. Lightcore staged physical profiles and risk register;
+8. L.O.D.E/RoomSense/BodyRig interfaces and prototype validation;
+9. Reality-to-Simulation and Known Behavioral Map provenance schemas;
+10. one cross-workspace source-of-truth map.

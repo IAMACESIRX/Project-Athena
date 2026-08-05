@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/IAMACESIRX/Project-Athena/schemas/system-request.schema.json",
+  "title": "Independent System Request",
+  "description": "Identity-preserving request exchanged between human, ATHENA, JARVIS, JANUS, OASIS runtime services or external tools.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_id", "requester", "target", "objective", "authority_requested", "privacy_class", "response_contract"],
+  "properties": {
+    "request_id": {"type": "string", "minLength": 1},
+    "requester": {"type": "string", "enum": ["human", "athena", "jarvis", "janus", "oasis_runtime", "external_tool", "other"]},
+    "requester_ref": {"type": ["string", "null"]},
+    "target": {"type": "string", "minLength": 1},
+    "objective": {"type": "string", "minLength": 1},
+    "context_refs": {"type": "array", "items": {"type": "string"}},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "array", "items": {"type": "string"}},
+    "authority_requested": {"type": "string"},
+    "privacy_class": {"type": "string", "enum": ["public", "internal", "private", "sensitive_local", "restricted"]},
+    "expected_state_diff": {"type": ["object", "null"], "additionalProperties": true},
+    "rollback_requirement": {"type": ["string", "null"]},
+    "deadline": {"type": ["string", "null"], "format": "date-time"},
+    "response_contract": {"type": "object", "additionalProperties": true},
+    "created_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}

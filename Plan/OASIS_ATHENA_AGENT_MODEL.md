@@ -1,121 +1,159 @@
-# OASIS Athena Agent Model
+# OASIS / ATHENA / JARVIS / JANUS Collaboration Model
 
 Generated: 2026-07-10
+Corrected: 2026-08-05
+Status: Plan-level identity and interface model
 
-This file captures the human-provided system diagram of how Athena works across
-multiple AI surfaces.
+## Supersession notice
 
-## Core Model
+The original version of this file described OASIS as an outer container holding a central ATHENA brain and described JARVIS, GPT, Codex and future systems as local ATHENA limbs/adapters.
 
-Athena is not a single chatbot. Athena is a central external brain with local
-agent adapters.
+That interpretation is superseded where it conflicts with the user's corrected architecture.
 
-OASIS is the larger operating environment that can contain Athena, route work
-between agents, and preserve the full institutional state.
+- ATHENA is an independent institutional intelligence.
+- JARVIS is an independent personal/executive intelligence.
+- JANUS is an independent operative metacognitive intelligence.
+- OASIS is a persistent digital-world, creation and simulation substrate; it is not an AI.
+- GPT, Codex and other models/tools can use ATHENA adapters without every intelligence being reduced to an ATHENA adapter.
+
+## Canonical model
 
 ```text
-                         OASIS
-                  [contains Athena]
-                            ^
-                            |
-                            v
-                    CENTRAL ATHENA
-          memory + database + processor + router
-                 /           |             \
-                v            v              v
-          Codex adapter   Jarvis adapter   GPT adapter
-            [Athena]        [Athena]       [Athena]
+                         HUMAN AUTHORITY
+                               │
+          ┌────────────────────┼────────────────────┐
+          │                    │                    │
+       ATHENA               JARVIS                JANUS
+institutional intelligence  personal/executive AI  operative metacognitive AI
+          │                    │                    │
+          └──────── explicit governed contracts ──┘
+                               │
+                             OASIS
+          digital reality · simulation · engineering · R&D
+          games · living/work · production · workshops
 ```
+
+OASIS can host embodiments, simulations, project spaces and runtime services for any connected intelligence, but does not own their cognition or canonical memory.
 
 ## Terms
 
-OASIS
-: The outer operating environment. It is the full ecosystem that can host
-  Athena, tools, files, agents, project state, human direction, and future
-  runtime services.
+### ATHENA
 
-Central Athena
-: The canonical external brain. It stores durable context, organizes memory,
-  reasons over current state, routes work, records evidence, and updates the
-  project substrate.
+Persistent institutional intelligence for:
 
-Local Athena adapter
-: The Athena-facing layer inside each agent surface. Codex, Jarvis, GPT, and
-  future agents do not become independent brains; they attach to Athena through
-  an adapter that loads context, follows Athena rules, acts within authority,
-  and writes back results.
+- governance and evidence;
+- institutional/workspace/call memory;
+- project brains and ontology;
+- cognitive orchestration and councils;
+- continuity and audit;
+- long-horizon research and coordination.
 
-Agent surface
-: A specific AI interface or worker, such as Codex, Jarvis, GPT, a local model,
-  a tool runner, a browser agent, or a future hardware-backed runtime.
+### JARVIS
 
-## Data Flow
+Independent human-facing personal/executive intelligence for:
 
-1. Human intent enters through any agent surface or directly through OASIS.
-2. The local Athena adapter translates that intent into Athena-compatible task
-   intake: facts, assumptions, unknowns, risks, required output, and writeback
-   target.
-3. Central Athena anchors the task against durable memory, Plan authority,
-   current context, manifests, and evidence.
-4. Athena chooses the right agent/tool path.
-5. The selected agent acts through its local Athena adapter.
-6. Results return to central Athena as files, reports, memory updates, or
-   verified outputs.
-7. OASIS keeps the larger system coherent across agents and sessions.
+- immediate dialogue and intent interpretation;
+- personal context and preferences;
+- scheduling, devices and daily workflow;
+- status and executive orchestration.
 
-## Why This Matters
+### JANUS
 
-Without the local adapter model, each AI surface becomes a disconnected worker
-with its own memory drift. With the adapter model, each surface becomes a limb
-of the same external brain.
+Independent operative metacognitive intelligence, formally:
 
-The core invariant:
+**J.A.N.U.S. — Joint Adaptive Neurocognitive Operative System**
 
-```text
-Many agents, one Athena memory.
-Many interfaces, one operating truth.
-Many task surfaces, one evidence trail.
+JANUS has an Interior Face for metacognition and an Exterior Face for perception/action. It maps unfamiliar programs, operates software without depending primarily on shell access, compiles reusable Skill Capsules and validates actual state changes.
+
+Authoritative spec:
+
+`docs/athena-master-expansion/JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md`
+
+### OASIS
+
+Persistent programmable digital reality for:
+
+- engineering and digital twins;
+- scientific simulation;
+- games and fictional worlds;
+- virtual living and workspaces;
+- R&D think tanks;
+- production, CAD and schematic workshops;
+- human and AI embodiment.
+
+### Adapter
+
+A scoped interoperability layer. Adapters translate identity, task, state, evidence and authority contracts between systems. An adapter does not imply that the attached system is owned by ATHENA.
+
+### Agent/model surface
+
+A specific interface or worker such as GPT, Codex, a local model, browser agent, simulation service or hardware-backed runtime. It can be replaceable while institutional/project state remains durable.
+
+## Collaboration flow
+
+1. Human intent may enter through JARVIS, ATHENA, JANUS, OASIS or another authorized interface.
+2. The receiving system identifies requester, goal, assumptions, constraints, privacy class and requested authority.
+3. ATHENA may provide institutional evidence, policy, ontology and project history.
+4. JARVIS may provide personal context, immediate clarification and executive scheduling.
+5. JANUS may provide application/environment capability, action planning, execution and verification.
+6. OASIS may provide a persistent world, simulation, digital twin or spatial workshop.
+7. Cross-system results return with provenance, confidence, state diff and validation status.
+8. Each system writes to its own authoritative memory and promotes knowledge only under its governance rules.
+
+## Cross-system request contract
+
+```yaml
+SystemRequest:
+  request_id: string
+  requester: human | athena | jarvis | janus | oasis_runtime | other
+  target: string
+  objective: string
+  context_refs: [string]
+  evidence_refs: [string]
+  assumptions: [string]
+  authority_requested: string
+  privacy_class: string
+  expected_state_diff: object | null
+  rollback_requirement: string | null
+  response_contract: object
 ```
 
-## Implementation Mapping
+## Repository mapping
 
-Current repository mapping:
-
-| Concept | Current Path |
+| Concept | Current path |
 |---|---|
-| Central Athena memory | `context.md`, `memory/`, `Plan/`, `manifests/`, `forensics/` |
-| OASIS operating environment | Full `D:\Projects\Project Athena` repository |
-| Local Athena adapter for Codex | `AI-PORTAL.md`, `START-HERE.md`, `tools/Invoke-AthenaCycle.ps1` |
-| Task intake protocol | `schemas/athena-task-intake.schema.json`, `templates/athena-task-intake.md`, `work/intake/` |
-| Cycle and evidence trail | `engine/cycle-reports/`, `forensics/`, `audit/` |
-| Agent registry and routing | `agents/`, `orchestration/`, `council/` |
-| Future semantic execution substrate | `Nexus V/`, `Plan/NVISC*`, `Plan/NVASM*`, `Plan/NVIR*`, `Plan/NVVM*` |
+| ATHENA institutional/project memory | `context.md`, `memory/`, `Plan/`, `manifests/`, `forensics/` |
+| ATHENA adapter and docking work | `AI-PORTAL.md`, `agents/`, `orchestration/`, `docs/athena-master-expansion/` |
+| JANUS canonical spec | `docs/athena-master-expansion/JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md` |
+| OASIS canonical spec | `docs/athena-master-expansion/OASIS_ARCHITECTURE_SPEC.md` |
+| System identity correction | `docs/athena-master-expansion/SYSTEM_IDENTITY_AND_AUTHORITY_CORRECTION_2026-08-05.md` |
+| Task intake | `schemas/athena-task-intake.schema.json`, `templates/athena-task-intake.md`, `work/intake/` |
+| Evidence/audit | `engine/cycle-reports/`, `forensics/`, `audit/`, `truth/` |
+| Nexus-V/Aegis | `Nexus V/`, `Plan/NVISC*`, `Plan/NVASM*`, `Plan/NVIR*`, `Plan/NVVM*` |
+| Lightcore/L.O.D.E/spatial interfaces | `docs/athena-master-expansion/` |
 
-## Design Requirements
+## Design invariants
 
-- Every supported agent surface needs a local Athena adapter document or
-  bootstrap packet.
-- Adapters must read the same first-read context.
-- Adapters must write back through the same memory rules.
-- Central Athena must own the canonical project state.
-- OASIS must remain the container, not a competing memory.
-- Agent-specific memories are caches, not authority.
-- If an agent cannot write back, it must produce a handoff packet.
-- If two agents disagree, Athena resolves through evidence, Plan authority, and
-  human direction.
+- Human authority remains ultimate.
+- ATHENA, JARVIS and JANUS retain distinct identities and memory scopes.
+- OASIS remains an environment/runtime, not an AI identity.
+- Cross-system links are contracts, not ownership arrows.
+- A model-specific ATHENA node is a replaceable interface and never the only copy of institutional/project intelligence.
+- JANUS verifies actual state changes rather than assuming an action succeeded.
+- Agent/model-local memories are scoped caches unless explicitly promoted.
+- Disagreements are resolved through evidence, declared authority, system contracts and human direction.
+- Plugin/cloud workspaces are mirrors or execution surfaces unless explicitly promoted to canonical status.
 
-## Open Build Work
+## Open build work
 
-1. Define `agents/adapters/` as the home for Codex, Jarvis, GPT, and local-model
-   adapter contracts.
-2. Create a minimal adapter contract schema.
-3. Create bootstrap instructions for each agent surface.
-4. Add OASIS as a named top-level operating environment in manifests.
-5. Add sync rules for importing agent-local findings back into Athena.
-6. Add conflict-resolution rules for multiple agents editing the same memory.
+1. Create formal ATHENA ↔ JARVIS ↔ JANUS request/response schemas.
+2. Implement JANUS world-state graph, Application Cartographer and Skill Capsule registry.
+3. Define OASIS world/object/export schemas and conventional runtime prototype.
+4. Add identity-aware adapter manifests under `agents/adapters/`.
+5. Add conflict and concurrency rules for multiple independent intelligences editing shared project state.
+6. Add explicit memory and privacy boundaries per system.
+7. Connect optional Nexus-V/Aegis branch/attestation semantics after conventional reference implementations work.
 
-## Status
+## One-sentence model
 
-This is a conceptual architecture model derived from the human-provided diagram.
-It is now Plan-level design intent. It is not yet fully implemented as a runtime
-multi-agent system.
+ATHENA knows and governs institutionally, JARVIS assists and orchestrates personally, JANUS perceives and acts operatively, and OASIS provides the persistent digital world in which people and intelligences can build, simulate, work, live and create.

@@ -1,451 +1,354 @@
 metadata:
-  title: Athena Master Ontology
+  title: Project Athena Ecosystem Master Ontology
   generated: 2026-08-05
-  updated: 2026-08-05_Athena_Docking_Fabric_HotSwap_Addendum
+  updated: 2026-08-05_JANUS_Independent_Identity_Correction
   source_pack: docs/athena-master-expansion
   method: A.E.S.I.R. Polymath Discovery Engine
-  governance: repo_canonical_plugins_mirror_or_execute
+  governance: repository_canonical_plugins_are_labelled_mirrors_or_execution_surfaces
+  supersedes:
+    - Operative_Duplex_AI_as_Athena_subsystem
+    - OASIS_as_container_or_owner_of_Athena
+    - Jarvis_as_only_an_Athena_adapter
 
 status_labels:
-  implemented: "Exists as working repo code/tool/script or verified artifact."
-  scaffolded: "Repo structure or placeholder exists, but implementation is incomplete."
+  implemented: "Working code, tool, runtime or verified artifact exists."
+  scaffolded: "Structure exists but implementation or verification is incomplete."
   specified: "Documented with enough detail to guide implementation."
-  conceptual: "Defined conceptually but not yet a formal implementation spec."
-  speculative: "Future R&D or hardware/science concept; do not claim implementation."
-  blocked: "Requires missing local verification, tools, data, component choice, or user approval."
+  conceptual: "Defined conceptually; implementation contract remains incomplete."
+  speculative: "Future R&D hypothesis; do not claim implementation or validated performance."
+  blocked: "Requires unavailable local tools, component choice, data or human decision."
+  superseded: "Retained for provenance but replaced by newer canonical authority."
+
+identity_invariants:
+  human_ultimate_authority: true
+  athena_jarvis_janus_are_independent_intelligences: true
+  oasis_is_not_an_ai: true
+  cross_system_edges_are_contracts_not_ownership: true
+  model_adapters_do_not_erase_independent_identity: true
+  plugin_workspaces_are_not_canonical_by_default: true
 
 nodes:
+  Human_Authority:
+    name: "Human / ACES Authority"
+    type: ultimate_authority
+    status: implemented
+    feeds: [A_E_S_I_R, Athena_AI_OS, Jarvis_AI, Janus_AI, OASIS]
+
   A_E_S_I_R:
     name: "A.E.S.I.R. Polymath Discovery Engine"
-    type: reasoning_framework
+    expansion: "Adaptive Evolutionary System for Intelligent Research"
+    type: integrated_reasoning_framework
     status: specified
-    definition: "Adaptive Evolutionary System for Intelligent Research; single canonical deep-reasoning mode for complex investigation."
-    feeds:
-      - Athena_AI_OS
-      - Athena_Docking_Fabric
-      - Research_Council
-      - Evidence_Discipline
-      - Concept_Graph
+    definition: "Single first-principles, systems, mechanism-level, cross-domain discovery process with explicit fact, assumption, hypothesis, constraint, unknown and validation states."
+    feeds: [Athena_AI_OS, Jarvis_AI, Janus_AI, Research_Council, Evidence_Provenance, Concept_Graph]
 
   Athena_AI_OS:
-    name: "Athena / AI-OS"
-    type: institutional_intelligence_control_plane
+    name: "ATHENA / AI-OS"
+    type: independent_institutional_intelligence
     status: specified
-    definition: "Local-first institutional cognition, governance, evidence, memory, orchestration, continuity, and project-brain control plane."
-    receives:
-      - A_E_S_I_R
-      - OASIS
-      - Plugin_Outputs
-      - Local_Verification
-      - Athena_Docking_Fabric
-    feeds:
-      - Cognitive_Orchestrator
-      - Nexus_V
-      - Evidence_Provenance
-      - Agent_Routing
-      - Project_Memory
-      - Athena_Docking_Fabric
+    definition: "Persistent institutional cognition, governance, evidence, memory, ontology, councils, project coordination, continuity and long-horizon learning."
+    receives: [Human_Authority, A_E_S_I_R, Plugin_Outputs, Local_Verification, Janus_Action_Reports, Jarvis_Context, OASIS_Project_Evidence]
+    feeds: [Cognitive_Orchestrator, Evidence_Provenance, Project_Memory, Athena_Docking_Fabric, Jarvis_AI, Janus_AI, OASIS_Runtime_Interface, Nexus_V]
+    boundary_rule: "ATHENA may advise, govern institutional memory and issue scoped requests; it is not JANUS's internal brain or owner and does not own JARVIS or OASIS."
 
-  Athena_Docking_Fabric:
-    name: "Athena Docking Fabric"
-    type: distributed_hot_swappable_cognitive_interface_fabric
-    status: specified
-    definition: "Distributed Athena placement across AI-local nodes, external Athena core, connective highway, project capsules, durable memory, plugins, and OASIS runtime so models, tools, databases, and project capsules can be swapped or cloned without losing continuity."
-    receives:
-      - A_E_S_I_R
-      - Athena_AI_OS
-      - OASIS
-      - Plugin_Outputs
-      - Local_Verification
-    feeds:
-      - AI_Local_Athena_Node
-      - External_Athena_Core
-      - Athena_Connective_Highway
-      - Project_Athena_Capsule
-      - Group_Skill_Library
-      - Model_Specific_Skill_Adapter
-      - Database_Highway_Skill_Adapter
-      - OASIS_Runtime_Interface
+  Jarvis_AI:
+    name: "JARVIS"
+    type: independent_personal_executive_intelligence
+    status: conceptual
+    definition: "Human-facing dialogue, personal context, preference, schedule, device and immediate executive-orchestration intelligence."
+    receives: [Human_Authority, Athena_AI_OS, Janus_Action_Reports, OASIS_Runtime_Interface]
+    feeds: [Human_Authority, Athena_AI_OS, Janus_AI, OASIS_Runtime_Interface, Jarvis_Context]
+    boundary_rule: "JARVIS can use an ATHENA adapter but is not defined only as an ATHENA adapter."
 
-  AI_Local_Athena_Node:
-    name: "AI-local Athena Node"
-    type: model_specific_interface_layer
+  Janus_AI:
+    name: "JANUS"
+    expansion: "Joint Adaptive Neurocognitive Operative System"
+    type: independent_operative_metacognitive_intelligence
     status: specified
-    definition: "Athena grammar, tool contract, context-shaping policy, local reasoning protocol, and model-specific skill wrapper that lives inside a given AI/model/session."
-    receives:
-      - Athena_Docking_Fabric
-      - Model_Specific_Skill_Adapter
-    feeds:
-      - Athena_Connective_Highway
-      - Cognitive_Orchestrator
-    boundary_rule: "May be replaced with the model; must never be the only copy of project intelligence."
+    definition: "Conjoined operative AI with an Interior metacognitive face and Exterior perception/action face; maps and operates software/OASIS, learns unfamiliar programs, compiles Skill Capsules and verifies actual state changes."
+    receives: [Human_Authority, Athena_AI_OS, Jarvis_AI, OASIS_Runtime_Interface, Local_Program_State, RoomSense, LODE_TV, Evidence_Provenance]
+    feeds: [Janus_Action_Reports, Local_Automation, Application_Cartographer, Skill_Capsule_Registry, OASIS_Runtime_Interface, External_Software, Authorized_Machinery, Evidence_Provenance]
+    authority_file: "JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md"
+    boundary_rule: "JANUS is not an ATHENA subsystem, not OASIS, not JARVIS and not a shell wrapper."
 
-  External_Athena_Core:
-    name: "External Athena Core"
-    type: model_independent_orchestration_core
+  Janus_Interior_Face:
+    name: "JANUS Interior Face"
+    type: metacognition_and_authority_engine
     status: specified
-    definition: "Independent Athena control plane for governance, memory routing, skill registry, evidence discipline, project-brain coordination, and model/tool selection."
-    receives:
-      - Athena_Connective_Highway
-      - Project_Athena_Capsule
-      - Group_Skill_Library
-    feeds:
-      - Cognitive_Orchestrator
-      - Evidence_Provenance
-      - Project_Memory
-      - Plugin_Action_Register
-    boundary_rule: "Must not depend on a single model vendor or runtime."
+    receives: [Janus_Exterior_Face, Evidence_Provenance, Authority_Tokens]
+    feeds: [Janus_Operation_Planner, Independent_Verifier, Commit_Decision]
 
-  Athena_Connective_Highway:
-    name: "Athena Connective Highway"
-    type: adapter_router_translation_and_provenance_bus
+  Janus_Exterior_Face:
+    name: "JANUS Exterior Face"
+    type: perception_action_and_state_verification_engine
     status: specified
-    definition: "Interchangeable route layer between AI models, databases, files, plugins, local tools, OASIS, project capsules, and external Athena core. Handles adapters, schemas, context compression, authentication, write gates, and provenance."
-    receives:
-      - AI_Local_Athena_Node
-      - External_Athena_Core
-      - Plugin_Outputs
-      - Local_Verification
-    feeds:
-      - Project_Athena_Capsule
-      - Memory_Substrate
-      - Plugin_Surfaces
-      - OASIS_Runtime_Interface
-      - Evidence_Provenance
-    boundary_rule: "Must not silently rewrite claim status, authority, evidence, provenance, or permissions."
+    receives: [Janus_Operation_Planner, Local_Program_State, OASIS_Runtime_Interface, RoomSense, LODE_TV]
+    feeds: [Janus_Interior_Face, Observed_State_Diffs, Application_Cartographer, Janus_Action_Reports]
 
-  Project_Athena_Capsule:
-    name: "Project Athena Capsule"
-    type: portable_project_brain_package
+  Application_Cartographer:
+    name: "JANUS Application Cartographer"
+    type: controlled_program_discovery_system
     status: specified
-    definition: "Project-specific brain containing ontology, assumptions, goals, decisions, skills, artifacts, test plans, diagrams, evidence, and scoped memory. Can be cloned, forked, merged, rebased, imported, or exported."
-    receives:
-      - Athena_Connective_Highway
-      - External_Athena_Core
-      - Project_Memory
-    feeds:
-      - Nexus_V
-      - OASIS
-      - Plugin_Surfaces
-      - Evidence_Provenance
-    boundary_rule: "Project memory can specialize but must not promote into institutional memory without validation."
+    receives: [Janus_Exterior_Face, Sandbox_State, Human_Demonstrations]
+    feeds: [Application_Capability_Hypotheses, Skill_Capsule_Registry, Evidence_Provenance]
 
-  Group_Skill_Library:
-    name: "Group Skill Library"
-    type: reusable_validated_skill_layer
-    status: specified
-    definition: "Validated general skills shared across projects, including A.E.S.I.R. research process, evidence review, systems mapping, engineering decomposition, ontology management, and memory compression."
-    receives:
-      - A_E_S_I_R
-      - Memory_Writeback
-    feeds:
-      - External_Athena_Core
-      - Project_Athena_Capsule
+  Skill_Capsule_Registry:
+    name: "JANUS Skill Capsule Registry"
+    type: versioned_reusable_verified_workflow_store
+    status: planned
+    receives: [Application_Cartographer, Human_Demonstrations, Validation_Results]
+    feeds: [Janus_Operation_Planner]
 
-  Model_Specific_Skill_Adapter:
-    name: "Model-specific Skill Adapter"
-    type: ai_model_adapter_layer
+  OASIS:
+    name: "OASIS"
+    type: non_ai_persistent_digital_reality_and_simulation_substrate
     status: specified
-    definition: "Model-specific interface for GPT, local LLMs, Codex-like coding agents, or future models; stores format rules, context-limit workarounds, tool syntax, and model strengths/weaknesses."
-    feeds:
-      - AI_Local_Athena_Node
-
-  Database_Highway_Skill_Adapter:
-    name: "Database / Highway Skill Adapter"
-    type: backend_tool_adapter_layer
-    status: specified
-    definition: "Backend-specific interface for SQL, vector, graph, document stores, GitHub, Notion, Asana, Drive, local tools, and other plugin surfaces."
-    feeds:
-      - Athena_Connective_Highway
-      - Memory_Substrate
-      - Plugin_Surfaces
+    definition: "Programmable digital world for engineering, science, simulation, games, virtual living/work, R&D think tanks, digital twins, production and schematic workshops, and human/AI embodiment."
+    receives: [Human_Authority, Athena_AI_OS, Jarvis_AI, Janus_AI, LODE_TV, RoomSense, BodyRig, Reality_to_Simulation, Known_Behavioral_Map]
+    feeds: [OASIS_Runtime_Interface, Simulation_State, Spatial_Workflows, Engineering_Exports, OASIS_Project_Evidence]
+    boundary_rule: "OASIS hosts worlds and runtime services; it is not an AI and does not contain or own ATHENA, JARVIS or JANUS."
 
   OASIS_Runtime_Interface:
     name: "OASIS Runtime Interface"
-    type: simulation_action_spatial_runtime_bridge
+    type: identity_aware_world_simulation_and_action_bridge
     status: conceptual
-    definition: "Bridge between Athena, OASIS digital world, engineering workshops, spatial state, simulated environments, VR/XR interactions, and future Operative Duplex action loops."
-    receives:
-      - Athena_Docking_Fabric
-      - OASIS
-      - RoomSense
-      - Operative_Duplex_AI
-    feeds:
-      - Athena_Connective_Highway
-      - Project_Athena_Capsule
-      - Evidence_Provenance
+    receives: [OASIS, Athena_AI_OS, Jarvis_AI, Janus_AI, RoomSense, BodyRig]
+    feeds: [Athena_AI_OS, Jarvis_AI, Janus_AI, Project_Athena_Capsule, Evidence_Provenance]
+    boundary_rule: "Requests preserve requester identity, authority, privacy, expected state diff and provenance."
+
+  Athena_Docking_Fabric:
+    name: "ATHENA Docking Fabric"
+    type: distributed_hot_swappable_institutional_interface_fabric
+    status: specified
+    definition: "ATHENA placement across model-local nodes, external ATHENA core, connective highway, project capsules, durable memory and plugin surfaces without making every attached intelligence an ATHENA subsystem."
+    receives: [Athena_AI_OS, A_E_S_I_R, Plugin_Outputs, Local_Verification]
+    feeds: [AI_Local_Athena_Node, External_Athena_Core, Athena_Connective_Highway, Project_Athena_Capsule, Group_Skill_Library, Database_Highway_Skill_Adapter]
+
+  AI_Local_Athena_Node:
+    name: "AI-local ATHENA Node"
+    type: model_specific_athena_interface
+    status: specified
+    definition: "ATHENA grammar, context shaping, local reasoning protocol and tool contract inside a replaceable model/session."
+    receives: [Athena_Docking_Fabric, Model_Specific_Skill_Adapter]
+    feeds: [Athena_Connective_Highway, Cognitive_Orchestrator]
+    boundary_rule: "Never the only copy of institutional/project intelligence and never automatic proof that the host AI is ATHENA-owned."
+
+  External_Athena_Core:
+    name: "External ATHENA Core"
+    type: model_independent_institutional_core
+    status: specified
+    receives: [Athena_Connective_Highway, Project_Athena_Capsule, Group_Skill_Library]
+    feeds: [Cognitive_Orchestrator, Evidence_Provenance, Project_Memory, Plugin_Action_Register]
+    boundary_rule: "Must not depend on a single model vendor or runtime."
+
+  Athena_Connective_Highway:
+    name: "ATHENA Connective Highway"
+    type: adapter_router_translation_and_provenance_bus
+    status: specified
+    receives: [AI_Local_Athena_Node, External_Athena_Core, Plugin_Outputs, Local_Verification]
+    feeds: [Project_Athena_Capsule, Memory_Substrate, Plugin_Surfaces, OASIS_Runtime_Interface, Evidence_Provenance]
+    boundary_rule: "Must not rewrite identity, claim status, authority, evidence, privacy or provenance."
+
+  Project_Athena_Capsule:
+    name: "Project ATHENA Capsule"
+    type: portable_project_brain_package
+    status: specified
+    receives: [Athena_Connective_Highway, External_Athena_Core, Project_Memory]
+    feeds: [Nexus_V, OASIS, Plugin_Surfaces, Evidence_Provenance]
+    boundary_rule: "Project memory cannot promote to institutional memory without validation."
+
+  Group_Skill_Library:
+    name: "Group Skill Library"
+    type: reusable_validated_institutional_skill_layer
+    status: specified
+    receives: [A_E_S_I_R, Memory_Writeback]
+    feeds: [External_Athena_Core, Project_Athena_Capsule]
+
+  Model_Specific_Skill_Adapter:
+    name: "Model-specific Skill Adapter"
+    type: model_interoperability_layer
+    status: specified
+    feeds: [AI_Local_Athena_Node]
+
+  Database_Highway_Skill_Adapter:
+    name: "Database / Highway Skill Adapter"
+    type: backend_and_plugin_adapter_layer
+    status: specified
+    feeds: [Athena_Connective_Highway, Memory_Substrate, Plugin_Surfaces]
 
   Memory_Substrate:
     name: "Durable Memory / File / Database Substrate"
-    type: persistent_memory_and_evidence_storage_layer
+    type: persistent_storage_and_evidence_layer
     status: scaffolded
-    definition: "Durable project and institutional storage across repository files, documents, SQL/vector/graph/document stores, manifests, audit logs, and evidence packs."
-    receives:
-      - Athena_Connective_Highway
-      - Project_Athena_Capsule
-      - Evidence_Provenance
-    feeds:
-      - Project_Memory
-      - Memory_Writeback
-      - Local_Verification
+    receives: [Athena_Connective_Highway, Project_Athena_Capsule, Evidence_Provenance]
+    feeds: [Project_Memory, Memory_Writeback, Local_Verification]
 
   Cognitive_Orchestrator:
-    name: "Project Athena Cognitive Orchestrator"
-    type: reasoning_and_routing_layer
+    name: "Project ATHENA Cognitive Orchestrator"
+    type: institutional_reasoning_and_routing_layer
     status: specified
-    definition: "Classifies tasks, routes agents/councils, manages disagreement, confidence, evidence, and memory writeback."
-    receives:
-      - Athena_AI_OS
-      - External_Athena_Core
-      - AI_Local_Athena_Node
-    feeds:
-      - Agent_Council
-      - Plugin_Action_Register
-      - Cycle_Reports
+    receives: [Athena_AI_OS, External_Athena_Core, AI_Local_Athena_Node]
+    feeds: [Agent_Council, Plugin_Action_Register, Cycle_Reports]
 
   Agent_Council:
     name: "Cognitive Senate / Research Council"
     type: multi_agent_reasoning_layer
     status: specified
-    receives:
-      - Cognitive_Orchestrator
-      - A_E_S_I_R
-    feeds:
-      - Evidence_Provenance
-      - Project_Decisions
+    receives: [Cognitive_Orchestrator, A_E_S_I_R]
+    feeds: [Evidence_Provenance, Project_Decisions]
 
   Evidence_Provenance:
     name: "Evidence / Claim / Provenance Layer"
     type: trust_and_audit_layer
     status: scaffolded
-    receives:
-      - Athena_AI_OS
-      - Agent_Council
-      - Plugin_Outputs
-      - Local_Verification
-      - Athena_Connective_Highway
-      - OASIS_Runtime_Interface
-    feeds:
-      - Nexus_V
-      - Aegis
-      - Cycle_Reports
-      - Memory_Writeback
+    receives: [Athena_AI_OS, Agent_Council, Janus_Action_Reports, Plugin_Outputs, Local_Verification, OASIS_Runtime_Interface, Reality_to_Simulation]
+    feeds: [Nexus_V, Aegis, Cycle_Reports, Memory_Writeback, Janus_Interior_Face]
 
   Nexus_V:
     name: "Nexus-V"
-    type: semantic_versioned_execution_layer
+    type: semantic_versioned_execution_architecture
     status: specified
-    definition: "Versioned state compute using commit, branch, fork, merge, diff, rebase, checkout, rollback, snap/restore, score/rank/select, Aegis, NVASM, NVIR, NVOBJ, NVVM, RTL/toolchain work."
-    receives:
-      - Athena_AI_OS
-      - Evidence_Provenance
-      - Project_Athena_Capsule
-    feeds:
-      - Aegis
-      - Lightcore
-      - Versioned_State_Objects
+    definition: "Versioned state compute using commit, branch, fork, merge, diff, rebase, checkout, rollback, snap/restore and score/rank/select, with NVASM/NVIR/NVOBJ/NVVM/RTL work."
+    receives: [Athena_AI_OS, Janus_AI, OASIS, Evidence_Provenance, Project_Athena_Capsule]
+    feeds: [Aegis, Lightcore, Versioned_State_Objects]
+    boundary_rule: "Provides execution/state services; does not define AI identity."
 
   Aegis:
     name: "Aegis"
-    type: commit_gate_attestation_layer
+    type: commit_gate_attestation_and_trust_architecture
     status: specified
-    receives:
-      - Nexus_V
-      - Evidence_Provenance
-    feeds:
-      - Commit_Records
-      - Trust_Telemetry
-      - Rollback_Control
-      - LODE_TV
-      - RoomSense
+    receives: [Nexus_V, Evidence_Provenance, Authority_Tokens]
+    feeds: [Commit_Records, Trust_Telemetry, Rollback_Control, LODE_TV, RoomSense, Janus_Interior_Face]
+    boundary_rule: "Logical/cryptographic authority remains independently verifiable; physical channel separation is defense-in-depth only."
 
   Lightcore:
     name: "Lightcore"
     type: future_physical_execution_profile
     status: speculative
-    definition: "XYZ CNT-silicon-photonic compute architecture with dual-purpose electro-photonic CNT cells, silicon/silicon-nitride photonics, multidimensional optical/PAM signalling, and optical/crystal/CNT memory."
-    receives:
-      - Nexus_V
-      - Aegis
-    feeds:
-      - LODE_TV
-      - RoomSense
-      - Photonic_Compute_R_and_D
+    definition: "XYZ CNT-silicon-photonic heterogeneous compute, memory and optical transport research beneath stable Nexus-V/Aegis contracts."
+    receives: [Nexus_V, Aegis]
+    feeds: [LODE_TV, RoomSense, Photonic_Compute_R_and_D]
+    boundary_rule: "Optical/CNT/crystal state is working/cache/replica state unless retired through authoritative RSM/Aegis paths."
 
   LODE_TV:
     name: "L.O.D.E TV"
     expansion: "Lightcore Optical Display Endpoint"
-    type: photonic_display_sensor_endpoint
+    type: optical_display_telemetry_and_sensor_endpoint
     status: specified
-    definition: "Photonic-native display/interaction endpoint; final architecture avoids HDMI/DP conventional framebuffer pipeline."
-    receives:
-      - Lightcore
-      - Aegis
-      - OASIS
-    feeds:
-      - RoomSense
-      - Display_Telemetry
-      - XR_Interaction
-      - Optical_UI
+    receives: [Lightcore, Aegis, OASIS]
+    feeds: [RoomSense, Display_Telemetry, XR_Interaction, Optical_UI, Janus_AI]
+    engineering_status: "Measured concept package exists; not a certified manufacturing release."
 
   RoomSense:
     name: "RoomSense"
-    type: local_spatial_sensing_fabric
+    type: local_first_room_scale_spatial_sensing_fabric
     status: conceptual
-    definition: "Local-first room-scale spatial sensing with LiDAR/camera/RF/screen/headset/controller fusion."
-    receives:
-      - LODE_TV
-      - Lightcore
-      - Headset_Sensors
-      - Room_Towers
-    feeds:
-      - BodyRig
-      - Sentinel_Security
-      - OASIS
-      - Athena_AI_OS
-      - OASIS_Runtime_Interface
+    receives: [LODE_TV, Lightcore, Headset_Sensors, Room_Towers]
+    feeds: [BodyRig, Sentinel_Security, OASIS, Athena_AI_OS, Janus_AI, OASIS_Runtime_Interface]
+    privacy_rule: "RF/LiDAR/depth/motion fields are pseudonymous by default; familiarity and identity are separate consent-based modes."
 
   BodyRig:
     name: "RoomSense BodyRig"
-    type: markerless_full_body_tracking_layer
+    type: markerless_relational_full_body_tracking_layer
     status: conceptual
-    definition: "Markerless full-body VR/XR tracking using inside-out/outside-in fusion, relational tracking, human-state reconstruction, and virtual tracker output."
-    receives:
-      - RoomSense
-    feeds:
-      - VRChat_Integration
-      - OpenXR_Integration
-      - SteamVR_OSC_Integration
-      - Motion_Capture
-      - Embodied_Motion_Fidelity
-      - OASIS_Runtime_Interface
+    receives: [RoomSense]
+    feeds: [OpenXR_Integration, SteamVR_OSC_Integration, Motion_Capture, Embodied_Motion_Fidelity, OASIS_Runtime_Interface, Janus_AI]
 
-  OASIS:
-    name: "OASIS"
-    type: digital_world_simulation_environment
+  Reality_to_Simulation:
+    name: "Reality-to-Simulation Multisensor Platform"
+    type: calibrated_multimodal_capture_and_fusion_platform
     status: conceptual
-    definition: "Outer digital operating environment for engineering, simulation, games, virtual workspaces, R&D, production, schematic workshops, and immersive worlds."
-    receives:
-      - Athena_AI_OS
-      - LODE_TV
-      - RoomSense
-      - Operative_Duplex_AI
-      - OASIS_Runtime_Interface
-    feeds:
-      - Simulation_State
-      - Spatial_Workflows
-      - User_Interfaces
-      - OASIS_Runtime_Interface
+    receives: [Optical_Sensors, Spectral_Sensors, Thermal_Sensors, LiDAR_Depth, RF_Radar, Environmental_Sensors]
+    feeds: [Evidence_Provenance, Material_Atlas, Known_Behavioral_Map, OASIS]
+    boundary_rule: "Outputs label measured, derived, inferred, hypothesized and unknown states separately."
 
-  Operative_Duplex_AI:
+  Known_Behavioral_Map:
+    name: "Known Behavioral Map / Material Atlas"
+    type: multidomain_material_behavior_database_and_inference_layer
+    status: conceptual
+    receives: [Reality_to_Simulation, Controlled_Test_Campaigns]
+    feeds: [OASIS, Athena_AI_OS, Janus_AI, Engineering_Simulation]
+    boundary_rule: "10,000 conditions × 10 repeats is proposed campaign scale, not completed evidence."
+
+  Legacy_Operative_Duplex_AI:
     name: "Operative Duplex AI"
-    type: local_action_metacognitive_control_layer
-    status: conceptual
-    definition: "AI arms-and-legs layer for local PC/software control using Athena/Jarvis/OASIS context; not a replacement for Athena."
-    receives:
-      - Athena_AI_OS
-      - OASIS
-      - Local_Program_State
-      - OASIS_Runtime_Interface
-    feeds:
-      - Local_Automation
-      - Codex_Workflows
-      - UI_Control
-      - Action_Reports
+    type: legacy_alias_for_janus_internal_duplex
+    status: superseded
+    definition: "Historical name retained for provenance; canonical identity is JANUS."
+    feeds: [Janus_AI]
 
 plugin_surfaces:
   GitHub:
-    role: canonical_repository_commit_issue_and_trace_surface
-    allowed_for:
-      - sanitized_documentation
-      - issues
-      - pull_requests
-      - public_architecture_specs
-      - code_after_review
-    not_allowed_for:
-      - raw_private_chats
-      - credentials
-      - local_runtime_dumps
-      - private_sensor_data
-      - SQL_dumps
-
-  Asana:
-    role: execution_queue_task_management
-    source_of_truth: false
-
+    role: canonical_repository_commit_issue_pull_request_and_trace_surface
+    source_of_truth: true
+    allowed_for: [sanitized_documentation, issues, pull_requests, public_architecture_specs, reviewed_code]
+    prohibited: [raw_private_chats, credentials, local_runtime_dumps, private_sensor_data, database_dumps]
   Notion:
-    role: planning_dashboard_and_mirror
+    role: planning_dashboard_and_documentation_mirror
     source_of_truth: false
-
+  Google_Drive:
+    role: distribution_and_native_document_mirror
+    source_of_truth: false
+  Asana:
+    role: execution_queue_and_status_management
+    source_of_truth: false
+  Figma:
+    role: editable_architecture_and_interface_diagrams
+    source_of_truth: false
+  Canva:
+    role: controlled_infographics_and_visual_communication
+    source_of_truth: false
   Gamma:
     role: presentation_and_communication_artifacts
     source_of_truth: false
-
-  Google_Drive:
-    role: export_and_distribution_mirror
-    source_of_truth: false
-
-  Canva:
-    role: controlled_infographic_and_visual_board_workspace
-    source_of_truth: false
-
-  Figma:
-    role: editable_system_diagram_dashboard_and_ui_design_workspace
-    source_of_truth: false
-
   Consensus:
     role: peer_reviewed_research_anchor_search
     source_of_truth: false
-
   SciSpace:
     role: independent_academic_cross_check
     source_of_truth: false
-
   Wolfram:
-    role: math_physics_geometry_sanity_check
+    role: mathematics_physics_and_geometry_sanity_check
     source_of_truth: false
-
   Local_Athena_Tools:
-    role: verification_integrity_manifest_project_map_forensics_cycle_reports
+    role: integrity_manifest_project_map_forensics_and_cycle_validation
     source_of_truth: local_first
-    push_gate: sanitize_before_cloud
 
 hot_swap_primitives:
-  commit: "Save verified project state or accepted documentation."
-  branch: "Create alternate design path."
+  commit: "Save verified state or accepted documentation."
+  branch: "Create alternate design or operation state."
   fork: "Create independent project/capsule line."
   merge: "Reconcile validated branches."
-  diff: "Compare states, assumptions, schemas, or specs."
-  rebase: "Move a project onto a newer Athena/AI-OS/Nexus foundation."
+  diff: "Compare states, assumptions, schemas, artifacts or expected/observed outcomes."
+  rebase: "Move a project onto a newer architecture foundation."
   rollback: "Restore a known-good state."
-  snapshot: "Freeze project state for audit/handoff."
-  hotswap: "Replace AI model, backend, highway segment, or runtime without losing continuity."
-  clone: "Copy project capsule, adapter profile, or skill bundle."
-  promote: "Move validated knowledge upward from call/workspace memory."
-  quarantine: "Hold unsafe, uncertain, private, contaminated, or unvalidated material outside canonical memory."
+  snapshot: "Freeze state for audit, simulation or handoff."
+  hotswap: "Replace a model, adapter, backend or runtime without losing durable context."
+  clone: "Copy a project capsule, sandbox, application state or Skill Capsule."
+  promote: "Move validated knowledge upward under governance."
+  quarantine: "Hold unsafe, private, contaminated, ambiguous or unvalidated state outside canonical memory."
 
 immediate_next_artifacts:
-  p0:
-    - CAPABILITY_STATE_MATRIX.md
-    - PLUGIN_ACTION_REGISTER.md
-    - GOVERNANCE_CLOUD_PUSH_EXCEPTION_2026-08-05.md
-    - CYCLE_REPORT_2026-08-05_MASTER_EXPANSION.md
-    - ATHENA_DOCKING_FABRIC_HOTSWAP_SPEC.md
-    - ATHENA_DOCKING_FABRIC_INFOGRAPHIC.mmd
-  p1:
-    - OASIS_ARCHITECTURE_SPEC.md
-    - OPERATIVE_DUPLEX_AI_SPEC.md
-    - NEXUSV_ATHENA_BRIDGE_SPEC.md
-    - LODE_ROOMSENSE_BODYRIG_INTERFACE_SPEC.md
-    - LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md
-    - ADAPTER_SDK_CONTRACT.md
-    - EVIDENCE_PROVENANCE_SCHEMA_ALIGNMENT.md
-    - athena_capsule.manifest.yml
-    - athena_highway.routes.yml
-    - model_adapters/athena-node-template.md
-  p2_blocked_until_local_verification:
+  p0_identity_and_contracts:
+    - JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md
+    - SYSTEM_IDENTITY_AND_AUTHORITY_CORRECTION_2026-08-05.md
+    - janus.manifest.yml
+    - janus-operation.schema.json
+    - janus-skill-capsule.schema.json
+    - system-request.schema.json
+  p1_conventional_prototypes:
+    - janus_read_only_windows_mapper
+    - janus_independent_pre_action_verifier
+    - oasis_object_world_export_schemas
+    - oasis_conventional_runtime_proof
+  p2_engineering_and_spatial:
+    - lode_optical_thermal_structural_models
+    - roomsense_bodyrig_coordinate_and_confidence_schemas
+    - r2s_material_atlas_schema
+    - known_behavioral_map_pilot_campaign
+  p3_blocked_until_local_verification:
     - updated_project_scan
     - updated_ai_system_manifest
     - updated_project_map
-    - integrity_forensic_reports
-    - nexus_v_build_test_status
+    - integrity_and_forensic_reports
+    - nexus_v_build_lint_regression_status
