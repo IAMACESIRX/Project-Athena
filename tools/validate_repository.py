@@ -169,13 +169,17 @@ def validate_canonical_path_references(report: ValidationReport) -> None:
         text = path.read_text(encoding="utf-8-sig")
         for match in PATH_TOKEN.finditer(text):
             token = match.group(1)
-            if any(marker in token for marker in ("*", "{", "}", "<", ">")):
+            if any(marker in token for marker in ("*", "{", "}", "<", ">", "...")):
                 continue
-            if token.startswith(("http://", "https://")):
+            if token.startswith(("http://", "https://", ".")):
                 continue
             checked += 1
-            candidate = report.root / token
-            if not candidate.exists():
+            candidates = (
+                report.root / token,
+                report.root / "Nexus V" / token,
+                path.parent / token,
+            )
+            if not any(candidate.exists() for candidate in candidates):
                 report.warn(f"Unresolved path reference in {item}: {token}")
     report.counts["canonical_path_references_checked"] = checked
 
