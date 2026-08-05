@@ -1,204 +1,121 @@
 # Plugin Workspace Sync Log — 2026-08-05
 
-## Purpose
-
-This document records the plugin/toolchain synchronization pass for Project Athena. It defines what each workspace is for, which labels should be used, what was updated, what was mirrored, what was blocked, and what remains to be produced.
-
-## Canonicality rule
+## Canonicality
 
 ```text
-GitHub = canonical source of truth for this documentation consolidation.
-Notion = navigable dossier mirror.
-Asana = execution roadmap mirror.
-Gamma = presentation / public-dossier mirror.
-Google Drive = file/distribution mirror.
-Canva/Figma = visual design and infographic workspaces.
-Consensus/SciSpace/Wolfram = research and sanity-check sources, not canonical project state.
+GitHub/local Project Athena = canonical source of truth.
+Notion = labelled navigable documentation mirror.
+Google Drive = distribution and native-document mirror.
+Asana = execution queue and status mirror.
+Figma/Canva = editable visual design surfaces.
+Consensus/SciSpace = research and sanity-check sources.
+Gamma = optional presentation mirror.
 ```
 
-## Label taxonomy
-
-Use these labels/tags across plugin workspaces where supported:
+## Corrected label taxonomy
 
 ```text
 project-athena
 athena-master-expansion
 aesir
 ai-os
-athena-docking-fabric
-athena-highway
-ai-local-athena-node
-external-athena-core
-project-capsule
-hot-swap
-cloneable-architecture
+jarvis
+janus
+independent-ai
+operative-metacognition
+interior-face
+exterior-face
+application-cartography
+skill-capsules
+human-authority
+oasis
+oasis-substrate
+digital-reality
+simulation
+engineering
+science
+virtual-living
+workspaces
+r-and-d
+production-workshops
+digital-twins
 nexus-v
 aegis
 lightcore
 lode-tv
 roomsense
 bodyrig
-sentinel
-oasis
-operative-duplex
+reality-to-simulation
 known-behavioral-map
-multisensor-material-mapping
-engineering-concept
-speculative-hardware
-research-anchor
 local-first
 privacy-mode
+needs-implementation
 needs-validation
-prototype-roadmap
+research-validated-primitives
 repo-canonical
 plugin-mirror
 controlled-vector-graphics
 ```
 
-## Plugin roles
+`operative-duplex` is now a legacy alias only. The canonical system identity is JANUS; duplex describes JANUS's Interior and Exterior faces.
 
-| Plugin / workspace | Role | Canonicality | Required labels |
-|---|---|---|---|
-| GitHub | Source of truth for docs, specs, feed maps, research anchors, issue tracking, controlled SVG/Mermaid source | Canonical | `repo-canonical`, subsystem labels |
-| Notion | Navigable knowledge dossier and workspace-readable project map | Mirror | `plugin-mirror`, `project-athena`, subsystem labels |
-| Asana | Task execution, roadmap sections, sprint/work breakdown | Mirror | `prototype-roadmap`, subsystem labels |
-| Gamma | Polished architecture deck/dossier presentation | Mirror | `project-athena`, subsystem labels |
-| Google Drive | File mirror for exported PDFs, docs, graphics, blueprint packs | Mirror | folder/file naming labels |
-| Canva | Visual posters, presentation boards, marketing/infographic assets | Visual mirror | `infographic`, subsystem labels |
-| Figma | Editable UI/UX and system diagrams, dashboard prototypes | Design mirror | `design-system`, subsystem labels |
-| Consensus | Peer-reviewed research anchors | Research source | N/A |
-| SciSpace | Research table and literature triage | Research source | N/A |
-| Wolfram | Calculations, dimensional checks, physics/math sanity checks | Computation source | N/A |
-| Supabase | Future Athena runtime database/backend | Future runtime | `runtime`, `database`, `needs-validation` |
-| Vercel | Future docs/dashboard/app deployment | Future deployment | `runtime`, `dashboard`, `needs-validation` |
-| Lovable/Replit | Fast prototype surfaces | Prototype mirror | `prototype`, subsystem labels |
-| Amplitude | Future telemetry/product analytics | Future observability | `observability`, `telemetry` |
-| Gmail/Outlook/Calendar/Contacts | Future personal operating layer integrations | Future integration | `operator-workflow` |
+## JANUS/OASIS correction pass
 
-## Actions completed in the original master-expansion pass
-
-| Surface | Action | Status |
+| Surface | Action | Result |
 |---|---|---|
-| GitHub | Scanned repo root and confirmed Project Athena structure. | Completed |
-| GitHub | Scanned `Plan/` tree and authority context. | Completed |
-| GitHub | Added ChatGPT project concept sync dossier. | Completed |
-| GitHub | Added L.O.D.E TV engineering completion map. | Completed |
-| GitHub | Added Athena system feed/benefit matrix. | Completed |
-| GitHub | Added plugin workspace sync log. | Completed |
-| GitHub | Updated master expansion README index. | Completed |
-| GitHub | Updated `Plan/FEATURE_ROADMAP.md`. | Completed |
-| GitHub | Updated `Plan/IMPLEMENTATION_MATRIX.md`. | Completed |
-| Notion | Updated `Project Athena master expansion — v0.4` with latest sync note. | Completed |
-| Notion | Created `L.O.D.E TV Engineering Completion Map — 2026-08-05`. | Completed |
-| Asana | Created `Project Athena master expansion execution roadmap — 2026-08-05` with 5 sections and 15 tasks. | Completed |
-| Google Drive | Created `Project Athena Master Expansion — 2026-08-05` folder. | Completed |
-| Google Drive | Created `Project Athena Master Expansion Sync — 2026-08-05` document and moved it into the folder. | Completed |
-| Consensus | Pulled agentic governance/auditability anchors. | Completed |
-| Consensus | Pulled silicon nitride photonics anchor. | Completed |
-| Consensus | Pulled CNT/silicon-waveguide photonics anchors. | Completed |
-| Consensus | Pulled multi-sensor SLAM and LiDAR human-pose anchors. | Completed |
-| SciSpace | Ran supporting search for provenance, audit logs, governance gates, and HITL multi-agent systems. | Completed |
-| Wolfram | Checked 100-inch 16:9 active-area reference geometry. | Completed |
-| Gamma | Attempted to generate polished Project Athena / L.O.D.E / Lightcore dossier. | Blocked: insufficient Gamma credits. |
+| GitHub | Created controlled branch `agent/janus-independent-operative-ai-correction`. | Completed |
+| GitHub | Added independent JANUS master specification and identity correction. | Completed |
+| GitHub | Corrected OASIS as a non-AI general-purpose digital-reality/simulation substrate. | Completed |
+| GitHub | Corrected full system map, ontology, Plan collaboration model, roadmap, implementation matrix, README and AI portal. | Completed |
+| GitHub | Added JSON Schemas for JANUS operations, Skill Capsules and identity-preserving system requests. | Completed; schema syntax validated locally in this session |
+| GitHub | Added current GUI-agent research and safety validation notes. | Completed |
+| Notion | Extended Source-of-Truth Map taxonomy with `JARVIS`, `JANUS`, `Operative Duplex AI — Legacy`, Google Drive, Figma and Canva options. | Completed |
+| Notion | Renamed and rewrote stale Operative Duplex page as `JANUS — Independent Operative Metacognitive AI v1.0`. | Completed |
+| Notion | Rewrote OASIS page with the non-AI, broad engineering/science/game/living/work/R&D/production scope. | Completed |
+| Google Drive | Created `Project Athena — JANUS Independent System Correction — 2026-08-05`. | Completed |
+| Google Drive | Filed correction document under `Project Athena Master Expansion — 2026-08-05`. | Completed |
+| Asana | Added six implementation tasks for JANUS mapping, verification, cartography, Skill Capsules, OASIS schemas and mirror reconciliation. | Completed |
+| Asana | Posted on-track project status documenting the correction and remaining local validation. | Completed |
+| Consensus | Checked professional GUI grounding and confused-deputy safety research. | Completed |
+| SciSpace | Cross-checked hierarchical planning, recovery and professional-software limitations. | Completed |
+| Figma | Prepared editable system architecture diagram and submitted it to the FigJam generator. | Blocked pending the user's team/organization selection in the displayed widget |
+| Canva | No write performed. Existing controlled SVG/Mermaid sources remain the preferred production inputs. | Deferred |
+| Gamma | No new deck generated. | Deferred; prior credit limitation recorded |
+| Local ATHENA / RTL tools | Not executable through the remote GitHub connector. | Blocked until run on the user's machine |
 
-## Actions completed in the docking-fabric / hot-swap addendum pass
+## Current workspace URLs
 
-| Surface | Action | Status |
-|---|---|---|
-| GitHub | Added `ATHENA_DOCKING_FABRIC_HOTSWAP_SPEC.md`. | Completed |
-| GitHub | Added `ATHENA_DOCKING_FABRIC_INFOGRAPHIC.mmd`. | Completed |
-| GitHub | Updated `README.md` index with docking-fabric scope and file entries. | Completed |
-| GitHub | Updated `ATHENA_MASTER_ONTOLOGY.yml` with AI-local Athena node, external Athena core, Athena connective highway, project capsule, group skills, model adapters, database/highway adapters, and OASIS runtime interface nodes. | Completed |
-| GitHub | Updated this plugin workspace sync log with docking-fabric labels and addendum state. | Completed |
-| Asana | Confirmed existing execution roadmap and added docking-fabric tasks/commentary where supported in this pass. | Completed / mirror |
-| Notion | Located existing `Project Athena master expansion — v0.4` mirror pages and prepared/updated the docking addendum mirror where supported in this pass. | Completed / mirror |
-| Gamma | No new deck generated in this pass. | Blocked / defer |
-| Canva/Figma | No direct design file edited in this pass; Mermaid source now exists as the canonical controlled graphic input. | Deferred |
-| Local Athena tools | Not run from this chat surface because they require the user's machine. | Blocked until local execution |
+- GitHub correction branch: https://github.com/IAMACESIRX/Project-Athena/tree/agent/janus-independent-operative-ai-correction
+- Notion Source-of-Truth Map: https://app.notion.com/p/31c525fc9ab44e3b9cd3286656e7b6d7
+- Notion JANUS mirror: https://app.notion.com/p/3b33388fe88681a08e6fff10ce096876
+- Notion OASIS mirror: https://app.notion.com/p/3b33388fe88681cb8180e365ec31d14d
+- Asana roadmap: https://app.asana.com/1/1217063990838852/project/1217175568404072
+- Google Drive master-expansion folder: https://drive.google.com/drive/folders/1fa45Nwin3C_SBNy0xcvqsxZEVFaTC1Vz
+- Google Drive JANUS correction document: https://docs.google.com/document/d/1yLbDzxeC9NayZdjI75rkXGa1eLftb31KG5PmVmpYJ-4/edit?usp=drivesdk
 
-## Actions completed in the controlled release fix pass
+## Workspace content standard
 
-| Surface | Action | Status |
-|---|---|---|
-| GitHub | Added `CONTROLLED_RELEASE_FIX_2026-08-05.md` to correct the stalled Thinking-state release pass. | Completed |
-| GitHub | Added `PLAN_FOLDER_COMPLETE_AUDIT_2026-08-05.md` with content-read vs inventory-only boundaries. | Completed |
-| GitHub | Added `ENGINEERING_GRAPHICS_MANIFEST_2026-08-05.md`. | Completed |
-| GitHub | Added controlled SVG graphic `graphics/ATHENA_SYSTEM_OF_SYSTEMS_MAP.svg`. | Completed |
-| GitHub | Added controlled SVG graphic `graphics/LODE_LIGHTCORE_PIPELINE.svg`. | Completed |
-| GitHub | Added controlled SVG graphic `graphics/ROOMSENSE_BODYRIG_SENTINEL_LOOP.svg`. | Completed |
-| GitHub | Updated `README.md` with fix files, graphics, Known Behavioral Map / multisensor material mapping scope, and current engineering-documentation emphasis. | Completed |
-| GitHub | Fetched `Plan/AI-OS-v7.0-Master-Specification.md`, `AI-OS-v13.0-Unified-Encyclopedia.md`, `AI-OS-v10.0-Knowledge-and-Memory-Constitution.md`, `AI-OS-v11.0-Agent-Species-Catalog.md`, `AI-OS-v12.0-Federation-and-Civilization-Framework.md`, `FEATURE_ROADMAP.md`, and `IMPLEMENTATION_MATRIX.md` for direct content sanity. | Completed |
-| GitHub | Queried the recursive repository tree and root `Plan/` contents to verify accessible Plan inventory. | Completed |
-| Wolfram | Recomputed 100-inch 16:9 active-area dimensions: 2213.801864 mm × 1245.263549 mm. | Completed |
-| Consensus | Ran updated agentic governance/auditability search. | Completed |
-| SciSpace | Ran component-primitives search for integrated photonics, CNT/optoelectronic computing, LiDAR, and sensor/spatial-computing anchors. | Completed |
-| Notion | Mirror page should be updated with this fix summary. | Pending / next mirror step |
-| Google Drive | Mirror document should be updated with this fix summary and graphic links. | Pending / next mirror step |
-| Asana | Roadmap should receive a status update referencing this fix pass. | Pending / next mirror step |
-| Gamma | Still blocked unless credits become available. | Blocked |
-| Canva/Figma | Controlled source graphics now exist; design-surface production remains deferred until target/template exists. | Deferred |
+Every mirror should show:
 
-## Created mirror URLs
-
-| Workspace | Artifact | URL |
-|---|---|---|
-| Notion | Project Athena master expansion — v0.4 | https://app.notion.com/p/3b33388fe88681ea9617ef2b9551e967 |
-| Notion | L.O.D.E TV Engineering Completion Map — 2026-08-05 | https://app.notion.com/p/3b33388fe88681f2b928daedcc1b0b8a |
-| Asana | Project Athena master expansion execution roadmap — 2026-08-05 | https://app.asana.com/1/1217063990838852/project/1217175568404072 |
-| Google Drive | Project Athena Master Expansion — 2026-08-05 folder | https://drive.google.com/drive/folders/1fa45Nwin3C_SBNy0xcvqsxZEVFaTC1Vz |
-| Google Drive | Project Athena Master Expansion Sync — 2026-08-05 document | https://docs.google.com/document/d/1mgPQQaUaEDzkCWdJwgmyetJ62k2vAkNHmuPCWcrqWmY/edit?usp=drivesdk |
-
-## Mirror actions still needed
-
-| Surface | Required update | Notes |
-|---|---|---|
-| Notion | Add/refresh controlled release fix page or append latest fix summary to master mirror. | Use the new GitHub docs as canonical source. |
-| Google Drive | Add latest fix summary and links to new controlled SVG files. | Current Drive mirror is a folder plus text dossier. |
-| Asana | Post status update or create follow-up tasks for docx extraction, Known Behavioral Map spec, sensor/material mapping spec, and controlled blueprint generation. | Existing roadmap is the execution mirror. |
-| Gamma | Create/update polished Project Athena / L.O.D.E / Lightcore / Athena Docking Fabric dossier. | Blocked by insufficient Gamma credits in the original run; retry only when credits are available. |
-| Canva | Create controlled infographic boards after template/design selection. | Use SVG/Mermaid sources from GitHub; avoid generated-image text. |
-| Figma | Create/edit UI or system-design file when a Figma target file exists. | Useful for Athena dashboard, L.O.D.E UX, docking highway diagrams, and adapter maps. |
-| Supabase/Vercel/Lovable/Replit | Defer unless building runtime or prototype app. | Not required for documentation sync. |
-
-## Workspace update standard
-
-Each plugin mirror should contain:
-
-1. Link to GitHub canonical folder: `docs/athena-master-expansion/`.
-2. Short thesis of Project Athena.
-3. Subsystem map.
-4. Current status: design-authority consolidation, not complete implementation.
-5. Labels/tags from the taxonomy above.
-6. Last sync date.
-7. Outstanding validation list.
-8. Docking-fabric/hot-swap note: AI-local Athena nodes, external Athena core, Athena highway, project capsules, and OASIS runtime interface are separate layers.
-9. Controlled graphics note: engineering-facing graphics must be SVG/Mermaid/PDF/vector text, not generated-image text.
+1. GitHub canonical link and branch/PR.
+2. Last synchronization date.
+3. System identity and subsystem label.
+4. Implemented/scaffolded/specified/conceptual/speculative/blocked/superseded status.
+5. Evidence and provenance references.
+6. Outstanding validation and implementation work.
+7. Explicit statement that ATHENA, JARVIS and JANUS are independent intelligences and OASIS is not an AI.
+8. Explicit statement that human authority remains ultimate.
 
 ## Engineering graphics policy
 
-Generated images are allowed as inspiration/reference plates only. Production-facing graphics must use controlled text and vector layouts.
+- Production-facing diagrams use editable/vector text: SVG, Mermaid, FigJam/Figma, controlled PDF or CAD drawing sources.
+- Generated raster imagery may be used only as reference or concept art unless redrawn and checked.
+- Every diagram must show directionality, authority, validation state and canonical source.
+- Any earlier graphic showing JANUS as an ATHENA limb or OASIS as an ATHENA container is legacy and must be regenerated.
 
-Required graphic classes:
+## Validation limitations
 
-- master architecture infographic,
-- Athena docking fabric / hot-swap diagram,
-- AI-local node / external Athena / highway / project capsule diagram,
-- L.O.D.E optical pipeline,
-- L.O.D.E measured assembly sheet,
-- Lightcore physical execution stack,
-- RoomSense room layout,
-- BodyRig relational skeleton graph,
-- Sentinel privacy/security mode diagram,
-- Nexus-V/Aegis commit path,
-- OASIS environment loop,
-- Operative Duplex action loop,
-- Known Behavioral Map material-property pipeline,
-- multisensor material/reality-to-simulation map.
-
-## Sync risk notes
-
-- Plugin mirrors can drift from the repo; mark GitHub as canonical.
-- Not all plugin workspaces expose full write/update functions in every chat surface.
-- Binary `.docx`, `.zip`, image, and generated-design files may require separate extraction or export before deep semantic auditing.
-- Speculative hardware must remain marked as R&D concept until validated by simulation, bench tests, or manufacturable component selection.
-- Local verification, RTL lint/simulation, private runtime manifests, and local machine scans must be run on the user's machine, then sanitized before cloud push.
+- The root `Plan/` corpus and `Nexus V/docs/Plan/` mirror include numerous DOCX and ZIP artifacts. Textual authority files and selected engineering packages were reviewed, but the remote connector could not re-extract and content-hash every binary artifact.
+- Local PowerShell scans, project-map generation, manifests, RTL lint, simulator runs and private runtime inspection remain unexecuted in this remote pass.
+- Research validates individual GUI-agent primitives and exposes serious professional-software limitations; it does not prove complete JANUS capability.
+- Lightcore, L.O.D.E hardware, RoomSense/BodyRig, Reality-to-Simulation and Known Behavioral Map performance claims remain R&D until measured.
