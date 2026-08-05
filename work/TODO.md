@@ -5,62 +5,77 @@ Updated: 2026-08-05
 This is the current repository-wide queue. Project-specific legacy work belongs
 under its project brain, not in this root queue.
 
-## Now — Canonicalize and verify
+## Reconciliation completed
 
-- Review and reconcile PR #5, the JANUS identity and OASIS substrate correction.
-- Rebase or reconstruct PR #4 on top of the accepted identity model, then review
-  the Reality-to-Simulation and Material Intelligence release.
-- Merge the repository-integrity repair and enable branch protection after its
-  workflow has produced a successful run.
-- Run the complete local Athena operation cycle against the merged baseline.
-- Regenerate the system manifest, project map, file index, scan outputs, and
-  cycle reports so every generated status record names the validated commit.
-- Remove or archive superseded feature branches only after their unique work is
-  merged or explicitly rejected.
+- Repository governance, CI and legacy-project scoping merged through PR #7.
+- Independent JANUS identity and corrected OASIS substrate merged through PR #8.
+- Reality-to-Simulation and Material Intelligence merged through PR #9.
+- Repository Integrity passed on each replacement PR and on the resulting
+  canonical `main` commits.
+- Superseded PRs #4 and #5 were closed with provenance links to their clean
+  replacements; their source branches remain temporarily available.
+
+## Now — Refresh measured state
+
+- Run the complete local Athena operation cycle against
+  `main@cc8da6b42cb871afad121ab5bf104428137615ea` or its latest descendant.
+- Regenerate the system manifest, project map, file index, sensory scans and
+  cycle reports so every generated status record names the exact validated
+  commit and tool versions.
+- Install and document a canonical SystemVerilog simulator/linter, then run real
+  Nexus-V lint, compilation and simulation.
+- Configure GitHub branch protection and secret scanning through repository
+  settings; track completion in the dedicated GitHub issue.
+- Confirm superseded branches contain no unique required work, then archive or
+  delete them through GitHub branch management.
 
 ## Next — Build one executable Athena slice
 
 - Run one real task from structured intake through context resolution, policy
   gate, model/tool routing, execution, independent verification, evidence IDs,
-  cycle report, and memory writeback.
+  cycle report and memory writeback.
 - Connect task-intake claims to `forensics/evidence-register.csv`,
-  `forensics/claim-catalog.csv`, and `forensics/evidence-claim-map.csv`.
-- Add project-profile activation so domain-specific council roles cannot leak
-  into unrelated work.
+  `forensics/claim-catalog.csv` and `forensics/evidence-claim-map.csv`.
+- Implement project-profile activation so domain-specific council roles are
+  selected mechanically rather than only by documentation convention.
 - Convert architecture claims into testable requirements and implementation
-  issues rather than adding further untracked specification layers.
-- Add a current capability matrix generated from source, tests, and reports.
+  issues instead of adding untracked specification layers.
+- Generate a current capability matrix from source, tests and reports.
 
 ## Nexus-V verification
 
-- Install and document a canonical SystemVerilog simulator/linter.
-- Make `Nexus V/scripts/run_regression.py` invoke real compilation and
-  simulation rather than only checking artifact presence.
-- Add expected traces, negative tests, assertions, and subsystem coverage.
-- Record tool versions and commit SHAs in every Nexus-V verification report.
-- Separate source authority, generated vectors, simulator outputs, and reports.
+- Replace artifact-presence-only regression with simulator-backed execution in
+  `Nexus V/scripts/run_regression.py`.
+- Add expected traces, negative tests, assertions and subsystem coverage.
+- Record simulator version, command line, source commit and generated-artifact
+  hashes in every verification report.
+- Separate source authority, generated vectors, simulator outputs and reports.
+- Keep quantum-domain, Lightcore and advanced physical-fabric work explicitly
+  staged until conventional simulation and prototype evidence exists.
 
 ## Repository engineering
 
-- Require repository-integrity CI on pull requests after the first successful
-  run.
+- Require the `Repository Integrity / integrity` check before merging to `main`.
+- Disable force pushes and branch deletion on `main`.
+- Enable secret scanning and push protection where available.
 - Select a long-term licence to replace the interim all-rights-reserved notice.
-- Add automated secret scanning in repository settings or a reviewed CI action.
-- Configure branch protection for `main`: pull requests, required checks, stale
-  approval dismissal, and no force pushes.
-- Keep open PR dependencies and merge order in a machine-readable register.
+- Add a machine-readable release/baseline register generated from merged PRs and
+  validated commits.
+- Keep external plugin workspaces labelled as mirrors, design surfaces or
+  execution queues rather than independent canonical brains.
 
-## Later — Runtime and adapters
+## Runtime and adapters
 
 - Build the local Athena service/API while preserving file-native authority.
-- Define Codex, Jarvis, GPT/local-model, research, governance, and JANUS adapter
+- Define Codex, JARVIS, GPT/local-model, research, governance and JANUS adapter
   contracts.
-- Add a local operations dashboard driven by generated reports rather than
-  manually asserted status.
+- Add a local operations dashboard driven by generated evidence and reports.
 - Implement the Athena ↔ Nexus-V evidence/state bridge.
-- Advance Lightcore, L.O.D.E, RoomSense, BodyRig, OASIS, and material
-  intelligence through simulation and bench validation without promoting R&D
-  hypotheses to verified engineering.
+- Implement bounded R2S proof-of-concept stages on conventional hardware before
+  any Lightcore acceleration assumptions.
+- Advance L.O.D.E, RoomSense, BodyRig, OASIS and material intelligence through
+  simulation and bench validation without promoting R&D hypotheses to verified
+  engineering.
 
 ## Scoped legacy work
 
