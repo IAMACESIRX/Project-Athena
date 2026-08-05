@@ -85,20 +85,61 @@ or files first, then archive or delete only after provenance is preserved.
 7. Keep Lightcore, advanced L.O.D.E hardware and other physical concepts staged
    until simulation, bench testing and specialist review support them.
 
-## Repository settings still required
+## GitHub repository settings verification
 
-Repository settings cannot be enforced by files in this tree. Configure `main`
-with:
+Verified through the signed-in GitHub UI on 2026-08-05.
 
-- pull requests required;
-- `Repository Integrity / integrity` required;
-- force pushes disabled;
-- branch deletion disabled;
-- stale approvals dismissed after new commits;
-- conversation resolution required where available;
-- secret scanning and push protection enabled where available.
+### `main` branch protection
 
-Track this settings-only work through the dedicated GitHub issue.
+- Branch protection rule `main` applies to 1 branch.
+- Pull requests are required before merging.
+- Required status checks are enabled.
+- Required check: `integrity`, provided by GitHub Actions.
+- Branches must be up to date before merging.
+- Conversation resolution is required before merging.
+- Administrators are included in enforcement, leaving no routine bypass path.
+- Force pushes are disabled.
+- Branch deletion is disabled.
+
+Approving reviews are not currently required. Because this is a solo-owner
+repository and administrators are included in enforcement, enabling required
+approvals would likely block owner-authored maintenance PRs. Stale approval
+dismissal is therefore not active or meaningful until an additional reviewer is
+added.
+
+### Security features
+
+- Private vulnerability reporting is enabled.
+- Dependency graph is enabled.
+- Dependabot alerts are enabled.
+- Dependabot malware alerts are enabled.
+- Dependabot security updates are enabled.
+- Grouped security updates are enabled.
+- CodeQL default setup is enabled.
+- Secret scanning is enabled.
+- Push protection is enabled.
+
+Security alert review on 2026-08-05:
+
+- Dependabot alerts: 0 open, 0 closed.
+- Secret scanning alerts: 0 open, 0 closed.
+- Code scanning alerts: 2 open before this baseline update, both reported by
+  CodeQL in `tools/validate_repository.py`:
+  - alert #1: clear-text storage of sensitive information at line 118;
+  - alert #2: clear-text logging of sensitive information at line 434.
+- The CodeQL findings were traced to the repository validator persisting and
+  logging diagnostics that can be derived from credential-pattern matches. This
+  branch withholds secret-derived line details from persisted reports and logs
+  while preserving a failing diagnostic by pattern and file. Re-check CodeQL
+  after this change merges.
+
+### Verification limits
+
+No deliberately failing pull request was opened, and no direct commit was pushed
+to `main` as a negative branch-protection test. Those tests would create
+publicly visible noise or intentionally invalid repository history. Enforcement
+was verified from the live branch protection rule, and recent maintenance merges
+used the protected PR path with the required `integrity` check.
 
 ## Rights and publication
 

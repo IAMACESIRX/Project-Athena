@@ -372,12 +372,14 @@ def validate_secret_patterns(report: ValidationReport, gate: dict[str, Any]) -> 
             continue
         checked += 1
         for pattern_id, pattern in compiled:
-            for match in pattern.finditer(text):
-                line_no = text.count("\n", 0, match.start()) + 1
-                matches += 1
-                report.error(
-                    f"Potential credential pattern {pattern_id} in {rel_path}:{line_no}"
-                )
+            pattern_matches = list(pattern.finditer(text))
+            if not pattern_matches:
+                continue
+            matches += len(pattern_matches)
+            report.error(
+                f"Potential credential pattern {pattern_id} in {rel_path}; "
+                "line details withheld from persisted reports and logs"
+            )
 
     report.counts["publication_secret_scan_files"] = checked
     report.counts["publication_secret_pattern_matches"] = matches
