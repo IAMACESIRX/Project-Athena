@@ -12,7 +12,9 @@ Canva = editable visual mirror / infographic surface.
 Generated Canva candidates = visual drafts until reviewed and reconciled against GitHub-controlled wording.
 ```
 
-## Added Canva artifact
+## Canva artifacts
+
+### 1. Docking-fabric infographic
 
 | Field | Value |
 |---|---|
@@ -26,21 +28,38 @@ Generated Canva candidates = visual drafts until reviewed and reconciled against
 | Status | Created in Canva; requires text reconciliation and export before being treated as production-facing documentation |
 | Repo-canonical companion files | `ATHENA_DOCKING_FABRIC_HOTSWAP_SPEC.md`, `ATHENA_DOCKING_FABRIC_INFOGRAPHIC.mmd`, `graphics/ATHENA_SYSTEM_OF_SYSTEMS_MAP.svg` |
 
+### 2. Full-system visual atlas
+
+| Field | Value |
+|---|---|
+| Artifact name | Project Athena — Full System Atlas |
+| Canva design ID | `DAHRZXB4TNw` |
+| Design type | Editable 16:9 multi-page presentation |
+| Page count | 65 |
+| Edit URL | https://www.canva.com/d/bGfuI3P6zhg_bha |
+| View URL | https://www.canva.com/d/odSB-mjGkLbnTck |
+| Source | 58 generated Athena images, integrated system canvases, section/index pages, and repository-derived visual coverage |
+| Status | Imported successfully; editable Canva mirror available |
+| Repo register | `CANVA_FULL_SYSTEM_ATLAS_2026-08-05.md` and `visual-atlas/README.md` |
+| Source package SHA-256 | Embedded HTML `318d8d5641fa382ec9387dc664b73258e6e94d3f5672ee8f4ad645ddafce975e` |
+
 ## Required review before production use
 
 1. Compare all Canva text against the GitHub canonical spec.
-2. Correct any AI-generated spelling, layout, icon, or hierarchy errors inside Canva.
+2. Correct any AI-generated spelling, layout, icon, hierarchy, truncation, or claim-status errors inside Canva.
 3. Export final static versions as SVG/PDF/PNG when available.
-4. Add exported files to the repo under `docs/athena-master-expansion/graphics/` or `docs/athena-master-expansion/exports/`.
-5. Keep the Canva editable link in this register and the plugin sync log.
+4. Add reviewed exported files to the repo under `docs/athena-master-expansion/graphics/` or a controlled `exports/` directory.
+5. Keep the Canva editable link, design ID, source commit, page number, and export checksum in this register or the atlas register.
 
 ## Intended content structure
 
-The Canva design should communicate the following stack:
+The Canva visual system should communicate the following stack:
 
 ```text
 AI ↔ AI-Local Athena Node ↔ Athena Connective Highway ↔ External Athena Core ↔ Project Athena Capsule ↔ Database / Memory / Repo Substrate ↔ Nexus-V / Aegis Versioned State Layer ↔ Lightcore / OASIS Runtime
 ```
+
+The full atlas extends that stack across institutional cognition, evidence, agents, memory, continuity, project brains, governance, model routing, distributed compute, L.O.D.E TV, RoomSense, BodyRig, and visual system-of-systems navigation.
 
 ## Required labels
 
@@ -64,9 +83,10 @@ bodyrig
 repo-canonical
 plugin-mirror
 canva-infographic
+canva-full-system-atlas
 needs-text-reconciliation
 ```
 
 ## Notes
 
-This Canva artifact is a visual mirror of the Athena docking architecture, not the canonical architecture definition. Any disagreement between the Canva board and the markdown/YAML/Mermaid/SVG files in the repository should be resolved in favor of the repository-controlled source files.
+Canva artifacts are visual mirrors, not canonical architecture definitions. Any disagreement between a Canva page and repository-controlled Markdown, YAML, Mermaid, SVG, schema, audit, or maturity-state files must be resolved in favor of the repository-controlled source until the visual is reviewed and re-exported.
