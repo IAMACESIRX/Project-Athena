@@ -1,0 +1,58 @@
+name: Architecture work
+description: Route system, Plan, identity, schema, or architecture changes.
+title: "[Architecture]: "
+labels: ["type:architecture", "area:architecture"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for architecture intent, identity boundaries, schemas, Plan changes, and cross-system contracts.
+  - type: input
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What should be true when this issue is complete?
+      placeholder: Define or correct a bounded architecture contract.
+    validations:
+      required: true
+  - type: textarea
+    id: authority
+    attributes:
+      label: Architecture authority
+      description: Name the authoritative files or human decision this work must follow.
+      placeholder: Plan/..., AI-PORTAL.md, docs/..., explicit human instruction.
+    validations:
+      required: true
+  - type: dropdown
+    id: capability_state
+    attributes:
+      label: Capability state
+      options:
+        - specified
+        - conceptual
+        - speculative
+        - scaffolded
+        - implemented
+        - validated for a named use
+        - blocked
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and provenance
+      description: List source files, evidence records, reports, or unknowns.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Use checkboxes with verifiable completion criteria.
+      value: |
+        - [ ] Canonical files are updated.
+        - [ ] Unsupported implementation or hardware claims are labeled.
+        - [ ] Repository validation passes.
+        - [ ] Follow-up implementation gaps are linked.
+    validations:
+      required: true

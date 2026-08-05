@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Project Athena Wiki
+    url: https://github.com/IAMACESIRX/Project-Athena/wiki
+    about: Use the Wiki for orientation before opening a new issue.
+  - name: Project Athena Discussions
+    url: https://github.com/IAMACESIRX/Project-Athena/discussions
+    about: Use Discussions for exploratory ideas that are not ready for tracked work.

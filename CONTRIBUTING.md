@@ -13,6 +13,17 @@ Project Athena uses evidence-first, architecture-aware changes.
 6. Do not force-update `main`.
 7. After repository integrity CI is enabled, require it before merge.
 
+## Issue routing
+
+Use the GitHub issue forms for new tracked work:
+
+- Architecture work for Plan, identity, schema, and system-map changes.
+- Implementation work for tools, runtime, adapters, CI, tests, and source changes.
+- Research or R&D work for experiments, hypotheses, physical R&D, and validation planning.
+- Governance or publication work for authority, privacy, security, release, and public-mirror changes.
+
+Use Discussions for exploratory ideas that are not ready for a bounded issue.
+
 ## Architecture authority
 
 - The latest explicit human instruction has highest authority.
@@ -44,3 +55,6 @@ roles, such as WoW/AzerothCore operations, belong in
 Follow `governance/cloud-publication-policy.md`. Public repository access does
 not authorize publication of secrets, personal memory, local runtime state,
 credentials, private logs, or unsanitized evidence.
+
+Release and GitHub Project operating rules are tracked in
+`docs/RELEASE_AND_PROJECT_OPERATING_RULES.md`.
