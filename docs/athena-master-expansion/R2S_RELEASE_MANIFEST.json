@@ -1,0 +1,18 @@
+{
+  "release": "ATHENA-R2S-2026-08-05",
+  "branch": "agent/reality-to-simulation-material-intelligence",
+  "status": "specified/prototype-baseline",
+  "canonical_repository": "IAMACESIRX/Project-Athena",
+  "documents": [
+    "REALITY_TO_SIMULATION_MULTISENSOR_ARCHITECTURE.md",
+    "MATERIAL_BEHAVIORAL_ATLAS_SPEC.md",
+    "REALITY_TO_OASIS_COMPILER_SPEC.md",
+    "ENGINEERING_INVERSE_DESIGN_COMPOSITE_SIMULATION_SPEC.md",
+    "LITHOGRAPHY_SENSOR_PROCESS_CONTROL_INTEGRATION.md",
+    "LODE_R2S_SPATIAL_INTERFACE_MAP.md",
+    "ATHENA_R2S_INTEGRATION_RELEASE_2026-08-05.md",
+    "PLUGIN_WORKSPACE_R2S_SYNC_2026-08-05.md"
+  ],
+  "schemas": ["sensor-observation.schema.json", "known-behavioral-map.schema.json", "oasis-physical-twin.schema.json"],
+  "diagrams": ["athena-r2s-full-stack.svg", "material-behavioral-atlas.svg", "lode-r2s-feedback-loop.svg"]
+}

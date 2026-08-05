@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Known Behavioral Map",
+  "type": "object",
+  "required": ["kbm_id", "subject", "domain", "campaign", "validated_points", "provenance"],
+  "properties": {
+    "kbm_id": {"type": "string"},
+    "subject": {"type": "object"},
+    "domain": {"type": "string"},
+    "campaign": {
+      "type": "object",
+      "required": ["unique_configurations", "repetitions_per_configuration"],
+      "properties": {
+        "unique_configurations": {"type": "integer", "minimum": 1},
+        "repetitions_per_configuration": {"type": "integer", "minimum": 1},
+        "design_method": {"type": "string"}
+      }
+    },
+    "validated_points": {"type": "array", "items": {"type": "object"}},
+    "interpolation_model": {"type": "object"},
+    "validity_domain": {"type": "object"},
+    "uncertainty": {"type": "object"},
+    "provenance": {"type": "object"},
+    "nexus_state": {"type": "object"},
+    "aegis_status": {"type": "string"}
+  },
+  "additionalProperties": true
+}

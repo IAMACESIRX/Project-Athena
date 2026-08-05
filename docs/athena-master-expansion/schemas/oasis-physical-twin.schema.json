@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OASIS Physical Twin Object",
+  "type": "object",
+  "required": ["object_id", "transform", "geometry", "material_candidates", "epistemic_state", "provenance"],
+  "properties": {
+    "object_id": {"type": "string"},
+    "name": {"type": "string"},
+    "transform": {"type": "object"},
+    "geometry": {"type": "object"},
+    "visual": {"type": "object"},
+    "thermal": {"type": "object"},
+    "electromagnetic": {"type": "object"},
+    "mechanical": {"type": "object"},
+    "acoustic": {"type": "object"},
+    "material_candidates": {"type": "array", "items": {"type": "object"}},
+    "condition_candidates": {"type": "array", "items": {"type": "object"}},
+    "behavioral_map_links": {"type": "array", "items": {"type": "string"}},
+    "relations": {"type": "array", "items": {"type": "object"}},
+    "simulation_models": {"type": "array", "items": {"type": "object"}},
+    "epistemic_state": {"type": "object"},
+    "provenance": {"type": "object"}
+  },
+  "additionalProperties": true
+}
