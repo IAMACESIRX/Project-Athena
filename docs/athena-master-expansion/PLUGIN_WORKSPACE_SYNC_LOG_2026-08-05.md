@@ -25,6 +25,13 @@ project-athena
 athena-master-expansion
 aesir
 ai-os
+athena-docking-fabric
+athena-highway
+ai-local-athena-node
+external-athena-core
+project-capsule
+hot-swap
+cloneable-architecture
 nexus-v
 aegis
 lightcore
@@ -65,7 +72,7 @@ plugin-mirror
 | Amplitude | Future telemetry/product analytics | Future observability | `observability`, `telemetry` |
 | Gmail/Outlook/Calendar/Contacts | Future personal operating layer integrations | Future integration | `operator-workflow` |
 
-## Actions completed in this pass
+## Actions completed in the original master-expansion pass
 
 | Surface | Action | Status |
 |---|---|---|
@@ -91,6 +98,21 @@ plugin-mirror
 | Wolfram | Checked 100-inch 16:9 active-area reference geometry. | Completed |
 | Gamma | Attempted to generate polished Project Athena / L.O.D.E / Lightcore dossier. | Blocked: insufficient Gamma credits. |
 
+## Actions completed in the docking-fabric / hot-swap addendum pass
+
+| Surface | Action | Status |
+|---|---|---|
+| GitHub | Added `ATHENA_DOCKING_FABRIC_HOTSWAP_SPEC.md`. | Completed |
+| GitHub | Added `ATHENA_DOCKING_FABRIC_INFOGRAPHIC.mmd`. | Completed |
+| GitHub | Updated `README.md` index with docking-fabric scope and file entries. | Completed |
+| GitHub | Updated `ATHENA_MASTER_ONTOLOGY.yml` with AI-local Athena node, external Athena core, Athena connective highway, project capsule, group skills, model adapters, database/highway adapters, and OASIS runtime interface nodes. | Completed |
+| GitHub | Updated this plugin workspace sync log with docking-fabric labels and addendum state. | Completed |
+| Asana | Confirmed existing execution roadmap and added docking-fabric tasks/commentary where supported in this pass. | Completed / mirror |
+| Notion | Located existing `Project Athena master expansion — v0.4` mirror pages and prepared/updated the docking addendum mirror where supported in this pass. | Completed / mirror |
+| Gamma | No new deck generated in this pass. | Blocked / defer |
+| Canva/Figma | No direct design file edited in this pass; Mermaid source now exists as the canonical controlled graphic input. | Deferred |
+| Local Athena tools | Not run from this chat surface because they require the user's machine. | Blocked until local execution |
+
 ## Created mirror URLs
 
 | Workspace | Artifact | URL |
@@ -105,9 +127,9 @@ plugin-mirror
 
 | Surface | Required update | Notes |
 |---|---|---|
-| Gamma | Create/update polished Project Athena / L.O.D.E / Lightcore dossier. | Blocked by insufficient Gamma credits in this run. |
-| Canva | Create controlled infographic boards after template/design selection. | Avoid generated-image text; use vector labels. |
-| Figma | Create/edit UI or system-design file when a Figma target file exists. | Useful for Athena dashboard, L.O.D.E UX, and system diagrams. |
+| Gamma | Create/update polished Project Athena / L.O.D.E / Lightcore / Athena Docking Fabric dossier. | Blocked by insufficient Gamma credits in the original run; retry only when credits are available. |
+| Canva | Create controlled infographic boards after template/design selection. | Use `ATHENA_DOCKING_FABRIC_INFOGRAPHIC.mmd` as the source diagram and avoid generated-image text. |
+| Figma | Create/edit UI or system-design file when a Figma target file exists. | Useful for Athena dashboard, L.O.D.E UX, docking highway diagrams, and adapter maps. |
 | Google Drive | Add exported PDF/SVG/blueprint packs once generated. | Current Drive mirror is a folder plus text dossier. |
 | Supabase/Vercel/Lovable/Replit | Defer unless building runtime or prototype app. | Not required for documentation sync. |
 
@@ -122,6 +144,7 @@ Each plugin mirror should contain:
 5. Labels/tags from the taxonomy above.
 6. Last sync date.
 7. Outstanding validation list.
+8. Docking-fabric/hot-swap note: AI-local Athena nodes, external Athena core, Athena highway, project capsules, and OASIS runtime interface are separate layers.
 
 ## Engineering graphics policy
 
@@ -130,6 +153,8 @@ Generated images are allowed as inspiration/reference plates only. Production-fa
 Required graphic classes:
 
 - master architecture infographic,
+- Athena docking fabric / hot-swap diagram,
+- AI-local node / external Athena / highway / project capsule diagram,
 - L.O.D.E optical pipeline,
 - L.O.D.E measured assembly sheet,
 - Lightcore physical execution stack,
@@ -146,3 +171,4 @@ Required graphic classes:
 - Not all plugin workspaces expose full write/update functions in every chat surface.
 - Binary `.docx`, `.zip`, image, and generated-design files may require separate extraction or export before deep semantic auditing.
 - Speculative hardware must remain marked as R&D concept until validated by simulation, bench tests, or manufacturable component selection.
+- Local verification, RTL lint/simulation, private runtime manifests, and local machine scans must be run on the user's machine, then sanitized before cloud push.
