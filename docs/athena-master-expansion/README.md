@@ -2,7 +2,8 @@
 
 Generated: 2026-08-05  
 Updated: 2026-08-05 plugin/GPT concept synchronization pass  
-Updated: 2026-08-05 Athena docking-fabric / hot-swap architecture addendum pass
+Updated: 2026-08-05 Athena docking-fabric / hot-swap architecture addendum pass  
+Updated: 2026-08-05 controlled release fix, Plan audit, and graphics pass
 
 This folder is a consolidated Project Athena expansion pack created from the current repository scan, the Plan-folder authority files, prior Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense project concepts, current GPT project-chat concepts, and external research sanity checks.
 
@@ -19,11 +20,15 @@ This pack updates Project Athena as a system-of-systems:
 - **RoomSense / BodyRig**: local-first room-scale spatial sensing, markerless full-body VR/XR tracking, relational tracking, human-state reconstruction, security, and interaction fabric.
 - **OASIS**: outer digital operating environment for engineering, simulation, games, virtual workspaces, R&D, and schematic workshops.
 - **Operative Duplex AI**: future action/metacognitive PC-control layer that uses Athena/Jarvis/OASIS context but does not replace Athena.
+- **Known Behavioral Map / multisensor material mapping**: reality-to-simulation material-property inference track that needs formal schema, validation datasets, and OASIS import contracts.
 
 ## Files in this pack
 
 | File | Purpose |
 |---|---|
+| `CONTROLLED_RELEASE_FIX_2026-08-05.md` | Corrects the interrupted/stalled pass and records the fixed release objective, verified state, and boundaries. |
+| `PLAN_FOLDER_COMPLETE_AUDIT_2026-08-05.md` | Full accessible-audit pass for the root `Plan/` folder and adjacent Nexus-V Plan mirror, including content-read vs inventory-only boundaries. |
+| `ENGINEERING_GRAPHICS_MANIFEST_2026-08-05.md` | Controlled graphics production register for engineering concepts, infographics, vector diagrams, and future blueprint/PDF work. |
 | `CHATGPT_PROJECT_SYNC_2026-08-05.md` | Consolidates Project Athena concepts from GPT project chats and classifies them as repo-observed, Plan-authority, project-chat concept, research-supported primitive, or speculative R&D. |
 | `ATHENA_FULL_SYSTEM_MAP.md` | Canonical feed map for Athena, AI-OS, Nexus-V, Lightcore, L.O.D.E, RoomSense, OASIS, and Operative Duplex AI. |
 | `ATHENA_SYSTEM_FEED_BENEFIT_MATRIX.md` | Explicit source→target feed matrix showing how each subsystem benefits the others and what validates each handoff. |
@@ -52,6 +57,14 @@ This pack updates Project Athena as a system-of-systems:
 | `EVIDENCE_PROVENANCE_SCHEMA_ALIGNMENT.md` | Unified claim/evidence/execution provenance schema alignment. |
 | `PLUGIN_MIRROR_INDEX.md` | Index of plugin artifacts and their canonicality status. |
 
+## Controlled graphics
+
+| Graphic | Purpose |
+|---|---|
+| `graphics/ATHENA_SYSTEM_OF_SYSTEMS_MAP.svg` | System-of-systems map from human intent through Athena, Nexus-V, Aegis, Lightcore, L.O.D.E, RoomSense, OASIS, Operative Duplex, and telemetry writeback. |
+| `graphics/LODE_LIGHTCORE_PIPELINE.svg` | Lightcore-native render-state path through photonic GPU, fibre link, L.O.D.E receiver, optical compositor, K-filter, UST optics, surface, and reverse telemetry. |
+| `graphics/ROOMSENSE_BODYRIG_SENTINEL_LOOP.svg` | RoomSense/BodyRig/Sentinel loop showing L.O.D.E sensors, towers, headset sensors, RF/mmWave/UWB, body tracking, privacy mode, and Athena/Aegis audit. |
+
 ## One-line system thesis
 
 Project Athena is a local-first institutional intelligence stack where files preserve memory and evidence, Athena routes cognition and governance, the Athena docking fabric makes models and highways hot-swappable, Nexus-V turns reasoning/work into versioned state execution, Lightcore becomes the future physical substrate, L.O.D.E/RoomSense become the spatial display/sensing interface, and OASIS/Operative Duplex AI become the action/simulation environment around it.
@@ -76,6 +89,7 @@ L.O.D.E measured sheets
 → RoomSense/BodyRig interface tests
 → OASIS simulation contracts
 → Operative Duplex action contract
+→ Known Behavioral Map + multisensor material mapping schema
 → plugin mirror labels and workspace docs
 → controlled Mermaid/SVG/PDF infographic assets
 ```
