@@ -1,84 +1,135 @@
 # IMPLEMENTATION MATRIX
 
-This matrix connects Plan intent to current Project Athena implementation.
+Updated: 2026-08-05 independent-system correction
 
-## Status Legend
+This matrix connects Plan intent to current Project Athena implementation and distinguishes independent AIs from shared infrastructure.
 
-- done: implemented and usable.
-- active: currently being built.
-- partial: scaffold exists but needs more implementation or verification.
-- planned: design intent exists but implementation has not started.
-- specified: documented architecture/spec exists; implementation not yet proven.
-- conceptual: user/project concept captured; needs formal spec and validation.
-- speculative: future R&D hypothesis; requires research, modelling, prototype, and validation.
-- blocked: requires human decision or external setup.
+## Status legend
 
-## Core Athena
+- **done**: implemented and usable.
+- **active**: currently being built.
+- **partial**: scaffold exists but needs implementation or verification.
+- **planned**: design intent exists but implementation has not started.
+- **specified**: documented architecture/spec exists; implementation not yet proven.
+- **conceptual**: user/project concept captured; needs formal implementation detail and validation.
+- **speculative**: future R&D hypothesis; requires research, modelling, prototype and validation.
+- **blocked**: requires human decision, unavailable local tooling or external setup.
+- **superseded**: retained only for provenance; newer canonical authority exists.
 
-| Plan Concept | Current Files | Status | Evidence | Next Step |
+## Canonical identity matrix
+
+| Entity | Type | Canonical role | Status | Authority file |
 |---|---|---|---|---|
-| AI prosthetic external brain | `context.md`, `AI-PORTAL.md`, `identity/README.md` | active | Definition written into root context and identity. | Keep first-read files aligned. |
-| OASIS/Athena local-agent model | `Plan/OASIS_ATHENA_AGENT_MODEL.md`, `context.md`, `AI-PORTAL.md` | planned | Human diagram converted into Plan-level model. | Build adapter contracts for Codex, Jarvis, GPT, and future local agents. |
-| Task intake | `schemas/athena-task-intake.schema.json`, `templates/athena-task-intake.md`, `work/intake/` | active | Schema, template, and sample intake exist. | Run a task to closure through intake. |
-| Memory architecture | `memory/athena-memory-map.md`, `memory/` | active | Memory map defines layers and writeback rules. | Extract details from Athena Memory Architecture docx. |
-| Decision processor loop | `engine/order-of-operations.md`, `templates/athena-cycle-report.md`, `tools/Invoke-AthenaCycle.ps1` | active | Cycle template and runner exist. | Validate runner output and closure workflow. |
-| Evidence discipline | `forensics/`, `truth/`, `cognition/anti-hallucination/` | partial | Existing evidence and truth protocols. | Connect intake claims to evidence IDs. |
-| Council reasoning | `council/`, `council/reasoning-rounds/` | active | Brainstorm council round exists. | Create role-specific review packets for high-risk tasks. |
+| ATHENA | independent institutional intelligence | governance, evidence, memory, ontology, councils, project coordination | active / specified | `README.md`, `AI-PORTAL.md`, `context.md`, `Plan/` |
+| JARVIS | independent personal/executive intelligence | immediate human interaction, personal context, device and daily-work orchestration | conceptual | `Plan/OASIS_ATHENA_AGENT_MODEL.md`, system correction |
+| JANUS | independent operative metacognitive intelligence | program discovery, direct software/OASIS operation, Skill Capsules, state verification | specified / planned | `docs/athena-master-expansion/JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md` |
+| OASIS | non-AI persistent digital-reality substrate | engineering, science, games, living/work, R&D, digital twins and production workshops | specified / conceptual | `docs/athena-master-expansion/OASIS_ARCHITECTURE_SPEC.md` |
+| Nexus-V | semantic/versioned execution architecture | branchable state, rollback, merge, provenance, execution semantics | partial / specified | `Nexus V/`, `Plan/NVISC*`, `Plan/NVASM*`, `Plan/NVIR*` |
+| Aegis | trust/attestation/commit-gate architecture | policy enforcement, trust telemetry, commit/rollback authority | partial / specified | `Nexus V/`, Aegis Plan specs |
+| Lightcore | future physical execution profile | optoelectronic/CNT/photonic compute and transport | specified / speculative | `docs/athena-master-expansion/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md` |
 
-## Plan Sources
+## Core ATHENA
 
-| Source | Meaning | Status | Next Extraction |
+| Plan concept | Current files | Status | Evidence | Next step |
+|---|---|---|---|---|
+| AI prosthetic / institutional external brain | `context.md`, `README.md`, `AI-PORTAL.md`, `identity/README.md` | active | repository, context and identity structure exist | keep first-read files aligned |
+| Independent-system boundary | `SYSTEM_IDENTITY_AND_AUTHORITY_CORRECTION_2026-08-05.md`, `ATHENA_FULL_SYSTEM_MAP.md` | specified | canonical correction committed on controlled branch | merge and propagate to every stale diagram/schema |
+| Task intake | `schemas/athena-task-intake.schema.json`, `templates/athena-task-intake.md`, `work/intake/` | active | schema, template and sample intake exist | run a task to closure through intake |
+| Memory architecture | `memory/athena-memory-map.md`, `memory/`, Plan DOCX | active | memory map defines layers/writeback | extract remaining DOCX detail into contracts/schemas |
+| Decision processor loop | `engine/order-of-operations.md`, cycle template, `Invoke-AthenaCycle.ps1` | active | cycle template and runner exist | validate runner output and closure workflow locally |
+| Evidence discipline | `forensics/`, `truth/`, `cognition/anti-hallucination/` | partial | evidence/truth protocols exist | connect intake claims to evidence IDs |
+| Council reasoning | `council/`, `council/reasoning-rounds/` | active | council round exists | create role-specific review packets for high-risk tasks |
+| Docking/hot-swap fabric | `ATHENA_DOCKING_FABRIC_HOTSWAP_SPEC.md`, adapters and highway work | specified | architecture and diagrams exist | convert into runtime contracts and conformance tests |
+
+## JANUS implementation track
+
+| Capability | Current files | Status | Evidence | Next step |
+|---|---|---|---|---|
+| Independent JANUS identity | `JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md` | specified | role, boundaries and maturity defined | add manifest and runtime package skeleton |
+| Interior/Exterior duplex | JANUS master spec | specified | metacognitive and operative responsibilities separated | implement independently testable planner/verifier services |
+| Native semantic UI control | JANUS master spec | planned | platform mechanisms exist; no JANUS runtime yet | Windows UIA/Win32 read-only mapper prototype |
+| Visual-semantic fallback | JANUS master spec, research validation notes | specified / research-supported primitive | GUI-agent literature supports direction but professional accuracy remains weak | benchmark grounding and focus/modal state |
+| Application Cartographer | JANUS master spec | specified / planned | controlled discovery protocol defined | sandbox explorer and state-transition recorder |
+| Skill Capsules | JANUS master spec | specified / planned | schema and validation lifecycle defined | implement registry, versioning and replay |
+| Independent pre-action verifier | JANUS master spec, research validation notes | specified / required | GUI confused-deputy research supports external verification | implement target/focus/fresh-state gate |
+| Permission/commit model | JANUS master spec | specified | O0–O4 authority classes defined | formal policy schema and human approval UI |
+| OASIS embodiment | JANUS/OASIS specs | conceptual / planned | interface described | conventional engine avatar/tool runtime |
+| Nexus-V/Aegis native integration | JANUS/Nexus specs | future | no end-to-end implementation | defer until conventional JANUS runtime passes tests |
+| Universal undocumented-program competence | JANUS spec | research target | not established by current evidence | staged professional-software benchmark programme |
+
+## OASIS implementation track
+
+| Capability | Current files | Status | Evidence | Next step |
+|---|---|---|---|---|
+| Correct non-AI identity and broad scope | `OASIS_ARCHITECTURE_SPEC.md` | specified | engineering/science/game/living/work/R&D/production scope formalized | propagate to ontology and diagrams |
+| Universal object model | OASIS spec | specified | schema defined | JSON Schema and example objects |
+| Reality/validation classes | OASIS spec | specified | fictional→production-qualified classes defined | enforce in import/export tools |
+| Scene graph and persistent world state | OASIS spec | planned | data contracts drafted | conventional runtime prototype |
+| Modular simulation fidelity | OASIS spec | conceptual / specified | solver/profile boundary defined | select initial physics/simulation engines |
+| Engineering export/import | OASIS spec | planned | export package schema defined | CAD/mesh/code adapter prototype |
+| R&D think-tank environments | OASIS spec | conceptual | spatial project model described | build one Project Athena demonstrator space |
+| JANUS integration | OASIS/JANUS specs | planned | operation/export contracts described | simulate→external-tool comparison test |
+
+## Plan sources
+
+| Source | Meaning | Status | Next extraction |
 |---|---|---|---|
-| `AI-OS-v13.0-Unified-Encyclopedia.md` | Integrated AI-OS plus Nexus-V master blueprint. | planned | Extract top-level modules and invariants. |
-| `Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md` | Cognitive orchestration model. | planned | Map attention, memory, agents, and reasoning to root folders. |
-| `Athena Memory Architecture v1.0.docx` | Institutional memory architecture. | planned | Convert to memory contracts and schemas. |
-| `Odysseus-Nexus-Ontology-Extraction-and-Unification-Specification.md` | Ontology migration blueprint. | planned | Create ontology extraction backlog. |
-| `NVISC.txt` | ISA taxonomy. | planned | Map instructions to toolchain and RTL state. |
-| `define.txt` | Nexus-V completeness notes. | planned | Convert to checklist. |
+| `AI-OS-v13.0-Unified-Encyclopedia.md` | integrated AI-OS plus Nexus-V master blueprint | planned | extract top-level modules/invariants |
+| `Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md` | cognitive orchestration model | planned | map attention, memory, agents and reasoning to root folders |
+| `Athena Memory Architecture v1.0.docx` | institutional memory architecture | planned | convert to memory contracts/schemas |
+| `Odysseus-Nexus-Ontology-Extraction-and-Unification-Specification.md` | ontology migration blueprint | planned | create ontology extraction backlog |
+| `NVISC.txt` | ISA taxonomy | planned | map instructions to toolchain and RTL state |
+| `define.txt` | Nexus-V completeness notes | planned | convert to checklist |
+| Plan DOCX corpus | detailed Nexus-V/Aegis/SoC/RTL specifications | inventoried / partially summarized | OOXML and archive structure previously validated; current GitHub connector cannot semantically re-extract every binary | local extraction and content-hash review |
 
-## Nexus-V Bridge
+## Nexus-V bridge
 
-| Plan Concept | Current Files | Status | Evidence | Next Step |
+| Plan concept | Current files | Status | Evidence | Next step |
 |---|---|---|---|---|
-| RTL implementation branch | `Nexus V/rtl/` | partial | Multiple RTL subsystem folders exist. | Link each subsystem to Plan requirements. |
-| NVASM/NVIR/NVOBJ toolchain | `Nexus V/toolchain/`, `Nexus V/generated/` | partial | Python bridge and generated outputs exist. | Add regression expectations. |
-| Static bring-up reports | `Nexus V/reports/` | active | Reports exist. | Re-run after source changes. |
-| Full simulation/lint | `Nexus V/scripts/run_lint.py`, `Nexus V/scripts/run_regression.py` | blocked | Requires local simulator/toolchain setup. | Decide simulator install path. |
-| Athena/Nexus-V bridge spec | `docs/athena-master-expansion/NEXUSV_ATHENA_BRIDGE_SPEC.md` | specified | Bridge contract exists in master expansion. | Connect intake/evidence records to branch/commit records. |
+| RTL implementation branch | `Nexus V/rtl/` | partial | multiple subsystem folders exist | link each subsystem to Plan requirements |
+| NVASM/NVIR/NVOBJ toolchain | `Nexus V/toolchain/`, `Nexus V/generated/` | partial | Python bridge and generated outputs exist | add regression expectations |
+| Static bring-up reports | `Nexus V/reports/` | active | reports exist | rerun locally after source changes |
+| Full simulation/lint | scripts under `Nexus V/` | blocked | local simulator/toolchain required | decide simulator install path |
+| ATHENA/Nexus-V bridge | `NEXUSV_ATHENA_BRIDGE_SPEC.md` | specified | bridge contract exists | connect intake/evidence to branch/commit records |
+| JANUS/Nexus-V bridge | JANUS master spec | specified / future | operation state maps to branch/diff/commit semantics | define conventional reference adapter first |
+| OASIS versioned state | OASIS spec | specified / future | world-state contract exists | implement engine-neutral snapshots before hardware path |
 
-## Applied Spatial / Physical Concept Tracks
+## Applied spatial and physical concepts
 
-| Concept | Current Files | Status | Evidence | Next Step |
+| Concept | Current files | Status | Evidence | Next step |
 |---|---|---|---|---|
-| GPT project concept sync | `docs/athena-master-expansion/CHATGPT_PROJECT_SYNC_2026-08-05.md` | active | Consolidates chat concepts into repo-accessible terminology and status classes. | Update after major conceptual corrections. |
-| Lightcore physical execution profile | `docs/athena-master-expansion/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md` | specified / speculative | Lightcore is documented as Nexus-V physical execution profile, not Nexus-V replacement. | Create formal signal schema, device risk register, and simulation roadmap. |
-| L.O.D.E TV completion | `docs/athena-master-expansion/LODE_TV_COMPLETION_SPEC.md` | specified | Display endpoint, photonic pipeline, telemetry, RoomSense/BodyRig integration, privacy, and roadmap are documented. | Generate controlled vector engineering sheets and measured assembly pack. |
-| L.O.D.E engineering completion map | `docs/athena-master-expansion/LODE_TV_ENGINEERING_COMPLETION_MAP.md` | active | Reference dimensions, subassemblies, telemetry schema, assembly sequence, drawing sheet list, and validation roadmap added. | Convert sheet list into SVG/PDF blueprint sources. |
-| RoomSense / BodyRig interface | `docs/athena-master-expansion/LODE_ROOMSENSE_BODYRIG_INTERFACE_SPEC.md` | specified | Interface spec exists for L.O.D.E, RoomSense, BodyRig, XR outputs, and privacy modes. | Add coordinate-frame schema and pose-confidence metrics. |
-| Athena feed/benefit matrix | `docs/athena-master-expansion/ATHENA_SYSTEM_FEED_BENEFIT_MATRIX.md` | active | Source-to-target benefits and validation paths documented. | Use as dependency map for Asana/GitHub issues. |
-| OASIS architecture | `docs/athena-master-expansion/OASIS_ARCHITECTURE_SPEC.md` | planned / specified | Formal environment/runtime/interface spec exists. | Define simulation object model, material import schema, and provenance requirements. |
-| Operative Duplex AI | `docs/athena-master-expansion/OPERATIVE_DUPLEX_AI_SPEC.md` | planned / specified | Action-layer boundary exists. | Build permission model, action trace schema, and local sandbox requirements. |
-| Plugin workspace sync | `docs/athena-master-expansion/PLUGIN_WORKSPACE_SYNC_LOG_2026-08-05.md`, `PLUGIN_MIRROR_INDEX.md` | active | Plugin roles, labels, canonicality, and mirror status documented. | Mirror updated repo state into Notion/Asana/Gamma/Drive where tools allow. |
+| GPT project concept sync | `CHATGPT_PROJECT_SYNC_2026-08-05.md` | active | chat concepts consolidated with status classes | update after identity correction |
+| Lightcore physical execution profile | `LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md` | specified / speculative | Lightcore correctly beneath Nexus-V contracts | formal signal schema, device risk register and simulation roadmap |
+| L.O.D.E TV completion | `LODE_TV_COMPLETION_SPEC.md`, engineering map, controlled SVGs, measured File Library PDF | specified / concept package | optical pipeline, telemetry, RoomSense/BodyRig and preliminary dimensions exist | ingest controlled PDF/index and run ray/thermal/structural modelling |
+| RoomSense / BodyRig | interface spec and L.O.D.E package | specified / conceptual | coordinate-frame and sensor-fusion intent documented | schemas, confidence metrics and local testbed |
+| Reality-to-Simulation multisensor | File Library engineering package | conceptual engineering baseline | modular sensor design, calibration/evidence policy and outputs documented | create canonical repo spec and choose first deployment use case |
+| Known Behavioral Map | File Library package | conceptual campaign design | multidomain repeated-test matrix documented | statistical design, material schema, cost/throughput and pilot campaign |
+| ATHENA feed/benefit map | system matrices and diagrams | active | source→target benefits documented | update for independent JANUS/JARVIS/OASIS identities |
+| Plugin workspace sync | sync logs and connected workspaces | active | GitHub/Notion/Drive/Asana mirrors exist | correct stale Operative Duplex and OASIS pages |
 
-## Research / Sanity Anchors
+## Research and sanity anchors
 
-| Domain | Current Evidence | Status | Next Step |
+| Domain | Current evidence | Status | Architecture consequence |
 |---|---|---|---|
-| Agentic AI governance | Consensus/SciSpace searches for multi-agent governance, auditability, provenance, HITL, and policy gates. | research-supported primitive | Keep anchors in `RESEARCH_ANCHORS.md` and avoid claiming full Athena implementation. |
-| Silicon nitride photonics | Research anchors support SiN as a low-loss integrated photonics platform. | research-supported primitive | Connect to Lightcore photonic routing assumptions. |
-| CNT silicon-waveguide photonics | Research anchors support CNT photodetectors and CNT/silicon-waveguide integration. | research-supported primitive | Keep CNT compute/memory claims marked speculative beyond demonstrated detector/optoelectronic pieces. |
-| Multi-sensor SLAM / human pose | Research anchors support LiDAR/camera/IMU fusion and LiDAR-based human pose without wearables. | research-supported primitive | Use to constrain RoomSense/BodyRig claims and tests. |
-| 100-inch 16:9 display geometry | Wolfram calculation gives 2213.7 mm × 1245.3 mm active area. | checked reference value | Use rounded 2214 mm × 1245 mm in L.O.D.E drawing sheets. |
+| Professional GUI grounding | ScreenSpot-Pro and related benchmarks | research-supported limitation | require application-specific tests, narrowed search and state verification |
+| GUI-agent security | Visual Confused Deputy | research-supported risk | independent pre-action verifier and fresh-state checks mandatory |
+| Hierarchical computer use | Agent S/Surfer/related research | research-supported pattern | separate planning, specialist skills, execution and recovery |
+| Silicon nitride photonics | existing research anchors | research-supported primitive | valid platform candidate; not proof of full Lightcore |
+| CNT/silicon-waveguide devices | existing research anchors | research-supported primitive | detector/optoelectronic pieces plausible; compute/memory claims remain speculative |
+| Multisensor SLAM/human pose | existing research anchors | research-supported primitive | constrain RoomSense/BodyRig tests and confidence handling |
+| 100-inch 16:9 geometry | calculated 2213.7 × 1245.3 mm | checked reference | use rounded 2214 × 1245 mm active area |
 
-## Immediate Work Items
+## Immediate work items
 
-1. Validate `schemas/athena-task-intake.schema.json`.
-2. Run one task through intake, decision, implementation, verification, and memory writeback.
-3. Fill Nexus-V implementation matrix.
-4. Extract AI-OS v13 into modules, invariants, and work items.
-5. Keep the local-only governance rule scoped correctly: local repo/code pushes remain human-controlled; explicit plugin documentation syncs may be written to GitHub/cloud mirrors when authorized.
-6. Convert L.O.D.E drawing-sheet register into controlled vector/PDF engineering sheets.
-7. Create RoomSense/BodyRig coordinate-frame schema and pose-confidence metrics.
-8. Create Lightcore signal schema and physical execution risk register.
-9. Mirror this documentation pass into Notion, Asana, Gamma, and Drive where connector permissions allow.
-10. Keep all speculative hardware marked as R&D until supported by simulation, bench testing, part selection, and compliance analysis.
+1. Merge the independent JANUS/OASIS identity correction after review.
+2. Add `janus.manifest.yml`, operation schema and Skill Capsule JSON Schema.
+3. Prototype read-only Windows UIA/Win32 application mapping.
+4. Build independent pre-action target/focus/fresh-state verification.
+5. Add OASIS object/world/export schemas and conventional runtime proof.
+6. Reconcile `ATHENA_MASTER_ONTOLOGY.yml` with the corrected independent nodes.
+7. Extract and hash-review the Plan DOCX corpus locally.
+8. Ingest the L.O.D.E and R2S/Known Behavioral Map controlled packages into the canonical repo or a referenced artifact registry.
+9. Create RoomSense/BodyRig coordinate-frame and confidence schemas.
+10. Create Lightcore signal schema and physical execution risk register.
+11. Keep speculative hardware, performance and material claims labelled as R&D until simulation and bench evidence exist.
+12. Maintain GitHub as canonical; Notion/Drive/Asana/Figma/Canva remain labelled mirrors or execution surfaces.
