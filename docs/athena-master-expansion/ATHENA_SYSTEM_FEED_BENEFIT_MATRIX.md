@@ -1,131 +1,105 @@
-# Athena System Feed / Benefit Matrix
+# Project Athena Ecosystem Feed / Benefit Matrix
 
-Generated: 2026-08-05
+Updated: 2026-08-05 — independent JANUS and OASIS correction
 
 ## Purpose
 
-This matrix maps how each Project Athena subsystem feeds the others, what payload it contributes, what benefit it creates, and how its output should be validated.
+This matrix records what each independent intelligence or shared subsystem provides, who receives it, the benefit created, and the evidence required at the handoff. It replaces the earlier linear ATHENA-owned action stack.
 
-## High-level loop
+## Identity model
 
 ```text
-Human intent
-→ A.E.S.I.R. method
-→ Athena / AI-OS cognition and governance
-→ Nexus-V semantic execution model
-→ Aegis verification and commit gate
-→ Lightcore physical execution profile
-→ L.O.D.E / RoomSense / BodyRig spatial interface
-→ OASIS simulation and action environment
-→ Operative Duplex AI local action layer
-→ telemetry / evidence / memory writeback to Athena
+ATHENA ↔ JARVIS ↔ JANUS
+   \        |        /
+             OASIS
 ```
 
-## Feed matrix
+ATHENA, JARVIS and JANUS are independent intelligences. OASIS is a non-AI persistent digital-reality and simulation substrate. All links are governed contracts.
 
-| Source | Feeds into | Payload | Benefit | Validation path |
+## Detailed matrix
+
+| Source | Target | Payload | Benefit | Validation / authority |
 |---|---|---|---|---|
-| Human / ACES | A.E.S.I.R., Athena | Goals, corrections, constraints, priorities, identity layers | Keeps system aligned to the human operator and project intent | Human confirmation, decision ledger, cycle report |
-| A.E.S.I.R. | Athena / AI-OS | Research method, first-principles decomposition, council reasoning, validation paths | Turns raw ideas into structured R&D workflows | Intake packet, evidence separation, assumption register |
-| Athena / AI-OS | Nexus-V | Task intent, policy, evidence threshold, memory context, agent routing | Converts cognition and governance into execution-ready state transitions | Governance gate, task contract, audit trail |
-| Athena / AI-OS | Plugin workspaces | Documentation, labels, roadmap items, research notes, mirror status | Keeps external tools synchronized without making them source of truth | Plugin mirror index, sync log |
-| Nexus-V | Athena / AI-OS | Branch history, rollback options, execution trace, conflicts, merge results | Gives Athena recoverable computational history | Aegis/MINREP, cycle report, versioned state log |
-| Nexus-V | Lightcore | Physical execution contract, state semantics, branch/commit requirements | Prevents Lightcore becoming isolated hardware; ties it to semantic compute | Physical execution profile, interface spec |
-| Aegis | Nexus-V, Athena, Lightcore, L.O.D.E | Commit authorization, attestation, trust context, quarantine, MINREP | Provides proof, safety, rollback, and minimal-disclosure reporting | Attestation token, commit gate logs, telemetry hash |
-| Lightcore | Nexus-V | Physical substrate capabilities, photonic/CNT state, optical memory model | Gives Nexus-V a future high-density physical execution profile | Simulation, photonic device research, thermal/electrical validation |
-| Lightcore | L.O.D.E TV | Photonic-native render-state stream, optical scene-state objects | Removes final HDMI/DP conversion in final architecture; display becomes compute endpoint | Optical receiver tests, frame telemetry, Aegis display commit |
-| Lightcore | RoomSense | High-bandwidth sensor fusion, local AI inference, optical/RF timing support | Enables room-scale perception with lower latency and richer confidence maps | Sensor fusion confidence, calibration reports |
-| L.O.D.E TV | Athena / Nexus-V | Emitted-frame proof, display telemetry, screen sensor data | Makes display output verifiable and auditable | Frame hash, telemetry schema, Aegis commit state |
-| L.O.D.E TV | RoomSense | Fixed room anchor, edge sensors, screen-as-sensor feedback, controller packet readings | Turns the display into spatial-computing infrastructure | Sensor agreement map, room calibration |
-| RoomSense | BodyRig | Room geometry, occlusion map, LiDAR/RF/camera fusion, body observations | Replaces wearable trackers with room sensor fusion | Pose confidence, calibration, OpenXR/OSC output tests |
-| RoomSense | Sentinel | Presence, motion, anomaly, tamper, gait/habit familiarity signals | Local-first security and context awareness | Local logs, alert tiers, consent profiles |
-| BodyRig | OASIS / VR / VRChat | Virtual trackers, full skeleton stream, embodied motion fidelity | Makes avatars move with realistic human sway, balance, and inertia | Retargeting tests, pose error, latency, user comfort |
-| Sentinel | Athena | Security events, anomaly evidence, risk classification | Gives Athena safety awareness and auditable room-state records | Event hash, local-only policy, escalation rules |
-| OASIS | Athena / Nexus-V | Simulation results, digital twins, engineering models, material states | Lets Athena test and build in a digital world before physical work | Simulation provenance, assumptions, validation datasets |
-| OASIS | L.O.D.E / RoomSense / BodyRig | Render scenes, XR environments, avatar targets, physics contexts | Provides the environment that spatial hardware displays and tracks | Scene-state validation, render-state telemetry |
-| Operative Duplex AI | Local programs / PC | Program control actions, UI observations, execution attempts | Gives Athena practical action capability without making Athena itself the actuator | Action trace, permission gate, rollback/undo plan |
-| Operative Duplex AI | Athena / Aegis | Action results, failure states, risk flags, evidence | Closes the loop between thought, action, and memory | Evidence packet, audit record, human authority checkpoint |
-| Plugin stack | GitHub / Notion / Asana / Gamma / Drive | Mirrors, task boards, dossiers, research tables, presentation artifacts | Makes the project accessible across planning and documentation surfaces | Plugin sync log, canonicality status, repo links |
+| Human / ACES | all intelligences and OASIS sessions | objectives, corrections, authority, privacy preferences, acceptance criteria | preserves human control and intent | explicit confirmation, decision/evidence record |
+| A.E.S.I.R. | ATHENA, JARVIS, JANUS, councils | first-principles decomposition, assumptions, constraints, candidate architectures, unresolved questions, validation paths | consistent polymath R&D method | fact/assumption/hypothesis/unknown separation |
+| ATHENA | JANUS | institutional context, project memory, evidence, governance, ontology, risk policy | action informed by durable project knowledge | source refs, policy version, requested authority scope |
+| JANUS | ATHENA | application maps, operation traces, expected/observed diffs, failures, outputs, Skill Capsules | converts real operation into institutional evidence and lessons | independent verifier, replay refs, confidence, provenance |
+| JARVIS | JANUS | immediate human intent, personal context, schedule/device constraints, status channel | scoped and human-centred execution | user identity/session scope and clarification record |
+| JANUS | JARVIS | progress, blocked decisions, approval requests, verified completion | clear executive control and human communication | operation status, evidence and required decision |
+| ATHENA | JARVIS | project/institutional state, policies, long-horizon priorities | personal assistance remains consistent with institutional truth | provenance and memory-scope boundary |
+| JARVIS | ATHENA | user context approved for institutional use, decisions, corrections | better project coordination without copying all personal data | explicit promotion/privacy rule |
+| ATHENA | OASIS runtime | project history, evidence, assumptions, validation/reality-class requirements | provenance-bearing worlds and simulations | evidence refs and simulation contract |
+| OASIS runtime | ATHENA | branch state, simulation outputs, unresolved risks, digital-twin evidence | simulations become reviewable institutional artifacts | solver/profile/version, assumptions, uncertainty |
+| JANUS | OASIS runtime | embodied actions, tools, program adapters, Skill Capsules, verified external state | actionable spatial engineering/work environment | identity/authority token and operation record |
+| OASIS runtime | JANUS | world state, predicted transitions, digital twins, export packages | simulation before external action and production handoff | reality class, export validation, mismatch budget |
+| Nexus-V | ATHENA/JANUS/OASIS | branch, diff, commit, rollback, merge, replay and provenance semantics | common recoverable state-transition language | state hash, parent state, commit proof |
+| Aegis | Nexus-V and operative paths | policy decision, trust telemetry, attestation, quarantine and rollback gates | prevents unverified/unauthorized commits | independently verifiable authority and proof records |
+| Conventional hardware | all runtimes | deployable near-term compute, storage, UI and sensor interfaces | permits implementation before speculative hardware | ordinary software/hardware tests |
+| Lightcore | future compute/render/transport | optoelectronic/CNT/photonic execution profile | potential density, bandwidth and data-movement advantages | staged L0–L4 modelling and measurements |
+| Lightcore/conventional render source | L.O.D.E | scene/render state and timing/calibration metadata | direct display path and verifiable emitted output | optical/electrical interface and frame proof |
+| L.O.D.E | RoomSense, JANUS, OASIS, users | display output, UI mixing, telemetry, surface/edge observations | display becomes spatial interaction and sensing anchor | calibration, latency, emitted-state and privacy checks |
+| RoomSense | BodyRig, JANUS, OASIS | room geometry, motion, occlusion, sensor agreement and confidence | room-centred embodied awareness | time sync, calibration, per-sensor confidence |
+| BodyRig | JANUS, OASIS, XR runtimes | relational skeleton, body-local frames, limb constraints, pose confidence | user-centred markerless embodiment | joint/position/orientation error, occlusion and latency tests |
+| Sentinel | ATHENA/JANUS/human | local anomaly, tamper, safety and consent-aware familiarity events | safety/security context without requiring identity for core sensing | local event evidence, false-positive/negative tests |
+| Reality-to-Simulation | ATHENA/OASIS/JANUS | calibrated geometry, spectral, thermal, RF/environment and material-condition observations | evidence-linked digital scenes/materials | raw channels, calibration, measured/derived/inferred labels |
+| Known Behavioral Map | OASIS/JANUS/ATHENA/engineering tools | multidomain material/composite behavior surfaces, conditions and uncertainty | simulation, condition inference and material selection | campaign design, repeats, statistical model and provenance |
+| Plugin workspaces | humans and project collaborators | mirrors, tasks, diagrams, dossiers and research tables | accessibility and coordination | canonical repo link, last sync, status label |
 
-## Subsystem benefit map
+## JANUS operation loop
 
-### Athena / AI-OS benefits
+```text
+requester identity and objective
+→ Interior Face checks assumptions, authority and expected transition
+→ Exterior Face refreshes application/environment state
+→ independent target/focus/fresh-state verification
+→ bounded action dispatch
+→ observed state diff and output validation
+→ commit, retry, rollback, block or escalate
+→ evidence returned to requester and ATHENA where authorized
+```
 
-- Preserves project memory.
-- Prevents term drift.
-- Separates fact, assumption, hypothesis, prediction, and opinion.
-- Routes work through evidence and governance gates.
-- Keeps humans in authority.
-- Gives the whole project continuity across sessions and tools.
+## OASIS engineering loop
 
-### Nexus-V benefits
+```text
+concept and evidence
+→ object/material/behavior assignment
+→ branchable simulation campaign
+→ reality-class and uncertainty review
+→ engineering export package
+→ JANUS-assisted external CAD/simulation/production workflow
+→ real measurements
+→ prediction-versus-observation reconciliation
+→ ATHENA evidence and OASIS world update
+```
 
-- Makes computation recoverable.
-- Treats history as first-class state.
-- Supports branch/fork/merge/rollback semantics.
-- Provides the conceptual bridge from reasoning to executable state.
-- Enables Aegis trust and audit controls.
+## Spatial loop
 
-### Lightcore benefits
+```text
+L.O.D.E display/surface/edge state
++ outside-in TV/tower sensors
++ inside-out headset/depth/LiDAR/IMU
++ controller and RF/mmWave/UWB observations
+→ RoomSense fusion
+→ BodyRig relational reconstruction
+→ JANUS/OASIS/XR embodied state
+→ rendered response and telemetry
+```
 
-- Gives Athena/Nexus-V a future physical execution substrate.
-- Supports volumetric 3D/XYZ compute rather than flat 2D-only layout.
-- Uses CNT electro-photonic cells as mixed electrical/optical state elements.
-- Enables photonic-native signalling, optical memory concepts, and high-density interconnect hypotheses.
+## Validation requirements before implementation claims
 
-### L.O.D.E TV benefits
-
-- Turns the display into a display/sensor/telemetry endpoint.
-- Removes final HDMI/DP conversion in the final Lightcore-native architecture.
-- Makes the actual emitted frame auditable.
-- Enables light-gun, gesture, controller-packet, XR, and room-aware game mechanics.
-- Provides the front anchor for RoomSense.
-
-### RoomSense benefits
-
-- Fuses LiDAR, camera, RF/mmWave/UWB, screen sensors, headset sensors, and controller telemetry.
-- Handles occlusion better than single-camera tracking.
-- Enables room-scale spatial computing, XR alignment, safety context, and local security.
-- Provides local-first pseudonymous spatial sensing by default.
-
-### BodyRig benefits
-
-- Enables markerless full-body tracking.
-- Converts body observations into relational skeleton graphs.
-- Supports VRChat/OpenXR/SteamVR/OSC output.
-- Produces embodied motion fidelity rather than puppet-like tracker motion.
-
-### Sentinel benefits
-
-- Turns RoomSense into a local-first safety/security fabric.
-- Reduces false alarms using consent-based familiarity, gait, habit, device, and room-use patterns.
-- Keeps raw video optional and local.
-- Produces auditable event reconstructions.
-
-### OASIS benefits
-
-- Provides the broad digital world for simulations, games, engineering, R&D, workspaces, and schematic workshops.
-- Allows scanned environments and material maps to become working digital scenes.
-- Gives Athena a space to run digital prototypes before physical production.
-
-### Operative Duplex AI benefits
-
-- Gives the AI system an action layer without collapsing Athena into an uncontrolled actuator.
-- Can operate programs and PC workflows under explicit policy and evidence control.
-- Returns action traces for Athena memory and Aegis audit.
-
-## Validation matrix
-
-| Capability | Evidence required before “real” status |
+| Capability | Minimum evidence |
 |---|---|
-| L.O.D.E optical display | Optical bench test, surface response data, latency test, safety analysis |
-| Lightcore physical compute | Device-level demonstrations, simulation, thermal/electrical model, manufacturability analysis |
-| RoomSense tracking | Calibrated multi-sensor dataset, pose error metrics, occlusion tests |
-| BodyRig VR output | OpenXR/SteamVR/OSC prototype, latency and retargeting tests |
-| Sentinel security | Local-only event logs, false-positive/false-negative tests, privacy audit |
-| Operative Duplex AI | Permission model, action trace, undo/rollback model, sandbox tests |
-| Athena plugin sync | Repo links, mirror index, update logs, canonicality labels |
+| JANUS read-only application mapping | repeatable semantic/visual inventory across named application versions |
+| JANUS reversible actions | proven preconditions, fresh-state verification, expected/observed diff and successful rollback |
+| Application Cartographer | isolated one-action experiments, reproducible capability hypotheses and no production-data mutation |
+| Skill Capsules | replay success, version-range tests, validation probes and permission classification |
+| OASIS runtime | persistent/branchable world state, reality classes and verified import/export |
+| L.O.D.E display | optical bench, surface response, timing/latency, thermal/electrical/eye-safety evidence |
+| RoomSense/BodyRig | calibrated dataset, pose/room error metrics, occlusion and disagreement tests |
+| Reality-to-Simulation | certified references, raw evidence retention, calibration and uncertainty-labelled outputs |
+| Known Behavioral Map | statistically designed pilot and repeatability before scale-up |
+| Lightcore | device/package simulations and measurements per staged profile |
 
-## Canonicality rule
+## Canonicality
 
-GitHub repository documentation is the canonical source for this consolidation. Plugin workspaces are mirrors or execution surfaces unless explicitly promoted by the human operator.
+GitHub/local Project Athena is canonical for this consolidation. Plugin workspaces are mirrors or execution surfaces. No plugin, simulation, diagram or inferred skill may override human authority, repository truth-state labels or required validation.
