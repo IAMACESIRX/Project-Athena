@@ -1,0 +1,26 @@
+schema: ai-system.council_profile.v1
+updated: 2026-08-05
+id: wow-backup-stack
+description: Domain-specific roles retained for the legacy WoW/AzerothCore project.
+activation:
+  default: false
+  explicit_project_required: wow-backup-stack
+roles:
+  inherited:
+    - systems_architect
+    - safety_reviewer
+    - evidence_auditor
+    - observability_engineer
+    - qa_verification
+  project_specific:
+    - id: server_operator
+      focus: Docker, database, AzerothCore runtime
+    - id: game_client_steward
+      focus: client files, realmlist, addons, ReShade
+    - id: backend_engineer
+      focus: FastAPI, command hub, execution modules
+    - id: git_archivist
+      focus: layered repositories, commits, restore points
+    - id: reverse_engineer
+      focus: unknown game mechanics and dependency discovery
+boundary: These roles must not activate outside the explicit WoW Backup Stack project.
