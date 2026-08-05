@@ -129,10 +129,10 @@ Security alert review on 2026-08-05:
   - alert #2: clear-text logging of sensitive information at line 434.
 - The CodeQL findings were traced to the repository validator persisting and
   logging diagnostics that can be derived from credential-pattern matches. The
-  validator now withholds secret-derived line details, sanitizes diagnostics
-  before storage or logging, and marks the redacted report/log sinks with
-  targeted CodeQL suppressions. Credential-pattern matches still fail the
-  integrity check by pattern and file.
+  validator now withholds secret-derived line details and no longer persists or
+  prints detailed diagnostics in CI artifacts or logs. Credential-pattern
+  matches still fail the integrity check; the persisted report records status
+  and diagnostic counts only.
 
 ### Verification limits
 
