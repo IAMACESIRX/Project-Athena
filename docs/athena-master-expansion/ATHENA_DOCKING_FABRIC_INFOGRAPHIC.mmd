@@ -1,0 +1,111 @@
+%% ATHENA Docking Fabric / Hot-Swap Architecture
+%% Canonical source: docs/athena-master-expansion/ATHENA_DOCKING_FABRIC_HOTSWAP_SPEC.md
+%% Generated: 2026-08-05 AEST
+
+flowchart TB
+    Human["Human intent / ACES direction"]
+
+    subgraph AI["Replaceable AI model layer"]
+        Model["GPT / local LLM / future model"]
+        LocalNode["AI-local Athena node\nmodel-specific skills + Athena grammar"]
+        Model --> LocalNode
+    end
+
+    subgraph Highway["Athena connective highway"]
+        Adapter["Adapter router\nmodel + tool + database + runtime adapters"]
+        Provenance["Claim / evidence / provenance schema"]
+        Context["Context compression + retrieval policy"]
+        Auth["Auth / permission / write gates"]
+        Adapter <--> Provenance
+        Adapter <--> Context
+        Adapter <--> Auth
+    end
+
+    subgraph Core["External Athena core"]
+        Gov["Governance + evidence discipline"]
+        Orchestrator["Cognitive Orchestrator"]
+        Senate["Cognitive Senate / A.E.S.I.R. council"]
+        Skills["Group skill library"]
+        Gov --> Orchestrator
+        Orchestrator --> Senate
+        Orchestrator --> Skills
+    end
+
+    subgraph Capsule["Project Athena capsule"]
+        ProjectBrain["Project Brain"]
+        Ontology["Project ontology"]
+        ProjectSkills["Project-specific skills"]
+        Assumptions["Assumptions / decisions / risks"]
+        Artifacts["Docs / diagrams / blueprints / tests"]
+        ProjectBrain --> Ontology
+        ProjectBrain --> ProjectSkills
+        ProjectBrain --> Assumptions
+        ProjectBrain --> Artifacts
+    end
+
+    subgraph Memory["Durable memory + files"]
+        Institutional[("Institutional memory")]
+        Workspace[("Workspace/project memory")]
+        Call[("Call memory / clean-room scratch")]
+        Repo[("GitHub repo / files")]
+        DB[("SQL / vector / graph / document stores")]
+        Institutional --> Workspace
+        Workspace --> Call
+        Workspace <--> Repo
+        Workspace <--> DB
+    end
+
+    subgraph Execution["Nexus-V / Aegis execution contract"]
+        Nexus["Nexus-V semantic execution\ncommit / branch / fork / merge / rollback"]
+        RSM["RSM lineage + versioned state"]
+        Aegis["Aegis trust / attestation / commit gate"]
+        Nexus --> RSM
+        RSM --> Aegis
+    end
+
+    subgraph Physical["Future physical + spatial interfaces"]
+        Lightcore["Lightcore physical execution profile"]
+        LODE["L.O.D.E TV\nLightcore Optical Display Endpoint"]
+        RoomSense["RoomSense local spatial sensing"]
+        BodyRig["BodyRig markerless relational tracking"]
+        OASIS["OASIS simulation / engineering world"]
+        Lightcore --> LODE
+        LODE --> RoomSense
+        RoomSense --> BodyRig
+        BodyRig --> OASIS
+        OASIS --> LODE
+    end
+
+    subgraph Plugins["Plugin mirrors / work surfaces"]
+        GitHub["GitHub\ncanonical source"]
+        Asana["Asana\nexecution queue"]
+        Notion["Notion\ndossier mirror"]
+        Gamma["Gamma\npresentation mirror"]
+        Drive["Drive\nexport mirror"]
+        CanvaFigma["Canva / Figma\ncontrolled visual boards"]
+        Research["Consensus / SciSpace / Wolfram\nresearch + math sanity"]
+    end
+
+    Human --> LocalNode
+    LocalNode <--> Adapter
+    Adapter <--> Gov
+    Orchestrator <--> ProjectBrain
+    ProjectBrain <--> Workspace
+    Gov <--> Institutional
+    ProjectBrain --> Nexus
+    Aegis --> Provenance
+    Aegis --> Lightcore
+    OASIS --> Provenance
+    Adapter <--> GitHub
+    Adapter <--> Asana
+    Adapter <--> Notion
+    Adapter <--> Gamma
+    Adapter <--> Drive
+    Adapter <--> CanvaFigma
+    Adapter <--> Research
+
+    Repo --> GitHub
+    GitHub --> Repo
+
+    classDef canonical stroke-width:3px;
+    class GitHub,Repo canonical;
