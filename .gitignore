@@ -1,0 +1,54 @@
+# Operating-system and editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local configuration, credentials, and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+secrets/
+private/
+.local/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# PowerShell and temporary files
+*.clixml
+*.tmp
+*.temp
+*.bak
+tmp/
+temp/
+
+# Nexus-V local simulator/build products
+Nexus V/build/
+Nexus V/obj_dir/
+Nexus V/.verilator/
+Nexus V/generated/local/
+*.vcd
+*.fst
+*.wlf
+
+# Local reports and scratch artifacts that are not evidence records
+artifacts/local/
+reports/local/

@@ -4,8 +4,11 @@
     "name": "Project Athena",
     "root": "D:\\Projects\\Project Athena",
     "created_for": "local AI prosthetic external brain, durable memory, cognitive processor, Plan architecture authority, and Nexus-V execution research",
-    "hosting": "local_only",
+    "hosting": "local_first_with_explicit_publication",
     "cloud_push_allowed": false,
+    "cloud_publication_policy": "governance/cloud-publication-policy.md",
+    "publication_default": "deny",
+    "publication_requires_explicit_human_authorization": true,
     "current_primary_project": "project-athena"
   },
   "entrypoints": {
@@ -27,6 +30,7 @@
     "current_context": "context.md",
     "plan_context": "Plan/context.md",
     "governance": "governance/absolutes.md",
+    "publication_policy": "governance/cloud-publication-policy.md",
     "decision_process": "engine/order-of-operations.md"
   },
   "athena_core": {
@@ -71,6 +75,7 @@
   },
   "governance": {
     "absolutes": "governance/absolutes.md",
+    "cloud_publication_policy": "governance/cloud-publication-policy.md",
     "policy_matrix": "governance/policy-matrix.yml",
     "self_correction": "governance/self-correction.md",
     "error_correction": "governance/error-correction.md"
@@ -86,6 +91,8 @@
   },
   "council": {
     "roles": "council/roles.yml",
+    "default_profile": "council/profiles/athena-core.yml",
+    "project_profiles": "council/profiles",
     "debate_protocol": "council/debate-protocol.md",
     "reasoning_rounds": "council/reasoning-rounds"
   },
@@ -94,7 +101,8 @@
     "todo": "work/TODO.md",
     "backlog": "work/backlog.yml",
     "features": "work/features.yml",
-    "intake": "work/intake"
+    "intake": "work/intake",
+    "branch_reconciliation": "docs/REPOSITORY_BASELINE_2026-08-05.md"
   },
   "observability": {
     "health_model": "sensory/health-model.md",
@@ -105,6 +113,8 @@
   },
   "legacy": {
     "wow_backup_stack_project_brain": "projects/wow-backup-stack/project-brain.md",
-    "note": "Older WoW backup-stack records are retained as project history and examples, not current checkout root identity."
+    "wow_backup_stack_todo": "projects/wow-backup-stack/TODO.md",
+    "wow_backup_stack_council_profile": "council/profiles/wow-backup-stack.yml",
+    "note": "Older WoW backup-stack records are retained as scoped project history and must not define the root Athena identity or default work queue."
   }
 }

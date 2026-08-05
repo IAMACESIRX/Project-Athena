@@ -1,0 +1,25 @@
+schema: ai-system.council_profile.v1
+updated: 2026-08-05
+id: athena-core
+description: Project-neutral council profile for Athena system work.
+activation:
+  default: true
+  projects:
+    - project-athena
+roles:
+  required:
+    - systems_architect
+    - safety_reviewer
+    - governance_reviewer
+    - memory_architect
+    - evidence_auditor
+    - qa_verification
+  optional:
+    - runtime_engineer
+    - compiler_engineer
+    - hardware_architect
+    - observability_engineer
+    - research_lead
+    - product_operator
+    - contrarian
+selection_rule: Select optional roles only when the task intersects their domain.
