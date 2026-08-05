@@ -137,13 +137,17 @@ Security alert review on 2026-08-05:
   `latest-integrity-report.*` outputs that contained absolute local paths.
   `.gitignore` blocks those generated report files going forward.
 
-### Verification limits
+### Branch-protection verification
 
-No deliberately failing pull request was opened, and no direct commit was pushed
-to `main` as a negative branch-protection test. Those tests would create
-publicly visible noise or intentionally invalid repository history. Enforcement
-was verified from the live branch protection rule, and recent maintenance merges
-used the protected PR path with the required `integrity` check.
+- PRs #46, #47, #48 and #49 used the protected PR path and merged only after the
+  required `integrity` check succeeded.
+- PR #50 was a verification-only negative test with intentionally malformed
+  JSON. `Repository Integrity / integrity` failed, and GitHub rejected a merge
+  attempt with `Required status check "integrity" is failing.` PR #50 was closed
+  unmerged and its branch was deleted.
+- No direct commit was pushed to `main` as a negative test. Direct pushes remain
+  covered by the live `main` branch protection rule requiring pull requests and
+  including administrators in enforcement.
 
 ## Rights and publication
 
