@@ -91,6 +91,25 @@ TEXT_SCAN_SUFFIXES = {
     ".yml",
 }
 
+SENSITIVE_DIAGNOSTIC_REPLACEMENTS = (
+    (re.compile(r"(?i)\bsk-[A-Za-z0-9_-]{8,}\b"), "[redacted-token]"),
+    (re.compile(r"(?i)\bgh(?:p|o|u|s|r)_[A-Za-z0-9_]{8,}\b"), "[redacted-token]"),
+    (
+        re.compile(
+            r"(?i)\b((?:api[_-]?key|authorization|bearer|password|secret|token)"
+            r"\s*[:=]\s*)([^,\s;]+)"
+        ),
+        r"\1[redacted]",
+    ),
+)
+
+
+def sanitize_diagnostic(message: str) -> str:
+    sanitized = str(message).replace("\r", "\\r").replace("\n", "\\n")
+    for pattern, replacement in SENSITIVE_DIAGNOSTIC_REPLACEMENTS:
+        sanitized = pattern.sub(replacement, sanitized)
+    return sanitized[:1000]
+
 
 @dataclass
 class ValidationReport:
@@ -100,10 +119,10 @@ class ValidationReport:
     counts: dict[str, int] = field(default_factory=dict)
 
     def error(self, message: str) -> None:
-        self.errors.append(message)
+        self.errors.append(sanitize_diagnostic(message))
 
     def warn(self, message: str) -> None:
-        self.warnings.append(message)
+        self.warnings.append(sanitize_diagnostic(message))
 
     def write(self, path: pathlib.Path) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -115,6 +134,8 @@ class ValidationReport:
             "errors": self.errors,
             "warnings": self.warnings,
         }
+        # Diagnostics are sanitized before they are stored in the report.
+        # codeql[py/clear-text-storage-sensitive-data]
         path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
 
@@ -433,6 +454,8 @@ def main() -> int:
     for warning in report.warnings:
         print(f"WARNING: {warning}", file=sys.stderr)
     for error in report.errors:
+        # Diagnostics are sanitized before they are printed to CI logs.
+        # codeql[py/clear-text-logging-sensitive-data]
         print(f"ERROR: {error}", file=sys.stderr)
 
     print(
