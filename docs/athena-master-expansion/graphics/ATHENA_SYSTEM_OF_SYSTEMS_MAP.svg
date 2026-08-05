@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <style>
+      .bg{fill:#061525}.grid{stroke:#10334d;stroke-width:1;opacity:.55}.box{fill:#09243a;stroke:#66d9ff;stroke-width:2;rx:14}.core{fill:#0d3148;stroke:#ffd166;stroke-width:3;rx:16}.future{fill:#1a2235;stroke:#c084fc;stroke-width:2;stroke-dasharray:8 6;rx:14}.t{font-family:Arial,Helvetica,sans-serif;fill:#e8f7ff;font-size:26px;font-weight:700}.s{font-family:Arial,Helvetica,sans-serif;fill:#b9e7ff;font-size:18px}.m{font-family:Arial,Helvetica,sans-serif;fill:#ffffff;font-size:20px;font-weight:700}.line{stroke:#66d9ff;stroke-width:4;fill:none;marker-end:url(#arrow)}.gold{stroke:#ffd166}.purple{stroke:#c084fc}.note{font-family:Arial,Helvetica,sans-serif;fill:#9fc9de;font-size:15px}.tag{font-family:Arial,Helvetica,sans-serif;fill:#ffd166;font-size:16px;font-weight:700}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#66d9ff"/></marker>
+  </defs>
+  <rect class="bg" width="1600" height="1000"/>
+  <g>
+    <path class="grid" d="M0 80H1600M0 160H1600M0 240H1600M0 320H1600M0 400H1600M0 480H1600M0 560H1600M0 640H1600M0 720H1600M0 800H1600M0 880H1600M0 960H1600"/>
+    <path class="grid" d="M80 0V1000M160 0V1000M240 0V1000M320 0V1000M400 0V1000M480 0V1000M560 0V1000M640 0V1000M720 0V1000M800 0V1000M880 0V1000M960 0V1000M1040 0V1000M1120 0V1000M1200 0V1000M1280 0V1000M1360 0V1000M1440 0V1000M1520 0V1000"/>
+  </g>
+  <text x="60" y="60" class="t">PROJECT ATHENA — SYSTEM OF SYSTEMS MAP</text>
+  <text x="60" y="92" class="note">Controlled vector graphic. Canonical source: docs/athena-master-expansion/. Status: architecture consolidation, not implementation proof.</text>
+
+  <rect x="80" y="160" width="260" height="110" class="box"/><text x="110" y="205" class="m">HUMAN / ACES</text><text x="110" y="238" class="s">goals, corrections, authority</text>
+  <rect x="420" y="160" width="280" height="110" class="box"/><text x="450" y="205" class="m">A.E.S.I.R.</text><text x="450" y="238" class="s">polymath R&amp;D method</text>
+  <rect x="780" y="150" width="340" height="130" class="core"/><text x="820" y="198" class="m">ATHENA / AI-OS</text><text x="820" y="232" class="s">governance, memory, evidence, routing</text>
+  <rect x="1210" y="160" width="280" height="110" class="box"/><text x="1240" y="205" class="m">PLUGIN MIRRORS</text><text x="1240" y="238" class="s">Notion, Asana, Drive, Gamma</text>
+
+  <rect x="120" y="410" width="300" height="120" class="box"/><text x="150" y="456" class="m">NEXUS-V</text><text x="150" y="490" class="s">versioned state execution</text>
+  <rect x="510" y="410" width="300" height="120" class="core"/><text x="540" y="456" class="m">AEGIS</text><text x="540" y="490" class="s">commit gate / audit / attestation</text>
+  <rect x="900" y="400" width="330" height="140" class="future"/><text x="930" y="448" class="m">LIGHTCORE</text><text x="930" y="482" class="s">CNT-silicon-photonic substrate</text><text x="930" y="512" class="tag">R&amp;D / needs validation</text>
+
+  <rect x="90" y="700" width="300" height="120" class="future"/><text x="120" y="746" class="m">OASIS</text><text x="120" y="780" class="s">simulation / digital world</text>
+  <rect x="470" y="700" width="300" height="120" class="future"/><text x="500" y="746" class="m">L.O.D.E TV</text><text x="500" y="780" class="s">display + sensor endpoint</text>
+  <rect x="850" y="690" width="320" height="140" class="future"/><text x="880" y="738" class="m">ROOMSENSE / BODYRIG</text><text x="880" y="772" class="s">spatial sensing + full-body XR</text><text x="880" y="802" class="tag">local-first privacy</text>
+  <rect x="1260" y="700" width="280" height="120" class="future"/><text x="1290" y="746" class="m">OPERATIVE DUPLEX</text><text x="1290" y="780" class="s">permissioned action layer</text>
+
+  <path class="line" d="M340 215H420"/><path class="line" d="M700 215H780"/><path class="line gold" d="M1120 215H1210"/>
+  <path class="line" d="M950 280V400"/><path class="line gold" d="M810 470H510"/><path class="line" d="M420 470H510"/>
+  <path class="line" d="M960 540C930 610 760 660 620 700"/><path class="line" d="M1060 540C1040 615 1040 640 1010 690"/>
+  <path class="line" d="M770 760H850"/><path class="line" d="M1170 760H1260"/>
+  <path class="line purple" d="M1260 820C1000 940 420 930 210 820"/>
+  <path class="line purple" d="M210 700C300 620 390 575 510 530"/>
+
+  <text x="70" y="930" class="note">Core loop: intent → method → governance → versioned execution → physical/display/spatial interfaces → simulation/action → telemetry/evidence/memory writeback.</text>
+</svg>
