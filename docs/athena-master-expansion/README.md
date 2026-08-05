@@ -1,80 +1,77 @@
-# Athena Master Expansion Index
+# Project Athena Master Expansion
 
 Generated: 2026-08-05  
-Updated: 2026-08-05 plugin/GPT concept synchronization pass
+Canonical repository: `IAMACESIRX/Project-Athena`
 
-This folder is a consolidated Project Athena expansion pack created from the current repository scan, the Plan-folder authority files, prior Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense project concepts, and external research sanity checks.
+This folder consolidates Project Athena’s architecture across AI-OS governance, Nexus-V execution, Lightcore, L.O.D.E TV, RoomSense, BodyRig, OASIS, Operative Duplex AI, and the Reality-to-Simulation / Material Intelligence program.
 
-## Scope
-
-This pack updates Project Athena as a system-of-systems:
-
-- **A.E.S.I.R.**: Adaptive Evolutionary System for Intelligent Research; the canonical unified Polymath Discovery Engine.
-- **Athena / AI-OS**: institutional cognition, governance, evidence, memory, orchestration, continuity, and project-brain control plane.
-- **Nexus-V**: semantic execution and versioned-state compute using commit, branch, fork, merge, rollback, RSM, Aegis, NVASM, NVIR, NVOBJ, NVVM, RTL, and verification research.
-- **Lightcore**: future physical execution profile for Nexus-V/Athena using XYZ CNT-silicon-photonic compute, dual-purpose electro-photonic CNT cells, silicon/silicon-nitride photonics, multidimensional optical/PAM signalling, and optical/crystal/CNT memory concepts.
-- **L.O.D.E TV**: Lightcore Optical Display Endpoint; a photonic-native display/interaction endpoint, not a normal HDMI/DP panel in the final architecture.
-- **RoomSense / BodyRig**: local-first room-scale spatial sensing, markerless full-body VR/XR tracking, relational tracking, human-state reconstruction, security, and interaction fabric.
-- **OASIS**: outer digital operating environment for engineering, simulation, games, virtual workspaces, R&D, and schematic workshops.
-- **Operative Duplex AI**: future action/metacognitive PC-control layer that uses Athena/Jarvis/OASIS context but does not replace Athena.
-
-## Files in this pack
-
-| File | Purpose |
-|---|---|
-| `CHATGPT_PROJECT_SYNC_2026-08-05.md` | Consolidates Project Athena concepts from GPT project chats and classifies them as repo-observed, Plan-authority, project-chat concept, research-supported primitive, or speculative R&D. |
-| `ATHENA_FULL_SYSTEM_MAP.md` | Canonical feed map for Athena, AI-OS, Nexus-V, Lightcore, L.O.D.E, RoomSense, OASIS, and Operative Duplex AI. |
-| `ATHENA_SYSTEM_FEED_BENEFIT_MATRIX.md` | Explicit source→target feed matrix showing how each subsystem benefits the others and what validates each handoff. |
-| `LODE_TV_COMPLETION_SPEC.md` | Completed L.O.D.E TV architecture: graphics pipeline, optical path, sensing stack, RoomSense/BodyRig integration, and validation roadmap. |
-| `LODE_TV_ENGINEERING_COMPLETION_MAP.md` | Engineering completion map for L.O.D.E TV: measured reference layout, subassemblies, drawing-sheet register, telemetry schema, assembly sequence, graphics package, and EVT/DVT/PVT plan. |
-| `CONCEPT_FEED_BENEFIT_MAP.md` | Earlier feed/benefit map describing how each subsystem contributes to the whole. |
-| `PLAN_FOLDER_SANITY_CHECK.md` | Plan-folder authority check, inventory interpretation, gaps, and conversion priorities. |
-| `TOOLCHAIN_SANITY_CHECK.md` | Sanity-check log from repository scan, Plan inspection, research plugins, and governance review. |
-| `RESEARCH_ANCHORS.md` | External research anchors for agent provenance, AI governance, photonic/CNT compute, and markerless XR body tracking. |
-| `AESIR_PUSH_AND_PLUGIN_NEXT_ACTIONS.md` | A.E.S.I.R. pass defining what should be pushed next, plugin/tool responsibilities, P0/P1/P2 queues, and local verification gates. |
-| `AESIR_FULL_PROJECT_ACTION_REVIEW_2026-08-05.md` | Full 0–20 A.E.S.I.R. project-action review translating the canonical method into next project actions. |
-| `ATHENA_MASTER_ONTOLOGY.yml` | Machine-readable ontology for Athena, Nexus-V, Lightcore, L.O.D.E, RoomSense, OASIS, Operative Duplex AI, and plugin surfaces. |
-| `CAPABILITY_STATE_MATRIX.md` | Truth-status matrix separating implemented, scaffolded, specified, conceptual, speculative, and blocked capabilities. |
-| `PLUGIN_ACTION_REGISTER.md` | Plugin/tool responsibility map and run queue for GitHub, Asana, Notion, Gamma, Consensus, SciSpace, Google Drive, and local Athena tools. |
-| `PLUGIN_WORKSPACE_SYNC_LOG_2026-08-05.md` | Workspace label taxonomy, plugin mirror policy, completed sync actions, and outstanding workspace update plan. |
-| `GOVERNANCE_CLOUD_PUSH_EXCEPTION_2026-08-05.md` | Narrow governance exception recording that this was a user-authorized documentation push, not blanket permission to upload local/private state. |
-| `CYCLE_REPORT_2026-08-05_MASTER_EXPANSION.md` | Cycle report for the full source-of-truth and plugin synchronization pass. |
-| `OASIS_ARCHITECTURE_SPEC.md` | Formal OASIS environment/runtime/interface specification. |
-| `OPERATIVE_DUPLEX_AI_SPEC.md` | Formal action-layer and local PC-control architecture boundary. |
-| `NEXUSV_ATHENA_BRIDGE_SPEC.md` | Bridge between Athena tasks/evidence/memory and Nexus-V branchable state primitives. |
-| `LODE_ROOMSENSE_BODYRIG_INTERFACE_SPEC.md` | Interface map for L.O.D.E TV, RoomSense, BodyRig, XR outputs, and local privacy modes. |
-| `LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md` | Physical execution profile keeping Lightcore tied to Nexus-V without claiming implemented hardware. |
-| `ADAPTER_SDK_CONTRACT.md` | Standard adapter contract for plugins, local tools, OASIS, and future Operative Duplex integration. |
-| `EVIDENCE_PROVENANCE_SCHEMA_ALIGNMENT.md` | Unified claim/evidence/execution provenance schema alignment. |
-| `PLUGIN_MIRROR_INDEX.md` | Index of plugin artifacts and their canonicality status. |
-
-## One-line system thesis
-
-Project Athena is a local-first institutional intelligence stack where files preserve memory and evidence, Athena routes cognition and governance, Nexus-V turns reasoning/work into versioned state execution, Lightcore becomes the future physical substrate, L.O.D.E/RoomSense become the spatial display/sensing interface, and OASIS/Operative Duplex AI become the action/simulation environment around it.
-
-## Governance note
-
-The repository is local-first by default. This documentation pack exists in GitHub because the human explicitly requested a documentation synchronization push. Plugin mirrors are secondary surfaces. GitHub remains the source of truth.
-
-## Current control-layer recommendation
-
-The next implementation emphasis is:
+## Canonical state rule
 
 ```text
-control docs → bridge specs → adapter SDK → evidence/provenance schema → local verification → sanitized verification outputs
+root docs = current operating state
+Plan/ = design authority and architecture intent
+Nexus V/ = implementation-heavy RTL/toolchain branch
+this folder = cross-domain consolidation and applied R&D specifications
+plugin workspaces = labelled mirrors or execution surfaces
 ```
 
-## Current engineering-documentation emphasis
+## System architecture
+
+- [`ATHENA_FULL_SYSTEM_MAP.md`](ATHENA_FULL_SYSTEM_MAP.md) — complete ecosystem map.
+- [`ATHENA_SYSTEM_FEED_BENEFIT_MATRIX.md`](ATHENA_SYSTEM_FEED_BENEFIT_MATRIX.md) — subsystem feeds, benefits and validation paths.
+- [`NEXUSV_ATHENA_BRIDGE_SPEC.md`](NEXUSV_ATHENA_BRIDGE_SPEC.md) — cognition-to-versioned-execution bridge.
+- [`LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md`](LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md) — future physical execution profile.
+- [`OASIS_ARCHITECTURE_SPEC.md`](OASIS_ARCHITECTURE_SPEC.md) — simulation/world runtime.
+- [`OPERATIVE_DUPLEX_AI_SPEC.md`](OPERATIVE_DUPLEX_AI_SPEC.md) — governed local action layer.
+
+## L.O.D.E / RoomSense / BodyRig
+
+- [`LODE_TV_COMPLETION_SPEC.md`](LODE_TV_COMPLETION_SPEC.md)
+- [`LODE_TV_ENGINEERING_COMPLETION_MAP.md`](LODE_TV_ENGINEERING_COMPLETION_MAP.md)
+- [`LODE_ROOMSENSE_BODYRIG_INTERFACE_SPEC.md`](LODE_ROOMSENSE_BODYRIG_INTERFACE_SPEC.md)
+- [`LODE_R2S_SPATIAL_INTERFACE_MAP.md`](LODE_R2S_SPATIAL_INTERFACE_MAP.md) — scientific sensing, OASIS and display feedback loop.
+
+## Reality-to-Simulation / Material Intelligence
+
+- [`REALITY_TO_SIMULATION_MULTISENSOR_ARCHITECTURE.md`](REALITY_TO_SIMULATION_MULTISENSOR_ARCHITECTURE.md) — parallel UV-to-THz, RF, geometry, thermal, acoustic and environmental sensor fabric; per-band specialists; central fusion AI.
+- [`MATERIAL_BEHAVIORAL_ATLAS_SPEC.md`](MATERIAL_BEHAVIORAL_ATLAS_SPEC.md) — Known Behavioral Maps and the Material Behavioral Atlas; 10,000 configurations × 10 repeats per selected domain.
+- [`REALITY_TO_OASIS_COMPILER_SPEC.md`](REALITY_TO_OASIS_COMPILER_SPEC.md) — real-world scans to executable OASIS physical twins.
+- [`ENGINEERING_INVERSE_DESIGN_COMPOSITE_SIMULATION_SPEC.md`](ENGINEERING_INVERSE_DESIGN_COMPOSITE_SIMULATION_SPEC.md) — material selection, blueprint generation, composites, interfaces and graded materials.
+- [`LITHOGRAPHY_SENSOR_PROCESS_CONTROL_INTEGRATION.md`](LITHOGRAPHY_SENSOR_PROCESS_CONTROL_INTEGRATION.md) — in-situ lithography metrology, behavioral maps and closed-loop process intelligence.
+- [`ATHENA_R2S_INTEGRATION_RELEASE_2026-08-05.md`](ATHENA_R2S_INTEGRATION_RELEASE_2026-08-05.md) — release decisions, truth-state classification and next gates.
+- [`R2S_RELEASE_MANIFEST.json`](R2S_RELEASE_MANIFEST.json) — machine-readable release index.
+
+## Schemas
+
+- [`schemas/sensor-observation.schema.json`](schemas/sensor-observation.schema.json)
+- [`schemas/known-behavioral-map.schema.json`](schemas/known-behavioral-map.schema.json)
+- [`schemas/oasis-physical-twin.schema.json`](schemas/oasis-physical-twin.schema.json)
+
+## Controlled diagrams
+
+- [`diagrams/athena-r2s-full-stack.svg`](diagrams/athena-r2s-full-stack.svg)
+- [`diagrams/material-behavioral-atlas.svg`](diagrams/material-behavioral-atlas.svg)
+- [`diagrams/lode-r2s-feedback-loop.svg`](diagrams/lode-r2s-feedback-loop.svg)
+
+## Review and sanity records
+
+- [`PLAN_FOLDER_SANITY_CHECK.md`](PLAN_FOLDER_SANITY_CHECK.md)
+- [`CHATGPT_PROJECT_SYNC_2026-08-05.md`](CHATGPT_PROJECT_SYNC_2026-08-05.md)
+- [`RESEARCH_ANCHORS.md`](RESEARCH_ANCHORS.md)
+- [`PLUGIN_MIRROR_INDEX.md`](PLUGIN_MIRROR_INDEX.md)
+- [`PLUGIN_WORKSPACE_SYNC_LOG_2026-08-05.md`](PLUGIN_WORKSPACE_SYNC_LOG_2026-08-05.md)
+- [`PLUGIN_WORKSPACE_R2S_SYNC_2026-08-05.md`](PLUGIN_WORKSPACE_R2S_SYNC_2026-08-05.md)
+
+## Engineering artifacts
+
+The lightweight canonical artifact index is at [`../../assets/reality-to-simulation/README.md`](../../assets/reality-to-simulation/README.md). The full Rev-B PDF/GLB/ZIP/image package is mirrored in the Project Athena Google Drive artifact workspace because the current GitHub connector cannot stream local binary files into repository blobs. Definitions, schemas, status and release history remain canonical here.
+
+## Maturity rule
+
+Every capability uses one of these states:
 
 ```text
-L.O.D.E measured sheets
-→ Lightcore physical profile sanity checks
-→ RoomSense/BodyRig interface tests
-→ OASIS simulation contracts
-→ Operative Duplex action contract
-→ plugin mirror labels and workspace docs
+implemented / active / partial / specified / planned / conceptual / speculative / blocked
 ```
 
-## Status
-
-This pack is a design-authority consolidation and R&D roadmap. It is not a claim that every concept is already implemented. It separates observed repository state, Plan-folder architecture intent, user-specified project concepts, external research anchors, engineering hypotheses, and unresolved validation work.
+A large simulation count, generated blueprint or AI inference is not treated as physical proof. Critical claims require calibration, real measurements, uncertainty, provenance and independent validation.
