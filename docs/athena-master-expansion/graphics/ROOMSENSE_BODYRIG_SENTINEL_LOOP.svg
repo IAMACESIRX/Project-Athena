@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="950" viewBox="0 0 1700 950">
+  <defs>
+    <style>
+      .bg{fill:#06131f}.grid{stroke:#12304a;stroke-width:1;opacity:.55}.box{fill:#09243a;stroke:#66d9ff;stroke-width:2;rx:14}.sens{fill:#102034;stroke:#00ff99;stroke-width:2;rx:14}.privacy{fill:#251d34;stroke:#ffd166;stroke-width:2;rx:14}.out{fill:#14223a;stroke:#c084fc;stroke-width:2;rx:14}.t{font-family:Arial,Helvetica,sans-serif;fill:#edfaff;font-size:30px;font-weight:700}.m{font-family:Arial,Helvetica,sans-serif;fill:#fff;font-size:22px;font-weight:700}.s{font-family:Arial,Helvetica,sans-serif;fill:#bdefff;font-size:17px}.n{font-family:Arial,Helvetica,sans-serif;fill:#9fd3e8;font-size:14px}.tag{font-family:Arial,Helvetica,sans-serif;fill:#ffd166;font-size:16px;font-weight:700}.line{stroke:#66d9ff;stroke-width:4;fill:none;marker-end:url(#arrow)}.green{stroke:#00ff99}.purple{stroke:#c084fc}.gold{stroke:#ffd166}.return{stroke:#a78bfa;stroke-width:4;fill:none;marker-end:url(#arrow2)}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#66d9ff"/></marker>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2,2 L10,6 L2,10 Z" fill="#a78bfa"/></marker>
+  </defs>
+  <rect class="bg" width="1700" height="950"/>
+  <g><path class="grid" d="M0 100H1700M0 200H1700M0 300H1700M0 400H1700M0 500H1700M0 600H1700M0 700H1700M0 800H1700M0 900H1700"/><path class="grid" d="M100 0V950M200 0V950M300 0V950M400 0V950M500 0V950M600 0V950M700 0V950M800 0V950M900 0V950M1000 0V950M1100 0V950M1200 0V950M1300 0V950M1400 0V950M1500 0V950M1600 0V950"/></g>
+  <text x="55" y="60" class="t">ROOMSENSE / BODYRIG / SENTINEL LOOP</text>
+  <text x="55" y="90" class="n">Controlled vector graphic. Local-first spatial sensing architecture: useful data without default raw-video dependence.</text>
+
+  <rect x="80" y="160" width="270" height="120" class="box"/><text x="110" y="205" class="m">L.O.D.E TV</text><text x="110" y="238" class="s">display/sensor room anchor</text><text x="110" y="262" class="s">edge photodiodes + optical packets</text>
+  <rect x="455" y="120" width="270" height="120" class="sens"/><text x="485" y="165" class="m">LiDAR / CAMERA TOWERS</text><text x="485" y="198" class="s">outside-in geometry + occlusion</text>
+  <rect x="455" y="300" width="270" height="120" class="sens"/><text x="485" y="345" class="m">RF / UWB / mmWAVE</text><text x="485" y="378" class="s">non-video motion / presence</text>
+  <rect x="830" y="160" width="270" height="120" class="sens"/><text x="860" y="205" class="m">HEADSET SENSORS</text><text x="860" y="238" class="s">inside-out view + hands</text>
+  <rect x="1205" y="160" width="310" height="120" class="sens"/><text x="1235" y="205" class="m">CONTROLLERS / OPTICAL TAGS</text><text x="1235" y="238" class="s">intent, buttons, packet timing</text>
+
+  <rect x="230" y="520" width="330" height="135" class="box"/><text x="260" y="570" class="m">ROOMSENSE FUSION</text><text x="260" y="604" class="s">coordinate frames, calibration, confidence</text><text x="260" y="632" class="tag">sensor agreement score</text>
+  <rect x="690" y="520" width="330" height="135" class="out"/><text x="720" y="570" class="m">BODYRIG</text><text x="720" y="604" class="s">relational skeleton graph</text><text x="720" y="632" class="s">OpenXR / SteamVR / OSC trackers</text>
+  <rect x="1150" y="520" width="330" height="135" class="privacy"/><text x="1180" y="570" class="m">SENTINEL MODE</text><text x="1180" y="604" class="s">local security + anomaly tiers</text><text x="1180" y="632" class="tag">privacy modes explicit</text>
+
+  <rect x="420" y="760" width="350" height="110" class="box"/><text x="450" y="805" class="m">OASIS / XR OUTPUT</text><text x="450" y="838" class="s">avatars, room-aware games, simulation</text>
+  <rect x="930" y="760" width="350" height="110" class="box"/><text x="960" y="805" class="m">ATHENA / AEGIS</text><text x="960" y="838" class="s">audit, evidence, policy, memory</text>
+
+  <path class="line green" d="M350 220C410 250 460 375 395 520"/>
+  <path class="line green" d="M590 240V520"/>
+  <path class="line green" d="M590 420C560 470 510 500 450 520"/>
+  <path class="line green" d="M965 280C850 420 690 470 560 555"/>
+  <path class="line green" d="M1210 280C1000 420 820 475 560 575"/>
+  <path class="line purple" d="M560 588H690"/>
+  <path class="line gold" d="M1020 588H1150"/>
+  <path class="line" d="M855 655C800 710 700 740 595 760"/>
+  <path class="return" d="M1320 655C1260 700 1190 735 1105 760"/>
+  <path class="return" d="M1105 760C1050 690 1035 660 1020 588"/>
+  <path class="return" d="M770 815H930"/>
+  <path class="return" d="M930 815C630 910 270 800 230 655"/>
+
+  <rect x="80" y="890" width="1540" height="42" class="privacy"/>
+  <text x="105" y="917" class="s">Boundary: RoomSense/BodyRig/Sentinel are specified architecture tracks. Real status requires calibrated datasets, pose-error metrics, privacy audit, safety review, and local-first implementation tests.</text>
+</svg>
