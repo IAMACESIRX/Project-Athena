@@ -19,6 +19,11 @@ It is an AI prosthetic external brain built from:
 - Plan architecture authority,
 - Nexus-V hardware/toolchain implementation research.
 
+The GitHub Wiki is the companion orientation index, not a replacement for this
+repository or tracked work surfaces:
+
+`https://github.com/IAMACESIRX/Project-Athena/wiki`
+
 The older WoW Backup Stack remains represented in legacy docs and project-brain
 records, but it is no longer the root identity of this checkout.
 

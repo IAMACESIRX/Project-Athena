@@ -21,9 +21,12 @@ Project Athena/
   registries/                          ownership, layer, module, interface maps
 ```
 
+GitHub Wiki companion index: `https://github.com/IAMACESIRX/Project-Athena/wiki`
+
 ## Navigation Rules
 
 - Use `AI-PORTAL.md` for universal entry.
+- Use the GitHub Wiki as a companion orientation index, not a source-of-truth replacement.
 - Use `context.md` for the current whole-project explanation.
 - Use `Plan/context.md` for Plan-specific architecture authority.
 - Use `memory/athena-memory-map.md` to choose writeback targets.

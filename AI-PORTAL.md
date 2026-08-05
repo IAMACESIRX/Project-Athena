@@ -8,6 +8,8 @@ Project name: Project Athena
 
 Primary goal: create a local-first institutional-intelligence and prosthetic external-brain system that preserves context, organizes knowledge, routes instructions, processes goals, coordinates AI and human work, audits evidence and safely expands capability over time.
 
+GitHub Wiki companion index: `https://github.com/IAMACESIRX/Project-Athena/wiki`
+
 Project Athena is part of a wider system-of-systems. Do not collapse the independent entities into one brain.
 
 ```text

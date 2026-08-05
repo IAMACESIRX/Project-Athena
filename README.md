@@ -6,6 +6,8 @@ ATHENA is one independent intelligence in a wider system-of-systems. The reposit
 
 The repository is an operating substrate: files preserve memory, schemas define contracts, tools process state, cycle reports preserve evidence, and `Plan/` defines the highest-priority architecture intent.
 
+GitHub Wiki companion index: https://github.com/IAMACESIRX/Project-Athena/wiki
+
 ## Canonical ecosystem correction
 
 ```text
