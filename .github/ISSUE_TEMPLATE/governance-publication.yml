@@ -1,0 +1,50 @@
+name: Governance or publication work
+description: Route authority, privacy, publication, security, and GitHub operating changes.
+title: "[Governance]: "
+labels: ["type:governance", "area:governance"]
+body:
+  - type: input
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What governance, privacy, security, or publication state should change?
+    validations:
+      required: true
+  - type: dropdown
+    id: publication_class
+    attributes:
+      label: Publication class
+      options:
+        - public architecture/documentation
+        - public source code
+        - sanitized generated report
+        - private/local-only state
+        - third-party material requiring licence review
+    validations:
+      required: true
+  - type: textarea
+    id: authority
+    attributes:
+      label: Authority and policy references
+      description: Name the governing files, settings, issue, or human instruction.
+      placeholder: governance/cloud-publication-policy.md, governance/publication-gate.yml, branch protection setting.
+    validations:
+      required: true
+  - type: textarea
+    id: sensitive_data
+    attributes:
+      label: Sensitive-data review
+      description: Identify credentials, account exports, private chats, local runtime state, private logs, or third-party material.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ] Publication gate applies.
+        - [ ] Repository integrity validation passes.
+        - [ ] Skipped validation or unresolved licence questions are recorded.
+        - [ ] Result is linked to evidence or settings verification.
+    validations:
+      required: true

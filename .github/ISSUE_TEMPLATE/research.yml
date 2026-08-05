@@ -1,0 +1,51 @@
+name: Research or R&D work
+description: Route research, experiments, physical R&D, and evidence-gathering tasks.
+title: "[Research]: "
+labels: ["type:research"]
+body:
+  - type: input
+    id: question
+    attributes:
+      label: Research question
+      description: State the bounded question or hypothesis.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Boundaries
+      description: Name what this issue will not claim, validate, fabricate, publish, or generalize.
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence_class
+    attributes:
+      label: Expected evidence class
+      options:
+        - direct live observation
+        - git state
+        - file contents
+        - generated scan
+        - human instruction
+        - documentation
+        - inference
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation or review plan
+      description: Name measurements, sources, simulations, safety gates, or review records.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ] Evidence and uncertainty are recorded.
+        - [ ] Inference is labeled.
+        - [ ] Claims do not exceed the evidence class.
+        - [ ] Follow-up implementation or validation issues are linked.
+    validations:
+      required: true

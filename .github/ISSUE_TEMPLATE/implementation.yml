@@ -1,0 +1,48 @@
+name: Implementation work
+description: Route source, tool, runtime, adapter, CI, or test changes.
+title: "[Implementation]: "
+labels: ["type:implementation"]
+body:
+  - type: input
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What behavior, tool, check, or artifact should exist?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Name the files, modules, or subsystems expected to change and the surfaces intentionally out of scope.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: Name exact commands, tests, reports, or manual checks that prove the change.
+      value: |
+        - [ ] `python tools/validate_repository.py`
+        - [ ] `python -m compileall -q tools "Nexus V/scripts" "Nexus V/toolchain"`
+        - [ ] Targeted checks:
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk and rollback
+      description: Identify privacy, publication, runtime, data-loss, branch, or generated-output risks.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ] Behavior is implemented or clearly marked as scaffolded.
+        - [ ] Tests or validation evidence are recorded.
+        - [ ] Documentation, context, or work items are updated where needed.
+        - [ ] No private/local-only state is published.
+    validations:
+      required: true
