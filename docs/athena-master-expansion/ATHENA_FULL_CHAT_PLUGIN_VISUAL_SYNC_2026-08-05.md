@@ -1,235 +1,232 @@
-# Athena Full Chat, Plugin, Visual, and Engineering Synchronization — 2026-08-05
+# Project Athena Full Chat, Plugin, Visual and Engineering Synchronization — 2026-08-05
+
+Updated: JANUS independent-system reconciliation
 
 ## Authority and scope
 
-This report records the current cross-chat and cross-plugin synchronization pass requested by the human authority. GitHub remains the canonical source of truth. Plugin workspaces are mirrors, presentation surfaces, research sources, execution boards, or future runtime surfaces.
+This report records the cross-chat, repository, engineering-package and plugin-workspace consolidation requested by the human authority. GitHub/local Project Athena remains canonical. Plugin workspaces are labelled mirrors, research sources, execution queues, presentation surfaces or future runtime/design surfaces.
 
-The pass consolidates:
+This document incorporates the useful work from the parallel main-branch synchronization report while superseding its ATHENA-centred interpretation of the operative AI.
 
-- Project Athena / AI-OS / MCAI architecture,
-- Odysseus as an executive/action organ and API-capable tool in the chain,
-- one-or-many model operation and hot-swappable model adapters,
-- institutional, workspace/project, and call-specific clean-room memory,
-- regeneralization and governed knowledge promotion,
-- Evolutionary Ecosystem Construction across AI, GI, Athena, training, tools, hardware, and institutions,
-- distributed local-network, rented burst-compute, and hardware-aware fallback execution,
-- Nexus-V, RSM, Aegis, NVASM/NVIR/NVOBJ/NVVM and versioned-state execution,
-- Lightcore as a future physical execution profile,
-- L.O.D.E TV, RoomSense, BodyRig, Sentinel, OASIS, and Operative Duplex AI,
-- storyboards, infographics, controlled SVGs, and engineering documentation.
-
-## Canonical system relationship
+## Canonical identity correction
 
 ```text
-Human authority / goals
-        ↕
-Odysseus / applications / APIs / project organs
-        ↕
-Athena docking fabric and connective highway
-        ↕
-MCAI + memory + knowledge + governance + evidence + skills
-        ↕
-One or many models / specialist AIs / future GI
-        ↕
-Nexus-V versioned-state execution + Aegis commit authority
-        ↕
-Current heterogeneous hardware or future Lightcore substrate
-        ↕
-L.O.D.E TV + RoomSense + BodyRig + OASIS + Operative Duplex
-        ↕
-Observed outcomes, telemetry, audit, learning, and regeneralization
+ATHENA = independent institutional intelligence
+JARVIS = independent personal/executive intelligence
+JANUS  = independent operative metacognitive intelligence
+OASIS  = non-AI persistent digital reality, simulation and creation substrate
 ```
 
-Athena is not identical to any model, application, repository instance, or hardware body. It is the persistent institutional and metacognitive substrate that models, tools, projects, and interfaces enter, use, improve, and leave.
+JANUS is not an ATHENA limb, action layer or internal organ. `Operative Duplex AI` remains only a legacy alias for JANUS's internal Interior/Exterior duplex.
 
-## L.O.D.E TV completed feed map
+OASIS does not contain or own ATHENA, JARVIS or JANUS. It hosts persistent worlds, simulations, engineering and scientific workspaces, games, virtual living/work, R&D think tanks, digital twins and production/schematic workshops.
 
-### Forward render and interaction path
+## Consolidated architecture
 
 ```text
-Athena project intent and context
-→ Odysseus / OASIS application state
-→ model and tool orchestration
-→ Nexus-V state/task descriptors
-→ Lightcore or conventional GPU/NPU/CPU render fabric
-→ Lightcore-native multidimensional optical stream
-→ fibre / optical routing and telemetry
-→ L.O.D.E optical receiver and compositor
-→ independent application light + Smart-TV/UI light mixing
-→ K attenuation/filter/mask stage
-→ UST/projection or direct optical excitation path
-→ continuous phosphor/display surface
-→ human visual and spatial interaction
+                         HUMAN AUTHORITY
+                               │
+                           A.E.S.I.R.
+                   integrated research method
+                               │
+          ┌────────────────────┼────────────────────┐
+          │                    │                    │
+       ATHENA               JARVIS                JANUS
+institutional intelligence  personal/executive AI  operative metacognitive AI
+          │                    │                    │
+          └──────── identity-preserving contracts ┘
+                               │
+                             OASIS
+       persistent digital reality, simulation and creation substrate
+                               │
+          external software and authorized physical machinery
 ```
 
-### Reverse sensing and learning path
+Shared infrastructure:
 
 ```text
-L.O.D.E reverse optical sensors
-+ screen-edge cameras/depth/LiDAR
-+ headset inside-out sensing
-+ room/tower outside-in sensing
-+ RF/mmWave/UWB/Wi-Fi sensing
-→ RoomSense sensor fusion
-→ BodyRig relational skeleton and body-local frames
-→ Sentinel privacy, consent, and security policy
-→ Athena call/workspace memory
-→ verification, audit, project-brain updates, and OASIS state reconstruction
+Nexus-V = semantic and versioned-state execution
+Aegis   = policy, attestation and commit/rollback gates
+Lightcore = future optoelectronic physical execution profile
+L.O.D.E TV = optical display, telemetry and sensing endpoint
+RoomSense = room-centred local sensor fusion
+BodyRig = user-centred relational pose reconstruction
+R2S / Known Behavioral Map = evidence-linked real-world and material models
 ```
 
-### Benefits by subsystem
+## JANUS consolidated definition
+
+JANUS — **Joint Adaptive Neurocognitive Operative System** — provides governed digital embodiment.
+
+### Interior Face
+
+- goal, assumption and confidence state;
+- metacognition and error detection;
+- authority and privacy checks;
+- predicted state transitions;
+- commit, retry, rollback, block or escalation decisions.
+
+### Exterior Face
+
+- native semantic and visual application perception;
+- direct program and OASIS interaction;
+- focus, target and modal-state tracking;
+- action execution;
+- observed state diff and output validation.
+
+The Application Cartographer explores unfamiliar software only through isolated, reversible experiments and converts reproducible workflows into versioned Skill Capsules. General control of undocumented professional software remains a staged research target.
+
+## OASIS consolidated definition
+
+OASIS supports:
+
+- mechanical, electrical, electronic, civil, robotic, aerospace, materials, semiconductor and photonic engineering;
+- physics, chemistry, biology, climate, astronomy, ecology and computational simulation;
+- games, narratives, education and fictional worlds;
+- virtual homes, cities, offices, laboratories, universities, studios and factories;
+- R&D think tanks, evidence rooms and collaborative workspaces;
+- digital twins and Reality-to-Simulation imports;
+- CAD/schematic/production workshops and manufacturing handoff;
+- human and AI embodiment.
+
+Objects and results carry declared reality classes from fictional through production-qualified so visual realism cannot be mistaken for validated engineering.
+
+## L.O.D.E, RoomSense and BodyRig feed map
+
+### Forward path
+
+```text
+ATHENA evidence and project requirements
++ JARVIS human/session context
++ JANUS operative objective and environment map
++ OASIS world/scene state
+→ conventional render/compute or future Lightcore
+→ L.O.D.E optical receiver, compositor, adaptive optics and display surface
+→ human visual/spatial interaction
+```
+
+### Reverse path
+
+```text
+L.O.D.E surface and edge observations
++ outside-in TV/tower LiDAR/camera/RF
++ inside-out headset depth/LiDAR/camera/IMU
++ controller and RF/mmWave/UWB observations
+→ RoomSense synchronized confidence-aware fusion
+→ BodyRig relational skeleton/body-local frames
+→ JANUS and OASIS embodied state
+→ evidence and permitted lessons returned to ATHENA
+```
+
+### Benefits
 
 | Source | Target | Benefit |
 |---|---|---|
-| Athena | L.O.D.E | Context-aware display state, privacy rules, project continuity, adaptive interaction. |
-| Lightcore | L.O.D.E | Native optical transport, reduced protocol conversion, potential parallel wavelength/PAM channels. |
-| L.O.D.E | RoomSense | A large bidirectional optical/sensing surface and room-centred reference frame. |
-| RoomSense | BodyRig | Multi-view, occlusion-resistant markerless full-body and relational tracking. |
-| BodyRig | OASIS | User-centred embodiment, pose, gesture, locomotion, and human-state interfaces. |
-| OASIS | Athena | Simulation outcomes, digital twins, experiments, project artifacts, and training signals. |
-| Nexus-V/Aegis | Entire chain | Versioned state, rollback, evidence lineage, trust scoring, and governed commit. |
-| Operative Duplex | Local systems | Permissioned action, application control, tool execution, undo, and traceability. |
+| ATHENA | JANUS/OASIS/L.O.D.E projects | evidence, policies, project continuity and validation requirements |
+| JARVIS | JANUS/OASIS | immediate intent, personal context and executive orchestration |
+| JANUS | external tools/OASIS | verified action, application discovery, reusable skills and state evidence |
+| OASIS | JANUS/humans | branchable worlds, simulations, digital twins and production workspaces |
+| Lightcore or conventional compute | L.O.D.E | render/scene processing and display transport |
+| L.O.D.E | RoomSense | display telemetry and front room/surface sensing anchor |
+| RoomSense | BodyRig/JANUS/OASIS | room geometry, interaction, motion and occlusion-aware state |
+| BodyRig | OASIS/XR/JANUS | markerless embodied pose and relational human state |
+| R2S / Known Behavioral Map | ATHENA/JANUS/OASIS | evidence-linked geometry, material condition and behavior models |
+| Nexus-V/Aegis | all execution paths | branch, diff, replay, authority, attestation and rollback semantics |
 
 ## Distributed compute and adaptive execution
 
-Athena treats available compute as a governed cumulative pool rather than assuming one machine must contain the entire system.
+Available resources can be treated as a governed pool across local CPUs/GPUs/NPUs, trusted network nodes, approved APIs and rented burst compute. Every routed process declares:
 
-```text
-Task requirements
-→ segment into model, memory, tool, simulation, verification, and synthesis work
-→ profile local CPU/GPU/NPU/DPU/FPGA/storage/network capacity
-→ choose lowest-cost correct route
-→ apply ranked fallback chain
-→ execute locally, on trusted mesh nodes, through a rented burst node, or an approved API
-→ reconstruct partial results
-→ verify provenance and integrity
-→ commit outputs and learned routing data
-```
+- capability and data-residency requirements;
+- preferred execution target and fallback order;
+- privacy, latency and cost constraints;
+- expected result contract;
+- reconstruction and verification method;
+- state-writeback and rollback path.
 
-Every process should declare:
+Future Nexus-V/Lightcore targets must not prevent conventional-hardware implementation.
 
-- capability requirements,
-- preferred processor or service,
-- fallback order,
-- privacy and residency class,
-- latency and cost ceiling,
-- expected output contract,
-- reconstruction method,
-- verification and rollback path.
+## Engineering and visual package state
 
-This supports weak-device participation, local-network fallback, temporary cloud/rented compute, organization-scale compute pools, and future purpose-built Nexus-V/Lightcore hardware.
+The project contains or references:
 
-## Evolutionary Ecosystem Construction
+- controlled Mermaid/SVG architecture sources;
+- the 13-sheet measured L.O.D.E concept package;
+- RoomSense/BodyRig interface specifications;
+- Reality-to-Simulation and Known Behavioral Map engineering packages;
+- Lightcore/Nexus feasibility and staged-profile reviews;
+- plugin dossiers and execution queues;
+- a previously generated storyboard/infographic ZIP retained as reference material.
 
-```text
-AI workforce improves GI, Athena, tools, and operations.
-GI improves itself, AI, Athena, training, and architecture.
-Athena preserves, verifies, redistributes, and compounds improvements.
-AI + Athena rebuild future GI instances from the ground up while preserving institutional memory.
-Every component proposes changes through a Git-like issue → branch → test → review → merge → deploy → monitor cycle.
-```
+Production engineering graphics must use editable/vector text and include truth-state, provenance, dimensions where applicable, authority direction and validation status. Generated raster images remain concept/reference assets until redrawn and checked.
 
-The intended compounding loop is not a claim of unlimited capability. It is a controlled research programme for continuous bug reduction, capability growth, execution expansion, cost reduction, and intelligence-per-watt / intelligence-per-dollar improvement.
-
-## Visual and documentation package state
-
-The current chat produced a large visual storyboard and infographic corpus covering Athena’s external definition, internal stack, task flow, memory, MCAI, evolutionary ecosystem construction, distributed compute, Nexus-V/Aegis/Lightcore, truth systems, contextual work IQ, sensory health and drift, system physics, council and counterfactual reasoning, model trust and authority, institutional training, continuity, adapters, repository-as-database, navigation, agents, audit, work control, reverse engineering, and advanced cognition.
-
-A local package named `Project-Athena-All-Generated-Storyboards-and-Infographics.zip` was generated with 58 images plus manifest and checksums. Binary upload to GitHub was not available through the current connector path. Therefore:
-
-- generated images remain reference/inspiration assets until uploaded through an authorized binary path,
-- controlled Mermaid/SVG sources in the repository remain preferred for canonical engineering graphics,
-- production diagrams must use editable text/vector layouts and truth-status labels.
-
-## Plugin/workspace scan and status
+## Plugin/workspace status
 
 | Surface | Current result | Canonicality |
 |---|---|---|
-| GitHub | Canonical master-expansion pack, Plan audit, SVGs, ontology, matrices, and current sync report. | Canonical |
-| Notion | Existing Athena, Lightcore, L.O.D.E, OASIS, Operative Duplex, ontology, source-of-truth and AESIR mirror pages found. | Mirror |
-| Asana | Existing master-expansion execution roadmap found with subsystem sections and tasks. | Execution mirror |
-| Google Drive | Existing master-expansion folder, sync dossier, and docking-fabric addendum found. | File/distribution mirror |
-| Gamma | Existing Athena source-of-truth, master-expansion, and full-system decks found. | Presentation mirror |
-| Canva | New labeled `Project Athena — Canonical Visual Mirrors 2026-08-05` folder created; asset upload from local sandbox was blocked by connector file-reference conversion. | Visual mirror |
-| Figma | Suitable for editable system diagrams and dashboard prototypes; no existing target file was supplied in this pass. | Design mirror |
-| Consensus / SciSpace | Research-source role already represented in `RESEARCH_ANCHORS.md`; not canonical project state. | Research source |
-| Wolfram | Computation and geometry sanity-source role; not canonical project state. | Computation source |
-| Local Athena / RTL tools | Must run on the human’s machine; private runtime state and local manifests must be sanitized before cloud push. | Local authority |
+| GitHub | Controlled JANUS correction branch, specifications, ontology, schemas, matrices and validation notes | canonical |
+| Notion | Source-of-Truth taxonomy extended; stale Operative Duplex and OASIS pages corrected | labelled mirror |
+| Google Drive | JANUS correction dossier filed in the master-expansion folder | distribution mirror |
+| Asana | Six JANUS/OASIS implementation tasks and project status added | execution mirror |
+| Figma | Editable architecture diagram prepared; creation awaits team/organization selection in the displayed widget | design mirror, pending |
+| Canva | Existing controlled-visual folder retained; no new write in this pass | visual mirror |
+| Gamma | Prior dossier retained; no new generation in this pass | presentation mirror |
+| Consensus/SciSpace | GUI grounding, hierarchical planning and independent-verification research checked | research support |
+| Local ATHENA/RTL tools | Not runnable through the remote repository connector | local authority, pending |
 
 ## Plan-folder audit result
 
-The accessible Plan audit confirms the staged AI-OS authority files, roadmap, implementation matrix, and the presence of Nexus-V/NVISC/NVASM/NVIR/NVVM and hardware packs. Key Markdown authority files were semantically read; many binary `.docx` files were inventory-verified but still require extraction into searchable Markdown.
+The root `Plan/` remains design authority and includes 64 mixed Markdown, DOCX, ZIP and text artifacts. Key textual authority files and selected rich engineering packages were semantically reviewed. Many binary documents were structurally/inventory reviewed but still require local extraction, content hashing and searchable canonical summaries.
 
-Outstanding Plan work:
+Outstanding work:
 
-1. Extract every Plan `.docx` into `docs/athena-master-expansion/plan-extracts/`.
-2. Create `PLAN_AUTHORITY_INDEX.yml` with source, extraction path, hash, canonicality, and audit status.
-3. Reconcile root `Plan/` with `Nexus V/docs/Plan/` to stop authority drift.
-4. Produce `HARDWARE_PLAN_SYNTHESIS.md`.
-5. Add a formal Known Behavioral Map and multisensor material-property schema.
-6. Tie Operative Duplex to capability leases, approval gates, action traces, and rollback APIs.
+1. Extract each Plan DOCX into controlled Markdown/text with source hash.
+2. Create `PLAN_AUTHORITY_INDEX.yml` with canonicality, mirror and audit status.
+3. Reconcile root `Plan/` against `Nexus V/docs/Plan/`.
+4. Produce hardware/ISA/toolchain synthesis and requirement matrices.
+5. Run local PowerShell project scans and sanitized manifest generation.
+6. Run Nexus-V/RTL lint, simulation, formal and regression workflows with available local tools.
 
-## Sanity-check boundaries
+## Sanity-check boundary
 
-### Verified in this pass
+Verified or directly written in this pass:
 
-- Repository access and write authority.
-- Presence and content of the master-expansion index.
-- Presence and content of the complete accessible Plan audit.
-- Existing plugin mirror pages/projects/files/decks.
-- Existing recent GitHub commits for controlled SVGs, L.O.D.E, RoomSense, ontology, docking fabric, and Plan updates.
-- Canva visual-mirror folder creation.
+- repository read/write access and controlled branch;
+- independent JANUS/OASIS identity correction;
+- project-wide documentation, ontology, roadmap and matrices;
+- syntactic validation of the three new JSON Schemas;
+- Notion, Drive and Asana mirror updates;
+- Figma generation request preparation;
+- current GUI-agent research primitives and limitations;
+- Plan inventory and duplicate/mirror issue.
 
-### Not claimed as verified
+Not claimed:
 
-- Physical feasibility of full Lightcore L4 architecture.
-- Nanofabrication yield, optical loss, detector energy, BER, memory endurance, or thermal budgets.
-- Complete RTL regression, lint, formal verification, and synthesis closure.
-- Full semantic reading of every binary Plan document.
-- Running an entire GI or model stack across arbitrary consumer devices.
-- Console/TV distributed compute where official APIs or authorized execution environments do not expose suitable compute access.
+- a working JANUS runtime;
+- universal undocumented-program control;
+- a complete OASIS runtime;
+- complete semantic reading of every binary Plan file;
+- local ATHENA scan or RTL regression execution;
+- physical feasibility or certified performance of full Lightcore/L.O.D.E/RoomSense/R2S systems;
+- completed 10,000-condition Known Behavioral Map campaigns.
 
-## Immediate controlled implementation sequence
+## Controlled implementation sequence
 
 ```text
-P0 — authority and evidence
-Plan binary extraction
-PLAN_AUTHORITY_INDEX.yml
-adapter and provenance schema stabilization
-local verification scripts and sanitized reports
-
-P1 — executable Athena
-model/provider registry
-call/workspace/institutional memory service
-contextual-work-IQ assembler
-policy/authority engine
-distributed task and fallback descriptors
-result reconstruction and audit
-
-P1 — L.O.D.E / RoomSense engineering
-measured reference sheets
-optical budget and receiver specification
-telemetry schema
-sensor calibration and relational-tracking tests
-privacy and consent test matrix
-
-P2 — Nexus-V / Lightcore research
-NVASM → NVIR → NVVM → RTL golden trace
-RSM/Aegis invariants
-heterogeneous hardware profile
-Lightcore L0/L1 emulator
-small L2/L3 optical/CNT/crystal test cells
-
-P2 — plugin and visual mirrors
-editable vector infographic suite
-Drive export pack
-Notion dossier refresh
-Asana milestone/status refresh
-Gamma presentation refresh
-Figma dashboard and system-diagram file
-Canva controlled visual library
+P0 — merge identity and source-of-truth correction
+P1 — ATHENA evidence/memory/task-cycle reliability
+P2 — JANUS read-only application mapper and independent verifier
+P3 — Application Cartographer and Skill Capsule registry
+P4 — OASIS object/world/export schemas and conventional runtime
+P5 — Plan binary extraction and ontology/authority index
+P6 — Nexus-V/Aegis conventional reference integration
+P7 — L.O.D.E optical/thermal/structural/electrical/safety modelling
+P8 — RoomSense/BodyRig local testbed and privacy modes
+P9 — Reality-to-Simulation and Known Behavioral Map pilot
+P10 — staged Lightcore physical profiles
+P11 — unified operator and plugin-mirror experience
 ```
 
 ## Canonical conclusion
 
-Project Athena is now documented as a system-of-systems rather than a model wrapper. Its defining value is the preservation and controlled evolution of cognition, memory, evidence, identity, governance, tools, projects, and execution across replaceable models, devices, runtimes, and generations. L.O.D.E TV, RoomSense, BodyRig, OASIS, Operative Duplex, Nexus-V, and Lightcore are not isolated ideas: they are interfaces, organs, execution layers, and future bodies connected through Athena’s evidence, memory, policy, and versioned-state contracts.
+Project Athena is a system-of-systems, but not a single AI that owns every other intelligence. ATHENA preserves and governs institutional cognition; JARVIS handles personal/executive interaction; JANUS provides operative metacognition and verified digital embodiment; OASIS provides the persistent digital world; and Nexus-V, Aegis, Lightcore, L.O.D.E, RoomSense, BodyRig and Reality-to-Simulation provide execution, trust, physical, display, spatial and real-world-modelling services around them.
