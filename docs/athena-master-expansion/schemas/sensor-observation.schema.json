@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Athena R2S Sensor Observation",
+  "type": "object",
+  "required": ["observation_id", "sensor_id", "modality", "timestamp_ns", "raw_artifact", "calibration_id", "status"],
+  "properties": {
+    "observation_id": {"type": "string"},
+    "sensor_id": {"type": "string"},
+    "modality": {"type": "string"},
+    "timestamp_ns": {"type": "integer"},
+    "integration_interval_ns": {"type": "integer"},
+    "raw_artifact": {"type": "string"},
+    "calibrated_artifact": {"type": ["string", "null"]},
+    "calibration_id": {"type": "string"},
+    "coordinate_frame": {"type": "string"},
+    "confidence_map": {"type": ["string", "null"]},
+    "uncertainty": {"type": "object"},
+    "status": {"enum": ["measured", "derived", "inferred", "hypothesis", "unknown"]},
+    "failure_flags": {"type": "array", "items": {"type": "string"}},
+    "provenance": {"type": "object"}
+  },
+  "additionalProperties": true
+}
