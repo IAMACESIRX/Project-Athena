@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "canva_generated_design_candidates",
+  "system": "JANUS",
+  "system_expansion": "Joint Adaptive Neurocognitive Operative System",
+  "generated_on": "2026-08-05",
+  "canonical_repository": "IAMACESIRX/Project-Athena",
+  "canonical_branch": "agent/janus-independent-operative-ai-correction",
+  "generation_job_id": "b3b767f2-3b98-4c90-84b7-b123cd26c753",
+  "selection_status": "pending_user_selection",
+  "canonicality": "visual_mirror_only",
+  "identity_boundary": {
+    "ATHENA": "independent institutional intelligence",
+    "JARVIS": "independent personal and executive intelligence",
+    "JANUS": "independent operative metacognitive intelligence",
+    "OASIS": "persistent digital-reality simulation and creation substrate; not an AI"
+  },
+  "candidates": [
+    {
+      "candidate_id": "dg-9d78562c-5d48-46ff-9d31-a0d7b68876a1",
+      "url": "https://www.canva.com/d/kK4jdWf2wWi6L20",
+      "page_count": 17,
+      "status": "generated_candidate"
+    },
+    {
+      "candidate_id": "dg-b0ca9d33-8893-472a-97c3-925f6eefe219",
+      "url": "https://www.canva.com/d/I5YNNbl9b0LJnh0",
+      "page_count": 16,
+      "status": "generated_candidate"
+    },
+    {
+      "candidate_id": "dg-dd130547-3f8d-4cce-9d09-03044813a87b",
+      "url": "https://www.canva.com/d/MJN8oXzpa_TrB7U",
+      "page_count": 16,
+      "status": "generated_candidate"
+    },
+    {
+      "candidate_id": "dg-fd37e496-e9da-48ab-9392-235ffb6413c7",
+      "url": "https://www.canva.com/d/6YfKm1sPIAhdukg",
+      "page_count": 17,
+      "status": "generated_candidate"
+    }
+  ],
+  "promotion_requirements": [
+    "user selects candidate",
+    "candidate converted to permanent editable Canva design",
+    "terminology checked against canonical repository",
+    "generated inaccuracies and unreadable text corrected",
+    "permanent Canva design ID and URLs committed to repository",
+    "plugin mirror index and workspace sync log updated"
+  ],
+  "truth_boundary": "Generated visual design does not prove implementation, engineering validation, safety certification or production readiness."
+}
