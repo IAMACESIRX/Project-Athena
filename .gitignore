@@ -52,6 +52,7 @@ Nexus V/generated/local/
 # Local reports and scratch artifacts that are not evidence records
 artifacts/
 reports/local/
+**/diagnostics/reports/latest-integrity-report.*
 
 # Athena local-only source imports and generated context capsules
 continuity/transcript-inbox/imports/

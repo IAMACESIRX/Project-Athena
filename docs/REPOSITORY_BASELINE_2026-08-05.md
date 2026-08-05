@@ -133,6 +133,9 @@ Security alert review on 2026-08-05:
   prints detailed diagnostics in CI artifacts or logs. Credential-pattern
   matches still fail the integrity check; the persisted report records status
   and diagnostic counts only.
+- Tracked hygiene review removed generated `__pycache__` bytecode and
+  `latest-integrity-report.*` outputs that contained absolute local paths.
+  `.gitignore` blocks those generated report files going forward.
 
 ### Verification limits
 
