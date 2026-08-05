@@ -27,6 +27,11 @@ This pack updates Project Athena as a system-of-systems:
 | `TOOLCHAIN_SANITY_CHECK.md` | Sanity-check log from repository scan, Plan inspection, research plugins, and governance review. |
 | `RESEARCH_ANCHORS.md` | External research anchors for agent provenance, AI governance, photonic/CNT compute, and markerless XR body tracking. |
 | `AESIR_PUSH_AND_PLUGIN_NEXT_ACTIONS.md` | A.E.S.I.R. pass defining what should be pushed next, plugin/tool responsibilities, P0/P1/P2 queues, and local verification gates. |
+| `AESIR_FULL_PROJECT_ACTION_REVIEW_2026-08-05.md` | Full 0–20 A.E.S.I.R. project-action review translating the canonical method into next project actions. |
+| `ATHENA_MASTER_ONTOLOGY.yml` | Machine-readable ontology for Athena, Nexus-V, Lightcore, L.O.D.E, RoomSense, OASIS, Operative Duplex AI, and plugin surfaces. |
+| `CAPABILITY_STATE_MATRIX.md` | Truth-status matrix separating implemented, scaffolded, specified, conceptual, speculative, and blocked capabilities. |
+| `PLUGIN_ACTION_REGISTER.md` | Plugin/tool responsibility map and run queue for GitHub, Asana, Notion, Gamma, Consensus, SciSpace, and local Athena tools. |
+| `GOVERNANCE_CLOUD_PUSH_EXCEPTION_2026-08-05.md` | Narrow governance exception recording that this was a user-authorized documentation push, not blanket permission to upload private/local state. |
 
 ## One-line system thesis
 
@@ -35,6 +40,16 @@ Project Athena is a local-first institutional intelligence stack where files pre
 ## Governance note
 
 The repository governance says local-only by default and no cloud push unless the human explicitly changes that rule. This documentation pack was committed to the GitHub repository because the human explicitly requested that all findings be pushed to the repo. The pack does not include raw private chats, secrets, local runtime dumps, credentials, SQL dumps, account files, or private sensor data.
+
+## Current control-layer recommendation
+
+The next implementation emphasis is not more broad concept prose. The next emphasis is control infrastructure:
+
+```text
+ontology + capability matrix + plugin action register + governance exception + cycle report
+```
+
+This turns the project into a machine-readable, truth-labelled, plugin-routable, verification-gated system.
 
 ## Status
 
