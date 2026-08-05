@@ -2,14 +2,17 @@
 
 Generated: 2026-07-10
 
+Latest architecture reconciliation: 2026-08-01
+
 This file is the practical orientation map for this repository. It explains what
 the project is, how it functions, which files matter, and what future agents or
 humans need to know before editing it.
 
-Latest foundation update: 2026-07-10. Athena task intake, memory map, cycle
-report template, cycle runner, filled Plan planning files, root-relative tool
-paths, generated reports, and operation-cycle verification were added or
-refreshed. The latest full operation cycle is recorded in
+Latest foundation update: 2026-08-01. The five recovered ATHENA chats were
+audited and reconciled into source-linked Plan specifications for distributed
+Athena docking, the independent Operative Duplex, Lightcore, and the OASIS
+Reality Compiler. Generated-media and attachment gaps remain explicit in
+`athena_context/ASSET_INVENTORY.md`. The latest full operation cycle is recorded in
 `engine/cycle-reports/latest-cycle-report.md`; the live probe is intentionally
 skipped when no live target is part of the task.
 
@@ -47,14 +50,20 @@ The human-provided OASIS/Athena diagram is now captured as Plan intent in
 
 Interpret it this way:
 
-- OASIS is the outer operating environment: the full ecosystem that can contain
-  Athena, tools, files, agents, project state, human direction, and future
-  runtime services.
+- OASIS is the future persistent programmable environment for simulation,
+  engineering, creation, collaboration, AI embodiment, and runtime services.
+  This repository is Athena's current file-native substrate, not the completed
+  OASIS runtime.
 - Central Athena is the canonical external brain: memory, database, processor,
   router, evidence trail, and current project truth.
-- Codex, Jarvis, GPT, and future AI surfaces each carry a local Athena adapter.
-  They are not separate brains; they are agent surfaces that load Athena
-  context, act through Athena rules, and write back to Athena memory.
+- Codex, Jarvis, GPT, and future model surfaces each carry an AI-local Athena
+  node and adapter. They load scoped context, act through Athena rules, and
+  write back without owning canonical memory.
+- The Athena Highway carries identity, authority, capability, context, state,
+  evidence, and results between models, Athena, databases, project capsules,
+  tools, and agents.
+- Project capsules keep project-specific identity, memory, skills, evidence,
+  permissions, artifacts, and validation portable and versionable.
 
 The operating invariant is:
 
@@ -63,6 +72,36 @@ Many agents, one Athena memory.
 Many interfaces, one operating truth.
 Many task surfaces, one evidence trail.
 ```
+
+## Recovered ATHENA Chat Knowledge
+
+The repository contains a two-pass-verified cache of the five chats visible in
+the ChatGPT ATHENA project at retrieval time:
+
+- AI Project Brain Overview;
+- Athena Architecture Design;
+- Geometric 3D Optoelectronic Architecture;
+- Operative Duplex AI Concept;
+- Red Phosphor Camera Setup.
+
+The source archive contains 249 linear turns and 1,188,287 text characters.
+Current linear text coverage passed the retrieval audit. A separate 58-image
+package now resolves the named storyboard gap, but complete account and artifact
+fidelity is not proven: attachment payloads, exact image-turn mapping, alternate
+branches, deleted/unavailable chats, and internal tool traces may still be
+absent.
+
+Canonical interpretation is in:
+
+- `Plan/CHAT_DERIVED_CONCEPT_REGISTER.md`;
+- `Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md`;
+- `Plan/OPERATIVE_DUPLEX_AI_MODEL.md`;
+- `Plan/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md`;
+- `Plan/OASIS_REALITY_COMPILER.md`.
+
+These files distinguish human intent, assistant proposals, Plan intent,
+implementation evidence, and research hypotheses. The chat archive itself is
+source memory, not automatic implementation authority.
 
 ## Short Answer
 
@@ -92,11 +131,13 @@ Current root:
 Observed current state:
 
 - Git branch: `main`
-- Tracked files: 1,067
-- Approximate size excluding `.git`: 8.19 MB
+- Tracked files before this uncommitted reconciliation: 1,099
+- Current generated index: 1,199 files and about 87.944 MB, excluding `.git`,
+  ignored local chat imports/full context chunks, and the index file itself
 - Top-level source of truth entry: `AI-PORTAL.md`
 - Main context folders: `identity`, `governance`, `agents`, `orchestration`,
-  `memory`, `engine`, `forensics`, `work`, `tools`, `Plan`, `Nexus V`
+  `memory`, `engine`, `forensics`, `work`, `tools`, `Plan`, `Nexus V`,
+  `athena_context`
 - Current extra visual artifact: `Circuit design/ChatGPT Image Jul 9, 2026, 03_27_29 PM.png`
 
 Resolved layout note:
@@ -256,12 +297,15 @@ Core invariants:
 - Generated reports are not current truth unless refreshed.
 - Handoff and audit are part of the work.
 
-Important contradiction:
+Current bounded exception:
 
-- Project policy says local-only and no GitHub server push by default.
-- This checkout currently has a GitHub origin remote.
-- Treat that as a governance mismatch unless the human explicitly confirms the
-  cloud remote is now allowed.
+- The local-only default remains active.
+- On 2026-08-01 the human explicitly requested Project Athena workflow,
+  milestone, issue, and GitHub Project reconciliation.
+- That instruction authorizes only the reviewed workflow files and planning
+  metadata for this task; it does not authorize raw account exports, unrelated
+  private chats, credentials, unreviewed personal data, or blanket future
+  pushes.
 
 ## Root File Map
 
@@ -1192,28 +1236,29 @@ This image is a design communication artifact, not executable source.
 
 ## File Type Coverage
 
-The project is covered by these tracked file classes:
+The project is covered by these current file classes:
 
-- `.md`: 515 Markdown documents and protocols.
-- `.yml`: 138 registries, ledgers, routing files, and structured specs.
+- `.md`: 549 Markdown documents and protocols.
+- `.yml`: 143 registries, ledgers, routing files, and structured specs.
 - `.sv`: 105 SystemVerilog RTL/testbench files.
-- `.json`: 67 schemas, generated reports, scans, and compiler outputs.
+- `.json`: 82 schemas, manifests, reports, scans, plans, and compiler outputs.
+- `.png`: 59 visual artifacts: 58 verified storyboards/infographics plus the
+  earlier architecture image.
 - `.cpp`: 50 generated/simulation C++ files.
 - `.docx`: 47 Word specification documents.
-- `.ps1`: 30 PowerShell tools.
+- `.ps1`: 37 PowerShell tools.
 - `.zip`: 26 archived source/spec packets.
 - `.gitkeep`: 18 placeholder directory keepers.
-- `.csv`: 14 evidence, claim, timeline, ledger, and baseline files.
+- `.csv`: 15 evidence, claim, asset, timeline, ledger, and baseline files.
 - `.py`: 10 Python audit/toolchain scripts.
 - `.pyc`: 7 tracked Python cache files.
 - `.d`, `.o`, `.exe`, `.mk`, `.h`, `.hpp`: generated/build artifacts.
-- `.txt`: 4 raw text plans/spec notes.
+- `.txt`: 5 raw text plans/spec notes.
 - `.nvasm`: 2 NVASM program examples.
-- `.png`: 1 visual architecture artifact.
 
 ## Full Repository Read And Index Pass
 
-On 2026-07-10, a full non-`.git` repository inventory/extraction pass was run
+On 2026-08-01, a full non-`.git` repository inventory/extraction pass was run
 across `D:\Projects\Project Athena`.
 
 Generated output:
@@ -1222,13 +1267,13 @@ Generated output:
 
 Coverage of files present at scan time:
 
-- 1,069 files indexed.
-- 978 text-like files opened directly.
+- 1,197 files indexed.
+- 890 text-like files opened directly.
 - 47 Word `.docx` files opened as OOXML and text-indexed.
 - 26 zip archives opened and entry-indexed.
-- 17 opaque binary/generated files metadata-indexed.
-- 1 image metadata-indexed; the visible architecture image was also visually
-  inspected.
+- 175 opaque binary/generated files metadata-indexed.
+- 59 images metadata-indexed; six representative new images and the earlier
+  architecture image were visually inspected.
 
 This pass reads/summarizes the whole tree in the only meaningful way available
 for mixed source, documentation, archive, generated, image, and binary
@@ -1279,10 +1324,12 @@ From `diagnostics/risk-register.md` and current scan findings:
 - Realmlist mismatch in old live-state auth dump.
 - Local bare host is not off-machine backup.
 - Nested repos can drift in the old stack.
-- Current checkout has GitHub remote despite local-only policy.
+- The bounded GitHub planning exception can drift into broader publication if
+  scope and private-data checks are not enforced.
 - Some generated or mirrored historical files still preserve old `ai-system/...`
   paths, but first-read manifests and tools now use root-relative paths.
-- Generated artifacts are tracked and no `.gitignore` exists.
+- Large generated visual assets are tracked as source evidence and increase
+  repository size; provenance and duplicate checks are required.
 - Nexus-V has static/source checks but no proven real SV simulator run here.
 
 ## What Is Implemented Now

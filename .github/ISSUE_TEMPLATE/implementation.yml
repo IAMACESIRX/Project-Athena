@@ -1,0 +1,41 @@
+name: Implementation task
+description: Implement a defined Athena capability, tool, schema, or workflow.
+title: "[Implementation] "
+labels:
+  - type:implementation
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: Describe the observable result, not just the files to edit.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source contract
+      description: Link the controlling Plan section, schema, decision, or parent issue.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and dependencies
+      description: Name affected layers, prerequisites, interfaces, and excluded work.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List the behaviors and evidence required for completion.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification and writeback
+      description: Name tests, reports, memory targets, and rollback or recovery steps.
+    validations:
+      required: true

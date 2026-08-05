@@ -6,7 +6,7 @@ Updated: 2026-08-05 independent-system correction
 
 This roadmap turns Plan architecture intent into buildable ATHENA, JANUS, OASIS, Nexus-V, Lightcore, L.O.D.E and spatial-computing work. `Plan/` remains design authority; root folders, `Nexus V/` and `docs/athena-master-expansion/` are implementation and integration surfaces.
 
-## Phase 0 — Identity, authority and source-of-truth correction
+## Phase 0 - Identity, authority and source-of-truth correction
 
 Status: active
 
@@ -14,6 +14,13 @@ Status: active
 - OASIS is a non-AI persistent digital-reality/simulation substrate.
 - JANUS supersedes the older ATHENA-subordinate Operative Duplex interpretation.
 - GitHub/local repository remains canonical; plugin workspaces are labelled mirrors or execution surfaces.
+- Root context and Plan context exist.
+- Complete file index exists.
+- First Athena test cycle and brainstorm cycle exist.
+- Athena has a task-intake schema/template, memory map and cycle report template.
+- The recovered ATHENA chats are cached, audited and converted into a source-linked concept register.
+- Distributed docking, JANUS/Operative Duplex, Lightcore and the OASIS Reality Compiler have bounded Plan specifications.
+- Stale old-layout paths are being normalized.
 
 Exit criteria:
 
@@ -22,7 +29,7 @@ Exit criteria:
 - Master ontology and all system diagrams contain a JANUS node rather than an ATHENA limb.
 - Notion, Drive, Asana, Figma and Canva mirrors carry the same correction.
 
-## Phase 1 — ATHENA brain stem and institutional reliability
+## Phase 1 - ATHENA brain stem and institutional reliability
 
 Goal: make every non-trivial ATHENA task start, reason, verify and close cleanly.
 
@@ -31,14 +38,18 @@ Goal: make every non-trivial ATHENA task start, reason, verify and close cleanly
 - Use `engine/cycle-reports/` for auditable cycles.
 - Connect claims to evidence/provenance IDs.
 - Keep institutional, workspace and call memory isolated and promotion-governed.
+- Convert the OASIS/Athena model into adapter contracts for Codex, Jarvis, GPT and future local agents.
+- Convert model-local nodes, the Athena Highway, project capsules and four skill classes into machine-readable contracts.
+- Maintain explicit evidence boundaries between human intent, assistant proposals, Plan intent, implementation and experimental research.
 
 Exit criteria:
 
 - One intake packet can be created, processed, verified and closed.
 - Another authorized agent can replay the packet and understand the decision.
 - Evidence, assumptions, hypotheses, unknowns and final decisions remain distinct.
+- A read-only model dock and handoff can be tested without mutating canonical memory.
 
-## Phase 2 — JANUS conventional operative prototype
+## Phase 2 - JANUS conventional operative prototype
 
 Goal: implement JANUS on ordinary hardware before any Nexus-V/Lightcore dependency.
 
@@ -47,7 +58,8 @@ Goal: implement JANUS on ordinary hardware before any Nexus-V/Lightcore dependen
 - Build visual-semantic fallback with focus, window and modal-state tracking.
 - Implement Interior/Exterior service separation.
 - Implement operation, expected-diff, observed-diff and rollback records.
-- Implement O0–O4 authority classes and human emergency stop.
+- Implement O0-O4 authority classes and human emergency stop.
+- Convert the older Operative Duplex Pilot/Witness, application Cartographer, action protocol and authority-level material into corrected JANUS schemas and a read-only proof.
 
 Exit criteria:
 
@@ -55,7 +67,7 @@ Exit criteria:
 - Perception sources expose confidence and disagreement.
 - No action can dispatch without a fresh target/focus/state check.
 
-## Phase 3 — Application Cartographer and Skill Capsules
+## Phase 3 - Application Cartographer and Skill Capsules
 
 Goal: learn unfamiliar software safely and compile reproducible skills.
 
@@ -72,7 +84,7 @@ Exit criteria:
 - The resulting Skill Capsule passes replay and version-drift tests.
 - Failed or ambiguous exploration cannot modify production data.
 
-## Phase 4 — OASIS minimum viable substrate
+## Phase 4 - OASIS minimum viable substrate
 
 Goal: implement OASIS as a persistent programmable world, not as a game-only metaverse.
 
@@ -90,7 +102,7 @@ Exit criteria:
 - Fictional, conceptual, simulated and validated objects cannot be confused.
 - JANUS can move one validated object/workflow between OASIS and an external tool.
 
-## Phase 5 — Plan extraction and ontology completion
+## Phase 5 - Plan extraction and ontology completion
 
 Goal: convert the entire Plan corpus into implementation queues and canonical schemas.
 
@@ -101,6 +113,7 @@ Goal: convert the entire Plan corpus into implementation queues and canonical sc
 - Extract Nexus-V hardware specs into subsystem matrices.
 - Perform local text extraction/content hashing of all DOCX and ZIP sources.
 - Reconcile canonical `Plan/` with the `Nexus V/docs/Plan/` mirror.
+- Reconcile recovered visual assets and deep-dive documents through `athena_context/ASSET_INVENTORY.md`.
 
 Exit criteria:
 
@@ -108,12 +121,15 @@ Exit criteria:
 - Binary documents have extraction hashes and searchable summaries.
 - No duplicate copy silently competes as design authority.
 
-## Phase 6 — Nexus-V and Aegis reference integration
+## Phase 6 - Nexus-V and Aegis reference integration
 
 Goal: connect stable software semantics to ATHENA, JANUS and OASIS without exotic hardware assumptions.
 
 - Maintain Nexus-V implementation matrix.
+- Link RTL/toolchain files to Plan concepts.
+- Separate generated outputs from source authority.
 - Complete simulator/lint/regression command and expected traces.
+- Add expected traces and simulator/lint instructions.
 - Connect ATHENA evidence records to branch/commit records.
 - Map JANUS operations to optional branch/diff/commit/rollback objects.
 - Map OASIS world state to engine-neutral snapshots and branches.
@@ -124,7 +140,7 @@ Exit criteria:
 - Each major subsystem has status, evidence and reproducible tests.
 - Conventional reference implementation passes an end-to-end state transition.
 
-## Phase 7 — L.O.D.E TV engineering completion
+## Phase 7 - L.O.D.E TV engineering completion
 
 Goal: move from internally consistent concept drawings to measured prototype evidence.
 
@@ -141,7 +157,7 @@ Exit criteria:
 - Optical, thermal, structural, electrical and eye-safety models are reviewed.
 - EVT test article demonstrates measured display and telemetry behavior.
 
-## Phase 8 — RoomSense and BodyRig
+## Phase 8 - RoomSense and BodyRig
 
 Goal: build local-first relational room and body tracking.
 
@@ -159,7 +175,7 @@ Exit criteria:
 - Identity is not required for core tracking.
 - All sensing stays local by default.
 
-## Phase 9 — Reality-to-Simulation and Known Behavioral Map
+## Phase 9 - Reality-to-Simulation and Known Behavioral Map
 
 Goal: create evidence-linked real-to-digital material and environment models.
 
@@ -168,6 +184,8 @@ Goal: create evidence-linked real-to-digital material and environment models.
 - Create measured/derived/inferred/hypothesized/unknown labels.
 - Define Material Atlas and Known Behavioral Map schemas.
 - Design pilot multidomain campaign before 10,000-condition scale-up.
+- Capture and validate one calibrated RGB/depth tabletop environment package.
+- Define observation, object, material, uncertainty and package schemas.
 - Import a validated scene/material package into OASIS.
 
 Exit criteria:
@@ -176,15 +194,18 @@ Exit criteria:
 - OASIS import is compared against certified geometric/thermal/spectral references.
 - One material behavior pilot is statistically reproducible.
 
-## Phase 10 — Lightcore staged physical profiles
+## Phase 10 - Lightcore staged physical profiles
 
 Goal: preserve stable semantics while advancing optoelectronic hardware research.
 
+- Define Lightcore only as an experimental Nexus-V physical execution profile.
+- Define a Lightcore software profile and emulator before selecting device or material claims.
 - L0: electronic emulation of Lightcore contracts.
 - L1: conventional heterogeneous package/chiplet prototype.
 - L2: selected silicon-photonic global links.
 - L3: experimental CNT/material-state tile.
 - L4: full XYZ Lightcore matrix only after prerequisite breakthroughs.
+- Define one measured optical link experiment with acceptance criteria and evidence.
 
 Exit criteria:
 
@@ -192,7 +213,7 @@ Exit criteria:
 - RSM/Aegis authority cannot be bypassed by photonic/material working state.
 - Performance claims are based on models or measurements, not multiplied assumptions.
 
-## Phase 11 — Operator experience and distributed collaboration
+## Phase 11 - Operator experience and distributed collaboration
 
 Goal: make the ecosystem practical for the human operator.
 

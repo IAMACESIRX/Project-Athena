@@ -1,48 +1,43 @@
-## Purpose
+## Outcome
 
-Describe the problem being solved and the intended result.
+Describe the verified result and the milestone or issue it advances.
 
-## Authority and scope
+## Authority And Scope
 
-- Human instruction or issue:
+- Controlling Plan, decision, or human instruction:
 - Active architecture authority:
 - Files or subsystems intentionally changed:
-- Files or subsystems intentionally not changed:
+- Explicit non-goals:
 
-## Truth state
+## Evidence Posture
 
-Classify important claims as **implemented**, **verified**, **specified**,
-**conceptual**, **speculative**, or **blocked**. Do not present generated
-documentation, diagrams, scaffolds, or static checks as runtime or hardware
-verification.
+- Observed:
+- Inferred or proposed:
+- Unknown or contradicted:
+- Implemented, verified, specified, conceptual, speculative, or blocked claims:
 
-## Validation
+## Changes
 
-- [ ] Repository integrity validator passed.
+List material files, contracts, workflows, and behavior changes.
+
+## Verification
+
+- [ ] `tools/Test-AthenaRepository.ps1 -NoWrite` passes.
 - [ ] JSON and YAML files parse.
 - [ ] JSON Schemas are valid.
 - [ ] PowerShell scripts parse.
 - [ ] Python sources compile.
-- [ ] Relevant targeted tests were run.
-- [ ] Generated reports state the exact commit or source state they validate.
+- [ ] Relevant subsystem tests or research checks pass.
+- [ ] Context, implementation matrix, or memory writeback is updated.
+- [ ] Generated artifacts are not presented as source authority.
+- [ ] No credentials, account-wide exports, unrelated private chats, or unreviewed personal data are included.
 - [ ] Missing tools or skipped verification are explicitly recorded.
 
-## Evidence and writeback
+## Recovery
 
-- Evidence IDs or reports:
-- Memory/context files updated:
-- Generated files:
-- Rollback path:
+State rollback, restore, or migration steps for consequential changes.
 
-## Publication classification
-
-- [ ] Public architecture/documentation
-- [ ] Public source code
-- [ ] Sanitized generated report
-- [ ] Private/local-only state — must not be published
-- [ ] Contains third-party material requiring licence review
-
-## Merge dependencies
+## Merge Dependencies
 
 List prerequisite PRs, superseded branches, expected conflicts, and the intended
 merge order.

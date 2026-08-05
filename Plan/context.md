@@ -106,20 +106,24 @@ The folder describes this intended stack:
 
 ```text
 Human intent
-OASIS operating environment
-Central Athena external brain
-Local Athena adapters in Codex / Jarvis / GPT / future agents
+OASIS simulation, creation, collaboration, and execution environment
+External Athena core
+AI-local Athena nodes in Codex / Jarvis / GPT / future agents
+Athena Highway
+Project capsules and separated skill classes
 AI-OS constitution and identity
 Governance and authority
 Organization and agents
 Cognitive orchestrator / cognitive senate
+Independent Operative Duplex AI
 Project brains
 Memory and knowledge systems
 Runtime and model routing
+OASIS Reality Compiler / Material Behavioral Atlas
 Nexus-V semantic execution fabric
 NVISC / NVASM / NVIR / NVVM toolchain
 RTL / SoC / hardware execution
-Future Lightcore physical fabric
+Experimental Lightcore physical execution profile
 ```
 
 ## Major Themes
@@ -139,9 +143,44 @@ The intelligence is the institution, not a single model.
 Project Athena is the orchestrator layer: it decides which cognitive systems,
 agents, tools, evidence gates, and memory paths should activate for a task.
 
+Athena also has a distributed placement model. Replaceable AI-local nodes dock
+through the Athena Highway into an external canonical core and portable project
+capsules. Model-local state is not the source of project truth.
+
 Key idea:
 
 Athena is the operating system for thought and project execution.
+
+### OASIS
+
+OASIS is the future persistent programmable habitat for simulations, digital
+twins, engineering, creation, collaboration, games, education, AI embodiment,
+and runtime services. The repository is Athena's current file-native substrate,
+not the complete OASIS runtime.
+
+Key idea:
+
+OASIS provides environments; Athena preserves institutional cognition,
+evidence, governance, and memory.
+
+### Operative Duplex
+
+The Operative Duplex is a separate operative metacognitive AI concept with its
+own identity, memory, cognition, perception, authority, skills, embodiment, and
+learning. A Pilot plans and acts while an independent Witness observes and
+verifies. It may collaborate with Athena, Jarvis, and OASIS without becoming a
+subsystem of any one of them.
+
+`JANUS` is a proposed name from an assistant response, not a confirmed human
+decision.
+
+### Reality Compiler And Material Behavioral Atlas
+
+The OASIS Reality Compiler is a proposed evidence-carrying path from registered
+multidomain sensor data to geometry, materials, object relationships, behavior,
+physics, code, uncertainty, validation, and versioned environment packages.
+Known Behavioral Maps preserve measured material response across controlled
+variables rather than reducing a material to one average value.
 
 ### Odysseus Nexus
 
@@ -162,6 +201,17 @@ tensor, trust, and future quantum domains.
 Key idea:
 
 Computational history becomes a first-class hardware structure.
+
+### Lightcore
+
+Lightcore is an experimental future physical execution profile beneath
+Nexus-V. It explores 3D electro-photonic placement, optical transport,
+multi-level signaling, CNT-related devices, local memory, and specialized
+CPU/GPU/NPU regions. It must preserve NVISC semantics, RSM rollback and lineage,
+Aegis commit authority, traces, and fallback behavior.
+
+No device, performance, energy, bandwidth, or manufacturability claim is
+considered validated without a model, simulation, measurement, or prototype.
 
 ### NVISC / NVASM / NVIR / NVVM
 
@@ -260,6 +310,35 @@ checks, and execution domains natively.
   roadmap, and unified architecture. Root Plan only.
 
 ### Athena And Odysseus Files
+
+`CHAT_DERIVED_CONCEPT_REGISTER.md`
+: Evidence-bounded register of the five recovered ATHENA project chats. It
+  separates human intent, assistant proposals, captured Plan intent,
+  implementation state, research requirements, and missing artifacts.
+
+`ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md`
+: Canonical docking architecture for external Athena, AI-local nodes, the
+  Athena Highway, project capsules, four skill ownership classes, state
+  transfer, hot swapping, conflict resolution, and security invariants.
+
+`OASIS_ATHENA_AGENT_MODEL.md`
+: Relationship between the future OASIS environment, external Athena, model
+  surfaces, the highway, project capsules, and current repository precursors.
+
+`OPERATIVE_DUPLEX_AI_MODEL.md`
+: Independent operative metacognitive AI architecture. Defines interior and
+  exterior loops, Pilot/Witness separation, application discovery, authority,
+  action records, OASIS embodiment, and first build slice.
+
+`OASIS_REALITY_COMPILER.md`
+: Pan-spectral and multidomain sensor fusion, registered observation volumes,
+  object/relationship graphs, Known Behavioral Maps, Material Behavioral Atlas,
+  environment packages, validation, privacy, and inverse design.
+
+`LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md`
+: Experimental physical profile beneath Nexus-V. Defines intent, preserved
+  invariants, functional regions, signal dimensions, memory, 3D packaging,
+  optical relay boundaries, research tracks, and staged evidence gates.
 
 `Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md`
 : Defines the Cognitive Orchestrator. Covers task classification, cognitive
@@ -475,18 +554,23 @@ checks, and execution domains natively.
 
 Use this order when turning Plan into action:
 
-1. `AI-OS-v13.0-Unified-Encyclopedia.md`
-2. `Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md`
-3. `Odysseus-Nexus-Ontology-Extraction-and-Unification-Specification.md`
-4. `AI-OS-v8.0-Constitution-and-Identity-Charter.md`
-5. `AI-OS-v10.0-Knowledge-and-Memory-Constitution.md`
-6. `AI-OS-v11.0-Agent-Species-Catalog.md`
-7. `AI-OS-v12.0-Federation-and-Civilization-Framework.md`
-8. `Hardware plan.md`
-9. `define.txt`
-10. `NVISC.txt`
-11. Nexus-V Word specs in phase order.
-12. Source zips only when reconstructing or validating source lineage.
+1. `CHAT_DERIVED_CONCEPT_REGISTER.md`
+2. `ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md`
+3. `AI-OS-v13.0-Unified-Encyclopedia.md`
+4. `Project-Athena-Cognitive-Orchestrator-Specification-v1.0.md`
+5. `Odysseus-Nexus-Ontology-Extraction-and-Unification-Specification.md`
+6. `OPERATIVE_DUPLEX_AI_MODEL.md`
+7. `OASIS_REALITY_COMPILER.md`
+8. `AI-OS-v8.0-Constitution-and-Identity-Charter.md`
+9. `AI-OS-v10.0-Knowledge-and-Memory-Constitution.md`
+10. `AI-OS-v11.0-Agent-Species-Catalog.md`
+11. `AI-OS-v12.0-Federation-and-Civilization-Framework.md`
+12. `Hardware plan.md`
+13. `define.txt`
+14. `NVISC.txt`
+15. `LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md`
+16. Nexus-V Word specs in phase order.
+17. Source zips only when reconstructing or validating source lineage.
 
 ## What Needs To Happen Next
 
@@ -507,6 +591,14 @@ Immediate architecture extraction:
 5. Convert `NVISC.txt` into an ISA taxonomy and implementation matrix.
 6. Connect each Nexus-V Word spec to the current `Nexus V/rtl` and
    `Nexus V/toolchain` files.
+7. Convert distributed docking, project capsules, and skill ownership into
+   schemas and adapter fixtures.
+8. Convert the Operative Duplex into action, observation, application-model,
+   and learned-skill schemas plus a read-only Cartographer proof.
+9. Define OASIS observation/material/package schemas and run one bounded
+   tabletop capture experiment.
+10. Define a Lightcore software profile and evidence ledger before materials or
+    hardware selection.
 
 ## Implementation Status In Relation To Plan
 
@@ -530,6 +622,10 @@ Not yet complete:
 - Real SystemVerilog simulator/lint pass in this environment.
 - Expected trace corpus for regression.
 - Hardware-level implementation of every Plan concept.
+- Runtime Athena Highway and true model hot swapping.
+- Independent Operative Duplex runtime.
+- OASIS Reality Compiler and Material Behavioral Atlas.
+- Validated Lightcore device, link, package, or full execution fabric.
 
 ## Final Rule
 

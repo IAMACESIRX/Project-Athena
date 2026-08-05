@@ -1,27 +1,57 @@
 schema: ai-system.features.v1
-updated: 2026-06-03
+updated: 2026-08-01
 features:
-  - id: FEAT-001
-    title: Live server probe
-    status: scaffolded
-    layer: playerbots-stack
-    value: "Let AI read runtime status and logs non-destructively."
-    next_action: "Run Invoke-LiveServerProbe.ps1 when Docker target is available."
-  - id: FEAT-002
-    title: SQL dump inventory
-    status: planned
-    layer: live-state
-    value: "Track table counts, dump age, and restore coverage."
-    next_action: "Build read-only SQL dump parser/inventory script."
-  - id: FEAT-003
-    title: Client config inventory
-    status: planned
-    layer: game-client
-    value: "Track addons, realmlist, WTF accounts, and visual mods without scanning MPQs."
-    next_action: "Build targeted client inventory tool."
-  - id: FEAT-004
-    title: Command hub execution modules
+  - id: FEAT-ATHENA-001
+    title: Audited Project Athena chat cache
+    status: implemented
+    layer: source-memory
+    value: "Preserve five twice-retrieved project chats with hashes, coverage, and explicit gaps."
+    evidence: athena_context/AUDIT.md
+  - id: FEAT-ATHENA-002
+    title: Verified storyboard package
+    status: implemented
+    layer: source-memory
+    value: "Preserve 58 generated visuals with per-file hashes and a non-authority boundary."
+    evidence: athena_context/ASSET_INVENTORY.md
+  - id: FEAT-ATHENA-003
+    title: Bidirectional chat repository continuity
+    status: active
+    layer: continuity
+    value: "Normalize exported chats, govern promotion, and return hashed repository context to future sessions."
+    evidence: Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md
+  - id: FEAT-ATHENA-004
+    title: Repository integrity CI
+    status: active
+    layer: github
+    value: "Check structured files, PowerShell, manifests, visual hashes, secrets, and diff hygiene."
+    evidence: .github/workflows/athena-integrity.yml
+  - id: FEAT-ATHENA-005
+    title: GitHub desired-state reconciliation
+    status: active
+    layer: github
+    value: "Preview and idempotently apply labels, milestones, issues, and Project membership."
+    evidence: work/github-plan.json
+  - id: FEAT-ATHENA-006
+    title: Distributed model docking
     status: specified
-    layer: command-hub
-    value: "Allow controlled AI actions through logged, confirmed command paths."
-    next_action: "Define first read-only module."
+    layer: integration
+    value: "Dock replaceable models and tools while central Athena retains canonical memory."
+    evidence: Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md
+  - id: FEAT-ATHENA-007
+    title: Operative Duplex
+    status: specified
+    layer: operative-duplex
+    value: "Separate operative planning/action from independent observation and verification."
+    evidence: Plan/OPERATIVE_DUPLEX_AI_MODEL.md
+  - id: FEAT-ATHENA-008
+    title: OASIS Reality Compiler
+    status: research
+    layer: oasis
+    value: "Compile calibrated observations into evidence-carrying environment packages and bounded inverse designs."
+    evidence: Plan/OASIS_REALITY_COMPILER.md
+  - id: FEAT-ATHENA-009
+    title: Lightcore execution profile
+    status: research
+    layer: lightcore
+    value: "Explore physical execution while preserving Nexus-V invariants and evidence boundaries."
+    evidence: Plan/LIGHTCORE_PHYSICAL_EXECUTION_PROFILE.md

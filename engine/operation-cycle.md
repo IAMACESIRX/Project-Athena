@@ -4,7 +4,7 @@ The operation cycle turns the AI-OS into a working control plane rather than a p
 
 ## Execution Layers
 
-1. Human authority and local-only rules.
+1. Human authority, local-only rules, and bounded exceptions.
 2. Governance and safety gates.
 3. Project scan and topology map.
 4. Project and system forensic evidence verification.
@@ -41,4 +41,5 @@ Every cycle must produce or refresh:
 - Yellow findings require a named mitigation before action.
 - Missing evidence keeps claims provisional.
 - Broken scripts become correction-queue items, not silent failures.
-- Cloud remotes are a stop condition unless the human explicitly changes the local-only rule.
+- Cloud remotes are a stop condition unless an explicit bounded exception names
+  the repository, scope, and permitted mutation.

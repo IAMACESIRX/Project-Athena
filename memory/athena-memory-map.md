@@ -10,6 +10,8 @@ the type of fact being preserved.
 |---|---|---|---|
 | Identity memory | Durable definition of what Athena is. | `AI-PORTAL.md`, `identity/`, `context.md` | The system's purpose, boundaries, or operating identity changes. |
 | Architecture memory | Design intent and future direction. | `Plan/`, `Plan/context.md`, `Plan/OASIS_ATHENA_AGENT_MODEL.md`, `Nexus V/docs/Plan/` | Plan concepts are interpreted, prioritized, or converted into build work. |
+| Source conversation memory | Audited source text and artifact reconciliation. | `athena_context/` | Chats or attachments are retrieved, refreshed, hashed, or reconciled. |
+| Promotion memory | Review state connecting source chats to canonical repository changes. | `continuity/chat-repository-sync/` | A chat-derived claim is proposed, accepted, implemented, rejected, or superseded. |
 | Working memory | Current tasks, roadmaps, and decisions. | `work/`, `handoff/`, `continuity/` | A task is created, reprioritized, resumed, or handed off. |
 | Evidence memory | Claims, observations, audit events, and cycle reports. | `forensics/`, `audit/`, `engine/cycle-reports/` | A claim needs support, a decision needs traceability, or a cycle completes. |
 | Capability memory | What Athena can do and how tools are routed. | `manifests/`, `registries/`, `agents/`, `orchestration/` | A tool, agent, capability, route, or ownership rule changes. |
@@ -28,6 +30,15 @@ the type of fact being preserved.
 5. Generated outputs must be clearly named or placed in generated/report
    folders.
 6. Speculative brainstorms stay in council or work files until verified.
+7. Chat-derived human intent may be captured in Plan with a source pointer;
+   assistant elaboration remains a proposal until accepted or independently
+   supported.
+8. Images and generated reports enter through `athena_context/ASSET_INVENTORY.md`
+   before becoming architecture memory.
+9. Unreviewed official account exports and normalized messages remain under the
+   ignored `continuity/transcript-inbox/imports/` source zone.
+10. Future chats receive a hashed context capsule; capsule truncation is not
+    evidence that the omitted repository content was read.
 
 ## Intake To Memory Flow
 
@@ -45,13 +56,31 @@ When a term changes meaning, update the local definition immediately. Current
 canonical meanings:
 
 - Athena: AI prosthetic external brain, database, and processor.
-- OASIS: outer operating environment that can contain Athena, agents, tools,
-  project state, and future runtime services.
+- OASIS: future persistent programmable environment for simulation,
+  engineering, creation, collaboration, AI embodiment, and runtime services.
+  The repository is Athena's current file-native substrate, not the full OASIS.
 - Central Athena: canonical memory, database, processor, router, and evidence
   trail.
 - Local Athena adapter: the Athena-facing layer inside an agent surface such as
   Codex, Jarvis, GPT, or a future local model.
+- Athena Highway: replaceable identity, capability, context, state, evidence,
+  and routing layer between models, Athena, databases, project capsules, tools,
+  and agents.
+- Project capsule: portable package of project identity, memory, skills,
+  artifacts, evidence, permissions, validation, and history.
+- MCAI: metacognitive capability that selects and monitors cognition, context,
+  memory, models, tools, verification, learning, and writeback; not a claim of
+  implemented general intelligence.
+- Operative Duplex: independent operative metacognitive AI concept with
+  separate planning/acting and observing/verifying loops. `JANUS` is a
+  provisional name only.
 - Plan: highest-priority architecture-intent vault.
 - Nexus V: hardware/toolchain implementation branch for semantic execution.
+- Lightcore: experimental future physical execution profile beneath Nexus-V;
+  not validated hardware.
+- Known Behavioral Map: evidence-carrying model of measured response across
+  controlled variables, conditions, time, and uncertainty.
+- Reality Compiler: proposed pipeline from registered sensor evidence to a
+  versioned OASIS environment package and validation loop.
 - Cycle report: evidence memory for a non-trivial Athena run.
 - Intake packet: structured input contract for a task.

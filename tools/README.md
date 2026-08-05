@@ -28,7 +28,8 @@ legacy `-Commit` or `-Push` requests.
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Update-LayerPointers.ps1
 ```
 
-No tool in this folder pushes to GitHub servers.
+No tool pushes to GitHub by default. `Sync-AthenaGitHub.ps1` previews desired
+state unless both a token and `-Apply` are supplied under explicit authority.
 
 ## Export-AISystemManifest.ps1
 
@@ -110,6 +111,43 @@ Verifies required AI-system files, JSON validity, manifest path references, and 
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AIIntegrityCheck.ps1
+```
+
+## Import-AthenaChatExport.ps1
+
+Normalizes the audited Athena JSONL cache or a filtered official ChatGPT export
+into the ignored local transcript inbox. It records source hashes, branches,
+duplicates, and coverage but never writes canonical memory automatically.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Import-AthenaChatExport.ps1 -SourcePath .\athena_context
+```
+
+## Export-AthenaChatContext.ps1
+
+Builds a bounded, hashed repository context capsule for a future chat. `-Full`
+creates untruncated selected-text chunks in an ignored generated directory.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Export-AthenaChatContext.ps1
+```
+
+## Test-AthenaRepository.ps1
+
+Runs JSON/JSONL parsing, PowerShell syntax, integrity, storyboard checksum,
+publication-safety, and Git whitespace checks. This is the GitHub CI entrypoint.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Test-AthenaRepository.ps1 -NoWrite
+```
+
+## Sync-AthenaGitHub.ps1
+
+Previews or idempotently applies the bounded desired state from
+`work/github-plan.json`. A token and `-Apply` are required for mutation.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Sync-AthenaGitHub.ps1
 ```
 
 ## Invoke-AIForensicVerification.ps1

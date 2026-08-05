@@ -32,17 +32,21 @@ The complete corrected map is:
 5. `docs/athena-master-expansion/ATHENA_FULL_SYSTEM_MAP.md`
 6. `docs/athena-master-expansion/JANUS_OPERATIVE_METACOGNITIVE_AI_MASTER_SPEC.md`
 7. `docs/athena-master-expansion/OASIS_ARCHITECTURE_SPEC.md`
-8. `context-file-index.md`
-9. `manifests/system-manifest.json`
-10. `manifests/ingestion-order.yml`
-11. `memory/athena-memory-map.md`
-12. `work/ATHENA-FIRST-STEPS.md`
-13. `engine/order-of-operations.md`
-14. `governance/absolutes.md`
-15. `cognition/cognition-workflow.md`
-16. `council/roles.yml`
-17. `schemas/athena-task-intake.schema.json`
-18. `templates/athena-task-intake.md`
+8. `Plan/OASIS_ATHENA_AGENT_MODEL.md`
+9. `Plan/CHAT_DERIVED_CONCEPT_REGISTER.md`
+10. `Plan/ATHENA_DISTRIBUTED_COGNITIVE_FABRIC.md`
+11. `Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md`
+12. `context-file-index.md`
+13. `manifests/system-manifest.json`
+14. `manifests/ingestion-order.yml`
+15. `memory/athena-memory-map.md`
+16. `work/ATHENA-FIRST-STEPS.md`
+17. `engine/order-of-operations.md`
+18. `governance/absolutes.md`
+19. `cognition/cognition-workflow.md`
+20. `council/roles.yml`
+21. `schemas/athena-task-intake.schema.json`
+22. `templates/athena-task-intake.md`
 
 ## What ATHENA does
 
@@ -51,7 +55,9 @@ The complete corrected map is:
 - Processes tasks through intake, cognition, governance, execution, verification, reports and memory writeback.
 - Uses `Plan/` as the design authority for AI-OS, ATHENA, Nexus-V, NVISC, NVASM, NVIR, NVVM and future Lightcore work.
 - Uses `Nexus V/` as the source-heavy hardware/toolchain implementation branch.
-- Keeps evidence, assumptions, hypotheses, unknowns and decisions separate.
+- Keeps recovered source conversations, retrieval audits, verified visual assets, and remaining artifact gaps under `athena_context/`.
+- Imports new chat exports into a local-only source zone, promotes accepted results through an append-only ledger, and exports hashed repository context back to future chats.
+- Separates human intent, assistant proposals, Plan intent, implementation evidence, experimental research, assumptions, hypotheses, unknowns and decisions.
 - Collaborates with independent systems through explicit identity, authority, evidence and state-transition contracts.
 
 ## Wider architecture

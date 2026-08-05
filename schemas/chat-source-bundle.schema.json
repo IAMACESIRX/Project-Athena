@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://project-athena.local/schemas/chat-source-bundle.schema.json",
+  "title": "Athena Chat Source Bundle",
+  "type": "object",
+  "required": ["schema", "bundle_id", "created_at", "source", "scope", "coverage", "files"],
+  "properties": {
+    "schema": { "const": "athena.chat_source_bundle.v1" },
+    "bundle_id": { "type": "string", "minLength": 1 },
+    "created_at": { "type": "string", "format": "date-time" },
+    "source": {
+      "type": "object",
+      "required": ["kind", "path", "sha256"],
+      "properties": {
+        "kind": { "enum": ["audited-jsonl", "chatgpt-conversations-json", "chatgpt-export-zip"] },
+        "path": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "additionalProperties": true
+    },
+    "scope": {
+      "type": "object",
+      "required": ["project_name", "all_conversations_allowed"],
+      "properties": {
+        "project_name": { "type": ["string", "null"] },
+        "project_id": { "type": ["string", "null"] },
+        "all_conversations_allowed": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["conversations", "messages", "branches_preserved", "attachments_embedded"],
+      "properties": {
+        "conversations": { "type": "integer", "minimum": 0 },
+        "messages": { "type": "integer", "minimum": 0 },
+        "branches_preserved": { "type": "boolean" },
+        "attachments_embedded": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sha256", "bytes"],
+        "properties": {
+          "path": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "bytes": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

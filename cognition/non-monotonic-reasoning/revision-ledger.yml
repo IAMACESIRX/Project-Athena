@@ -1,5 +1,5 @@
 schema: ai-system.revision_ledger.v1
-updated: 2026-06-03
+updated: 2026-08-01
 claims:
   - id: NMR-001
     claim: "Docker is unavailable."
@@ -12,4 +12,10 @@ claims:
     class: stable
     evidence: "Explicit user instruction and governance absolutes."
     retraction_condition: "Human explicitly changes local-only policy."
+    current_status: active-with-bounded-exception
+  - id: NMR-003
+    claim: "The 2026-08-01 Project Athena reconciliation may update workflow files and GitHub planning metadata after preview."
+    class: bounded-exception
+    evidence: "Explicit human request to update GitHub workflows, milestones, projects, and project structure."
+    retraction_condition: "The reconciliation task completes or the human changes scope."
     current_status: active

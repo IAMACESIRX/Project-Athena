@@ -1,230 +1,260 @@
 ﻿{
     "schema":  "ai-system.watched_state_changes.v1",
-    "generated_at":  "2026-07-10T02:08:59.9459449+10:00",
+    "generated_at":  "2026-08-02T00:03:55.2481953+10:00",
     "project_root":  "D:\\Projects\\Project Athena",
     "bootstrap":  false,
-    "watched_count":  1230,
-    "added_count":  3,
-    "modified_count":  33,
+    "watched_count":  1391,
+    "added_count":  21,
+    "modified_count":  20,
     "removed_count":  0,
     "added":  [
                   {
-                      "path":  "Nexus V/docs/Plan/OASIS_ATHENA_AGENT_MODEL.md",
-                      "hash":  "0DA19A838745A55A33C257A257767B8E6EDDE8624D0761524EE0F6D3E710B2D3",
-                      "last_write":  "2026-07-10T02:06:46.6951160+10:00",
-                      "bytes":  4626
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-001.md",
+                      "hash":  "09574371BBEE6BF7E8C6936CADD28E2D574434D011D8FA302CE8D603ED1961C6",
+                      "last_write":  "2026-08-02T00:02:37.8995346+10:00",
+                      "bytes":  119272
                   },
                   {
-                      "path":  "Plan/OASIS_ATHENA_AGENT_MODEL.md",
-                      "hash":  "0DA19A838745A55A33C257A257767B8E6EDDE8624D0761524EE0F6D3E710B2D3",
-                      "last_write":  "2026-07-10T02:06:46.6951160+10:00",
-                      "bytes":  4626
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-002.md",
+                      "hash":  "D78DC564604D98DDE793594F4B13ECA4A6EAFEB5D0F30F5A1A8ADAB6492D0072",
+                      "last_write":  "2026-08-02T00:02:37.9054699+10:00",
+                      "bytes":  101386
                   },
                   {
-                      "path":  "Plan/OASIS_ATHENA_AGENT_MODEL.md",
-                      "hash":  "0DA19A838745A55A33C257A257767B8E6EDDE8624D0761524EE0F6D3E710B2D3",
-                      "last_write":  "2026-07-10T02:06:46.6951160+10:00",
-                      "bytes":  4626
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-003.md",
+                      "hash":  "CFD7E6F6C0999267E26DEDE82EE120EA2C31E5E977B53BC77A25CD49129F144F",
+                      "last_write":  "2026-08-02T00:02:37.9128721+10:00",
+                      "bytes":  167854
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-004.md",
+                      "hash":  "1A8273D865F5F0809FD6EB9648BE02F49DBB47C8F784617B1F4EE367D07C1E06",
+                      "last_write":  "2026-08-02T00:02:37.9201305+10:00",
+                      "bytes":  119424
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-005.md",
+                      "hash":  "CF64931522094BCD03A1C383ACE5D26BAFD6A3977E2C7070C210AEBA2A9F673E",
+                      "last_write":  "2026-08-02T00:02:37.9201305+10:00",
+                      "bytes":  38700
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-006.md",
+                      "hash":  "2B6D8C2061C0EFFBEC66CA407C96102EAA9450CC4A2A1EE24711AAA797CECB1D",
+                      "last_write":  "2026-08-02T00:02:37.9402008+10:00",
+                      "bytes":  119412
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-007.md",
+                      "hash":  "49C5A2772AB8E9BC5B9C77DB4676AD6201C0256A05FC1A10A6C23EE5BA4728A5",
+                      "last_write":  "2026-08-02T00:02:37.9540833+10:00",
+                      "bytes":  119174
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-008.md",
+                      "hash":  "CD38F4791C2F2D4B11E9D29366819B0CAA35C4F5713C6E3E1ECE4C68027CD27C",
+                      "last_write":  "2026-08-02T00:02:37.9720335+10:00",
+                      "bytes":  119259
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-009.md",
+                      "hash":  "DAA84F601D71AF978C59F650C33D45C1D4FC086F60555AA2DC66F40705979A26",
+                      "last_write":  "2026-08-02T00:02:37.9894196+10:00",
+                      "bytes":  119025
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-010.md",
+                      "hash":  "620AE16B30817D2F2F0A21E8DB454300BB64B185624C7A4CB93B5631B6CBDEDA",
+                      "last_write":  "2026-08-02T00:02:37.9945299+10:00",
+                      "bytes":  119180
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-011.md",
+                      "hash":  "6CB6032970A26B9C19A44B40B2C935A56E90660786C40BE064B616E8468F68F1",
+                      "last_write":  "2026-08-02T00:02:38.0089838+10:00",
+                      "bytes":  115257
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-012.md",
+                      "hash":  "96F121280F540B0EB3ADAE81C18EAD0A872BF3B8741897311FEC5213E8312542",
+                      "last_write":  "2026-08-02T00:02:38.0095381+10:00",
+                      "bytes":  115712
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-013.md",
+                      "hash":  "114DAB304B1B2B7FC07E32E66523C41737F8C29FBFA76C3B4013FA32013DA0EC",
+                      "last_write":  "2026-08-02T00:02:38.0243342+10:00",
+                      "bytes":  120693
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-014.md",
+                      "hash":  "0C8C55D0FBCB1DC43633D286A361B79D9E6EA9E566DB7CB78B133F0A569AE41A",
+                      "last_write":  "2026-08-02T00:02:38.0306968+10:00",
+                      "bytes":  120736
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-015.md",
+                      "hash":  "08A3CC4C82EFEA7B34BF6439383DEEA2199FA82261C42A8013785B53136D37E7",
+                      "last_write":  "2026-08-02T00:02:38.0334806+10:00",
+                      "bytes":  119511
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-016.md",
+                      "hash":  "B664954D7236A090863789F34AC234B2CCF716D667464E58A5AD0AFE1F647A78",
+                      "last_write":  "2026-08-02T00:02:38.0548798+10:00",
+                      "bytes":  97268
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-017.md",
+                      "hash":  "AA8B29B1C582B02ECBDFEC5168ADAE9D27FFDBB544C232B301B3B1095D5411E9",
+                      "last_write":  "2026-08-02T00:02:38.0568803+10:00",
+                      "bytes":  226409
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-018.md",
+                      "hash":  "4D74EDB0392AE162A8AC9940E0BBC50F4EE8A302734DECEB0C5887097261119B",
+                      "last_write":  "2026-08-02T00:02:38.0609123+10:00",
+                      "bytes":  119660
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-019.md",
+                      "hash":  "148C90E92469E3E40FBDCF2343693D9DFF8C28546DD932C930A04AF23D587FD0",
+                      "last_write":  "2026-08-02T00:02:38.0747785+10:00",
+                      "bytes":  116656
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/capsule-part-020.md",
+                      "hash":  "09F333E39D5B4F8BFD5AD7D1DD52330310168D81C38AA474EB8046B2A062AC84",
+                      "last_write":  "2026-08-02T00:02:38.0789303+10:00",
+                      "bytes":  58040
+                  },
+                  {
+                      "path":  "continuity/chat-repository-sync/generated/full-20260802-000237/manifest.json",
+                      "hash":  "A2554E60960AD719CCC91D64F4FE57019DADF24CE8AD08FA4BAF2F3E3098D17A",
+                      "last_write":  "2026-08-02T00:02:37.8772356+10:00",
+                      "bytes":  342187
                   }
               ],
     "modified":  [
                      {
-                         "path":  "AI-PORTAL.md",
-                         "hash":  "5041BE5D07D5B7E6F45CD2AF7B14C302FE6F4E970F23639C28623BB941971915",
-                         "last_write":  "2026-07-10T02:07:43.3634086+10:00",
-                         "bytes":  4774
-                     },
-                     {
-                         "path":  "context.md",
-                         "hash":  "7DDFDC690C83FB909C47B314A828D7A0ADF965DFF446C99452E839B9A507D49A",
-                         "last_write":  "2026-07-10T02:07:06.7022480+10:00",
-                         "bytes":  53681
-                     },
-                     {
                          "path":  "context-file-index.md",
-                         "hash":  "2B08042CAEEC9C049D364DE19674A5E1AAE64F90C857889D4B9DE5B7FE5C13F8",
-                         "last_write":  "2026-07-10T01:30:28.8057056+10:00",
-                         "bytes":  181473
+                         "hash":  "2C3FBDED94EE416F615A2CF172AA48DFB0B9870A216FE989FCA05E1C763738B9",
+                         "last_write":  "2026-08-02T00:02:42.2320145+10:00",
+                         "bytes":  206440
+                     },
+                     {
+                         "path":  "continuity/chat-repository-sync/latest-context-capsule.json",
+                         "hash":  "16942A9CED460BCC7FBAEBF0C5AFD8D996B840CE7F62D79895ED156E77209247",
+                         "last_write":  "2026-08-02T00:02:35.3371643+10:00",
+                         "bytes":  15104
+                     },
+                     {
+                         "path":  "continuity/chat-repository-sync/latest-context-capsule.md",
+                         "hash":  "E302C2EEC0EAED80F187068768343DFA40CFF21B7ED0F62F429BD6AC18583E7E",
+                         "last_write":  "2026-08-02T00:02:35.3391667+10:00",
+                         "bytes":  167098
                      },
                      {
                          "path":  "diagnostics/reports/latest-integrity-report.json",
-                         "hash":  "57246D78D00586DA4C2865341F397914F8A0A51F962F0E604EA0844CC51536E3",
-                         "last_write":  "2026-07-10T02:08:53.3690385+10:00",
+                         "hash":  "1A9EDD2FA57542F79A20F7D94EB90E4B14282D224901C16C0D84F59AB68F580A",
+                         "last_write":  "2026-08-02T00:03:49.5242345+10:00",
                          "bytes":  257
                      },
                      {
                          "path":  "diagnostics/reports/latest-integrity-report.md",
-                         "hash":  "4B49FC32618F5DD049B146FACB809C41C92C9A682C14B657F4189DFC5032F743",
-                         "last_write":  "2026-07-10T02:08:53.3750369+10:00",
+                         "hash":  "EB6F297FD9868C0ED49F5C19C6CCF51E3A5D6E9BB53798327250DC08A98AB345",
+                         "last_write":  "2026-08-02T00:03:49.5401983+10:00",
                          "bytes":  231
                      },
                      {
                          "path":  "engine/cycle-history.csv",
-                         "hash":  "0EA773CDD6627ECC5A071470325BE8E397BEDF5EE630B462EE8056D3C517728A",
-                         "last_write":  "2026-07-10T01:30:19.9362744+10:00",
-                         "bytes":  1231
+                         "hash":  "414BF74B95F0F6D516FE88B8662302272883411236D4D358F30912D5288F94EB",
+                         "last_write":  "2026-08-02T00:02:34.9196019+10:00",
+                         "bytes":  1519
                      },
                      {
                          "path":  "engine/cycle-reports/latest-cycle-report.json",
-                         "hash":  "A1589B7D184F4723C8B710E1B1F542A8722E99AC4B15C93E89BC4DDD03BCEDD3",
-                         "last_write":  "2026-07-10T01:30:19.9152618+10:00",
-                         "bytes":  3648
+                         "hash":  "8A632F9640DA9CFEB1104B2A010FF1F28ABA96198E2162B92349156BD3519E3E",
+                         "last_write":  "2026-08-02T00:02:34.9076070+10:00",
+                         "bytes":  3677
                      },
                      {
                          "path":  "engine/cycle-reports/latest-cycle-report.md",
-                         "hash":  "65208640AA478021CC18CE8D256BC2BB6B376C58BF07AD3CD721CB9E6FB329D0",
-                         "last_write":  "2026-07-10T01:30:19.9302688+10:00",
-                         "bytes":  677
+                         "hash":  "5FC1A371B345AD47C9BC8102090BFBE79A20B835FACF4B1D4BC9901BB9449FF4",
+                         "last_write":  "2026-08-02T00:02:34.9196019+10:00",
+                         "bytes":  706
                      },
                      {
                          "path":  "forensics/verification-reports/latest-forensic-verification.json",
-                         "hash":  "F429714F565E5B5727585C4F2835A7F5E1F0754AD26FC29E7037DD650B91F6D5",
-                         "last_write":  "2026-07-10T02:08:56.2721895+10:00",
+                         "hash":  "CA0E4D613B128C3900A0CC0AD581CE4C9CDF7776A7EDAB06B085C3BE065DC639",
+                         "last_write":  "2026-08-02T00:03:51.9863196+10:00",
                          "bytes":  419
                      },
                      {
                          "path":  "forensics/verification-reports/latest-forensic-verification.md",
-                         "hash":  "05F393F024E1910E89864D94D121678A160A805A579E4EB0BF74011487CC4E30",
-                         "last_write":  "2026-07-10T02:08:56.2791850+10:00",
+                         "hash":  "4177FA71CE1A7C69A7B9AB1167B4D1A411A40FBCF62E19075F20173D063FBB19",
+                         "last_write":  "2026-08-02T00:03:51.9916334+10:00",
                          "bytes":  343
                      },
                      {
-                         "path":  "manifests/capability-matrix.yml",
-                         "hash":  "6096F72B28791E3FDF25BD6B6F47D69231033D9DA82382181BD2E5F3998EFE24",
-                         "last_write":  "2026-07-10T02:07:58.4987001+10:00",
-                         "bytes":  11005
-                     },
-                     {
                          "path":  "manifests/generated-ai-index.json",
-                         "hash":  "D5A821AF60233995911DA20AD34244101A4756AD844EF1D4997E91C5AA06A4BE",
-                         "last_write":  "2026-07-10T02:08:55.8550240+10:00",
-                         "bytes":  82534
+                         "hash":  "95A8E0FD8F6BA48B331EB405C516A9DF7BD9C4C8D6A2F21507DBF268791984D8",
+                         "last_write":  "2026-08-02T00:03:51.5943722+10:00",
+                         "bytes":  98356
                      },
                      {
                          "path":  "manifests/system-manifest.json",
-                         "hash":  "51424586D796AECBA3BF63455767AACA0F1B9875C7D52020E998C7B5465127FD",
-                         "last_write":  "2026-07-10T02:07:49.6851730+10:00",
-                         "bytes":  4410
-                     },
-                     {
-                         "path":  "memory/athena-memory-map.md",
-                         "hash":  "F8031261CB313BE5D0F93850D1CE546207D7EC3C14191A81DB1BF45022956961",
-                         "last_write":  "2026-07-10T02:07:25.4241596+10:00",
-                         "bytes":  3394
+                         "hash":  "99EE02F1537610A4E982D41DE0DC5CA2D3225EFA3F1D69B3289E3035CE1A8B31",
+                         "last_write":  "2026-08-02T00:03:24.3958893+10:00",
+                         "bytes":  6611
                      },
                      {
                          "path":  "navigation/generated/project-map.json",
-                         "hash":  "D38C88BEE6180F16F68EBFAEC5706951D9E21C8F172733322A86C5F220297128",
-                         "last_write":  "2026-07-10T02:08:55.2928772+10:00",
+                         "hash":  "48A026724298136834BF3E48343BFCAB9C73AE4BDFA3C54892792AECDD505E85",
+                         "last_write":  "2026-08-02T00:03:51.1179597+10:00",
                          "bytes":  5402
                      },
                      {
-                         "path":  "Nexus V/docs/Plan/IMPLEMENTATION_MATRIX.md",
-                         "hash":  "CC83E048B51136A4CF1443E67F1D2A7D0E99883EF19D4D1425FBE6040E8500DC",
-                         "last_write":  "2026-07-10T02:08:31.4496239+10:00",
-                         "bytes":  3743
-                     },
-                     {
-                         "path":  "Nexus V/docs/Plan/ROADMAP.md",
-                         "hash":  "3AEFEA0209A04C69687FEC0B27814B8E21461450BE9BB96F952E5F27FA0C7661",
-                         "last_write":  "2026-07-10T02:08:23.7140786+10:00",
-                         "bytes":  3195
-                     },
-                     {
-                         "path":  "Nexus V/docs/Plan/TODO.md",
-                         "hash":  "18876D99227B898790A6C0430E5D933E91423AB6E18114F0035E92B3ECC9DCE5",
-                         "last_write":  "2026-07-10T02:08:16.0136954+10:00",
-                         "bytes":  1608
-                     },
-                     {
                          "path":  "observability/reports/latest-log-intelligence.json",
-                         "hash":  "1C145E9EA7E5D57A90265D244B902A24F90085EEF241444096E781DB204439E1",
-                         "last_write":  "2026-07-10T02:08:56.7492022+10:00",
+                         "hash":  "E13C4478513073F4F6CFEE6DD03AA996EF0EE94E4E16C330A250D1E88EB26978",
+                         "last_write":  "2026-08-02T00:03:52.4206723+10:00",
                          "bytes":  644
                      },
                      {
                          "path":  "observability/reports/latest-log-intelligence.md",
-                         "hash":  "A5444DAD90781C32B0CBB053D1EC34393A58C84DE23AC32395AD20000620B97B",
-                         "last_write":  "2026-07-10T02:08:56.7602047+10:00",
+                         "hash":  "A4C5647833E879319C2A871555962E43EB613DE9DFDBBF1FC705F19661B24152",
+                         "last_write":  "2026-08-02T00:03:52.4428562+10:00",
                          "bytes":  283
                      },
                      {
-                         "path":  "Plan/context.md",
-                         "hash":  "3FDB159A4F0D9D4D6AA72A1B0DA276270753FF1FAC062355BF26F6A7A1692645",
-                         "last_write":  "2026-07-10T02:07:14.9578294+10:00",
-                         "bytes":  22239
-                     },
-                     {
-                         "path":  "Plan/IMPLEMENTATION_MATRIX.md",
-                         "hash":  "CC83E048B51136A4CF1443E67F1D2A7D0E99883EF19D4D1425FBE6040E8500DC",
-                         "last_write":  "2026-07-10T02:08:31.4496239+10:00",
-                         "bytes":  3743
-                     },
-                     {
-                         "path":  "Plan/ROADMAP.md",
-                         "hash":  "3AEFEA0209A04C69687FEC0B27814B8E21461450BE9BB96F952E5F27FA0C7661",
-                         "last_write":  "2026-07-10T02:08:23.7140786+10:00",
-                         "bytes":  3195
-                     },
-                     {
-                         "path":  "Plan/TODO.md",
-                         "hash":  "18876D99227B898790A6C0430E5D933E91423AB6E18114F0035E92B3ECC9DCE5",
-                         "last_write":  "2026-07-10T02:08:16.0136954+10:00",
-                         "bytes":  1608
-                     },
-                     {
                          "path":  "sensory/baselines/watched-state-baseline.csv",
-                         "hash":  "DA8856C9D99CDF35B00BF6CEC714586A386FE0304A5C6F0BB22C4E35C6C5A633",
-                         "last_write":  "2026-07-10T01:30:19.8631042+10:00",
-                         "bytes":  196998
+                         "hash":  "5304F22EF81EF7C93A903E5A79C654B5A88A8D92F5A1775E0A92D1FC846A0165",
+                         "last_write":  "2026-08-02T00:02:34.8498665+10:00",
+                         "bytes":  225679
                      },
                      {
                          "path":  "sensory/scans/latest-scan.json",
-                         "hash":  "2E20F54A6F58EB2DABFBCD0F2109292594DA0E11FB69BA545DC9EF0E9AE68001",
-                         "last_write":  "2026-07-10T02:08:54.3954327+10:00",
-                         "bytes":  7326
+                         "hash":  "95A8E324CA631BA18894877DBF6BC50CD4372D9B948C59BBBBAF3C734C3C6710",
+                         "last_write":  "2026-08-02T00:03:50.3684693+10:00",
+                         "bytes":  9778
                      },
                      {
                          "path":  "sensory/scans/latest-watched-changes.json",
-                         "hash":  "6CF112BDC3B29A8F965A5BCAAF68245F87A497BB5AA33508A6E5C6DCC12514F9",
-                         "last_write":  "2026-07-10T01:30:19.8421069+10:00",
-                         "bytes":  10133
+                         "hash":  "32CCAAE9987027EFF8F3CC51B609480B33A0FE79FB4749694ECEAE526B73E58C",
+                         "last_write":  "2026-08-02T00:02:34.8109583+10:00",
+                         "bytes":  74859
                      },
                      {
                          "path":  "sensory/scans/latest-watched-changes.md",
-                         "hash":  "88FDFE4875F27A07BF720F990149B26743BA3DF4B3D8108558A297AC73A78A2A",
-                         "last_write":  "2026-07-10T01:30:19.8511151+10:00",
-                         "bytes":  1381
+                         "hash":  "0D096A41A86433A7D9256A8717A9862D9F8121DA09E8F51E3ABF18968FB89364",
+                         "last_write":  "2026-08-02T00:02:34.8361810+10:00",
+                         "bytes":  5815
                      },
                      {
                          "path":  "sensory/scans/SCAN-LOG.md",
-                         "hash":  "E64823F7C7D8C67F061EBAD4E89CD31AA168045848C3C66F6BBF3C1FA9619A00",
-                         "last_write":  "2026-07-10T02:08:54.4024232+10:00",
-                         "bytes":  2127
-                     },
-                     {
-                         "path":  "Plan/context.md",
-                         "hash":  "3FDB159A4F0D9D4D6AA72A1B0DA276270753FF1FAC062355BF26F6A7A1692645",
-                         "last_write":  "2026-07-10T02:07:14.9578294+10:00",
-                         "bytes":  22239
-                     },
-                     {
-                         "path":  "Plan/IMPLEMENTATION_MATRIX.md",
-                         "hash":  "CC83E048B51136A4CF1443E67F1D2A7D0E99883EF19D4D1425FBE6040E8500DC",
-                         "last_write":  "2026-07-10T02:08:31.4496239+10:00",
-                         "bytes":  3743
-                     },
-                     {
-                         "path":  "Plan/ROADMAP.md",
-                         "hash":  "3AEFEA0209A04C69687FEC0B27814B8E21461450BE9BB96F952E5F27FA0C7661",
-                         "last_write":  "2026-07-10T02:08:23.7140786+10:00",
-                         "bytes":  3195
-                     },
-                     {
-                         "path":  "Plan/TODO.md",
-                         "hash":  "18876D99227B898790A6C0430E5D933E91423AB6E18114F0035E92B3ECC9DCE5",
-                         "last_write":  "2026-07-10T02:08:16.0136954+10:00",
-                         "bytes":  1608
+                         "hash":  "98F7253E9A6FA180C0CBE95C8BF8A28EB876DC7BB1F29E1F0FF7F72BFBA6C0E1",
+                         "last_write":  "2026-08-02T00:03:50.3765166+10:00",
+                         "bytes":  2275
                      }
                  ],
     "removed":  [

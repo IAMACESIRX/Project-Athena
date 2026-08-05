@@ -22,11 +22,14 @@
 | Plan extraction | planned | `Plan/IMPLEMENTATION_MATRIX.md` | Fill detailed rows from key specs. |
 | Nexus-V matrix | planned | `Nexus V/docs/NEXUS-V-IMPLEMENTATION-MATRIX.md` | Map RTL/toolchain to Plan. |
 | Operator console | planned | `runtime/`, `tools/` | Design after intake is stable. |
+| Two-way chat continuity | active | `continuity/chat-repository-sync/`, `tools/Import-AthenaChatExport.ps1`, `tools/Export-AthenaChatContext.ps1` | Add fixtures and reconcile an official export. |
+| Storyboard recovery | active | `athena_context/assets/generated-storyboards-2026-08-01/` | Complete all-image semantic review; hashes already pass. |
+| GitHub planning | active | `work/github-plan.json`, `.github/` | Apply bounded labels, milestones, issues, and Project configuration after preview. |
 
 ## Human Decisions Needed
 
 | Decision | Status | Notes |
 |---|---|---|
-| GitHub remote versus local-only rule | blocked | Governance says no cloud push unless human explicitly changes it. |
+| GitHub remote versus local-only rule | decided for current task | Local-only remains default; 2026-08-01 exception covers reviewed workflow files and planning metadata only. |
 | How aggressively to update Nexus V generated files | planned | Source and reports should be separated from generated build artifacts. |
 | Whether WoW legacy records stay first-class | planned | Current identity treats them as retained history, not root identity. |

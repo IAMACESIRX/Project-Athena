@@ -12,7 +12,12 @@ function Get-RelativeFileSet {
     )
 
     Get-ChildItem -LiteralPath $Root -Recurse -File -Force -Filter $Filter -ErrorAction SilentlyContinue |
-        Where-Object { $_.FullName -notmatch "\\.git\\" } |
+        Where-Object {
+            $_.FullName -notmatch "\\.git\\" -and
+            $_.FullName -notmatch "\\continuity\\transcript-inbox\\imports\\" -and
+            $_.FullName -notmatch "\\continuity\\chat-repository-sync\\generated\\" -and
+            $_.FullName -notmatch "\\.athena-capsule\\"
+        } |
         ForEach-Object { $_.FullName.Substring($ProjectRoot.Length + 1) -replace "\\", "/" } |
         Sort-Object
 }
@@ -35,7 +40,9 @@ $index = [PSCustomObject]@{
             "context.md",
             "context-file-index.md"
         )
+        github = @(Get-RelativeFileSet -Root (Join-Path $aiRoot ".github"))
         plan = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "Plan"))
+        athena_context = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "athena_context"))
         nexus_v_docs = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "Nexus V\docs"))
         templates = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "templates"))
         identity = @(Get-RelativeFileSet -Root (Join-Path $aiRoot "identity"))

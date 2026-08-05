@@ -1,0 +1,114 @@
+{
+  "schema": "ai-system.athena_adapter.v1",
+  "id": "aesir-geopolitical-council-import",
+  "version": "0.1.0",
+  "class": "writer",
+  "owner_layer": "continuity",
+  "surface": {
+    "kind": "chat_source_ingestion",
+    "identity": "aesir-war-systems-council-dataset",
+    "provider": "local-file",
+    "supported_versions": [
+      "athena.chat_source_bundle.v1",
+      "athena.normalized_chat_message.v1",
+      "ChatGPT conversations.json export",
+      "ChatGPT export ZIP containing conversations.json",
+      "Athena audited JSONL"
+    ],
+    "modalities": [
+      "text",
+      "markdown",
+      "json",
+      "jsonl"
+    ]
+  },
+  "capabilities": {
+    "declared": [
+      "filter official ChatGPT exports by conversation id",
+      "normalize selected chat messages into local transcript inbox",
+      "preserve source hash and source locator",
+      "preserve current-branch metadata when available",
+      "emit source-only records for later reviewed promotion",
+      "route geopolitical forecast material through evidence-boundary classification"
+    ],
+    "unsupported": [
+      "automatic factual verification of geopolitical claims",
+      "automatic canonical memory promotion",
+      "account-wide import without explicit operator scope",
+      "publication of raw private transcript material",
+      "conversion of forecasts into verified facts"
+    ],
+    "probe": "Run tools/Import-AthenaChatExport.ps1 with -NoWrite against a scoped source export and confirm coverage reports one selected conversation."
+  },
+  "contracts": {
+    "inputs": [
+      "operator-provided official ChatGPT export JSON or ZIP",
+      "Athena audited JSONL cache",
+      "explicit conversation id or title scope",
+      "evidence classification policy"
+    ],
+    "outputs": [
+      "continuity/transcript-inbox/imports/<bundle>/source-manifest.json",
+      "continuity/transcript-inbox/imports/<bundle>/normalized-messages.jsonl",
+      "candidate promotion records in continuity/chat-repository-sync/promotion-ledger.jsonl after review"
+    ],
+    "message_schema": "schemas/chat-source-bundle.schema.json"
+  },
+  "scopes": {
+    "read": [
+      "operator-provided ChatGPT export file",
+      "continuity/transcript-inbox/imports/",
+      "continuity/chat-repository-sync/aesir-war-systems-council.ingest.json",
+      "schemas/chat-source-bundle.schema.json",
+      "schemas/chat-promotion.schema.json"
+    ],
+    "write": [
+      "continuity/transcript-inbox/imports/",
+      "continuity/chat-repository-sync/promotion-ledger.jsonl only after review",
+      "engine/cycle-reports/",
+      "work/intake/"
+    ],
+    "network": [],
+    "credentials": [],
+    "runtime": []
+  },
+  "authority": {
+    "ceiling": 1,
+    "confirmation_required": [
+      "importing all conversations",
+      "promoting source material into canonical memory",
+      "publishing or pushing raw transcript material",
+      "reclassifying forecasts as facts",
+      "overwriting existing import bundles"
+    ],
+    "human_presence_required": false
+  },
+  "state_transfer": {
+    "dock": "Load AI-PORTAL.md, sync policy, chat import script, source scope, and the latest user request before import.",
+    "undock": "Report bundle id, coverage, truncation or attachment gaps, files written, validation result, and promotion status.",
+    "handoff": "Name the source export hash, selected conversation id, evidence boundary policy, accepted promotions, contradictions, and remaining unknowns.",
+    "pending_write_policy": "human_decision",
+    "local_cache_is_authority": false
+  },
+  "operation": {
+    "idempotent": true,
+    "timeout_seconds": 600,
+    "max_retries": 1,
+    "rate_limit": "One import per source hash unless -Force is explicitly selected."
+  },
+  "failure": {
+    "detect": "Import script exception, zero selected conversations, JSON parse failure, schema mismatch, or repository validation failure.",
+    "contain": "Leave raw source in ignored transcript inbox and do not promote into canonical memory.",
+    "rollback": "Remove the generated import bundle only after confirming the bundle path is under continuity/transcript-inbox/imports/.",
+    "emergency_stop": "Stop import and report the source path, bundle path if created, and failing validation step."
+  },
+  "provenance": {
+    "source": [
+      "Plan/CHAT_REPOSITORY_CONTINUITY_PIPELINE.md",
+      "tools/Import-AthenaChatExport.ps1",
+      "continuity/chat-repository-sync/aesir-war-systems-council.ingest.json"
+    ],
+    "audit_target": "engine/cycle-reports/",
+    "secret_policy": "Do not copy account-wide exports, credentials, private unrelated chats, or raw transcript bundles into tracked files or publication targets."
+  }
+}

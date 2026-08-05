@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "repository": {
+    "path": "D:\\Projects\\Project Athena",
+    "full_name": "IAMACESIRX/Project-Athena",
+    "branch": "main",
+    "commit": "9713c74cbaaecc553094e5ae1f32b43dde72236a",
+    "clean": true,
+    "total_files": 1080,
+    "total_bytes": 12391667,
+    "analyzed_text_files_excluding_chat_cache": 857,
+    "analyzed_text_characters": 2405312
+  },
+  "chat_cache": {
+    "chats": 5,
+    "turns": 249,
+    "message_items": 486,
+    "text_characters": 1188287,
+    "repository_copy_hashes_match": true
+  },
+  "results": {
+    "repeat_chat_retrieval_match": true,
+    "exact_full_messages_found_outside_cache": 0,
+    "repository_independently_proves_chat_completeness": false,
+    "repository_concept_coverage": "partial"
+  },
+  "chat_comparisons": [
+    {
+      "chat": "AI Project Brain Overview",
+      "distinctive_term_coverage": 0.6600,
+      "ten_word_overlap": 0.0246,
+      "exact_messages": 0
+    },
+    {
+      "chat": "Athena Architecture Design",
+      "distinctive_term_coverage": 0.6090,
+      "ten_word_overlap": 0.0,
+      "exact_messages": 0
+    },
+    {
+      "chat": "Operative Duplex AI Concept",
+      "distinctive_term_coverage": 0.5564,
+      "ten_word_overlap": 0.0,
+      "exact_messages": 0
+    },
+    {
+      "chat": "Geometric 3D Optoelectronic Architecture",
+      "distinctive_term_coverage": 0.3902,
+      "ten_word_overlap": 0.0,
+      "exact_messages": 0
+    },
+    {
+      "chat": "Red Phosphor Camera Setup",
+      "distinctive_term_coverage": 0.2322,
+      "ten_word_overlap": 0.0,
+      "exact_messages": 0
+    }
+  ],
+  "remaining_limits": {
+    "generated_image_turns_not_stored": 12,
+    "referenced_attachment_files_not_stored": 16,
+    "alternate_branches_unproven": true,
+    "deleted_or_unavailable_chats_unproven": true,
+    "official_chatgpt_export_still_required": true
+  }
+}

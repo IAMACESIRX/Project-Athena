@@ -6,7 +6,7 @@ This is the long-line checklist for fully fleshed advanced thinking. Use it for 
 
 - Confirm the human's latest request.
 - Confirm the active layer: mega, game client, live state, server project, nested source, or AI system.
-- Confirm local-only hosting and no GitHub server push.
+- Confirm local-only hosting and whether a bounded remote exception applies.
 - Identify private or sensitive files before opening or editing.
 - Decide whether a restore point is needed before touching state.
 
@@ -99,7 +99,8 @@ This is the long-line checklist for fully fleshed advanced thinking. Use it for 
 - Run the smallest relevant verification first.
 - Run the operation cycle or targeted sub-tools after broader changes.
 - Re-check git status.
-- Re-check local-only remotes before any push.
+- Re-check the exact remote exception, repository visibility, and publication
+  safety before any push or GitHub mutation.
 - Update evidence and claim maps if new facts were created.
 
 ## R12 Audit And Continuity
@@ -115,6 +116,5 @@ This is the long-line checklist for fully fleshed advanced thinking. Use it for 
 - Leave the repo with understandable status.
 - Name remaining warnings.
 - Name what was committed and where.
-- Name what was not pushed to cloud.
+- Name what was remotely changed under exception and what remained local.
 - Leave next actions concrete.
-

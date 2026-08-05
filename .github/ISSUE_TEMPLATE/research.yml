@@ -1,0 +1,42 @@
+name: Research or experiment
+description: Run evidence-gated Athena, Nexus-V, OASIS, or Lightcore research.
+title: "[Research] "
+labels:
+  - type:research
+  - evidence-required
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: State one bounded question that can be answered or narrowed.
+    validations:
+      required: true
+  - type: textarea
+    id: prior
+    attributes:
+      label: Prior evidence and hypotheses
+      description: Separate measured evidence, inference, generated concepts, and unknowns.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method and controls
+      description: Include apparatus or software, variables, units, calibration, controls, and data retention.
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Success and failure criteria
+      description: Define criteria before running the experiment and state what cannot be inferred.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety, ethics, and publication
+      description: Identify physical, privacy, licensing, or public-repository risks and required approvals.
+    validations:
+      required: true

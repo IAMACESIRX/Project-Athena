@@ -32,7 +32,14 @@ function Test-GitPath {
   param([string]$Path)
 
   $relative = Get-RelativePath -Base $ProjectRoot -Path $Path
-  return ($relative -eq '.git' -or $relative.StartsWith('.git/') -or $relative.Contains('/.git/'))
+  return (
+    $relative -eq '.git' -or
+    $relative.StartsWith('.git/') -or
+    $relative.Contains('/.git/') -or
+    $relative.StartsWith('continuity/transcript-inbox/imports/') -or
+    $relative.StartsWith('continuity/chat-repository-sync/generated/') -or
+    $relative.StartsWith('.athena-capsule/')
+  )
 }
 
 function Get-Sha12 {
@@ -117,7 +124,9 @@ function Get-Role {
     [string]$Extension
   )
 
+  if ($RelativePath -like '.github/*') { return 'GitHub workflow, template, or repository configuration.' }
   if ($RelativePath -like 'Plan/*') { return 'Top-priority Athena planning source.' }
+  if ($RelativePath -like 'athena_context/*') { return 'Audited source conversation, reconciliation, or recovered asset.' }
   if ($RelativePath -like 'Nexus V/docs/ai-system/*') { return 'Archived legacy AI-system mirror.' }
   if ($RelativePath -like 'Nexus V/*') { return 'Nexus V subsystem source, docs, or generated artifact.' }
   if ($RelativePath -like 'tools/*') { return 'Automation/tooling script or tool documentation.' }
@@ -133,6 +142,7 @@ function Get-Role {
   if ($RelativePath -like 'observability/*') { return 'Log intelligence or observability output.' }
   if ($RelativePath -like 'sensory/*') { return 'Scan, baseline, or watched-state output.' }
   if ($RelativePath -like 'identity/*') { return 'Project identity and mission context.' }
+  if ($RelativePath -like 'agents/*') { return 'Agent registry, lifecycle, team, or Athena adapter contract.' }
   if ($RelativePath -like 'navigation/*') { return 'Project map/navigation context.' }
   if ($RelativePath -like 'projects/*') { return 'Project registry or legacy project brain.' }
   if ($Extension -eq '.docx') { return 'Word document source or planning/reference artifact.' }
@@ -165,7 +175,7 @@ $rows = foreach ($file in $files) {
   } elseif ($extension -in $imageExtensions) {
     $kind = 'image/metadata'
     $detail = "$($file.Extension.TrimStart('.').ToUpperInvariant()) image asset"
-  } elseif ($extension -in $textExtensions -or $file.Name -eq '.gitignore') {
+  } elseif ($extension -in $textExtensions -or $file.Name -in @('.gitignore', 'CODEOWNERS')) {
     $summary = Get-TextSummary -Path $file.FullName
     $kind = 'text/read'
     $metric = $summary.Lines
@@ -197,7 +207,7 @@ $totalBytes = ($files | Measure-Object Length -Sum).Sum
 $builder = [System.Text.StringBuilder]::new()
 [void]$builder.AppendLine('# Project Athena Complete File Index')
 [void]$builder.AppendLine('')
-[void]$builder.AppendLine('Generated: 2026-07-10')
+[void]$builder.AppendLine("Generated: $((Get-Date).ToString('yyyy-MM-dd'))")
 [void]$builder.AppendLine('')
 [void]$builder.AppendLine("This generated index accounts for every file under ``$ProjectRoot`` that existed at scan time, except ``.git`` internals and this generated index file itself. Text-like files were opened directly, Word documents were opened as OOXML and text-indexed, zip archives were opened and entry-indexed, images/binaries were metadata-indexed, and each file received a role hint.")
 [void]$builder.AppendLine('')

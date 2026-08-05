@@ -1,6 +1,24 @@
 # Current State
 
-Last updated: 2026-06-03
+Last updated: 2026-08-01
+
+## Project Athena Current Snapshot
+
+- Standalone root: `D:\Projects\Project Athena`.
+- Primary project: Project Athena; the WoW backup stack below is retained as
+  historical context.
+- Five Project Athena chats are cached and retrieval-audited under
+  `athena_context/`.
+- Fifty-eight generated storyboards and infographics are checksum-verified under
+  `athena_context/assets/generated-storyboards-2026-08-01/`.
+- Two-way chat/repository policy and tooling live under
+  `continuity/chat-repository-sync/` and `tools/`.
+- Desired GitHub labels, milestones, issues, and Project configuration are in
+  `work/github-plan.json`.
+- The 2026-08-01 task has a bounded exception for reviewed workflow files and
+  GitHub planning metadata; the local-only default otherwise remains active.
+
+## Legacy WoW Snapshot
 
 ## Snapshot
 
@@ -15,7 +33,7 @@ All four layers have local bare `origin` remotes under:
 
 `C:\Users\aesir\OneDrive\Desktop\WoW-Backups\local-git-host\2026-05-30_2035`
 
-## Important Context
+## Legacy Important Context
 
 - No GitHub server push is allowed.
 - The game client repository has only a lightweight management commit so far.

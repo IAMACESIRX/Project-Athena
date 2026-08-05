@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-system.schemas.operative-action.v1",
+  "title": "Operative Duplex Action",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "action_id",
+    "task_id",
+    "status",
+    "goal",
+    "current_observed_state",
+    "assumptions",
+    "proposed_action",
+    "expected_transition",
+    "authority",
+    "consequence_class",
+    "preconditions",
+    "validation",
+    "rollback_or_containment",
+    "evidence"
+  ],
+  "properties": {
+    "schema": { "const": "ai-system.operative_action.v1" },
+    "action_id": { "type": "string", "minLength": 1 },
+    "task_id": { "type": "string", "minLength": 1 },
+    "project_id": { "type": "string" },
+    "status": {
+      "enum": ["proposed", "approved", "executing", "completed", "failed", "aborted"]
+    },
+    "goal": { "type": "string", "minLength": 1 },
+    "current_observed_state": { "type": "object" },
+    "assumptions": { "$ref": "#/$defs/stringArray" },
+    "proposed_action": { "type": "object" },
+    "expected_transition": { "type": "object" },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "granted_by", "confirmation_state"],
+      "properties": {
+        "level": { "type": "integer", "minimum": 0, "maximum": 4 },
+        "granted_by": { "type": "string", "minLength": 1 },
+        "confirmation_state": {
+          "enum": ["not_required", "required", "granted", "denied", "expired"]
+        },
+        "expires_at": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "consequence_class": {
+      "enum": ["observe", "prepare", "reversible", "consequential", "privileged"]
+    },
+    "preconditions": { "$ref": "#/$defs/stringArray" },
+    "validation": { "$ref": "#/$defs/stringArray" },
+    "rollback_or_containment": { "type": "string", "minLength": 1 },
+    "evidence": { "$ref": "#/$defs/stringArray" },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observed_result", "state_diff", "validation_result", "confidence"],
+      "properties": {
+        "observed_result": { "type": "object" },
+        "state_diff": { "type": "object" },
+        "validation_result": {
+          "enum": ["pass", "partial", "warn", "fail", "not_run"]
+        },
+        "unexpected_effects": { "$ref": "#/$defs/stringArray" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "audit_reference": { "type": "string" },
+        "learning_candidate": { "type": "boolean" }
+      }
+    }
+  },
+  "$defs": {
+    "stringArray": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    }
+  }
+}

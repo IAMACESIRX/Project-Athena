@@ -10,6 +10,9 @@
 | Athena cycle runner | active | Bootstrap intake/report files from a goal. | Add validation and closure workflow. |
 | Integrity gate | partial | Verify required files and manifests. | Finish standalone path verification. |
 | Context refresh | planned | Summarize current state for new sessions. | Build command or report. |
+| Distributed docking fabric | planned | Keep models replaceable while preserving project continuity. | Define model-node, highway, capsule, and skill schemas. |
+| Chat concept register | active | Preserve recovered architecture intent with source and maturity labels. | Update when assets or official exports are reconciled. |
+| Operative Duplex | planned | Provide independently observed and verified digital embodiment. | Confirm name and build a read-only Cartographer proof. |
 
 ## Plan And Knowledge Features
 
@@ -20,6 +23,8 @@
 | Semantic canon | planned | Prevent term drift across Plan/root/Nexus. | Add R2S, KBM, Material Behavioral Atlas and Reality Compiler terms. |
 | GPT project concept sync | active | Capture Athena/Nexus-V/Lightcore/L.O.D.E/RoomSense/OASIS/Operative Duplex/R2S concepts from project chats. | Keep `docs/athena-master-expansion/CHATGPT_PROJECT_SYNC_2026-08-05.md` current after major concept shifts. |
 | Plugin mirror documentation | active | Keep Notion/Asana/Gamma/Drive/Canva/Figma mirrors labelled and secondary to GitHub. | Maintain plugin workspace sync logs and mirror index. |
+| Material Behavioral Atlas | planned | Preserve measured multidomain material response and uncertainty. | Define specimen, protocol, observation, and validity schemas. |
+| OASIS Reality Compiler | planned | Convert measured environments into evidence-carrying digital environments. | Build a calibrated tabletop proof. |
 
 ## Nexus-V Features
 
@@ -38,6 +43,7 @@
 | Feature | Status | Purpose | Next Step |
 |---|---|---|---|
 | Lightcore physical execution profile | specified | Tie XYZ CNT-silicon-photonic compute concepts to Nexus-V without replacing the semantic execution contract. | Expand simulation assumptions, physical interface constraints and risk register. |
+| Lightcore software execution profile | planned | Explore experimental physical execution without bypassing Nexus-V semantics. | Add emulator profile and one optical-link research plan. |
 | Dual-purpose CNT electro-photonic cell | speculative | Define CNT as electrical state element plus photonic interaction/conversion/sensing/modulation cell. | Create device-level modelling note and research anchor table. |
 | CNT photovoltaic / crystal memory hierarchy | speculative | Define Lightcore memory layers from active optical state through persistent crystal RAM. | Separate power-harvesting assumptions from read/write state assumptions. |
 | Multidimensional optical state signalling | specified | Preserve wavelength, PAM, phase, polarisation, OAM, focal depth, K-filter, timing, redundancy, parity, semantic metadata and Nexus/Aegis metadata. | Convert into a formal signal schema and validation simulator. |
@@ -107,3 +113,4 @@
 | Athena operator console | planned | Make external-brain use ergonomic. | Design after intake workflow stabilizes. |
 | Status dashboard | planned | Show context, tasks, risks and next actions. | Define data contract first. |
 | Local-only sync policy | clarified | Local-only rule applies to the user's local repo/manual code workflow; this plugin documentation workspace can update cloud mirrors when explicitly authorized. | Keep `GOVERNANCE_CLOUD_PUSH_EXCEPTION_2026-08-05.md` scoped to documentation sync, not blanket local/private upload permission. |
+| Recovered asset intake | active | Reconcile storyboards, diagrams, and generated reports from chats. | Use `athena_context/ASSET_INVENTORY.md`. |

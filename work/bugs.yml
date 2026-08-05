@@ -1,27 +1,41 @@
 schema: ai-system.bugs.v1
-updated: 2026-06-03
+updated: 2026-08-01
 bugs:
-  - id: BUG-001
-    title: Copied Python venv points to old machine path
+  - id: BUG-ATHENA-001
+    title: Storyboards 21-30 include composite crops and generated text defects
+    status: open
+    severity: low
+    layer: source-memory
+    evidence:
+      - athena_context/ASSET_INVENTORY.md
+    next_action: "Complete semantic review and mark misleading panels; preserve originals unchanged."
+  - id: BUG-ATHENA-002
+    title: Exact source-turn mapping is unproven for some recovered images
     status: open
     severity: medium
-    layer: server-project
+    layer: continuity
     evidence:
-      - "pyvenv.cfg references C:\\Users\\jonat\\Miniconda3\\python.exe"
-    next_action: "Recreate venv locally."
-  - id: BUG-002
-    title: Live-state realmlist appears to restore localhost despite LAN-ready docs
+      - athena_context/AUDIT.md
+      - athena_context/ASSET_INVENTORY.md
+    next_action: "Reconcile against an official ChatGPT export and attachment metadata."
+  - id: BUG-ATHENA-003
+    title: Local GitHub CLI is unavailable for user-level Project synchronization
     status: open
     severity: medium
-    layer: live-state
+    layer: github
     evidence:
-      - "acore_auth.sql contains realmlist INSERT with 127.0.0.1"
-    next_action: "Update restore flow to set intended realm address after import."
-  - id: BUG-003
-    title: Docker command unavailable to live server probe
-    status: open
-    severity: medium
-    layer: playerbots-stack
-    evidence:
-      - "Invoke-LiveServerProbe.ps1 reported docker command not found."
-    next_action: "Install Docker CLI, start Docker Desktop, or run probe from a shell where docker is available."
+      - "Get-Command gh returned no executable on 2026-08-01."
+    next_action: "Use the connected GitHub/browser surface for the current task or install GitHub CLI after explicit approval."
+legacy_bugs:
+  - id: BUG-LEGACY-001
+    title: Copied Python venv points to an old machine path
+    status: dormant
+    layer: legacy-wow
+  - id: BUG-LEGACY-002
+    title: Legacy live-state realmlist restores localhost
+    status: dormant
+    layer: legacy-wow
+  - id: BUG-LEGACY-003
+    title: Docker command unavailable to the legacy live-server probe
+    status: dormant
+    layer: legacy-wow
