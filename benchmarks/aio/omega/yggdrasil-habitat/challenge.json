@@ -1,0 +1,96 @@
+{
+  "schema": "project-athena.aio.omega.challenge.v0.1",
+  "benchmark_id": "AIO-OMEGA-001",
+  "name": "Yggdrasil Closed-World Habitat Challenge",
+  "mode": "blind_seeded_closed_world",
+  "objective": "Diagnose, reconstruct, operate and adapt a 48-person isolated habitat for 730 simulated days while preserving one AIO contract lineage and a complete manual operating path.",
+  "rounds": [
+    {"id": "R0", "name": "single_input_contract", "required": true},
+    {"id": "R1", "name": "blind_diagnosis", "required": true},
+    {"id": "R2", "name": "active_experiment_selection", "required": true},
+    {"id": "R3", "name": "polymath_reconstruction", "required": true},
+    {"id": "R4", "name": "adversarial_crisis", "required": true},
+    {"id": "R5", "name": "rapid_adoption_without_abandonment", "required": true},
+    {"id": "R6", "name": "human_intervention", "required": true},
+    {"id": "R7", "name": "simplification_and_handoff", "required": true},
+    {"id": "R8", "name": "method_repass", "required": true}
+  ],
+  "public_system": {
+    "crew": 48,
+    "mission_days": 730,
+    "resupply_cutoff_day": 30,
+    "domains": [
+      "energy",
+      "atmosphere",
+      "water",
+      "food_biology",
+      "thermal",
+      "software_control",
+      "cybersecurity",
+      "maintenance",
+      "logistics",
+      "human_factors",
+      "governance"
+    ],
+    "evidence_types": [
+      "telemetry",
+      "maintenance_logs",
+      "operator_reports",
+      "design_documents",
+      "scientific_memos",
+      "inventory",
+      "incident_reports",
+      "policy_constraints"
+    ],
+    "diagnostic_budget_units": 100,
+    "minimum_candidates": 10
+  },
+  "hidden_generation": {
+    "secret_seed_required": true,
+    "parameters": [
+      "component_efficiencies",
+      "degradation_curves",
+      "causal_faults",
+      "sensor_biases",
+      "noise_models",
+      "corrupted_evidence",
+      "environment_sequence",
+      "crew_demand",
+      "shock_schedule",
+      "upgrade_properties",
+      "feasible_frontier"
+    ],
+    "solver_access": "forbidden"
+  },
+  "hard_gates": [
+    "no_hidden_truth_access",
+    "no_evidence_fabrication",
+    "all_21_aio_phases_nonzero",
+    "valid_parent_hashes",
+    "human_authority_preserved",
+    "rollback_for_consequential_changes",
+    "manual_operating_path",
+    "explicit_new_branch_when_assumptions_change"
+  ],
+  "score_domains": [
+    {"id": "diagnosis", "points": 15},
+    {"id": "experiments", "points": 10},
+    {"id": "science", "points": 10},
+    {"id": "multiscale", "points": 5},
+    {"id": "candidates", "points": 10},
+    {"id": "engineering", "points": 20},
+    {"id": "adaptation", "points": 10},
+    {"id": "mitigation", "points": 7},
+    {"id": "governance", "points": 5},
+    {"id": "operability", "points": 5},
+    {"id": "method_repass", "points": 3}
+  ],
+  "pass_thresholds": {
+    "overall_score": 85,
+    "diagnosis_f1": 0.70,
+    "maximum_brier_score": 0.18,
+    "minimum_survival_probability": 0.95,
+    "minimum_no_critical_exhaustion_rate": 0.90,
+    "manual_operator_pass": true
+  }
+}
