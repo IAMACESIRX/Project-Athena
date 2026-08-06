@@ -3,7 +3,7 @@
   "project": {
     "name": "Project Athena",
     "root": "D:\\Projects\\Project Athena",
-    "created_for": "local AI prosthetic external brain, durable memory, A.E.S.I.R. research, F.O.R.G.E. reconstruction, shared human-AI pipelines, Plan architecture authority, and Nexus-V execution research",
+    "created_for": "local AI prosthetic external brain, AIO unified contracts, durable memory, A.E.S.I.R. research, F.O.R.G.E. reconstruction, shared human-AI pipelines, Plan architecture authority, and Nexus-V execution research",
     "hosting": "local_first_with_explicit_publication",
     "cloud_push_allowed": false,
     "cloud_publication_policy": "governance/cloud-publication-policy.md",
@@ -17,7 +17,9 @@
     "ai": "AI-PORTAL.md",
     "context": "context.md",
     "plan_context": "Plan/context.md",
-    "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+    "aio_master_contract": "contracts/AIO-MASTER-CONTRACT.yml",
+    "aio_contract_tool": "tools/aio_contract.py",
+    "aio_pipeline": "standards/human-ai-pipeline/AIO-UNIFIED-PIPELINE.md",
     "aesir_portal": "aesir/AESIR-PORTAL.md",
     "aesir_manifest": "aesir/manifest.yml",
     "forge_portal": "forge/FORGE-PORTAL.md",
@@ -33,6 +35,7 @@
   },
   "priority_sources": {
     "human_direction": "latest explicit human instruction",
+    "aio_contract": "contracts/AIO-MASTER-CONTRACT.yml",
     "architecture_intent": "Plan/",
     "current_context": "context.md",
     "plan_context": "Plan/context.md",
@@ -43,9 +46,23 @@
     "aesir_process": "aesir/engine/pipeline.yml",
     "forge_process": "forge/engine/pipeline.yml"
   },
+  "aio": {
+    "master_contract": "contracts/AIO-MASTER-CONTRACT.yml",
+    "instance_schema": "contracts/aio-contract-instance.schema.json",
+    "documentation": "contracts/README.md",
+    "full_stack_pipeline": "standards/human-ai-pipeline/AIO-UNIFIED-PIPELINE.md",
+    "tool": "tools/aio_contract.py",
+    "example_input": "standards/human-ai-pipeline/examples/aio-input.example.json",
+    "tests": "standards/human-ai-pipeline/tests/test_aio_contract.py",
+    "contract_model": "single_logical_contract_hypergraph",
+    "pairwise_contract_authority": false,
+    "participants": ["human_owner", "athena", "aesir", "forge", "aegis", "nexus_v", "janus", "jarvis", "oasis", "implementation_toolchain"],
+    "modes": ["manual", "ai_assisted", "automated", "hybrid"]
+  },
   "human_ai_pipeline": {
     "root": "standards/human-ai-pipeline",
     "standard": "standards/human-ai-pipeline/STANDARD-v0.1.md",
+    "aio_pipeline": "standards/human-ai-pipeline/AIO-UNIFIED-PIPELINE.md",
     "onboarding": "standards/human-ai-pipeline/ONBOARDING.md",
     "mitigation_framework": "standards/human-ai-pipeline/MITIGATION-OFFSET-FRAMEWORK.md",
     "intervention_protocol": "standards/human-ai-pipeline/INTERVENTION-PROTOCOL.md",
@@ -66,6 +83,8 @@
     "cycle_report_template": "templates/athena-cycle-report.md",
     "human_ai_profile": "standards/human-ai-pipeline/profiles/athena.yml",
     "human_ai_adapter": "engine/HAIPS-ATHENA-ADAPTER.md",
+    "aio_participant_id": "athena",
+    "aio_contract": "contracts/AIO-MASTER-CONTRACT.yml",
     "intake_folder": "work/intake",
     "cycle_reports": "engine/cycle-reports",
     "memory_map": "memory/athena-memory-map.md"
@@ -77,8 +96,9 @@
     "pipeline": "aesir/engine/pipeline.yml",
     "template": "aesir/templates/research-cycle.md",
     "human_ai_profile": "standards/human-ai-pipeline/profiles/aesir.yml",
-    "athena_contract": "aesir/adapters/ATHENA-CONTRACT.md",
-    "forge_contract": "aesir/adapters/FORGE-CONTRACT.md"
+    "aio_participant_id": "aesir",
+    "aio_contract": "contracts/AIO-MASTER-CONTRACT.yml",
+    "generated_view_adapter": "aesir/adapters/README.md"
   },
   "forge": {
     "root": "forge",
@@ -92,9 +112,9 @@
     "snapshot_schema": "forge/schemas/functional-snapshot.schema.json",
     "trace_schema": "forge/schemas/compile-trace.schema.json",
     "human_ai_profile": "standards/human-ai-pipeline/profiles/forge.yml",
-    "human_ai_contract": "forge/adapters/HAIPS-CONTRACT.md",
-    "aesir_contract": "forge/adapters/AESIR-CONTRACT.md",
-    "athena_contract": "forge/adapters/ATHENA-CONTRACT.md"
+    "aio_participant_id": "forge",
+    "aio_contract": "contracts/AIO-MASTER-CONTRACT.yml",
+    "generated_view_adapter": "forge/adapters/README.md"
   },
   "registries": {
     "layers": "registries/layers.yml",
@@ -112,6 +132,7 @@
     "forge_root": "forge",
     "forge_architecture": "forge/architecture/FORGE-SYSTEM-SPEC-v0.1.md",
     "human_ai_pipeline_root": "standards/human-ai-pipeline",
+    "aio_contract_root": "contracts",
     "plan_roadmap": "Plan/ROADMAP.md",
     "plan_todo": "Plan/TODO.md",
     "plan_status": "Plan/TODO_STATUS.md",
@@ -125,7 +146,8 @@
     "nexus_v_rtl": "Nexus V/rtl",
     "nexus_v_toolchain": "Nexus V/toolchain",
     "nexus_v_reports": "Nexus V/reports",
-    "nexus_v_matrix": "Nexus V/docs/NEXUS-V-IMPLEMENTATION-MATRIX.md"
+    "nexus_v_matrix": "Nexus V/docs/NEXUS-V-IMPLEMENTATION-MATRIX.md",
+    "aio_future_nvir_section": "specified"
   },
   "identity": {"readme": "identity/README.md", "constitution": "identity/constitution.md", "mission_and_scope": "identity/mission-and-scope.md"},
   "governance": {"absolutes": "governance/absolutes.md", "cloud_publication_policy": "governance/cloud-publication-policy.md", "policy_matrix": "governance/policy-matrix.yml", "self_correction": "governance/self-correction.md", "error_correction": "governance/error-correction.md"},
