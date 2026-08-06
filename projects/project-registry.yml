@@ -9,7 +9,16 @@ projects:
     evidence_namespace: EVD-ATHENA
     local_only: true
     root: D:/Projects/Project Athena
-    managed_layers: [project-athena, plan, nexus-v, aesir, forge, human-ai-pipeline, athena-engine, athena-memory, athena-work, athena-tools]
+    managed_layers: [project-athena, plan, nexus-v, aesir, forge, aio-contract, human-ai-pipeline, athena-engine, athena-memory, athena-work, athena-tools]
+  - id: aio-contract
+    name: AIO Multi-Weighted Master Contract
+    status: active_foundation
+    project_brain: contracts/AIO-MASTER-CONTRACT.yml
+    evidence_namespace: EVD-AIO
+    local_only: true
+    root: D:/Projects/Project Athena/contracts
+    managed_layers: [aio-contract, athena, aesir, forge, aegis, nexus-v, human-ai-pipeline]
+    note: Single canonical contract hypergraph and input-once full-stack execution graph. Pairwise contracts are generated non-authoritative views.
   - id: aesir
     name: A.E.S.I.R.
     status: active_subsystem
@@ -17,8 +26,8 @@ projects:
     evidence_namespace: EVD-AESIR
     local_only: true
     root: D:/Projects/Project Athena/aesir
-    managed_layers: [aesir, research, human-ai-pipeline]
-    note: Adaptive Evolutionary System for Intelligent Research; independent polymath research engine with manual, AI-assisted, automated and hybrid operation.
+    managed_layers: [aesir, research, aio-contract, human-ai-pipeline]
+    note: Adaptive Evolutionary System for Intelligent Research; polymath research participant in the AIO contract.
   - id: forge
     name: F.O.R.G.E.
     status: active_subsystem
@@ -26,17 +35,17 @@ projects:
     evidence_namespace: EVD-FORGE
     local_only: true
     root: D:/Projects/Project Athena/forge
-    managed_layers: [forge, human-ai-pipeline]
-    note: First-Principles Ontological Reconstruction and Generational Evolution; independent cognitive-synthesis system that complements A.E.S.I.R. and writes governed outputs through ATHENA.
+    managed_layers: [forge, aio-contract, human-ai-pipeline]
+    note: First-Principles Ontological Reconstruction and Generational Evolution; synthesis and native-reconstruction participant in the AIO contract.
   - id: human-ai-pipeline
     name: Human–AI Interoperable Pipeline Standard
     status: active_foundation
-    project_brain: standards/human-ai-pipeline/STANDARD-v0.1.md
+    project_brain: standards/human-ai-pipeline/AIO-UNIFIED-PIPELINE.md
     evidence_namespace: EVD-HAIPS
     local_only: true
     root: D:/Projects/Project Athena/standards/human-ai-pipeline
-    managed_layers: [human-ai-pipeline, athena, aesir, forge]
-    note: Shared manual, AI-assisted, automated and hybrid execution, intervention, mitigation and rendering contract for the entire project.
+    managed_layers: [aio-contract, human-ai-pipeline, athena, aesir, forge]
+    note: Manual, AI-assisted, automated and hybrid execution, intervention, mitigation and rendering surfaces for the AIO contract.
   - id: nexus-v
     name: Nexus V
     status: active_subsystem
@@ -44,7 +53,7 @@ projects:
     evidence_namespace: EVD-NEXUSV
     local_only: true
     root: D:/Projects/Project Athena/Nexus V
-    managed_layers: [nexus-v, plan]
+    managed_layers: [nexus-v, aio-contract, plan]
   - id: general-ai-os
     name: General AI-OS Control Plane
     status: active_foundation
