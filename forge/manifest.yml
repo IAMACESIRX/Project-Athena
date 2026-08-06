@@ -10,6 +10,7 @@ system:
     file_native_compiler: implemented
     manual_workflow: implemented
     shared_human_ai_profile: implemented
+    aio_contract_participant: implemented
     mitigation_offset_pass: specified
     ai_council_orchestration: specified
     temporal_graph_runtime: specified
@@ -23,18 +24,22 @@ entrypoints:
   example: forge/examples/concept-packet.example.json
   shared_standard: standards/human-ai-pipeline/STANDARD-v0.1.md
   shared_profile: standards/human-ai-pipeline/profiles/forge.yml
-  shared_tool: tools/human_ai_pipeline.py
+  aio_master_contract: contracts/AIO-MASTER-CONTRACT.yml
+  aio_tool: tools/aio_contract.py
 schemas:
   concept_packet: forge/schemas/concept-packet.schema.json
   functional_snapshot: forge/schemas/functional-snapshot.schema.json
   compile_trace: forge/schemas/compile-trace.schema.json
   shared_run_packet: standards/human-ai-pipeline/run-packet.schema.json
+  aio_instance: contracts/aio-contract-instance.schema.json
 interfaces:
-  aesir: forge/adapters/AESIR-CONTRACT.md
-  athena: forge/adapters/ATHENA-CONTRACT.md
-  human_ai_pipeline: forge/adapters/HAIPS-CONTRACT.md
+  canonical_contract: contracts/AIO-MASTER-CONTRACT.yml
+  participant_id: forge
+  generated_view_adapter: forge/adapters/README.md
+  pairwise_contract_authority: false
 validation:
   tests: python -m unittest discover -s forge/tests -p "test_*.py"
   shared_tests: python -m unittest discover -s standards/human-ai-pipeline/tests -p "test_*.py"
+  aio_validate: python tools/aio_contract.py validate-master contracts/AIO-MASTER-CONTRACT.yml
   compile: python -m compileall -q forge tools
   example_validate: python forge/compiler/forge_compiler.py validate forge/examples/concept-packet.example.json
