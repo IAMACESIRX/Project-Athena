@@ -65,6 +65,14 @@ jobs:
           python -m unittest discover \
             -s benchmarks/aio/omega/tests \
             -p "test_*.py"
+      - name: Run AIO OMEGA reference smoke trial
+        run: |
+          rm -rf /tmp/aio-omega-reference
+          python tools/aio_omega_reference_solver.py \
+            --session /tmp/aio-omega-reference/session \
+            --seed reference-seed-001 \
+            --submission-out artifacts/aio-omega-reference-submission.json \
+            --score-out artifacts/aio-omega-reference-score.json
       - name: Validate human-AI pipeline profiles
         run: |
           python tools/human_ai_pipeline.py compliance \
@@ -100,4 +108,6 @@ jobs:
             artifacts/aio-golden-001-run.json
             artifacts/aio-golden-001-score.json
             artifacts/aio-golden-001-report.md
+            artifacts/aio-omega-reference-submission.json
+            artifacts/aio-omega-reference-score.json
           if-no-files-found: warn

@@ -1,0 +1,79 @@
+{
+  "schema": "project-athena.aio.omega.world_model.v0.1",
+  "benchmark_id": "AIO-OMEGA-001",
+  "mission": {
+    "crew": 48,
+    "days": 730,
+    "diagnostic_budget": 100,
+    "replays": 24
+  },
+  "baseline": {
+    "generation_kw": 132.0,
+    "demand_kw": 106.0,
+    "battery_kwh": 1800.0,
+    "water_inventory_l": 42000.0,
+    "water_use_l_person_day": 25.0,
+    "water_recovery": 0.94,
+    "oxygen_inventory_kg": 260.0,
+    "oxygen_generation_kg_day": 44.0,
+    "oxygen_use_kg_person_day": 0.84,
+    "co2_scrub_kg_day": 50.0,
+    "co2_generation_kg_person_day": 1.0,
+    "radiator_capacity_kw": 128.0,
+    "thermal_load_kw": 112.0,
+    "food_inventory_person_days": 2100.0,
+    "food_production_person_days_day": 45.0
+  },
+  "fault_catalog": [
+    {"id":"pv_soiling_degradation","domain":"energy","severity":[0.12,0.28],"tests":["independent_power_calibration","array_iv_curve"],"symptoms":["falling_generation","battery_cycling"]},
+    {"id":"battery_capacity_fade","domain":"energy","severity":[0.20,0.45],"tests":["battery_capacity_test","impedance_spectroscopy"],"symptoms":["overnight_voltage_collapse","high_depth_of_discharge"]},
+    {"id":"electrolyzer_oxygen_leak","domain":"atmosphere","severity":[0.08,0.24],"tests":["gas_tracer_test","oxygen_mass_balance"],"symptoms":["oxygen_deficit","compressor_runtime"]},
+    {"id":"co2_scrubber_bypass","domain":"atmosphere","severity":[0.15,0.40],"tests":["co2_bypass_inspection","gas_path_pressure_test"],"symptoms":["co2_rise","scrubber_normal_current"]},
+    {"id":"water_membrane_fouling","domain":"water","severity":[0.03,0.10],"tests":["water_mass_balance","membrane_flux_test"],"symptoms":["inventory_decline","waste_stream_increase"]},
+    {"id":"radiator_efficiency_loss","domain":"thermal","severity":[0.12,0.32],"tests":["radiator_thermal_test","coolant_flow_test"],"symptoms":["temperature_drift","pump_power_rise"]},
+    {"id":"power_sensor_positive_bias","domain":"instrumentation","severity":[0.04,0.12],"tests":["independent_power_calibration","sensor_reference_swap"],"symptoms":["reported_surplus_real_deficit"]},
+    {"id":"water_sensor_negative_bias","domain":"instrumentation","severity":[0.02,0.08],"tests":["water_mass_balance","sensor_reference_swap"],"symptoms":["false_inventory_loss"]},
+    {"id":"control_loop_windup","domain":"software_control","severity":[0.10,0.35],"tests":["control_loop_replay","safe_controller_shadow"],"symptoms":["oscillation","actuator_saturation"]},
+    {"id":"biofilter_nitrification_loss","domain":"food_biology","severity":[0.15,0.38],"tests":["biofilter_assay","nutrient_mass_balance"],"symptoms":["crop_yield_decline","ammonia_rise"]},
+    {"id":"maintenance_log_corruption","domain":"cybersecurity","severity":[0.20,0.65],"tests":["log_chain_integrity","physical_work_order_audit"],"symptoms":["inconsistent_service_history"]},
+    {"id":"spare_inventory_mislabel","domain":"logistics","severity":[0.15,0.45],"tests":["inventory_barcode_audit","physical_spare_fit_check"],"symptoms":["repair_delay","part_mismatch"]}
+  ],
+  "diagnostics": [
+    {"id":"independent_power_calibration","cost":8,"risk":0.01,"covers":["pv_soiling_degradation","power_sensor_positive_bias"]},
+    {"id":"array_iv_curve","cost":10,"risk":0.02,"covers":["pv_soiling_degradation"]},
+    {"id":"battery_capacity_test","cost":12,"risk":0.04,"covers":["battery_capacity_fade"]},
+    {"id":"impedance_spectroscopy","cost":7,"risk":0.01,"covers":["battery_capacity_fade"]},
+    {"id":"gas_tracer_test","cost":12,"risk":0.03,"covers":["electrolyzer_oxygen_leak"]},
+    {"id":"oxygen_mass_balance","cost":8,"risk":0.01,"covers":["electrolyzer_oxygen_leak"]},
+    {"id":"co2_bypass_inspection","cost":8,"risk":0.02,"covers":["co2_scrubber_bypass"]},
+    {"id":"gas_path_pressure_test","cost":9,"risk":0.02,"covers":["co2_scrubber_bypass"]},
+    {"id":"water_mass_balance","cost":10,"risk":0.01,"covers":["water_membrane_fouling","water_sensor_negative_bias"]},
+    {"id":"membrane_flux_test","cost":8,"risk":0.02,"covers":["water_membrane_fouling"]},
+    {"id":"radiator_thermal_test","cost":10,"risk":0.03,"covers":["radiator_efficiency_loss"]},
+    {"id":"coolant_flow_test","cost":8,"risk":0.02,"covers":["radiator_efficiency_loss"]},
+    {"id":"sensor_reference_swap","cost":9,"risk":0.01,"covers":["power_sensor_positive_bias","water_sensor_negative_bias"]},
+    {"id":"control_loop_replay","cost":8,"risk":0.01,"covers":["control_loop_windup"]},
+    {"id":"safe_controller_shadow","cost":10,"risk":0.02,"covers":["control_loop_windup"]},
+    {"id":"biofilter_assay","cost":10,"risk":0.02,"covers":["biofilter_nitrification_loss"]},
+    {"id":"nutrient_mass_balance","cost":8,"risk":0.01,"covers":["biofilter_nitrification_loss"]},
+    {"id":"log_chain_integrity","cost":6,"risk":0.00,"covers":["maintenance_log_corruption"]},
+    {"id":"physical_work_order_audit","cost":7,"risk":0.00,"covers":["maintenance_log_corruption"]},
+    {"id":"inventory_barcode_audit","cost":6,"risk":0.00,"covers":["spare_inventory_mislabel"]},
+    {"id":"physical_spare_fit_check","cost":7,"risk":0.01,"covers":["spare_inventory_mislabel"]}
+  ],
+  "shock_catalog": [
+    {"id":"dust_storm","domain":"energy","duration_days":[12,28],"severity":[0.25,0.55]},
+    {"id":"battery_module_failure","domain":"energy","duration_days":[30,120],"severity":[0.15,0.35]},
+    {"id":"radiator_pump_loss","domain":"thermal","duration_days":[2,14],"severity":[0.20,0.45]},
+    {"id":"water_contamination","domain":"water","duration_days":[3,12],"severity":[0.10,0.28]},
+    {"id":"medical_load_surge","domain":"human_factors","duration_days":[5,18],"severity":[0.08,0.18]},
+    {"id":"controller_comms_loss","domain":"software_control","duration_days":[1,7],"severity":[0.20,0.50]},
+    {"id":"operator_error","domain":"human_factors","duration_days":[1,4],"severity":[0.08,0.22]},
+    {"id":"spare_part_mismatch","domain":"logistics","duration_days":[5,20],"severity":[0.10,0.30]}
+  ],
+  "upgrade_catalog": [
+    {"id":"solid_state_storage","benefits":{"battery_capacity_multiplier":1.35,"round_trip_efficiency":0.96},"costs":{"integration_complexity":0.35,"unproven_failure_rate":0.06}},
+    {"id":"adaptive_membrane","benefits":{"water_recovery_delta":0.025,"fouling_resistance":0.50},"costs":{"maintenance_specialization":0.25,"control_complexity":0.20}},
+    {"id":"high_flux_radiator","benefits":{"radiator_capacity_multiplier":1.28},"costs":{"pump_power_kw":4.0,"spare_incompatibility":0.30}}
+  ]
+}
