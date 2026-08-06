@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://project-athena.local/contracts/aio-contract-instance.schema.json",
+  "title": "AIO Shared Contract Instance",
+  "type": "object",
+  "required": ["schema","identity","input","weights","pipeline_state","shared_state","events","interventions","attestations","outputs","provenance"],
+  "properties": {
+    "schema": {"const": "project-athena.aio.contract_instance.v0.1"},
+    "identity": {
+      "type": "object",
+      "required": ["instance_id","master_contract_id","master_version","created_at","mode","status"],
+      "properties": {
+        "instance_id": {"type": "string","pattern": "^AIO-[A-F0-9]+$"},
+        "mode": {"enum": ["manual","ai_assisted","automated","hybrid"]},
+        "status": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "input": {"type": "object","required": ["title","objective"],"additionalProperties": true},
+    "weights": {"type": "object","additionalProperties": {"type": "number","minimum": 0,"maximum": 1}},
+    "pipeline_state": {
+      "type": "object",
+      "required": ["current_phase","phases"],
+      "properties": {
+        "current_phase": {"pattern": "^P(0[0-9]|1[0-9]|20)$"},
+        "phases": {
+          "type": "array","minItems": 21,"maxItems": 21,
+          "items": {
+            "type": "object","required": ["id","name","owner","status","effective_depth","contracts","result","evidence"],
+            "properties": {"effective_depth": {"type": "number","exclusiveMinimum": 0,"maximum": 1}},
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "shared_state": {"type": "object","additionalProperties": true},
+    "events": {"type": "array","minItems": 1,"items": {"type": "object","required": ["event_id","timestamp","actor","type","payload"],"additionalProperties": true}},
+    "interventions": {"type": "array"},
+    "attestations": {"type": "array"},
+    "outputs": {"type": "object"},
+    "provenance": {"type": "object","required": ["current_sha256","lineage"],"properties": {"current_sha256": {"type": "string","minLength": 64,"maxLength": 64},"lineage": {"type": "array"}},"additionalProperties": true}
+  },
+  "additionalProperties": true
+}
