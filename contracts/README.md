@@ -1,30 +1,44 @@
-# AIO Unified Contract System
+# AIO Contract Authority
 
-`AIO-MASTER-CONTRACT.yml` is the single canonical contract definition for ATHENA, A.E.S.I.R., F.O.R.G.E., Aegis, Nexus‑V and future participants.
+`AIO-MASTER-CONTRACT.yml` is the single canonical cross-system contract for Project Athena's interoperating human, AI, software, simulation, compiler and future hardware participants.
 
-## Operating rule
+## Core rule
 
-One idea or task creates one AIO contract instance. Every authorised human, AI, script, compiler, simulator or hardware gate reads and writes that same logical state. Pairwise contracts are not independent authorities; any subsystem-specific contract is a generated view of the master instance.
+One input creates one shared logical contract instance. ATHENA, A.E.S.I.R., F.O.R.G.E., Aegis, Nexus-V, JANUS, JARVIS, OASIS and implementation toolchains read and write authorised portions of that same versioned state.
 
-## Why
+Pairwise contracts are not independent authorities. Participant-specific contracts or adapter documents are generated projections of the master contract and must retain the canonical contract ID, instance ID, version, state hash and provenance.
 
-This prevents circular ingestion, semantic drift and duplicated state. It also maps cleanly to future packet, register, memory-map and NVIR representations.
+## Files
 
-## Contract mechanics
+- `AIO-MASTER-CONTRACT.yml` — canonical participants, weights, contract families, pipeline, scale ladder, lenses and compatibility rules.
+- `aio-contract-instance.schema.json` — machine validation for live contract instances.
+- `aio-master-contract.schema.json` — machine validation for the master contract definition.
 
-- Append-only events plus a materialised current state.
-- Atomic writes using `expected_parent_sha256`.
-- Unknown fields are preserved for forward compatibility.
-- Human-readable JSON/YAML remains the manual fallback.
-- AI and automation are preferred accelerators, not dependencies.
-- All 21 pipeline phases run for every input. Weights change depth and resource allocation, never phase presence.
-- Hard gates for authority, truth, safety, privacy, provenance, rollback, mitigation and Aegis attestation cannot be outweighed.
+## Operating properties
 
-## CLI
+- multi-weighted rather than one-dimensional scoring;
+- hard gates cannot be outweighed;
+- all pipeline phases remain present at non-zero depth;
+- depth, priority, resource use and review intensity are weighted dynamically;
+- append-only events preserve historical paths;
+- updates require an expected parent SHA-256 or become explicit conflicts/branches;
+- human-readable YAML/Markdown and machine-readable JSON represent the same state;
+- unknown fields are preserved for forward compatibility;
+- AI is preferred for throughput but never required for validity;
+- manual intervention, editing, branching, rollback and risk acceptance remain available.
 
-```text
+## Single-input pipeline
+
+Use:
+
+```powershell
 python tools/aio_contract.py validate-master contracts/AIO-MASTER-CONTRACT.yml
-python tools/aio_contract.py instantiate --master contracts/AIO-MASTER-CONTRACT.yml --input standards/human-ai-pipeline/examples/aio-input.example.json --out work/aio/example.json
-python tools/aio_contract.py validate-instance work/aio/example.json --master contracts/AIO-MASTER-CONTRACT.yml
-python tools/aio_contract.py render work/aio/example.json --out work/aio/example.md
+python tools/aio_contract.py instantiate `
+  --master contracts/AIO-MASTER-CONTRACT.yml `
+  --input standards/human-ai-pipeline/examples/aio-input.example.json `
+  --out work/aio-instance.json
+python tools/aio_contract.py validate-instance work/aio-instance.json
+python tools/aio_contract.py render work/aio-instance.json --out work/aio-instance.md
 ```
+
+The instantiated pipeline covers full scientific, intra- and cross-scientific, polymath, multiscale, systems, synthesis, engineering, simulation, mitigation, governance, attestation, execution, output and method-revalidation phases.
