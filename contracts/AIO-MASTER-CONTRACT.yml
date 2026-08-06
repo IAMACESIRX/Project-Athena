@@ -1,0 +1,179 @@
+schema: project-athena.aio.master_contract.v0.1
+metadata:
+  id: AIO-MASTER-CONTRACT
+  name: AIO Multi-Weighted Master Contract
+  expansion: All-In-One Interoperability and Orchestration
+  version: 0.1.0
+  updated: 2026-08-07
+  canonical_path: contracts/AIO-MASTER-CONTRACT.yml
+  status: implemented_foundation
+  plasticity: versioned_continuously_revalidatable
+architecture:
+  model: single_logical_contract_hypergraph
+  rule: one input creates one shared contract instance read and written by every authorised participant
+  pairwise_contracts: generated_views_only
+  state_model: append_only_events_plus_materialized_state
+  concurrency: expected_parent_sha256
+  unknown_fields: preserve
+  all_phases_required: true
+  minimum_phase_depth: 0.35
+  feedback: outputs re-enter the same instance as lineage-preserving events
+hard_gates:
+  human: explicit human direction and semantic corrections cannot be silently overridden
+  truth: claims retain fact/assumption/hypothesis/speculation/unknown status and evidence links
+  safety: unsafe or unauthorised execution is blocked
+  privacy: publication and private-state boundaries are enforced
+  provenance: every mutation records actor, parent hash, evidence and timestamp
+  state: consequential transitions require expected diff and rollback
+  mitigation: every control names benefits preserved, costs, new risks, tests and removal conditions
+  attest: consequential commits require Aegis trust and attestation
+weights:
+  dimensions: [human_authority,evidence_quality,epistemic_rigor,safety,privacy,relevance,breadth,depth,novelty,feasibility,performance,simplicity,reversibility,adaptability,integration,provenance,scale_coverage,resource_efficiency,temporal_urgency]
+  default:
+    human_authority: 1.0
+    evidence_quality: 1.0
+    epistemic_rigor: 1.0
+    safety: 1.0
+    privacy: 1.0
+    relevance: 0.9
+    breadth: 0.85
+    depth: 1.0
+    novelty: 0.75
+    feasibility: 0.9
+    performance: 0.8
+    simplicity: 0.75
+    reversibility: 0.95
+    adaptability: 0.95
+    integration: 1.0
+    provenance: 1.0
+    scale_coverage: 0.9
+    resource_efficiency: 0.7
+    temporal_urgency: 0.4
+  depth_formula: max(coverage_floor,min(1,0.45*requested_depth+0.35*base_depth+0.20*phase_affinity))
+  rule: weights alter depth, priority, review and resource allocation; no weight removes a required phase or defeats a hard gate
+participants:
+  human_owner:
+    type: human
+    authority: [final_direction,semantic_correction,risk_acceptance,publication_authorization]
+    writes: [objective,constraints,interventions,approvals,corrections]
+  athena:
+    type: institutional_intelligence
+    authority: [governance,memory,provenance,orchestration,canonical_writeback]
+    writes: [context,evidence_links,decisions,continuity,promotion]
+  aesir:
+    type: polymath_research_engine
+    authority: [research,evidence_expansion,hypothesis_generation,cross_domain_analysis]
+    writes: [research,evidence,hypotheses,unknowns,experiments]
+  forge:
+    type: cognitive_synthesis_system
+    authority: [symmetric_challenge,mechanism_mining,reverse_reconstruction,simplification]
+    writes: [candidates,mechanisms,tradeoffs,reconstructed_architecture,functional_snapshot]
+  aegis:
+    type: trust_attestation_commit_gate
+    authority: [trust_scoring,attestation,allow_deny_refuse_quarantine]
+    writes: [trust_score,attestation,commit_decision,quarantine_reason]
+  nexus_v:
+    type: versioned_execution_substrate
+    authority: [branch,diff,commit,snapshot,rollback]
+    writes: [state_graph,branch_lineage,execution_trace,rollback_point]
+  janus:
+    type: operative_metacognitive_intelligence
+    authority: [runtime_perception,tool_operation,state_diff_verification]
+  jarvis:
+    type: personal_executive_intelligence
+    authority: [human_context,immediate_orchestration,interaction]
+  oasis:
+    type: simulation_environment
+    authority: [simulation,digital_twin,world_model]
+  implementation_toolchain:
+    type: software_hardware_toolchain
+    authority: [code_generation,build,test,manufacturing_export]
+contracts:
+  - id: C01
+    name: authority_and_identity
+    requires: [participant_id,authority_scope,requested_action]
+  - id: C02
+    name: epistemic_and_evidence
+    requires: [claims,evidence_for,evidence_against,unknowns,falsifiers]
+  - id: C03
+    name: state_and_provenance
+    requires: [parent_sha256,event_id,actor,timestamp,expected_diff,rollback]
+  - id: C04
+    name: research_and_discovery
+    requires: [question,domains,sources,mechanisms,hypotheses,tests]
+  - id: C05
+    name: synthesis_and_reconstruction
+    requires: [candidate_lattice,donor_mechanisms,conflicts,tradeoffs,native_reconstruction]
+  - id: C06
+    name: engineering_and_implementation
+    requires: [requirements,interfaces,budgets,failure_modes,verification,operations]
+  - id: C07
+    name: mitigation_and_offset
+    requires: [weakness,benefits_preserved,control,tradeoffs,new_risks,verification,review,removal]
+  - id: C08
+    name: safety_privacy_governance
+    requires: [risk,authority,privacy_class,publication_class,gate_result]
+  - id: C09
+    name: attestation_and_commit
+    requires: [subject_hash,trust_inputs,trust_score,attestation,commit_decision]
+  - id: C10
+    name: output_and_views
+    requires: [human_view,machine_view,unresolved_state,lineage]
+  - id: C11
+    name: method_repass
+    requires: [method_version,methods_used,cost,outcome,lessons,revalidation_trigger]
+pipeline:
+  - {id: P00, name: single_input_capture, owner: human_owner, depth: 0.90, contracts: [C01,C03]}
+  - {id: P01, name: authority_privacy_safety_gate, owner: athena, depth: 1.00, contracts: [C01,C08]}
+  - {id: P02, name: context_state_temporal_map, owner: athena, depth: 0.90, contracts: [C03]}
+  - {id: P03, name: epistemic_partition_and_evidence_map, owner: aesir, depth: 1.00, contracts: [C02]}
+  - {id: P04, name: full_scientific_method, owner: aesir, depth: 1.00, contracts: [C02,C04]}
+  - {id: P05, name: intra_and_cross_scientific_integration, owner: aesir, depth: 1.00, contracts: [C04]}
+  - {id: P06, name: multiscale_full_stack_sweep, owner: aesir, depth: 0.95, contracts: [C04,C06]}
+  - {id: P07, name: aesir_polymath_expansion, owner: aesir, depth: 1.00, contracts: [C04]}
+  - {id: P08, name: systems_hypergraph_dependencies, owner: athena, depth: 0.95, contracts: [C03,C05]}
+  - {id: P09, name: forge_candidate_lattice_and_symmetric_challenge, owner: forge, depth: 1.00, contracts: [C05]}
+  - {id: P10, name: weighted_tournament_and_mechanism_mining, owner: forge, depth: 1.00, contracts: [C05]}
+  - {id: P11, name: native_reverse_reconstruction, owner: forge, depth: 1.00, contracts: [C05,C06]}
+  - {id: P12, name: full_engineering_method, owner: implementation_toolchain, depth: 1.00, contracts: [C06]}
+  - {id: P13, name: compile_time_complexity_runtime_simplification, owner: forge, depth: 0.95, contracts: [C05,C06]}
+  - {id: P14, name: simulation_prototype_reality_closure, owner: oasis, depth: 0.95, contracts: [C02,C06]}
+  - {id: P15, name: mitigation_and_offset, owner: athena, depth: 1.00, contracts: [C07,C08]}
+  - {id: P16, name: governance_memory_and_promotion, owner: athena, depth: 1.00, contracts: [C03,C08]}
+  - {id: P17, name: aegis_trust_attestation_commit_gate, owner: aegis, depth: 1.00, contracts: [C09]}
+  - {id: P18, name: nexus_versioned_execution_and_state_commit, owner: nexus_v, depth: 0.95, contracts: [C03,C09]}
+  - {id: P19, name: unified_outputs_and_generated_views, owner: athena, depth: 0.90, contracts: [C10]}
+  - {id: P20, name: method_repass_and_future_revalidation, owner: forge, depth: 0.85, contracts: [C11]}
+feedback_edges:
+  - {from: P14, to: P03, when: measurement_changes_evidence}
+  - {from: P15, to: P09, when: mitigation_changes_architecture}
+  - {from: P17, to: P12, when: attestation_denied_for_engineering_defect}
+  - {from: P18, to: P02, when: actual_state_differs_from_expected}
+scale_ladder:
+  - {id: S00, name: fundamental_physical}
+  - {id: S01, name: material_device}
+  - {id: S02, name: component}
+  - {id: S03, name: subsystem}
+  - {id: S04, name: system}
+  - {id: S05, name: system_of_systems}
+  - {id: S06, name: organisation_institution}
+  - {id: S07, name: population_society}
+  - {id: S08, name: ecological_planetary}
+  - {id: S09, name: civilisational_temporal}
+view_lenses: [physical,informational,computational,biological,cognitive,human_factors,software,hardware,network,security,economic,organisational,legal_governance,social,environmental,temporal,ethical]
+instance:
+  schema: project-athena.aio.contract_instance.v0.1
+  required: [identity,input,weights,pipeline_state,shared_state,events,interventions,attestations,outputs,provenance]
+  writer_rule: append event then update only authorised fields
+  manual_rule: JSON or YAML remains human-readable and editable
+  atomic_rule: every write supplies expected_parent_sha256; mismatch branches or records conflict
+  views_rule: subsystem and human views are generated projections and never independent authority
+compatibility:
+  canonical_text: YAML
+  runtime: [JSON,YAML]
+  human_view: Markdown
+  future_compiled: [CBOR,MessagePack,binary_memory_image,NVIR_object_section]
+  minimum_reader: ordered key_value records with unknown-field preservation
+  minimum_writer: append event or submit patch with actor,parent_hash,changed_fields,evidence
+  manual_fallback: true
+  ai_optional_but_preferred: true
