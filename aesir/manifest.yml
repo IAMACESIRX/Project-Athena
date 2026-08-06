@@ -10,6 +10,7 @@ system:
     manual_workflow: implemented
     machine_profile: implemented
     shared_pipeline_tooling: implemented
+    aio_contract_participant: implemented
     autonomous_research_orchestration: specified
 entrypoints:
   human: aesir/README.md
@@ -18,13 +19,17 @@ entrypoints:
   pipeline: aesir/engine/pipeline.yml
   template: aesir/templates/research-cycle.md
   shared_profile: standards/human-ai-pipeline/profiles/aesir.yml
-  tool: tools/human_ai_pipeline.py
+  aio_master_contract: contracts/AIO-MASTER-CONTRACT.yml
+  aio_tool: tools/aio_contract.py
 interfaces:
-  athena: aesir/adapters/ATHENA-CONTRACT.md
-  forge: aesir/adapters/FORGE-CONTRACT.md
+  canonical_contract: contracts/AIO-MASTER-CONTRACT.yml
+  participant_id: aesir
+  generated_view_adapter: aesir/adapters/README.md
+  pairwise_contract_authority: false
 outputs:
   human_readable: [research review, decision brief, experiment plan]
-  machine_readable: [HAIPS run packet, evidence bundle, hypotheses, candidate worlds, writeback packet]
+  machine_readable: [AIO contract events, evidence bundle, hypotheses, candidate worlds, writeback packet]
 validation:
   profile: python tools/human_ai_pipeline.py validate-profile standards/human-ai-pipeline/profiles/aesir.yml
+  aio_validate: python tools/aio_contract.py validate-master contracts/AIO-MASTER-CONTRACT.yml
   tests: python -m unittest discover -s standards/human-ai-pipeline/tests -p "test_*.py"
