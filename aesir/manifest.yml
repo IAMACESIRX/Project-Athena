@@ -1,0 +1,35 @@
+schema: aesir.manifest.v0.1
+updated: 2026-08-07
+system:
+  id: aesir
+  name: A.E.S.I.R.
+  expansion: Adaptive Evolutionary System for Intelligent Research
+  type: independent_polymath_research_engine
+  capability_state:
+    architecture: specified
+    manual_workflow: implemented
+    machine_profile: implemented
+    shared_pipeline_tooling: implemented
+    aio_contract_participant: implemented
+    autonomous_research_orchestration: specified
+entrypoints:
+  human: aesir/README.md
+  ai: aesir/AESIR-PORTAL.md
+  machine: aesir/manifest.yml
+  pipeline: aesir/engine/pipeline.yml
+  template: aesir/templates/research-cycle.md
+  shared_profile: standards/human-ai-pipeline/profiles/aesir.yml
+  aio_master_contract: contracts/AIO-MASTER-CONTRACT.yml
+  aio_tool: tools/aio_contract.py
+interfaces:
+  canonical_contract: contracts/AIO-MASTER-CONTRACT.yml
+  participant_id: aesir
+  generated_view_adapter: aesir/adapters/README.md
+  pairwise_contract_authority: false
+outputs:
+  human_readable: [research review, decision brief, experiment plan]
+  machine_readable: [AIO contract events, evidence bundle, hypotheses, candidate worlds, writeback packet]
+validation:
+  profile: python tools/human_ai_pipeline.py validate-profile standards/human-ai-pipeline/profiles/aesir.yml
+  aio_validate: python tools/aio_contract.py validate-master contracts/AIO-MASTER-CONTRACT.yml
+  tests: python -m unittest discover -s standards/human-ai-pipeline/tests -p "test_*.py"

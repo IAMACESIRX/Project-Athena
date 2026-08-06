@@ -1,0 +1,23 @@
+{
+  "title": "Golden Truth Challenge 001 — Passive Power at Thermal Equilibrium",
+  "objective": "Determine whether a sealed passive device immersed in a single uniform 300 K environment, initially at equilibrium, containing no consumable stored energy and receiving no external radiative, chemical, pressure, mechanical, informational or temperature gradient, can continuously deliver positive net electrical power to a load indefinitely.",
+  "mode": "ai_assisted",
+  "requested_depth": 1.0,
+  "semantic_invariants": [
+    "continuous means indefinite cyclic operation rather than temporary discharge",
+    "net power is measured after all sensing, switching, control and conversion costs",
+    "the environment is a single equilibrium reservoir",
+    "no hidden external energy or entropy sink is allowed"
+  ],
+  "known_truth_test": true,
+  "weights": {
+    "evidence_quality": 1.0,
+    "epistemic_rigor": 1.0,
+    "depth": 1.0,
+    "breadth": 0.95,
+    "feasibility": 1.0,
+    "safety": 0.9,
+    "simplicity": 0.8,
+    "scale_coverage": 1.0
+  }
+}

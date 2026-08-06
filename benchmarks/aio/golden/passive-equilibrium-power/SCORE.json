@@ -1,0 +1,16 @@
+{
+  "benchmark_id": "AIO-GOLDEN-001",
+  "score": 100,
+  "max_score": 100,
+  "minimum_score": 90,
+  "passed": true,
+  "checks": [
+    {"name": "known conclusion", "passed": true, "points": 25, "max_points": 25, "detail": "not_possible_under_stated_assumptions"},
+    {"name": "required mechanisms", "passed": true, "points": 20, "max_points": 20, "detail": "energy conservation, Kelvin-Planck second law, detailed balance"},
+    {"name": "failure explanations", "passed": true, "points": 15, "max_points": 15, "detail": "hidden input, depletion, nonequilibrium gradient, measurement/boundary error"},
+    {"name": "valid reconstruction", "passed": true, "points": 15, "max_points": 15, "detail": "introduce a real nonequilibrium source or gradient"},
+    {"name": "all phases completed", "passed": true, "points": 15, "max_points": 15, "detail": "21 completed"},
+    {"name": "full scale coverage", "passed": true, "points": 5, "max_points": 5, "detail": "10 scales"},
+    {"name": "broad lens coverage", "passed": true, "points": 5, "max_points": 5, "detail": "17 lenses"}
+  ]
+}

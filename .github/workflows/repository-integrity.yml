@@ -15,27 +15,76 @@ jobs:
   integrity:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v7.0.1
-
       - name: Set up Python
         uses: actions/setup-python@v7.0.0
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements-ci.txt
-
       - name: Install validation dependencies
         run: python -m pip install --upgrade pip -r requirements-ci.txt
-
       - name: Validate repository structure and data
         run: python tools/validate_repository.py
-
       - name: Compile Python sources
-        run: python -m compileall -q tools "Nexus V/scripts" "Nexus V/toolchain"
-
+        run: python -m compileall -q tools forge standards contracts benchmarks "Nexus V/scripts" "Nexus V/toolchain"
+      - name: Run F.O.R.G.E. unit tests
+        run: python -m unittest discover -s forge/tests -p "test_*.py"
+      - name: Run shared human-AI and AIO tests
+        run: python -m unittest discover -s standards/human-ai-pipeline/tests -p "test_*.py"
+      - name: Validate AIO master and example instance
+        run: |
+          python tools/aio_contract.py validate-master contracts/AIO-MASTER-CONTRACT.yml
+          python tools/aio_contract.py instantiate \
+            --master contracts/AIO-MASTER-CONTRACT.yml \
+            --input standards/human-ai-pipeline/examples/aio-input.example.json \
+            --out /tmp/aio-instance.json
+          python tools/aio_contract.py validate-instance /tmp/aio-instance.json \
+            --master contracts/AIO-MASTER-CONTRACT.yml
+          python tools/aio_contract.py render /tmp/aio-instance.json \
+            --out artifacts/aio-contract-example.md
+      - name: Run AIO golden truth benchmark
+        run: |
+          python tools/aio_truth_benchmark.py \
+            --aio-module tools/aio_contract.py \
+            --master contracts/AIO-MASTER-CONTRACT.yml \
+            --input benchmarks/aio/golden/passive-equilibrium-power/input.json \
+            --solution benchmarks/aio/golden/passive-equilibrium-power/ai-solution.json \
+            --golden benchmarks/aio/golden/passive-equilibrium-power/golden.json \
+            --run-out artifacts/aio-golden-001-run.json \
+            --json-out artifacts/aio-golden-001-score.json \
+            --report-out artifacts/aio-golden-001-report.md
+      - name: Validate AIO OMEGA maximum-capability benchmark
+        run: |
+          python tools/aio_omega_validate.py validate-definition \
+            --challenge benchmarks/aio/omega/yggdrasil-habitat/challenge.json \
+            --scoring benchmarks/aio/omega/yggdrasil-habitat/scoring.json \
+            --schema benchmarks/aio/omega/yggdrasil-habitat/submission.schema.json
+          python -m unittest discover \
+            -s benchmarks/aio/omega/tests \
+            -p "test_*.py"
+      - name: Run AIO OMEGA reference smoke trial
+        run: |
+          rm -rf /tmp/aio-omega-reference
+          python tools/aio_omega_reference_solver.py \
+            --session /tmp/aio-omega-reference/session \
+            --seed reference-seed-001 \
+            --submission-out artifacts/aio-omega-reference-submission.json \
+            --score-out artifacts/aio-omega-reference-score.json
+      - name: Validate human-AI pipeline profiles
+        run: |
+          python tools/human_ai_pipeline.py compliance \
+            --root . \
+            --profiles \
+              standards/human-ai-pipeline/profiles/athena.yml \
+              standards/human-ai-pipeline/profiles/aesir.yml \
+              standards/human-ai-pipeline/profiles/forge.yml
+      - name: Validate and render shared run example
+        run: |
+          python tools/human_ai_pipeline.py validate standards/human-ai-pipeline/examples/run-packet.example.json
+          python tools/human_ai_pipeline.py render standards/human-ai-pipeline/examples/run-packet.example.json --out artifacts/human-ai-pipeline-example.md
       - name: Parse PowerShell sources
         shell: pwsh
         run: |
@@ -43,26 +92,22 @@ jobs:
           Get-ChildItem -Path tools -Filter *.ps1 -Recurse | ForEach-Object {
             $tokens = $null
             $parseErrors = $null
-            [System.Management.Automation.Language.Parser]::ParseFile(
-              $_.FullName,
-              [ref]$tokens,
-              [ref]$parseErrors
-            ) | Out-Null
-
-            foreach ($parseError in $parseErrors) {
-              $allErrors.Add("$($_.FullName): $($parseError.Message)")
-            }
+            [System.Management.Automation.Language.Parser]::ParseFile($_.FullName,[ref]$tokens,[ref]$parseErrors) | Out-Null
+            foreach ($parseError in $parseErrors) { $allErrors.Add("$($_.FullName): $($parseError.Message)") }
           }
-
-          if ($allErrors.Count -gt 0) {
-            $allErrors | ForEach-Object { Write-Error $_ }
-            exit 1
-          }
-
+          if ($allErrors.Count -gt 0) { $allErrors | ForEach-Object { Write-Error $_ }; exit 1 }
       - name: Publish validation report
         if: always()
         uses: actions/upload-artifact@v7.0.1
         with:
           name: repository-integrity-report
-          path: artifacts/repository-integrity.json
+          path: |
+            artifacts/repository-integrity.json
+            artifacts/human-ai-pipeline-example.md
+            artifacts/aio-contract-example.md
+            artifacts/aio-golden-001-run.json
+            artifacts/aio-golden-001-score.json
+            artifacts/aio-golden-001-report.md
+            artifacts/aio-omega-reference-submission.json
+            artifacts/aio-omega-reference-score.json
           if-no-files-found: warn

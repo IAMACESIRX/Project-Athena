@@ -1,0 +1,24 @@
+{
+  "schema": "project-athena.aio.omega.reference_result.v0.1",
+  "benchmark_id": "AIO-OMEGA-001",
+  "seed_label": "reference-seed-001",
+  "score": 99.221,
+  "passed": true,
+  "hard_failures": [],
+  "metrics": {
+    "diagnosis_precision": 1.0,
+    "diagnosis_recall": 1.0,
+    "diagnosis_f1": 1.0,
+    "brier_score": 0.00993,
+    "survival_probability": 1.0,
+    "mean_mission_completion": 1.0,
+    "diagnostic_budget_used": 90
+  },
+  "stress_test": {
+    "seeds": 20,
+    "minimum_score": 99.039,
+    "maximum_score": 99.315,
+    "mean_score": 99.14595,
+    "failed_runs": 0
+  }
+}

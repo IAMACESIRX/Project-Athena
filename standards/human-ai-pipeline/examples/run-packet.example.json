@@ -1,0 +1,65 @@
+{
+  "schema": "project-athena.haips.run_packet.v0.1",
+  "run_id": "HAIPS-FORGE-EXAMPLE-001",
+  "parent_run_id": null,
+  "profile_id": "haips-forge-v0.1",
+  "system_id": "forge",
+  "title": "Offset concept proliferation without suppressing design-space exploration",
+  "created_at": "2026-08-07T03:20:00+10:00",
+  "updated_at": "2026-08-07T03:20:00+10:00",
+  "mode": "hybrid",
+  "operator": {"type": "human", "id": "IAMACESIRX"},
+  "objective": "Add controls that prevent uncontrolled canonical expansion while preserving broad speculative exploration.",
+  "status": "active",
+  "benefits_to_preserve": ["broad design-space exploration", "rapid hypothesis generation", "architectural plasticity"],
+  "weaknesses": [{
+    "weakness_id": "W-001",
+    "description": "Concept generation can outpace validation and integration capacity.",
+    "triggers": ["candidate count exceeds review capacity", "temporary concepts enter canonical state"],
+    "harms": ["scope explosion", "integration debt", "loss of priority clarity"],
+    "associated_benefits": ["broad design-space exploration", "rapid hypothesis generation"],
+    "evidence": ["Project methodology review"],
+    "confidence": 0.85,
+    "status": "controlled",
+    "disposition": "mitigate"
+  }],
+  "mitigations": [{
+    "mitigation_id": "M-001",
+    "weakness_ids": ["W-001"],
+    "control": "Keep speculative concepts in sandbox branches and require evidence-based promotion gates before canonical integration.",
+    "offset_strategy": "staging",
+    "preserves_benefits": ["broad design-space exploration", "rapid hypothesis generation"],
+    "activation_trigger": "Any concept proposed for canonical promotion.",
+    "execution_modes": ["manual", "ai_assisted", "automated", "hybrid"],
+    "tradeoffs": ["additional classification work", "promotion latency"],
+    "new_risks": ["useful concepts may remain shelved too long"],
+    "verification": {"manual": ["Review that experimental and canonical states remain separate."], "machine": ["Check every canonical concept has a promotion record."]},
+    "review_condition": "Review when promotion latency blocks a validated milestone.",
+    "removal_condition": "Retire only if another control preserves exploration with lower integration risk.",
+    "owner": "human-owner",
+    "status": "active"
+  }],
+  "interventions": [],
+  "stages": [{
+    "stage_id": "F05M",
+    "name": "mitigation_and_offset_design",
+    "status": "complete",
+    "manual_notes": "The human identified the value-bearing mechanism and rejected suppression of ideation.",
+    "machine_notes": "The tool verified that the mitigation names preserved benefits, trade-offs, new risks and review conditions.",
+    "inputs": ["methodology weakness review"],
+    "outputs": ["M-001"],
+    "evidence": ["Project methodology discussion"],
+    "decision": "Use staging and promotion gates rather than reducing candidate generation.",
+    "intervention_required": false
+  }],
+  "validation": {
+    "manual_checks": ["Confirm the mitigation does not cap idea generation."],
+    "machine_checks": ["python tools/human_ai_pipeline.py validate standards/human-ai-pipeline/examples/run-packet.example.json"],
+    "status": "pass"
+  },
+  "provenance": {
+    "created_by": "human and AI co-development",
+    "source_profile": "standards/human-ai-pipeline/profiles/forge.yml",
+    "history": [{"timestamp": "2026-08-07T03:20:00+10:00", "event": "example created"}]
+  }
+}

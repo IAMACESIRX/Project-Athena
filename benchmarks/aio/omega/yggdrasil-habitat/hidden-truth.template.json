@@ -1,0 +1,21 @@
+{
+  "schema": "project-athena.aio.omega.hidden_truth.v0.1",
+  "warning": "Template only. Generate real instances under evaluator-only .private state and never expose them to the solver.",
+  "benchmark_id": "AIO-OMEGA-001",
+  "seed_hash": "<sha256; never publish during a live run>",
+  "causal_faults": [
+    {
+      "id": "<fault id>",
+      "domain": "<domain>",
+      "severity": 0.0,
+      "onset_day": 0,
+      "progression": 0.0
+    }
+  ],
+  "sensor_models": {},
+  "evidence_corruption_map": [],
+  "shock_schedule": [],
+  "upgrade_truth": {},
+  "evaluation_replays": [],
+  "generated_sha256": "<sha256>"
+}

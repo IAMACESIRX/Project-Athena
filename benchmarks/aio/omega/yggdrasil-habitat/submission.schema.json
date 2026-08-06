@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-athena.aio.omega.submission.schema.v0.1",
+  "title": "AIO OMEGA Submission",
+  "type": "object",
+  "required": [
+    "schema",
+    "benchmark_id",
+    "aio_instance",
+    "hypotheses",
+    "experiments",
+    "candidate_lattice",
+    "architecture",
+    "control_policy",
+    "mitigations",
+    "crisis_adaptation",
+    "technology_adoption",
+    "human_intervention",
+    "manual_runbook",
+    "machine_configuration",
+    "final_report",
+    "method_repass"
+  ],
+  "properties": {
+    "schema": {"const": "project-athena.aio.omega.submission.v0.1"},
+    "benchmark_id": {"const": "AIO-OMEGA-001"},
+    "aio_instance": {"type": "object"},
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "probability", "evidence_for", "evidence_against", "falsifiers", "status"],
+        "properties": {
+          "probability": {"type": "number", "minimum": 0, "maximum": 1}
+        },
+        "additionalProperties": true
+      }
+    },
+    "experiments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "cost", "risk", "target_hypotheses", "expected_information_gain", "result", "posterior_updates"],
+        "additionalProperties": true
+      }
+    },
+    "candidate_lattice": {
+      "type": "object",
+      "required": ["candidates", "mechanisms", "conflicts", "pareto_frontier", "native_reconstruction"],
+      "properties": {
+        "candidates": {"type": "array", "minItems": 10}
+      },
+      "additionalProperties": true
+    },
+    "architecture": {
+      "type": "object",
+      "required": ["components", "interfaces", "resource_budgets", "failure_modes", "verification", "fallbacks"],
+      "additionalProperties": true
+    },
+    "control_policy": {"type": "object"},
+    "mitigations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["weakness", "benefits_preserved", "control", "tradeoffs", "new_risks", "verification", "review", "removal"],
+        "additionalProperties": true
+      }
+    },
+    "crisis_adaptation": {
+      "type": "object",
+      "required": ["detected_change", "new_branch", "actions", "verification", "rollback"]
+    },
+    "technology_adoption": {
+      "type": "object",
+      "required": ["comparison", "decision", "coexistence", "migration", "rollback", "archived_path"]
+    },
+    "human_intervention": {
+      "type": "object",
+      "required": ["instruction", "state_before", "state_after", "rejected_branch_preserved"]
+    },
+    "manual_runbook": {"type": "string", "minLength": 500},
+    "machine_configuration": {"type": "object"},
+    "final_report": {"type": "string", "minLength": 500},
+    "method_repass": {
+      "type": "object",
+      "required": ["methods_used", "material_changes", "redundancy", "failures", "next_version", "revalidation_triggers"]
+    }
+  },
+  "additionalProperties": true
+}

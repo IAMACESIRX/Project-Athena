@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "forge.schemas.compile_trace.v0.1",
+  "title": "F.O.R.G.E. Compile Trace",
+  "type": "object",
+  "required": [
+    "schema",
+    "compile_id",
+    "compiler_version",
+    "input_sha256",
+    "concept_id",
+    "passes",
+    "candidate_ranking",
+    "mechanism_decisions",
+    "outputs"
+  ],
+  "properties": {
+    "schema": {
+      "const": "forge.compile_trace.v0.1"
+    },
+    "compile_id": {
+      "type": "string"
+    },
+    "compiler_version": {
+      "type": "string"
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "concept_id": {
+      "type": "string"
+    },
+    "passes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "candidate_ranking": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "mechanism_decisions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "outputs": {
+      "type": "object"
+    }
+  }
+}

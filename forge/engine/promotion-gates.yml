@@ -1,0 +1,33 @@
+schema: forge.promotion_gates.v0.1
+rule: Compiled output is provisional until every required gate for its target state passes.
+states:
+  experimental:
+    required:
+      - intent_genome_present
+      - claims_labeled
+      - parent_failures_preserved
+  candidate:
+    required:
+      - mechanisms_named
+      - strengths_and_weaknesses_recorded
+      - falsification_test_defined
+      - provenance_present
+  reconstructed:
+    required:
+      - semantic_invariants_preserved
+      - donor_mechanisms_traced
+      - declared_conflicts_resolved_or_open
+      - accidental_structure_reduction_recorded
+  promotion_ready:
+    required:
+      - relevant_tests_pass
+      - evidence_gaps_named
+      - rollback_or_fallback_defined
+      - ATHENA_governance_review
+      - capability_label_assigned
+  canonical:
+    required:
+      - explicit_human_approval
+      - ATHENA_commit_or_project_state_record
+      - evidence_and_compile_trace_archived
+      - revalidation_triggers_defined

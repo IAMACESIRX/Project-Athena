@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-athena.haips.profile.v0.1",
+  "title": "Human–AI Pipeline Profile",
+  "type": "object",
+  "required": ["schema", "profile_id", "system_id", "name", "modes_supported", "entrypoints", "outputs", "stages", "intervention", "mitigation", "validation"],
+  "properties": {
+    "schema": {"const": "project-athena.haips.profile.v0.1"},
+    "profile_id": {"type": "string", "minLength": 1},
+    "system_id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "description": {"type": "string"},
+    "modes_supported": {"type": "array", "items": {"enum": ["manual", "ai_assisted", "automated", "hybrid"]}, "minItems": 4, "uniqueItems": true},
+    "entrypoints": {
+      "type": "object",
+      "required": ["human", "ai", "machine", "pipeline", "template"],
+      "properties": {
+        "human": {"type": "string"}, "ai": {"type": "string"}, "machine": {"type": "string"},
+        "pipeline": {"type": "string"}, "template": {"type": "string"}, "tool": {"type": ["string", "null"]}
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "required": ["human_readable", "machine_readable"],
+      "properties": {
+        "human_readable": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "machine_readable": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+      }
+    },
+    "default_benefits_to_preserve": {"type": "array", "items": {"type": "string"}},
+    "stages": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "purpose", "manual_procedure", "machine_procedure", "outputs", "intervention_allowed"],
+        "properties": {
+          "id": {"type": "string"}, "name": {"type": "string"}, "purpose": {"type": "string"},
+          "manual_procedure": {"type": "string"}, "machine_procedure": {"type": "string"},
+          "outputs": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "intervention_allowed": {"type": "boolean"}, "required": {"type": "boolean", "default": true}
+        }
+      }
+    },
+    "intervention": {
+      "type": "object",
+      "required": ["allowed", "actions", "history_preserved"],
+      "properties": {
+        "allowed": {"const": true},
+        "actions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "history_preserved": {"const": true}
+      }
+    },
+    "mitigation": {
+      "type": "object",
+      "required": ["required", "preserve_benefits", "declare_tradeoffs", "declare_new_risks", "reviewable"],
+      "properties": {
+        "required": {"const": true}, "preserve_benefits": {"const": true},
+        "declare_tradeoffs": {"const": true}, "declare_new_risks": {"const": true}, "reviewable": {"const": true}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["manual", "machine"],
+      "properties": {
+        "manual": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "machine": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+      }
+    }
+  }
+}

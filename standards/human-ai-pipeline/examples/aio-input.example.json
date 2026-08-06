@@ -1,0 +1,9 @@
+{
+  "title": "Versioned institutional cognition",
+  "objective": "Design a model-independent institutional intelligence that preserves evidence, reconstructs architectures natively and remains manually operable.",
+  "mode": "hybrid",
+  "requested_depth": 1.0,
+  "constraints": ["local-first", "human authority", "reversible state", "no implementation overclaiming"],
+  "benefits_to_preserve": ["plasticity", "rapid adoption", "historical lineage", "human readability", "AI throughput"],
+  "weights": {"evidence_quality": 1.0, "integration": 1.0, "scale_coverage": 1.0, "simplicity": 0.85}
+}

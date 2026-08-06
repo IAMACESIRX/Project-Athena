@@ -78,9 +78,19 @@ This is the long-line checklist for fully fleshed advanced thinking. Use it for 
 - Run non-monotonic revision: what prior conclusion should be weakened?
 - Run semantic compression: what must survive handoff?
 
+## R08M Mitigation And Offset Pass
+
+- Identify weaknesses, negative pressures, and failure modes exposed by the cognitive pass.
+- Identify the useful capability, strength, speed, plasticity, exploration, continuity, or other benefit associated with each weakness.
+- Prefer offsets, boundaries, staging, reversible controls, parallel paths, dynamic configuration, and compiler displacement over suppressing the value-bearing mechanism.
+- For every mitigation, state the activation trigger, execution modes, trade-offs, new risks, manual verification, machine verification, review condition, and removal condition.
+- Record explicit risk acceptance when a weakness is not mitigated.
+- Preserve human intervention paths: pause, edit, override, branch, reject, rollback, change mode, change mitigation, request evidence, and request review.
+- Treat every control as plastic and subject to later challenge.
+
 ## R09 Decision Gate
 
-- Pick the action only after evidence, risk, rollback, and verification are named.
+- Pick the action only after evidence, risk, rollback, mitigation, preserved benefits, and verification are named.
 - If the action changes live state, create or confirm a restore path first.
 - If the action changes process, update engine or governance docs in the same pass.
 - If the action changes code, use the repo's existing patterns.
@@ -101,6 +111,7 @@ This is the long-line checklist for fully fleshed advanced thinking. Use it for 
 - Re-check git status.
 - Re-check local-only remotes before any push.
 - Update evidence and claim maps if new facts were created.
+- Verify that active mitigations reduced the named weakness without silently removing the named benefit.
 
 ## R12 Audit And Continuity
 
@@ -108,6 +119,7 @@ This is the long-line checklist for fully fleshed advanced thinking. Use it for 
 - Update changelog or handoff.
 - Update lessons learned when a repeated failure or pattern appears.
 - Strengthen important concepts in memory.
+- Record mitigation performance, interventions, trade-offs, and revalidation triggers.
 - Prune low-value noise from active context while preserving archive access.
 
 ## R13 End State
@@ -117,4 +129,3 @@ This is the long-line checklist for fully fleshed advanced thinking. Use it for 
 - Name what was committed and where.
 - Name what was not pushed to cloud.
 - Leave next actions concrete.
-

@@ -1,0 +1,254 @@
+{
+  "schema": "forge.concept_packet.v0.1",
+  "concept_id": "FORGE-CONCEPT-0001",
+  "title": "Versioned institutional cognition",
+  "objective": "Preserve institutional intelligence across replaceable AI models while keeping decisions auditable and recoverable.",
+  "origin": {
+    "mode": "human_originated",
+    "human_owner": "IAMACESIRX",
+    "ai_assistance": [
+      "research legwork",
+      "formalisation",
+      "candidate comparison"
+    ]
+  },
+  "semantic_invariants": [
+    "The institution is not identical to one model.",
+    "Facts, assumptions, hypotheses and unknowns remain distinct.",
+    "Historical project paths are preserved rather than overwritten."
+  ],
+  "flexible_variables": [
+    "database technology",
+    "model provider",
+    "deployment topology",
+    "runtime language"
+  ],
+  "constraints": [
+    "human authority is final",
+    "promotion requires evidence and rollback",
+    "private memory remains local by default"
+  ],
+  "claims": [
+    {
+      "claim_id": "CLAIM-001",
+      "statement": "Model-independent memory improves continuity.",
+      "status": "hypothesis",
+      "evidence_refs": []
+    },
+    {
+      "claim_id": "CLAIM-002",
+      "statement": "Versioned state improves recoverability.",
+      "status": "inferred",
+      "evidence_refs": [
+        "Nexus-V architecture"
+      ]
+    }
+  ],
+  "desired_properties": [
+    "continuity",
+    "auditability",
+    "recoverability",
+    "replaceability",
+    "low runtime overhead"
+  ],
+  "top_n": 3,
+  "score_weights": {
+    "evidence": 1.5,
+    "simplicity": 1.2,
+    "adaptability": 1.2,
+    "reversibility": 1.2
+  },
+  "candidates": [
+    {
+      "candidate_id": "CAND-001",
+      "name": "Monolithic agent memory",
+      "description": "One model owns reasoning and memory.",
+      "status": "candidate",
+      "mechanisms": [
+        {
+          "mechanism_id": "MECH-LOCAL-CONTEXT",
+          "name": "local context retention",
+          "why_it_works": "The acting model directly reads its own retained context.",
+          "conditions": [
+            "same model lineage"
+          ],
+          "benefits": [
+            "simple access"
+          ],
+          "costs": [
+            "vendor and model coupling"
+          ],
+          "conflicts_with": [
+            "MECH-MODEL-INDEPENDENCE"
+          ]
+        }
+      ],
+      "strengths": [
+        "simple"
+      ],
+      "weaknesses": [
+        "fragile continuity"
+      ],
+      "tradeoffs": [
+        "simplicity for lock-in"
+      ],
+      "evidence_refs": [],
+      "scores": {
+        "evidence": 0.4,
+        "performance": 0.8,
+        "simplicity": 0.9,
+        "resilience": 0.3,
+        "adaptability": 0.2,
+        "reversibility": 0.3,
+        "integration": 0.8
+      }
+    },
+    {
+      "candidate_id": "CAND-002",
+      "name": "File-native institutional memory",
+      "description": "Durable external memory and governance remain independent of models.",
+      "status": "candidate",
+      "mechanisms": [
+        {
+          "mechanism_id": "MECH-MODEL-INDEPENDENCE",
+          "name": "model-independent institutional state",
+          "why_it_works": "Identity, evidence and project memory persist outside any one reasoning model.",
+          "conditions": [
+            "stable schemas",
+            "adapter contracts"
+          ],
+          "benefits": [
+            "replaceability",
+            "continuity"
+          ],
+          "costs": [
+            "integration work"
+          ],
+          "conflicts_with": [
+            "MECH-LOCAL-CONTEXT"
+          ]
+        },
+        {
+          "mechanism_id": "MECH-PROVENANCE",
+          "name": "evidence-linked provenance",
+          "why_it_works": "Claims and changes remain linked to their sources and state transitions.",
+          "conditions": [
+            "stable identifiers"
+          ],
+          "benefits": [
+            "auditability"
+          ],
+          "costs": [
+            "metadata overhead"
+          ],
+          "conflicts_with": []
+        }
+      ],
+      "strengths": [
+        "continuity",
+        "auditability"
+      ],
+      "weaknesses": [
+        "tooling complexity"
+      ],
+      "tradeoffs": [
+        "compile-time complexity for runtime continuity"
+      ],
+      "evidence_refs": [
+        "Project Athena repository"
+      ],
+      "scores": {
+        "evidence": 0.8,
+        "performance": 0.7,
+        "simplicity": 0.6,
+        "resilience": 0.9,
+        "adaptability": 0.9,
+        "reversibility": 0.9,
+        "integration": 0.7
+      }
+    },
+    {
+      "candidate_id": "CAND-003",
+      "name": "Versioned state institution",
+      "description": "Institutional memory and execution use branch, commit, diff and rollback semantics.",
+      "status": "candidate",
+      "mechanisms": [
+        {
+          "mechanism_id": "MECH-MODEL-INDEPENDENCE",
+          "name": "model-independent institutional state",
+          "why_it_works": "Identity, evidence and project memory persist outside any one reasoning model.",
+          "conditions": [
+            "stable schemas",
+            "adapter contracts"
+          ],
+          "benefits": [
+            "replaceability",
+            "continuity"
+          ],
+          "costs": [
+            "integration work"
+          ],
+          "conflicts_with": [
+            "MECH-LOCAL-CONTEXT"
+          ]
+        },
+        {
+          "mechanism_id": "MECH-VERSIONED-STATE",
+          "name": "versioned state transitions",
+          "why_it_works": "Every accepted mutation has lineage, diff and rollback information.",
+          "conditions": [
+            "immutable history",
+            "state identifiers"
+          ],
+          "benefits": [
+            "recoverability",
+            "comparison"
+          ],
+          "costs": [
+            "storage and compiler complexity"
+          ],
+          "conflicts_with": []
+        },
+        {
+          "mechanism_id": "MECH-PROVENANCE",
+          "name": "evidence-linked provenance",
+          "why_it_works": "Claims and changes remain linked to their sources and state transitions.",
+          "conditions": [
+            "stable identifiers"
+          ],
+          "benefits": [
+            "auditability"
+          ],
+          "costs": [
+            "metadata overhead"
+          ],
+          "conflicts_with": []
+        }
+      ],
+      "strengths": [
+        "recoverability",
+        "traceability",
+        "native reconstruction"
+      ],
+      "weaknesses": [
+        "higher construction complexity"
+      ],
+      "tradeoffs": [
+        "toolchain complexity for simpler trusted execution"
+      ],
+      "evidence_refs": [
+        "Nexus-V toolchain schema",
+        "Athena restore and forensics tools"
+      ],
+      "scores": {
+        "evidence": 0.75,
+        "performance": 0.75,
+        "simplicity": 0.55,
+        "resilience": 0.95,
+        "adaptability": 0.95,
+        "reversibility": 1.0,
+        "integration": 0.65
+      }
+    }
+  ]
+}

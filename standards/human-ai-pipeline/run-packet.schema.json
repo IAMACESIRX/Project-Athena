@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-athena.haips.run_packet.v0.1",
+  "title": "Human–AI Pipeline Run Packet",
+  "type": "object",
+  "required": ["schema", "run_id", "profile_id", "system_id", "created_at", "mode", "objective", "status", "benefits_to_preserve", "weaknesses", "mitigations", "interventions", "stages", "validation", "provenance"],
+  "properties": {
+    "schema": {"const": "project-athena.haips.run_packet.v0.1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "parent_run_id": {"type": ["string", "null"]},
+    "profile_id": {"type": "string"}, "system_id": {"type": "string"}, "title": {"type": "string"},
+    "created_at": {"type": "string"}, "updated_at": {"type": "string"},
+    "mode": {"enum": ["manual", "ai_assisted", "automated", "hybrid"]},
+    "operator": {"type": "object"}, "objective": {"type": "string", "minLength": 1},
+    "status": {"enum": ["created", "active", "paused", "blocked", "complete", "superseded", "archived"]},
+    "benefits_to_preserve": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "weaknesses": {"type": "array", "items": {"$ref": "#/$defs/weakness"}},
+    "mitigations": {"type": "array", "items": {"$ref": "#/$defs/mitigation"}},
+    "interventions": {"type": "array", "items": {"$ref": "#/$defs/intervention"}},
+    "stages": {"type": "array", "items": {"$ref": "#/$defs/stage"}, "minItems": 1},
+    "validation": {
+      "type": "object", "required": ["manual_checks", "machine_checks", "status"],
+      "properties": {
+        "manual_checks": {"type": "array", "items": {"type": "string"}},
+        "machine_checks": {"type": "array", "items": {"type": "string"}},
+        "status": {"enum": ["pending", "pass", "warn", "fail"]}
+      }
+    },
+    "provenance": {
+      "type": "object", "required": ["created_by", "source_profile", "history"],
+      "properties": {
+        "created_by": {"type": "string"}, "source_profile": {"type": "string"},
+        "history": {"type": "array", "items": {"type": "object"}}
+      }
+    }
+  },
+  "$defs": {
+    "weakness": {
+      "type": "object",
+      "required": ["weakness_id", "description", "triggers", "harms", "associated_benefits", "status", "disposition"],
+      "properties": {
+        "weakness_id": {"type": "string"}, "description": {"type": "string"},
+        "triggers": {"type": "array", "items": {"type": "string"}},
+        "harms": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "associated_benefits": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "evidence": {"type": "array", "items": {"type": "string"}},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "status": {"enum": ["open", "controlled", "accepted", "resolved", "superseded"]},
+        "disposition": {"enum": ["mitigate", "accept", "research", "remove_source", "monitor"]},
+        "acceptance_reason": {"type": "string"}
+      }
+    },
+    "mitigation": {
+      "type": "object",
+      "required": ["mitigation_id", "weakness_ids", "control", "preserves_benefits", "activation_trigger", "execution_modes", "tradeoffs", "new_risks", "verification", "review_condition", "removal_condition", "status"],
+      "properties": {
+        "mitigation_id": {"type": "string"},
+        "weakness_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "control": {"type": "string"}, "offset_strategy": {"type": "string"},
+        "preserves_benefits": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "activation_trigger": {"type": "string"},
+        "execution_modes": {"type": "array", "items": {"enum": ["manual", "ai_assisted", "automated", "hybrid"]}, "minItems": 1},
+        "tradeoffs": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "new_risks": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "verification": {
+          "type": "object", "required": ["manual", "machine"],
+          "properties": {
+            "manual": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+            "machine": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+          }
+        },
+        "review_condition": {"type": "string"}, "removal_condition": {"type": "string"},
+        "owner": {"type": "string"},
+        "status": {"enum": ["proposed", "active", "testing", "effective", "ineffective", "revised", "retired"]}
+      }
+    },
+    "intervention": {
+      "type": "object",
+      "required": ["intervention_id", "timestamp", "actor", "authority", "stage_id", "action", "reason", "changed_fields", "validation_required"],
+      "properties": {
+        "intervention_id": {"type": "string"}, "timestamp": {"type": "string"},
+        "actor": {"type": "string"}, "authority": {"type": "string"}, "stage_id": {"type": "string"},
+        "action": {"enum": ["pause", "edit", "override", "branch", "reject", "resume", "rollback", "change_mode", "change_mitigation", "request_evidence", "request_review"]},
+        "reason": {"type": "string"}, "changed_fields": {"type": "array", "items": {"type": "string"}},
+        "expected_state_diff": {"type": "string"},
+        "validation_required": {"type": "array", "items": {"type": "string"}},
+        "rollback_or_branch": {"type": "string"}
+      }
+    },
+    "stage": {
+      "type": "object",
+      "required": ["stage_id", "name", "status", "manual_notes", "machine_notes", "inputs", "outputs", "evidence", "decision", "intervention_required"],
+      "properties": {
+        "stage_id": {"type": "string"}, "name": {"type": "string"},
+        "status": {"enum": ["pending", "active", "complete", "skipped", "blocked"]},
+        "manual_notes": {"type": "string"}, "machine_notes": {"type": "string"},
+        "inputs": {"type": "array", "items": {"type": "string"}},
+        "outputs": {"type": "array", "items": {"type": "string"}},
+        "evidence": {"type": "array", "items": {"type": "string"}},
+        "decision": {"type": "string"}, "intervention_required": {"type": "boolean"},
+        "skip_reason": {"type": "string"}
+      }
+    }
+  }
+}
