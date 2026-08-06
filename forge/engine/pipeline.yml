@@ -1,0 +1,61 @@
+schema: forge.pipeline.v0.1
+updated: 2026-08-07
+system: FORGE
+name: First-Principles Ontological Reconstruction and Generational Evolution
+stages:
+  - id: F00
+    name: authority_and_intent_anchor
+    purpose: Preserve the human objective, semantic invariants, authority and prohibited reinterpretations.
+    output: intent_genome
+  - id: F01
+    name: epistemic_partition
+    purpose: Separate observations, facts, assumptions, hypotheses, speculation, contradictions and unknowns.
+    output: claim_set
+  - id: F02
+    name: first_principles_reduction
+    purpose: Reduce the objective to required behaviours, information, mechanisms and hard constraints.
+    output: mechanism_kernel
+  - id: F03
+    name: analogical_transfer
+    purpose: Import relational mechanisms from other domains without treating analogy as evidence.
+    output: analogy_hypotheses
+  - id: F04
+    name: candidate_lattice
+    purpose: Generate competing architectures and explicit variation dimensions.
+    output: candidates
+  - id: F05
+    name: symmetric_challenge
+    purpose: Challenge negatives, positives and accepted components using the same evidentiary standard.
+    output: challenged_candidates
+  - id: F06
+    name: counterfactual_branching
+    purpose: Create new hypothesis branches when variables change; preserve failed parent claims.
+    output: candidate_branches
+  - id: F07
+    name: candidate_tournament
+    purpose: Rank candidates across evidence, performance, simplicity, resilience, adaptability, reversibility and integration cost.
+    output: donor_pool
+  - id: F08
+    name: mechanism_mining
+    purpose: Extract why leading candidates work, including conditions, costs and conflicts.
+    output: mechanism_pool
+  - id: F09
+    name: reverse_reconstruction
+    purpose: Build a native architecture from compatible mechanisms and required invariants rather than merging donor implementations.
+    output: reconstructed_architecture
+  - id: F10
+    name: semantic_and_runtime_compression
+    purpose: Remove duplication, accidental structure, moving parts and recurring runtime overhead.
+    output: simplified_architecture
+  - id: F11
+    name: functional_snapshot_compile
+    purpose: Emit the current functional snapshot and complete compile trace.
+    output: functional_snapshot
+  - id: F12
+    name: validation_and_promotion
+    purpose: Route tests, evidence gaps and promotion requirements to A.E.S.I.R., ATHENA and simulation/prototype tools.
+    output: promotion_packet
+  - id: F13
+    name: method_repass
+    purpose: Evaluate whether the process itself should be modified for the next iteration.
+    output: method_feedback

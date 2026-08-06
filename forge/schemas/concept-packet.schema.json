@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "forge.schemas.concept_packet.v0.1",
+  "title": "F.O.R.G.E. Concept Packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "concept_id",
+    "title",
+    "objective",
+    "origin",
+    "semantic_invariants",
+    "claims",
+    "candidates",
+    "desired_properties"
+  ],
+  "properties": {
+    "schema": {
+      "const": "forge.concept_packet.v0.1"
+    },
+    "concept_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1
+    },
+    "origin": {
+      "type": "object",
+      "required": [
+        "mode",
+        "human_owner"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "human_originated",
+            "human_directed",
+            "co_developed",
+            "ai_proposed_human_selected",
+            "external_adapted",
+            "independently_reconstructed"
+          ]
+        },
+        "human_owner": {
+          "type": "string"
+        },
+        "ai_assistance": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "semantic_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "flexible_variables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/claim"
+      }
+    },
+    "desired_properties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "score_weights": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "top_n": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10,
+      "default": 10
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "claim": {
+      "type": "object",
+      "required": [
+        "claim_id",
+        "statement",
+        "status"
+      ],
+      "properties": {
+        "claim_id": {
+          "type": "string"
+        },
+        "statement": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "observed",
+            "verified",
+            "inferred",
+            "assumed",
+            "hypothesis",
+            "speculative",
+            "predicted",
+            "contradicted",
+            "unknown"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "mechanism": {
+      "type": "object",
+      "required": [
+        "mechanism_id",
+        "name",
+        "why_it_works"
+      ],
+      "properties": {
+        "mechanism_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "why_it_works": {
+          "type": "string"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "benefits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "costs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "conflicts_with": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "candidate_id",
+        "name",
+        "description",
+        "mechanisms",
+        "strengths",
+        "weaknesses",
+        "tradeoffs",
+        "scores"
+      ],
+      "properties": {
+        "candidate_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "experimental",
+            "candidate",
+            "shelved",
+            "superseded",
+            "rejected",
+            "active"
+          ],
+          "default": "candidate"
+        },
+        "mechanisms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mechanism"
+          },
+          "minItems": 1
+        },
+        "strengths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "weaknesses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tradeoffs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scores": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

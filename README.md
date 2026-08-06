@@ -1,8 +1,8 @@
 # Project Athena
 
-Project Athena is a local, file-native institutional-intelligence and prosthetic external-brain repository. It combines memory, database structure, cognitive methods, governance, tools, evidence, project brains, and Nexus-V hardware/execution research.
+Project Athena is a local, file-native institutional-intelligence and prosthetic external-brain repository. It combines memory, database structure, cognitive methods, governance, tools, evidence, project brains, F.O.R.G.E. cognitive synthesis, and Nexus-V hardware/execution research.
 
-ATHENA is one independent intelligence in a wider system-of-systems. The repository documents interfaces with JARVIS, JANUS, OASIS, Nexus-V/Aegis, Lightcore, L.O.D.E TV, RoomSense, BodyRig, and Reality-to-Simulation/material-intelligence work.
+ATHENA is one independent intelligence in a wider system-of-systems. The repository documents interfaces with JARVIS, JANUS, F.O.R.G.E., A.E.S.I.R., OASIS, Nexus-V/Aegis, Lightcore, L.O.D.E TV, RoomSense, BodyRig, and Reality-to-Simulation/material-intelligence work.
 
 The repository is an operating substrate: files preserve memory, schemas define contracts, tools process state, cycle reports preserve evidence, and `Plan/` defines the highest-priority architecture intent.
 
@@ -14,8 +14,11 @@ GitHub Wiki companion index: https://github.com/IAMACESIRX/Project-Athena/wiki
 ATHENA = independent institutional intelligence
 JARVIS = independent personal/executive intelligence
 JANUS  = independent operative metacognitive intelligence
+F.O.R.G.E. = independent cognitive-synthesis and native-reconstruction system
 OASIS  = persistent digital reality, simulation and creation substrate (not an AI)
 ```
+
+F.O.R.G.E. complements the A.E.S.I.R. Polymath Discovery Engine: A.E.S.I.R. expands research and candidate space; F.O.R.G.E. challenges, compares, mines mechanisms, reconstructs and compiles functional snapshots; ATHENA governs and preserves the lineage. The v0.1 subsystem is under `forge/`.
 
 JANUS is not an ATHENA subsystem and is not OASIS. Its internal duplex combines an Interior metacognitive face with an Exterior perception/action face. The canonical specification is:
 
@@ -42,9 +45,10 @@ The complete corrected map is:
 13. `engine/order-of-operations.md`
 14. `governance/absolutes.md`
 15. `cognition/cognition-workflow.md`
-16. `council/roles.yml`
-17. `schemas/athena-task-intake.schema.json`
-18. `templates/athena-task-intake.md`
+16. `forge/FORGE-PORTAL.md`
+17. `council/roles.yml`
+18. `schemas/athena-task-intake.schema.json`
+19. `templates/athena-task-intake.md`
 
 ## What ATHENA does
 
@@ -60,6 +64,8 @@ The complete corrected map is:
 
 - **JARVIS** interprets immediate human intent and handles personal/executive orchestration.
 - **JANUS** maps and operates software/environments, learns unfamiliar programs, compiles Skill Capsules and verifies actual state changes.
+- **A.E.S.I.R.** performs adaptive polymath research, discovery, evidence gathering and candidate-space expansion.
+- **F.O.R.G.E.** encodes the owner's methodology for symmetric challenge, mechanism mining, reverse reconstruction, simplification and functional-snapshot compilation.
 - **OASIS** provides persistent engineering, scientific, game, living/work, R&D and production worlds/workshops.
 - **Nexus-V** provides versioned-state semantics; **Aegis** provides trust/attestation/commit gates.
 - **Lightcore** is a future optoelectronic physical execution profile.
@@ -70,11 +76,12 @@ The complete corrected map is:
 
 1. Keep root context, Plan authority and independent-system identities aligned.
 2. Use ATHENA task-intake packets for non-trivial institutional work.
-3. Implement JANUS conventional local runtime before future Nexus-V/Lightcore integration.
-4. Define OASIS world/object/export schemas and a conventional prototype runtime.
-5. Maintain memory maps, evidence/provenance and cycle reports.
-6. Convert Plan intent into implementation matrices, work items, schemas and tests.
-7. Keep all speculative hardware and simulation claims visibly separated from validated engineering.
+3. Evolve F.O.R.G.E. v0.1 from deterministic file-native compilation toward council orchestration, temporal graphs and simulation adapters.
+4. Implement JANUS conventional local runtime before future Nexus-V/Lightcore integration.
+5. Define OASIS world/object/export schemas and a conventional prototype runtime.
+6. Maintain memory maps, evidence/provenance and cycle reports.
+7. Convert Plan intent into implementation matrices, work items, schemas and tests.
+8. Keep all speculative hardware and simulation claims visibly separated from validated engineering.
 
 ## Prime directive
 

@@ -1,0 +1,30 @@
+schema: forge.manifest.v0.1
+updated: 2026-08-07
+system:
+  id: forge
+  name: F.O.R.G.E.
+  expansion: First-Principles Ontological Reconstruction and Generational Evolution
+  type: independent_cognitive_synthesis_system
+  capability_state:
+    architecture: specified
+    file_native_compiler: implemented
+    ai_council_orchestration: specified
+    temporal_graph_runtime: specified
+entrypoints:
+  human: forge/README.md
+  ai: forge/FORGE-PORTAL.md
+  architecture: forge/architecture/FORGE-SYSTEM-SPEC-v0.1.md
+  pipeline: forge/engine/pipeline.yml
+  compiler: forge/compiler/forge_compiler.py
+  example: forge/examples/concept-packet.example.json
+schemas:
+  concept_packet: forge/schemas/concept-packet.schema.json
+  functional_snapshot: forge/schemas/functional-snapshot.schema.json
+  compile_trace: forge/schemas/compile-trace.schema.json
+interfaces:
+  aesir: forge/adapters/AESIR-CONTRACT.md
+  athena: forge/adapters/ATHENA-CONTRACT.md
+validation:
+  tests: python -m unittest discover -s forge/tests -p "test_*.py"
+  compile: python -m compileall -q forge
+  example_validate: python forge/compiler/forge_compiler.py validate forge/examples/concept-packet.example.json

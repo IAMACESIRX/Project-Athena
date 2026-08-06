@@ -1,5 +1,5 @@
 schema: ai-system.project_registry.v1
-updated: 2026-07-10
+updated: 2026-08-07
 projects:
   - id: project-athena
     name: Project Athena
@@ -13,10 +13,21 @@ projects:
       - project-athena
       - plan
       - nexus-v
+      - forge
       - athena-engine
       - athena-memory
       - athena-work
       - athena-tools
+  - id: forge
+    name: F.O.R.G.E.
+    status: active_subsystem
+    project_brain: forge/FORGE-PORTAL.md
+    evidence_namespace: EVD-FORGE
+    local_only: true
+    root: D:/Projects/Project Athena/forge
+    managed_layers:
+      - forge
+    note: First-Principles Ontological Reconstruction and Generational Evolution; independent cognitive-synthesis system that complements A.E.S.I.R. and writes governed outputs through ATHENA.
   - id: nexus-v
     name: Nexus V
     status: active_subsystem

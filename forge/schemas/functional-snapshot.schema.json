@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "forge.schemas.functional_snapshot.v0.1",
+  "title": "F.O.R.G.E. Functional Snapshot",
+  "type": "object",
+  "required": [
+    "schema",
+    "snapshot_id",
+    "concept_id",
+    "compiler_version",
+    "objective",
+    "semantic_invariants",
+    "selected_candidates",
+    "selected_mechanisms",
+    "unresolved_conflicts",
+    "validation_plan",
+    "capability_state"
+  ],
+  "properties": {
+    "schema": {
+      "const": "forge.functional_snapshot.v0.1"
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "concept_id": {
+      "type": "string"
+    },
+    "compiler_version": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "semantic_invariants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "selected_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "selected_mechanisms": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "unresolved_conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "validation_plan": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capability_state": {
+      "enum": [
+        "scaffolded",
+        "specified",
+        "experimental",
+        "promotion_ready",
+        "validated_for_named_use"
+      ]
+    }
+  }
+}
