@@ -29,11 +29,22 @@ jobs:
       - name: Validate repository structure and data
         run: python tools/validate_repository.py
       - name: Compile Python sources
-        run: python -m compileall -q tools forge standards "Nexus V/scripts" "Nexus V/toolchain"
+        run: python -m compileall -q tools forge standards contracts "Nexus V/scripts" "Nexus V/toolchain"
       - name: Run F.O.R.G.E. unit tests
         run: python -m unittest discover -s forge/tests -p "test_*.py"
-      - name: Run shared human-AI pipeline tests
+      - name: Run shared human-AI and AIO tests
         run: python -m unittest discover -s standards/human-ai-pipeline/tests -p "test_*.py"
+      - name: Validate AIO master and example instance
+        run: |
+          python tools/aio_contract.py validate-master contracts/AIO-MASTER-CONTRACT.yml
+          python tools/aio_contract.py instantiate \
+            --master contracts/AIO-MASTER-CONTRACT.yml \
+            --input standards/human-ai-pipeline/examples/aio-input.example.json \
+            --out /tmp/aio-instance.json
+          python tools/aio_contract.py validate-instance /tmp/aio-instance.json \
+            --master contracts/AIO-MASTER-CONTRACT.yml
+          python tools/aio_contract.py render /tmp/aio-instance.json \
+            --out artifacts/aio-contract-example.md
       - name: Validate human-AI pipeline profiles
         run: |
           python tools/human_ai_pipeline.py compliance \
@@ -65,4 +76,5 @@ jobs:
           path: |
             artifacts/repository-integrity.json
             artifacts/human-ai-pipeline-example.md
+            artifacts/aio-contract-example.md
           if-no-files-found: warn
