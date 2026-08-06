@@ -3,7 +3,7 @@
   "project": {
     "name": "Project Athena",
     "root": "D:\\Projects\\Project Athena",
-    "created_for": "local AI prosthetic external brain, durable memory, cognitive processor, Plan architecture authority, and Nexus-V execution research",
+    "created_for": "local AI prosthetic external brain, durable memory, cognitive processor, F.O.R.G.E. reconstruction, Plan architecture authority, and Nexus-V execution research",
     "hosting": "local_first_with_explicit_publication",
     "cloud_push_allowed": false,
     "cloud_publication_policy": "governance/cloud-publication-policy.md",
@@ -18,6 +18,8 @@
     "context": "context.md",
     "plan_context": "Plan/context.md",
     "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+    "forge_portal": "forge/FORGE-PORTAL.md",
+    "forge_manifest": "forge/manifest.yml",
     "file_index": "context-file-index.md",
     "memory_map": "memory/athena-memory-map.md",
     "programmatic_manifest": "manifests/generated-ai-index.json",
@@ -32,7 +34,8 @@
     "plan_context": "Plan/context.md",
     "governance": "governance/absolutes.md",
     "publication_policy": "governance/cloud-publication-policy.md",
-    "decision_process": "engine/order-of-operations.md"
+    "decision_process": "engine/order-of-operations.md",
+    "forge_process": "forge/engine/pipeline.yml"
   },
   "athena_core": {
     "task_intake_schema": "schemas/athena-task-intake.schema.json",
@@ -41,6 +44,20 @@
     "intake_folder": "work/intake",
     "cycle_reports": "engine/cycle-reports",
     "memory_map": "memory/athena-memory-map.md"
+  },
+  "forge": {
+    "root": "forge",
+    "portal": "forge/FORGE-PORTAL.md",
+    "manifest": "forge/manifest.yml",
+    "architecture": "forge/architecture/FORGE-SYSTEM-SPEC-v0.1.md",
+    "pipeline": "forge/engine/pipeline.yml",
+    "promotion_gates": "forge/engine/promotion-gates.yml",
+    "compiler": "forge/compiler/forge_compiler.py",
+    "concept_schema": "forge/schemas/concept-packet.schema.json",
+    "snapshot_schema": "forge/schemas/functional-snapshot.schema.json",
+    "trace_schema": "forge/schemas/compile-trace.schema.json",
+    "aesir_contract": "forge/adapters/AESIR-CONTRACT.md",
+    "athena_contract": "forge/adapters/ATHENA-CONTRACT.md"
   },
   "registries": {
     "layers": "registries/layers.yml",
@@ -54,6 +71,8 @@
     "plan_root": "Plan",
     "plan_context": "Plan/context.md",
     "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+    "forge_root": "forge",
+    "forge_architecture": "forge/architecture/FORGE-SYSTEM-SPEC-v0.1.md",
     "plan_roadmap": "Plan/ROADMAP.md",
     "plan_todo": "Plan/TODO.md",
     "plan_status": "Plan/TODO_STATUS.md",

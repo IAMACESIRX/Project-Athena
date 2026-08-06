@@ -1,5 +1,5 @@
 ﻿schema: ai-system.ingestion_order.v1
-updated: 2026-06-03
+updated: 2026-08-07
 purpose: "Defines the stable read order for AIs, humans, and programs."
 order:
   - path: AI-PORTAL.md
@@ -12,6 +12,12 @@ order:
     reason: non-negotiable principles
   - path: projects/project-registry.yml
     reason: active managed project list
+  - path: forge/FORGE-PORTAL.md
+    reason: F.O.R.G.E. cognitive-synthesis identity and authority boundary
+  - path: forge/manifest.yml
+    reason: machine-readable F.O.R.G.E. subsystem index
+  - path: forge/engine/pipeline.yml
+    reason: executable methodology stage order
   - path: organization/hierarchy.yml
     reason: authority and organization model
   - path: agents/agent-registry.yml
@@ -72,4 +78,3 @@ order:
     reason: inference safety and evidence gates
   - path: cognition/cognition-workflow.md
     reason: advanced reasoning workflow
-

@@ -16,8 +16,12 @@ Project Athena is part of a wider system-of-systems. Do not collapse the indepen
 ATHENA = independent institutional intelligence
 JARVIS = independent personal/executive intelligence
 JANUS  = independent operative metacognitive intelligence
+F.O.R.G.E. = independent cognitive-synthesis and native-reconstruction system
+A.E.S.I.R. = Adaptive Evolutionary System for Intelligent Research
 OASIS  = persistent digital reality, simulation and creation substrate; not an AI
 ```
+
+F.O.R.G.E. complements A.E.S.I.R. and ATHENA. A.E.S.I.R. expands evidence and candidate space; F.O.R.G.E. challenges, compares, mines mechanisms, reverse-reconstructs and compiles functional snapshots; ATHENA preserves and governs the lineage.
 
 ## Mandatory identity correction
 
@@ -59,12 +63,14 @@ Any statement that JANUS/Operative Duplex AI is an ATHENA subsystem, that JARVIS
 24. `cognition/README.md`
 25. `cognition/anti-hallucination/anti-hallucination-protocol.md`
 26. `cognition/cognition-workflow.md`
-27. `council/roles.yml`
-28. `schemas/athena-task-intake.schema.json`
-29. `templates/athena-task-intake.md`
-30. `forensics/evidence-register.csv`
-31. `forensics/claim-catalog.csv`
-32. `forensics/evidence-claim-map.csv`
+27. `forge/FORGE-PORTAL.md`
+28. `forge/manifest.yml`
+29. `council/roles.yml`
+30. `schemas/athena-task-intake.schema.json`
+31. `templates/athena-task-intake.md`
+32. `forensics/evidence-register.csv`
+33. `forensics/claim-catalog.csv`
+34. `forensics/evidence-claim-map.csv`
 
 ## First run
 
@@ -80,6 +86,13 @@ For a structured ATHENA task cycle:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AthenaCycle.ps1 -Goal "Describe the task here"
 ```
 
+For the deterministic F.O.R.G.E. v0.1 example:
+
+```powershell
+python .\forge\compiler\forge_compiler.py validate .\forge\examples\concept-packet.example.json
+python .\forge\compiler\forge_compiler.py compile .\forge\examples\concept-packet.example.json --out .\forge\examples\generated
+```
+
 ## How to think about this system
 
 ### ATHENA and this repository
@@ -88,8 +101,16 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AthenaCycle.p
 - ATHENA handles institutional memory, evidence, governance, project brains, ontology, cognitive routing and long-horizon coordination.
 - `Plan/` is the design authority.
 - `Nexus V/` is the semantic execution/toolchain implementation branch.
+- `forge/` is the independent cognitive-synthesis and reconstruction subsystem.
 - Identity, constitution, governance, memory and evidence are durable; models and tool surfaces are replaceable.
 - GPT, Codex, local models and other workers may use ATHENA adapters. An adapter does not make every independent intelligence an ATHENA subsystem.
+
+### F.O.R.G.E. and A.E.S.I.R.
+
+- A.E.S.I.R. performs adaptive polymath research, source discovery, cross-domain exploration, hypothesis generation and evidence gathering.
+- F.O.R.G.E. operationalises the human owner's development method: intent anchoring, epistemic partition, analogy, first-principles reduction, symmetric challenge, counterfactual branching, candidate tournaments, mechanism mining, reverse reconstruction, simplification and functional-snapshot compilation.
+- F.O.R.G.E. preserves failed and superseded paths rather than flattening history into only the active result.
+- F.O.R.G.E. outputs remain provisional until A.E.S.I.R. evidence, relevant simulation/prototypes, ATHENA governance and human approval support promotion.
 
 ### JANUS
 
@@ -103,7 +124,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AthenaCycle.p
 
 - JARVIS is the independent personal/executive AI.
 - It handles immediate dialogue, personal context, preferences, scheduling, devices and executive orchestration.
-- It can collaborate with ATHENA, JANUS and OASIS through explicit contracts.
+- It can collaborate with ATHENA, JANUS, F.O.R.G.E. and OASIS through explicit contracts.
 
 ### OASIS
 
@@ -122,7 +143,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tools\Invoke-AthenaCycle.p
 
 ## Capability posture
 
-Some capabilities are implemented, some are scaffolded, some are specified, and some are speculative. Never treat a specification, rendered blueprint, simulation result or inferred application skill as a proven implementation without evidence.
+Some capabilities are implemented, some are scaffolded, some are specified, and some are speculative. Never treat a specification, rendered blueprint, compiler scaffold, simulation result or inferred application skill as a proven implementation without evidence.
 
 Required labels:
 
@@ -136,7 +157,7 @@ Required labels:
 
 ## Cross-system request rule
 
-Every request between ATHENA, JARVIS, JANUS, OASIS runtime services or external tools should carry:
+Every request between ATHENA, JARVIS, JANUS, F.O.R.G.E., A.E.S.I.R., OASIS runtime services or external tools should carry:
 
 - requester identity;
 - objective;
