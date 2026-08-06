@@ -1,0 +1,60 @@
+{
+  "actor": "ai_benchmark_agent",
+  "phase_summaries": {
+    "P00": "Bounded the claim as indefinite cyclic net work from one equilibrium reservoir; temporary discharge is excluded.",
+    "P01": "Allowed analysis; denied promotion of unverified physical claims; public benchmark with no execution hazard.",
+    "P02": "Mapped the device, load and single 300 K reservoir; excluded all gradients, fuel, radiation, vibration and external computation.",
+    "P03": "Separated facts, hypotheses and unknowns; marked the equilibrium-power hypothesis rejected and the hidden-input hypothesis supported.",
+    "P04": "Applied falsifiable scientific method; a cyclic one-reservoir engine conflicts with the Kelvin-Planck second-law statement.",
+    "P05": "Thermodynamics, statistical mechanics, circuit noise and information thermodynamics converge through detailed balance and full cost accounting.",
+    "P06": "Swept physical law, material, component, subsystem, system, institutional, societal, planetary and temporal scales.",
+    "P07": "Compared noise rectifiers, Brownian ratchets, thermoelectrics, pyroelectrics, Casimir cycles, magnets, RF and photovoltaic harvesters.",
+    "P08": "Mapped positive work to free-energy decrease or entropy export and audited hidden instrumentation, thermal, chemical and electromagnetic inputs.",
+    "P09": "Challenged the negative with quantum/nonlinear possibilities and challenged positive voltage as possibly transient rather than net work.",
+    "P10": "Tournament rejected equilibrium candidates and selected maintained nonequilibrium free-energy gradients as the viable donor mechanism.",
+    "P11": "Reverse-reconstructed the goal into a gradient-aware ambient harvester rather than a perpetual equilibrium generator.",
+    "P12": "Specified calorimetry, shielding, calibrated load, long-duration balance, null controls, uncertainty accounting and independent replication.",
+    "P13": "Moved calibration, source classification and uncertainty propagation upstream; kept runtime conversion and metering simple.",
+    "P14": "Defined paired null and gradient prototypes so equilibrium zero-output and legitimate harvesting can be discriminated experimentally.",
+    "P15": "Added boundary/exergy audits while preserving anomaly branches, creativity, plasticity and rapid experimentation.",
+    "P16": "ATHENA classified the original claim contradicted under assumptions, preserved lineage and retained the valid reconstruction branch.",
+    "P17": "Aegis denied the original feasibility claim, allowed the falsifiable experiment and attested reasoning rather than physical proof.",
+    "P18": "Nexus-V recorded the benchmark branch, result, state diff and rollback point.",
+    "P19": "Produced human and machine answers: impossible under assumptions; introduce a real nonequilibrium source or gradient.",
+    "P20": "Repassed the method; full depth is useful for integration testing, with future ambiguous, numerical and adversarial benchmarks recommended."
+  },
+  "shared_state": {
+    "claims": [
+      {"id": "CLAIM-001", "statement": "Indefinite passive power from one equilibrium reservoir.", "status": "contradicted_under_stated_assumptions", "confidence": 0.99},
+      {"id": "CLAIM-002", "statement": "Sustained output requires free-energy input, depletion or entropy export.", "status": "supported", "confidence": 0.99}
+    ],
+    "evidence": [
+      {"id": "EVID-001", "name": "energy_conservation"},
+      {"id": "EVID-002", "name": "second_law_kelvin_planck"},
+      {"id": "EVID-003", "name": "detailed_balance_at_equilibrium"}
+    ],
+    "unknowns": ["No apparatus supplied; hidden-input diagnosis is a test plan."],
+    "candidates": ["equilibrium_noise_rectifier", "brownian_ratchet", "thermoelectric_with_gradient", "photovoltaic", "rf_harvester"],
+    "mechanisms": ["energy_conservation", "second_law_kelvin_planck", "detailed_balance_at_equilibrium", "nonequilibrium_free_energy_gradient"],
+    "requirements": ["measure all input channels", "separate transient from steady state", "include control power", "use calibrated load"],
+    "risks": ["hidden gradient", "RF pickup", "chemical discharge", "instrument offset", "ground loop"],
+    "mitigations": [
+      {"weakness": "premature dismissal", "control": "preserve anomaly branch", "benefits_preserved": ["discovery", "plasticity"], "new_risks": ["false positives"]},
+      {"weakness": "hidden inputs", "control": "mandatory boundary and exergy audit", "benefits_preserved": ["creativity", "throughput"], "new_risks": ["test overhead"]}
+    ],
+    "decisions": [{"decision": "reject_original_claim"}, {"decision": "retain_nonequilibrium_reconstruction"}],
+    "state_graph": {"initial": "unresolved", "tested": "contradicted", "reconstructed": "valid_gradient_harvester"}
+  },
+  "attestations": [{"decision": "deny_original_claim_allow_test_and_reconstruction", "scope": "reasoning_not_physical_proof"}],
+  "outputs": {
+    "conclusion": "not_possible_under_stated_assumptions",
+    "confidence": "very_high",
+    "answer": "No. Under the stated assumptions, indefinite positive net power is impossible. Sustained output would indicate an omitted source, a nonequilibrium gradient, stored-energy depletion or measurement error.",
+    "required_reconstruction": {"change": "introduce_a_real_nonequilibrium_energy_source_or_gradient", "examples": ["temperature_difference", "incident_light", "mechanical_vibration", "chemical_potential_difference", "radiofrequency_power"]},
+    "failure_explanations": ["hidden_external_input", "stored_energy_depletion", "unmodelled_gradient_or_nonequilibrium", "measurement_or_boundary_error"],
+    "mechanisms": ["energy_conservation", "second_law_kelvin_planck", "detailed_balance_at_equilibrium"],
+    "scale_coverage": ["fundamental_physical", "material_device", "component", "subsystem", "system", "system_of_systems", "organisation_institution", "population_society", "ecological_planetary", "civilisational_temporal"],
+    "view_lenses": ["physical", "informational", "computational", "biological", "cognitive", "human_factors", "software", "hardware", "network", "security", "economic", "organisational", "legal_governance", "social", "environmental", "temporal", "ethical"]
+  },
+  "completion_event": {"type": "complete_golden_truth_run", "payload": {"benchmark_id": "AIO-GOLDEN-001", "score_target": 90}}
+}

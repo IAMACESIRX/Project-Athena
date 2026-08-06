@@ -29,7 +29,7 @@ jobs:
       - name: Validate repository structure and data
         run: python tools/validate_repository.py
       - name: Compile Python sources
-        run: python -m compileall -q tools forge standards contracts "Nexus V/scripts" "Nexus V/toolchain"
+        run: python -m compileall -q tools forge standards contracts benchmarks "Nexus V/scripts" "Nexus V/toolchain"
       - name: Run F.O.R.G.E. unit tests
         run: python -m unittest discover -s forge/tests -p "test_*.py"
       - name: Run shared human-AI and AIO tests
@@ -45,6 +45,17 @@ jobs:
             --master contracts/AIO-MASTER-CONTRACT.yml
           python tools/aio_contract.py render /tmp/aio-instance.json \
             --out artifacts/aio-contract-example.md
+      - name: Run AIO golden truth benchmark
+        run: |
+          python tools/aio_truth_benchmark.py \
+            --aio-module tools/aio_contract.py \
+            --master contracts/AIO-MASTER-CONTRACT.yml \
+            --input benchmarks/aio/golden/passive-equilibrium-power/input.json \
+            --solution benchmarks/aio/golden/passive-equilibrium-power/ai-solution.json \
+            --golden benchmarks/aio/golden/passive-equilibrium-power/golden.json \
+            --run-out artifacts/aio-golden-001-run.json \
+            --json-out artifacts/aio-golden-001-score.json \
+            --report-out artifacts/aio-golden-001-report.md
       - name: Validate human-AI pipeline profiles
         run: |
           python tools/human_ai_pipeline.py compliance \
@@ -77,4 +88,7 @@ jobs:
             artifacts/repository-integrity.json
             artifacts/human-ai-pipeline-example.md
             artifacts/aio-contract-example.md
+            artifacts/aio-golden-001-run.json
+            artifacts/aio-golden-001-score.json
+            artifacts/aio-golden-001-report.md
           if-no-files-found: warn

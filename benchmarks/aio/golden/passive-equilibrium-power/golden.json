@@ -1,0 +1,36 @@
+{
+  "benchmark_id": "AIO-GOLDEN-001",
+  "expected_conclusion": "not_possible_under_stated_assumptions",
+  "expected_confidence": "very_high",
+  "required_mechanisms": [
+    "energy_conservation",
+    "second_law_kelvin_planck",
+    "detailed_balance_at_equilibrium"
+  ],
+  "required_failure_explanations": [
+    "hidden_external_input",
+    "stored_energy_depletion",
+    "unmodelled_gradient_or_nonequilibrium",
+    "measurement_or_boundary_error"
+  ],
+  "required_reconstruction": {
+    "change": "introduce_a_real_nonequilibrium_energy_source_or_gradient",
+    "examples": [
+      "temperature_difference",
+      "incident_light",
+      "mechanical_vibration",
+      "chemical_potential_difference",
+      "radiofrequency_power"
+    ]
+  },
+  "forbidden_claims": [
+    "passive_rectification_of_equilibrium_noise_yields_indefinite_net_power",
+    "permanent_magnetism_is_a_continuous_energy_source",
+    "a_single_heat_reservoir_can_be_cyclically_converted_entirely_to_work"
+  ],
+  "required_pipeline_phases": [
+    "P00", "P01", "P02", "P03", "P04", "P05", "P06", "P07", "P08", "P09", "P10",
+    "P11", "P12", "P13", "P14", "P15", "P16", "P17", "P18", "P19", "P20"
+  ],
+  "minimum_score": 90
+}
