@@ -11,8 +11,8 @@ Pairwise contracts are not independent authorities. Participant-specific contrac
 ## Files
 
 - `AIO-MASTER-CONTRACT.yml` — canonical participants, weights, contract families, pipeline, scale ladder, lenses and compatibility rules.
-- `aio-contract-instance.schema.json` — machine validation for live contract instances.
 - `aio-master-contract.schema.json` — machine validation for the master contract definition.
+- `aio-contract-instance.schema.json` — machine validation for live contract instances.
 
 ## Operating properties
 
@@ -37,8 +37,10 @@ python tools/aio_contract.py instantiate `
   --master contracts/AIO-MASTER-CONTRACT.yml `
   --input standards/human-ai-pipeline/examples/aio-input.example.json `
   --out work/aio-instance.json
-python tools/aio_contract.py validate-instance work/aio-instance.json
-python tools/aio_contract.py render work/aio-instance.json --out work/aio-instance.md
+python tools/aio_contract.py validate-instance work/aio-instance.json `
+  --master contracts/AIO-MASTER-CONTRACT.yml
+python tools/aio_contract.py render work/aio-instance.json `
+  --out work/aio-instance.md
 ```
 
 The instantiated pipeline covers full scientific, intra- and cross-scientific, polymath, multiscale, systems, synthesis, engineering, simulation, mitigation, governance, attestation, execution, output and method-revalidation phases.
