@@ -1,0 +1,14 @@
+{
+  "schema": "project-athena.aio.omega.hidden_truth.v0.1",
+  "warning": "Template only. Real instances must be generated outside solver-visible state.",
+  "seed": "<secret>",
+  "causal_faults": [],
+  "sensor_models": {},
+  "component_models": {},
+  "environment_schedule": [],
+  "evidence_corruption_map": [],
+  "shock_schedule": [],
+  "upgrade_truth": {},
+  "feasible_frontier": {},
+  "evaluation_replays": []
+}
