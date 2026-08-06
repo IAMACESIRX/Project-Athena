@@ -6,6 +6,7 @@
 - intake_id: `[ATHENA-INTAKE-YYYYMMDD-NNN]`
 - created_at: `[ISO-8601 timestamp]`
 - status: `created`
+- execution_mode: `[manual | ai_assisted | automated | hybrid]`
 - active_layer: `[root | Plan | Nexus V | tools | memory | work | other]`
 - priority_source: `[human instruction | Plan | governance | code | runtime evidence]`
 
@@ -16,6 +17,10 @@
 ## Required Output
 
 [State what must exist or be answered by the end of the run.]
+
+## Benefits To Preserve
+
+- [Name useful capabilities that controls or redesigns must not silently suppress.]
 
 ## Files To Read
 
@@ -49,6 +54,23 @@
 |---|---|---:|---|
 | [risk] | inferred | 0.5 | [mitigation] |
 
+## Weakness Register
+
+| ID | Weakness | Triggers | Harms | Associated Benefits | Evidence | Disposition | Status |
+|---|---|---|---|---|---|---|---|
+| W-001 | [negative pressure] | [conditions] | [harms] | [benefits to preserve] | [evidence] | mitigate | open |
+
+## Mitigation And Offset Register
+
+| ID | Weakness IDs | Control/Offset | Benefits Preserved | Activation Trigger | Modes | Trade-offs | New Risks | Manual Verification | Machine Verification | Review/Removal Conditions | Status |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| M-001 | W-001 | [control] | [benefit] | [trigger] | manual, hybrid | [costs] | [new risks] | [human check] | [script/test] | [when to revise or retire] | proposed |
+
+## Intervention Log
+
+| ID | Actor/Authority | Stage | Action | Reason | Changed Fields | Required Validation | Rollback Or Branch |
+|---|---|---|---|---|---|---|---|
+
 ## Athena Decision Pass
 
 Problem frame:
@@ -68,7 +90,7 @@ Rollback or recovery:
 
 ## Verification Method
 
-[Commands, file checks, tests, or review steps.]
+[Commands, file checks, tests, or review steps. Include checks that mitigations preserve their named benefits.]
 
 ## Memory Writeback Targets
 
