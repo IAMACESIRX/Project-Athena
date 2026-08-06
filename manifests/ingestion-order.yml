@@ -1,20 +1,23 @@
-﻿schema: ai-system.ingestion_order.v1
+schema: ai-system.ingestion_order.v1
 updated: 2026-08-07
-purpose: "Defines the stable read order for AIs, humans, and programs."
+purpose: "Defines the stable read order for AIs, humans, programs and future hardware readers."
 order:
   - {path: AI-PORTAL.md, reason: universal entry point}
   - {path: manifests/system-manifest.json, reason: machine-readable system index}
   - {path: identity/README.md, reason: general AI-OS identity beyond any one project}
   - {path: identity/constitution.md, reason: non-negotiable principles}
   - {path: projects/project-registry.yml, reason: active managed project list}
-  - {path: standards/human-ai-pipeline/STANDARD-v0.1.md, reason: project-wide manual AI-assisted automated and hybrid execution contract}
+  - {path: contracts/AIO-MASTER-CONTRACT.yml, reason: single canonical multi-weighted contract and full-stack execution graph}
+  - {path: contracts/README.md, reason: manual and machine operating rules for shared contract instances}
+  - {path: standards/human-ai-pipeline/AIO-UNIFIED-PIPELINE.md, reason: input-once scientific polymath engineering governance attestation and execution weave}
+  - {path: standards/human-ai-pipeline/STANDARD-v0.1.md, reason: project-wide manual AI-assisted automated and hybrid execution standard}
   - {path: standards/human-ai-pipeline/ONBOARDING.md, reason: human and AI onboarding for the shared pipeline}
   - {path: standards/human-ai-pipeline/profiles/athena.yml, reason: ATHENA shared pipeline profile}
   - {path: aesir/AESIR-PORTAL.md, reason: A.E.S.I.R. research identity and authority boundary}
-  - {path: aesir/manifest.yml, reason: machine-readable A.E.S.I.R. subsystem index}
+  - {path: aesir/manifest.yml, reason: machine-readable A.E.S.I.R. participant index}
   - {path: aesir/engine/pipeline.yml, reason: canonical polymath research stage order}
   - {path: forge/FORGE-PORTAL.md, reason: F.O.R.G.E. cognitive-synthesis identity and authority boundary}
-  - {path: forge/manifest.yml, reason: machine-readable F.O.R.G.E. subsystem index}
+  - {path: forge/manifest.yml, reason: machine-readable F.O.R.G.E. participant index}
   - {path: forge/engine/pipeline.yml, reason: executable synthesis and reconstruction stage order}
   - {path: organization/hierarchy.yml, reason: authority and organization model}
   - {path: agents/agent-registry.yml, reason: pluggable human and AI agent registry}
