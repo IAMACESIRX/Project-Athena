@@ -56,6 +56,15 @@ jobs:
             --run-out artifacts/aio-golden-001-run.json \
             --json-out artifacts/aio-golden-001-score.json \
             --report-out artifacts/aio-golden-001-report.md
+      - name: Validate AIO OMEGA maximum-capability benchmark
+        run: |
+          python tools/aio_omega_validate.py validate-definition \
+            --challenge benchmarks/aio/omega/yggdrasil-habitat/challenge.json \
+            --scoring benchmarks/aio/omega/yggdrasil-habitat/scoring.json \
+            --schema benchmarks/aio/omega/yggdrasil-habitat/submission.schema.json
+          python -m unittest discover \
+            -s benchmarks/aio/omega/tests \
+            -p "test_*.py"
       - name: Validate human-AI pipeline profiles
         run: |
           python tools/human_ai_pipeline.py compliance \
