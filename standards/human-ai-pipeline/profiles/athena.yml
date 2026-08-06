@@ -1,0 +1,41 @@
+schema: project-athena.haips.profile.v0.1
+profile_id: haips-athena-v0.1
+system_id: athena
+name: ATHENA Institutional Work Cycle
+description: Human/AI/manual/automation wrapper for ATHENA governance, evidence, execution, verification and memory writeback.
+modes_supported: [manual, ai_assisted, automated, hybrid]
+entrypoints:
+  human: AI-PORTAL.md
+  ai: AI-PORTAL.md
+  machine: manifests/system-manifest.json
+  pipeline: engine/order-of-operations.md
+  template: templates/athena-task-intake.md
+  tool: tools/human_ai_pipeline.py
+outputs:
+  human_readable: [Markdown task intake, Markdown cycle report]
+  machine_readable: [HAIPS run packet JSON, ATHENA manifests and evidence records]
+default_benefits_to_preserve: [human authority, evidence traceability, recoverability, institutional continuity, explicit uncertainty]
+stages:
+  - {id: R00, name: authority_and_boundary, purpose: Confirm request scope authority privacy and restore requirements., manual_procedure: Write the active layer permissions sensitive material and restore decision., machine_procedure: Load authority and governance files and validate scope., outputs: [authority boundary], intervention_allowed: true}
+  - {id: R01, name: context_anchoring, purpose: Load identity current state and instructions., manual_procedure: Read first-read documents and note contradiction or staleness., machine_procedure: Resolve manifest references and record loaded sources., outputs: [context anchor], intervention_allowed: true}
+  - {id: R02, name: sensory_observation, purpose: Measure current state before reasoning., manual_procedure: Inspect relevant files reports and observations., machine_procedure: Run available scans maps manifests probes and log tools., outputs: [observed state], intervention_allowed: true}
+  - {id: R03, name: forensic_evidence, purpose: Assign stable evidence and preserve unknowns., manual_procedure: Record evidence IDs paths claims and unresolved questions., machine_procedure: Validate evidence references hashes and claim mappings., outputs: [evidence set], intervention_allowed: true}
+  - {id: R04, name: problem_framing, purpose: Define the problem knowns assumptions unknowns and reversible test., manual_procedure: Complete the problem frame., machine_procedure: Generate a structured frame without promoting assumptions., outputs: [problem frame], intervention_allowed: true}
+  - {id: R05, name: truth_gate, purpose: Label epistemic states and block unsupported action claims., manual_procedure: Review consequential claims and attach evidence., machine_procedure: Validate claim labels and flag unsupported claims., outputs: [truth-labelled claims], intervention_allowed: true}
+  - {id: R06, name: relational_mapping, purpose: Map dependencies affected modules and second-order effects., manual_procedure: Draw or list relationships and rollback dependencies., machine_procedure: Build graph edges from registries and task state., outputs: [impact map], intervention_allowed: true}
+  - {id: R07, name: diagnostic_intelligence, purpose: Convert failure signals into findings., manual_procedure: Review logs and state differences., machine_procedure: Run diagnostic scanners and queue findings., outputs: [diagnostic findings], intervention_allowed: true}
+  - {id: R08, name: council_and_cognitive_pass, purpose: Challenge assumptions alternatives causality and end state., manual_procedure: Perform selected reasoning passes or convene reviewers., machine_procedure: Route through cognition methods and specialist roles., outputs: [candidate decisions], intervention_allowed: true}
+  - {id: R08M, name: mitigation_and_offset_design, purpose: Reduce weaknesses while preserving operating benefits., manual_procedure: Fill weakness and mitigation registers including trade-offs new risks and removal conditions., machine_procedure: Validate benefit-preserving mitigations and review paths., outputs: [mitigation register], intervention_allowed: true}
+  - {id: R09, name: decision_gate, purpose: Select action after evidence risk rollback mitigation and verification are explicit., manual_procedure: Sign off or reject the action and state why., machine_procedure: Check gate completeness and route authority., outputs: [authorised action], intervention_allowed: true}
+  - {id: R10, name: execution, purpose: Make the smallest scoped state change., manual_procedure: Perform documented steps and record them., machine_procedure: Execute through an authorised tool and capture state differences., outputs: [state change], intervention_allowed: true}
+  - {id: R11, name: verification, purpose: Prove intended change and detect unintended effects., manual_procedure: Inspect acceptance checks and compare pre-state., machine_procedure: Run targeted tests and operation checks., outputs: [verification result], intervention_allowed: true}
+  - {id: R12, name: audit_and_continuity, purpose: Preserve causality lessons mitigation performance and handoff., manual_procedure: Update audit handoff lessons and mitigation notes., machine_procedure: Write structured evidence history and continuity., outputs: [audit and writeback], intervention_allowed: true}
+  - {id: R13, name: end_state, purpose: Leave understandable status warnings rollback and next actions., manual_procedure: Write the final readable summary., machine_procedure: Emit final run packet and machine status., outputs: [final state], intervention_allowed: true}
+intervention:
+  allowed: true
+  actions: [pause, edit, override, branch, reject, resume, rollback, change_mode, change_mitigation, request_evidence, request_review]
+  history_preserved: true
+mitigation: {required: true, preserve_benefits: true, declare_tradeoffs: true, declare_new_risks: true, reviewable: true}
+validation:
+  manual: [Confirm authority evidence rollback and mitigation fields are complete., Confirm readable output matches actual state.]
+  machine: [python tools/human_ai_pipeline.py validate RUN_PACKET, powershell -NoProfile -ExecutionPolicy Bypass -File tools/Invoke-AIOperationCycle.ps1 -SkipLiveProbe]

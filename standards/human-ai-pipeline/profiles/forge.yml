@@ -1,0 +1,41 @@
+schema: project-athena.haips.profile.v0.1
+profile_id: haips-forge-v0.1
+system_id: forge
+name: F.O.R.G.E. Synthesis and Reconstruction Cycle
+description: Human/AI/manual/automation wrapper for candidate challenge mechanism mining reverse reconstruction and simplification.
+modes_supported: [manual, ai_assisted, automated, hybrid]
+entrypoints:
+  human: forge/README.md
+  ai: forge/FORGE-PORTAL.md
+  machine: forge/manifest.yml
+  pipeline: forge/engine/pipeline.yml
+  template: standards/human-ai-pipeline/templates/manual-run-packet.md
+  tool: forge/compiler/forge_compiler.py
+outputs:
+  human_readable: [functional snapshot report, mitigation review, reconstruction rationale]
+  machine_readable: [concept packet, functional snapshot JSON, compile trace JSON, HAIPS run packet JSON]
+default_benefits_to_preserve: [architectural plasticity, broad candidate exploration, native reconstruction, historical lineage, runtime simplicity]
+stages:
+  - {id: F00, name: authority_and_intent_anchor, purpose: Preserve objective and semantic invariants., manual_procedure: Write the intent genome., machine_procedure: Validate concept identity and boundaries., outputs: [intent genome], intervention_allowed: true}
+  - {id: F01, name: epistemic_partition, purpose: Separate claims by evidence state., manual_procedure: Label claims and unknowns., machine_procedure: Validate claim classes., outputs: [claim set], intervention_allowed: true}
+  - {id: F02, name: first_principles_reduction, purpose: Derive required mechanisms and constraints., manual_procedure: Reduce to a mechanism kernel., machine_procedure: Structure mechanisms and constraints., outputs: [mechanism kernel], intervention_allowed: true}
+  - {id: F03, name: analogical_transfer, purpose: Generate mechanisms without treating analogy as proof., manual_procedure: Map source target and mismatch., machine_procedure: Generate analogy hypotheses., outputs: [analogy hypotheses], intervention_allowed: true}
+  - {id: F04, name: candidate_lattice, purpose: Create competing architectures and variable branches., manual_procedure: List candidate families., machine_procedure: Generate structured candidates., outputs: [candidate lattice], intervention_allowed: true}
+  - {id: F05, name: symmetric_challenge, purpose: Challenge negative positive and accepted properties., manual_procedure: Attack strengths and weaknesses equally., machine_procedure: Run adversarial candidate passes., outputs: [challenge record], intervention_allowed: true}
+  - {id: F05M, name: mitigation_and_offset_design, purpose: Correct weaknesses while preserving exploration plasticity and reconstruction., manual_procedure: Complete weakness and mitigation records., machine_procedure: Validate offsets and side effects., outputs: [mitigation register], intervention_allowed: true}
+  - {id: F06, name: counterfactual_branching, purpose: Change variables through explicit branches., manual_procedure: Record parent failure and changes., machine_procedure: Create branch records without rewriting parent results., outputs: [candidate branches], intervention_allowed: true}
+  - {id: F07, name: candidate_tournament, purpose: Rank candidates transparently., manual_procedure: Score and document judgement., machine_procedure: Calculate weighted rankings., outputs: [donor pool], intervention_allowed: true}
+  - {id: F08, name: mechanism_mining, purpose: Extract why leading candidates work., manual_procedure: Identify mechanisms conditions and costs., machine_procedure: Mine recurring donor mechanisms., outputs: [mechanism pool], intervention_allowed: true}
+  - {id: F09, name: reverse_reconstruction, purpose: Build a native architecture from compatible mechanisms., manual_procedure: Rebuild from desired properties and first principles., machine_procedure: Generate scaffold and conflict map., outputs: [reconstructed architecture], intervention_allowed: true}
+  - {id: F10, name: semantic_and_runtime_compression, purpose: Remove accidental complexity and recurring overhead., manual_procedure: Simplify moving parts while preserving behaviour., machine_procedure: Detect duplication and generate compressed snapshot., outputs: [simplified architecture], intervention_allowed: true}
+  - {id: F11, name: functional_snapshot_compile, purpose: Produce usable human and machine outputs., manual_procedure: Write snapshot and rationale., machine_procedure: Emit snapshot and trace files., outputs: [functional snapshot], intervention_allowed: true}
+  - {id: F12, name: validation_and_promotion, purpose: Route tests and evidence before promotion., manual_procedure: Review acceptance evidence and rollback., machine_procedure: Generate promotion requirements and validation plan., outputs: [promotion packet], intervention_allowed: true}
+  - {id: F13, name: method_repass, purpose: Evaluate and adapt the methodology itself., manual_procedure: Record which stages helped or harmed., machine_procedure: Compare method cost defects and outcomes., outputs: [method feedback], intervention_allowed: true}
+intervention:
+  allowed: true
+  actions: [pause, edit, override, branch, reject, resume, rollback, change_mode, change_mitigation, request_evidence, request_review]
+  history_preserved: true
+mitigation: {required: true, preserve_benefits: true, declare_tradeoffs: true, declare_new_risks: true, reviewable: true}
+validation:
+  manual: [Confirm reconstructed result preserves invariants and benefits., Confirm conflicts and unresolved evidence are visible.]
+  machine: [python tools/human_ai_pipeline.py validate RUN_PACKET, python -m unittest discover -s forge/tests -p test_*.py]

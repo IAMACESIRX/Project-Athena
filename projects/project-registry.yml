@@ -9,15 +9,16 @@ projects:
     evidence_namespace: EVD-ATHENA
     local_only: true
     root: D:/Projects/Project Athena
-    managed_layers:
-      - project-athena
-      - plan
-      - nexus-v
-      - forge
-      - athena-engine
-      - athena-memory
-      - athena-work
-      - athena-tools
+    managed_layers: [project-athena, plan, nexus-v, aesir, forge, human-ai-pipeline, athena-engine, athena-memory, athena-work, athena-tools]
+  - id: aesir
+    name: A.E.S.I.R.
+    status: active_subsystem
+    project_brain: aesir/AESIR-PORTAL.md
+    evidence_namespace: EVD-AESIR
+    local_only: true
+    root: D:/Projects/Project Athena/aesir
+    managed_layers: [aesir, research, human-ai-pipeline]
+    note: Adaptive Evolutionary System for Intelligent Research; independent polymath research engine with manual, AI-assisted, automated and hybrid operation.
   - id: forge
     name: F.O.R.G.E.
     status: active_subsystem
@@ -25,9 +26,17 @@ projects:
     evidence_namespace: EVD-FORGE
     local_only: true
     root: D:/Projects/Project Athena/forge
-    managed_layers:
-      - forge
+    managed_layers: [forge, human-ai-pipeline]
     note: First-Principles Ontological Reconstruction and Generational Evolution; independent cognitive-synthesis system that complements A.E.S.I.R. and writes governed outputs through ATHENA.
+  - id: human-ai-pipeline
+    name: Human–AI Interoperable Pipeline Standard
+    status: active_foundation
+    project_brain: standards/human-ai-pipeline/STANDARD-v0.1.md
+    evidence_namespace: EVD-HAIPS
+    local_only: true
+    root: D:/Projects/Project Athena/standards/human-ai-pipeline
+    managed_layers: [human-ai-pipeline, athena, aesir, forge]
+    note: Shared manual, AI-assisted, automated and hybrid execution, intervention, mitigation and rendering contract for the entire project.
   - id: nexus-v
     name: Nexus V
     status: active_subsystem
@@ -35,23 +44,14 @@ projects:
     evidence_namespace: EVD-NEXUSV
     local_only: true
     root: D:/Projects/Project Athena/Nexus V
-    managed_layers:
-      - nexus-v
-      - plan
+    managed_layers: [nexus-v, plan]
   - id: general-ai-os
     name: General AI-OS Control Plane
     status: active_foundation
     project_brain: projects/general-ai-os/project-brain.md
     evidence_namespace: EVD-AIOS
     local_only: true
-    managed_layers:
-      - identity
-      - organization
-      - agents
-      - orchestration
-      - memory
-      - training
-      - runtime
+    managed_layers: [identity, organization, agents, orchestration, memory, training, runtime]
   - id: wow-backup-stack
     name: WoW Backup Stack
     status: legacy_retained
@@ -59,6 +59,5 @@ projects:
     evidence_namespace: EVD-WOW
     local_only: true
     root: C:/Users/aesir/OneDrive/Desktop/WoW-Backups/2026-05-30_2035
-    managed_layers:
-      - legacy-wow
+    managed_layers: [legacy-wow]
     note: Retained from the original AI-OS control-plane history; not the current checkout root identity.

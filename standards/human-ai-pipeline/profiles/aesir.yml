@@ -1,0 +1,48 @@
+schema: project-athena.haips.profile.v0.1
+profile_id: haips-aesir-v0.1
+system_id: aesir
+name: A.E.S.I.R. Polymath Research Cycle
+description: Human/AI/manual/automation implementation of Adaptive Evolutionary System for Intelligent Research.
+modes_supported: [manual, ai_assisted, automated, hybrid]
+entrypoints:
+  human: aesir/README.md
+  ai: aesir/AESIR-PORTAL.md
+  machine: aesir/manifest.yml
+  pipeline: aesir/engine/pipeline.yml
+  template: aesir/templates/research-cycle.md
+  tool: tools/human_ai_pipeline.py
+outputs:
+  human_readable: [research review, decision brief, experiment plan]
+  machine_readable: [HAIPS run packet JSON, evidence bundle, candidate and hypothesis records]
+default_benefits_to_preserve: [cross-domain breadth, mechanism-level depth, original hypothesis generation, uncertainty preservation, research traceability]
+stages:
+  - {id: A00, name: authority_and_question, purpose: Preserve the human question and research boundary., manual_procedure: Write the exact question and exclusions., machine_procedure: Parse objective and semantic invariants., outputs: [research charter], intervention_allowed: true}
+  - {id: A01, name: problem_and_success, purpose: Frame the problem and success criteria., manual_procedure: State the problem and useful answer conditions., machine_procedure: Generate a structured frame for review., outputs: [problem frame], intervention_allowed: true}
+  - {id: A02, name: evidence_and_epistemic_state, purpose: Separate evidence assumptions hypotheses and unknowns., manual_procedure: Label sources and claims., machine_procedure: Build a claim/evidence table and contradictions., outputs: [evidence map], intervention_allowed: true}
+  - {id: A03, name: first_principles_analysis, purpose: Reduce the subject to mechanisms and hard constraints., manual_procedure: Decompose inputs transformations laws and outputs., machine_procedure: Produce a mechanism kernel and constraint classes., outputs: [mechanism kernel], intervention_allowed: true}
+  - {id: A04, name: blind_spot_detection, purpose: Search for unknown unknowns and missing perspectives., manual_procedure: List what could invalidate the frame., machine_procedure: Run blind-spot bias and missing-source checks., outputs: [blind spot register], intervention_allowed: true}
+  - {id: A05, name: concept_space_mapping, purpose: Map variables options dimensions and adjacent domains., manual_procedure: Draw a matrix or graph., machine_procedure: Generate candidate lattice and relationship map., outputs: [concept map], intervention_allowed: true}
+  - {id: A06, name: scale_exploration, purpose: Test across component system network and institutional scales., manual_procedure: Re-evaluate mechanisms at multiple scales., machine_procedure: Generate scale assumptions and failure modes., outputs: [scale analysis], intervention_allowed: true}
+  - {id: A07, name: constraint_inversion, purpose: Distinguish hard constraints from inherited norms., manual_procedure: Invert each non-fundamental constraint., machine_procedure: Classify constraints and generate branches., outputs: [constraint branches], intervention_allowed: true}
+  - {id: A08, name: inverse_exploration, purpose: Work backward from the desired outcome., manual_procedure: List precursor conditions and mechanisms., machine_procedure: Build reverse causal and dependency chain., outputs: [inverse model], intervention_allowed: true}
+  - {id: A09, name: hypothesis_generation, purpose: Generate competing explanatory and architectural models., manual_procedure: Write multiple falsifiable candidates., machine_procedure: Generate structured hypotheses with disproof conditions., outputs: [hypothesis set], intervention_allowed: true}
+  - {id: A10, name: polymath_council, purpose: Apply specialist and contrarian perspectives., manual_procedure: Review through selected disciplines or people., machine_procedure: Route to specialist agents and preserve dissent., outputs: [council record], intervention_allowed: true}
+  - {id: A11, name: competing_worlds, purpose: Model alternative worlds in which different hypotheses are true., manual_procedure: Describe worlds and discriminating evidence., machine_procedure: Generate scenarios and comparison criteria., outputs: [world models], intervention_allowed: true}
+  - {id: A12, name: engineering_design_review, purpose: Convert ideas into interfaces resources and tests., manual_procedure: Define buildable components and dependencies., machine_procedure: Generate implementation contracts and tests., outputs: [engineering review], intervention_allowed: true}
+  - {id: A13, name: risk_and_governance, purpose: Expose safety privacy evidence and execution risks., manual_procedure: Complete risk authority and publication review., machine_procedure: Check governance and provenance requirements., outputs: [risk register], intervention_allowed: true}
+  - {id: A13M, name: mitigation_and_offset_design, purpose: Offset weaknesses without suppressing research strengths., manual_procedure: Pair weaknesses with benefits and plastic controls., machine_procedure: Validate mitigation completeness and side effects., outputs: [mitigation register], intervention_allowed: true}
+  - {id: A14, name: evolutionary_optimization, purpose: Rank next actions by fitness and information value., manual_procedure: Score actions against criteria., machine_procedure: Calculate transparent rankings., outputs: [fitness ranking], intervention_allowed: true}
+  - {id: A15, name: breakthrough_catalyst, purpose: Search for reframings that change the solution space., manual_procedure: Ask what representation or layer is wrong., machine_procedure: Generate paradigms and testable reframings., outputs: [breakthrough candidates], intervention_allowed: true}
+  - {id: A16, name: recursive_discovery_loop, purpose: Determine how discoveries generate the next cycle., manual_procedure: Map outputs to new questions and nodes., machine_procedure: Generate routes without automatic promotion., outputs: [discovery loop], intervention_allowed: true}
+  - {id: A17, name: experiment_simulation_prototype, purpose: Design the smallest discriminating test., manual_procedure: Write variables controls procedure and falsification criteria., machine_procedure: Generate an experiment packet., outputs: [experiment plan], intervention_allowed: true}
+  - {id: A18, name: self_critique_and_audit, purpose: Challenge process evidence and conclusions., manual_procedure: Record weaknesses missing expertise and criteria drift., machine_procedure: Run adversarial and reproducibility checks., outputs: [self audit], intervention_allowed: true}
+  - {id: A19, name: synthesis_and_decision, purpose: Produce an answer preserving uncertainty and relevance., manual_procedure: Write synthesis alternatives and boundaries., machine_procedure: Render source-linked decision brief and bundle., outputs: [research synthesis], intervention_allowed: true}
+  - {id: A20, name: memory_and_graph_writeback, purpose: Route findings rejected paths and tests to ATHENA and F.O.R.G.E., manual_procedure: Record retain promote shelve and recheck decisions., machine_procedure: Emit structured writeback and provenance., outputs: [writeback packet], intervention_allowed: true}
+intervention:
+  allowed: true
+  actions: [pause, edit, override, branch, reject, resume, rollback, change_mode, change_mitigation, request_evidence, request_review]
+  history_preserved: true
+mitigation: {required: true, preserve_benefits: true, declare_tradeoffs: true, declare_new_risks: true, reviewable: true}
+validation:
+  manual: [Verify claims are evidence-labelled and countermodels were considered., Verify mitigations protect breadth depth or originality where relevant.]
+  machine: [python tools/human_ai_pipeline.py validate RUN_PACKET, python tools/human_ai_pipeline.py render RUN_PACKET --out REPORT]

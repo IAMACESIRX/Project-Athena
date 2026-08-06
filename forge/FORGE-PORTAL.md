@@ -29,6 +29,25 @@ ATHENA authority: governance, provenance, continuity, publication and state-tran
 8. **Compile complexity upstream.** The toolchain may be complex; the usable output should minimise runtime overhead and moving parts.
 9. **Every version is provisional.** New evidence or superior architectures trigger comparison and possible reconstruction.
 10. **The methodology is plastic.** F.O.R.G.E. versions its own process and evaluates whether each method improves outcomes.
+11. **Offset without suppression.** Controls must reduce weaknesses while preserving the value-bearing capabilities that created or accompany them.
+
+## Human–AI implementation
+
+F.O.R.G.E. uses the same project-wide implementation contract as ATHENA and A.E.S.I.R.:
+
+- manual;
+- AI-assisted;
+- automated;
+- hybrid with explicit intervention.
+
+Canonical files:
+
+- `standards/human-ai-pipeline/STANDARD-v0.1.md`
+- `standards/human-ai-pipeline/profiles/forge.yml`
+- `forge/adapters/HAIPS-CONTRACT.md`
+- `tools/human_ai_pipeline.py`
+
+A person can complete and edit the methodology using Markdown and the shared run packet. AI and the compiler are throughput accelerators, not mandatory authorities.
 
 ## Core lifecycle
 
@@ -39,6 +58,7 @@ intent anchor
 → analogy and first-principles passes
 → candidate lattice
 → symmetric challenge
+→ mitigation and offset design
 → counterfactual variable branches
 → candidate tournament
 → mechanism mining

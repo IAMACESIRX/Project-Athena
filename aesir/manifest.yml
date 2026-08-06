@@ -1,0 +1,30 @@
+schema: aesir.manifest.v0.1
+updated: 2026-08-07
+system:
+  id: aesir
+  name: A.E.S.I.R.
+  expansion: Adaptive Evolutionary System for Intelligent Research
+  type: independent_polymath_research_engine
+  capability_state:
+    architecture: specified
+    manual_workflow: implemented
+    machine_profile: implemented
+    shared_pipeline_tooling: implemented
+    autonomous_research_orchestration: specified
+entrypoints:
+  human: aesir/README.md
+  ai: aesir/AESIR-PORTAL.md
+  machine: aesir/manifest.yml
+  pipeline: aesir/engine/pipeline.yml
+  template: aesir/templates/research-cycle.md
+  shared_profile: standards/human-ai-pipeline/profiles/aesir.yml
+  tool: tools/human_ai_pipeline.py
+interfaces:
+  athena: aesir/adapters/ATHENA-CONTRACT.md
+  forge: aesir/adapters/FORGE-CONTRACT.md
+outputs:
+  human_readable: [research review, decision brief, experiment plan]
+  machine_readable: [HAIPS run packet, evidence bundle, hypotheses, candidate worlds, writeback packet]
+validation:
+  profile: python tools/human_ai_pipeline.py validate-profile standards/human-ai-pipeline/profiles/aesir.yml
+  tests: python -m unittest discover -s standards/human-ai-pipeline/tests -p "test_*.py"

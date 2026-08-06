@@ -8,23 +8,33 @@ system:
   capability_state:
     architecture: specified
     file_native_compiler: implemented
+    manual_workflow: implemented
+    shared_human_ai_profile: implemented
+    mitigation_offset_pass: specified
     ai_council_orchestration: specified
     temporal_graph_runtime: specified
 entrypoints:
   human: forge/README.md
   ai: forge/FORGE-PORTAL.md
+  machine: forge/manifest.yml
   architecture: forge/architecture/FORGE-SYSTEM-SPEC-v0.1.md
   pipeline: forge/engine/pipeline.yml
   compiler: forge/compiler/forge_compiler.py
   example: forge/examples/concept-packet.example.json
+  shared_standard: standards/human-ai-pipeline/STANDARD-v0.1.md
+  shared_profile: standards/human-ai-pipeline/profiles/forge.yml
+  shared_tool: tools/human_ai_pipeline.py
 schemas:
   concept_packet: forge/schemas/concept-packet.schema.json
   functional_snapshot: forge/schemas/functional-snapshot.schema.json
   compile_trace: forge/schemas/compile-trace.schema.json
+  shared_run_packet: standards/human-ai-pipeline/run-packet.schema.json
 interfaces:
   aesir: forge/adapters/AESIR-CONTRACT.md
   athena: forge/adapters/ATHENA-CONTRACT.md
+  human_ai_pipeline: forge/adapters/HAIPS-CONTRACT.md
 validation:
   tests: python -m unittest discover -s forge/tests -p "test_*.py"
-  compile: python -m compileall -q forge
+  shared_tests: python -m unittest discover -s standards/human-ai-pipeline/tests -p "test_*.py"
+  compile: python -m compileall -q forge tools
   example_validate: python forge/compiler/forge_compiler.py validate forge/examples/concept-packet.example.json

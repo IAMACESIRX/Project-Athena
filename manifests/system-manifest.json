@@ -3,7 +3,7 @@
   "project": {
     "name": "Project Athena",
     "root": "D:\\Projects\\Project Athena",
-    "created_for": "local AI prosthetic external brain, durable memory, cognitive processor, F.O.R.G.E. reconstruction, Plan architecture authority, and Nexus-V execution research",
+    "created_for": "local AI prosthetic external brain, durable memory, A.E.S.I.R. research, F.O.R.G.E. reconstruction, shared human-AI pipelines, Plan architecture authority, and Nexus-V execution research",
     "hosting": "local_first_with_explicit_publication",
     "cloud_push_allowed": false,
     "cloud_publication_policy": "governance/cloud-publication-policy.md",
@@ -18,8 +18,12 @@
     "context": "context.md",
     "plan_context": "Plan/context.md",
     "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+    "aesir_portal": "aesir/AESIR-PORTAL.md",
+    "aesir_manifest": "aesir/manifest.yml",
     "forge_portal": "forge/FORGE-PORTAL.md",
     "forge_manifest": "forge/manifest.yml",
+    "human_ai_pipeline_standard": "standards/human-ai-pipeline/STANDARD-v0.1.md",
+    "human_ai_pipeline_tool": "tools/human_ai_pipeline.py",
     "file_index": "context-file-index.md",
     "memory_map": "memory/athena-memory-map.md",
     "programmatic_manifest": "manifests/generated-ai-index.json",
@@ -35,15 +39,46 @@
     "governance": "governance/absolutes.md",
     "publication_policy": "governance/cloud-publication-policy.md",
     "decision_process": "engine/order-of-operations.md",
+    "human_ai_pipeline": "standards/human-ai-pipeline/STANDARD-v0.1.md",
+    "aesir_process": "aesir/engine/pipeline.yml",
     "forge_process": "forge/engine/pipeline.yml"
+  },
+  "human_ai_pipeline": {
+    "root": "standards/human-ai-pipeline",
+    "standard": "standards/human-ai-pipeline/STANDARD-v0.1.md",
+    "onboarding": "standards/human-ai-pipeline/ONBOARDING.md",
+    "mitigation_framework": "standards/human-ai-pipeline/MITIGATION-OFFSET-FRAMEWORK.md",
+    "intervention_protocol": "standards/human-ai-pipeline/INTERVENTION-PROTOCOL.md",
+    "profile_schema": "standards/human-ai-pipeline/profile.schema.json",
+    "run_schema": "standards/human-ai-pipeline/run-packet.schema.json",
+    "manual_template": "standards/human-ai-pipeline/templates/manual-run-packet.md",
+    "tool": "tools/human_ai_pipeline.py",
+    "profiles": {
+      "athena": "standards/human-ai-pipeline/profiles/athena.yml",
+      "aesir": "standards/human-ai-pipeline/profiles/aesir.yml",
+      "forge": "standards/human-ai-pipeline/profiles/forge.yml"
+    },
+    "modes": ["manual", "ai_assisted", "automated", "hybrid"]
   },
   "athena_core": {
     "task_intake_schema": "schemas/athena-task-intake.schema.json",
     "task_intake_template": "templates/athena-task-intake.md",
     "cycle_report_template": "templates/athena-cycle-report.md",
+    "human_ai_profile": "standards/human-ai-pipeline/profiles/athena.yml",
+    "human_ai_adapter": "engine/HAIPS-ATHENA-ADAPTER.md",
     "intake_folder": "work/intake",
     "cycle_reports": "engine/cycle-reports",
     "memory_map": "memory/athena-memory-map.md"
+  },
+  "aesir": {
+    "root": "aesir",
+    "portal": "aesir/AESIR-PORTAL.md",
+    "manifest": "aesir/manifest.yml",
+    "pipeline": "aesir/engine/pipeline.yml",
+    "template": "aesir/templates/research-cycle.md",
+    "human_ai_profile": "standards/human-ai-pipeline/profiles/aesir.yml",
+    "athena_contract": "aesir/adapters/ATHENA-CONTRACT.md",
+    "forge_contract": "aesir/adapters/FORGE-CONTRACT.md"
   },
   "forge": {
     "root": "forge",
@@ -56,6 +91,8 @@
     "concept_schema": "forge/schemas/concept-packet.schema.json",
     "snapshot_schema": "forge/schemas/functional-snapshot.schema.json",
     "trace_schema": "forge/schemas/compile-trace.schema.json",
+    "human_ai_profile": "standards/human-ai-pipeline/profiles/forge.yml",
+    "human_ai_contract": "forge/adapters/HAIPS-CONTRACT.md",
     "aesir_contract": "forge/adapters/AESIR-CONTRACT.md",
     "athena_contract": "forge/adapters/ATHENA-CONTRACT.md"
   },
@@ -71,8 +108,10 @@
     "plan_root": "Plan",
     "plan_context": "Plan/context.md",
     "oasis_athena_model": "Plan/OASIS_ATHENA_AGENT_MODEL.md",
+    "aesir_root": "aesir",
     "forge_root": "forge",
     "forge_architecture": "forge/architecture/FORGE-SYSTEM-SPEC-v0.1.md",
+    "human_ai_pipeline_root": "standards/human-ai-pipeline",
     "plan_roadmap": "Plan/ROADMAP.md",
     "plan_todo": "Plan/TODO.md",
     "plan_status": "Plan/TODO_STATUS.md",
@@ -88,53 +127,11 @@
     "nexus_v_reports": "Nexus V/reports",
     "nexus_v_matrix": "Nexus V/docs/NEXUS-V-IMPLEMENTATION-MATRIX.md"
   },
-  "identity": {
-    "readme": "identity/README.md",
-    "constitution": "identity/constitution.md",
-    "mission_and_scope": "identity/mission-and-scope.md"
-  },
-  "governance": {
-    "absolutes": "governance/absolutes.md",
-    "cloud_publication_policy": "governance/cloud-publication-policy.md",
-    "policy_matrix": "governance/policy-matrix.yml",
-    "self_correction": "governance/self-correction.md",
-    "error_correction": "governance/error-correction.md"
-  },
-  "cognition": {
-    "index": "cognition/cognition-index.yml",
-    "workflow": "cognition/cognition-workflow.md",
-    "anti_hallucination": "cognition/anti-hallucination/anti-hallucination-protocol.md",
-    "socratic": "cognition/socratic-deconstruction/socratic-protocol.md",
-    "algorithmic_inversion": "cognition/algorithmic-inversion/thinking-backward-protocol.md",
-    "hypergraph": "cognition/hypergraph-relational-processing/hypergraph-protocol.md",
-    "semantic_compression": "cognition/semantic-compression/compression-protocol.md"
-  },
-  "council": {
-    "roles": "council/roles.yml",
-    "default_profile": "council/profiles/athena-core.yml",
-    "project_profiles": "council/profiles",
-    "debate_protocol": "council/debate-protocol.md",
-    "reasoning_rounds": "council/reasoning-rounds"
-  },
-  "work": {
-    "athena_first_steps": "work/ATHENA-FIRST-STEPS.md",
-    "todo": "work/TODO.md",
-    "backlog": "work/backlog.yml",
-    "features": "work/features.yml",
-    "intake": "work/intake",
-    "branch_reconciliation": "docs/REPOSITORY_BASELINE_2026-08-05.md"
-  },
-  "observability": {
-    "health_model": "sensory/health-model.md",
-    "latest_scan": "sensory/scans/latest-scan.json",
-    "watched_state": "sensory/scans/latest-watched-changes.json",
-    "log_signatures": "observability/log-signatures.json",
-    "reports": "observability/reports"
-  },
-  "legacy": {
-    "wow_backup_stack_project_brain": "projects/wow-backup-stack/project-brain.md",
-    "wow_backup_stack_todo": "projects/wow-backup-stack/TODO.md",
-    "wow_backup_stack_council_profile": "council/profiles/wow-backup-stack.yml",
-    "note": "Older WoW backup-stack records are retained as scoped project history and must not define the root Athena identity or default work queue."
-  }
+  "identity": {"readme": "identity/README.md", "constitution": "identity/constitution.md", "mission_and_scope": "identity/mission-and-scope.md"},
+  "governance": {"absolutes": "governance/absolutes.md", "cloud_publication_policy": "governance/cloud-publication-policy.md", "policy_matrix": "governance/policy-matrix.yml", "self_correction": "governance/self-correction.md", "error_correction": "governance/error-correction.md"},
+  "cognition": {"index": "cognition/cognition-index.yml", "workflow": "cognition/cognition-workflow.md", "anti_hallucination": "cognition/anti-hallucination/anti-hallucination-protocol.md", "socratic": "cognition/socratic-deconstruction/socratic-protocol.md", "algorithmic_inversion": "cognition/algorithmic-inversion/thinking-backward-protocol.md", "hypergraph": "cognition/hypergraph-relational-processing/hypergraph-protocol.md", "semantic_compression": "cognition/semantic-compression/compression-protocol.md"},
+  "council": {"roles": "council/roles.yml", "default_profile": "council/profiles/athena-core.yml", "project_profiles": "council/profiles", "debate_protocol": "council/debate-protocol.md", "reasoning_rounds": "council/reasoning-rounds"},
+  "work": {"athena_first_steps": "work/ATHENA-FIRST-STEPS.md", "todo": "work/TODO.md", "backlog": "work/backlog.yml", "features": "work/features.yml", "intake": "work/intake", "branch_reconciliation": "docs/REPOSITORY_BASELINE_2026-08-05.md"},
+  "observability": {"health_model": "sensory/health-model.md", "latest_scan": "sensory/scans/latest-scan.json", "watched_state": "sensory/scans/latest-watched-changes.json", "log_signatures": "observability/log-signatures.json", "reports": "observability/reports"},
+  "legacy": {"wow_backup_stack_project_brain": "projects/wow-backup-stack/project-brain.md", "wow_backup_stack_todo": "projects/wow-backup-stack/TODO.md", "wow_backup_stack_council_profile": "council/profiles/wow-backup-stack.yml", "note": "Older WoW backup-stack records are retained as scoped project history and must not define the root Athena identity or default work queue."}
 }

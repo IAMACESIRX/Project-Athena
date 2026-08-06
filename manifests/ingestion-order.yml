@@ -2,79 +2,48 @@
 updated: 2026-08-07
 purpose: "Defines the stable read order for AIs, humans, and programs."
 order:
-  - path: AI-PORTAL.md
-    reason: universal entry point
-  - path: manifests/system-manifest.json
-    reason: machine-readable system index
-  - path: identity/README.md
-    reason: general AI-OS identity beyond any one project
-  - path: identity/constitution.md
-    reason: non-negotiable principles
-  - path: projects/project-registry.yml
-    reason: active managed project list
-  - path: forge/FORGE-PORTAL.md
-    reason: F.O.R.G.E. cognitive-synthesis identity and authority boundary
-  - path: forge/manifest.yml
-    reason: machine-readable F.O.R.G.E. subsystem index
-  - path: forge/engine/pipeline.yml
-    reason: executable methodology stage order
-  - path: organization/hierarchy.yml
-    reason: authority and organization model
-  - path: agents/agent-registry.yml
-    reason: pluggable human and AI agent registry
-  - path: orchestration/model-router.yml
-    reason: multi-model routing contract
-  - path: research/model-archaeology/source-ledger.yml
-    reason: verified open-model source ledger and license status
-  - path: research/model-archaeology/deconstruction-protocol.md
-    reason: safe protocol for extracting lessons from open models
-  - path: research/model-archaeology/open-model-capability-matrix.yml
-    reason: maps open-model traits to target AI capabilities
-  - path: research/model-archaeology/odysseus-deconstruction.md
-    reason: self-hosted AI workspace architecture lessons
-  - path: model-ops/target-ai/target-ai-architecture.md
-    reason: reconstructed target AI architecture
-  - path: model-ops/target-ai/capability-roadmap.yml
-    reason: phased capability build plan
-  - path: memory/context-iq/contextual-work-iq.md
-    reason: context and work intelligence memory contract
-  - path: integration/ai-ingestion-guide.md
-    reason: adapter and agent onboarding
-  - path: governance/absolutes.md
-    reason: non-negotiable constraints
-  - path: handoff/CURRENT_STATE.md
-    reason: current continuity state
-  - path: handoff/NEXT_ACTIONS.md
-    reason: queued work and priorities
-  - path: registries/layers.yml
-    reason: repo and layer topology
-  - path: registries/modules.yml
-    reason: functional module list
-  - path: navigation/project-map.md
-    reason: navigable map
-  - path: sensory/scans/latest-scan.json
-    reason: latest measured state
-  - path: engine/README.md
-    reason: deterministic operating cycle
-  - path: engine/order-of-operations.md
-    reason: full advanced thinking checklist
-  - path: engine/routine-catalog.yml
-    reason: machine-readable routine order
-  - path: forensics/evidence-register.csv
-    reason: stable evidence IDs and evidence paths
-  - path: forensics/claim-catalog.csv
-    reason: claims separated from observations
-  - path: forensics/evidence-claim-map.csv
-    reason: evidence-to-claim grounding
-  - path: forensics/known-unknowns.csv
-    reason: uncertainty preserved explicitly
-  - path: work/TODO.md
-    reason: active work queue
-  - path: diagnostics/risk-register.md
-    reason: known risk state
-  - path: cognition/README.md
-    reason: advanced cognition system index
-  - path: cognition/anti-hallucination/anti-hallucination-protocol.md
-    reason: inference safety and evidence gates
-  - path: cognition/cognition-workflow.md
-    reason: advanced reasoning workflow
+  - {path: AI-PORTAL.md, reason: universal entry point}
+  - {path: manifests/system-manifest.json, reason: machine-readable system index}
+  - {path: identity/README.md, reason: general AI-OS identity beyond any one project}
+  - {path: identity/constitution.md, reason: non-negotiable principles}
+  - {path: projects/project-registry.yml, reason: active managed project list}
+  - {path: standards/human-ai-pipeline/STANDARD-v0.1.md, reason: project-wide manual AI-assisted automated and hybrid execution contract}
+  - {path: standards/human-ai-pipeline/ONBOARDING.md, reason: human and AI onboarding for the shared pipeline}
+  - {path: standards/human-ai-pipeline/profiles/athena.yml, reason: ATHENA shared pipeline profile}
+  - {path: aesir/AESIR-PORTAL.md, reason: A.E.S.I.R. research identity and authority boundary}
+  - {path: aesir/manifest.yml, reason: machine-readable A.E.S.I.R. subsystem index}
+  - {path: aesir/engine/pipeline.yml, reason: canonical polymath research stage order}
+  - {path: forge/FORGE-PORTAL.md, reason: F.O.R.G.E. cognitive-synthesis identity and authority boundary}
+  - {path: forge/manifest.yml, reason: machine-readable F.O.R.G.E. subsystem index}
+  - {path: forge/engine/pipeline.yml, reason: executable synthesis and reconstruction stage order}
+  - {path: organization/hierarchy.yml, reason: authority and organization model}
+  - {path: agents/agent-registry.yml, reason: pluggable human and AI agent registry}
+  - {path: orchestration/model-router.yml, reason: multi-model routing contract}
+  - {path: research/model-archaeology/source-ledger.yml, reason: verified open-model source ledger and license status}
+  - {path: research/model-archaeology/deconstruction-protocol.md, reason: safe protocol for extracting lessons from open models}
+  - {path: research/model-archaeology/open-model-capability-matrix.yml, reason: maps open-model traits to target AI capabilities}
+  - {path: research/model-archaeology/odysseus-deconstruction.md, reason: self-hosted AI workspace architecture lessons}
+  - {path: model-ops/target-ai/target-ai-architecture.md, reason: reconstructed target AI architecture}
+  - {path: model-ops/target-ai/capability-roadmap.yml, reason: phased capability build plan}
+  - {path: memory/context-iq/contextual-work-iq.md, reason: context and work intelligence memory contract}
+  - {path: integration/ai-ingestion-guide.md, reason: adapter and agent onboarding}
+  - {path: governance/absolutes.md, reason: non-negotiable constraints}
+  - {path: handoff/CURRENT_STATE.md, reason: current continuity state}
+  - {path: handoff/NEXT_ACTIONS.md, reason: queued work and priorities}
+  - {path: registries/layers.yml, reason: repo and layer topology}
+  - {path: registries/modules.yml, reason: functional module list}
+  - {path: navigation/project-map.md, reason: navigable map}
+  - {path: sensory/scans/latest-scan.json, reason: latest measured state}
+  - {path: engine/README.md, reason: deterministic operating cycle}
+  - {path: engine/order-of-operations.md, reason: full advanced thinking checklist}
+  - {path: engine/HAIPS-ATHENA-ADAPTER.md, reason: ATHENA implementation of shared mitigation and intervention rules}
+  - {path: engine/routine-catalog.yml, reason: machine-readable routine order}
+  - {path: forensics/evidence-register.csv, reason: stable evidence IDs and evidence paths}
+  - {path: forensics/claim-catalog.csv, reason: claims separated from observations}
+  - {path: forensics/evidence-claim-map.csv, reason: evidence-to-claim grounding}
+  - {path: forensics/known-unknowns.csv, reason: uncertainty preserved explicitly}
+  - {path: work/TODO.md, reason: active work queue}
+  - {path: diagnostics/risk-register.md, reason: known risk state}
+  - {path: cognition/README.md, reason: advanced cognition system index}
+  - {path: cognition/anti-hallucination/anti-hallucination-protocol.md, reason: inference safety and evidence gates}
+  - {path: cognition/cognition-workflow.md, reason: advanced reasoning workflow}
