@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "project-athena.aio.master_contract.schema.v0.1",
+  "title": "AIO Multi-Weighted Master Contract",
+  "type": "object",
+  "required": [
+    "schema",
+    "metadata",
+    "architecture",
+    "hard_gates",
+    "weights",
+    "participants",
+    "contracts",
+    "pipeline",
+    "scale_ladder",
+    "view_lenses",
+    "instance",
+    "compatibility"
+  ],
+  "properties": {
+    "schema": {"const": "project-athena.aio.master_contract.v0.1"},
+    "metadata": {
+      "type": "object",
+      "required": ["id", "version", "canonical_path", "status", "plasticity"],
+      "properties": {
+        "id": {"const": "AIO-MASTER-CONTRACT"},
+        "version": {"type": "string"},
+        "canonical_path": {"const": "contracts/AIO-MASTER-CONTRACT.yml"}
+      },
+      "additionalProperties": true
+    },
+    "architecture": {
+      "type": "object",
+      "required": [
+        "model",
+        "rule",
+        "pairwise_contracts",
+        "state_model",
+        "concurrency",
+        "all_phases_required",
+        "minimum_phase_depth"
+      ],
+      "properties": {
+        "model": {"const": "single_logical_contract_hypergraph"},
+        "pairwise_contracts": {"const": "generated_views_only"},
+        "all_phases_required": {"const": true},
+        "minimum_phase_depth": {"type": "number", "exclusiveMinimum": 0, "maximum": 1}
+      },
+      "additionalProperties": true
+    },
+    "hard_gates": {"type": "object", "minProperties": 1},
+    "weights": {
+      "type": "object",
+      "required": ["dimensions", "default", "depth_formula", "rule"],
+      "properties": {
+        "dimensions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+        "default": {
+          "type": "object",
+          "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      },
+      "additionalProperties": true
+    },
+    "participants": {
+      "type": "object",
+      "required": ["human_owner", "athena", "aesir", "forge", "aegis", "nexus_v"],
+      "additionalProperties": {
+        "type": "object",
+        "required": ["type", "authority"],
+        "additionalProperties": true
+      }
+    },
+    "contracts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "requires"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^C[0-9]{2}$"},
+          "requires": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "pipeline": {
+      "type": "array",
+      "minItems": 21,
+      "maxItems": 21,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "owner", "depth", "contracts"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^P[0-9]{2}$"},
+          "owner": {"type": "string"},
+          "depth": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+          "contracts": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^C[0-9]{2}$"}},
+          "weights": {
+            "type": "object",
+            "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "feedback_edges": {"type": "array"},
+    "scale_ladder": {"type": "array", "minItems": 1},
+    "view_lenses": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "instance": {
+      "type": "object",
+      "required": ["schema", "required", "writer_rule", "manual_rule", "atomic_rule", "views_rule"],
+      "properties": {
+        "schema": {"const": "project-athena.aio.contract_instance.v0.1"}
+      },
+      "additionalProperties": true
+    },
+    "compatibility": {
+      "type": "object",
+      "required": [
+        "canonical_text",
+        "runtime",
+        "human_view",
+        "future_compiled",
+        "manual_fallback",
+        "ai_optional_but_preferred"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
